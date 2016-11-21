@@ -1,0 +1,184 @@
+\documentclass[12pt]{article}
+
+\usepackage[T3]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{mathbbol} % for lower case blackboard letters
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{amsthm}
+\newtheorem{mytheorem}{Теорема}[]
+
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\bba}{\mathbb{a}}
+\newcommand{\bbb}{\mathbb{b}}
+\newcommand{\bbI}{\mathbb{I}}
+
+\newcommand{\vlevo}{\hspace*{-0.63cm}}
+\newcommand{\vverh}{\vspace*{-0.1cm}}
+
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+
+\begin{document}
+\section{Введение}
+
+\section{Схема получения полного колебательно-вращательного гамильтониана}
+
+\hspace{0.35cm} Рассмотрим систему $n$ материальных точек. Обозначим их массы через $m_i$, их радиус-векторы в лабораторной системе координат через $\vec{r}_i$, в подвижной системе координат -- через $\vec{R}_i$. Разделим движение системы на движение центра масс и движение вокруг центра масс:
+\vspace*{-0.1cm}
+\begin{gather}
+\left\{
+\begin{aligned}
+\vec{r}_1 &= \vec{r} + \vec{r}_1^{\ \prime}, \\
+&\cdots \\
+\vec{r}_n &= \vec{r} + \vec{r}_n^{\ \prime},
+\end{aligned}
+\right. \notag
+\end{gather}
+
+\hspace*{-0.75cm} где $\vec{r}$ -- радиус-вектор центра масс в лабораторной системе координат и $\vec{r}_i^{\ \prime}$ -- радиус-векторы рассматриваемых точек в системе отсчёта, связанной с центром масс.
+
+Кинетическая энергия $T$ системы принимает вид: 
+\vspace*{-0.1cm}
+\begin{gather}
+T = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{\vec{r}}_i^{\ 2} = \frac{1}{2} \sum_{i=1}^{n} m_i (\dot{\vec{r}} + \dot{\vec{r}}_i^{\ \prime})^2  = \frac{1}{2} M \dot{r}^2 + \frac{1}{2} \sum_{i=1}^{n} m_i ( \dot{r}_i^\prime)^2 + \dot{\vec{r}} \sum_{i=1}^{n} m_i \dot{\vec{r}}_i^{\ \prime}, \notag
+\end{gather}
+
+\hspace*{-0.75cm} где $M = \sum_{i=1}^{n} m_i$.
+
+Заметим, что последняя сумма является производной следующей суммы, которая равна нулю: 
+\vspace*{-0.1cm}
+\begin{gather}
+\sum_{i=1}^{n} m_i \dot{\vec{r}}_i^{\ \prime} = \frac{d}{dt} \sum_{i=1}^{n} m_i \vec{r}_i^{\ \prime} = 0. \notag
+\end{gather}
+
+Итак, мы перешли в систему координат, связанную с центром масс, и отделили энергию движения центра масс:
+\vspace*{-0.1cm}
+\begin{gather}
+T = \frac{1}{2} M \dot{r}^2 + \frac{1}{2} \sum_{i=1}^{n} m_i( \dot{r}_i^\prime)^2. \notag
+\end{gather}
+
+Забудем про слагаемое, отвечающее центру масс; откинем штрихи, чтобы упростить запись.
+Перейдём в подвижную систему координат при помощи ортогональной матрицы $\mathbb{S}$:
+\vspace*{-0.1cm}
+\begin{gather}
+\vec{r}_i = \mathbb{S} \vec{R}_i, \quad i = 1 \dots n. \notag
+\end{gather}
+
+Введем матрицу $\mathbb{A}$ следующим образом: $\mathbb{A} = \dot{\mathbb{S}} \mathbb{S}^{-1}$. Покажем, что она является кососимметрической матрицей; для этого продифференцируем единичную матрицу:
+\vspace*{-0.1cm}
+\begin{gather}
+\frac{d}{dt} \mathbb{E} = \frac{d}{dt} \left( \mathbb{S} \mathbb{S}^{-1}\right) = \dot{\mathbb{S}} \mathbb{S}^{-1} + \mathbb{S} \dot{\mathbb{S}}^{-1} = 0. \notag
+\end{gather}
+
+Заметим, что первое слагаемое и есть матрица $\mathbb{A}$, а второе -- транспонированная матрица $\mathbb{A}$ (т.к. $\mathbb{S}^\top = \mathbb{S}^{-1}$ в силу ортогональности). Следовательно,
+\vspace*{-0.1cm}
+\begin{gather}
+\mathbb{A} + \mathbb{A}^\top = 0, \notag
+\end{gather}
+
+\hspace*{-0.75cm} т.е. по определению матрица $\mathbb{A}$ является кососимметрической.
+
+Так как размерность пространства кососимметрических матриц равна 3, то существует естественный изоморфизм, позволяющий сопоставить каждой кососимметрической матрице единственный псевдовектор:
+\vspace*{-0.1cm}
+\begin{gather}
+\mathbb{A} = 
+\begin{pmatrix}
+0 & -\omega_3 & \omega_2 \\
+\omega_3 & 0 & -\omega_1 \\
+-\omega_2 & \omega_1 & 0
+\end{pmatrix}
+\quad
+\longleftrightarrow
+\quad
+\vec{\omega} = 
+\begin{pmatrix}
+\omega_1 \\
+\omega_2 \\
+\omega_3
+\end{pmatrix}
+,
+\notag
+\end{gather}
+
+\hspace*{-0.75cm} причем для любого вектора $\vec{x} \in \mathbf{R}^3$ имеем $\mathbb{A} \vec{x} = [ \vec{\omega} \times \vec{x} ]$, где $\vec{\omega}$ -- вектор угловой скорости в лабораторной системе координат.
+
+Получим выражение для квадратов скоростей рассматриваемых точек в лабораторной системе координат через координаты и скорости в подвижной системе координат:
+\vspace*{-0.1cm}
+\begin{gather}
+\dot{\vec{r}}_i = \mathbb{S} \dot{\vec{R}}_i + \dot{\mathbb{S}} \vec{R}_i = \dot{\mathbb{S}} \mathbb{S}^{-1} \vec{r}_i + \mathbb{S} \dot{\vec{R}}_i  = \mathbb{A} \vec{r}_i + \mathbb{S} \dot{\vec{R}}_i = [ \vec{\omega} \times \vec{r}_i ] + \mathbb{S} \dot{\vec{R}}_i = [\mathbb{S} \vec{\Omega} \times \mathbb{S} \vec{R}_i ] + \mathbb{S} \dot{\vec{R}}_i = \notag \\
+= \mathbb{S} \left( [\vec{\Omega} \times \vec{R}_i ] + \dot{\vec{R}}_i \right)  \notag , \\
+\dot{r}_i^2 = \dot{\vec{r}}_i^{\ \top} \dot{\vec{r}}_i = \left( \dot{\vec{R}}_i + [ \vec{\Omega} \times \vec{R}_i] \right)^\top \mathbb{S}^\top \mathbb{S} \left( \dot{\vec{R}}_i + [ \vec{\Omega} \times \vec{R}_i ] \right) = \dot{R}_i^2 + 2 \dot{\vec{R}}_i \ [ \vec{\Omega} \times \vec{R}_i] + [ \vec{\Omega} \times \vec{R}_i ]^2 \notag ,
+\end{gather}
+
+\hspace*{-0.75cm} где $\vec{\Omega}$ -- вектор угловой скорости в подвижной системе координат.
+
+Рассмотрим последнее слагаемое как смешанное произведение и применим правило Лагранжа:
+\vspace*{-0.1cm}
+\begin{gather}
+([\vec{\Omega} \times \vec{R}_i] , [\vec{\Omega} \times \vec{R}_i]) = \vec{\Omega}^\top [ \vec{R}_i \times [ \vec{\Omega} \times \vec{R}_i ]] = \vec{\Omega}^\top \left( \vec{\Omega} (\vec{R}_i, \vec{R}_i ) - \vec{R}_i (\vec{R}_i, \vec{\Omega} ) \right)
+\notag .
+\end{gather}
+
+Итак, с учётом выполненных преобразований имеем:
+\vspace*{-0.1cm}
+\begin{gather}
+T = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{r}_i^2 = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{R}_i^2 + \vec{\Omega} ^\top \sum_{i=1}^{n} m_i[ \vec{R}_i \times \dot{\vec{R}}_i ] + \frac{1}{2} \vec{\Omega}^\top \sum_{i=1}^{n} m_i \left( \vec{\Omega} (\vec{R}_i, \vec{R}_i ) - \vec{R}_i (\vec{R}_i, \vec{\Omega} ) \right) = 
+\notag \\
+= \frac{1}{2} \sum_{i=1}^{n} m_i \dot{R}_i^2 + \vec{\Omega}^\top \sum_{i=1}^{n} m_i [ \vec{R}_i \times \dot{\vec{R}}_i ] + \vec{\Omega}^\top \mathbb{I} \ \vec{\Omega} \notag .
+\end{gather}
+
+\vlevo где $\mathbb{I}$ -- матрица тензора инерции в подвижной системе координат.
+
+Пусть исследуемая система содержит $s$ внутренних степеней свободы. Осуществим переход от векторов в подвижной системе к внутренним координатам $\big\{ q \big\}_{j=1 \dots s}$ \ :
+\vverh
+\begin{gather}
+\left\{
+\begin{aligned}
+\vec{R}_1 &= \vec{R}_1 (q_1, \dots, q_s), \\
+&\cdots \\
+\vec{R}_n &= \vec{R}_n (q_1, \dots, q_s);
+\end{aligned}
+\right. \notag \\
+\frac{d}{dt} \vec{R}_i = \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\partial q_j} \ \dot{q}_j \notag .
+\end{gather}
+
+Подставляя $\dot{\vec{R}}_i$ в выражение для кинетической энергии, получаем:
+\vverh
+\begin{gather}
+T = \frac{1}{2} \sum_{i=1}^{n} m_i \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\partial q_j} \dot{q}_j \sum_{k=1}^{s} \frac{\partial \vec{R}_i}{\partial q_k} \dot{q}_k + \vec{\Omega}^\top \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\partial q_j} \ \dot{q}_j \right] + \vec{\Omega}^\top \bbI \ \vec{\Omega} = \notag \\
+= \frac{1}{2} \sum_{j=1}^{s} \sum_{k=1}^{s} \left( \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k} \right) \dot{q}_j \dot{q}_k + \vec{\Omega}^\top \sum_{j=1}^{s} \left( \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_j} \right] \right) \dot{q}_j + \frac{1}{2} \vec{\Omega}^\top \bbI \ \vec{\Omega} \notag .
+\end{gather}
+
+Таким образом, кинетическую энергию можно представить в виде:
+\vverh
+\begin{gather}
+T = \frac{1}{2} \dot{q}^\top \mathbb{a} \ \dot{q} + \Omega^\top \mathbb{A} \ \dot{q} + \frac{1}{2} \Omega^\top \mathbb{I} \ \Omega \notag ,
+\end{gather}
+
+\vlevo где 
+$
+\begin{aligned}
+a_{jk} &= \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k} -- элементы матрицы  \bba \\
+A_{jk} &= \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_k} \right]_{\alpha} -- элементы матрицы \bbA 
+\end{aligned}
+$
+
+где $\alpha = x,y,z$ соответствуют $j=1,2,3$.
+
+Воспользуемся следующей теоремой:
+
+\begin{mytheorem}
+Преобразование $\vec{y} = \frac{\partial X(\vec{x}, \vec{\alpha})}{\partial \vec{x}}$, определяемое производящей функцией $X = X(\vec{x}, \vec{\alpha})$, гессиан которой отличен от 0 ($\det \bigl( \frac{\partial ^2 X}{\partial x_i \partial x_j} \bigr) \neq 0$), имеет обратное преобразование $\vec{x} = \frac{\partial Y(\vec{y}, \vec{\alpha})}{\partial \vec{y}}$, определяемое производящей функцией $Y(\vec{y}, \vec{\alpha})$, гессиан которой также отличен от 0 ($\det \bigl( \frac{\partial ^2 Y}{\partial y_i \partial y_j} \bigr) \neq 0$). Производящая функция $Y(\vec{y}, \vec{\alpha})$ определяется следующим образом: $Y(\vec{y}, \vec{\alpha}) = \vec{x} \cdot \vec{y} - X(\vec{x}(\vec{y}, \vec{\alpha}), \vec{\alpha})$, причем $\frac{\partial X}{\partial \vec{\alpha}} + \frac{\partial Y}{\partial \vec{\alpha}} = 0$.
+\end{mytheorem}
+
+\end{document}
