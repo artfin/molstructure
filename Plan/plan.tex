@@ -33,7 +33,7 @@
 
 \section{Схема получения полного колебательно-вращательного гамильтониана}
 
-\hspace{0.35cm} Рассмотрим систему $n$ материальных точек. Обозначим их массы через $m_i$, их радиус-векторы в лабораторной системе координат через $\vec{r}_i$, в подвижной системе координат -- через $\vec{R}_i$. Разделим движение системы на движение центра масс и движение вокруг центра масс:
+\hspace{0.35cm} Рассмотрим систему $n$ материальных точек. Обозначим их массы через $m_i$, их радиус-векторы в лабораторной системе координат через $\vec{r}_i$, в подвижной системе координат -- через $\vec{R}_i$ ($i = 1 \dots n$). Разделим движение системы на движение центра масс и движение вокруг центра масс:
 \vspace*{-0.1cm}
 \begin{gather}
 \left\{
@@ -139,7 +139,7 @@ T = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{r}_i^2 = \frac{1}{2} \sum_{i=1}^{n} m_i 
 
 \vlevo где $\mathbb{I}$ -- матрица тензора инерции в подвижной системе координат.
 
-Пусть исследуемая система содержит $s$ внутренних степеней свободы. Осуществим переход от векторов в подвижной системе к внутренним координатам $\big\{ q \big\}_{j=1 \dots s}$ \ :
+Пусть исследуемая система содержит $s$ внутренних степеней свободы. Осуществим переход от векторов в подвижной системе к внутренним координатам $q_j, j=1 \dots s$:
 \vverh
 \begin{gather}
 \left\{
@@ -152,28 +152,20 @@ T = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{r}_i^2 = \frac{1}{2} \sum_{i=1}^{n} m_i 
 \frac{d}{dt} \vec{R}_i = \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\partial q_j} \ \dot{q}_j \notag .
 \end{gather}
 
-Подставляя $\dot{\vec{R}}_i$ в выражение для кинетической энергии, получаем:
+Подставляя $\dot{\vec{R}}_i$ в выражение для кинетической энергии, получим:
 \vverh
 \begin{gather}
 T = \frac{1}{2} \sum_{i=1}^{n} m_i \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\partial q_j} \dot{q}_j \sum_{k=1}^{s} \frac{\partial \vec{R}_i}{\partial q_k} \dot{q}_k + \vec{\Omega}^\top \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\partial q_j} \ \dot{q}_j \right] + \vec{\Omega}^\top \bbI \ \vec{\Omega} = \notag \\
 = \frac{1}{2} \sum_{j=1}^{s} \sum_{k=1}^{s} \left( \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k} \right) \dot{q}_j \dot{q}_k + \vec{\Omega}^\top \sum_{j=1}^{s} \left( \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_j} \right] \right) \dot{q}_j + \frac{1}{2} \vec{\Omega}^\top \bbI \ \vec{\Omega} \notag .
 \end{gather}
 
-Таким образом, кинетическую энергию можно представить в виде:
+Обозначая $a_{jk} = \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k}$, $A_{jk} = \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_k} \right]_{\alpha}$ (здесь $\alpha = x,y,z$ соответствуют $j=1,2,3$), представим кинетиическую энергию в виде:
 \vverh
 \begin{gather}
-T = \frac{1}{2} \dot{q}^\top \mathbb{a} \ \dot{q} + \Omega^\top \mathbb{A} \ \dot{q} + \frac{1}{2} \Omega^\top \mathbb{I} \ \Omega \notag ,
+T = \frac{1}{2} \dot{\vec{q}}^{\ \top} \mathbb{a} \ \dot{\vec{q}} + \vec{\Omega}^\top \mathbb{A} \ \dot{\vec{q}} + \frac{1}{2} \vec{\Omega}^\top \mathbb{I} \ \vec{\Omega} \notag ,
 \end{gather}
 
-\vlevo где 
-$
-\begin{aligned}
-a_{jk} &= \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k} -- элементы матрицы  \bba \\
-A_{jk} &= \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_k} \right]_{\alpha} -- элементы матрицы \bbA 
-\end{aligned}
-$
-
-где $\alpha = x,y,z$ соответствуют $j=1,2,3$.
+\vlevo где $\bba = (a_{jk})_{j=1 \dots s, \ k=1 \dots s}$, $\bbA = (A_{jk})_{j=1 \dots 3, \ k=1 \dots s}$.
 
 Воспользуемся следующей теоремой:
 

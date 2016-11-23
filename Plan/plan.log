@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  21 NOV 2016 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  23 NOV 2016 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,128 +676,7 @@ Overfull \hbox (5.45647pt too wide) in paragraph at lines 125--127
  []
 
 [2]
-
-LaTeX Warning: Command \cyrerev invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrl invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrm invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrn invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrery invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrm invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrr invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyri invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrc invalid in math mode on input line 171.
-
-
-LaTeX Warning: Command \cyrery invalid in math mode on input line 171.
-
-Missing character: There is no э in font cmr12!
-Missing character: There is no л in font cmr12!
-Missing character: There is no е in font cmr12!
-Missing character: There is no м in font cmr12!
-Missing character: There is no е in font cmr12!
-Missing character: There is no н in font cmr12!
-Missing character: There is no т in font cmr12!
-Missing character: There is no ы in font cmr12!
-Missing character: There is no м in font cmr12!
-Missing character: There is no а in font cmr12!
-Missing character: There is no т in font cmr12!
-Missing character: There is no р in font cmr12!
-Missing character: There is no и in font cmr12!
-Missing character: There is no ц in font cmr12!
-Missing character: There is no ы in font cmr12!
-
-LaTeX Warning: Command \cyrerev invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrl invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrm invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrn invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrery invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrm invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrr invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyri invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrc invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \cyrery invalid in math mode on input line 172.
-
-Missing character: There is no э in font cmr12!
-Missing character: There is no л in font cmr12!
-Missing character: There is no е in font cmr12!
-Missing character: There is no м in font cmr12!
-Missing character: There is no е in font cmr12!
-Missing character: There is no н in font cmr12!
-Missing character: There is no т in font cmr12!
-Missing character: There is no ы in font cmr12!
-Missing character: There is no м in font cmr12!
-Missing character: There is no а in font cmr12!
-Missing character: There is no т in font cmr12!
-Missing character: There is no р in font cmr12!
-Missing character: There is no и in font cmr12!
-Missing character: There is no ц in font cmr12!
-Missing character: There is no ы in font cmr12!
-
-Overfull \hbox (30.74907pt too wide) in paragraph at lines 181--182
+Overfull \hbox (30.74907pt too wide) in paragraph at lines 173--174
 \T2A/cmr/m/it/12 опре-де-ля-е-мое про-из-во-дя-щей функ-ци-ей $\OML/cmm/m/it/12
  Y\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 )$\T2A/cmr/m/it/12 , 
 гес-си-ан ко-то-рой так-же от-ли-чен от 0 ($[][][][] \OMS/cmsy/m/n/12 6\OT1/cmr
@@ -805,7 +684,7 @@ Overfull \hbox (30.74907pt too wide) in paragraph at lines 181--182
  []
 
 
-Overfull \hbox (25.16849pt too wide) in paragraph at lines 181--182
+Overfull \hbox (25.16849pt too wide) in paragraph at lines 173--174
 \OT1/cmr/m/n/12 0$\T2A/cmr/m/it/12 ). Про-из-во-дя-щая функ-ция $\OML/cmm/m/it/
 12 Y\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 )$ \T2A/cmr/m/it/12
  опре-де-ля-ет-ся сле-ду-ю-щим об-ра-зом: $\OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 ([
@@ -818,7 +697,7 @@ m/m/it/12 ; []\OT1/cmr/m/n/12 )$\T2A/cmr/m/it/12 ,
 Here is how much of TeX's memory you used:
  3527 strings out of 493089
  41909 string characters out of 6134842
- 119990 words of memory out of 5000000
+ 120990 words of memory out of 5000000
  6959 multiletter control sequences out of 15000+600000
  16198 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -840,7 +719,7 @@ sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on plan.pdf (3 pages, 173937 bytes).
+Output written on plan.pdf (3 pages, 174703 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
