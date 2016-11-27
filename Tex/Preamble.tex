@@ -5,18 +5,32 @@
 % page margin
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 
+% AMS packages
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm} % theorem environment
 
-% for lower case blackboard letters
-\usepackage{mathbbol} 
+% blackboard lettring
+\usepackage{dsfont} % uppercase
+\usepackage{bbm} % lowercase
 
-% line above with section name 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
-% theorem environment
-\usepackage{amsthm}
+% modifying page layout using fancyhdr
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}} % adding number to section name
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\ #1}} % adding number to subsection name
+
+\rhead{\fancyplain{}{\rightmark }} % placing the section/subsection name in the right corner of the header
+\cfoot{\fancyplain{}{\thepage}} % placing a page number in the center of the footer   
+
+\renewcommand{\headrulewidth}{1 pt} % placing horizontal rules
+\renewcommand{\footrulewidth}{1 pt} % placing horizontal rules
 
 % includegraphics
 \usepackage{graphicx}
+
+%appendices
+\usepackage[toc, page]{appendix}

@@ -2,12 +2,18 @@
 
 \input{Preamble.tex}
 
+% theorem environment
 \newtheorem{mytheorem}{Теорема}[]
 
-\newcommand{\bbA}{\mathbb{A}}
-\newcommand{\bba}{\mathbb{a}}
-\newcommand{\bbb}{\mathbb{b}}
-\newcommand{\bbI}{\mathbb{I}}
+% blackboard symbols
+% using dsfont and bbm packages 
+\newcommand{\bbA}{\mathds{A}}
+\newcommand{\bbI}{\mathds{I}}
+\newcommand{\bbB}{\mathds{B}}
+\newcommand{\bba}{\mathbbm{a}}
+\newcommand{\bbb}{\mathbbm{b}}
+\newcommand{\bbS}{\mathds{S}}
+\newcommand{\bbE}{\mathds{E}}
 
 % shifting commands
 \newcommand{\vlevo}{\hspace*{-0.63cm}}
@@ -19,6 +25,9 @@
 
 % primes
 \newcommand{\dpr}{\prime \prime}
+
+% SKIPS
+% "\," -- very small skip
 
 \begin{document}
 
@@ -59,6 +68,7 @@
 \section{Введение}
 
 \section{Схема получения полного колебательно-вращательного гамильтониана}
+\subsection{Переход в систему отсчета, связанную с центром масс}
 
 \hspace{0.35cm} Рассмотрим систему $n$ материальных точек. Обозначим их массы через $m_i$, их радиус-векторы в лабораторной системе координат через $\vec{r}_i$, в подвижной системе координат -- через $\vec{R}_i$ ($i = 1 \dots n$). Разделим движение системы на движение центра масс и движение вокруг центра масс:
 \vspace*{-0.1cm}
@@ -102,7 +112,7 @@ T = \frac{1}{2} M \dot{r}^2 + \frac{1}{2} \sum_{i=1}^{n} m_i( \dot{r}_i^\prime)^
 
 \begin{figure}
   \centering
-	\includegraphics[width=0.5\textwidth]{pictures/EulerAngles.jpg}
+	\includegraphics[width=0.7\textwidth]{pictures/EulerAngles.jpg}
 	\caption{Углы Эйлера}
 	\label{fig:EulerAngles}
 \end{figure}
@@ -124,7 +134,7 @@ x \\
 y \\
 z
 \end{pmatrix} =
-S_\varphi
+\bbS_\varphi
 \begin{pmatrix}
 x \\
 y \\
@@ -146,11 +156,11 @@ z^{\dpr}
 0 & - sin \theta & \cos \theta
 \end{pmatrix}
 \begin{pmatrix}
-x^\prime
-y^\prime
+x^\prime \\
+y^\prime \\
 z^\prime
 \end{pmatrix} = 
-S_\theta
+\bbS_\theta
 \begin{pmatrix}
 x^\prime \\
 y^\prime \\
@@ -176,7 +186,7 @@ x^{\dpr} \\
 y^{\dpr} \\
 z^{\dpr}
 \end{pmatrix} = 
-S_\psi 
+\bbS_\psi 
 \begin{pmatrix}
 x^{\dpr} \\
 y^{\dpr} \\
@@ -191,13 +201,13 @@ X \\
 Y \\
 Z
 \end{pmatrix} = 
-S 
+\bbS 
 \begin{pmatrix}
 x \\
 y \\
 z
 \end{pmatrix} \notag \\
-S = S_\psi S_\theta S_\varphi = 
+\bbS = \bbS_\psi \bbS_\theta \bbS_\varphi = 
 \begin{pmatrix}
 \cos \psi \cos \varphi - \cos \theta \sin \varphi \sin \psi & \cos \psi \sin \varphi + \cos \theta \cos \varphi \sin \psi & \sin \theta \sin \psi \\
 - \sin \psi \cos \varphi - \cos \theta \sin \varphi \cos \psi & - \sin \psi \sin \varphi + \cos \theta \cos \varphi \cos \psi & \sin \theta \cos \psi \\
@@ -236,30 +246,30 @@ S = S_\psi S_\theta S_\varphi =
 
 Я НЕ ЗНАЮ КАК СВЯЗАТЬ НАПИСАННОЕ НИЖЕ С ТЕМ, ЧТО ДОПИСАНО СЕЙЧАС
 
-Перейдём в подвижную систему координат при помощи ортогональной матрицы $\mathbb{S}$:
+Перейдём в подвижную систему координат при помощи ортогональной матрицы $\bbS$:
 \vspace*{-0.1cm}
 \begin{gather}
-\vec{r}_i = \mathbb{S} \vec{R}_i, \quad i = 1 \dots n. \notag
+\vec{r}_i = \bbS \vec{R}_i, \quad i = 1 \dots n. \notag
 \end{gather}
 
-Введем матрицу $\mathbb{A}$ следующим образом: $\mathbb{A} = \dot{\mathbb{S}} \mathbb{S}^{-1}$. Покажем, что она является кососимметрической матрицей; для этого продифференцируем единичную матрицу:
+Введем матрицу $\bbA$ следующим образом: $\bbA = \dot{\bbS} \bbS^{-1}$. Покажем, что она является кососимметрической матрицей; для этого продифференцируем единичную матрицу:
 \vspace*{-0.1cm}
 \begin{gather}
-\frac{d}{dt} \mathbb{E} = \frac{d}{dt} \left( \mathbb{S} \mathbb{S}^{-1}\right) = \dot{\mathbb{S}} \mathbb{S}^{-1} + \mathbb{S} \dot{\mathbb{S}}^{-1} = 0. \notag
+\frac{d}{dt} \bbE = \frac{d}{dt} \left( \bbS \bbS^{-1}\right) = \dot{\bbS} \bbS^{-1} + \bbS \dot{\bbS}^{-1} = 0. \notag
 \end{gather}
 
-Заметим, что первое слагаемое и есть матрица $\mathbb{A}$, а второе -- транспонированная матрица $\mathbb{A}$ (т.к. $\mathbb{S}^\top = \mathbb{S}^{-1}$ в силу ортогональности). Следовательно,
+Заметим, что первое слагаемое и есть матрица $\bbA$, а второе -- транспонированная матрица $\bbA$ (т.к. $\bbS^\top = \bbS^{-1}$ в силу ортогональности). Следовательно,
 \vspace*{-0.1cm}
 \begin{gather}
-\mathbb{A} + \mathbb{A}^\top = 0, \notag
+\bbA + \bbA^\top = 0, \notag
 \end{gather}
 
-\hspace*{-0.75cm} т.е. по определению матрица $\mathbb{A}$ является кососимметрической.
+\hspace*{-0.75cm} т.е. по определению матрица $\bbA$ является кососимметрической.
 
 Так как размерность пространства кососимметрических матриц равна 3, то существует естественный изоморфизм, позволяющий сопоставить каждой кососимметрической матрице единственный псевдовектор:
 \vspace*{-0.1cm}
 \begin{gather}
-\mathbb{A} = 
+\bbA = 
 \begin{pmatrix}
 0 & -\omega_3 & \omega_2 \\
 \omega_3 & 0 & -\omega_1 \\
@@ -278,14 +288,14 @@ S = S_\psi S_\theta S_\varphi =
 \notag
 \end{gather}
 
-\hspace*{-0.75cm} причем для любого вектора $\vec{x} \in \mathbf{R}^3$ имеем $\mathbb{A} \vec{x} = [ \vec{\omega} \times \vec{x} ]$, где $\vec{\omega}$ -- вектор угловой скорости в лабораторной системе координат.
+\hspace*{-0.75cm} причем для любого вектора $\vec{x} \in \mathbf{R}^3$ имеем $\bbA \vec{x} = [ \vec{\omega} \times \vec{x} ]$, где $\vec{\omega}$ -- вектор угловой скорости в лабораторной системе координат.
 
 Получим выражение для квадратов скоростей рассматриваемых точек в лабораторной системе координат через координаты и скорости в подвижной системе координат:
 \vspace*{-0.1cm}
 \begin{gather}
-\dot{\vec{r}}_i = \mathbb{S} \dot{\vec{R}}_i + \dot{\mathbb{S}} \vec{R}_i = \dot{\mathbb{S}} \mathbb{S}^{-1} \vec{r}_i + \mathbb{S} \dot{\vec{R}}_i  = \mathbb{A} \vec{r}_i + \mathbb{S} \dot{\vec{R}}_i = [ \vec{\omega} \times \vec{r}_i ] + \mathbb{S} \dot{\vec{R}}_i = [\mathbb{S} \vec{\Omega} \times \mathbb{S} \vec{R}_i ] + \mathbb{S} \dot{\vec{R}}_i = \notag \\
-= \mathbb{S} \left( [\vec{\Omega} \times \vec{R}_i ] + \dot{\vec{R}}_i \right)  \notag , \\
-\dot{r}_i^2 = \dot{\vec{r}}_i^{\ \top} \dot{\vec{r}}_i = \left( \dot{\vec{R}}_i + [ \vec{\Omega} \times \vec{R}_i] \right)^\top \mathbb{S}^\top \mathbb{S} \left( \dot{\vec{R}}_i + [ \vec{\Omega} \times \vec{R}_i ] \right) = \dot{R}_i^2 + 2 \dot{\vec{R}}_i \ [ \vec{\Omega} \times \vec{R}_i] + [ \vec{\Omega} \times \vec{R}_i ]^2 \notag ,
+\dot{\vec{r}}_i = \bbS \dot{\vec{R}}_i + \dot{\bbS} \vec{R}_i = \dot{\bbS} \bbS^{-1} \vec{r}_i + \bbS \dot{\vec{R}}_i  = \bbA \vec{r}_i + \bbS \dot{\vec{R}}_i = [ \vec{\omega} \times \vec{r}_i ] + \bbS \dot{\vec{R}}_i = [\bbS \vec{\Omega} \times \bbS \vec{R}_i ] + \bbS \dot{\vec{R}}_i = \notag \\
+= \bbS \left( [\vec{\Omega} \times \vec{R}_i ] + \dot{\vec{R}}_i \right)  \notag , \\
+\dot{r}_i^2 = \dot{\vec{r}}_i^{\ \top} \dot{\vec{r}}_i = \left( \dot{\vec{R}}_i + [ \vec{\Omega} \times \vec{R}_i] \right)^\top \bbS^\top \bbS \left( \dot{\vec{R}}_i + [ \vec{\Omega} \times \vec{R}_i ] \right) = \dot{R}_i^2 + 2 \dot{\vec{R}}_i \ [ \vec{\Omega} \times \vec{R}_i] + [ \vec{\Omega} \times \vec{R}_i ]^2 \notag ,
 \end{gather}
 
 \hspace*{-0.75cm} где $\vec{\Omega}$ -- вектор угловой скорости в подвижной системе координат.
@@ -305,7 +315,7 @@ T = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{r}_i^2 = \frac{1}{2} \sum_{i=1}^{n} m_i 
 = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{R}_i^2 + \vec{\Omega}^\top \sum_{i=1}^{n} m_i [ \vec{R}_i \times \dot{\vec{R}}_i ] + \vec{\Omega}^\top \mathbb{I} \ \vec{\Omega} \notag .
 \end{gather}
 
-\vlevo где $\mathbb{I}$ -- матрица тензора инерции в подвижной системе координат.
+\vlevo где $\bbI$ -- матрица тензора инерции в подвижной системе координат.
 
 Пусть исследуемая система содержит $s$ внутренних степеней свободы. Осуществим переход от векторов в подвижной системе к внутренним координатам $q_j, j=1 \dots s$:
 \vverh
@@ -327,18 +337,42 @@ T = \frac{1}{2} \sum_{i=1}^{n} m_i \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\par
 = \frac{1}{2} \sum_{j=1}^{s} \sum_{k=1}^{s} \left( \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k} \right) \dot{q}_j \dot{q}_k + \vec{\Omega}^\top \sum_{j=1}^{s} \left( \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_j} \right] \right) \dot{q}_j + \frac{1}{2} \vec{\Omega}^\top \bbI \ \vec{\Omega} \notag .
 \end{gather}
 
-Обозначая $a_{jk} = \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k}$, $A_{jk} = \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_k} \right]_{\alpha}$ (здесь $\alpha = x,y,z$ соответствуют $j=1,2,3$), представим кинетиическую энергию в виде:
+Обозначая $a_{jk} = \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k}$, $A_{jk} = \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_k} \right]_{\alpha}$ (здесь $\alpha = x,y,z$ соответствуют $j=1,2,3$), представим кинетическую энергию в виде:
 \vverh
 \begin{gather}
-T = \frac{1}{2} \dot{\vec{q}}^{\ \top} \mathbb{a} \ \dot{\vec{q}} + \vec{\Omega}^\top \mathbb{A} \ \dot{\vec{q}} + \frac{1}{2} \vec{\Omega}^\top \mathbb{I} \ \vec{\Omega} \notag ,
+T = \frac{1}{2} \dot{\vec{q}}^{\ \top} \bba \ \dot{\vec{q}} + \vec{\Omega}^\top \bbA \ \dot{\vec{q}} + \frac{1}{2} \vec{\Omega}^\top \bbI \ \vec{\Omega} \notag ,
 \end{gather}
 
 \vlevo где $\bba = (a_{jk})_{j=1 \dots s, \ k=1 \dots s}$, $\bbA = (A_{jk})_{j=1 \dots 3, \ k=1 \dots s}$.
 
-Воспользуемся следующей теоремой:
+\subsection{Применение теоремы Донкина}
+Перепишем выражение для кинетической энергии в матричном виде для того, чтобы перейти к гамильтоновым переменным.
+\begin{gather}
+T = \frac{1}{2} 
+\begin{bmatrix}
+\vec{\Omega}^{\top} \ \dot{\vec{q}}^{\, \top}
+\end{bmatrix}
+\bbB
+\begin{bmatrix}
+\vec{\Omega} \\
+\dot{\vec{q}}
+\end{bmatrix}, \notag
+\end{gather}
 
-\begin{mytheorem}
-Преобразование $\vec{y} = \frac{\partial X(\vec{x}, \vec{\alpha})}{\partial \vec{x}}$, определяемое производящей функцией $X = X(\vec{x}, \vec{\alpha})$, гессиан которой отличен от 0 ($\det \bigl( \frac{\partial ^2 X}{\partial x_i \partial x_j} \bigr) \neq 0$), имеет обратное преобразование $\vec{x} = \frac{\partial Y(\vec{y}, \vec{\alpha})}{\partial \vec{y}}$, определяемое производящей функцией $Y(\vec{y}, \vec{\alpha})$, гессиан которой также отличен от 0 ($\det \bigl( \frac{\partial ^2 Y}{\partial y_i \partial y_j} \bigr) \neq 0$). Производящая функция $Y(\vec{y}, \vec{\alpha})$ определяется следующим образом: $Y(\vec{y}, \vec{\alpha}) = \vec{x} \cdot \vec{y} - X(\vec{x}(\vec{y}, \vec{\alpha}), \vec{\alpha})$, причем $\frac{\partial X}{\partial \vec{\alpha}} + \frac{\partial Y}{\partial \vec{\alpha}} = 0$.
-\end{mytheorem}
+где $\bbB$ -- блочная матрица:
+\begin{gather}
+\bbB = 
+\begin{bmatrix}
+\bbI & \bbA \\
+\bbA^\top & \bba
+\end{bmatrix}
+\end{gather}  
+
+
+\newpage
+\begin{appendices}
+\section{Про угловой момент...}
+про угловой момент
+\end{appendices}
 
 \end{document}

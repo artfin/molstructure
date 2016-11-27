@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  27 NOV 2016 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  27 NOV 2016 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,20 +655,8 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathbbol.sty
-Package: mathbbol 1995/01/01
-\symbbold=\mathgroup6
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip46
-\f@ncyO@elh=\skip47
-\f@ncyO@erh=\skip48
-\f@ncyO@olh=\skip49
-\f@ncyO@orh=\skip50
-\f@ncyO@elf=\skip51
-\f@ncyO@erf=\skip52
-\f@ncyO@olf=\skip53
-\f@ncyO@orf=\skip54
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
@@ -677,11 +665,32 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headfont=\toks25
 \thm@notefont=\toks26
 \thm@headpunct=\toks27
-\thm@preskip=\skip55
-\thm@postskip=\skip56
-\thm@headsep=\skip57
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
 \dth@everypar=\toks28
-))
+)
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip49
+\f@ncyO@elh=\skip50
+\f@ncyO@erh=\skip51
+\f@ncyO@olh=\skip52
+\f@ncyO@orh=\skip53
+\f@ncyO@elf=\skip54
+\f@ncyO@erf=\skip55
+\f@ncyO@olf=\skip56
+\f@ncyO@orf=\skip57
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -709,31 +718,38 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
+))
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count104
+\c@@ppsavesec=\count105
+\c@@ppsaveapp=\count106
 )
-\c@mytheorem=\count104
+\c@mytheorem=\count107
  (./main.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
+
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -771,16 +787,16 @@ LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
+\scratchcounter=\count108
 \scratchdimen=\dimen123
 \scratchbox=\box28
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count109
+\nofMParguments=\count110
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count108
+\MPscratchCnt=\count111
 \MPscratchDim=\dimen124
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -829,7 +845,7 @@ e
 <pictures/logo.jpg, id=1, 181.42781pt x 147.55125pt>
 File: pictures/logo.jpg Graphic file (type jpg)
  <use pictures/logo.jpg>
-Package pdftex.def Info: pictures/logo.jpg used on input line 37.
+Package pdftex.def Info: pictures/logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 150.14671pt x 122.11401pt.
 
 [1
@@ -844,10 +860,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+bbold on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd))
+))
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
@@ -858,74 +871,65 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1] <pictures/EulerAngles.jpg, id=16, 570.13pt x 314.17375pt>
+[1] <pictures/EulerAngles.jpg, id=15, 570.13pt x 314.17375pt>
 File: pictures/EulerAngles.jpg Graphic file (type jpg)
 
 <use pictures/EulerAngles.jpg>
-Package pdftex.def Info: pictures/EulerAngles.jpg used on input line 105.
-(pdftex.def)             Requested size: 250.24199pt x 137.8965pt.
- [2]
+Package pdftex.def Info: pictures/EulerAngles.jpg used on input line 115.
+(pdftex.def)             Requested size: 350.33727pt x 193.0551pt.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 143.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [2]
 <pictures/AngularVelocities.jpg, id=27, 448.67625pt x 389.455pt>
 File: pictures/AngularVelocities.jpg Graphic file (type jpg)
 
 <use pictures/AngularVelocities.jpg>
-Package pdftex.def Info: pictures/AngularVelocities.jpg used on input line 230.
+Package pdftex.def Info: pictures/AngularVelocities.jpg used on input line 240.
 
 (pdftex.def)             Requested size: 250.24199pt x 217.2138pt.
- [3 <./pictures/EulerAngles.jpg>]
-Overfull \hbox (5.45647pt too wide) in paragraph at lines 291--293
+ [3 <./pictures/EulerAngles.jpg>] [4 <./pictures/AngularVelocities.jpg>]
+Overfull \hbox (5.45647pt too wide) in paragraph at lines 303--305
 []\T2A/cmr/m/n/12 Рассмотрим по-след-нее сла-га-е-мое как сме-шан-ное про-из-ве
 -де-ние и при-ме-ним пра-ви-ло Лагран-
  []
 
-[4 <./pictures/AngularVelocities.jpg>]
-Overfull \hbox (30.74907pt too wide) in paragraph at lines 339--340
-\T2A/cmr/m/it/12 опре-де-ля-е-мое про-из-во-дя-щей функ-ци-ей $\OML/cmm/m/it/12
- Y\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 )$\T2A/cmr/m/it/12 , 
-гес-си-ан ко-то-рой так-же от-ли-чен от 0 ($[][][][] \OMS/cmsy/m/n/12 6\OT1/cmr
-/m/n/12 =
- []
-
-
-Overfull \hbox (25.16849pt too wide) in paragraph at lines 339--340
-\OT1/cmr/m/n/12 0$\T2A/cmr/m/it/12 ). Про-из-во-дя-щая функ-ция $\OML/cmm/m/it/
-12 Y\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 )$ \T2A/cmr/m/it/12
- опре-де-ля-ет-ся сле-ду-ю-щим об-ра-зом: $\OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 ([
-]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 ) = [] \OMS/cmsy/m/n/12 ^^A [] ^^@ \OML/c
-mm/m/it/12 X\OT1/cmr/m/n/12 ([]([]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 )\OML/cm
-m/m/it/12 ; []\OT1/cmr/m/n/12 )$\T2A/cmr/m/it/12 ,
- []
-
-[5] (./main.aux) ) 
+LaTeX Font Info:    Try loading font information for U+bbm on input line 344.
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [5] [6] [7]
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4864 strings out of 493029
- 60567 string characters out of 6136234
- 143247 words of memory out of 5000000
- 8280 multiletter control sequences out of 15000+600000
- 17822 words of font info for 50 fonts, out of 8000000 for 9000
+ 5201 strings out of 493029
+ 64777 string characters out of 6136234
+ 146954 words of memory out of 5000000
+ 8603 multiletter control sequences out of 15000+600000
+ 17850 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,16n,43p,1056b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<
-/usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfti1200.pfb>
-Output written on main.pdf (6 pages, 309107 bytes).
+ 38i,18n,43p,883b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </ho
+me/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfrm1440.pfb>
+Output written on main.pdf (8 pages, 284149 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
