@@ -9,11 +9,16 @@
 \newcommand{\bbb}{\mathbb{b}}
 \newcommand{\bbI}{\mathbb{I}}
 
+% shifting commands
 \newcommand{\vlevo}{\hspace*{-0.63cm}}
 \newcommand{\vverh}{\vspace*{-0.1cm}}
 
+% round brackets
 \newcommand{\lb}{\left(}
 \newcommand{\rb}{\right)}
+
+% primes
+\newcommand{\dpr}{\prime \prime}
 
 \begin{document}
 
@@ -95,9 +100,141 @@ T = \frac{1}{2} M \dot{r}^2 + \frac{1}{2} \sum_{i=1}^{n} m_i( \dot{r}_i^\prime)^
 
 Переход от лабораторной системы отсчета к подвижной системе может быть осуществлен при помощи трех последовательных поворотов на углы Эйлера $\varphi$, $\theta$ и $\psi$. 
 
-КАРТИНКА ИЗ ГОЛДСТЕЙНА ИЛИ ЛАНДАУ
+\begin{figure}
+  \centering
+	\includegraphics[width=0.5\textwidth]{pictures/EulerAngles.jpg}
+	\caption{Углы Эйлера}
+	\label{fig:EulerAngles}
+\end{figure}
 
-Вектор угловой скорости подвижной системы отсчета 
+Первое вращение происходит вокруг оси $z$ на угол $\varphi$. Оно переводит лабораторную систему $x, y, z$ в систему $x^\prime$, $y^\prime$, $z^\prime$. Угол $\varphi$ называется углом прецессии.
+\begin{gather}
+\begin{pmatrix}
+x^\prime \\
+y^\prime \\
+z^\prime
+\end{pmatrix} = 
+\begin{pmatrix}
+\cos \varphi & \sin \varphi & 0 \\
+- sin \varphi & \cos \varphi & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} =
+S_\varphi
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} \notag
+\end{gather}
+
+Оси  $x^\prime$, $y^\prime$ лежат в плоскости $x$, $y$. Затем происходит поворот вокруг оси $x^\prime$ на угол $\theta$, переводящий систему $x^\prime$, $y^\prime$, $z^\prime$ в систему $x^{\dpr}$, $y^{\dpr}$, $z^{\dpr}$. Ось $x^{\dpr}$ совпадает с осью $x^{\prime}$. Ось этого поворота называется линией узлов. Угол $\theta$ называется углом нутации.
+
+\begin{gather}
+\begin{pmatrix}
+x^{\dpr} \\
+y^{\dpr} \\
+z^{\dpr} 
+\end{pmatrix} = 
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & \cos \theta & \sin \theta \\
+0 & - sin \theta & \cos \theta
+\end{pmatrix}
+\begin{pmatrix}
+x^\prime
+y^\prime
+z^\prime
+\end{pmatrix} = 
+S_\theta
+\begin{pmatrix}
+x^\prime \\
+y^\prime \\
+z^\prime
+\end{pmatrix} \notag
+\end{gather}   
+
+И наконец, вращение вокруг оси $z^{\dpr}$ на угол $\psi$ переводит систему $x^{\dpr}$, $y^{\dpr}$, $z^{\dpr}$ в систему $x$, $y$, $z$. Угол $\psi$ называется углом собственного вращения.
+
+\begin{gather}
+\begin{pmatrix}
+X \\
+Y \\
+Z
+\end{pmatrix} =
+\begin{pmatrix}
+\cos \psi & \sin \psi & 0 \\
+- \sin \psi & \cos \psi & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x^{\dpr} \\
+y^{\dpr} \\
+z^{\dpr}
+\end{pmatrix} = 
+S_\psi 
+\begin{pmatrix}
+x^{\dpr} \\
+y^{\dpr} \\
+z^{\dpr}
+\end{pmatrix} \notag
+\end{gather}
+
+Суммарное вращение представляет собой последовательное применение описанных поворотов и имеет следующую матрицу: 
+\begin{gather}
+\begin{pmatrix}
+X \\
+Y \\
+Z
+\end{pmatrix} = 
+S 
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} \notag \\
+S = S_\psi S_\theta S_\varphi = 
+\begin{pmatrix}
+\cos \psi \cos \varphi - \cos \theta \sin \varphi \sin \psi & \cos \psi \sin \varphi + \cos \theta \cos \varphi \sin \psi & \sin \theta \sin \psi \\
+- \sin \psi \cos \varphi - \cos \theta \sin \varphi \cos \psi & - \sin \psi \sin \varphi + \cos \theta \cos \varphi \cos \psi & \sin \theta \cos \psi \\
+\sin \psi \sin \theta & - \cos \varphi \sin \theta & \cos \theta 
+\end{pmatrix} \notag
+\end{gather}
+
+Проектируя вектор угловой скорости $\Omega$ на базис, образованный Эйлеровыми угловыми скоростями $\dot{\varphi}$, $\dot{\theta}$, $\dot{\psi}$, получаем соотношение, известное как кинематическое уравнение Эйлера:
+
+\begin{gather}
+\begin{pmatrix}
+\Omega_X \\
+\Omega_Y \\
+\Omega_Z
+\end{pmatrix} =
+\begin{pmatrix}
+\sin \theta \sin \psi & \cos \psi & 0 \\
+\sin \theta \cos \psi & - \sin \psi & 0 \\
+\cos \theta & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+\dot{\varphi} \\
+\dot{\theta} \\
+\dot{\psi}
+\end{pmatrix} \notag
+\end{gather}
+
+\begin{figure}
+  \centering
+	\includegraphics[width=0.5\textwidth]{pictures/AngularVelocities.jpg}
+	\caption{Угловые скорости}
+	\label{fig:AngularVelocities}
+\end{figure}
+
+ПОПРАВИТЬ НА КАРТИНКЕ МАЛЕНЬКИЕ БУКВЫ НА БОЛЬШИЕ
+
+Я НЕ ЗНАЮ КАК СВЯЗАТЬ НАПИСАННОЕ НИЖЕ С ТЕМ, ЧТО ДОПИСАНО СЕЙЧАС
 
 Перейдём в подвижную систему координат при помощи ортогональной матрицы $\mathbb{S}$:
 \vspace*{-0.1cm}
