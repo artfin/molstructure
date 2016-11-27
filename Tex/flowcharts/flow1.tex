@@ -1,0 +1,37 @@
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
+   1 with {\arrow[semithick]{open triangle 60}}},
+   double distance=1.4pt, shorten >= 5.5pt,
+   preaction = {decorate},
+   postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+
+\tikzstyle{lagrange} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 7cm, draw = black, fill=red!30]
+
+\tikzstyle{hamilton} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 7cm, draw = black, fill=yellow!30]
+
+\tikzstyle{equations} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 5cm, draw = black, fill=green!30]
+    
+\begin{tikzpicture}[node distance = 2cm, auto]
+
+\node (lag1) [lagrange] {$\mathcal{L} = \mathcal{L}(\vec{q}, \dot{\vec{q}})$};
+
+\node (ham1) [hamilton, right = 2 cm of lag1] {$\mathcal{H} = \mathcal{H}(\vec{q}, \vec{p})$};
+
+\node (eq1) [equations, below = 0.5 cm of lag1] {$\vec{p} = \frac{\partial \mathcal{L}}{\partial \dot{\vec{q}}}$};
+
+\node (eq2) [equations, below = 0.5 cm of ham1] {$\dot{\vec{q}} = \frac{\partial \mathcal{L}}{\partial \vec{p}}$};
+
+\node (lag2) [lagrange, below = 2 cm of lag1] {$\mathcal{L} = \mathcal{L}(\vec{\Omega})$};
+
+\node (ham2) [hamilton, below = 2 cm of ham1] {$\mathcal{H} = \mathcal{H} (\vec{J})$};
+
+\node (eq3) [equations, below = 0.5 cm of lag2] {$\vec{J} = \frac{\partial \mathcal{L}}{\partial \vec{\Omega}}$};
+
+\node (eq4) [equations, below = 0.5 cm of ham2] {$\vec{\Omega} = \frac{\partial \mathcal{H}}{\partial \vec{J}}$};
+
+\draw [vecArrow] (lag1) -- (ham1);
+
+\draw [vecArrow] (lag2) -- (ham2);
+
+\end{tikzpicture}
+
