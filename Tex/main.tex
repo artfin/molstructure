@@ -371,9 +371,39 @@ T = \frac{1}{2}
 \input{flowcharts/flow1.tex}
 
 \newpage
-\begin{appendices}
-\section{Про угловой момент...}
-про угловой момент
-\end{appendices}
+
+% modifying font of the appendix title
+\appendix
+\titleformat{\chapter}[display]
+  {\normalfont\large\bfseries}% <- font for label "Appendix A", default \huge
+  {\chaptertitlename\ \thechapter}
+  {20pt}
+  {\large}
+
+\section{Про угловой момент..}
+  
+Покажем истинность следующего результата:
+\begin{gather}
+\vec{J} = \bbA \dot{\vec{q}} + \bbI \, \vec{\Omega} \notag
+\end{gather}
+
+Рассмотрим угловой момент в лабораторной системе координат.
+
+\begin{gather}
+\vec{j} = \sum_{i=1}^{n} m_i \left[ \vec{r}_i \times \dot{\vec{r}}_i \right] \notag \\
+\dot{\vec{r}}_i = \bbS^{-1} \lb \left[ \vec{\Omega} \times \vec{R}_i \right] + \dot{\vec{R}}_i \rb \notag \\
+\vec{j} = \sum_{i=1}^{n} m_i \left[ \vec{r}_i \times \bbS^{-1} \lb \left[ \vec{\Omega} \times \vec{R}_i \right] + \dot{\vec{R}}_i \rb \right] =
+\bbS^{-1} \sum_i m_i \left[ \vec{R}_i \times \dot{\vec{R}}_i \right] + \bbS^{-1} \sum_i m_i \left[ \vec{R}_i \times \left[ \vec{\Omega} \times \vec{R}_i \right] \right] \notag
+\end{gather}
+
+Внимательно посмотрим на слагаемое, содержащее двойное векторное произведение:
+\begin{gather}
+\sum_i m_i \left[ \vec{R}_i \times \left[ \vec{\Omega} \times \vec{R}_i \right] \right] = \sum_i \lb R_i^2 \vec{\Omega} - \lb \vec{R}_i , \vec{\Omega} \rb \vec{R}_i \rb = \bbI \vec{\Omega} \notag
+\end{gather}
+
+Используем результат, умножаем обе части на $\bbS$, учтем, что $\vec{J} = \bbS \vec{j}$: 
+\begin{gather}
+\vec{J} = \bbA \dot{\vec{q}} + \bbI \, \vec{\Omega} \notag 
+\end{gather}
 
 \end{document}
