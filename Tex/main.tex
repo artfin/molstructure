@@ -345,7 +345,7 @@ T = \frac{1}{2} \sum_{i=1}^{n} m_i \sum_{j=1}^{s} \frac{\partial \vec{R}_i}{\par
 Обозначая $a_{jk} = \sum_{i=1}^{n} m_i \frac{\partial \vec{R}_i}{\partial q_j} \frac{\partial \vec{R}_i}{\partial q_k}$, $A_{jk} = \sum_{i=1}^{n} m_i \left[ \vec{R}_i \times \frac{\partial \vec{R}_i}{\partial q_k} \right]_{\alpha}$ (здесь $\alpha = x,y,z$ соответствуют $j=1,2,3$), представим кинетическую энергию в виде:
 \vverh
 \begin{gather}
-T = \frac{1}{2} \dot{\vec{q}}^{\ \top} \bba \ \dot{\vec{q}} + \vec{\Omega}^\top \bbA \ \dot{\vec{q}} + \frac{1}{2} \vec{\Omega}^\top \bbI \ \vec{\Omega} \notag ,
+T = \frac{1}{2} \dot{\vec{q}}^{\, \top} \bba \ \dot{\vec{q}} + \vec{\Omega}^\top \bbA \ \dot{\vec{q}} + \frac{1}{2} \vec{\Omega}^\top \bbI \ \vec{\Omega} \notag ,
 \end{gather}
 
 \vlevo где $\bba = (a_{jk})_{j=1 \dots s, \ k=1 \dots s}$, $\bbA = (A_{jk})_{j=1 \dots 3, \ k=1 \dots s}$.
@@ -372,19 +372,6 @@ T = \frac{1}{2}
 \bbA^\top & \bba
 \end{bmatrix} \notag
 \end{gather}  
-
-\tikzstyle{arrow} = [thick, ->, >=stealth]
-\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
-   1 with {\arrow[semithick]{open triangle 60}}},
-   double distance=1.4pt, shorten >= 5.5pt,
-   preaction = {decorate},
-   postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
-
-\tikzstyle{lagrange} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 3cm, draw = black, fill=red!30]
-
-\tikzstyle{hamilton} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 3cm, draw = black, fill=yellow!30]
-
-\tikzstyle{equations} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 3cm, draw = black, fill=green!30]
 
 \begin{minipage}[c]{0.55\linewidth}
 \begin{tikzpicture}[framed]
