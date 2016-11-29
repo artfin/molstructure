@@ -1,9 +1,3 @@
-\newcommand{\bbU}{\mathds{U}}
-\newcommand{\bbV}{\mathds{V}}
-\newcommand{\bbO}{\mathds{O}}
-
-\newcommand\numberthis{\refstepcounter{equation}\tag{\theequation}} 
-
 Рассмотрим блочную матрицу $\bbU = \begin{bmatrix} \bbU_{11} & \bbU_{12} \\ \bbU_{21} & \bbU_{22} \end{bmatrix}$, т.ч. 
 $\bbU_{11} = \lb \bbU_{11}^{jk} \rb_{\substack{j = 1 \dots m \\ k = 1 \dots m}}$,
 $\bbU_{22} = \lb \bbU_{22}^{jk} \rb_{\substack{j = 1 \dots n \\ k = 1 \dots n}}$ -- обратимые матрицы; 
@@ -18,11 +12,67 @@ $\bbU_{21} = \lb \bbU_{21}^{jk} \rb_{\substack{j = 1 \dots n \\ k = 1 \dots m}}$
 \end{bmatrix} \label{eq1}
 \end{gather} 
 
+$\bbE_{m \times m}$ -- единичная матрица, $\dim \bbE = m \times m$ \\
+$\bbO_{m \times n}$ -- матрица, заполненная нулями, $\dim \bbO = m \times n$. \\
+
 Соотношение  \eqref{eq1} эквивалентно следующей системе:
 \vspace*{-0.25cm}
 \begin{align*}
-\bbU_{11} \bbV_{11} &+ \bbU_{12} \bbV_{21} = \bbE_{m \times m} \numberthis \\
-\bbU_{11} \bbV_{12} &+ \bbU_{12} \bbV_{22} = \bbO_{m \times n} \numberthis \\
-\bbU_{21} \bbV_{11} &+ \bbU_{22} \bbV_{21} = \bbO_{n \times m} \numberthis \\
-\bbU_{21} \bbV_{12} &+ \bbU_{22} \bbV_{22} = \bbE_{n \times n} \numberthis
+\bbU_{11} \bbV_{11} &+ \bbU_{12} \bbV_{21} = \bbE_{m \times m} \numberthis \label{eq2} \\
+\bbU_{11} \bbV_{12} &+ \bbU_{12} \bbV_{22} = \bbO_{m \times n} \numberthis \label{eq3} \\
+\bbU_{21} \bbV_{11} &+ \bbU_{22} \bbV_{21} = \bbO_{n \times m} \numberthis \label{eq4} \\
+\bbU_{21} \bbV_{12} &+ \bbU_{22} \bbV_{22} = \bbE_{n \times n} \numberthis \label{eq5}
 \end{align*}
+
+Выразим из уравнений (\ref{eq3}) и (\ref{eq4}) $\bbV_{12}$ и $\bbV_{21}$ соответственно:
+\begin{gather}
+\bbV_{12} = - \bbU_{11}^{-1} \bbU_{12} \bbV_{22} \notag \\
+\bbV_{21} = - \bbU_{22}^{-1} \bbU_{21} \bbV_{11} \notag
+\end{gather}  
+
+Подставляя полученные выражения в уравнения (\ref{eq2}) и (\ref{eq5}) и выражая $\bbV_{11}$ и $\bbV_{22}$ получаем:
+\begin{gather}
+\bbV_{11} = \lb \bbU_{11} - \bbU_{12} \bbU_{22}^{-1} \bbU_{21} \rb^{-1} \notag \\
+\bbV_{22} = \lb \bbU_{22} - \bbU_{21} \bbU_{11}^{-1} \bbU_{12} \rb^{-1} \notag
+\end{gather}
+
+Приходим к следующему виду матрицы $\bbV$:
+\begin{gather}
+\bbV = \begin{bmatrix}
+\lb \bbU_{11} - \bbU_{12} \bbU_{22}^{-1} \bbU_{21} \rb^{-1} & -\bbU_{11}^{-1} \bbU_{12} \lb \bbU_{22} - \bbU_{21} \bbU_{11}^{-1} \bbU_{12} \rb^{-1} \\
+-\bbU_{22}^{-1} \bbU_{21} \lb \bbU_{11} - \bbU_{12} \bbU_{22}^{-1} \bbU_{21} \rb^{-1} &  \lb \bbU_{22} - \bbU_{21} \bbU_{11}^{-1} \bbU_{12} \rb^{-1} 
+\end{bmatrix} \notag
+\end{gather}
+
+Хитрый прием. Мы нашли выражение для обратной (справа) матрицы, теперь найдем выражение для обратной (слева) матрицы $\bbQ = \begin{bmatrix} \bbQ_{11} & \bbQ_{12} \\ \bbQ_{21} & \bbQ_{22} \end{bmatrix}$:
+\begin{gather}
+\bbQ \bbU = \begin{bmatrix}
+\bbE_{m \times m} & \bbO_{m \times n} \\
+\bbO_{n \times m} & \bbE_{n \times n} 
+\end{bmatrix} \notag 
+\end{gather} 
+
+Проводя аналогичные вычисления приходим к следующему виду матрицы $\bbQ$:
+\begin{gather}
+\bbQ = \begin{bmatrix}
+\lb \bbU_{11} - \bbU_{12} \bbU_{22}^{-1} \bbU_{21} \rb^{-1} & - \lb \bbU_{11} - \bbU_{12} \bbU_{22}^{-1} \bbU_{21} \rb^{-1} \bbU_{12} \bbU_{22}^{-1} \\
+- \lb \bbU_{22} - \bbU_{21} \bbU_{11}^{-1} \bbU_{12} \rb^{-1} \bbU_{21} \bbU_{11}^{-1} & \lb \bbU_{22} - \bbU_{21} \bbU_{11}^{-1} \bbU_{12} \rb^{-1} 
+\end{bmatrix} \notag
+\end{gather}
+
+Так как обратная слева матрица совпадает с обратной справа матрицей, то получаем следующие два тождества:
+\begin{gather}
+\left\{
+\begin{aligned}
+\bbV_{12} &= \bbQ_{12} \\
+\bbV_{21} &= \bbQ_{21}
+\end{aligned}
+\right. 
+\quad \implies \quad
+\left\{
+\begin{aligned}
+\bbU_{11}^{-1} \bbU_{12} \lb \bbU_{22} - \bbU_{21} \bbU_{11}^{-1} \bbU_{12} \rb^{-1} = \lb \bbU_{11} - \bbU_{12} \bbU_{22}^{-1} \bbU_{21} \rb^{-1} \bbU_{12} \bbU_{22}^{-1} \\
+\bbU_{22}^{-1} \bbU_{21} \lb \bbU_{11} - \bbU_{12} \bbU_{22}^{-1} \bbU_{21} \rb^{-1} = \lb \bbU_{22} - \bbU_{21} \bbU_{11}^{-1} \bbU_{12} \rb^{-1} \bbU_{21} \bbU_{11}^{-1}
+\end{aligned}
+\right. \notag
+\end{gather}

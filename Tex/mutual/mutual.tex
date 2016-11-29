@@ -1,77 +1,3 @@
-\documentclass[12pt]{article}
-
-\input{Preamble.tex}
-
-% theorem environment
-\newtheorem{mytheorem}{Теорема}[]
-
-% blackboard symbols
-% using dsfont and bbm packages 
-\newcommand{\bbA}{\mathds{A}}
-\newcommand{\bbI}{\mathds{I}}
-\newcommand{\bbB}{\mathds{B}}
-\newcommand{\bba}{\mathbbm{a}}
-\newcommand{\bbb}{\mathbbm{b}}
-\newcommand{\bbS}{\mathds{S}}
-\newcommand{\bbE}{\mathds{E}}
-\newcommand{\bbG}{\mathds{G}}
-
-% shifting commands
-\newcommand{\vlevo}{\hspace*{-0.63cm}}
-\newcommand{\vverh}{\vspace*{-0.1cm}}
-\newcommand{\dn}{\! \!} % "double negative"
-
-% round brackets
-\newcommand{\lb}{\left(}
-\newcommand{\rb}{\right)}
-
-% primes
-\newcommand{\dpr}{\prime \prime}
-
-% SKIPS
-% "\," -- very small skip
-
-\usepackage{microtype}
-\usepackage{framed}
-\usetikzlibrary{decorations.pathmorphing,calc,backgrounds}
-\usepackage{lipsum}
-
-\begin{document}
-
-\begin{titlepage}
-\centering
-\textbf{\large Московский государственный университет имени М.В.\,Ломоносова\\
-\vspace*{0.1cm} Химический факультет\\
-\vspace*{0.1cm}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-\vspace*{0.1cm}
- Кафедра физической химии\\
-\vspace*{0.1cm} Лаборатория строения и квантовой механики молекул \\}
-\vspace*{2cm}
-
-\begin{center}
-\includegraphics[width=0.3\textwidth]{pictures/logo.jpg}
-\end{center}
-
-\vspace*{2cm}
-\Large \textbf{Исследование бифуркации в трехатомных гидридах методом классических траекторий.}
-\vspace*{2cm}
-
-\begin{flushright}
-\large Курсовая работа студента 411 группы\\
-Финенко А.А.\\
-\vspace{1cm}
-Научный руководитель:\\
-к.х.н., Петров С.В.
-\end{flushright}
-\vfill
-\large\textbf{Москва\\ 2016}
-\end{titlepage}
-
-\tableofcontents
-
-\newpage
-
 \section{Введение}
 
 \section{Схема получения полного колебательно-вращательного гамильтониана}
@@ -119,7 +45,7 @@ T = \frac{1}{2} M \dot{r}^2 + \frac{1}{2} \sum_{i=1}^{n} m_i( \dot{r}_i^\prime)^
 
 \begin{figure}
   \centering
-	\includegraphics[width=0.7\textwidth]{pictures/EulerAngles.jpg}
+	\includegraphics[width=0.7\textwidth]{../pictures/EulerAngles.jpg}
 	\caption{Углы Эйлера}
 	\label{fig:EulerAngles}
 \end{figure}
@@ -244,7 +170,7 @@ z
 
 \begin{figure}
   \centering
-	\includegraphics[width=0.5\textwidth]{pictures/AngularVelocities.jpg}
+	\includegraphics[width=0.5\textwidth]{../pictures/AngularVelocities.jpg}
 	\caption{Угловые скорости}
 	\label{fig:AngularVelocities}
 \end{figure}
@@ -352,6 +278,8 @@ T = \frac{1}{2} \dot{\vec{q}}^{\, \top} \bba \ \dot{\vec{q}} + \vec{\Omega}^\top
 
 \vlevo где $\bba = (a_{jk})_{j=1 \dots s, \ k=1 \dots s}$, $\bbA = (A_{jk})_{j=1 \dots 3, \ k=1 \dots s}$.
 
+Несложно заметить, что матрица $\bba$ является симметричной: $\bba = \bba^{\top}$.
+
 \subsection{Применение теоремы Донкина}
 Перепишем выражение для кинетической энергии в матричном виде для того, чтобы перейти к гамильтоновым переменным.
 \begin{gather}
@@ -378,7 +306,7 @@ T = \frac{1}{2}
 \begin{minipage}[c]{0.55\linewidth}
 \begin{tikzpicture}[framed]
 
-  \input{flowcharts/flow1.tex}
+  \input{../flowcharts/flow1.tex}
  
   \begin{scope}[on background layer]
     \node [fill=black!30,fit= (lag1) (lag2) (ham1) (ham2) (eq1) (eq2) (eq3) (eq4)] {};
@@ -387,7 +315,7 @@ T = \frac{1}{2}
 \end{tikzpicture}
 \end{minipage}
 \begin{minipage}[c]{0.4\linewidth}
-Текст, поясняющий, что угловая скорость и угловой момент являются такими же сопряженными переменными как $\dot{\vec{q}}$ и $\vec{p}$.
+Текст, поясняющий, что угловая скорость и угловой момент являются такими же сопряженными переменными как $\vec{q}$ и $\vec{p}$.
 \end{minipage} \\
 
 Сейчас мы работаем исключительно с выражением для кинетической энергии, так что обозначим имеющееся у нас выражение $T_\mathcal{L}$ (в лагранжевом представлении), а искомое представление -- $T_\mathcal{H}$.
@@ -420,21 +348,61 @@ T = \frac{1}{2}
 \end{bmatrix} \notag
 \end{gather}
 
-Инвертирование блочной матрицы $\bbB$ легче всего осуществить с применением формул Фробениуса. (Подробнее в аппендиксе B).
+Инвертирование блочной матрицы $\bbB$ легче всего осуществить с применением формул Фробениуса. (Аппендикс \ref{appendix:frobenius}).
 Обозначим $\bbG = \bbB^{-1} = \begin{bmatrix} G_{11} & G_{12} \\ G_{21} & G_{22}
 \end{bmatrix}$, ее элементы имеют следующие выражения:
 
 \begin{gather}
 \begin{aligned}
-G_{11} &= \bba^{-1} + \bba^{-1} \bbA^{\dn \top} \bbI_{mod.}^{-1} \bbA \bba^{-1} \\
-G_{12} &= - \bba^{-1} \bbA^{\dn \top} \bbI_{mod.}^{-1} \\
-G_{21} &= - \bbI_{mod.}^{-1} \bbA \bba^{-1} \\
-G_{22} &= \bbI_{mod.}^{-1},
+\bbG_{11} &=  \lb \bbI - \bbA \bba^{-1} \bbA^{\dn \top} \rb^{-1} \\
+\bbG_{12} &= - \bbI^{-1} \bbA \bbG_{22} = - \bbG_{11} \bbA \bba^{-1}\\
+\bbG_{21} &= - \bba^{-1} \bbA^{\dn \top} \bbG_{11} = \bbG_{22} \bbA^{\dn \top} \bbI^{-1} \\
+\bbG_{22} &= \lb \bba - \bbA^{\dn \top} \bbI^{-1} \bbA \rb^{-1}.
 \end{aligned}
 \notag
 \end{gather}
 
-\vlevo где было введено $\bbI_{mod.} = \bbI - \bbA \bba^{-1} \bbA^{\dn \top}$.
+Легко заметить, что $\bbG_{12} = \bbG_{21}^{\top}$. Используем этот факт в ходе стандартной процедуры перехода к гамильтоновому представлению кинетической энергии.
+\begin{gather}
+\begin{bmatrix}
+\vec{\Omega} \ \\
+\dot{\vec{q}} 
+\end{bmatrix}
+= \bbG
+\begin{bmatrix}
+\vec{J} \ \\
+\vec{p}
+\end{bmatrix}
+\quad \implies \quad
+\begin{bmatrix}
+\vec{\Omega}^{\top} \ \dot{\vec{q}}^{\, \top}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+\vec{J}^{\, \top} \ \vec{p}^{\, \top}
+\end{bmatrix}
+\bbG \notag \\
+T_\mathcal{H} = 
+\begin{bmatrix}
+\vec{\Omega}^{\top} \ \dot{\vec{q}}^{\, \top}
+\end{bmatrix}
+\begin{bmatrix}
+\vec{J} \ \\
+\vec{p}
+\end{bmatrix} 
+- T_\mathcal{L} = \frac{1}{2} 
+\begin{bmatrix}
+\vec{J}^{\, \top} \ \vec{p}^{\, \top}
+\end{bmatrix} 
+\bbG
+\begin{bmatrix}
+\vec{J} \ \\
+\vec{p}
+\end{bmatrix} = 
+\frac{1}{2} \vec{J}^{\, \top} \bbG_{11} \vec{J} + \frac{1}{2} \, \vec{p}^{\, \top} \bbG_{22} \, \vec{p} + \vec{J}^{\, \top} \bbG_{12} \, \vec{p} \notag
+\end{gather}
+
+%Вводим модифицированный тензор инерции: $\bbI_{mod.} = \bbI - \bbA \bba^{-1} \bbA^{\dn \top}$.
 
 \newpage
 
@@ -447,9 +415,8 @@ G_{22} &= \bbI_{mod.}^{-1},
   {\large}
 
 \section{Про угловой момент..}
-\input{appendices/appendix1.tex}
+\input{../appendices/appendix1.tex}
 
 \section{Формулы Фробениуса}
-\input{appendices/appendix2.tex}
-
-\end{document}
+\label{appendix:frobenius}
+\input{../appendices/appendix2.tex}

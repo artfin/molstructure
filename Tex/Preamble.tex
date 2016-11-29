@@ -36,10 +36,14 @@
 \usepackage[toc, page]{appendix}
 \usepackage{titlesec}
 
-%\usepackage[latin1]{inputenc}
+% tikz libraries
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
 \usetikzlibrary{fit}
+\usepackage{microtype}
+\usepackage{framed}
+\usetikzlibrary{decorations.pathmorphing,calc,backgrounds}
+
 
 % cures a bug inside titlesec package that overrides section numbering
 \usepackage{etoolbox}
@@ -49,3 +53,37 @@
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 \makeatother
 
+% COMMANDS AND ENVIRONMENTS
+
+% theorem environment
+\newtheorem{mytheorem}{Теорема}[]
+
+% blackboard symbols
+% using dsfont and bbm packages 
+\newcommand{\bbA}{\mathds{A}}
+\newcommand{\bbI}{\mathds{I}}
+\newcommand{\bbB}{\mathds{B}}
+\newcommand{\bba}{\mathbbm{a}}
+\newcommand{\bbb}{\mathbbm{b}}
+\newcommand{\bbS}{\mathds{S}}
+\newcommand{\bbE}{\mathds{E}}
+\newcommand{\bbG}{\mathds{G}}
+\newcommand{\bbU}{\mathds{U}}
+\newcommand{\bbV}{\mathds{V}}
+\newcommand{\bbO}{\mathds{O}}
+\newcommand{\bbQ}{\mathds{Q}}
+
+% enumerate equations inside align* environment
+\newcommand\numberthis{\refstepcounter{equation}\tag{\theequation}} 
+
+% shifting commands
+\newcommand{\vlevo}{\hspace*{-0.63cm}}
+\newcommand{\vverh}{\vspace*{-0.1cm}}
+\newcommand{\dn}{\! \!} % "double negative"
+
+% round brackets
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+
+% primes
+\newcommand{\dpr}{\prime \prime}
