@@ -14,10 +14,12 @@
 \newcommand{\bbb}{\mathbbm{b}}
 \newcommand{\bbS}{\mathds{S}}
 \newcommand{\bbE}{\mathds{E}}
+\newcommand{\bbG}{\mathds{G}}
 
 % shifting commands
 \newcommand{\vlevo}{\hspace*{-0.63cm}}
 \newcommand{\vverh}{\vspace*{-0.1cm}}
+\newcommand{\dn}{\! \!} % "double negative"
 
 % round brackets
 \newcommand{\lb}{\left(}
@@ -369,39 +371,70 @@ T = \frac{1}{2}
 \bbB = 
 \begin{bmatrix}
 \bbI & \bbA \\
-\bbA^\top & \bba
+\bbA^{\dn \top} & \bba
 \end{bmatrix} \notag
 \end{gather}  
 
 \begin{minipage}[c]{0.55\linewidth}
 \begin{tikzpicture}[framed]
-%\node (lag1) [lagrange] {$\mathcal{L} = \mathcal{L}(\vec{q}, \dot{\vec{q}})$};
-%
-%\node (ham1) [hamilton, right = 2 cm of lag1] {$\mathcal{H} = \mathcal{H}(\vec{q}, \vec{p})$};
-%
-%\node (eq1) [equations, below = 0.5 cm of lag1] {$\vec{p} = \frac{\partial \mathcal{L}}{\partial \dot{\vec{q}}}$};
-%
-%\node (eq2) [equations, below = 0.5 cm of ham1] {$\dot{\vec{q}} = \frac{\partial \mathcal{L}}{\partial \vec{p}}$};
-%
-%\node (lag2) [lagrange, below = 2 cm of lag1] {$\mathcal{L} = \mathcal{L}(\vec{\Omega})$};
-%
-%\node (ham2) [hamilton, below = 2 cm of ham1] {$\mathcal{H} = \mathcal{H} (\vec{J})$};
-%
-%\node (eq3) [equations, below = 0.5 cm of lag2] {$\vec{J} = \frac{\partial \mathcal{L}}{\partial \vec{\Omega}}$};
-%
-%\node (eq4) [equations, below = 0.5 cm of ham2] {$\vec{\Omega} = \frac{\partial \mathcal{H}}{\partial \vec{J}}$};
-%
-%\draw [vecArrow] (lag1) -- (ham1);
-%
-%\draw [vecArrow] (lag2) -- (ham2);
 
-\input{flowcharts/flow1.tex}
+  \input{flowcharts/flow1.tex}
+ 
+  \begin{scope}[on background layer]
+    \node [fill=black!30,fit= (lag1) (lag2) (ham1) (ham2) (eq1) (eq2) (eq3) (eq4)] {};
+  \end{scope}
 
 \end{tikzpicture}
 \end{minipage}
 \begin{minipage}[c]{0.4\linewidth}
 Текст, поясняющий, что угловая скорость и угловой момент являются такими же сопряженными переменными как $\dot{\vec{q}}$ и $\vec{p}$.
-\end{minipage}
+\end{minipage} \\
+
+Сейчас мы работаем исключительно с выражением для кинетической энергии, так что обозначим имеющееся у нас выражение $T_\mathcal{L}$ (в лагранжевом представлении), а искомое представление -- $T_\mathcal{H}$.
+
+\begin{gather}
+\vec{p} = \frac{\partial T_\mathcal{L}}{\partial \dot{\vec{q}}} = \bbA^{\dn \top} \vec{\Omega} + \bba \dot{\vec{q}} \notag \\
+\vec{J} = \frac{\partial T_\mathcal{L}}{\partial \vec{\Omega}} = \bbI \, \vec{\Omega} + \bbA \dot{\vec{q}} \notag
+\end{gather}
+
+Заметим, что блочный вектор $\begin{bmatrix} \vec{J} \\ \vec{p} \end{bmatrix}$ связан с вектором $\begin{bmatrix} \vec{\Omega} \\ \dot{\vec{q}} \end{bmatrix}$ линейным преобразованием, причем матрица этого линейного преобразования есть $\bbB$:
+\begin{gather}
+\begin{bmatrix}
+\vec{J} \\
+\vec{p}
+\end{bmatrix}
+= \bbB
+\begin{bmatrix}
+\vec{\Omega} \\
+\dot{\vec{q}}
+\end{bmatrix}
+\quad \implies \quad 
+\begin{bmatrix}
+\vec{\Omega} \\
+\dot{\vec{q}}
+\end{bmatrix}
+= \bbB^{-1}
+\begin{bmatrix}
+\vec{J} \\
+\vec{p}
+\end{bmatrix} \notag
+\end{gather}
+
+Инвертирование блочной матрицы $\bbB$ легче всего осуществить с применением формул Фробениуса. (Подробнее в аппендиксе B).
+Обозначим $\bbG = \bbB^{-1} = \begin{bmatrix} G_{11} & G_{12} \\ G_{21} & G_{22}
+\end{bmatrix}$, ее элементы имеют следующие выражения:
+
+\begin{gather}
+\begin{aligned}
+G_{11} &= \bba^{-1} + \bba^{-1} \bbA^{\dn \top} \bbI_{mod.}^{-1} \bbA \bba^{-1} \\
+G_{12} &= - \bba^{-1} \bbA^{\dn \top} \bbI_{mod.}^{-1} \\
+G_{21} &= - \bbI_{mod.}^{-1} \bbA \bba^{-1} \\
+G_{22} &= \bbI_{mod.}^{-1},
+\end{aligned}
+\notag
+\end{gather}
+
+\vlevo где было введено $\bbI_{mod.} = \bbI - \bbA \bba^{-1} \bbA^{\dn \top}$.
 
 \newpage
 
@@ -414,29 +447,9 @@ T = \frac{1}{2}
   {\large}
 
 \section{Про угловой момент..}
-  
-Покажем истинность следующего результата:
-\begin{gather}
-\vec{J} = \bbA \dot{\vec{q}} + \bbI \, \vec{\Omega} \notag
-\end{gather}
+\input{appendices/appendix1.tex}
 
-Рассмотрим угловой момент в лабораторной системе координат.
-
-\begin{gather}
-\vec{j} = \sum_{i=1}^{n} m_i \left[ \vec{r}_i \times \dot{\vec{r}}_i \right] \notag \\
-\dot{\vec{r}}_i = \bbS^{-1} \lb \left[ \vec{\Omega} \times \vec{R}_i \right] + \dot{\vec{R}}_i \rb \notag \\
-\vec{j} = \sum_{i=1}^{n} m_i \left[ \vec{r}_i \times \bbS^{-1} \lb \left[ \vec{\Omega} \times \vec{R}_i \right] + \dot{\vec{R}}_i \rb \right] =
-\bbS^{-1} \sum_i m_i \left[ \vec{R}_i \times \dot{\vec{R}}_i \right] + \bbS^{-1} \sum_i m_i \left[ \vec{R}_i \times \left[ \vec{\Omega} \times \vec{R}_i \right] \right] \notag
-\end{gather}
-
-Внимательно посмотрим на слагаемое, содержащее двойное векторное произведение:
-\begin{gather}
-\sum_i m_i \left[ \vec{R}_i \times \left[ \vec{\Omega} \times \vec{R}_i \right] \right] = \sum_i \lb R_i^2 \vec{\Omega} - \lb \vec{R}_i , \vec{\Omega} \rb \vec{R}_i \rb = \bbI \vec{\Omega} \notag
-\end{gather}
-
-Используем результат, умножаем обе части на $\bbS$, учтем, что $\vec{J} = \bbS \vec{j}$: 
-\begin{gather}
-\vec{J} = \bbA \dot{\vec{q}} + \bbI \, \vec{\Omega} \notag 
-\end{gather}
+\section{Формулы Фробениуса}
+\input{appendices/appendix2.tex}
 
 \end{document}
