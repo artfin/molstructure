@@ -1,7 +1,9 @@
 \section{Введение}
 
-\section{Схема получения полного колебательно-вращательного гамильтониана}
-\subsection{Переход в систему отсчета, связанную с центром масс}
+
+\section{Метод анализа колебательно-вращательной динамики.}
+\subsection{Схема получения полного колебательно-вращательного гамильтониана}
+\subsubsection{Переход в систему отсчета, связанную с центром масс}
 
 \hspace{0.35cm} Рассмотрим систему $n$ материальных точек. Обозначим их массы через $m_i$, их радиус-векторы в лабораторной системе координат через $\vec{r}_i$, в подвижной системе координат -- через $\vec{R}_i$ ($i = 1 \dots n$). Разделим движение системы на движение центра масс и движение вокруг центра масс:
 \vspace*{-0.1cm}
@@ -39,7 +41,7 @@ T = \frac{1}{2} M \dot{r}^2 + \frac{1}{2} \sum_{i=1}^{n} m_i( \dot{r}_i^\prime)^
 
 Забудем про слагаемое, отвечающее центру масс; откинем штрихи, чтобы упростить запись.
 
-\subsection{Переход в подвижную систему отсчета}
+\subsubsection{Переход в подвижную систему отсчета}
 
 Переход от лабораторной системы отсчета к подвижной системе может быть осуществлен при помощи трех последовательных поворотов на углы Эйлера $\varphi$, $\theta$ и $\psi$. 
 
@@ -177,22 +179,22 @@ z
 
 ПОПРАВИТЬ НА КАРТИНКЕ МАЛЕНЬКИЕ БУКВЫ НА БОЛЬШИЕ
 
-Я НЕ ЗНАЮ КАК СВЯЗАТЬ НАПИСАННОЕ НИЖЕ С ТЕМ, ЧТО ДОПИСАНО СЕЙЧАС
+ЗДЕСЬ мы доказываем, что $\bbA \vec{x} = [ \vec{\omega} \times \vec{x} ]$. Этот факт мы многократно используем в дальнейшем. Так что этот кусок отнюдь не бессмысленен.
 
 Перейдём в подвижную систему координат при помощи ортогональной матрицы $\bbS$:
-\vspace*{-0.1cm}
+\vverh
 \begin{gather}
 \vec{r}_i = \bbS \vec{R}_i, \quad i = 1 \dots n. \notag
 \end{gather}
 
 Введем матрицу $\bbA$ следующим образом: $\bbA = \dot{\bbS} \bbS^{-1}$. Покажем, что она является кососимметрической матрицей; для этого продифференцируем единичную матрицу:
-\vspace*{-0.1cm}
+\vverh
 \begin{gather}
 \frac{d}{dt} \bbE = \frac{d}{dt} \left( \bbS \bbS^{-1}\right) = \dot{\bbS} \bbS^{-1} + \bbS \dot{\bbS}^{-1} = 0. \notag
 \end{gather}
 
 Заметим, что первое слагаемое и есть матрица $\bbA$, а второе -- транспонированная матрица $\bbA$ (т.к. $\bbS^\top = \bbS^{-1}$ в силу ортогональности). Следовательно,
-\vspace*{-0.1cm}
+\vverh
 \begin{gather}
 \bbA + \bbA^\top = 0, \notag
 \end{gather}
@@ -200,7 +202,7 @@ z
 \hspace*{-0.75cm} т.е. по определению матрица $\bbA$ является кососимметрической.
 
 Так как размерность пространства кососимметрических матриц равна 3, то существует естественный изоморфизм, позволяющий сопоставить каждой кососимметрической матрице единственный псевдовектор:
-\vspace*{-0.1cm}
+\vverh
 \begin{gather}
 \bbA = 
 \begin{pmatrix}
@@ -224,7 +226,7 @@ z
 \hspace*{-0.75cm} причем для любого вектора $\vec{x} \in \mathbf{R}^3$ имеем $\bbA \vec{x} = [ \vec{\omega} \times \vec{x} ]$, где $\vec{\omega}$ -- вектор угловой скорости в лабораторной системе координат.
 
 Получим выражение для квадратов скоростей рассматриваемых точек в лабораторной системе координат через координаты и скорости в подвижной системе координат:
-\vspace*{-0.1cm}
+\vverh
 \begin{gather}
 \dot{\vec{r}}_i = \bbS \dot{\vec{R}}_i + \dot{\bbS} \vec{R}_i = \dot{\bbS} \bbS^{-1} \vec{r}_i + \bbS \dot{\vec{R}}_i  = \bbA \vec{r}_i + \bbS \dot{\vec{R}}_i = [ \vec{\omega} \times \vec{r}_i ] + \bbS \dot{\vec{R}}_i = [\bbS \vec{\Omega} \times \bbS \vec{R}_i ] + \bbS \dot{\vec{R}}_i = \notag \\
 = \bbS \left( [\vec{\Omega} \times \vec{R}_i ] + \dot{\vec{R}}_i \right)  \notag , \\
@@ -234,14 +236,14 @@ z
 \hspace*{-0.75cm} где $\vec{\Omega}$ -- вектор угловой скорости в подвижной системе координат.
 
 Рассмотрим последнее слагаемое как смешанное произведение и применим правило Лагранжа:
-\vspace*{-0.1cm}
+\vverh
 \begin{gather}
 ([\vec{\Omega} \times \vec{R}_i] , [\vec{\Omega} \times \vec{R}_i]) = \vec{\Omega}^\top [ \vec{R}_i \times [ \vec{\Omega} \times \vec{R}_i ]] = \vec{\Omega}^\top \left( \vec{\Omega} (\vec{R}_i, \vec{R}_i ) - \vec{R}_i (\vec{R}_i, \vec{\Omega} ) \right)
 \notag .
 \end{gather}
 
 Итак, с учётом выполненных преобразований имеем:
-\vspace*{-0.1cm}
+\vverh
 \begin{gather}
 T = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{r}_i^2 = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{R}_i^2 + \vec{\Omega} ^\top \sum_{i=1}^{n} m_i[ \vec{R}_i \times \dot{\vec{R}}_i ] + \frac{1}{2} \vec{\Omega}^\top \sum_{i=1}^{n} m_i \left( \vec{\Omega} (\vec{R}_i, \vec{R}_i ) - \vec{R}_i (\vec{R}_i, \vec{\Omega} ) \right) = 
 \notag \\
@@ -280,7 +282,7 @@ T = \frac{1}{2} \dot{\vec{q}}^{\, \top} \bba \ \dot{\vec{q}} + \vec{\Omega}^\top
 
 Несложно заметить, что матрица $\bba$ является симметричной: $\bba = \bba^{\top}$.
 
-\subsection{Применение теоремы Донкина}
+\subsubsection{Применение теоремы Донкина}
 Перепишем выражение для кинетической энергии в матричном виде для того, чтобы перейти к гамильтоновым переменным.
 \begin{gather}
 T = \frac{1}{2} 
@@ -459,3 +461,45 @@ J_z &= J \cos \Theta
 \end{aligned}
 \right. \notag
 \end{gather}
+
+\subsection{Полная система динамических уравнений.}
+
+Подводя итог предыдущим выкладкам, определен метод получения точного колебательно-вращательного гамильтониана $\mathcal{H} = \mathcal{H} (\vec{q}, \vec{p}, \vec{J})$. Полная система динамических уравнений может быть представлена в следующей форме:
+\vverh
+\begin{gather}
+\left\{
+\begin{aligned}
+\dot{\vec{q}} &= \frac{\partial \mathcal{H}}{\partial \vec{p}} \\
+\dot{\vec{p}} &= - \frac{\partial \mathcal{H}}{\partial \vec{q}} \\
+\dot{\vec{J}} &+ \left[ \frac{\partial \mathcal{H}}{\partial \vec{J}} \times \vec{J} \right] = \vec{0}  
+\end{aligned}
+\right.
+\quad \implies \quad
+\left\{
+\begin{aligned}
+\dot{\Phi} &= \lb \frac{\partial \mathcal{H}}{\partial J_x} \cos \Phi + \frac{\partial \mathcal{H}}{\partial J_y} \sin \Phi \rb \ctg \Theta - \frac{\partial \mathcal{H}}{\partial J_z} \\
+\dot{\Theta} &= \frac{\partial \mathcal{H}}{\partial J_x} \sin \Phi - \frac{\partial \mathcal{H}}{\partial J_y} \cos \Phi \\
+\dot{\vec{q}} &= \frac{\partial \mathcal{H}}{\partial \vec{p}} \\
+\dot{\vec{p}} &= - \frac{\partial \mathcal{H}}{\partial \vec{q}}
+\end{aligned},
+\right. \label{total_sys}
+\end{gather}
+
+\vlevo где $\partial \mathcal{H} / \partial J_\alpha = \partial \mathcal{H} / \partial J_\alpha (\vec{q}, \vec{p}, \Theta, \Phi)$, $\alpha = x,y,z$.
+
+Углы $\Theta$, $\Phi$ описывают двумерное подпространство вращательной задачи в $(2s+2)$-мерном фазовом пространстве колебательно-вращательной задачи. В результате решения системы дифференциальных уравнений \eqref{total_sys} имеем зависимости $\Theta = \Theta(t)$, $\Phi = \Phi(t)$, которые параметрически задают вращательную фазовую траекторию -- траекторию конца вектора углового момента $\vec{J}$ на сфере радиуса $J$.\\
+Необходимо отметить, что для произвольной системы с $s$ внутренними степенями свободы система \eqref{total_sys} содержит минимально возможное количество динамических уравнений, $2s+2$. Т.е. заданные интегралы движения колебательно-вращательной задачи в максимальной степени учтены при формировании системы динамических уравнений \eqref{total_sys}. Это свойство качественно отличает описанный подход от традиционно применяемых способов расчета классических траекторий, количество уравнений в которых заведомо больше необходимого, а контроль за сохранением энергии и углового момента осуществляется лишь численно. 
+
+\subsection{Схема, суммирующая метод}
+
+\hspace*{-1cm}
+\begin{tikzpicture}[framed]
+
+  \input{../flowcharts/flow2.tex}
+ 
+  \begin{scope}[on background layer]
+    \node [fill=black!30,fit= (lag1) (lag2) (lag3) (lag4) (ham1) (eq1) (eq2) (eq3) (eq4) (eq5) (eq6)] {};
+  \end{scope}
+
+\end{tikzpicture}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  4 DEC 2016 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  5 DEC 2016 01:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1790,9 +1790,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../pictures/EulerAngles.jpg Graphic file (type jpg)
 
 <use ../pictures/EulerAngles.jpg>
-Package pdftex.def Info: ../pictures/EulerAngles.jpg used on input line 48.
+Package pdftex.def Info: ../pictures/EulerAngles.jpg used on input line 50.
 (pdftex.def)             Requested size: 350.33727pt x 193.0551pt.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 76.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 78.
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
@@ -1808,7 +1808,7 @@ File: ../pictures/AngularVelocities.jpg Graphic file (type jpg)
 
 <use ../pictures/AngularVelocities.jpg>
 Package pdftex.def Info: ../pictures/AngularVelocities.jpg used on input line 1
-73.
+75.
 (pdftex.def)             Requested size: 250.24199pt x 217.2138pt.
 
 
@@ -1825,7 +1825,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <../pictures/AngularVelocities.jpg>]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 277.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 279.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
@@ -1837,7 +1837,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5] (../flowcharts/flow1.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 306--320
+Underfull \hbox (badness 10000) in paragraph at lines 308--322
 
  []
 
@@ -1847,14 +1847,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]) (./hamiltonian.tex
+[6]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] <../pictures/triatomic_fixed.png, id=52, 382.42876pt x 221.82875pt>
+[7] (../flowcharts/flow2.tex)
+Overfull \hbox (31.9218pt too wide) in paragraph at lines 495--505
+|  [] 
+ []
+
+) (./hamiltonian.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9] <../pictures/triatomic_fixed.png, id=58, 382.42876pt x 221.82875pt>
 File: ../pictures/triatomic_fixed.png Graphic file (type png)
 
 <use ../pictures/triatomic_fixed.png>
@@ -1868,14 +1887,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <../pictures/triatomic_fixed.png>])
+[10 <../pictures/triatomic_fixed.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] (../appendices/appendix1.tex) (../appendices/appendix2.tex
+[11] (../appendices/appendix1.tex) (../appendices/appendix2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
@@ -1886,22 +1905,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]) (../appendices/appendix3.tex)
+[12]) (../appendices/appendix3.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11] (./main.aux) ) 
+[13] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28958 strings out of 493029
- 568420 string characters out of 6136234
- 652541 words of memory out of 5000000
- 31881 multiletter control sequences out of 15000+600000
- 20390 words of font info for 92 fonts, out of 8000000 for 9000
+ 29038 strings out of 493029
+ 569897 string characters out of 6136234
+ 662593 words of memory out of 5000000
+ 31954 multiletter control sequences out of 15000+600000
+ 20509 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,18n,69p,10370b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,19n,69p,10370b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}
  </home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/
@@ -1922,10 +1941,10 @@ pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texm
 f/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondo
 x/zxxrl8a.pfb>
-Output written on main.pdf (12 pages, 364250 bytes).
+Output written on main.pdf (14 pages, 373769 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  12833 words of extra memory for PDF output out of 14400 (max. 10000000)
 
