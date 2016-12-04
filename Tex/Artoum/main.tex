@@ -15,4 +15,27 @@
 
 \input{../mutual/mutual.tex}
 
+\input{hamiltonian.tex}
+
+\newpage
+
+% modifying font of the appendix title
+\appendix
+\titleformat{\chapter}[display]
+  {\normalfont\large\bfseries}% <- font for label "Appendix A", default \huge
+  {\chaptertitlename\ \thechapter}
+  {20pt}
+  {\large}
+
+\section{Про угловой момент..}
+\input{../appendices/appendix1.tex}
+
+\section{Формулы Фробениуса}
+\label{appendix:frobenius}
+\input{../appendices/appendix2.tex}
+
+\section{Теорема Донкина}
+\label{appendix:donkin}
+\input{../appendices/appendix3.tex}
+
 \end{document}
