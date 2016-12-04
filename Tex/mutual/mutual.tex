@@ -319,13 +319,14 @@ T = \frac{1}{2}
 \end{minipage} \\
 
 Сейчас мы работаем исключительно с выражением для кинетической энергии, так что обозначим имеющееся у нас выражение $T_\mathcal{L}$ (в лагранжевом представлении), а искомое представление -- $T_\mathcal{H}$.
-
+\vverh
 \begin{gather}
 \vec{p} = \frac{\partial T_\mathcal{L}}{\partial \dot{\vec{q}}} = \bbA^{\dn \top} \vec{\Omega} + \bba \dot{\vec{q}} \notag \\
 \vec{J} = \frac{\partial T_\mathcal{L}}{\partial \vec{\Omega}} = \bbI \, \vec{\Omega} + \bbA \dot{\vec{q}} \notag
 \end{gather}
 
 Заметим, что блочный вектор $\begin{bmatrix} \vec{J} \\ \vec{p} \end{bmatrix}$ связан с вектором $\begin{bmatrix} \vec{\Omega} \\ \dot{\vec{q}} \end{bmatrix}$ линейным преобразованием, причем матрица этого линейного преобразования есть $\bbB$:
+\vverh
 \begin{gather}
 \begin{bmatrix}
 \vec{J} \\
@@ -351,7 +352,7 @@ T = \frac{1}{2}
 Инвертирование блочной матрицы $\bbB$ легче всего осуществить с применением формул Фробениуса. (Аппендикс \ref{appendix:frobenius}).
 Обозначим $\bbG = \bbB^{-1} = \begin{bmatrix} G_{11} & G_{12} \\ G_{21} & G_{22}
 \end{bmatrix}$, ее элементы имеют следующие выражения:
-
+\vverh
 \begin{gather}
 \begin{aligned}
 \bbG_{11} &=  \lb \bbI - \bbA \bba^{-1} \bbA^{\dn \top} \rb^{-1} \\
@@ -363,6 +364,7 @@ T = \frac{1}{2}
 \end{gather}
 
 Легко заметить, что $\bbG_{12} = \bbG_{21}^{\top}$. Используем этот факт в ходе стандартной процедуры перехода к гамильтоновому представлению кинетической энергии.
+\vverh
 \begin{gather}
 \begin{bmatrix}
 \vec{\Omega} \ \\
@@ -402,4 +404,58 @@ T_\mathcal{H} =
 \frac{1}{2} \vec{J}^{\, \top} \bbG_{11} \vec{J} + \frac{1}{2} \, \vec{p}^{\, \top} \bbG_{22} \, \vec{p} + \vec{J}^{\, \top} \bbG_{12} \, \vec{p} \notag
 \end{gather}
 
-%Вводим модифицированный тензор инерции: $\bbI_{mod.} = \bbI - \bbA \bba^{-1} \bbA^{\dn \top}$
+\subsection{Обобщенные уравнения Эйлера}
+В изолированной системе в лабораторной системе координат, связанной с центром масс системы, угловой момент является интегралом движения: $\dot{\vec{j}} = 0$. Векторы углового момента в подвижной системе координат и в лаборатной системе координат будут связаны следующим соотношением: 
+\vverh
+\begin{gather}
+\vec{J} = \bbS \vec{j}. \label{j1}
+\end{gather} 
+
+Переписывая это соотношение через угловую скорость $\vec{\Omega}$ подвижной системы отсчета относительно лабораторной системы (в проекции на подвижную систему отсчета), получаем:
+\vverh
+\begin{gather}
+\dot{\vec{J}} + \left[ \vec{\Omega} \times \vec{J} \right] = \vec{0} \label{j2}
+\end{gather}
+
+Согласно теореме Донкина, имеем: $\vec{\Omega} = \partial \mathcal{H} / \partial \vec{J}$. Модифицируя уравнение \eqref{j2} согласно утверждению теоремы Донкина, приходим к системе уравнений, которую будем называть \textit{обобщенными уравнениями Эйлера}.
+\vverh
+\begin{gather}
+\dot{\vec{J}} + \left[ \frac{\partial \mathcal{H}}{\partial \vec{J}} \times \vec{J} \right] = \vec{0} \notag
+\end{gather}
+
+Возвращаясь к связи между векторами углового момента в подвижной и лабораторной системах отсчета \eqref{j1}, заметим, что $J = | \vec{J} |$ - модуль вектора углового момента является интегралом движения. Это позволит использовать только два из трех обобщенных уравнений Эйлера. Введем угловые переменные $\Theta$ и $\Phi$, определяющие направление вектора углового момента $\vec{J}$ в подвижной системе отсчета:
+\vverh
+\begin{gather}
+\left\{
+\begin{aligned}
+J_x &= J \sin \Theta \cos \Phi \\
+J_y &= J \sin \Theta \sin \Phi \\
+J_z &= J \cos \Theta
+\end{aligned}
+\right. \notag
+\end{gather}
+
+\iffalse
+Дифференцируя компоненты углового момента по сферическим углам $\Theta$ и $\Phi$, получаем:
+\vverh
+\begin{gather}
+\left\{
+\begin{aligned}
+\dot{J}_x &= - \dot{\Phi} J \sin \Phi \sin \Theta + \dot{\Theta} J \cos \Phi \cos \Theta \\
+\dot{J}_y &= \dot{\Phi} J \cos \Phi \sin \Theta + \dot{\Theta} J \sin \Phi \cos \Theta \\
+\dot{J}_z &= - \dot{\Theta} J \sin \Theta
+\end{aligned}
+\right.\notag
+\end{gather}
+\fi
+
+Выражаем $\dot{\Phi}$ как линейную комбинацию $\dot{J}_x$, $\dot{J}_y$; $\dot{\Theta}$ -- через $\dot{J}_z$, подставляем выражения производных компонентов углового момента из обобщенных уравнений Эйлера. 
+\vverh
+\begin{gather}
+\left\{
+\begin{aligned}
+\dot{\Phi} &= \lb \frac{\partial \mathcal{H}}{\partial J_x} \cos \Phi + \frac{\partial \mathcal{H}}{\partial J_y} \sin \Phi \rb \ctg \Theta - \frac{\partial \mathcal{H}}{\partial J_z} \\
+\dot{\Theta} &= \frac{\partial \mathcal{H}}{\partial J_x} \sin \Phi - \frac{\partial \mathcal{H}}{\partial J_y} \cos \Phi 
+\end{aligned}
+\right. \notag
+\end{gather}
