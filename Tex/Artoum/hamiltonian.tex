@@ -125,8 +125,8 @@ H(\vec{q}, \vec{p}, \vec{J}) = \frac{1}{2I_0} \left[ \frac{J_x^2 + V_{-}}{1-\cos
 Решение уравнений \eqref{eff_ham} дает нам выражения эффективных обобщенных координат и импульсов:
 \begin{gather}
 \left\{
-\begin{alinged}
-\cos q_e &= \frac{\sqrt{A_{+}} - \sqrt{A_{-}}{\sqrt{A_{+}} + \sqrt{A_{-}}} \\
+\begin{aligned}
+\cos q_e &= \frac{\sqrt{A_{+}} - \sqrt{A_{-}}}{\sqrt{A_{+}} + \sqrt{A_{-}}} \\
 p_e &= 0,
 \end{aligned}
 \right.
@@ -141,13 +141,15 @@ E_r (\phi, \theta; J) = \frac{1}{4I_0} \left[ \left( \sqrt{V_{+} + J^2 \cos^2 \t
 \end{gather}
 
 Построим несколько поверхностей вращательной энергии для молекулы $\ce{H2O}$ при разных значениях модуля вектора углового момента. 
-\begin{tabular}{|*9{c|}}  \hline
-\rule[-2ex]{0pt}{6ex} & $\angle$ H-NonMe-H & $r_{e, NonMe-H}$, \AA & $\nu_1$, см$^{-1}$ & $\nu_2$, см$^{-1}$ & $\nu_3$, см$^{-1}$ & $\nu_{av.}$, см$^{-1}$ & k, Н / м & k, а.е.ж.$^{1}$ \\ \hline
-\rule[-2ex]{0pt}{6ex} $\ce{H2O}$ & $104^\circ 31^{'}$ & $0,95718 \pm 0,0003$ & 3656,65 & 1594,78 & 3755,79 & 3706,22 & 815.68 & 0.524 \\ \hline
-\rule[-2ex]{0pt}{6ex} $\ce{H2S}$ & $92^\circ 06^{'}$ & 1,3362 & 2614,56 & 1182,68 & 2625 & 2619,78 & &  \\ \hline
-\rule[-2ex]{0pt}{6ex} $\ce{H2Se}$ & $90^\circ 55^{'}$ & $1,460 \pm 0,03$ & 2344,50 & 1034,21 & 2357,80 & 2351,15 & & \\ \hline
-\rule[-2ex]{0pt}{6ex} $\ce{H2Te}$ & $90^\circ 15^{'}$ & 1,658 & (2000) & 860,765 & (2000) & (2000) & & \\ \hline
+\begin{figure}[H]
+\begin{tabular}{|*7{c|}}  \hline
+\rule[-2ex]{0pt}{6ex} & $\angle$ H-NonMe-H & $r_{e, NonMe-H}$, \AA & $\nu_1$, см$^{-1}$ & $\nu_2$, см$^{-1}$ & $\nu_3$, см$^{-1}$ & $\nu_{av.}$, см$^{-1}$  \\ \hline
+\rule[-2ex]{0pt}{6ex} $\ce{H2O}$ & $104^\circ 31^{'}$ & $0,95718 \pm 0,0003$ & 3656,65 & 1594,78 & 3755,79 & 3706,22 \\ \hline
+\rule[-2ex]{0pt}{6ex} $\ce{H2S}$ & $92^\circ 06^{'}$ & 1,3362 & 2614,56 & 1182,68 & 2625 & 2619,78 \\ \hline
+\rule[-2ex]{0pt}{6ex} $\ce{H2Se}$ & $90^\circ 55^{'}$ & $1,460 \pm 0,03$ & 2344,50 & 1034,21 & 2357,80 & 2351,15 \\ \hline
+\rule[-2ex]{0pt}{6ex} $\ce{H2Te}$ & $90^\circ 15^{'}$ & 1,658 & (2000) & 860,765 & (2000) & (2000) \\ \hline
 \end{tabular}
+\end{figure}
 
 \begin{figure}[!ht]
   \centering
@@ -164,4 +166,4 @@ E_r (\phi, \theta; J) = \frac{1}{4I_0} \left[ \left( \sqrt{V_{+} + J^2 \cos^2 \t
 J_{cr.} = \sqrt{V_{-} - V_{+}} = I_0 \omega_0 \sqrt{|\cos q_0|} \label{critical_moment}
 \end{gather}
 
-При перестройки поверхности две точки максимума теряют свою устойчивость и становятся седловыми точками, в то время как возникают четыре новых точки максимума с координатами $(\Theta_e, 0), (\Theta_e, \pi), (\pi - \Theta_e, 0), (\pi - \Theta_e, \pi)$, где $\Theta_e =\frac{1}{2} \arcsin \lb \frac{V_{-} - V_{+}}{J^2} \rb $. 
+При перестройки поверхности две точки максимума теряют свою устойчивость и становятся седловыми точками, в то время как возникают четыре новых точки максимума с координатами $(\theta_e, 0), (\theta_e, \pi), (\pi - \theta_e, 0), (\pi - \theta_e, \pi)$, где $\theta_e =\frac{1}{2} \arcsin \lb \frac{V_{-} - V_{+}}{J^2} \rb $. 
