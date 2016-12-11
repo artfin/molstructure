@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  11 DEC 2016 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  12 DEC 2016 00:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1964,24 +1964,67 @@ Rigid_RES_50.png>]) (./trajectories.tex
 LaTeX Warning: Reference `vib_levels' on page 15 undefined on input line 25.
 
 (../flowcharts/flow3.tex)
-Overfull \hbox (20.46996pt too wide) in paragraph at lines 37--38
- [] 
+Overfull \hbox (20.46996pt too wide) in paragraph at lines 35--36
+[][] 
  []
 
+<../pictures/rigid_base/plot_J=10n=0.png, id=83, 215.80624pt x 202.7575pt>
+File: ../pictures/rigid_base/plot_J=10n=0.png Graphic file (type png)
+
+<use ../pictures/rigid_base/plot_J=10n=0.png>
+Package pdftex.def Info: ../pictures/rigid_base/plot_J=10n=0.png used on input 
+line 42.
+(pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
+
+<../pictures/rigid_base/plot_J=15n=0.png, id=84, 215.80624pt x 202.7575pt>
+File: ../pictures/rigid_base/plot_J=15n=0.png Graphic file (type png)
+
+<use ../pictures/rigid_base/plot_J=15n=0.png>
+Package pdftex.def Info: ../pictures/rigid_base/plot_J=15n=0.png used on input 
+line 43.
+(pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
+
+<../pictures/rigid_base/plot_J=20n=0.png, id=85, 215.80624pt x 202.7575pt>
+File: ../pictures/rigid_base/plot_J=20n=0.png Graphic file (type png)
+
+<use ../pictures/rigid_base/plot_J=20n=0.png>
+Package pdftex.def Info: ../pictures/rigid_base/plot_J=20n=0.png used on input 
+line 44.
+(pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
+
+<../pictures/rigid_base/plot_J=21n=0.png, id=86, 215.80624pt x 202.7575pt>
+File: ../pictures/rigid_base/plot_J=21n=0.png Graphic file (type png)
+
+<use ../pictures/rigid_base/plot_J=21n=0.png>
+Package pdftex.def Info: ../pictures/rigid_base/plot_J=21n=0.png used on input 
+line 45.
+(pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
+
+<../pictures/rigid_base/plot_J=22n=0.png, id=87, 215.80624pt x 202.7575pt>
+File: ../pictures/rigid_base/plot_J=22n=0.png Graphic file (type png)
+
+<use ../pictures/rigid_base/plot_J=22n=0.png>
+Package pdftex.def Info: ../pictures/rigid_base/plot_J=22n=0.png used on input 
+line 46.
+(pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15])
+[15] (../appendices/appendix1.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] (../appendices/appendix1.tex) (../appendices/appendix2.tex
+[16 <../pictures/rigid_base/plot_J=10n=0.png> <../pictures/rigid_base/plot_J=15
+n=0.png> <../pictures/rigid_base/plot_J=20n=0.png> <../pictures/rigid_base/plot
+_J=21n=0.png> <../pictures/rigid_base/plot_J=22n=0.png>])
+(../appendices/appendix2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
@@ -2008,10 +2051,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29202 strings out of 493029
- 572612 string characters out of 6136234
- 663054 words of memory out of 5000000
- 32078 multiletter control sequences out of 15000+600000
+ 29229 strings out of 493029
+ 573606 string characters out of 6136234
+ 663062 words of memory out of 5000000
+ 32099 multiletter control sequences out of 15000+600000
  21426 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,22n,69p,10370b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2035,10 +2078,10 @@ lic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx144
 xmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on main.pdf (19 pages, 584918 bytes).
+Output written on main.pdf (19 pages, 643225 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 173 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 12853 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 12878 words of extra memory for PDF output out of 14400 (max. 10000000)
 

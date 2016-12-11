@@ -26,13 +26,24 @@ E_n = \frac{p_0^2}{I_0} + V_{eff.} (q_0) \quad \implies \quad p_0 = \sqrt{I_0 \c
 
 \hspace*{-1cm}
 \begin{center}
-\begin{tikzpicture}[framed]
-
-  \input{../flowcharts/flow3.tex}
- 
-  \begin{scope}[on background layer]
-    \node [fill=black!30,fit= (angles) (moments) (energy) (excitation_level) (q_angle) (p)] {};
-  \end{scope}
-
-\end{tikzpicture}
+  \begin{figure}[!ht]
+    \begin{tikzpicture}[framed]
+      \input{../flowcharts/flow3.tex} 
+	  \begin{scope}[on background layer]
+      \node [fill=black!30,fit= (angles) (moments) (energy) (excitation_level) (q_angle) (p)] {};
+      \end{scope}
+    \end{tikzpicture}
+    \caption{Схема определения начальных параметров системы.}
+  \end{figure}
 \end{center}
+
+\begin{figure}[!ht]
+  \centering
+	\includegraphics[width=0.3\textwidth]{../pictures/rigid_base/plot_J=10n=0.png}
+	\includegraphics[width=0.3\textwidth]{../pictures/rigid_base/plot_J=15n=0.png}
+	\includegraphics[width=0.3\textwidth]{../pictures/rigid_base/plot_J=20n=0.png} \\
+	\includegraphics[width=0.3\textwidth]{../pictures/rigid_base/plot_J=21n=0.png}
+	\includegraphics[width=0.3\textwidth]{../pictures/rigid_base/plot_J=22n=0.png}
+	\caption{Классические траектории}
+	\label{fig:rigid_base}
+\end{figure}
