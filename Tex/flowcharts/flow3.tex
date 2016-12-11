@@ -12,7 +12,15 @@
 
 \node (excitation_level) [type1, right = 1.5cm of angles] {$n$};
 
-\node (q_angle) [type1, right = 1.5 cm of excitation_level] {$q = q_e$};
+\node (effective_potential) [type2, right = 1.5 cm of excitation_level] {$V_{eff.} = V_{eff.}(q_e)$};
 
-\node (p) [type1, below = 1.5 cm of q_angle] {$p_0$};
+\node (q_angle) [type1, right = 1.5 cm of effective_potential] {$q = q_e$};
 
+\node (p) [type1, below = 1.5 cm of effective_potential] {$p_0$};
+
+\draw [arrow] (angles) -- (moments);
+\draw [arrow] (moments) -- (energy);
+\draw [arrow] (energy) -- (p);
+\draw [arrow] (excitation_level) -- (energy);
+\draw [arrow] (q_angle) -- (effective_potential);
+\draw [arrow] (effective_potential) -- (p);
