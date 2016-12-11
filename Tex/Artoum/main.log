@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  6 DEC 2016 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  11 DEC 2016 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1899,7 +1899,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <../pictures/triatomic_fixed.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+<../pictures/VibrationalLevels.png, id=63, 417.56pt x 372.39125pt>
+File: ../pictures/VibrationalLevels.png Graphic file (type png)
+
+<use ../pictures/VibrationalLevels.png>
+Package pdftex.def Info: ../pictures/VibrationalLevels.png used on input line 7
+3.
+(pdftex.def)             Requested size: 250.24199pt x 223.17508pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
@@ -1916,34 +1924,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12] <../pictures/Rigid_RES_10.png, id=72, 313.17pt x 290.58563pt>
-File: ../pictures/Rigid_RES_10.png Graphic file (type png)
-
-<use ../pictures/Rigid_RES_10.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_10.png used on input line 156.
-(pdftex.def)             Requested size: 125.12099pt x 116.09917pt.
-
-<../pictures/Rigid_RES_30.png, id=73, 367.3725pt x 329.73187pt>
-File: ../pictures/Rigid_RES_30.png Graphic file (type png)
-
-<use ../pictures/Rigid_RES_30.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_30.png used on input line 157.
-(pdftex.def)             Requested size: 150.14671pt x 134.76328pt.
-
-<../pictures/Rigid_RES_50.png, id=74, 326.72063pt x 319.1925pt>
-File: ../pictures/Rigid_RES_50.png Graphic file (type png)
-
-<use ../pictures/Rigid_RES_50.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_50.png used on input line 158.
-(pdftex.def)             Requested size: 150.14671pt x 146.6842pt.
-)
+[12 <../pictures/VibrationalLevels.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[13] <../pictures/Rigid_RES_10.png, id=76, 313.17pt x 290.58563pt>
+File: ../pictures/Rigid_RES_10.png Graphic file (type png)
+
+<use ../pictures/Rigid_RES_10.png>
+Package pdftex.def Info: ../pictures/Rigid_RES_10.png used on input line 173.
+(pdftex.def)             Requested size: 125.12099pt x 116.09917pt.
+
+<../pictures/Rigid_RES_30.png, id=77, 367.3725pt x 329.73187pt>
+File: ../pictures/Rigid_RES_30.png Graphic file (type png)
+
+<use ../pictures/Rigid_RES_30.png>
+Package pdftex.def Info: ../pictures/Rigid_RES_30.png used on input line 174.
+(pdftex.def)             Requested size: 150.14671pt x 134.76328pt.
+
+<../pictures/Rigid_RES_50.png, id=78, 326.72063pt x 319.1925pt>
+File: ../pictures/Rigid_RES_50.png Graphic file (type png)
+
+<use ../pictures/Rigid_RES_50.png>
+Package pdftex.def Info: ../pictures/Rigid_RES_50.png used on input line 175.
+(pdftex.def)             Requested size: 150.14671pt x 146.6842pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1951,7 +1959,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14 <../pictures/Rigid_RES_10.png> <../pictures/Rigid_RES_30.png> <../pictures/
-Rigid_RES_50.png>] (../appendices/appendix1.tex) (../appendices/appendix2.tex
+Rigid_RES_50.png>]) (./trajectories.tex
+
+LaTeX Warning: Reference `vib_levels' on page 15 undefined on input line 25.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15] (../appendices/appendix1.tex) (../appendices/appendix2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
@@ -1962,24 +1981,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]) (../appendices/appendix3.tex)
+[16]) (../appendices/appendix3.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] (./main.aux)
+[17] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29132 strings out of 493029
- 571306 string characters out of 6136234
- 663045 words of memory out of 5000000
- 32025 multiletter control sequences out of 15000+600000
- 21006 words of font info for 102 fonts, out of 8000000 for 9000
+ 29152 strings out of 493029
+ 571660 string characters out of 6136234
+ 663054 words of memory out of 5000000
+ 32031 multiletter control sequences out of 15000+600000
+ 21426 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,22n,69p,10370b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.t
@@ -2002,10 +2024,10 @@ lic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx144
 xmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on main.pdf (17 pages, 554643 bytes).
+Output written on main.pdf (18 pages, 582978 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 164 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 12848 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 12853 words of extra memory for PDF output out of 14400 (max. 10000000)
 
