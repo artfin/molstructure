@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  30 NOV 2016 00:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.23)  1 DEC 2016 00:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,23 +1287,36 @@ LaTeX Font Info:    Try loading font information for U+dsrom on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [2]
-<../pictures/AngularVelocities.jpg, id=30, 448.67625pt x 389.455pt>
+)
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+[3 <../pictures/EulerAngles.jpg>]
+<../pictures/AngularVelocities.jpg, id=33, 448.67625pt x 389.455pt>
 File: ../pictures/AngularVelocities.jpg Graphic file (type jpg)
 
 <use ../pictures/AngularVelocities.jpg>
 Package pdftex.def Info: ../pictures/AngularVelocities.jpg used on input line 1
-73.
+78.
 (pdftex.def)             Requested size: 250.24199pt x 217.2138pt.
- [3 <../pictures/EulerAngles.jpg>]
-[4 <../pictures/AngularVelocities.jpg>]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 277.
-
+ [4 <../pictures/AngularVelocities.jpg>]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 282.
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [5]
 (../flowcharts/flow1.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 306--320
+Underfull \hbox (badness 10000) in paragraph at lines 311--325
 
  []
 
@@ -1315,29 +1328,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 [8])) [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  19033 strings out of 493029
- 362469 string characters out of 6136234
- 452076 words of memory out of 5000000
+ 362471 string characters out of 6136233
+ 453077 words of memory out of 5000000
  22092 multiletter control sequences out of 15000+600000
  17497 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,18n,69p,885b,881s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bb
-m12.600pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on main.pdf (10 pages, 288738 bytes).
+ </home/nick/.texmf-var/fonts/pk/ljfour/public/bbm/bbm1
+2.600pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on main.pdf (10 pages, 288637 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
