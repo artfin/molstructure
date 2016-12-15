@@ -54,6 +54,8 @@ E_n + E_{n_1} + E_{n_2} = V_{eff.}(r_{1,0}, r_{2,0}, q_0, \Theta_0, \Phi_0) + \f
 p = \sqrt{I_0 (E_n + E_{n_1} + E_{n_2} - V_{eff.} (q_0, r_{1,0}, r_{2,0}, \Theta_0, \Phi_0))} \notag
 \end{gather}
 
+Построим траектории вектора углового момента для обеих модельных систем. Как и при построении траекторий для прошлой модели, будем изображать их на сферах одинакового радиуса. Для всех траекторий было взято начальное значение сферического угла $\Theta = 0.3 \text{рад.}$. Изучим классические траектории для модельной системы с валентным потенциалом гармонического типа в основном колебательном состоянии ($n = 0$, $n_1 = 0$, $n_2 = 0$).
+
 \vverh
 \begin{figure}[H]
   \begin{center}
@@ -69,3 +71,97 @@ p = \sqrt{I_0 (E_n + E_{n_1} + E_{n_2} - V_{eff.} (q_0, r_{1,0}, r_{2,0}, \Theta
   \end{center}
 \end{figure}
 
+Заметим, что при малых значениях момента фазовая траектория имеет достаточно сложный профиль, значительно отличающийся от эллиптического прецессионого профиля, который мы наблюдали для модели с деформационным потенциалом. С ростом модуля вектора углового момента профиль фазовой траектории усложняется, выделяются циклические структуры в окрестности тех положений, где ожидается возникновение новых устойчивых осей вращения. Однако образования характерных участков фазовых траекторий, указывающих на наличие особой точки типа центр, не происходит. Лишь при достижении значительно более высокого значения момента ($J = 26$) происходит локализация траектории вокруг новой устойчивой оси вращения.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState00/plot_J=10.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState00/plot_J=15.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState00/plot_J=20.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState00/plot_J=22.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState00/plot_J=24.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState00/plot_J=26.png}
+	\caption{Динамика вектора углового момента полной модельной системы с валентным потенциалом гармонического типа в основном колебательном состоянии ${n = 0, n_1 = 0, n_2 = 0}$. Модуль вектора углового момента: $J = 10, \, 15, \, 20, \, 22, \, 24, \, 26$.} 
+	\label{fig:harm000}
+\end{figure}
+
+Посмотрим какое влияние оказывает значение энергетического уровня на проявление бифуркациии и профиль фазовой траектории. Изменим энергетический уровень одного валентного колебания с основного на первый. Уже при малых значениях модуля вектора углового момента ощущается наблюдается заметная асимметричность фазовой траектории, усиливающая с увеличением углового момента системы. Отметим, что точный момент бифуркации по такого сорта фазовым траекториям установить сложно. Однако полная локализация фазовой траекторий вокруг новой устойчивой оси вращения происходит при значениях углового момента системы уже на несколько единиц меньше тех значений, при которых наблюдалась подобная локализация для системы в основном колебательном состоянии. Траектории, представленные на рисунке \eqref{fig:harm050} подтверждают высказанное замечание. На рисунке  \eqref{fig:harm050} изображены траектории, соотвествующие модельной системе с колебательным возбуждением $\left\{ n = 0, n_1 = 5, n_2 = 0 \right\}$. Помимо ярко выраженной асимметричности профиля фазовой траектории и заметного его усложнения с ростом углового момента, полная локализация траектории вокруг новой оси устойчивого вращения наблюдается уже при значении $J = 20$.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState10/plot_J=10.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState10/plot_J=15.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState10/plot_J=18.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState10/plot_J=20.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState10/plot_J=22.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState10/plot_J=24.png}
+	\caption{Динамика вектора углового момента полной модельной системы с валентным потенциалом гармонического типа в колебательном состоянии $\left\{ n = 0, n_1 = 1, n_2 = 0 \right\}$. Модуль вектора углового момента: $J = 10, \, 15, \, 18, \, 20, \, 22, \, 24$.}
+\label{fig:harm010}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState50/plot_J=5.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState50/plot_J=10.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState50/plot_J=15.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState50/plot_J=18.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmGroundState50/plot_J=20.png}
+	\caption{Динамика вектора углового момента полной модельной системы с валентным потенциалом гармонического типа в колебательном состоянии $\left\{ n = 0, n_1 = 5, n_2 = 0 \right\}$. Модуль вектора углового момента: $J = 5, \, 10, \, 15, \, 18, \, 20$.}	
+\label{fig:harm050}
+\end{figure}
+
+Проанализируем влияние, оказываемое уровнем деформационного возбуждения на положение бифуркации для модельной системы с потенциалом гармонического типа. На рисунке \eqref{ham200} представлены траектории, соответствующие системы с колебательным возбуждением $\left\{ n = 2, n_1 = 0, n_2 = 0 \right\}$. С ростом углового момента системы, как и в предыдущих случаях, происходит усложнение профиля траектории, сопровождающееся уменьшением фазовой локализации. Однако "перескакивания" траектории, наблюдаемого в основном колебательном состоянии не наблюдается вплоть до $J = 30$ (и даже после "перескакивания" траектория не обладает пространственной локализацией). 
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmSecondState00/plot_J=10.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmSecondState00/plot_J=15.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmSecondState00/plot_J=18.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmSecondState00/plot_J=20.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmSecondState00/plot_J=22.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/HarmSecondState00/plot_J=24.png}
+	\caption{Динамика вектора углового момента полной модельной системы с валентным потенциалом гармонического типа в колебательном состоянии $\left\{ n = 2, n_1 = 0, n_2 = 0 \right\}$. Модуль вектора углового момента: $J = 10, \, 15, \, 18, \, 20, \, 22, \, 24$.}
+\label{ham200}
+\end{figure}
+
+Увеличение энергетического уровня колебания деформационного типа не приводит к однозначному изменению положения бифуркации; при этом фазовая локализация траекторий значительно уменьшается. \\
+Проследим описанные закономерности на второй модельной системе, в которой валентные колебания описываются потенциалом Морзе. Профиль полученных траекторий уже в основном колебательном состоянии оказывается значительно сложнее тех, что были получены для двух предыдущих моделей. Заметим, что выбор реалистического валентного потенциала сместил положение бифуркации в еще большие значения углового момента. В основном колебательном состоянии наблюдается бифуркация при $J \approx 29-30$.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState00/plot_J=15.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState00/plot_J=20.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState00/plot_J=25.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState00/plot_J=28.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState00/plot_J=29.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState00/plot_J=30.png}
+	\caption{Динамика вектора углового момента полной модельной системы с валентным потенциалом Морзе в колебательном состоянии $\left\{ n = 0, n_1 = 0, n_2 = 0 \right\}$. Модуль вектора углового момента: $J = 15, \, 20, \, 25, \, 28, \, 29, \, 30$.} 
+\label{fig:morse000}
+\end{figure}
+
+Проследим за тем, как будет изменяться положение бифуркации с ростом энергетического уровня валентного колебания. На рисунке \eqref{fig:morse030} приведены фазовые траектории системы в колебательном состоянии $\left\{ n = 0, n_1 = 3, n_2 = 0 \right\}$.  Уже при значении момента $J = 10$ происходит локализации траектории вокруг новой оси, хотя ее направление при данном угловом моменте очень незначительно отклонено от старой оси. То есть, фазовые траектории модели с потенциалом Морзе проявляют значительно большую чувствительность к энергетическому уровню колебаний валентного типа, чем модель с потенциалом гармонического типа.
+
+\begin{figure}[H]
+  \centering
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState03/plot_J=6.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState03/plot_J=8.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseGroundState03/plot_J=10.png}
+	\caption{Динамика вектора углового момента полной модельной системы с валентным потенциалом Морзе в колебательном состоянии $\left\{ n = 0, n_1 = 3, n_2 = 0 \right\}$. 
+Модуль вектора углового момента: $J = 6, \, 8, \, 10$.}
+\label{fig:morse030}
+\end{figure}
+
+На рисунке \eqref{fig:morse200} представлены фазовые траектории системы в состоянии $\left\{ n = 2, n_1 = 0, n_2 = 0 \right\}$. Несмотря на то что при средних значениях углового момента системы в фазовых траекториях наблюдается частичная локализация вокруг новых осей вращения, при высоких значениях момента ($J = 25$ и больших) локализация практически теряется. 
+ 
+\begin{figure}[H]
+  \centering
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseSecondState00/plot_J=5.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseSecondState00/plot_J=10.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseSecondState00/plot_J=15.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseSecondState00/plot_J=20.png}
+	\includegraphics[width=0.15\textwidth]{../pictures/MorseSecondState00/plot_J=25.png}
+	\caption{Динамика вектора углового момента полной модельной системы с валентным потенциалом Морзе в колебательном состоянии $\left\{ n = 2, n_1 = 0, n_2 = 0 \right\}$. 
+Модуль вектора углового момента: $J = 5, \, 10, \, 15, \, 20, \, 25$.}
+\label{fig:morse200}
+\end{figure}
