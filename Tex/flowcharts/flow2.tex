@@ -1,0 +1,84 @@
+\tikzstyle{lagrange} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 7cm, draw = black, fill=red!30]
+
+\tikzstyle{hamilton} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 7cm, draw = black, fill=yellow!30]
+
+\tikzstyle{equations} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 5cm, draw = black, fill=green!30]
+
+\tikzstyle{equations_big} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 8cm ,draw = black, fill = green!30]
+
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+\tikzstyle{arrow_comes_above} = [thick, ->, >=stealth, yshift=10pt]
+
+\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
+   1 with {\arrow[semithick]{open triangle 60}}},
+   double distance=1.4pt, shorten >= 5.5pt,
+   preaction = {decorate},
+   postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+
+\node (lag1) [lagrange] {$\mathcal{L} = \mathcal{L}(\vec{r}_1^{\ \prime},  \cdots, \vec{r}_n^{\ \prime}, \dot{\vec{r}}_1^{\ \prime}, \cdots, \dot{\vec{r}}_n^{\ \prime})$};
+
+\node (lag2) [lagrange, below = 1.5 cm of lag1] {$\mathcal{L} = \mathcal{L} (\vec{r}_1, \cdots, \vec{r}_{n-1}, \dot{\vec{r}}_1, \cdots, \dot{\vec{r}}_{n-1})$};
+
+\node (lag3) [lagrange, below = 1.5 cm of lag2] {$\mathcal{L} = \mathcal{L}(\vec{R}_1, \cdots, \vec{R}_n, \dot{\vec{R}}_1, \cdots, \dot{\vec{R}}_{n-1}, \vec{\Omega})$};
+
+\node (lag4) [lagrange, below = 1.5 cm of lag3] {$\mathcal{L} = \mathcal{L}(\vec{q}_1, \cdots, \vec{q}_s, \dot{\vec{q}}_1, \cdots, \dot{\vec{q}}_s, \vec{\Omega})$};
+
+\node (ham1) [hamilton, below = 2.5 cm of lag4] {$\mathcal{H} = \mathcal{H}(\vec{q}_1, \cdots, \vec{q}_s, \vec{p}_1, \cdots, \vec{p}_s, \vec{J})$};
+
+\node (eq1) [equations, below right = 0.1cm and 1cm of lag1] {$
+\vec{r}_i^{\ \prime} = \vec{R} + \vec{r}_i 
+$};
+
+\node (eq2) [equations, below right = 0.2cm and 1cm of lag2] {$
+\vec{r}_i = \mathbb{S} \vec{R}_i
+$};
+
+\node (eq3) [equations, below right = 0.0cm and 1cm of lag3] {$
+\vec{R}_i = \vec{R}_i(q_1, \cdots, q_s)
+$};
+
+\node (eq4) [equations, below right = 0.0cm and 1cm of lag4] {$
+\left\{
+\begin{aligned}
+J &= \frac{\partial \mathcal{L}}{\partial \Omega} \\
+p &= \frac{\partial \mathcal{L}}{\partial \dot{q}}
+\end{aligned}
+\right.
+$};
+
+\node (eq5) [equations, below left = 1.5 cm and 0.1 cm of ham1] {$
+\left\{
+\begin{aligned}
+\dot{\vec{p}} &= \frac{\partial \mathcal{H}}{\partial \vec{q}} \\
+\dot{\vec{q}} &= - \frac{\partial \mathcal{H}}{\partial \vec{p}} \\
+\dot{\vec{J}} &+ [ \frac{\partial \mathcal{H}}{\partial \vec{J}} \times \vec{J} ] = 0 
+\end{aligned}
+\right.
+$};
+
+\node (eq6) [equations_big, right = 3 cm of eq5] {$
+\left\{
+\begin{aligned}
+\dot{\vec{p}} &= \frac{\partial \mathcal{H}}{\partial \vec{q}} \\
+\dot{\vec{q}} &= - \frac{\partial \mathcal{H}}{\partial \vec{p}} \\
+\dot{\varphi} &= \left( \frac{\partial \mathcal{H}}{\partial J_x} \cos \varphi + \frac{\partial \mathcal{H}}{\partial J_y} \sin \varphi \right) \ctg \theta - \frac{\partial \mathcal{H}}{\partial J_z} \\
+\dot{\theta} &= \frac{\partial \mathcal{H}}{\partial J_x} \sin \varphi - \frac{\partial \mathcal{H}}{\partial J_y} \cos \varphi
+\end{aligned}
+\right.
+$};
+
+\draw [vecArrow] (lag1) -- node[anchor = east] {Transition to COM-frame} (lag2);
+\draw [vecArrow] (lag2) -- node[anchor = east] {Transition to rotating frame} (lag3);
+\draw [vecArrow] (lag3) -- node[anchor = east] {Transition to internal coordinates} (lag4);
+\draw [vecArrow] (lag4) -- node[anchor = east] {Legendre transformation} (ham1);
+\draw [vecArrow] (ham1) -| (eq5);
+\draw [vecArrow] (eq5) -- (eq6);
+
+\draw [arrow] (lag1) -| (eq1);
+\draw [arrow_comes_above] (eq1) |- ([yshift=10pt]lag2);
+\draw [arrow] ([yshift=-10pt]lag2) -| (eq2);
+\draw [arrow_comes_above] (eq2) |- ([yshift=10pt]lag3);
+\draw [arrow] ([yshift=-10pt]lag3) -| (eq3);
+\draw [arrow_comes_above] (eq3) |- ([yshift=10pt]lag4);
+\draw [arrow] ([yshift=-10pt]lag4) -| (eq4);
+\draw [arrow_comes_above] (eq4) |- (ham1);

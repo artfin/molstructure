@@ -1,4 +1,5 @@
 \usepackage[T3]{fontenc}
+
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 
@@ -14,6 +15,7 @@
 % blackboard lettring
 \usepackage{dsfont} % uppercase
 \usepackage{bbm} % lowercase
+\usepackage[bb=boondox]{mathalfa} % numbers
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -72,6 +74,7 @@
 \newcommand{\bbV}{\mathds{V}}
 \newcommand{\bbO}{\mathds{O}}
 \newcommand{\bbQ}{\mathds{Q}}
+\newcommand{\bbzero}{\mathbb{0}}
 
 % enumerate equations inside align* environment
 \newcommand\numberthis{\refstepcounter{equation}\tag{\theequation}} 
@@ -87,3 +90,35 @@
 
 % primes
 \newcommand{\dpr}{\prime \prime}
+
+% chemistry formulas
+\usepackage{mhchem}
+
+% nice fractions
+\usepackage{nicefrac}
+\usepackage{xfrac}
+
+% defines new command ddfrac that forces nominator and denominator to be displayed in displaystyle manner
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+\usepackage{array}
+
+% bdmatrix environment that forces each element to be displayed in displaystyle manner
+\makeatletter
+\def\env@dmatrix{\hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \extrarowheight=2ex
+  \array{*\c@MaxMatrixCols{>{\displaystyle}c}}}
+
+\newenvironment{dmatrix}
+  {\env@dmatrix}
+  {\endarray\hskip-\arraycolsep}
+
+\newenvironment{bdmatrix}
+  {\left[\env@dmatrix}
+  {\endmatrix\right]}
+% and other matrix environments are similar
+\makeatother
+
+% to define "figure" environment
+\usepackage{float}

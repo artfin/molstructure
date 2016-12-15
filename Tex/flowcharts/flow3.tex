@@ -1,0 +1,26 @@
+\tikzstyle{type1} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 3cm ,draw = black, fill = yellow!30]
+
+\tikzstyle{type2} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 3cm, draw = black, fill = green!30]
+
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+
+\node (angles) [type1] {$\Theta_0, \Phi_0$};
+
+\node (moments) [type2, below = 1.5 cm of angles] {$J_{x,0}, J_{y, 0}, J_{z, 0}$};
+
+\node (energy) [type2, right = 1.5 cm of moments] {$E_n$};
+
+\node (excitation_level) [type1, right = 1.5cm of angles] {$n$};
+
+\node (effective_potential) [type2, right = 1.5 cm of excitation_level] {$V_{eff.} = V_{eff.}(q_e)$};
+
+\node (q_angle) [type1, right = 1.5 cm of effective_potential] {$q = q_e$};
+
+\node (p) [type1, below = 1.5 cm of effective_potential] {$p_0$};
+
+\draw [arrow] (angles) -- (moments);
+\draw [arrow] (moments) -- (energy);
+\draw [arrow] (energy) -- (p);
+\draw [arrow] (excitation_level) -- (energy);
+\draw [arrow] (q_angle) -- (effective_potential);
+\draw [arrow] (effective_potential) -- (p);

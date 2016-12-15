@@ -15,4 +15,29 @@
 
 \input{../mutual/mutual.tex}
 
+\input{one-degree.tex}
+
+\input{trajectories-one.tex}
+
+\input{three-degree.tex}
+
+\input{trajectories-three.tex}
+
+\newpage
+
+% modifying font of the appendix title
+\appendix
+\titleformat{\chapter}[display]
+  {\normalfont\large\bfseries}% <- font for label "Appendix A", default \huge
+  {\chaptertitlename\ \thechapter}
+  {20pt}
+  {\large}
+
+\section{Про угловой момент..}
+\input{../appendices/appendix1.tex}
+
+\section{Формулы Фробениуса}
+\label{appendix:frobenius}
+\input{../appendices/appendix2.tex}
+
 \end{document}
