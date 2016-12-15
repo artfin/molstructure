@@ -4,29 +4,46 @@
 
 \tikzstyle{type3} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1.5cm, text centered, text width = 5 cm, draw = black, fill = yellow!30]
 
-\tikzstyle{arrow} = [thick, ->, >=stealth]
+\tikzstyle{type4} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1 cm, text centered, text width = 3 cm, draw = black, fill = blue!30]
 
-\node (n) [type2] {$n$};
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+\tikzstyle{arrow_comes_above} = [thick, ->, >=stealth, yshift=10pt]
+
+\node (n) [type2] at (0,0) {$n$};
 \node (n1) [type2, right = 0.5 cm of n] {$n_1$};
 \node (n2) [type2, right = 0.5 cm of n1] {$n_2$};
 \node (n_container) [type3, fit = (n) (n1) (n2)] {};
-\node (n) [type2] {$n$};
+\node (n) [type2] at (0,0) {$n$};
 \node (n1) [type2, right = 0.5 cm of n] {$n_1$};
 \node (n2) [type2, right = 0.5 cm of n1] {$n_2$};
 
-\node (r2) [type1, below right = 1 cm and 2 cm of n_container] {$r_{2,0}$};
-\node (r1) [type1, below = 0.5 cm of r2] {$r_{1,0}$};
-\node (r_container) [type3, fit = (r1) (r2)] {};	
-\node (r2) [type1, below right = 1 cm and 2 cm of n_container] {$r_{2,0}$};
-\node (r1) [type1, below = 0.5 cm of r2] {$r_{1,0}$};
+\node (r1) [type2, below = 1 cm of n1] {$r_{1,0}$};
+\node (r2) [type2, below = 1 cm of n2] {$r_{2,0}$};
+\node (r_container) [type3, fit = (r1) (r2)] {};
+\node (r1) [type2, below = 1 cm of n1] {$r_{1,0}$};
+\node (r2) [type2, below = 1 cm of n2] {$r_{2,0}$};
 
-\node (theta) [type2, below = 5.5 cm of n_container] {$\Theta_0$};
-\node (phi) [type2, right = 1 cm of theta] {$\Phi_0 = 0$};
-\node (angle_container) [type3, fit = (theta) (phi)] {}; 
-\node (theta) [type2, below = 5.5 cm of n_container] {$\Theta_0$};
-\node (phi) [type2, right = 1 cm of theta] {$\Phi_0 = 0$};
+\node (energy) [type2, right = 1 cm of r2] {$E$};
 
-\node (energy) [type2, below left = 5.5 cm and 0.5 cm of n_container] {$E = E_n + E_{n_1} + E_{n_2}$};
+\node (theta) [type2, below = 2.5 cm of n] {$\Theta_0$};
+\node (phi) [type2, below = 0.5 cm of theta] {$\Phi_0 = 0$};
+\node (angle_container) [type3, fit = (theta) (phi)] {};
+\node (theta) [type2, below = 2.5 cm of n] {$\Theta_0$};
+\node (phi) [type2, below = 0.5 cm of theta] {$\Phi_0 = 0$};
 
-\path (n1) edge[bend right] node [left] {} (r1);
-\path (n2) edge[bend right] node [left] {} (r2);
+\node (effective_potential) [type1, below = 1 cm of r_container] {$V_{eff.}$};
+
+\node (q) [type2, below right = 1 cm and 0.35 cm of effective_potential] {$q = q_e$};
+\node (J) [type2, below left = 1 cm and 0.35 cm of effective_potential] {$J$};
+
+\node (p) [type4, below = 2.1 cm of energy] {$p_0$};
+
+\path (n1) edge[] node [left] {} (r1);
+\path (n2) edge[] node [left] {} (r2);
+\draw [arrow] (n_container) -| (energy);
+\draw [arrow] (angle_container) -- (effective_potential);
+\draw [arrow] (energy) |- ([yshift=+10pt]effective_potential);
+\draw [arrow] (r_container) -- (effective_potential);
+\draw [arrow] (q) -| (effective_potential);
+\draw [arrow] (J) -| (effective_potential);
+\draw [arrow] ([yshift=-10pt]effective_potential) -| (p);
