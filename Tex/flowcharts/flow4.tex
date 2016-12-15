@@ -1,0 +1,32 @@
+\tikzstyle{type1} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 3cm ,draw = black, fill = red!30]
+
+\tikzstyle{type2} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 3cm, draw = black, fill = green!30]
+
+\tikzstyle{type3} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1.5cm, text centered, text width = 5 cm, draw = black, fill = yellow!30]
+
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+
+\node (n) [type2] {$n$};
+\node (n1) [type2, right = 0.5 cm of n] {$n_1$};
+\node (n2) [type2, right = 0.5 cm of n1] {$n_2$};
+\node (n_container) [type3, fit = (n) (n1) (n2)] {};
+\node (n) [type2] {$n$};
+\node (n1) [type2, right = 0.5 cm of n] {$n_1$};
+\node (n2) [type2, right = 0.5 cm of n1] {$n_2$};
+
+\node (r2) [type1, below right = 1 cm and 2 cm of n_container] {$r_{2,0}$};
+\node (r1) [type1, below = 0.5 cm of r2] {$r_{1,0}$};
+\node (r_container) [type3, fit = (r1) (r2)] {};	
+\node (r2) [type1, below right = 1 cm and 2 cm of n_container] {$r_{2,0}$};
+\node (r1) [type1, below = 0.5 cm of r2] {$r_{1,0}$};
+
+\node (theta) [type2, below = 5.5 cm of n_container] {$\Theta_0$};
+\node (phi) [type2, right = 1 cm of theta] {$\Phi_0 = 0$};
+\node (angle_container) [type3, fit = (theta) (phi)] {}; 
+\node (theta) [type2, below = 5.5 cm of n_container] {$\Theta_0$};
+\node (phi) [type2, right = 1 cm of theta] {$\Phi_0 = 0$};
+
+\node (energy) [type2, below left = 5.5 cm and 0.5 cm of n_container] {$E = E_n + E_{n_1} + E_{n_2}$};
+
+\path (n1) edge[bend right] node [left] {} (r1);
+\path (n2) edge[bend right] node [left] {} (r2);

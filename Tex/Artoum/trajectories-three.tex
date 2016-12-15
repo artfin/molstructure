@@ -1,3 +1,68 @@
 \subsection{Фазовые траектории полномерной модели.}
 
-Модельный гамильтониан \eqref{model_ham2} 
+Не уточняя вид потенциала в гамильтониане \eqref{model_ham2}, система динамических уравнений выглядит следующим образом:
+
+\begin{gather}
+\left\{
+\begin{aligned}
+& \dot{q} = \frac{\partial \mathcal{H}}{\partial p} = \frac{2p}{I_0} + \frac{r_1^2 - r_2^2}{2m r_1^2 r_2^2} J \sin \Phi \sin \Theta \\
+& \dot{r_1} = \frac{\partial \mathcal{H}}{\partial p_1} = \frac{p_1}{m} \\
+& \dot{r_2} = \frac{\partial \mathcal{H}}{\partial p_2} = \frac{p_2}{m}  \\
+& \dot{p} = - \frac{\partial \mathcal{H}}{\partial q} = \frac{J^2 \cos^2 \Phi \sin^2 \Theta \sin q}{2 I_0 (1 - \cos q)^2} - \frac{J^2 \cos^2 \Theta \sin q}{2 I_0 (1 + \cos q)^2} - \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{J^2 \cos \Phi \sin \Theta \cos \Theta \cos q}{I_0 \sin^2 q} - \frac{\rmd U}{\rmd q}  \\
+& \dot{p_1} = - \frac{\partial \mathcal{H}}{\partial r_1} =
+\frac{1}{2} \left[ \frac{J^2 \cos^2 \Phi \sin^2 \Theta}{I_0 (1 - \cos q)} + \frac{J^2 \sin^2 \Phi \sin^2 \Theta}{2 I_0} + \frac{J^2 \cos^2 \Theta}{I_0 (1 + \cos q)} \right] \frac{1}{r_1} \left( 2 - \frac{I_0}{m r_2^2} \right) - \notag \\
+& \hspace{1cm} - \frac{J^2 \cos \Phi \sin \Theta \cos \Theta}{I_0 \sin q} \left[ \frac{4 r_1 r_2^2}{(r_1^2 + r_2^2)^2} - \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{1}{r_1} \left( 2 - \frac{I_0}{m r_2^2} \right) \right] - \frac{p}{m r_1^3} J \sin \Phi \sin \Theta - \frac{\rmd U}{\rmd r_1} \\
+& \dot{p_2} = - \frac{\partial \mathcal{H}}{\partial r_2} = 
+\frac{1}{2} \left[ \frac{J^2 \cos^2 \Phi \sin^2 \Theta}{I_0 (1 - \cos q)} + \frac{J^2 \sin^2 \Phi \sin^2 \Theta}{2 I_0} + \frac{J^2 \cos^2 \Theta}{I_0 (1 + \cos q)} \right] \frac{1}{r_2} \left( 2 - \frac{I_0}{m r_1^2} \right) + \notag \\
+& \hspace{1cm} + \frac{J^2 \cos \Phi \sin \Theta \cos \theta}{I_0 \sin q} \left[ \frac{4 r_1^2 r_2}{(r_1^2 + r_2^2)^2} + \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{1}{r_2} \left( 2 - \frac{I_0}{m r_1^2} \right) \right] + \frac{p}{m r_2^3} J \sin \Phi \sin \Theta - \frac{\rmd U}{\rmd r_2} \\
+& \dot{\Phi} = \left[ \left( \frac{J \cos \Phi \sin \Theta}{I_0 (1 - \cos q)} +  \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{J \cos \Theta}{I_0 \sin q} \right) \cos \Phi + \left( \frac{J \sin \Phi \sin \Theta}{2 I_0} + \frac{r_1^2 - r_2^2}{2 m r_1^2 r_2^2} p \right) \sin \Phi \right] \ctg \Theta - \notag \\
+& \hspace{3cm} - \left( \frac{J \cos \Theta}{I_0 ( 1 + \cos q)} + \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{J \cos \Phi \sin \Theta}{I_0 \sin q} \right) \\
+& \dot{\Theta} = \left( \frac{J \cos \Phi \sin \Theta}{I_0 ( 1 - \cos q)} + \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{J \cos \Theta}{I_0 \sin q} \right) \sin \Phi - \left( \frac{J \sin \Phi \sin \Theta}{2 I_0} + \frac{r_1^2 - r_2^2}{2m r_1^2 r_2^2} p \right) \cos \Phi 
+\end{aligned}
+\right. \notag
+\end{gather}
+ 
+Решение представленной системы дифференциальных уравнений с потенциалами, описанными выше, производилось при помощи математической платформы \textit{Maple 2015}. 
+
+Построим схему определения начальных условий, аналогичную описанной для более простой модельной системы. Первым шагом необходимо задаться значениями энергетических уровней соответствующих потенциалов. Обозначим $n$ -- уровень возбуждения деформационного колебания, $E_n$ -- энергия соответствующего уровня; $n_1$, $n_2$ -- уровни возбуждения валентных колебаний, $E_{n_1}$, $E_{n_2}$ -- энергии соответствующих уровней. Найдем эффективный потенциал и используем тот факт, что гамильтониан является интегралом движения:
+\vverh
+\begin{gather}
+V_{eff.} = \frac{1}{2} \vec{J}^{\, \top} \bbI^{-1} \vec{J} + U(q, r_1, r_2) \notag \\
+V_{eff.} = \frac{J_x^2}{2 I_0 (1 - \cos q)} + \frac{J_y^2}{m (r_1^2 + r_2^2)} + \frac{J_z^2}{I_0 (1 + \cos q)} + \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{J_x J_z}{2I_0 \sin q} + U(r_1, r_2, q) \notag \\
+E_n + E_{n_1} + E_{n_2} = V_{eff.}(r_{1,0}, r_{2,0}, q_0, \Theta_0, \Phi_0) + \frac{r_{1,0}^2 - r_{2,0}^2}{r_{1,0}^2 + r_{2,0}^2} \frac{J_{y,0}^2}{4 m r_{1,0}^2 r_{2,0}^2} + \frac{r_{1,0}^2 - r_{2,0}^2}{2m r_{1,0}^2 r_{2,0}^2} J_{y,0} p_0 + \frac{p_{1,0}^2}{2m} + \frac{p_{2,0}^2}{2m} + \frac{p_0^2}{I_0} \notag \\
+\left\{
+\begin{aligned}
+J_{x,0} &= J \cos \Phi_0 \sin \Theta_0 \\
+J_{y,0} &= J \sin \Phi_0 \sin \Theta_0 \\
+J_{z,0} &= J \cos \Theta_0
+\end{aligned}
+\right. \notag
+\end{gather}
+
+Заметим, что если мы возьмем $\Phi_0 = 0$, то $J_{y, 0} = 0$, и полученное выражение значительно упростится. Также положим $p_{1,0} = p_{2,0} = 0$, что дополнительно упростит выражение.
+Приходим к выражению, аналогичному тому, что было выписано для предыдущей модельной системы:
+\vverh
+\begin{gather}
+E_n + E_{n_1} + E_{n_2} = V_{eff.}(r_{1,0}, r_{2,0}, q_0, \Theta_0, \Phi_0) + \frac{p_0^2}{I_0} \notag
+\end{gather}
+
+Используя полуклассический подход, определим начальные значения $r_{1, 0}$, $r_{2, 0}$, при которых энергии валентных колебаний равны $E_{n_1}$ и $E_{n_2}$, соответственно. В качестве начального значения угла $q_0$ возьмем $q_e$, которое определяется модулем вектора углового момента и его направлением (выражение \eqref{eq_angle}). Таким образом, нам осталось определить начальное значение импульса $p$, которое мы находим исходя из последнего соотношения, предварительно рассчитав значение эффективного потенциала при заданных условиях (не забудем про то, что $I_0 = I_0 (r_{1,0}, r_{2,0})$.
+\vverh
+\begin{gather}
+p = \sqrt{I_0 (E_n + E_{n_1} + E_{n_2} - V_{eff.} (q_0, r_{1,0}, r_{2,0}, \Theta_0, \Phi_0))} \notag
+\end{gather}
+
+\vverh
+\begin{figure}[H]
+  \begin{center}
+    \begin{tikzpicture}[framed, ->, >=stealth', auto, thick]
+    
+      \input{../flowcharts/flow4.tex} 
+      
+	  \begin{scope}[on background layer]
+  		\node (outer) [draw,fill = gray!30, fit = (n_container) (r_container) (angle_container) (energy)] {};
+  	  \end{scope}
+    \end{tikzpicture}
+    \caption{Схема определения начальных параметров системы.}
+  \end{center}
+\end{figure}
