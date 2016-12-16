@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  16 DEC 2016 02:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  16 DEC 2016 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1812,7 +1812,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1] (./introduction.tex) (../mutual/mutual.tex
-<../pictures/EulerAngles.jpg, id=18, 570.13pt x 314.17375pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] <../pictures/EulerAngles.jpg, id=28, 570.13pt x 314.17375pt>
 File: ../pictures/EulerAngles.jpg Graphic file (type jpg)
 
 <use ../pictures/EulerAngles.jpg>
@@ -1829,7 +1835,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] <../pictures/AngularVelocities.jpg, id=30, 448.67625pt x 389.455pt>
+[3 <../pictures/EulerAngles.jpg>]
+<../pictures/AngularVelocities.jpg, id=33, 448.67625pt x 389.455pt>
 File: ../pictures/AngularVelocities.jpg Graphic file (type jpg)
 
 <use ../pictures/AngularVelocities.jpg>
@@ -1843,31 +1850,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <../pictures/EulerAngles.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [4 <../pictures/AngularVelocities.jpg>]
 LaTeX Font Info:    Try loading font information for U+bbm on input line 272.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-(../flowcharts/flow1.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 301--315
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[5] (../flowcharts/flow1.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 301--315
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2530,11 +2529,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29747 strings out of 493029
- 587096 string characters out of 6136234
- 669762 words of memory out of 5000000
+ 29749 strings out of 493029
+ 587118 string characters out of 6136234
+ 673753 words of memory out of 5000000
  32538 multiletter control sequences out of 15000+600000
- 23963 words of font info for 123 fonts, out of 8000000 for 9000
+ 24033 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,22n,69p,10370b,936s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.t
@@ -2557,7 +2556,7 @@ lic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx144
 xmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on main.pdf (30 pages, 2457187 bytes).
+Output written on main.pdf (30 pages, 2458787 bytes).
 PDF statistics:
  256 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams
