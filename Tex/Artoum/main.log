@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.23)  15 DEC 2016 03:57
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.13)  15 DEC 2016 03:47
+>>>>>>> 51bfc12a1d1172e5d80ea27fbb7a2bc34d0e2554
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1957,14 +1961,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../pictures/qe_rigid.png Graphic file (type png)
 
 <use ../pictures/qe_rigid.png>
-Package pdftex.def Info: ../pictures/qe_rigid.png used on input line 155.
+Package pdftex.def Info: ../pictures/qe_rigid.png used on input line 156.
 (pdftex.def)             Requested size: 500.484pt x 193.16437pt.
 
 <../pictures/NormalModes.png, id=77, 371.13657pt x 87.32625pt>
 File: ../pictures/NormalModes.png Graphic file (type png)
 
 <use ../pictures/NormalModes.png>
-Package pdftex.def Info: ../pictures/NormalModes.png used on input line 169.
+Package pdftex.def Info: ../pictures/NormalModes.png used on input line 170.
 (pdftex.def)             Requested size: 278.35173pt x 65.49452pt.
 
 
@@ -1978,21 +1982,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../pictures/Rigid_RES_10.png Graphic file (type png)
 
 <use ../pictures/Rigid_RES_10.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_10.png used on input line 189.
+Package pdftex.def Info: ../pictures/Rigid_RES_10.png used on input line 190.
 (pdftex.def)             Requested size: 125.12099pt x 116.09917pt.
 
 <../pictures/Rigid_RES_30.png, id=82, 367.3725pt x 329.73187pt>
 File: ../pictures/Rigid_RES_30.png Graphic file (type png)
 
 <use ../pictures/Rigid_RES_30.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_30.png used on input line 190.
+Package pdftex.def Info: ../pictures/Rigid_RES_30.png used on input line 191.
 (pdftex.def)             Requested size: 150.14671pt x 134.76328pt.
 
 <../pictures/Rigid_RES_50.png, id=83, 326.72063pt x 319.1925pt>
 File: ../pictures/Rigid_RES_50.png Graphic file (type png)
 
 <use ../pictures/Rigid_RES_50.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_50.png used on input line 191.
+Package pdftex.def Info: ../pictures/Rigid_RES_50.png used on input line 192.
 (pdftex.def)             Requested size: 150.14671pt x 146.6842pt.
 ) (./trajectories-one.tex
 
@@ -2155,7 +2159,7 @@ Overfull \hbox (15.35439pt too wide) in paragraph at lines 93--93
 File: ../pictures/potentials.png Graphic file (type png)
 
 <use ../pictures/potentials.png>
-Package pdftex.def Info: ../pictures/potentials.png used on input line 107.
+Package pdftex.def Info: ../pictures/potentials.png used on input line 108.
 (pdftex.def)             Requested size: 375.36299pt x 237.10176pt.
 
 
@@ -2164,15 +2168,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]) (./trajectories-three.tex)
+[21]) (./trajectories-three.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <../pictures/potentials.png>] (../appendices/appendix1.tex)
-(../appendices/appendix2.tex
+[22 <../pictures/potentials.png>]
+Overfull \hbox (26.94424pt too wide) in paragraph at lines 40--40
+[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23] (../flowcharts/flow4.tex)
+Overfull \hbox (100.9518pt too wide) in paragraph at lines 65--66
+ [] 
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24] (../appendices/appendix1.tex) (../appendices/appendix2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
@@ -2183,14 +2209,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23])
+[25])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24] (./main.aux)
+[26] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2199,6 +2225,7 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  29363 strings out of 493029
  576399 string characters out of 6136233
  666085 words of memory out of 5000000
@@ -2227,9 +2254,39 @@ f/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
 Output written on main.pdf (25 pages, 854118 bytes).
+=======
+ 29458 strings out of 493029
+ 577890 string characters out of 6136234
+ 666431 words of memory out of 5000000
+ 32286 multiletter control sequences out of 15000+600000
+ 23795 words of font info for 120 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,22n,69p,10370b,954s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.t
+exmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx144
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
+Output written on main.pdf (27 pages, 864645 bytes).
+>>>>>>> 51bfc12a1d1172e5d80ea27fbb7a2bc34d0e2554
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 210 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13952 words of extra memory for PDF output out of 14400 (max. 10000000)
 
