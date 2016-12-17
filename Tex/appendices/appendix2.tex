@@ -4,16 +4,22 @@ $\bbU_{22} = \lb \bbU_{22}^{jk} \rb_{\substack{j = 1 \dots n \\ k = 1 \dots n}}$
 $\bbU_{12} = \lb \bbU_{12}^{jk} \rb_{\substack{j = 1 \dots m \\ k = 1 \dots n}}$, 
 $\bbU_{21} = \lb \bbU_{21}^{jk} \rb_{\substack{j = 1 \dots n \\ k = 1 \dots m}}$.
 
-Положим $\bbV = \begin{bmatrix} \bbV_{11} & \bbV_{12} \\ \bbV_{21} & \bbV_{22} \end{bmatrix}$ -- это матрица, удовлетворяющая следующему соотношению:
+\vlevo Положим $\bbV = \begin{bmatrix} \bbV_{11} & \bbV_{12} \\ \bbV_{21} & \bbV_{22} \end{bmatrix}$ -- это обратная (справа) матрица для матрицы $\bbU$, то есть, матрица, удовлетворяющая следующему соотношению:
+\vverh
 \begin{gather}
 \bbU \bbV = \begin{bmatrix}
 \bbE_{m \times m} & \bbO_{m \times n} \\
-\bbO_{n \times m} & \bbE_{n \times n} 
-\end{bmatrix} \label{eq1}
-\end{gather} 
-
-$\bbE_{m \times m}$ -- единичная матрица, $\dim \bbE = m \times m$ \\
-$\bbO_{m \times n}$ -- матрица, заполненная нулями, $\dim \bbO = m \times n$. \\
+\bbO_{n \times m} & \bbE_{n \times n}
+\end{bmatrix}, \label{eq1}
+\end{gather}
+\vspace*{-0.5cm}
+\begin{leftalign*}
+\text{где} \quad 
+\begin{aligned}
+&\bbE_{m \times m} - \text{единичная матрица, $\dim \bbE = m \times m$} \\
+&\bbO_{m \times n} - \text{матрица, заполненная нулями, $\dim \bbO = m \times n$}.
+\end{aligned} \notag
+\end{leftalign*}
 
 Соотношение  \eqref{eq1} эквивалентно следующей системе:
 \vspace*{-0.25cm}
@@ -44,7 +50,8 @@ $\bbO_{m \times n}$ -- матрица, заполненная нулями, $\di
 \end{bmatrix} \notag
 \end{gather}
 
-Хитрый прием. Мы нашли выражение для обратной (справа) матрицы, теперь найдем выражение для обратной (слева) матрицы $\bbQ = \begin{bmatrix} \bbQ_{11} & \bbQ_{12} \\ \bbQ_{21} & \bbQ_{22} \end{bmatrix}$:
+Интересный прием заключается в следующем.
+Мы нашли выражение для обратной (справа) матрицы, теперь найдем выражение для обратной (слева) матрицы $\bbQ = \begin{bmatrix} \bbQ_{11} & \bbQ_{12} \\ \bbQ_{21} & \bbQ_{22} \end{bmatrix}$:
 \begin{gather}
 \bbQ \bbU = \begin{bmatrix}
 \bbE_{m \times m} & \bbO_{m \times n} \\

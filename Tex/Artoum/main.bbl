@@ -1,9 +1,57 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{lok2004}
+S.E. Lokshtanov, S.V.Ivanov, and A.A.Vigasin.
+\newblock {\em J. of Mol. Str.}, 1, 2004.
 
 \bibitem{petrov2015}
-С.Е.~Локштанов С.В.~Петров.
-\newblock Траекторный анализ вращательной
-  динамики молекул.
-\newblock {\em ЖЭТФ}, 148:219--227, 2015.
+S.V.Petrov and S.E.Lokshtanov.
+\newblock {\em JETP}, 121, 2015.
+
+\bibitem{tyu1992}
+Vl.G. Tyuterev.
+\newblock {\em J.Mol. Chemistry}, 151, 1992.
+
+\bibitem{har1984}
+W.G.Harter and C.W.Patterson.
+\newblock {\em J. Chem. Phys}, 80:4241, 1984.
+
+\bibitem{king1947}
+G.W.King.
+\newblock {\em J.Chem. Phys}, 15:820, 1947.
+
+\bibitem{makar1998}
+J.~Makarewicz.
+\newblock {\em J. Chem. Phys.}, 108:469, 1998.
+
+\bibitem{pav1985}
+L.M.Pavlichenkov and B.I.Zhilinskii.
+\newblock {\em J.Chem. Phys.}, 100:339, 1985.
+
+\bibitem{pav1987}
+B.I.Zhilinksii and I.M.Pavluchenkov.
+\newblock {\em Zh. Eksp. Teor. Fiz.}, 92:387, 1987.
+
+\bibitem{koz1996}
+I.N.Kozin and I.M.Pavluchenkov.
+\newblock {\em J.Chem.Phys.}, 104:4105, 1996.
+
+\bibitem{goldstein}
+Herbert Goldstein, Charles~P. Poole, and John~L. Safko.
+\newblock {\em Classical Mechanics (3rd Edition)}.
+\newblock Addison-Wesley, 3 edition, 2001.
+
+\bibitem{landau}
+L.~Landau and E.~Lifshitz.
+\newblock {\em Mechanics, v.1}.
+\newblock Pergamon Press, 1969.
+
+\bibitem{petrov1993}
+S.V. Petrov.
+\newblock {\em Spectroscopy Letters}, 26, 1993.
+
+\bibitem{petrov1995}
+S.V.Petrov and K.M.Katsov.
+\newblock {\em Chem. Ph. Letters}, 246, 1995.
 
 \end{thebibliography}

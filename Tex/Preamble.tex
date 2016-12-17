@@ -82,6 +82,7 @@
 
 % shifting commands
 \newcommand{\vlevo}{\hspace*{-0.63cm}}
+\newcommand{\vpravo}{\hspace{0.63cm}}
 \newcommand{\vverh}{\vspace*{-0.1cm}}
 \newcommand{\dn}{\! \!} % "double negative"
 
@@ -125,3 +126,17 @@
 \usepackage{float}
 
 \usepackage[nottoc]{tocbibind}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% unnecessary
+\usepackage{mathtools}
+
+\makeatletter
+\newenvironment{leftalign*}[1][\parindent]{\setlength\hangindent{#1}\start@align\tw@\st@rredtrue\m@ne}{\endalign}
+\newenvironment{leftalign}{\hangindent = \parindent \start@align\tw@\st@rredfalse\m@ne}{\endalign}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% side captions
+\usepackage{sidecap}
