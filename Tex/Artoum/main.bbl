@@ -8,17 +8,19 @@ S.E. Lokshtanov, S.V.Ivanov, and A.A.Vigasin.
 S.V.Petrov and S.E.Lokshtanov.
 \newblock {\em JETP}, 121, 2015.
 
-\bibitem{tyu1992}
-Vl.G. Tyuterev.
-\newblock {\em J.Mol. Chemistry}, 151, 1992.
-
-\bibitem{har1984}
-W.G.Harter and C.W.Patterson.
-\newblock {\em J. Chem. Phys}, 80:4241, 1984.
+\bibitem{wilson}
+Decius~J. Wilson~E. and Cross P.
+\newblock {\em Molecular vibrations. The theory of infrared and Raman
+  vibrational spectra}.
+\newblock N.Y. McGraw-Hill, 1955.
 
 \bibitem{king1947}
 G.W.King.
 \newblock {\em J.Chem. Phys}, 15:820, 1947.
+
+\bibitem{har1984}
+W.G.Harter and C.W.Patterson.
+\newblock {\em J. Chem. Phys}, 80:4241, 1984.
 
 \bibitem{makar1998}
 J.~Makarewicz.
@@ -30,28 +32,58 @@ L.M.Pavlichenkov and B.I.Zhilinskii.
 
 \bibitem{pav1987}
 B.I.Zhilinksii and I.M.Pavluchenkov.
-\newblock {\em Zh. Eksp. Teor. Fiz.}, 92:387, 1987.
+\newblock {\em JETP}, 92:387, 1987.
 
 \bibitem{koz1996}
 I.N.Kozin and I.M.Pavluchenkov.
 \newblock {\em J.Chem.Phys.}, 104:4105, 1996.
 
 \bibitem{goldstein}
-Herbert Goldstein, Charles~P. Poole, and John~L. Safko.
-\newblock {\em Classical Mechanics (3rd Edition)}.
-\newblock Addison-Wesley, 3 edition, 2001.
+Голдстейн Г.
+\newblock {\em Классическая механика}.
+\newblock Наука, 1975.
 
 \bibitem{landau}
-L.~Landau and E.~Lifshitz.
-\newblock {\em Mechanics, v.1}.
-\newblock Pergamon Press, 1969.
+Лифшиц~Е. Ландау~Л.
+\newblock {\em Теоретическая физика. Том I.
+  Механика}.
+\newblock Физматлит, 2007.
+
+\bibitem{gantmaher}
+Гантмахер Ф.
+\newblock {\em Лекции по аналитической механике}.
+\newblock Наука, 1966.
 
 \bibitem{petrov1993}
 S.V. Petrov.
-\newblock {\em Spectroscopy Letters}, 26, 1993.
+\newblock {\em Spec. Letters}, 26, 1993.
 
 \bibitem{petrov1995}
 S.V.Petrov and K.M.Katsov.
 \newblock {\em Chem. Ph. Letters}, 246, 1995.
+
+\bibitem{petrov2007}
+S.V. Petrov and B.M.Kozlovskii.
+\newblock {\em J. Mol. Spectrosc.}, 243, 2007.
+
+\bibitem{kozin1993}
+S.Klee I.N.~Kozin and P.Jensen.
+\newblock {\em J. Mol. Spectrosc.}, 158, 1993.
+
+\bibitem{kozin1996}
+P.Jensen I.N.Kozin and O.Polanz.
+\newblock {\em J.Mol.Spectrosc.}, 180, 1996.
+
+\bibitem{jensen1997}
+G.Osman P.Jensen and I.N.Kozin.
+\newblock {\em Adv. Ser. in Phys. Chem.}, 9, 1997.
+
+\bibitem{koz1997}
+I.N.Kozin and I.M.Pavluchenkov.
+\newblock {\em JETP}, 112:1239, 1997.
+
+\bibitem{petrov2002}
+С.Е.~Локштанов С.В.~Петров.
+\newblock {\em Ж. физ. химии}, 76:1094, 2002.
 
 \end{thebibliography}
