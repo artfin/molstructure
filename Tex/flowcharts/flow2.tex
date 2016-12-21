@@ -67,10 +67,10 @@ $};
 \right.
 $};
 
-\draw [vecArrow] (lag1) -- node[anchor = east] {Transition to COM-frame} (lag2);
-\draw [vecArrow] (lag2) -- node[anchor = east] {Transition to rotating frame} (lag3);
-\draw [vecArrow] (lag3) -- node[anchor = east] {Transition to internal coordinates} (lag4);
-\draw [vecArrow] (lag4) -- node[anchor = east] {Legendre transformation} (ham1);
+\draw [vecArrow] (lag1) -- node[anchor = east, text width = 6cm] {Переход в систему отсчета, связанную с центром масс} (lag2);
+\draw [vecArrow] (lag2) -- node[anchor = east] {Переход в подвижную систему отсчета} (lag3);
+\draw [vecArrow] (lag3) -- node[anchor = east] {Переход к обобщенным координатам} (lag4);
+\draw [vecArrow] (lag4) -- node[anchor = east] {Применение теоремы Донкина} (ham1);
 \draw [vecArrow] (ham1) -| (eq5);
 \draw [vecArrow] (eq5) -- (eq6);
 

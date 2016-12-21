@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  19 DEC 2016 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  21 DEC 2016 08:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1889,18 +1889,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8] (../flowcharts/flow2.tex)
-Overfull \hbox (35.32024pt too wide) in paragraph at lines 493--503
+Overfull \hbox (39.03499pt too wide) in paragraph at lines 496--506
 []|  [] 
  []
 
-) (./one-degree.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+[9]) (./one-degree.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1922,15 +1921,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <../pictures/triatomic_fixed.png>]
-<../pictures/VibrationalLevels.png, id=66, 417.56pt x 372.39125pt>
+
+LaTeX Warning: Reference `makar1988' on page 12 undefined on input line 56.
+
+<../pictures/VibrationalLevels.png, id=65, 417.56pt x 372.39125pt>
 File: ../pictures/VibrationalLevels.png Graphic file (type png)
 
 <use ../pictures/VibrationalLevels.png>
 Package pdftex.def Info: ../pictures/VibrationalLevels.png used on input line 7
-2.
+4.
 (pdftex.def)             Requested size: 200.19054pt x 178.53552pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
@@ -1947,12 +1949,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] <../pictures/qe_rigid.png, id=76, 825.0825pt x 318.43968pt>
+[13] <../pictures/qe_rigid.png, id=76, 253.69781pt x 301.125pt>
 File: ../pictures/qe_rigid.png Graphic file (type png)
 
 <use ../pictures/qe_rigid.png>
-Package pdftex.def Info: ../pictures/qe_rigid.png used on input line 153.
-(pdftex.def)             Requested size: 500.484pt x 193.16437pt.
+Package pdftex.def Info: ../pictures/qe_rigid.png used on input line 156.
+(pdftex.def)             Requested size: 150.14671pt x 178.21817pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1964,21 +1966,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: ../pictures/Rigid_RES_10.png Graphic file (type png)
 
 <use ../pictures/Rigid_RES_10.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_10.png used on input line 181.
+Package pdftex.def Info: ../pictures/Rigid_RES_10.png used on input line 176.
 (pdftex.def)             Requested size: 125.12099pt x 116.09917pt.
 
 <../pictures/Rigid_RES_30.png, id=81, 367.3725pt x 329.73187pt>
 File: ../pictures/Rigid_RES_30.png Graphic file (type png)
 
 <use ../pictures/Rigid_RES_30.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_30.png used on input line 182.
+Package pdftex.def Info: ../pictures/Rigid_RES_30.png used on input line 177.
 (pdftex.def)             Requested size: 150.14671pt x 134.76328pt.
 
 <../pictures/Rigid_RES_50.png, id=82, 326.72063pt x 319.1925pt>
 File: ../pictures/Rigid_RES_50.png Graphic file (type png)
 
 <use ../pictures/Rigid_RES_50.png>
-Package pdftex.def Info: ../pictures/Rigid_RES_50.png used on input line 183.
+Package pdftex.def Info: ../pictures/Rigid_RES_50.png used on input line 178.
 (pdftex.def)             Requested size: 150.14671pt x 146.6842pt.
 
 
@@ -1987,9 +1989,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <../pictures/qe_rigid.png>]) (./trajectories-one.tex
+[15 <../pictures/qe_rigid.png> <../pictures/Rigid_RES_10.png> <../pictures/Rigi
+d_RES_30.png> <../pictures/Rigid_RES_50.png>]) (./trajectories-one.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
+ []
+
+(../flowcharts/flow3.tex)
+Overfull \hbox (20.46996pt too wide) in paragraph at lines 34--35
+ [] 
  []
 
 
@@ -1998,12 +2006,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <../pictures/Rigid_RES_10.png> <../pictures/Rigid_RES_30.png> <../pictures/
-Rigid_RES_50.png>] (../flowcharts/flow3.tex)
-Overfull \hbox (20.46996pt too wide) in paragraph at lines 34--35
- [] 
- []
-
+[16]
 <../pictures/rigid_base/plot_J=10n=0.png, id=90, 215.80624pt x 202.7575pt>
 File: ../pictures/rigid_base/plot_J=10n=0.png Graphic file (type png)
 
@@ -2091,7 +2094,7 @@ File: ../pictures/rigid_base/plot_J=20n=1.png Graphic file (type png)
 
 <use ../pictures/rigid_base/plot_J=20n=1.png>
 Package pdftex.def Info: ../pictures/rigid_base/plot_J=20n=1.png used on input 
-line 62.
+line 63.
 (pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
 
 <../pictures/rigid_base/plot_J=21n=1.png, id=106, 215.80624pt x 202.7575pt>
@@ -2099,7 +2102,7 @@ File: ../pictures/rigid_base/plot_J=21n=1.png Graphic file (type png)
 
 <use ../pictures/rigid_base/plot_J=21n=1.png>
 Package pdftex.def Info: ../pictures/rigid_base/plot_J=21n=1.png used on input 
-line 63.
+line 64.
 (pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
 
 <../pictures/rigid_base/plot_J=22n=1.png, id=107, 215.80624pt x 202.7575pt>
@@ -2107,16 +2110,9 @@ File: ../pictures/rigid_base/plot_J=22n=1.png Graphic file (type png)
 
 <use ../pictures/rigid_base/plot_J=22n=1.png>
 Package pdftex.def Info: ../pictures/rigid_base/plot_J=22n=1.png used on input 
-line 64.
+line 65.
 (pdftex.def)             Requested size: 150.14671pt x 141.07228pt.
 ) (./three-degree.tex
-<../pictures/triatomic_full.png, id=108, 324.21124pt x 195.73125pt>
-File: ../pictures/triatomic_full.png Graphic file (type png)
-
-<use ../pictures/triatomic_full.png>
-Package pdftex.def Info: ../pictures/triatomic_full.png used on input line 8.
-(pdftex.def)             Requested size: 200.19054pt x 120.85931pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2131,8 +2127,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <../pictures/triatomic_full.png>]
-Overfull \hbox (15.35439pt too wide) in paragraph at lines 93--93
+[20]
+Overfull \hbox (15.35439pt too wide) in paragraph at lines 84--84
+[] 
+ []
+
+
+LaTeX Warning: Reference `table1' on page 21 undefined on input line 87.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]) (./trajectories-three.tex
+Overfull \hbox (26.94424pt too wide) in paragraph at lines 39--39
 [] 
  []
 
@@ -2142,78 +2152,54 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21] <../pictures/potentials.png, id=120, 537.50812pt x 339.51843pt>
-File: ../pictures/potentials.png Graphic file (type png)
-
-<use ../pictures/potentials.png>
-Package pdftex.def Info: ../pictures/potentials.png used on input line 108.
-(pdftex.def)             Requested size: 375.36299pt x 237.10176pt.
-) (./trajectories-three.tex
+[22] (../flowcharts/flow4.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <../pictures/potentials.png>]
-Overfull \hbox (26.94424pt too wide) in paragraph at lines 40--40
-[] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23] (../flowcharts/flow4.tex)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[24]
-<../pictures/HarmGroundState00/plot_J=10.png, id=131, 406.51875pt x 379.4175pt>
+[23]
+<../pictures/HarmGroundState00/plot_J=10.png, id=123, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState00/plot_J=10.png Graphic file (type png)
 <use ../pictures/HarmGroundState00/plot_J=10.png>
 Package pdftex.def Info: ../pictures/HarmGroundState00/plot_J=10.png used on in
-put line 78.
+put line 77.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState00/plot_J=15.png, id=132, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState00/plot_J=15.png, id=124, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState00/plot_J=15.png Graphic file (type png)
 <use ../pictures/HarmGroundState00/plot_J=15.png>
 Package pdftex.def Info: ../pictures/HarmGroundState00/plot_J=15.png used on in
-put line 79.
+put line 78.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState00/plot_J=20.png, id=133, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState00/plot_J=20.png, id=125, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState00/plot_J=20.png Graphic file (type png)
 <use ../pictures/HarmGroundState00/plot_J=20.png>
 Package pdftex.def Info: ../pictures/HarmGroundState00/plot_J=20.png used on in
-put line 80.
+put line 79.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState00/plot_J=22.png, id=134, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState00/plot_J=22.png, id=126, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState00/plot_J=22.png Graphic file (type png)
 <use ../pictures/HarmGroundState00/plot_J=22.png>
 Package pdftex.def Info: ../pictures/HarmGroundState00/plot_J=22.png used on in
-put line 81.
+put line 80.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState00/plot_J=24.png, id=135, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState00/plot_J=24.png, id=127, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState00/plot_J=24.png Graphic file (type png)
 <use ../pictures/HarmGroundState00/plot_J=24.png>
 Package pdftex.def Info: ../pictures/HarmGroundState00/plot_J=24.png used on in
-put line 82.
+put line 81.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState00/plot_J=26.png, id=136, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState00/plot_J=26.png, id=128, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState00/plot_J=26.png Graphic file (type png)
 <use ../pictures/HarmGroundState00/plot_J=26.png>
 Package pdftex.def Info: ../pictures/HarmGroundState00/plot_J=26.png used on in
-put line 83.
+put line 82.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
 
@@ -2222,128 +2208,128 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <../pictures/HarmGroundState00/plot_J=10.png> <../pictures/HarmGroundState0
+[24 <../pictures/HarmGroundState00/plot_J=10.png> <../pictures/HarmGroundState0
 0/plot_J=15.png> <../pictures/HarmGroundState00/plot_J=20.png> <../pictures/Har
 mGroundState00/plot_J=22.png> <../pictures/HarmGroundState00/plot_J=24.png> <..
 /pictures/HarmGroundState00/plot_J=26.png>]
-<../pictures/HarmGroundState10/plot_J=10.png, id=140, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState10/plot_J=10.png, id=133, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState10/plot_J=10.png Graphic file (type png)
 <use ../pictures/HarmGroundState10/plot_J=10.png>
 Package pdftex.def Info: ../pictures/HarmGroundState10/plot_J=10.png used on in
-put line 92.
+put line 91.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState10/plot_J=15.png, id=141, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState10/plot_J=15.png, id=134, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState10/plot_J=15.png Graphic file (type png)
 <use ../pictures/HarmGroundState10/plot_J=15.png>
 Package pdftex.def Info: ../pictures/HarmGroundState10/plot_J=15.png used on in
-put line 93.
+put line 92.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState10/plot_J=18.png, id=142, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState10/plot_J=18.png, id=135, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState10/plot_J=18.png Graphic file (type png)
 <use ../pictures/HarmGroundState10/plot_J=18.png>
 Package pdftex.def Info: ../pictures/HarmGroundState10/plot_J=18.png used on in
-put line 94.
+put line 93.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState10/plot_J=20.png, id=143, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState10/plot_J=20.png, id=136, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState10/plot_J=20.png Graphic file (type png)
 <use ../pictures/HarmGroundState10/plot_J=20.png>
 Package pdftex.def Info: ../pictures/HarmGroundState10/plot_J=20.png used on in
-put line 95.
+put line 94.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState10/plot_J=22.png, id=144, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState10/plot_J=22.png, id=137, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState10/plot_J=22.png Graphic file (type png)
 <use ../pictures/HarmGroundState10/plot_J=22.png>
 Package pdftex.def Info: ../pictures/HarmGroundState10/plot_J=22.png used on in
-put line 96.
+put line 95.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState10/plot_J=24.png, id=145, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState10/plot_J=24.png, id=138, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState10/plot_J=24.png Graphic file (type png)
 <use ../pictures/HarmGroundState10/plot_J=24.png>
 Package pdftex.def Info: ../pictures/HarmGroundState10/plot_J=24.png used on in
-put line 97.
+put line 96.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState50/plot_J=5.png, id=146, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState50/plot_J=5.png, id=139, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState50/plot_J=5.png Graphic file (type png)
 
 <use ../pictures/HarmGroundState50/plot_J=5.png>
 Package pdftex.def Info: ../pictures/HarmGroundState50/plot_J=5.png used on inp
-ut line 105.
+ut line 104.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState50/plot_J=10.png, id=147, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState50/plot_J=10.png, id=140, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState50/plot_J=10.png Graphic file (type png)
 <use ../pictures/HarmGroundState50/plot_J=10.png>
 Package pdftex.def Info: ../pictures/HarmGroundState50/plot_J=10.png used on in
-put line 106.
+put line 105.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState50/plot_J=15.png, id=148, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState50/plot_J=15.png, id=141, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState50/plot_J=15.png Graphic file (type png)
 <use ../pictures/HarmGroundState50/plot_J=15.png>
 Package pdftex.def Info: ../pictures/HarmGroundState50/plot_J=15.png used on in
-put line 107.
+put line 106.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState50/plot_J=18.png, id=149, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState50/plot_J=18.png, id=142, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState50/plot_J=18.png Graphic file (type png)
 <use ../pictures/HarmGroundState50/plot_J=18.png>
 Package pdftex.def Info: ../pictures/HarmGroundState50/plot_J=18.png used on in
-put line 108.
+put line 107.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmGroundState50/plot_J=20.png, id=150, 406.51875pt x 379.4175pt>
+<../pictures/HarmGroundState50/plot_J=20.png, id=143, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmGroundState50/plot_J=20.png Graphic file (type png)
 <use ../pictures/HarmGroundState50/plot_J=20.png>
 Package pdftex.def Info: ../pictures/HarmGroundState50/plot_J=20.png used on in
-put line 109.
+put line 108.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmSecondState00/plot_J=10.png, id=151, 406.51875pt x 379.4175pt>
+<../pictures/HarmSecondState00/plot_J=10.png, id=144, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmSecondState00/plot_J=10.png Graphic file (type png)
 <use ../pictures/HarmSecondState00/plot_J=10.png>
 Package pdftex.def Info: ../pictures/HarmSecondState00/plot_J=10.png used on in
-put line 118.
+put line 117.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmSecondState00/plot_J=15.png, id=152, 406.51875pt x 379.4175pt>
+<../pictures/HarmSecondState00/plot_J=15.png, id=145, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmSecondState00/plot_J=15.png Graphic file (type png)
 <use ../pictures/HarmSecondState00/plot_J=15.png>
 Package pdftex.def Info: ../pictures/HarmSecondState00/plot_J=15.png used on in
-put line 119.
+put line 118.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmSecondState00/plot_J=18.png, id=153, 406.51875pt x 379.4175pt>
+<../pictures/HarmSecondState00/plot_J=18.png, id=146, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmSecondState00/plot_J=18.png Graphic file (type png)
 <use ../pictures/HarmSecondState00/plot_J=18.png>
 Package pdftex.def Info: ../pictures/HarmSecondState00/plot_J=18.png used on in
-put line 120.
+put line 119.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmSecondState00/plot_J=20.png, id=154, 406.51875pt x 379.4175pt>
+<../pictures/HarmSecondState00/plot_J=20.png, id=147, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmSecondState00/plot_J=20.png Graphic file (type png)
 <use ../pictures/HarmSecondState00/plot_J=20.png>
 Package pdftex.def Info: ../pictures/HarmSecondState00/plot_J=20.png used on in
-put line 121.
+put line 120.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmSecondState00/plot_J=22.png, id=155, 406.51875pt x 379.4175pt>
+<../pictures/HarmSecondState00/plot_J=22.png, id=148, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmSecondState00/plot_J=22.png Graphic file (type png)
 <use ../pictures/HarmSecondState00/plot_J=22.png>
 Package pdftex.def Info: ../pictures/HarmSecondState00/plot_J=22.png used on in
-put line 122.
+put line 121.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/HarmSecondState00/plot_J=24.png, id=156, 406.51875pt x 379.4175pt>
+<../pictures/HarmSecondState00/plot_J=24.png, id=149, 406.51875pt x 379.4175pt>
 File: ../pictures/HarmSecondState00/plot_J=24.png Graphic file (type png)
 <use ../pictures/HarmSecondState00/plot_J=24.png>
 Package pdftex.def Info: ../pictures/HarmSecondState00/plot_J=24.png used on in
-put line 123.
+put line 122.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
 
@@ -2352,7 +2338,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <../pictures/HarmGroundState10/plot_J=10.png> <../pictures/HarmGroundState1
+[25 <../pictures/HarmGroundState10/plot_J=10.png> <../pictures/HarmGroundState1
 0/plot_J=15.png> <../pictures/HarmGroundState10/plot_J=18.png> <../pictures/Har
 mGroundState10/plot_J=20.png> <../pictures/HarmGroundState10/plot_J=22.png> <..
 /pictures/HarmGroundState10/plot_J=24.png> <../pictures/HarmGroundState50/plot_
@@ -2362,119 +2348,119 @@ s/HarmGroundState50/plot_J=20.png> <../pictures/HarmSecondState00/plot_J=10.png
 > <../pictures/HarmSecondState00/plot_J=15.png> <../pictures/HarmSecondState00/
 plot_J=18.png> <../pictures/HarmSecondState00/plot_J=20.png> <../pictures/HarmS
 econdState00/plot_J=22.png> <../pictures/HarmSecondState00/plot_J=24.png>]
-<../pictures/MorseGroundState00/plot_J=15.png, id=160, 406.51875pt x 379.4175pt
+<../pictures/MorseGroundState00/plot_J=15.png, id=153, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseGroundState00/plot_J=15.png Graphic file (type png)
  <use ../pictures/MorseGroundState00/plot_J=15.png>
 Package pdftex.def Info: ../pictures/MorseGroundState00/plot_J=15.png used on i
-nput line 133.
+nput line 132.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState00/plot_J=20.png, id=161, 406.51875pt x 379.4175pt
+<../pictures/MorseGroundState00/plot_J=20.png, id=154, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseGroundState00/plot_J=20.png Graphic file (type png)
  <use ../pictures/MorseGroundState00/plot_J=20.png>
 Package pdftex.def Info: ../pictures/MorseGroundState00/plot_J=20.png used on i
-nput line 134.
+nput line 133.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState00/plot_J=25.png, id=162, 406.51875pt x 379.4175pt
+<../pictures/MorseGroundState00/plot_J=25.png, id=155, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseGroundState00/plot_J=25.png Graphic file (type png)
  <use ../pictures/MorseGroundState00/plot_J=25.png>
 Package pdftex.def Info: ../pictures/MorseGroundState00/plot_J=25.png used on i
-nput line 135.
+nput line 134.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState00/plot_J=28.png, id=163, 406.51875pt x 379.4175pt
+<../pictures/MorseGroundState00/plot_J=28.png, id=156, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseGroundState00/plot_J=28.png Graphic file (type png)
  <use ../pictures/MorseGroundState00/plot_J=28.png>
 Package pdftex.def Info: ../pictures/MorseGroundState00/plot_J=28.png used on i
-nput line 136.
+nput line 135.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState00/plot_J=29.png, id=164, 406.51875pt x 379.4175pt
+<../pictures/MorseGroundState00/plot_J=29.png, id=157, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseGroundState00/plot_J=29.png Graphic file (type png)
  <use ../pictures/MorseGroundState00/plot_J=29.png>
 Package pdftex.def Info: ../pictures/MorseGroundState00/plot_J=29.png used on i
-nput line 137.
+nput line 136.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState00/plot_J=30.png, id=165, 406.51875pt x 379.4175pt
+<../pictures/MorseGroundState00/plot_J=30.png, id=158, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseGroundState00/plot_J=30.png Graphic file (type png)
  <use ../pictures/MorseGroundState00/plot_J=30.png>
 Package pdftex.def Info: ../pictures/MorseGroundState00/plot_J=30.png used on i
-nput line 138.
+nput line 137.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState03/plot_J=6.png, id=166, 406.51875pt x 379.4175pt>
+<../pictures/MorseGroundState03/plot_J=6.png, id=159, 406.51875pt x 379.4175pt>
 File: ../pictures/MorseGroundState03/plot_J=6.png Graphic file (type png)
 <use ../pictures/MorseGroundState03/plot_J=6.png>
 Package pdftex.def Info: ../pictures/MorseGroundState03/plot_J=6.png used on in
-put line 147.
+put line 146.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState03/plot_J=8.png, id=167, 406.51875pt x 379.4175pt>
+<../pictures/MorseGroundState03/plot_J=8.png, id=160, 406.51875pt x 379.4175pt>
 File: ../pictures/MorseGroundState03/plot_J=8.png Graphic file (type png)
 <use ../pictures/MorseGroundState03/plot_J=8.png>
 Package pdftex.def Info: ../pictures/MorseGroundState03/plot_J=8.png used on in
-put line 148.
+put line 147.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseGroundState03/plot_J=10.png, id=168, 406.51875pt x 379.4175pt
+<../pictures/MorseGroundState03/plot_J=10.png, id=161, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseGroundState03/plot_J=10.png Graphic file (type png)
  <use ../pictures/MorseGroundState03/plot_J=10.png>
 Package pdftex.def Info: ../pictures/MorseGroundState03/plot_J=10.png used on i
-nput line 149.
+nput line 148.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-Overfull \hbox (16.13652pt too wide) in paragraph at lines 155--156
+Overfull \hbox (16.13652pt too wide) in paragraph at lines 154--155
 []\T2A/cmr/m/n/12 (-20) На ри-сун-ке [] пред-став-ле-ны фа-зо-вые тра-ек-то-рии
  си-сте-мы в со-сто-я-нии $[]$.
  []
 
 
-<../pictures/MorseSecondState00/plot_J=5.png, id=169, 406.51875pt x 379.4175pt>
+<../pictures/MorseSecondState00/plot_J=5.png, id=162, 406.51875pt x 379.4175pt>
 File: ../pictures/MorseSecondState00/plot_J=5.png Graphic file (type png)
 <use ../pictures/MorseSecondState00/plot_J=5.png>
 Package pdftex.def Info: ../pictures/MorseSecondState00/plot_J=5.png used on in
-put line 159.
+put line 158.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseSecondState00/plot_J=10.png, id=170, 406.51875pt x 379.4175pt
+<../pictures/MorseSecondState00/plot_J=10.png, id=163, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseSecondState00/plot_J=10.png Graphic file (type png)
  <use ../pictures/MorseSecondState00/plot_J=10.png>
 Package pdftex.def Info: ../pictures/MorseSecondState00/plot_J=10.png used on i
-nput line 160.
+nput line 159.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseSecondState00/plot_J=15.png, id=171, 406.51875pt x 379.4175pt
+<../pictures/MorseSecondState00/plot_J=15.png, id=164, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseSecondState00/plot_J=15.png Graphic file (type png)
  <use ../pictures/MorseSecondState00/plot_J=15.png>
 Package pdftex.def Info: ../pictures/MorseSecondState00/plot_J=15.png used on i
-nput line 161.
+nput line 160.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseSecondState00/plot_J=20.png, id=172, 406.51875pt x 379.4175pt
+<../pictures/MorseSecondState00/plot_J=20.png, id=165, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseSecondState00/plot_J=20.png Graphic file (type png)
  <use ../pictures/MorseSecondState00/plot_J=20.png>
 Package pdftex.def Info: ../pictures/MorseSecondState00/plot_J=20.png used on i
-nput line 162.
+nput line 161.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 
-<../pictures/MorseSecondState00/plot_J=25.png, id=173, 406.51875pt x 379.4175pt
+<../pictures/MorseSecondState00/plot_J=25.png, id=166, 406.51875pt x 379.4175pt
 >
 File: ../pictures/MorseSecondState00/plot_J=25.png Graphic file (type png)
  <use ../pictures/MorseSecondState00/plot_J=25.png>
 Package pdftex.def Info: ../pictures/MorseSecondState00/plot_J=25.png used on i
-nput line 163.
+nput line 162.
 (pdftex.def)             Requested size: 75.06953pt x 70.06377pt.
 )
 
@@ -2483,19 +2469,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <../pictures/MorseGroundState00/plot_J=15.png> <../pictures/MorseGroundStat
+[26 <../pictures/MorseGroundState00/plot_J=15.png> <../pictures/MorseGroundStat
 e00/plot_J=20.png> <../pictures/MorseGroundState00/plot_J=25.png> <../pictures/
 MorseGroundState00/plot_J=28.png> <../pictures/MorseGroundState00/plot_J=29.png
 > <../pictures/MorseGroundState00/plot_J=30.png> <../pictures/MorseGroundState0
 3/plot_J=6.png> <../pictures/MorseGroundState03/plot_J=8.png> <../pictures/Mors
-eGroundState03/plot_J=10.png>]
+eGroundState03/plot_J=10.png>] (./conclusion.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <../pictures/MorseSecondState00/plot_J=5.png> <../pictures/MorseSecondState
+[27 <../pictures/MorseSecondState00/plot_J=5.png> <../pictures/MorseSecondState
 00/plot_J=10.png> <../pictures/MorseSecondState00/plot_J=15.png> <../pictures/M
 orseSecondState00/plot_J=20.png> <../pictures/MorseSecondState00/plot_J=25.png>
 ] (./main.bbl)
@@ -2505,56 +2491,60 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29] (../appendices/appendix1.tex) (../appendices/appendix2.tex
+[28] (../appendices/appendix1.tex) (../appendices/appendix2.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30])
+[29])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31] (./main.aux) ) 
+[30] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 29160 strings out of 493089
- 579507 string characters out of 6134842
- 664462 words of memory out of 5000000
- 31872 multiletter control sequences out of 15000+600000
- 27328 words of font info for 134 fonts, out of 8000000 for 9000
+ 29158 strings out of 493089
+ 579344 string characters out of 6134842
+ 664550 words of memory out of 5000000
+ 31876 multiletter control sequences out of 15000+600000
+ 27287 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,22n,69p,10370b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super
-/cm-super-t2a.enc} </Users/mac/Library/texlive/2015/texmf-var/fonts/pk/ljfour/p
-ublic/bbm/bbm12.600pk></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/doublestroke/dsrom12.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
-10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx
-1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx14
-40.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
-Output written on main.pdf (32 pages, 2402840 bytes).
+ 57i,22n,69p,10370b,945s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}
+ </Users/mac/Library/texlive/2015/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.60
+0pk></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/boondox/zxxrl8a.pfb>
+Output written on main.pdf (31 pages, 2357025 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
+ 255 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16180 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 16682 words of extra memory for PDF output out of 17280 (max. 10000000)
 
