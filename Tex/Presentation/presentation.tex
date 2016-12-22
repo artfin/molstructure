@@ -2,6 +2,13 @@
 
 \input{Preamble.tex}
 
+\usepackage{dsfont} % uppercase
+\usepackage{bbm} % lowercase
+
+\newcommand{\bbA}{\mathds{A}}
+\newcommand{\bbI}{\mathds{I}}
+\newcommand{\bba}{\mathbbm{a}}
+
 \begin{document}
 
 \begin{frame}{\large
@@ -305,6 +312,47 @@ I_1 = m r_0^2 \notag
 	  \end{subfigure}
 	 \end{figure}
   \end{block}
+\end{frame}
+
+\begin{frame}{Колебательно-вращательное движение из лабораторной системы отсчета}
+\begin{center}
+\begin{tikzpicture}
+\node (ham1) [hamilton] {$\mathbf{J}, \mathbf{p}, r_1, r_2, q$};
+\node (lag1) [lagrange, below = 0.5 cm of ham1] {$\mathbf{\Omega}, \mathbf{\dot{q}}$};
+\node (eq1) [equations, minimum width = 2cm, text width = 2cm, below right = 0.1 cm and 0.5 cm of ham1] {$\bba, \bbA, \bbI$};
+
+\node (eq2) [equations, minimum width = 4cm, text width = 4cm, below = 0.5 cm of lag1] {$
+\left\{
+\begin{aligned}
+\mathbf{\dot{R}}_1 + \left[ \mathbf{\Omega} \times \mathbf{R}_1 \right] = \mathbf{\dot{r}}_1 \\
+\mathbf{\dot{R}}_2 + \left[ \mathbf{\Omega} \times \mathbf{R}_2 \right] = \mathbf{\dot{r}}_2
+\end{aligned}
+\right.
+$};
+
+\node (res) [result, minimum width = 2 cm, text width = 2cm, right = 0.5 cm of eq2] {$\mathbf{R}_1, \mathbf{R}_2$};
+
+\draw [arrow] (ham1) -- (lag1);
+\draw [arrow] (ham1) -| (eq1);
+\draw [arrow] (eq1) |- (lag1);
+\draw [arrow] (lag1) -- (eq2);
+\draw [arrow] (eq2) -- (res);
+
+\begin{scope}[on background layer]
+  \node [fill = BurntOrange!20, fit = (ham1) (lag1) (eq1) (eq2) (res)] {};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Выводы}
+\begin{itemize}
+\item Описан метод получения точного колебательно-вращательного гамильтониана. \\
+\item Получены гамильтонианы для одномерной и полномерной моделей трехатомной гидрида. \\ 
+\item Получены поверхности вращательной энергии для одномерной модели. \\
+\item Описано явление бифуркации с точки зрения перестройки поверхности вращательной энергии. \\
+\item Получены классические траектории в различных колебательных состояниях.
+\end{itemize}
 \end{frame}
 
 \begin{frame}{}
