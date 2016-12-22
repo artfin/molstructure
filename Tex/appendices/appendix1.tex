@@ -1,3 +1,4 @@
+\vverh
 \begin{gather}
 \left\{
 \begin{aligned}
@@ -13,11 +14,11 @@
 \vec{J} = \frac{\partial \mathcal{L}}{\partial \vec{\Omega}} = \bbA \dot{\vec{q}} + \bbI \, \vec{\Omega} \notag
 \end{gather}
 
-Для этого рассмотрим вектора углового момента в лабораторной системе координат и, используя ортогональную матрицу $\bbS$, выразим его через $\vec{\Omega}$ и $\left\{ \vec{R}_i \right\}$, представленные в подвижной системе координат:
+Для этого рассмотрим вектора углового момента в лабораторной системе координат и, используя ортогональную матрицу $\bbS$, выразим его через угловую скорость $\vec{\Omega}$ и радиус-векторы частиц системы $\left\{ \vec{R}_i \right\}$, представленные в подвижной системе координат:
 \vverh
 \begin{gather}
 \vec{j} = \sum_{i=1}^{n} m_i \left[ \vec{r}_i \times \dot{\vec{r}}_i \right] \notag \\
-\dot{\vec{r}}_i = \bbS^{-1} \lb \left[ \vec{\Omega} \times \vec{•}vec{R}_i \right] + \dot{\vec{R}}_i \rb \notag \\
+\dot{\vec{r}}_i = \bbS^{-1} \lb \left[ \vec{\Omega} \times \vec{R}_i \right] + \dot{\vec{R}}_i \rb \notag \\
 \vec{j} = \sum_{i=1}^{n} m_i \left[ \vec{r}_i \times \bbS^{-1} \lb \left[ \vec{\Omega} \times \vec{R}_i \right] + \dot{\vec{R}}_i \rb \right] =
 \bbS^{-1} \sum_i m_i \left[ \vec{R}_i \times \dot{\vec{R}}_i \right] + \bbS^{-1} \sum_i m_i \left[ \vec{R}_i \times \left[ \vec{\Omega} \times \vec{R}_i \right] \right] = \notag \\
 = \bbS^{-1} \sum_i m_i \left[ \vec{R}_i \times \dot{\vec{R}}_i \right] + \bbS^{-1} \sum_i \lb R_i^2 \vec{\Omega} - \lb \vec{R}_i , \vec{\Omega} \rb \vec{R}_i \rb = \bbS^{-1} \bbA \dot{\vec{q}} + \bbI \, \vec{\Omega} \notag
