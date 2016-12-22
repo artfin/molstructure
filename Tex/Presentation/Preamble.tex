@@ -1,0 +1,82 @@
+\usepackage[T3]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{mhchem}
+\usepackage{amssymb, amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
+\usetikzlibrary{fit}
+\usepackage{microtype}
+\usepackage{framed}
+\usetikzlibrary{decorations.pathmorphing,calc,backgrounds}
+
+\usepackage{animate}
+
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+
+%\usetheme{Berkeley}
+%\usetheme{Madrid} -- неплохо
+%\usetheme{CambridgeUS}
+%\usetheme{Singapore}
+\usetheme{Warsaw}
+
+\pdfmapfile{+sansmathaccent.map}
+
+\title{Исследование бифуркаций в трехатомных гидридах методом классических траекторий}
+
+\author{\small 
+Финенко Артем \\[1ex] 
+Научный руководитель: Петров С.В.}
+
+\institute[MSU] % (optional, but mostly needed)
+{
+  МГУ им. М.В.Ломоносова \\
+  Химический факультет
+}
+
+\date{23/12/2016}
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{../pictures/logo.jpg}
+\logo{\pgfuseimage{university-logo}}
+
+\newcommand\Fontvi{\fontsize{6}{7.2}\selectfont}
+
+\beamertemplatenavigationsymbolsempty
+
+\setbeamerfont{page number in head/foot}{size=\large}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{frametitle}[default][center]
+
+% change font
+\usefonttheme[onlymath]{serif}
+
+% custom block environment
+\newenvironment<>{varblock}[2][.9\textwidth]{%
+  \setlength{\textwidth}{#1}
+  \begin{actionenv}#3%
+    \def\insertblocktitle{#2}%
+    \par%
+    \usebeamertemplate{block begin}}
+  {\par%
+    \usebeamertemplate{block end}%
+  \end{actionenv}}
+
+\tikzstyle{lagrange} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 5cm, draw = black, fill=DarkOrchid!40]
+
+\tikzstyle{equations} = [rectangle, rounded corners, text centered, draw = black, fill=green!30]
+
+\tikzstyle{hamilton} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 5 cm, draw = black, fill = Goldenrod!50]
+
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+
+\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
+   1 with {\arrow[semithick]{open triangle 60}}},
+   double distance=1.4pt, shorten >= 5.5pt,
+   preaction = {decorate},
+   postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+
+\usepackage{caption}
+\usepackage{subcaption}

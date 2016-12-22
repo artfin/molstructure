@@ -1,0 +1,201 @@
+\documentclass[hyperref={pdfpagelabels=false},usepdftitle=false, xcolor = dvipsnames]{beamer}
+
+\input{Preamble.tex}
+
+\begin{document}
+
+\begin{frame}{\small
+\begin{center}
+Кафедра физической химии \\ Лаборатория строения и квантовой механики молекул
+\end{center}}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Классический колебательно-вращательный гамильтониан I}
+\begin{tikzpicture}[framed, font=\sffamily\small]
+\node (lag1) [lagrange] {$\mathcal{L} = \mathcal{L}(\vec{r}_\text{1}^{\ \prime},  \cdots, \vec{r}_\text{n}^{\ \prime}, \dot{\vec{r}}_\text{1}^{\ \prime}, \cdots, \dot{\vec{r}}_\text{n}^{\ \prime})$};
+
+\node (lag2) [lagrange, text width = 6 cm, below = 1 cm of lag1] {$\mathcal{L} = \mathcal{L} (\vec{r}_\text{1}, \cdots, \vec{r}_{\text{n-1}}, \dot{\vec{r}}_\text{1}, \cdots, \dot{\vec{r}}_{\text{n-1}})$};
+
+\node (lag3) [lagrange, text width = 6 cm, below = 1 cm of lag2] {$\mathcal{L} = \mathcal{L}(\vec{R}_\text{1}, \cdots, \vec{R}_\text{n}, \dot{\vec{R}}_\text{1}, \cdots, \dot{\vec{R}}_{\text{n-1}}, \vec{\Omega})$};
+
+\node (lag4) [lagrange, text width = 6 cm, below = 1 cm of lag3] {$\mathcal{L} = \mathcal{L}(\vec{q}_\text{1}, \cdots, \vec{q}_\text{s}, \dot{\vec{q}}_\text{1}, \cdots, \dot{\vec{q}}_\text{s}, \vec{\Omega})$};
+
+\node (eq1) [equations, minimum width = 2cm, text width = 2cm, below right = 0.1 cm and 0.5 cm of lag1] {$\vec{r}_i^{\ \prime} = \vec{R} + \vec{r}_i$};
+
+\node (eq2) [equations, minimum width = 2cm, text width = 2cm, below = 1.35cm of eq1] {$ \vec{r}_i = \mathbb{S} \vec{R}_i$};
+
+\node (eq3) [equations, minimum width = 3cm, text width = 3cm, below right = 0.1 cm and -0.5 cm of lag3] {$\vec{R}_i = \vec{R}_i(q_\text{1}, \cdots, q_s)$};
+
+\draw [vecArrow] (lag1) -- node (text1) [anchor = east, text width = 5cm] {\vspace*{-0.5cm} \begin{center}Переход в систему отсчета, связанную с центром масс \end{center}} (lag2);
+
+\draw [vecArrow] (lag2) -- node (text2) [anchor = east, text width = 5cm] {\vspace*{-0.5cm} \begin{center}Переход в подвижную систему отсчета\end{center}} (lag3);
+
+\draw [vecArrow] (lag3) -- node (text3) [anchor = east, text width = 5cm] {\vspace*{-0.5cm} \begin{center}Переход к обобщенным координатам\end{center}} (lag4);
+
+\draw [arrow] (lag1) -| (eq1);
+\draw [arrow] (eq1) |- ([yshift=4pt]lag2);
+\draw [arrow] ([yshift=-4pt]lag2) -| (eq2);
+\draw [arrow] (eq2) |- ([yshift=4pt]lag3);
+\draw [arrow] ([yshift=-4pt]lag3) -| (eq3);
+\draw [arrow] (eq3) |- (lag4);
+
+\begin{scope}[on background layer]
+  \node [fill = BurntOrange!20,fit= (lag1) (lag2) (lag3) (lag4) (text1) (text2) (text3) (eq1) (eq2) (eq3)] {};
+\end{scope}
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Классический колебательно-вращательный гамильтониан II}
+\begin{center}
+\begin{tikzpicture}[framed, font=\sffamily\small]
+\node (lag1) [lagrange, text width = 6 cm, below = 1 cm of lag3] {$\mathcal{L} = \mathcal{L}(\vec{q}_\text{1}, \cdots, \vec{q}_\text{s}, \dot{\vec{q}}_\text{1}, \cdots, \dot{\vec{q}}_\text{s}, \vec{\Omega})$};
+
+\node (ham1) [hamilton, below = 1.5 cm of lag1] {$\mathcal{H} = \mathcal{H}(\vec{q}_\text{1}, \cdots, \vec{q}_s, \vec{p}_\text{1}, \cdots, \vec{p}_s, \vec{J})$};
+
+\node (eq1) [equations, below right = -0.2cm and 0.4cm of lag1] 
+{$
+\left\{
+\begin{aligned}
+\mathbf{J} &= \frac{\partial \mathcal{L}}{\partial \mathbf{\Omega}} \\
+\mathbf{p} &= \frac{\partial \mathcal{L}}{\partial \dot{\mathbf{q}}}
+\end{aligned}
+\right.
+$};
+
+\draw [vecArrow] (lag1) -- node (text1) [anchor = east, text width = 3cm] {\vspace*{-0.5cm} \begin{center}Теорема Донкина \end{center}} (ham1);
+
+\draw [arrow] (lag1) -| (eq1);
+\draw [arrow] (eq1) |- (ham1);
+
+\begin{scope}[on background layer]
+  \node [fill = BurntOrange!20, fit = (lag1) (ham1) (eq1) (text1)] {};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Модель трехатомного гидрида с деформационной степенью свободы}
+  \begin{block}{}
+	\begin{center}
+	  \includegraphics[width=0.6\textwidth]{../pictures/triatomic_fixed.png}
+	\end{center}
+
+	\vspace*{-1cm}
+	\begin{gather}
+	  \mathcal{H}(\vec{q}, \vec{p}, \vec{J}) = \frac{1}{2I_0} \left[ \frac{J_x^2}{1-\cos q} + \frac{J_z^2}{1 + \cos q} + \frac{J_y^2}{2} \right] + \frac{p^2}{I_0} + \notag \\
+	  + \frac{1}{2I_0} \left( \frac{V_{-}}{1 - \cos q} + \frac{V_{+}}{1 + \cos q} \right) \notag
+	\end{gather}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Концепция поверхности вращательной энергии}
+  \begin{varblock}[11cm]{}
+	\begin{gather}
+	  \left\{
+	  \begin{aligned}
+	    \left( \frac{\partial \mathcal{H}}{\partial \mathbf{q}} \right)_{\substack{\mathbf{q} = \mathbf{q}_e \\ \mathbf{p} = \mathbf{p}_e}} = 0 \\
+		 \left( \frac{\partial \mathcal{H}}{\partial \mathbf{p}} \right)_{\substack{\mathbf{q} = \mathbf{q}_e \\ \mathbf{p} = \mathbf{p}_e}} = 0	     
+	  \end{aligned}
+	  \right.
+	  \quad \implies \quad
+	  \mathcal{H}_r = \mathcal{H} \left( \mathbf{q}_e, \mathbf{p}_e, \mathbf{J} \right)
+	  \notag \\
+	  \mathcal{H}_r = \frac{1}{4I_0} \left[ \left( \sqrt{V_{+} + J_z^2} + \sqrt{V_{-} + J_x^2} \right)^2 + J_y^2 \right] \notag
+	  \end{gather}
+  \end{varblock}
+  
+\end{frame}
+
+\begin{frame}{ПВЭ для модели с деформационной степенью свободы}
+  \begin{varblock}[11cm]{}
+
+	 \scriptsize \begin{gather}
+	  E_r (\varphi, \theta; J) = \frac{1}{4I_0} \left[ \left( \sqrt{V_{+} + J^2 \cos^2 \theta} + \sqrt{V_{-} + J^2 \cos^2 \phi \sin^2 \theta} \right)^2 + J^2 \sin^2 \phi \sin^2 \theta \right] \notag
+	  \end{gather}
+	\vspace*{-0.5cm}
+  	  \begin{figure}
+  	    \begin{subfigure}{0.3\textwidth}
+		  \includegraphics[width=\textwidth]{../pictures/Rigid_RES_10.png}
+		  \caption{J = 10}
+	    \end{subfigure}
+	    \begin{subfigure}{0.3\textwidth}
+		  \includegraphics[width=\textwidth]{../pictures/Rigid_RES_30.png}
+		  \caption{J=30}
+		\end{subfigure}
+		\begin{subfigure}{0.3\textwidth}
+		  \includegraphics[width=\textwidth]{../pictures/Rigid_RES_50.png}
+		  \caption{J=50}
+		\end{subfigure}  
+	  \end{figure}
+  \end{varblock}    
+\end{frame}
+
+\begin{frame}{Полная система динамических уравнений}
+\begin{center}
+\begin{tikzpicture}
+\node (eq1) [equations, minimum width = 4 cm, text width = 4 cm] 
+{$
+\left\{
+\begin{aligned}
+\dot{\mathbf{p}} &= \frac{\partial \mathcal{H}}{\partial \mathbf{q}} \\
+\dot{\mathbf{q}} &= - \frac{\partial \mathcal{H}}{\partial \mathbf{p}} \\
+\dot{\mathbf{J}} &= \left[ \frac{\partial \mathcal{H}}{\partial \mathbf{J}} \times \mathbf{J} \right] = 0 
+\end{aligned}
+\right.
+$};
+
+\node (eq2) [equations, minimum height = 4cm, minimum width = 8cm, text width = 8cm, below right = 0.1cm and -3.5cm of eq1] 
+{$
+\left\{
+\begin{aligned}
+\dot{\mathbf{p}} &= \frac{\partial \mathcal{H}}{\partial \mathbf{q}} \\
+\dot{\mathbf{q}} &= - \frac{\partial \mathcal{H}}{\partial \mathbf{p}} \\
+\dot{\Phi} &= \left( \frac{\partial \mathcal{H}}{\partial J_x} \cos \Phi + \frac{\partial \mathcal{H}}{\partial J_y} \sin \Phi \right) \ctg \Theta - \frac{\partial \mathcal{H}}{\partial J_z} \\
+\dot{\Theta} &= \frac{\partial \mathcal{H}}{\partial J_x} \sin \Phi - \frac{\partial \mathcal{H}}{\partial J_y} \cos \Phi
+\end{aligned}
+\right.
+$};
+
+\node (eq3) [equations, minimum height = 2 cm, minimum width = 3.5 cm, text width = 3.5 cm, right = 0.6 cm of eq1]
+{$
+\left\{
+\begin{aligned}
+J_x &= J \cos \Phi \sin \Theta \\
+J_y &= J \sin \Phi \sin \Theta \\
+J_z &= J \cos \Theta
+\end{aligned}
+\right.
+$}; 
+
+\draw [arrow] (eq1) -- (eq3);
+
+\draw [arrow] 
+([xshift=-8mm] eq3.south east) -- node [anchor = east, text width = 2cm] {\vspace*{-0.25cm}\begin{center} $J = \text{const}$ \end{center}} ([xshift=-11.9mm] eq2.north east);
+
+\begin{scope}[on background layer]
+  \node [fill = BurntOrange!20, fit = (eq1) (eq2) (eq3)] {};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Система динамических уравнений для модельной системы}
+  \begin{varblock}[11cm]{}
+  \vspace*{-0.5cm}
+	\scriptsize \begin{gather}
+\left\{
+\begin{aligned}
+\dot{\Phi} &= \left( \frac{J \cos \Phi \sin \Theta}{I_0 ( 1 - \cos q)} \cos \Phi + \frac{J \sin \Phi \sin \Theta}{2I_0} \sin \Phi \right) \ctg \Theta - \frac{J \cos \Theta}{I_0 (1 + \cos q)} \\
+\dot{\Theta} &= \frac{J \cos \Phi \sin \Theta}{I_0 (1 - \cos q)} \sin \Phi - \frac{J \sin \Phi \sin \Theta}{2I_0} \cos \Phi \\
+\dot{q} &= 2	\frac{p}{I_0} \\
+\dot{p} &= - \frac{\sin q}{2I_0} \left( \frac{J^2 \cos^2 \Theta}{(1 + \cos q)^2} - \frac{J \cos^2 \Phi \sin^2 \Theta}{(1 - \cos q)^2} \right) - \frac{1}{2I_0} \left( \frac{V_{+} \sin q}{(1 + \cos q)^2} - \frac{V_{-} \sin q}{(1 - \cos q)^2} \right)
+\end{aligned}
+\right. \notag
+	\end{gather}
+  \end{varblock}
+\end{frame}
+
+
+
+\end{document}
