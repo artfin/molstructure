@@ -4,7 +4,7 @@
 
 \begin{document}
 
-\begin{frame}{\small
+\begin{frame}{\large
 \begin{center}
 Кафедра физической химии \\ Лаборатория строения и квантовой механики молекул
 \end{center}}
@@ -84,7 +84,7 @@ $};
 	\vspace*{-1cm}
 	\begin{gather}
 	  \mathcal{H}(\vec{q}, \vec{p}, \vec{J}) = \frac{1}{2I_0} \left[ \frac{J_x^2}{1-\cos q} + \frac{J_z^2}{1 + \cos q} + \frac{J_y^2}{2} \right] + \frac{p^2}{I_0} + \notag \\
-	  + \frac{1}{2I_0} \left( \frac{V_{-}}{1 - \cos q} + \frac{V_{+}}{1 + \cos q} \right) \notag
+	  + \frac{1}{2I_0} \left( \frac{V_{-}}{1 - \cos q} + \frac{V_{+}}{1 + \cos q} \right), \quad I_0 = m r_0^2 \notag
 	\end{gather}
   \end{block}
 \end{frame}
@@ -99,7 +99,7 @@ $};
 	  \end{aligned}
 	  \right.
 	  \quad \implies \quad
-	  \mathcal{H}_r = \mathcal{H} \left( \mathbf{q}_e, \mathbf{p}_e, \mathbf{J} \right)
+	  \mathcal{H}_r \left( J_x, J_y, J_z \right) = \mathcal{H} \left( \mathbf{q}_e, \mathbf{p}_e, \mathbf{J} \right)
 	  \notag \\
 	  \mathcal{H}_r = \frac{1}{4I_0} \left[ \left( \sqrt{V_{+} + J_z^2} + \sqrt{V_{-} + J_x^2} \right)^2 + J_y^2 \right] \notag
 	  \end{gather}
@@ -107,7 +107,7 @@ $};
   
 \end{frame}
 
-\begin{frame}{ПВЭ для модели с деформационной степенью свободы}
+\begin{frame}{Поверхность вращательной энергии для модели с деформационной степенью свободы}
   \begin{varblock}[11cm]{}
 
 	 \scriptsize \begin{gather}
@@ -140,7 +140,7 @@ $};
 \begin{aligned}
 \dot{\mathbf{p}} &= \frac{\partial \mathcal{H}}{\partial \mathbf{q}} \\
 \dot{\mathbf{q}} &= - \frac{\partial \mathcal{H}}{\partial \mathbf{p}} \\
-\dot{\mathbf{J}} &= \left[ \frac{\partial \mathcal{H}}{\partial \mathbf{J}} \times \mathbf{J} \right] = 0 
+\dot{\mathbf{J}} &+ \left[ \frac{\partial \mathcal{H}}{\partial \mathbf{J}} \times \mathbf{J} \right] = 0 
 \end{aligned}
 \right.
 $};
@@ -196,6 +196,121 @@ $};
   \end{varblock}
 \end{frame}
 
+\begin{frame}{Траектории конца вектора углового момента в основном состоянии}
+\begin{block}{}
+\begin{figure}
+  \begin{subfigure}{0.3\textwidth}
+	\includegraphics[width = \linewidth]{../pictures/rigid_base/plot_J=10n=0.png}
+	\caption{J=10}
+  \end{subfigure}
+  \begin{subfigure}{0.3\textwidth}
+    \includegraphics[width = \linewidth]{../pictures/rigid_base/plot_J=15n=0.png}
+    \caption{J=15}
+  \end{subfigure}
+  \begin{subfigure}{0.3\textwidth}
+    \includegraphics[width = \linewidth]{../pictures/rigid_base/plot_J=20n=0.png}
+    \caption{J=20}
+  \end{subfigure} \\
+  \begin{subfigure}{0.3\textwidth}
+     \includegraphics[width = \linewidth]{../pictures/rigid_base/plot_J=21n=0.png}
+     \caption{J=21}
+  \end{subfigure}
+  \begin{subfigure}{0.3\textwidth}
+    \includegraphics[width = \linewidth]{../pictures/rigid_base/plot_J=22n=0.png}
+    \caption{J=22}
+  \end{subfigure}
+\end{figure}
+\end{block}
+\end{frame}
 
+\begin{frame}{Полномерная модель трехатомного гидрида}
+\begin{block}{Гамильтониан}
+\scriptsize \begin{gather}
+\mathcal{H} = \frac{1}{2} \left( \frac{J_x^2}{I_0 (1 - \cos q)} + \frac{J_y^2}{2 I_0} + \frac{J_z^2}{I_0 (1 + \cos q)} + 2 \frac{r_1^2 - r_2^2}{r_1^2 + r_2^2} \frac{J_x J_z}{I_0 \sin q} \right) + \frac{r_1^2 - r_2^2}{2m r_1^2 r_2^2} J_y p + \notag \\
++ \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac{p^2}{I_0} + U (r_1, r_2, q),
+\quad I_0 = \frac{2m r_1^2 \cdot r_2^2}{r_1^2 + r_2^2} \notag
+\end{gather}
+\end{block}
+\begin{block}{Потенциальная энергия}
+\scriptsize \begin{gather}
+\left[
+\begin{aligned}
+U(r_1, r_2, q) &= k (r_1 - r_0)^2 + k (r_2 - r_0)^2 + \frac{1}{2 I_1} \left( \frac{V_{-}}{1 - \cos q} + \frac{V_{+}}{1 + \cos q} \right) \\
+U(r_1, r_2, q) &= D_e (1 - \exp (- a (r_1 - r_e))^2 + D_e (1 - \exp (- a (r_2 - r_e))^2 + \\
+&+ \frac{1}{2 I_1} \left( \frac{V_{-}}{1 - \cos q} + \frac{V_{+}}{1 + \cos q} \right) ,
+\end{aligned}
+\right. \notag \\
+I_1 = m r_0^2 \notag
+\end{gather}
+\end{block}
+\end{frame}
+
+\begin{frame}{\small Траектории конца вектора углового момента в полномерной модели с гармоническим потенциалом в основном состоянии}
+  \begin{block}{}
+	\begin{figure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/HarmGroundState00/plot_J=10.png}
+	    \caption{J=10}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/HarmGroundState00/plot_J=15.png}
+	    \caption{J=15}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/HarmGroundState00/plot_J=20.png}
+	    \caption{J=20}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/HarmGroundState00/plot_J=22.png}
+	    \caption{J=22}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/HarmGroundState00/plot_J=24.png}
+	    \caption{J=24}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/HarmGroundState00/plot_J=26.png}
+	    \caption{J=26}
+	  \end{subfigure}
+	\end{figure}
+  \end{block}
+\end{frame}
+
+\begin{frame}{\small Траектории конца вектора углового момента в полномерной модели с потенциалом Морзе в основном состоянии}
+  \begin{block}{}
+  	\begin{figure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/MorseGroundState00/plot_J=15.png}
+	    \caption{J=15}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/MorseGroundState00/plot_J=20.png}
+	    \caption{J=20}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/MorseGroundState00/plot_J=25.png}
+	    \caption{J=25}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/MorseGroundState00/plot_J=28.png}
+	    \caption{J=28}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/MorseGroundState00/plot_J=29.png}
+	    \caption{J=29}
+	  \end{subfigure}
+	  \begin{subfigure}{0.25\textwidth}
+	    \includegraphics[width = \linewidth]{../pictures/MorseGroundState00/plot_J=30.png}
+	    \caption{J=30}
+	  \end{subfigure}
+	 \end{figure}
+  \end{block}
+\end{frame}
+
+\begin{frame}{}
+\begin{center}
+\Huge Спасибо за внимание!
+\end{center}
+\end{frame}
 
 \end{document}
