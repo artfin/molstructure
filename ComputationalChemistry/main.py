@@ -5,6 +5,21 @@ h = 6.62607 * 10**(-34)
 c = 2.99792 * 10**(10)
 amu = 1.66054 * 10**(-27)
 
+a = 1.35
+b = 1.08
+alpha = 112.8 / 360 * 2 * m.pi
+beta = 108.5 / 360 * 2 * m.pi
+
+# atom1 = [a * m.sin(beta/ 2), 0, a * m.cos(beta/2)]
+# atom2 = [- a * m.sin(beta / 2), 0 , a * m.cos(beta/2)]
+# atom3 = [0, -b * m.sin(alpha/2), b * m.cos(alpha/2)]
+# atom4 = [0, b * m.sin(alpha/2), b * m.cos(alpha/2)]
+# atom5 = [0,0,0]
+# atoms = [atom1, atom2, atom3, atom4, atom5]
+
+# for atom in atoms:
+# 	print "x: {0}, y: {1}, z: {2}".format(atom[0], atom[1], atom[2])
+
 class Particle(object):
 
 	atoms = {"F" : 19, "C" : 12, "H" : 1, "O" : 16}
@@ -40,11 +55,17 @@ class Molecule(object):
 			atom.z = atom.z - self.COM.z
 
 		self.inertia_tensor = self._inertia_tensor()
+		print "inertia_tensor: {0}".format(self.inertia_tensor)
+
 		eigvals, eigvecs = np.linalg.eig(self.inertia_tensor)
-		print "tensor inertia eigenvalues: {0}".format(eigvals)
+		print "inertia tensor eigenvalues: {0}".format(eigvals)
 		
 		rotational_constants = self._rotational_constants(eigvals)
-		print "rotational_constants: {0} (in MHz)".format(rotational_constants)
+		#print "rotational_constants: {0} (in MHz)".format(rotational_constants)
+
+		assymetry_parameter = (2 * rotational_constants[2] - rotational_constants[0] - rotational_constants[1]) / \
+							  (rotational_constants[0] - rotational_constants[1])
+		print "assymetry_parameter: {0}".format(assymetry_parameter)
 
 		self._rotate_molecule()
 
@@ -133,9 +154,15 @@ class Molecule(object):
 
 	def _rotational_constants(self, eigvals):
 
-		#inverse_constants = [(8 * m.pi ** 2 * val * c) / h for val in eigvals] in cm^(-1)
-		inverse_constants = [(8 * m.pi ** 2 * val * 10**(6)) / h for val in eigvals] # in MHz
-		return [1 / val for val in inverse_constants]
+		inverse_constants_1 = [(8 * m.pi ** 2 * val * c) / h for val in eigvals] #in cm^(-1)
+		inverse_constants_2 = [(8 * m.pi ** 2 * val * 10**(6)) / h for val in eigvals] # in MHz
+		constants_1 = [1 / val for val in inverse_constants_1]
+		constants_2 = [1 / val for val in inverse_constants_2]
+
+		print "rotational_constants: {0} (in cm-^1)".format(constants_1)
+		print "rotational_constants: {0} (in MHz)".format(constants_2)
+
+		return constants_1
 	
-molecule = Molecule("ch2f2.xyz")
+molecule = Molecule("ch2f2_my.xyz")
 #molecule = Molecule("dimethylether.xyz")
