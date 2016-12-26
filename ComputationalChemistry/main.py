@@ -22,7 +22,7 @@ beta = 108.5 / 360 * 2 * m.pi
 
 class Particle(object):
 
-	atoms = {"F" : 19, "C" : 12, "H" : 1, "O" : 16}
+	atoms = {"F" : 19, "C" : 12, "H" : 1, "O" : 16, "Cr" : 52}
 
 	def __init__(self, x, y, z, name = None):
 		self.x = x * 10**(-10)
@@ -164,5 +164,5 @@ class Molecule(object):
 
 		return constants_1
 	
-molecule = Molecule("ch2f2_my.xyz")
+molecule = Molecule("crombenzene.xyz")
 #molecule = Molecule("dimethylether.xyz")
