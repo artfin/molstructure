@@ -1,0 +1,109 @@
+\documentclass[14pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage[dvipsnames,prologue]{pstricks}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
+\usetikzlibrary{fit}
+\usepackage{microtype}
+\usepackage{framed}
+\usetikzlibrary{decorations.pathmorphing, calc, backgrounds}
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{float}
+\usepackage{dsfont}
+
+
+%\usepackage[dvipsnames]{xcolor}
+%\pdfmapfile{+sansmathaccent.map}
+
+\newcommand{\bbS}{\mathds{S}}
+
+% page margin
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\begin{document}
+
+\begin{figure}[H]
+\hspace*{-0.75cm}
+\begin{tikzpicture}[framed]
+
+\tikzstyle{lagrange} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 7cm, draw = black, fill=red!30]
+
+\tikzstyle{hamilton} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 7cm, draw = black, fill=yellow!30]
+
+\tikzstyle{equations} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 5cm, draw = black, fill=green!30]
+
+\tikzstyle{equations_big} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 8cm ,draw = black, fill = green!30]
+
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+\tikzstyle{arrow_comes_above} = [thick, ->, >=stealth, yshift=10pt]
+
+\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
+   1 with {\arrow[semithick]{open triangle 60}}},
+   double distance=1.4pt, shorten >= 5.5pt,
+   preaction = {decorate},
+   postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+
+\node (lag1) [lagrange] {$\mathcal{L} = \mathcal{L}(\mathbf{r}_1^{\ \prime},  \cdots, \mathbf{r}_n^{\ \prime}, \dot{\mathbf{r}}_1^{\ \prime}, \cdots, \dot{\mathbf{r}}_n^{\ \prime})$};
+
+\node (lag2) [lagrange, below = 1 cm of lag1] {$\mathcal{L} = \mathcal{L} (\mathbf{r}_1, \cdots, \mathbf{r}_{n-1}, \dot{\mathbf{r}}_1, \cdots, \dot{\mathbf{r}}_{n-1})$};
+
+\node (lag3) [lagrange, below = 1 cm of lag2] {$\mathcal{L} = \mathcal{L}(\mathbf{R}_1, \cdots, \mathbf{R}_n, \dot{\mathbf{R}}_1, \cdots, \dot{\mathbf{R}}_{n-1}, \mathbf{\Omega})$};
+
+\node (lag4) [lagrange, below = 1.5 cm of lag3] {$\mathcal{L} = \mathcal{L}(\mathbf{q}_1, \cdots, \mathbf{q}_s, \dot{\mathbf{q}}_1, \cdots, \dot{\mathbf{q}}_s, \mathbf{\Omega})$};
+
+\node (ham1) [hamilton, below = 2.5 cm of lag4] {$\mathcal{H} = \mathcal{H}(\mathbf{q}_1, \cdots, \mathbf{q}_s, \mathbf{p}_1, \cdots, \mathbf{p}_s, \mathbf{J})$};
+
+\node (eq5) [equations, below = 0.7 cm of ham1] {$
+\left\{
+\begin{aligned}
+\dot{\mathbf{p}} &= \frac{\partial \mathcal{H}}{\partial \mathbf{q}} \\
+\dot{\mathbf{q}} &= - \frac{\partial \mathcal{H}}{\partial \mathbf{p}} \\
+\dot{\mathbf{J}} &+ [ \frac{\partial \mathcal{H}}{\partial \mathbf{J}} \times \mathbf{J} ] = 0 
+\end{aligned}
+\right.
+$};
+
+\node (eq6) [equations_big, below= 0.7 cm of eq5] {$
+\left\{
+\begin{aligned}
+\dot{\mathbf{p}} &= \frac{\partial \mathcal{H}}{\partial \mathbf{q}} \\
+\dot{\mathbf{q}} &= - \frac{\partial \mathcal{H}}{\partial \mathbf{p}} \\
+\dot{\varphi} &= \left( \frac{\partial \mathcal{H}}{\partial J_x} \cos \varphi + \frac{\partial \mathcal{H}}{\partial J_y} \sin \varphi \right) \ctg \theta - \frac{\partial \mathcal{H}}{\partial J_z} \\
+\dot{\theta} &= \frac{\partial \mathcal{H}}{\partial J_x} \sin \varphi - \frac{\partial \mathcal{H}}{\partial J_y} \cos \varphi
+\end{aligned}
+\right.
+$};
+
+\draw [vecArrow] (lag1) -- node (text1) [anchor = east, text width = 6cm] {Переход в систему отсчета, связанную с центром масс} node[anchor = west] {\hspace{0.3cm} $\mathbf{r}_i^{\ \prime} = \mathbf{R} + \mathbf{r}_i$} (lag2);
+
+\draw [vecArrow] (lag2) -- node[anchor = east] (text2) {Переход в подвижную систему отсчета} node[anchor = west] {\hspace{0.3cm} $\mathbf{r}_i = \mathbb{S} \mathbf{R}_i$} (lag3);
+
+\draw [vecArrow] (lag3) -- node[anchor = east] (text3) {Переход к обобщенным координатам} node[anchor = west] (text5) {\hspace{0.3cm} $\mathbf{R}_i = \mathbf{R}_i(\mathbf{q}_1, \cdots, \mathbf{q}_s) \hspace{2cm}$} (lag4);
+
+\draw [vecArrow] (lag4) -- node[anchor = east] (text4) {Применение теоремы Донкина} node[anchor = west] {\hspace{0.3cm}
+$\left\{
+\begin{aligned}
+J &= \frac{\partial \mathcal{L}}{\partial \mathbf{\Omega}} \\
+p &= \frac{\partial \mathcal{L}}{\partial \dot{\mathbf{q}}}
+\end{aligned}
+\right.$} (ham1);
+
+\draw [vecArrow] (ham1) -- (eq5);
+\draw [vecArrow] (eq5) -- (eq6);
+
+  \begin{scope}[on background layer]
+    \node [fill=BurntOrange!20,fit= (lag1) (lag2) (lag3) (lag4) (ham1) (eq5) (eq6) (text1) (text2) (text3) (text4) (text5)] {};
+  \end{scope}
+
+\end{tikzpicture}
+\label{fig:flowHam}
+\end{figure}
+
+\end{document}
+
