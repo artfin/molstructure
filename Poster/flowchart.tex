@@ -1,38 +1,3 @@
-% we don't want ae.sty
-\expandafter\def\csname ver@ae.sty\endcsname{}
-
-\documentclass[
-  20pt,
-  a1paper,
-  portrait,
-  margin=0mm,
-  innermargin=15mm,
-  blockverticalspace=15mm,
-  colspace=15mm,
-  subcolspace=8mm
-]{tikzposter}
-
-\usetheme{Simple}
-%\usecolorstyle[colorPalette=BrownBlueOrange]{Germany}
-
-\input{Preamble.tex}
-
-% tikz libraries
-\usepackage{tikz}
-\usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
-\usetikzlibrary{fit}
-\usepackage{framed}
-\usetikzlibrary{decorations.pathmorphing, calc, backgrounds}
-
-\begin{document}
-\maketitle
-
-\block{Введение}{
-    Для подавляющего количества задач, решаемых в области теоретической молекулярной спектроскопии, в последнее время применяются методы, основанные на квантовом рассмотрении. Однако, несмотря на значительные вычислительные мощности, доступные в наше время, существуют задачи, в которых квантовое рассмотрение не представляется возможным. Существует небольшой класс задач, при решении которых методы классической механики успешн конкурируют как с квантовыми вычислениями, так и с методами молекулярной динамики. К этому классу относят вращение молекулярных систем в условиях сильного колебательно-вращательного взаимодействия [!]. Помимо прочего, классическое рассмотрение может дать лучшее понимание квантовых явлений, происходящих в рамках рассматриваемой задачи. В данной работе изучается вращение трехатомных гидридов в условиях сильного колебательного взаимодействия.
-}
-\begin{columns}
-\column{0.5}
-\block{Метод анализа колебательно-вращательной динамики}{
     \begin{tikzpicture}
         \tikzstyle{lagrange} = [rectangle, rounded corners, minimum height = 1cm, text centered, draw = black, fill = red!30]
     
@@ -94,7 +59,4 @@ $};
     \end{tikzpicture}
 
 }
-\column{0.5}
-\block{BlocktitleC}{Blocktext}
-\end{columns}
-\end{document}
+
