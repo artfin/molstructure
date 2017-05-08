@@ -1,0 +1,62 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+% page margin
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+% AMS packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% blackboard lettering
+\usepackage{dsfont}
+\usepackage{bbm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% table packages
+\usepackage{tabularx, ragged2e, booktabs, caption}
+% includegraphics package
+\usepackage{graphicx}
+
+% commands
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\mH}{\mathcal{H}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mf}{\mathbf}
+
+\newcommand{\bbB}{\mathbb{B}}
+\newcommand{\bbG}{\mathbb{G}}
+\newcommand{\bbS}{\mathbb{S}}
+\newcommand{\bbI}{\mathbb{I}}
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\bba}{\mathbbm{a}}
+
+% positioning commands
+\newcommand{\vpravo}{\hspace{0.63cm}}
+\newcommand{\vverh}{\vspace*{-0.1cm}}
+
+% table cell centering
+\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+
+\makeatletter
+\providecommand\barcirc{\mathpalette\@barred\circ}%
+\def\@barred#1#2{\ooalign{\hfil$#1-$\hfil\cr\hfil$#1#2$\hfil\cr}}%
+\newcommand\stst{^{\protect\barcirc}}%
+\makeatother
+
+% tikz packages
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
+\usetikzlibrary{fit}
+\usepackage{microtype}
+\usepackage{framed}
+\usetikzlibrary{decorations.pathmorphing,calc,backgrounds}
+
+

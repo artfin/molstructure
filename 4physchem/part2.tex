@@ -1,0 +1,119 @@
+\section{Схема получения полного колебательно-вращательного гамильтониана.}
+
+Рассмотрим систему $n$ материальных точек. Обозначим их массы через $m_i$, их радиус-векторы в системе отсчета, cвязанной с  центром масс (такую систему в дальнейшем будем называть лабораторной), через $\mf{r}_i \, (i = 1, \dots n)$, в подвижной системе координат (также называемой молекулярной системой отсчета) -- через $\mf{R}_i \, (i = 1, \dots n)$. После отделения энергии центра масс кинетическая энергия в лагранжевой форме имеет следующий вид:
+\vverh
+\begin{gather}
+	T_\mL = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{\mf{r}}^2 \notag
+\end{gather}
+
+Переход от лабораторной системы отсчета к подвижной системе может быть осуществлен при помощи углов Эйлера $\varphi$, $\theta$ и $\psi$. Ортогональная матрица $\bbS$, связывающая координаты векторов в лабораторной и молекулярной системах отсчета является произведением матриц поворота:
+\vverh
+\begin{gather}
+	\bbS = \bbS_\psi \, \bbS_\theta \, \bbS_\varphi =  
+	\begin{bmatrix}
+		\cos \psi & \sin \psi & 0 \\
+		- \sin \psi & \cos \psi & 0 \\
+		0 & 0  & 1
+	\end{bmatrix}
+	\begin{bmatrix}
+		1 & 0 & 0 \\
+		0 & \cos \theta & \sin \theta \\
+		0 & - \sin \theta & \cos \theta 
+	\end{bmatrix}
+	\begin{bmatrix}
+		\cos \varphi & \sin \varphi & 0 \\
+		- \sin \varphi & \cos \varphi & 0 \\
+		0 & 0 & 1
+	\end{bmatrix} \notag \\
+	\mf{a}_{\text{МСК}} = \bbS \, \mf{a}_{\text{ЛСК}} \quad \implies \quad \mf{R}_i = \bbS \mf{r}_i \notag
+\end{gather}
+
+В подвижной системе отсчета кинетическая энергия в лагранжевой форме имеет следующий вид:
+\vverh
+\begin{gather}
+	T = \frac{1}{2} \sum_{i = 1}^{n} m_i \dot{\mf{R}}_i^2 + \mf{\Omega}^\top \sum_{i=1}^{n} m_i \left[ \mf{R}_i \times \dot{\mf{R}}_i \right] + \mf{\Omega}^{\top} \bbI \, \mf{\Omega} \notag
+\end{gather}
+
+Пусть исследуемая система содержит $s$ внутренних степеней свободы, тогда $\mf{R}_i = \mf{R}_i \lb \mf{q} \rb, \, \mf{q} = \lb q_1, \dots q_s \rb$. Подставляя выражение для радиус-векторов $\mf{R}_i$ через внутренние координаты, приходим к следующей форме кинетической энергии:
+\vverh
+\begin{gather}
+	T_\mL = \frac{1}{2} \dot{\mf{q}}^\top \bba \dot{\mf{q}} + \mf{\Omega}^\top \bbA \, \dot{\mf{q}} + \frac{1}{2} \mf{\Omega}^\top \bbI \, \mf{\Omega}, \notag
+\end{gather}
+
+где $\bba_{jk} = \displaystyle \sum_{i=1}^{n} m_i \displaystyle \frac{\partial \mf{R}_i}{\partial q_j} \frac{\partial \mf{R}_i}{\partial q_k}$ -- матрица относительной кинетической энергии; \\ 
+$\bbA_{jk} = \displaystyle \sum_{i=1}^{n} m_i \left[ \mf{R}_i \times \displaystyle \frac{\partial \mf{R}_i}{\partial q_k} \right]_\alpha$ (здесь $\alpha = x, y, z$ соответствуют $j = 1, 2, 3$) -- кориолисова матрица; $\bbI$ -- матрица тензора инерции. \par
+Перепишем выражение для кинетической энергии в матричном виде, где матрица $\bbB$ представляет собой блочную матрицу:
+\vverh
+\begin{gather}
+	T_\mL = \frac{1}{2}
+	\begin{bmatrix}
+		\mf{\Omega}^\top & \hspace*{-2mm} \dot{\mf{q}}^\top
+	\end{bmatrix}
+	\bbB
+	\begin{bmatrix}
+		\mf{\Omega} \\ 
+		\dot{\mf{q}}
+	\end{bmatrix},
+	\quad \quad
+	\bbB = 
+	\begin{bmatrix}
+		\bbI & \bbA \\
+		\bbA^\top & \bba
+	\end{bmatrix}
+	\notag
+\end{gather}
+
+Запишем гамильтоновы переменные $\mf{p}$ и $\mf{J}$ как производные кинетической энергии в лагранжевом представлении. Заметим, что блочный вектор гамилтоновых переменных связан с блочным вектором лагранжевых переменных матрицей $\bbB$.
+\vverh
+\begin{gather}
+	\begin{aligned}
+		\mf{J} &= \frac{\partial T_\mL}{\partial \mf{\Omega}} = \bbI \, \mf{\Omega} + \bbA \, \dot{\mf{q}} \\
+		\mf{p} &= \frac{\partial T_\mL}{\partial \dot{\mf{q}}} = \bbA^\top \mf{\Omega} + \bba \dot{\mf{q}}
+	\end{aligned}
+	\quad \implies \quad
+	\begin{bmatrix}
+		\mf{J} \\
+		\mf{p}
+	\end{bmatrix} = 
+	\bbB
+	\begin{bmatrix}
+		\mf{\Omega} \\
+		\dot{\mf{q}}
+	\end{bmatrix} \notag
+\end{gather}
+
+Обращение блочной матрицы $\bbB$ легче всего осуществить воспользовавшись формулами Фробениуса. Обозначим $\bbG = \bbB^{-1} = \begin{bmatrix} \bbG_{11} & \bbG_{12} \\ \bbG_{21} & \bbG_{22} \end{bmatrix}$:
+\vverh
+\begin{gather}
+	\begin{aligned}
+		\bbG_{11} &= \lb \bbI - \bbA \bba^{-1} \bbA^\top \rb^{-1} \\
+		\bbG_{12} &= - \bbI^{-1} \bbA \bbG_{22} = - \bbG_{11} \bbA \bba^{-1} \\
+		\bbG_{21} &= - \bba^{-1} \bbA^\top \bbG_{11} = \bbG_{22} \bbA^\top \bbI^{-1} \\
+		\bbG_{22} &= \lb \bba - \bbA^\top \bbI^{-1} \bbA \rb^{-1}
+	\end{aligned} \notag
+\end{gather}
+
+Кинетическую энергию в гамильтоновом представлении получаем в результате стандартной процедуры:
+\vverh
+\begin{gather}
+	T_\mH = 
+	\begin{bmatrix}
+		\mf{\Omega}^\top & \hspace*{-2mm} \dot{\mf{q}}
+	\end{bmatrix}
+	\begin{bmatrix}
+		\mf{J} \\
+		\mf{p}
+	\end{bmatrix}
+	- T_\mL = \frac{1}{2} 
+	\begin{bmatrix}
+		\mf{J} & \mf{p}
+	\end{bmatrix}
+	\bbG
+	\begin{bmatrix}
+		\mf{J} \\
+		\mf{p}
+	\end{bmatrix} = 
+	\frac{1}{2} \mf{J}^\top \bbG_{11} \mf{J} + \frac{1}{2} \mf{p}^\top \bbG_{22} \mf{p} + \mf{J} \, \bbG_{12} \mf{p} \notag
+\end{gather}
+
+

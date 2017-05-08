@@ -1,0 +1,33 @@
+\section{Колебательно-вращательный гамильтониан системы $Ar-CO_2$}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+	[oxygen/.style={ball color = red, circle, text = white}, 
+	carbon/.style={ball color = black!30, circle, text = white},
+	argon/.style={ball color = blue, circle, text = white}]
+	\node (z1) at (4.5, 3) {OZ};
+	\node (z2) at (-1.5, -1) {}
+		edge [->, thick] (z1);
+
+	\node (x1) at (-1, 3.5) {OX};
+	\node (x2) at (3.5, -1) {}
+		edge [->, thick] (x1); 
+
+	\node (carbon) [carbon] {C};
+	\node (oxygen1) [oxygen, below right of = carbon] {O}
+		edge [double, thick] (carbon);
+	\node (oxygen2) [oxygen, above left of = carbon] {O}
+		edge [double, thick] (carbon);
+	\node[argon] (argon) at (3, 2) {Ar};
+
+	\begin{scope}[on background layer]
+	\node [fill=yellow!30,fit=(z1) (z2) (x1) (x2) (carbon) (oxygen1) (oxygen2)] {};
+\end{scope}
+\end{tikzpicture}
+\caption{Молекулярная система отсчета для системы $Ar-CO_2$.}
+\end{figure}
+
+
+
+
