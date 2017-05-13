@@ -1,5 +1,7 @@
 \section{Колебательно-вращательный гамильтониан системы $Ar-CO_2$}
 
+Введем молекулярную систему отсчета: направим ось $OZ$ вдоль линии $C-Ar$, ось $OX$ через центр масс перпендикулярно ей в плоскости системы, ось $OY$ перпендикулярно плоскости системы. Обозначим массы атомом: кислорода -- $m_1$, аргона -- $m_2$, углерода -- $m_3$; обозначим $l$ расстояние $O-O$ в молекуле $CO_2$.  
+
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}
@@ -28,6 +30,62 @@
 \caption{Молекулярная система отсчета для системы $Ar-CO_2$.}
 \end{figure}
 
+Введем следующие обозначения:
+\vverh
+\begin{gather}
+	\mu_1 = \frac{m_1}{2}, \quad 
+	\mu_2 = \frac{m_2 \lb 2 m_1 + m_3 \rb}{2 m_1 + m_2 + m_3} \notag
+\end{gather}
+
+Матрицы $\bba$, $\bbA$, $\bbI$, определяющие вид кинетической энергии в лагранжевой форме (вектор $\mf{q}$ используется в следующей форме $\begin{bmatrix} R & \theta \end{bmatrix}$):
+\vverh
+\begin{gather}
+	\bba =
+	\begin{bmatrix}
+		\mu_2 & 0 \\
+		0 & \mu_1 l^2
+	\end{bmatrix} \quad 
+	\bbA = 
+	\begin{bmatrix}
+		0 & 0 \\
+		0 & \mu_1 l^2 \\
+		0 & 0 
+	\end{bmatrix} \quad
+	\bbI = 
+	\begin{bmatrix}
+		\mu_1 l^2 \cos^2 \theta + \mu_2 R^2 & 0 & -\mu_1 l^2 \sin \theta \cos \theta \\
+		0 & \mu_1 l^2 + \mu_2 R^2 & 0 \\
+		- \mu_1 l^2 \sin \theta \cos \theta & 0 & \mu_1 l^2 \sin^2 \theta
+	\end{bmatrix} \notag
+\end{gather}
+
+Используя формулы Фробениуса, получаем матрицы $\bbG_{11}$, $\bbG_{12}$, $\bbG_{22}$, определяющие кинетическую энергию в гамильтоновой форме:
+\vverh
+\begin{gather}
+	\bbG_{11} =
+	\begin{bmatrix}
+		\dfrac{1}{\mu_2 R^2} & 0 & \dfrac{\ctg \theta}{\mu_2 R^2} \\
+		0 & \dfrac{1}{\mu_2 R^2} & 0 \\
+		\dfrac{\ctg \theta}{\mu_2 R^2} & 0 & \dfrac{\ctg^2 \theta}{\mu_2 R^2} + \dfrac{1}{\mu_1 l^2 \sin^2 \theta}
+	\end{bmatrix} \quad
+	\bbG_{12} =
+	\begin{bmatrix}
+		0 & 0 \\
+		0 & - \dfrac{1}{\mu_2 R^2} \\
+		0 & 0
+	\end{bmatrix} \quad 
+	\bbG_{22} = 
+	\begin{bmatrix}
+		\dfrac{1}{\mu_2} & 0 \\
+		0 & \dfrac{1}{\mu_2 R^2} + \dfrac{1}{\mu_1 l^2}
+	\end{bmatrix} \notag
+\end{gather}
+
+Получаем гамильтониан системы $Ar-CO_2$ в заданной молекулярной системе координат:
+\begin{gather}
+\mH = \frac{1}{2 \mu_2} p_R^2 + \lb \frac{1}{2 \mu_2 R^2} + \frac{1}{2 \mu_1 l^2} \rb p_\theta^2 - \frac{1}{\mu_2 R^2} p_\theta J_y + \frac{1}{2 \mu_2 R^2} J_y^2 + \frac{1}{2 \mu_2 R^2} J_x^2 + \frac{1}{2 \sin^2 \theta} \lb \frac{\cos^2 \theta}{\mu_2 R^2} + \frac{1}{\mu_1 l^2} \rb J_z^2 + \notag \\
++ \frac{\ctg \theta}{\mu_2 R^2} J_x J_z + U(R, \theta) \notag
+\end{gather}
 
 
 
