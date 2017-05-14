@@ -1,3 +1,160 @@
 \section{Расчет второго вириального коэффициента и квантовых поправок}
 
+\subsection{Групповое разложение}
 
+Рассмотрим однокомпонентный классический газ, состоящий из $N$ одинаковых частиц и занимающих объем $V$. Предположим, что парные взаимодействия частиц являются центральными, и общая потенциальная энергия $U$ является суммой парных взаимодействий частиц $u = u(r)$. Конфигурационный интеграл газа $Z_N$ запишется в виде:
+\vverh
+\begin{gather}
+	Z_N (T, V) = \int_V \cdots \int_V \exp \lb - \frac{\displaystyle\sum_{1 \leqslant i < j \leqslant N} u \lb r_{ij} \rb}{kT} \rb d \mathbf{r}_1 d \mathbf{r}_2 \dots \mathbf{r}_N = \notag \\
+	= \int_V \cdots \int_V \prod_{1 \leqslant i < j \leqslant N} \exp \lb - \frac{u \lb r_{ij} \rb}{KT} \rb d \mathbf{r}_1 d \mathbf{r}_2 \dots d \mathbf{r}_N \label{confint}
+\end{gather}
+
+Функция Майера определена соотношением
+\vverh
+\begin{gather}
+	\exp \lb - \frac{u \lb r_{ij} \rb}{kT} \rb = 1 + f_{ij} . \label{mayer}
+\end{gather}
+Функция $f = f(r)$ обладает следующими общими свойствами в зависимости от расстояния: при $r \longrightarrow 0: f(r) \longrightarrow -1$, затем $f(r)$ монотонно возрастает, проходит через максимум при расстоянии $r = d_0$, отвечающему минимуму потенциала $u(r)$, и при дальнейшем увеличении растояния между частицами она монотонно убывает, $f(r) \longrightarrow 0$ при $r \longrightarrow \infty$, оставаясь положительной. Таким образом, функция Майера существенно отлична от нуля только при расстояниях, отвечающих достаточно близкому расположению частиц. Подставляя выражение \eqref{mayer} в выражение для конфигурационного интеграла \eqref{confint}, получаем
+\vverh
+\begin{gather}
+	Z_N (T, V) = \int_V \cdots \int_V \prod_{1 \leqslant i < j \leqslant N} \lb 1 + f_{ij} \rb d \mathbf{r}_1 d \mathbf{r}_2 \dots d \mathbf{r}_N , \label{confint1}
+\end{gather}
+в которой подынтегральное выражение есть произведение $\displaystyle\frac{N \lb N - 1 \rb}{2}$ функций $\lb 1 + f_{ij} \rb$, каждая из которых соответсвует определенной паре частиц. Раскрывая произведение в \eqref{confint1}, получаем
+\vverh
+\begin{gather}
+	Z_N = \int_V \cdots \int_V \lb 1 + \sum_{i < j} f_{ij} + \sum_{i, j} \sum_{k,l} f_{ij} f_{kl} + \dots \rb d \mathbf{r}_1 d \mathbf{r}_2 \dots d \mathbf{r}_N = \int_V \cdots \int_V d \mathbf{r}_1 d \mathbf{r}_2 \dots d \mathbf{r}_N + \notag \\ 
+	+ \sum_{i < j} \int_V \cdots \int_V f_{ij} d \mathbf{r}_1 d \mathbf{r}_2 \dots d \mathbf{r}_N + \sum_{i, j} \sum_{k, l} \int_V \cdots \int_V f_{ij} f_{kl} d \mathbf{r}_1 d \mathbf{r}_2 \dots d \mathbf{r}_N + \dots \label{confint2}  
+\end{gather}
+
+\subsection{$N$-частичные графы}
+Каждому члену в разложении \eqref{confint2} можно сопоставить $N$-частичный граф, состоящий из $N$ пронумерованных вершин, соединенных ребрами в том случае, если в подынтегральном выражении функция Майера, содержащая индексы рассматриваемых вершин. Для $6$-частичного графа имеем
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.3\linewidth}
+	\begin{tikzpicture}
+	[vertex/.style={circle, draw=blue!50, fill=blue!20, thick}]
+	\node[vertex] (1) {1};
+	\node[vertex] (2) [below = 1cm of 1] {2}
+		edge [thick] (1);
+	\node[vertex] (3) [right = 1cm of 1] {3};
+	\node[vertex] (4) [below = 1cm of 3] {4};
+	\node[vertex] (5) [right = 1cm of 3] {5}
+		edge [thick] (4);
+	\node[vertex] (6) [below = 1 cm of 5] {6}
+		edge [thick] (5);
+	\begin{scope}[on background layer]
+		\node [fill=yellow!20,fit=(1) (2) (5) (6)] {};
+	\end{scope}
+	\end{tikzpicture}
+\end{minipage}%
+\begin{minipage}{0.5\linewidth}
+		\begin{equation*}
+			\int \cdots \int f_{12} f_{45} f_{56} \, d \mathbf{r}_1 d \mathbf{r}_2 \dots d \mathbf{r}_6
+		\end{equation*}
+\end{minipage}
+\caption{Пример $6$-частичного интеграла и соответствующего графа. }
+\end{figure}
+
+Назовем $l$-группой такой $l$-частичный граф, в котором к каждой вершине подходит по крайней мере одно ребро ($l$-группа -- связный $l$-частичный граф). Очевидно
+\vverh
+\begin{gather}
+	\sum_l l m_l = N \label{cond1}
+\end{gather}
+Обозначим через $m_l$ число $l$-групп для данного $N$-частичного графа, являющегося членом разложения конфигурационного интеграла $Z_N$. Данному набор чисел $\left\{ m_l \right\} = \left\{ m_1 , m_2 , \dots, m_N \right\}$, $( m_l \geqslant 0 )$ отвечает некоторая совокупность $N$-графов, сумму которых обозначим через $S_N \left( \left\{ m_l \right\} \right)$, тогда:
+\vverh
+\begin{gather}
+	Z_N = \sum_{ \left\{ m_l \right\} } S_N \left( \left\{ m_l \right\} \right), \notag
+\end{gather}
+где суммирование проводится по всем наборам чисел $\left\{ m_l \right\}$, удовлетворяющих условию \eqref{cond1}. \par
+Диаграммы, образующие $S_N \left( \left\{ m_l \right\} \right)$, отличаются, во-первых, способом распределения пронумерованных частиц по группам. Во-вторых, $l$-группы при $l \geqslant 3$ могут быть составлены из данных пронумерованных частиц различными способами. Так, при $N=4$, $m_1 = 1$, $m_2 = 0$, $m_3 = 1$, при распределении пронумерованных частиц $1; 2-3-4$ будут различными следующие четыре диаграммы:
+\vverh
+\begin{figure}[h]
+	\begin{minipage}{0.33\linewidth}
+		\begin{tikzpicture}
+			[vertex/.style={circle, draw=blue!50, fill=blue!20, thick}]
+			\node (dummy) {};
+			\node[vertex] (1) [below = -0.1cm of dummy] {1};
+			\node[vertex] (2) [below right = 1cm and 1.3cm of dummy] {2};
+			\node[vertex] (3) [above right = 1cm and 0.6cm of 2] {3}
+				edge [thick] (2); 
+			\node[vertex] (4) [below right = 1cm and 0.6cm of 3] {4}
+				edge [thick] (3);
+			\begin{scope}[on background layer]
+				\node [fill=yellow!20,fit=(1) (2) (3) (4)] {};
+			\end{scope}
+		\end{tikzpicture}
+		\caption*{$\displaystyle\int d \mathbf{r}_1 \int \int \int f_{23} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4$}
+	\end{minipage}
+	\begin{minipage}{0.33\linewidth}
+		\begin{tikzpicture}
+			[vertex/.style={circle, draw=blue!50, fill=blue!20, thick}]
+			\node (dummy) {};
+			\node[vertex] (1) [below = -0.1cm of dummy] {1};
+			\node[vertex] (2) [below right = 1cm and 1.3cm of dummy] {2};
+			\node[vertex] (3) [above right = 1cm and 0.6cm of 2] {3}
+				edge [thick] (2); 
+			\node[vertex] (4) [below right = 1cm and 0.6cm of 3] {4}
+				edge [thick] (2);
+			\begin{scope}[on background layer]
+				\node [fill=yellow!20,fit=(1) (2) (3) (4)] {};
+			\end{scope}
+		\end{tikzpicture}
+		\caption*{$\displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4$}
+	\end{minipage}
+	\begin{minipage}{0.33\linewidth}
+		\begin{tikzpicture}
+			[vertex/.style={circle, draw=blue!50, fill=blue!20, thick}]
+			\node (dummy) {};
+			\node[vertex] (1) [below = -0.1cm of dummy] {1};
+			\node[vertex] (2) [below right = 1cm and 1.3cm of dummy] {2};
+			\node[vertex] (3) [above right = 1cm and 0.6cm of 2] {3};
+			\node[vertex] (4) [below right = 1cm and 0.6cm of 3] {4}
+				edge [thick] (3)
+				edge [thick] (2);
+			\begin{scope}[on background layer]
+				\node [fill=yellow!20,fit=(1) (2) (3) (4)] {};
+			\end{scope}
+		\end{tikzpicture}
+		\caption*{$\displaystyle \int d \mathbf{r}_1 \int \int \int f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4$}
+	\end{minipage} \\
+	\begin{center}
+	\begin{minipage}{0.33\linewidth}
+		\begin{tikzpicture}
+			[vertex/.style={circle, draw=blue!50, fill=blue!20, thick}]
+			\node (dummy) {};
+			\node[vertex] (1) [below = -0.1cm of dummy] {1};
+			\node[vertex] (2) [below right = 1cm and 1.3cm of dummy] {2};
+			\node[vertex] (3) [above right = 1cm and 0.6cm of 2] {3}
+				edge [thick] (2);
+			\node[vertex] (4) [below right = 1cm and 0.6cm of 3] {4}
+				edge [thick] (3)
+				edge [thick] (2);
+			\begin{scope}[on background layer]
+				\node [fill=yellow!20,fit=(1) (2) (3) (4)] {};
+			\end{scope}
+		\end{tikzpicture}
+		\caption*{$\displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4$}
+	\end{minipage}
+\end{center}
+\caption{Четыре вариантов $l$-групп при $N = 4$ и фиксированном распределении $1; 2, 3, 4$ с соответствующими интегралами.}
+\end{figure}
+
+Если число $l$-групп равно $m_l$, то это дает сомножитель, который будем обозначать \\ $\bigg[ \text{сумма всех $l$-групп} \bigg]^m_l$. Так 3-группы дают сомножитель $\displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + $ \\ $+ \displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \int d \mathbf{r}_1 \int \int \int f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4$. \par
+Для оценки суммы $S_N \left( \left\{ m_l \right\} \right)$ необходимо найти число способов распределения $N$ частиц на $l$-групп так, чтобы число $l$-групп равноялось $m_l$ ($l = 1, 2 \dots N$). Из комбинаторных соображений искомое число способов равно
+\vverh
+\begin{gather}
+	\dfrac{N!}{\displaystyle\prod_{l=1}^{N} \left( l! \right)^{m_l} \cdot m_l !} \notag 
+\end{gather}
+
+В итоге получаем следующий вид суммы $S_N \left( \left\{ m_l \right\} \right)$:
+\vverh
+\begin{gather}
+	S_N \left( \left\{ m_l \right\} \right) = \dfrac{N!}{\displaystyle \left( l! \right)^{m_l} \cdot m_l!} \prod_{l} \bigg[ \text{сумма всех $l$-групп} \bigg]^m_l
+\end{gather}
+
+Групповые интегралы $b_l$ вводятся посредством следующих выражений:
+\vverh
+\begin{gather}
+	b_l = \frac{1}{l! V} \bigg[ \text{сумма всех $l$-групп} \bigg] .\notag
+\end{gather}
