@@ -2,7 +2,7 @@
 
 \subsection{Групповое разложение}
 
-Рассмотрим однокомпонентный классический газ, состоящий из $N$ одинаковых частиц и занимающих объем $V$. Предположим, что парные взаимодействия частиц являются центральными, и общая потенциальная энергия $U$ является суммой парных взаимодействий частиц $u = u(r)$. Конфигурационный интеграл газа $Z_N$ запишется в виде:
+Рассмотрим однокомпонентный классический газ, состоящий из $N$ одинаковых частиц и занимающих объем $V$. Предположим, что парные взаимодействия частиц являются центральными, и общая потенциальная энергия $U$ является суммой парных взаимодействий частиц $u = u(r)$. В таком случае полная потенциальная энергия системы может быть записана в виде $U \lb \mathbf{r}^N \rb = \displaystyle \dfrac{1}{2} \sum_{i, j} u_{ij}$, где $u_{ij}$ -- потенциал взаимодействия для изолированной пары молекул (Это предположение справедливо, за исключением случаев молекул, имеющих тенденцию к ассоциированию.). Конфигурационный интеграл газа $Z_N$ запишется в виде:
 \vverh
 \begin{gather}
 	Z_N (T, V) = \int_V \cdots \int_V \exp \lb - \frac{\displaystyle\sum_{1 \leqslant i < j \leqslant N} u \lb r_{ij} \rb}{kT} \rb d \mathbf{r}_1 d \mathbf{r}_2 \dots \mathbf{r}_N = \notag \\
@@ -64,7 +64,7 @@
 Обозначим через $m_l$ число $l$-групп для данного $N$-частичного графа, являющегося членом разложения конфигурационного интеграла $Z_N$. Данному набор чисел $\left\{ m_l \right\} = \left\{ m_1 , m_2 , \dots, m_N \right\}$, $( m_l \geqslant 0 )$ отвечает некоторая совокупность $N$-графов, сумму которых обозначим через $S_N \left( \left\{ m_l \right\} \right)$, тогда:
 \vverh
 \begin{gather}
-	Z_N = \sum_{ \left\{ m_l \right\} } S_N \left( \left\{ m_l \right\} \right), \notag
+	Z_N = \sum_{ \left\{ m_l \right\} } S_N \left( \left\{ m_l \right\} \right), \label{confsum}
 \end{gather}
 где суммирование проводится по всем наборам чисел $\left\{ m_l \right\}$, удовлетворяющих условию \eqref{cond1}. \par
 Диаграммы, образующие $S_N \left( \left\{ m_l \right\} \right)$, отличаются, во-первых, способом распределения пронумерованных частиц по группам. Во-вторых, $l$-группы при $l \geqslant 3$ могут быть составлены из данных пронумерованных частиц различными способами. Так, при $N=4$, $m_1 = 1$, $m_2 = 0$, $m_3 = 1$, при распределении пронумерованных частиц $1; 2-3-4$ будут различными следующие четыре диаграммы:
@@ -137,10 +137,14 @@
 		\caption*{$\displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4$}
 	\end{minipage}
 \end{center}
-\caption{Четыре вариантов $l$-групп при $N = 4$ и фиксированном распределении $1; 2, 3, 4$ с соответствующими интегралами.}
+\caption{Четыре варианта $3$-групп при $N = 4$ и фиксированном распределении $1; 2, 3, 4$ с соответствующими интегралами.}
 \end{figure}
 
-Если число $l$-групп равно $m_l$, то это дает сомножитель, который будем обозначать \\ $\bigg[ \text{сумма всех $l$-групп} \bigg]^m_l$. Так 3-группы дают сомножитель $\displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + $ \\ $+ \displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \int d \mathbf{r}_1 \int \int \int f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4$. \par
+Если число $l$-групп равно $m_l$, то они дают сомножитель, дающий вклад в $S_N \lb \left\{ m_l \right\} \rb$, который будем обозначать $\bigg[ \text{сумма всех $l$-групп} \bigg]^m_l$. Так 3-группы дают сомножитель
+\vverh
+\begin{gather}
+\int d \mathbf{r}_1 \int \int \int f_{23} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + $ $+ \displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \int d \mathbf{r}_1 \int \int \int f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \notag \\ + \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4. \notag
+\end{gather}
 Для оценки суммы $S_N \left( \left\{ m_l \right\} \right)$ необходимо найти число способов распределения $N$ частиц на $l$-групп так, чтобы число $l$-групп равноялось $m_l$ ($l = 1, 2 \dots N$). Из комбинаторных соображений искомое число способов равно
 \vverh
 \begin{gather}
@@ -150,11 +154,98 @@
 В итоге получаем следующий вид суммы $S_N \left( \left\{ m_l \right\} \right)$:
 \vverh
 \begin{gather}
-	S_N \left( \left\{ m_l \right\} \right) = \dfrac{N!}{\displaystyle \left( l! \right)^{m_l} \cdot m_l!} \prod_{l} \bigg[ \text{сумма всех $l$-групп} \bigg]^m_l
+	S_N \left( \left\{ m_l \right\} \right) = \dfrac{N!}{\displaystyle \left( l! \right)^{m_l} \cdot m_l!} \prod_{l} \bigg[ \text{сумма всех $l$-групп} \bigg]^m_l \label{snexp}
 \end{gather}
+
+\subsection{Групповые интегралы}
 
 Групповые интегралы $b_l$ вводятся посредством следующих выражений:
 \vverh
 \begin{gather}
-	b_l = \frac{1}{l! V} \bigg[ \text{сумма всех $l$-групп} \bigg] .\notag
+	b_{\, l} = \frac{1}{l! V} \bigg[ \text{сумма всех $l$-групп} \bigg]^m_l . \label{groupint}
 \end{gather}
+
+Рассмотрим первые групповые интегралы:
+\vverh
+\begin{gather}
+	b_1 = \frac{1}{V} \int_V d \mathbf{r}_1 = 1, \notag \\
+	b_2 = \frac{1}{2 V} \int_V \int_V f \lb r_{12} \rb \, d \mathbf{r}_1 d \mathbf{r}_2 = \frac{1}{2} \int_V f \lb r \rb d \mathbf{r} = - 2 \pi \int_{0}^{\infty} \lb 1 - \exp \lb - \frac{u \lb r \rb}{kT} \rb r^2 d r \label{b2int}  
+\end{gather}
+
+Т.к. $f_{ij}$ зависит только от расстояния между частицами $r_{ij}$, но не от положения группы, то интегрирование можно выполнить в два шага: сначала по координатам одной из частиц, что дает множитель $V$, и перейти к относительным координатам для всех остальных частиц групп, что и сделано в преобразованиях $b_2$ \eqref{b2int}. При дальнейшим преобразовании $b_2$ в \eqref{b2int} введены сферические координаты для второй частицы, $r, \varphi, \theta$, интегрирование по сферическим перменным дает множитель $4 \pi$. Выбор в качестве верхнего предела интегрирования за бесконечность предполагает, что частицы находятся вдалеке от стенок, и в силу быстрого убывания $f(r)$ нет необходимости учитывать геометрические параметры сосуда. Поэтому групповые интегралы не зависят от объема системы и являются функциями только температуры.  
+
+Используем определение групповых интегралов \eqref{groupint} в выражении \eqref{snexp}:
+\vverh
+\begin{gather}
+	S_N \lb \left\{ m_l \right\} \rb = \frac{N!}{\displaystyle\prod_{l=1}^{N} \lb l! \rb^{m_l} \cdot m_l !} \prod \lb b_l l! V \rb^{m_l} = N! \prod_l \frac{1}{m_l!} \lb V b_l \rb^{m_l} \label{snexp2}
+\end{gather}
+
+Используя полученный результат в выражении \eqref{confsum} для конфигурационного интеграла $Z_N$, получаем
+\vverh
+\begin{gather}
+	Z_N = \sum_{\left\{ m_l \right\}} S_N \lb \left\{ m_l \right\} \rb = N! \sum_{\left\{ m_l \right\}} \prod_l \frac{1}{m_l!} \lb V b_l \rb^{m_l}. \label{confsum2}
+\end{gather}
+
+\subsection{Связь вириальных коэффициентов и групповых интегралов}
+
+Системы, в которых протекают хиимически реакции или изменения физического состояния, считаются открытыми системами. Химические и физические превращения могут протекать и в закрытых системах, однако при подобных превращениях число частиц определенного вида (т.е. число частиц данной химической компоненты или число частиц вещества в данном агрегатном состоянии) является переменным. Поэтому такие системы независимо от того, являются ли они открытыми или закрытыми, описывают с помощью большого канонического ансамбля Гиббса \cite{hirsch}. \par 
+Рассмотрим выражение для большой статистической суммы \cite{meyson}:
+\vverh
+\begin{gather}
+	\Xi = \sum_{N=0}^\infty Z_N \exp \lb \frac{N \mu}{K T} \rb = 1 + \sum_{N=1}^\infty Z_N \exp \lb \frac{N \mu}{k T} \rb, \notag 
+\end{gather}
+
+где $Z_N$ -- функция распределения для канонического ансамбля, $\mu$ -- химический потенциал. \par
+Основной термодинамической функцией, связанной с $\Xi$, является $pV$:
+\vverh
+\begin{gather}
+	p V = kT \ln \Xi \label{pvfromxi}
+\end{gather}
+
+Для представления помощью степенного ряда  $\Xi$ удобно выбрать действительное число плотности \cite{rowlin1964}, определяемое как:
+\vverh
+\begin{gather}
+	z = \frac{Z_1}{V} \exp \lb \frac{\mu}{k T} \rb \notag
+\end{gather}
+Тогда большая статистическая сумма $\Xi$ может быть представлена в следующем виде
+\vverh
+\begin{gather}
+	\Xi = 1 + \sum_{N=1}^\infty \frac{Q_N}{N!} z^N, \notag
+\end{gather}
+где $Q_N$ определены соотношениями
+\vverh
+\begin{gather}
+	Z_N = \lb \frac{Z_1}{V} \rb^N \frac{Q_N}{N!} . \notag
+\end{gather}
+
+Несложно показать \cite{meyson}, что коэффициенты в разложении давления по степеням действительного числа плотности есть рассмотренные выше групповые интегралы $b_l$: 
+\vverh
+\begin{gather}
+	p = k T \sum_{j=1}^\infty b_j z^j \notag
+\end{gather}
+
+Большой термодинамический потенциал есть:
+\vverh
+\begin{gather}
+	J(T, V, \mu) = - k T \ln \Xi = -k T \lb V \sum_{l=1}^\infty b_{\, l} z^l \rb \notag
+\end{gather}
+
+Для вывода термического уравнения состояния в вириальной форме необходимо найти выражение для фактора сжимаемости. Найдем среднее число частиц исходя из большого термодинамического потенциала:
+\vverh
+\begin{gather}
+	\langle N \rangle = - \lb \frac{\partial J}{\partial \mu} \rb_{T, V} = - \frac{z}{kT} \lb \frac{\partial J}{\partial z} \rb_{T, V} = V \sum_{l = 1}^\infty l b_{\, l} z^l. \notag
+\end{gather}
+
+Тогда для фактора сжимаемости имеем
+\vverh
+\begin{gather}
+	\frac{p V_m}{RT} = \frac{\displaystyle \sum_{l = 1}^\infty b_{\, l} z^l}{\displaystyle \sum_{l = 1}^\infty l b_{\, l} z^l} = \sum_{l = 1}^\infty a_l \lb \sum_{l = 1}^\infty  l b_{\, l} z^l \rb^{l - 1} \label{vireq}
+\end{gather}
+
+Приравнивая коэффициенты в \eqref{vireq} при одинаковых степенях активности $z$ и вспоминая вириальное разложение коэффициента сжимаемости, получаем связь вириальных коэффициентов с групповыми интегралами:
+\vverh
+\begin{gather}
+	B_2(T) = - N_A b_2 = - 2 \pi N_A \int_0^\infty \lb 1 - \exp \lb -\frac{u(r)}{kT} \rb \rb r^2 d r \notag  \\
+	B_3(T) = N_A^2 \lb 4 b_2^2 - 2 b_3 \rb = - \frac{N_A^2}{3} \int_V \int_V f(r_{12}) f(r_{13}) f(r_{23}) \, d \mathbf{r}_2 d \mathbf{r}_3 \notag
+\end{gather}
+

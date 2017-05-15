@@ -4,4 +4,19 @@
 G.~A. Parker, R.~L. Snow, and R.T.Pack.
 \newblock {\em J. Chem. Phys.}, 64:1668, 1976.
 
+\bibitem{hirsch}
+Берд. Гиршфельдер, Кертисс.
+\newblock {\em Молекулярная теория газов и
+  жидкостей}.
+\newblock ИЛ, 1961.
+
+\bibitem{meyson}
+Э. Мейсон and Т. Сперлинг.
+\newblock {\em Вириальное уравнение состояния}.
+\newblock МИР, 1972.
+
+\bibitem{rowlin1964}
+Rowlinson J.S.
+\newblock {\em Mol. Phys.}, 7:593, 1964.
+
 \end{thebibliography}

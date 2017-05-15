@@ -17,6 +17,13 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+% modifying page layout using fancyhdr
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}} % adding number to section name
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\ #1}} % adding number to subsection name
+
+\rhead{\fancyplain{}{\rightmark }} % placing the section/subsection name in the right corner of the header
+\cfoot{\fancyplain{}{\thepage}}  % placing a page number in the center of the footer   
 
 % table packages
 \usepackage{tabularx, ragged2e, booktabs, caption}
