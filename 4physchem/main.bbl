@@ -4,6 +4,10 @@
 G.~A. Parker, R.~L. Snow, and R.T.Pack.
 \newblock {\em J. Chem. Phys.}, 64:1668, 1976.
 
+\bibitem{hutson1996}
+J.~M. Hutson, A.~Ernesti, M.M. Law, C.~F. Roche, and R.~Wheatley.
+\newblock {\em J. Chem. Phys.}, 105:9130, 1996.
+
 \bibitem{hirsch}
 Берд. Гиршфельдер, Кертисс.
 \newblock {\em Молекулярная теория газов и
@@ -18,5 +22,12 @@ G.~A. Parker, R.~L. Snow, and R.T.Pack.
 \bibitem{rowlin1964}
 Rowlinson J.S.
 \newblock {\em Mol. Phys.}, 7:593, 1964.
+
+\bibitem{lepage1978}
+G.~P. Lepage.
+\newblock {\em J. Comput. Phys}, 27:192, 1978.
+
+\bibitem{vegas}
+G.~P. Lepage.
 
 \end{thebibliography}
