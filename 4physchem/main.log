@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  18 MAY 2017 01:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  19 MAY 2017 01:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1184,43 +1184,33 @@ Overfull \hbox (29.23169pt too wide) in paragraph at lines 88--88
 [] 
  []
 
-) (./part4.tex <pictures/potential_profiles_0.png, id=51, 304.9794pt x 522.5121pt>
-File: pictures/potential_profiles_0.png Graphic file (type png)
- <use pictures/potential_profiles_0.png>
-Package pdftex.def Info: pictures/potential_profiles_0.png used on input line 4.
-(pdftex.def)             Requested size: 250.24199pt x 428.74174pt.
- <pictures/potential_profiles_pi6.png, id=53, 304.9794pt x 522.5121pt>
-File: pictures/potential_profiles_pi6.png Graphic file (type png)
- <use pictures/potential_profiles_pi6.png>
-Package pdftex.def Info: pictures/potential_profiles_pi6.png used on input line 5.
-(pdftex.def)             Requested size: 250.24199pt x 428.74174pt.
+) (./part4.tex <pictures/potential_well.png, id=51, 925.056pt x 553.5882pt>
+File: pictures/potential_well.png Graphic file (type png)
+ <use pictures/potential_well.png>
+Package pdftex.def Info: pictures/potential_well.png used on input line 5.
+(pdftex.def)             Requested size: 550.53545pt x 329.47775pt.
 
-Overfull \hbox (14.3576pt too wide) in paragraph at lines 4--6
-[][]  [] 
+Overfull \hbox (18.51872pt too wide) in paragraph at lines 4--6
+[]|  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pictures/potential_profiles_pi3.png, id=54, 304.9794pt x 522.5121pt>
-File: pictures/potential_profiles_pi3.png Graphic file (type png)
- <use pictures/potential_profiles_pi3.png>
-Package pdftex.def Info: pictures/potential_profiles_pi3.png used on input line 10.
-(pdftex.def)             Requested size: 250.24199pt x 428.74174pt.
- <pictures/potential_profiles_pi2.png, id=55, 304.9794pt x 522.5121pt>
-File: pictures/potential_profiles_pi2.png Graphic file (type png)
- <use pictures/potential_profiles_pi2.png>
-Package pdftex.def Info: pictures/potential_profiles_pi2.png used on input line 11.
-(pdftex.def)             Requested size: 250.24199pt x 428.74174pt.
+<pictures/potential_wall.png, id=53, 925.056pt x 553.5882pt>
+File: pictures/potential_wall.png Graphic file (type png)
+ <use pictures/potential_wall.png>
+Package pdftex.def Info: pictures/potential_wall.png used on input line 11.
+(pdftex.def)             Requested size: 550.53545pt x 329.47775pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 10--12
-[][] [] 
+Overfull \hbox (18.51872pt too wide) in paragraph at lines 10--12
+[]|  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6]) (./part5.tex [7 <./pictures/potential_profiles_0.png> <./pictures/potential_profiles_pi6.png>] [8 <./pictures/potential_profiles_pi3.png> <./pictures/potential_profiles_pi2.png>]
+[6]) (./part5.tex [7 <./pictures/potential_well.png>] [8 <./pictures/potential_wall.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1369,10 +1359,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<pictures/all_potentials.png, id=88, 925.056pt x 553.5882pt>
-File: pictures/all_potentials.png Graphic file (type png)
- <use pictures/all_potentials.png>
-Package pdftex.def Info: pictures/all_potentials.png used on input line 294.
+<pictures/vir2.png, id=84, 925.056pt x 553.5882pt>
+File: pictures/vir2.png Graphic file (type png)
+ <use pictures/vir2.png>
+Package pdftex.def Info: pictures/vir2.png used on input line 294.
 (pdftex.def)             Requested size: 500.484pt x 299.50757pt.
 
 
@@ -1386,20 +1376,20 @@ Overfull \hbox (32.96405pt too wide) in paragraph at lines 311--311
 [] 
  []
 
-[15 <./pictures/all_potentials.png>]) [16] (./main.bbl) [17] (./main.aux) ) 
+[15 <./pictures/vir2.png>]) [16] (./main.bbl) [17] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 19622 strings out of 494440
- 377761 string characters out of 6173199
+ 19612 strings out of 494440
+ 377271 string characters out of 6173199
  450434 words of memory out of 5000000
- 22339 multiletter control sequences out of 15000+600000
+ 22331 multiletter control sequences out of 15000+600000
  28607 words of font info for 136 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  57i,17n,69p,1945b,885s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (18 pages, 504442 bytes).
+Output written on main.pdf (18 pages, 556232 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 24125 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 24115 words of extra memory for PDF output out of 24883 (max. 10000000)
 
