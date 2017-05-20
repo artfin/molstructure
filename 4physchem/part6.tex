@@ -1,0 +1,199 @@
+\section{Расчет константы равновесия системы $Ar-CO_2$.}
+
+\subsection{Статистическая сумма связанного димера} 
+Выражение для газовой константы равновесия системы $Ar-CO_2$ было получено в разделе 1:
+\vverh
+\begin{gather}
+	K_p = \frac{N_A}{p^{\barcirc}} \frac{q_{Ar-CO_2}^{\barcirc}}{q_{Ar}^{\barcirc} q_{CO_2}^{\barcirc}} \label{const}
+\end{gather}
+
+Связанным димером называют пару мономеров, энергия которых меньше чем у пары мономеров на бесконечно большом расстоянии друг от друга. Следовательно, классическая сумма по состояниям связанного димера представляет собой следующий фазовый интеграл
+\vverh
+\begin{gather}
+	Q_{bound}^{pair} = \frac{1}{h^8} \int\limits_{H - \ddfrac{\strut P_{cm}^2}{\strut 2 M} < 0} \exp \lb - \frac{H}{k T} \rb d x_{cm} d y_{cm} d z_{cm} d P_{x} d P_{y} d P_{z} d q_i d p_i, \label{ci1}
+\end{gather}
+
+где $q_i$, $p_i$ -- набор внутримолекулярных координат и импуьсов, $H$ - гамильтониан, записанный в лабораторной системе координат, $\mathbf{R} = \lb x_{cm}, y_{cm}, z_{cm} \rb$, $\mathbf{P}_R = \lb P_x, P_y, P_z \rb$ -- векторы координат и импульсов центра масс, а $M$ -- его масса. \par
+Отметим, что гамильтониан, фигурирующий в выражении \eqref{ci1}, связан с гамильтонианом в молекулярно-фиксированной системе отсчета соотношением
+\vverh
+\begin{gather}
+	H = \mH + \frac{P_{cm}^2}{2 M} \notag
+\end{gather}
+
+Интегрирование по векторам центра масс $\mf{R}$, $\mf{P}_R$ в выражении \eqref{ci1} дает трансляционную статистическую сумму димера:
+\vverh
+\begin{gather}
+	\lb Q_{bound}^{pair} \rb_{tr} = \lb \frac{2 \pi M k T}{h^2} \rb^{\frac{3}{2}} V \notag
+\end{gather}
+
+\subsection{Эйлеровы углы и сопряженные им импульсы}
+Рассмотрим кинетическую энергию в лагранжевой форме
+\vverh
+\begin{gather}
+	T_\mL = \frac{1}{2} \dot{\mf{q}}^\top \bba \, \dot{\mf{q}} + \mf{\Omega}^\top \bbA \dot{\mf{q}} + \frac{1}{2} \mf{\Omega}^\top \bbI \, \mf{\Omega} \notag
+\end{gather}
+Вектор угловой скорости $\mf{\Omega}$ связан с вектором эйлеровых скоростей $\dot{\mf{e}}$ при помощи матрицы $\bbV$ \cite{goldstein}:
+\begin{gather}
+\mathbf{\Omega} = \mathbb{V} \dot{\mathbf{e}} = 
+\begin{bmatrix}
+\sin \theta \sin \psi & \cos \varphi & 0 \\
+\sin \theta \cos \psi & - \sin \psi & 0 \\
+\cos \theta & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\dot{\varphi} \\
+\dot{\theta} \\
+\dot{\psi}
+\end{bmatrix} \notag 
+\end{gather}
+
+По определению построим вектор эйлеровых импульсов:
+\vverh
+\begin{gather}
+	\mf{p}_e = \frac{\partial T_\mL}{\partial \dot{\mf{e}}} = \bbV^\top \bbA \dot{\mf{q}} + \bbV^\top \bbI \, \bbV \dot{\mf{e}} = \bbV^\top \bbA \dot{\mf{q}} + \bbV^\top \bbI \, \mf{\Omega} \notag
+\end{gather}
+
+Несложно показать, что вектор углового момента в подвижной системе отсчета равен
+\vverh
+\begin{gather}
+	\mf{J} = \frac{\partial \mL}{\partial \mf{\Omega}} = \bbA \dot{\mf{q}} + \bbI \, \mf{\Omega} \notag
+\end{gather}
+
+Таким образом, получаем следующую связь между вектором эйлеровых импульсов и вектором углового момента:
+\vverh
+\begin{gather}
+	\mf{J} = \lb \bbV^\top \rb^{-1} \mf{p}_e \notag
+\end{gather}
+
+Интегрирование в \eqref{ci1} в том числе ведется по эйлеровым углам и импульсам. В связи с этим рассмотрим следующий кратный интеграл и осуществим в нем замену переменных $p_\varphi, p_\theta, p_\psi \longrightarrow J_x, J_y, J_z$. (В этом подразделе $\theta$ -- один из эйлеровых углов, а не внутренняя система координата системы $Ar-CO_2$. Эта замена нам интересна по той причине, что в выражение гамильтониана входят именно компоненты углового момента, а не эйлеровы импульсы; так выражение получается намного более компактным.)
+\vverh
+\begin{gather}
+	\int\limits_{0}^{2 \pi} d \varphi \int\limits_{0}^{\pi} d \theta \int\limits_{0}^{2 \pi} d \psi \int d p_\varphi \int d p_\theta \int d p_\psi = \int \, \left[ Jac \right] d J_x \int d J_y \int d J_z \notag
+\end{gather}
+
+Якобиан замены переменных равен
+\vverh
+\begin{gather}
+	\left[ Jac \, \right] = \Bigg{|} \frac{\partial \mathbf{p}}{\partial \mathbf{J}} \Bigg{|} = \Bigg{|} \det \lb \bbV^\top \rb \Bigg{|} = \sin \theta \notag
+\end{gather}
+
+Если подынтегральное выражение не зависит от эйлеровых углов (как в случае со стастической суммой связанного димера), то интегральное выражение преобразуется к виду
+\vverh
+\begin{gather}
+	\int\limits_{0}^{2 \pi} d \varphi \int\limits_{0}^{\pi} d \theta \int\limits_{0}^{2 \pi} d \psi \int d p_\varphi \int d p_\theta \int d p_\psi = 8 \pi^2 \int d J_x \int d J_y \int d J_z \notag 
+\end{gather}
+
+Однако, в случае системы $Ar-CO_2$ вращение на углы $\psi$ большие чем $\pi$ не приводит к новым состояниям системы (из-за симметричности молекулы $CO_2$), следовательно для рассматриваемой системы интегральное выражение имеет вид
+\vverh
+\begin{gather}
+	\int\limits_{0}^{2 \pi} d \varphi \int\limits_{0}^{\pi} d \theta \int\limits_{0}^{\pi} d \psi \int d p_\varphi \int d p_\theta \int d p_\psi = 4 \pi^2 \int d J_x \int d J_y \int d J_z \notag 
+\end{gather}
+
+\subsection{Упрощенный вид стастической суммы по состояниям связанного димера}
+
+Заменяя эйлеровы импульсы на компоненты углового момента и интегрируя по переменным центра масс, сводим интеграл \eqref{ci1} к следующему:
+\vverh
+\begin{gather}
+	Q_{bound}^{pair} = \lb Q_{bound}^{pair} \rb_{tr} \frac{4 \pi^2}{h^5} \int\limits_{\mH < 0} \exp \lb - \frac{\mH}{kT} \rb d R \, d \theta \, d p_R \, d p_\theta \, d J_x \, d J_y \, d J_z. \notag
+\end{gather}
+
+Рассмотрим гамильтониан системы $Ar-CO_2$ в молекулярно-фиксированной системе координат:
+\begin{gather}
+	\mH = \frac{1}{2 \mu_2} p_R^2 + \lb \frac{1}{2 \mu_2 R^2} + \frac{1}{2 \mu_1 l^2} \rb p_\theta^2 - \frac{1}{\mu_2 R^2} p_\theta J_y + \frac{1}{2 \mu_2 R^2} J_y^2 + \frac{1}{2 \mu_2 R^2} J_x^2 + \frac{1}{2 \sin^2 \theta} \lb \frac{\cos^2 \theta}{\mu_2 R^2} + \frac{1}{\mu_1 l^2} \rb J_z^2 + \notag \\
++ \frac{\ctg \theta}{\mu_2 R^2} J_x J_z + U(R, \theta) \notag
+\end{gather}
+
+Заметим, что форма гамильтониана $\mH$ позволяет представить его в виде положительно определенной квадратичной формы:
+\begin{gather}
+	\mH = \frac{p_R^2}{2 \mu_2} + \frac{p_\theta^2}{2 \mu_1 l^2} + \frac{1}{2 \mu_2 R^2} \lb p_\theta - J_y \rb^2 + \frac{1}{2 \mu_2 R^2} \lb J_x + J_z \ctg \theta \rb^2 + \frac{J_z^2}{2 \mu_1 l^2 \sin^2 \theta} + U(R, \theta) \notag
+\end{gather}
+
+Дальнейшие преобразования основаны на анализе фазового интеграла, представленном в работе \cite{vigasin2015}. Подготовим следующую линейную замену переменных $p_R, p_\theta, J_x, J_y, J_z \rightarrow x_1, x_2, x_3, x_4, x_5$ (причем $R, \theta$ считаем постоянными при осуществлении замены), упрощающую подэкспоненциальное выражение (впервые предложена в \cite{ozaki}):
+\vverh
+\begin{gather}
+	\hspace*{-0.5cm}
+	\everymath{\scriptstyle}
+	\footnotesize
+	\left\{
+	\begin{aligned}
+	x_1^2 &= \frac{p_R^2}{2 \mu_2 kT} \\
+	x_2^2 &= \frac{p_\theta^2}{2 \mu_1 l^2 kT} \\
+	x_3^2 &= \frac{ \lb p_\theta - J_y \rb^2}{2 \mu_2 R^2 k T} \\
+	x_4^2 &= \frac{ \lb J_x + J_z \ctg \theta \rb^2}{2 \mu_2 R^2 k T} \\
+	x_5^2 &= \frac{J_z^2}{2 \mu_1 l^2 \sin^2 \theta kT}
+	\end{aligned}
+	\right. \quad \implies \quad 
+	\left\{
+	\begin{aligned}
+	dx_1 &= \frac{dp_R}{\sqrt{ 2 \mu_2 k T}} \\
+	dx_2 &= \frac{dp_\theta}{\sqrt{2 \mu_1 l^2 k T}} \\
+	dx_3 &= \frac{dp_\theta - dJ_y}{\sqrt{2 \mu_2 R^2 k T}} \\
+	dx_4 &= \frac{dJ_x + \ctg \theta dJ_z}{ \sqrt{2 \mu_2 R^2 k T}} \\
+	dx_5 &= \frac{dJ_z}{\sqrt{2 \mu_1 l^2 \sin^2 \theta k T}}
+	\end{aligned}
+	\right. \quad \implies \quad
+	\left\{
+	\begin{aligned}
+		dp_R &= \sqrt{2 \mu_2 k T} dx_1 \\
+		dp_\theta &= \sqrt{2 \mu_1 l^2 kT} dx_2 \\
+		dJ_y &= \sqrt{2 \mu_1 l^2 kT} dx_2 - \sqrt{2 \mu_2 R^2 kT} dx_3 \\
+		dJ_x &= \sqrt{2 \mu_2 R^2 kT} dx_4 - \sqrt{2 \mu_1 l^2 \cos^2 \theta kT} dx_5 \\
+		dJ_z &= \sqrt{2 \mu_1 l^2 \sin^2 \theta kT} dx_5
+	\end{aligned}
+	\right.
+	\notag
+\end{gather}
+
+Для упрощения выражений откинем на время трансляционную статистическую сумму димера и $4 \pi^2$. Основываясь на теореме Фубини, интеграл \eqref{ci1} может быть представлен в виде повторного интеграла, в котором сначала интегрирование ведется по переменным $p_R$, $p_\theta$, $J_x$, $J_y$, $J_z$, а затем  -- по переменным $R, \theta$. Таким образом, во внутреннем интеграле переменные $R, \theta$ являются постоянными, что позволяет осуществить приготовленную замену:
+\vverh
+\begin{gather}
+	\frac{1}{h^5} \int_{H < 0} \exp \lb -\frac{\mH}{kT} \rb dR \, dp_R \, d \theta \, dp_\theta \, d J_x \, d J_y \, d J_z = \frac{1}{h^5} \iint dR \, d \theta \int \exp \lb -\frac{\mH}{kT} \rb d p_R \, d p_\theta \, d J_x \, d J_y \, d J_z = \notag \\
+	= \frac{1}{h^5} \iint  \left[ Jac \, \right] \exp \lb -\frac{U}{kT} \rb d R \, d \theta \times \int_{x_1^2 + \dots + x_5^2 + \frac{\strut U}{\strut kT} < 0} \exp \lb - x_1^2 - \dots - x_5^2 \rb dx_1 \dots dx_5, \notag 
+\end{gather}
+
+где $\left[ Jac \, \right]$ равен следующему произведению радикалов: 
+\begin{gather}
+	\hspace*{-1.0cm}
+	\left[ Jac \, \right] = \Bigg{|} \frac{\partial [p_R, p_\theta, J_x, J_y, J_z]}{\partial [x_1, x_2, x_3, x_4, x_5]} \Bigg{|} = \det  
+	\begin{bmatrix}
+		\sqrt{2 \mu_2 k T} & 0 & 0 & 0 & 0 \\
+		0 & \sqrt{2 \mu_1 l^2 k T} & 0 & 0 & 0 \\
+		0 & 0 & 0 & \sqrt{2 \mu_2 R^2 k T} & -\sqrt{2 \mu_1 l^2 \cos^2 \theta} \\
+		0 & \sqrt{2 \mu_1 l^2 k T} & -\sqrt{2 \mu_2 R^2 k T} & 0 & 0 \\
+		0 & 0 & 0 & 0 & \sqrt{2 \mu_1 l^2 \sin^2 \theta k T}
+	\end{bmatrix} = \notag \\
+	= \sqrt{2 \mu_2 k T} \sqrt{2 \mu_1 l^2 k T} \sqrt{2 \mu_2 R^2 kT} \sqrt{2 \mu_2 R^2 kT} \sqrt{2 \mu_1 l^2 \sin^2 \theta kT} = (2 \mu_2 kT)^\frac{3}{2} 2\mu_1 l^2 k T R^2 \sin \theta \notag
+\end{gather}
+
+Интеграл экспоненциальной функции $\exp \lb - x^2 \rb$ (где $x^2 = \lb \mf{x}, \mf{x} \rb$ -- скалярный квадрат радиус-вектора) по объему $n$-мерного шара с радиусом $R$ есть (доказательство этого соотношения приведено в приложении А)
+\vverh
+\begin{gather}
+	\int_{x^2 \leqslant R} \exp \lb -x^2  \rb d x_1 \dots d x_n = \pi^\frac{n}{2} \frac{\gamma \lb \frac{n}{2}, R^2 \rb}{\Gamma \lb \frac{n}{2} \rb}. \notag
+\end{gather}
+
+Применяя общее соотношение для 5-мерного случая, получаем:
+\vverh
+\begin{gather}
+	\int_{x_1^2 + \dots  + x_5^2 + \frac{U}{k T} < 0} \exp \lb - x_1^2 - \dots - x_5^2 \rb d x_1 \dots d x_5 = \pi^\frac{5}{2} \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} \notag
+\end{gather}
+
+Итак, фазовый интеграл представлен в виде интеграла по переменным $R, \theta$ и интеграла по объему 5-мерного шара, радиус которого определяется значением потенциальной функции $U(R, \theta)$. Заметим, что радиус шара является ненулевым только при отрицательных значениях потенциальной функции $U(R, \theta)$, следовательно фазовый интеграл принимает ненулевые значения только в том случае, если переменные $R, \theta$ лежат в области $U < 0$.
+\vvarh
+\begin{gather}
+	\hspace*{-9cm} \frac{1}{h^5} \iint d R \, d \theta \int \exp \lb -\frac{\mH}{k T} \rb d p_R  \, dp_\theta dJ_x dJ_y dJ_z = \notag \\
+	\hspace{5cm} =\lb \frac{2 \pi \mu_2 k T}{h^2} \rb^{\frac{3}{2}} \frac{2 \mu_1 l^2 \pi k T}{h^2} \iint\limits_{U < 0} \exp \lb -\frac{U}{k T} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 \sin \theta dR \, d\theta \notag 
+\end{gather}
+
+Итак, выражение для статистической суммы свзяанного димера принимает вид:
+\vverh
+\begin{gather}
+	Q_{bound}^{pair} = 4 \pi^2 \lb \frac{2 \pi M k T}{h^2} \rb^{\frac{3}{2}} V \lb \frac{2 \pi \mu_2 k T}{h^2} \rb^{\frac{3}{2}} \frac{2 \mu_1 l^2 \pi k T}{h^2} \iint\limits_{U < 0} \exp \lb -\frac{U}{k T} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 \sin \theta dR \, d\theta \notag
+\end{gather}
+Заметим, что предынтегральные множители могут быть выражены через статистические суммы мономеров:
+\vverh
+\begin{gather}
+	Q_{CO_2} = Q_{CO_2}^{tr} Q_{CO_2}^{rot} = \lb \frac{2 \pi m_{CO_2} k T}{h^2} \rb^{\frac{3}{2}} V \frac{4 \pi^2 k T}{h^2} \mu_1 l^2 \notag \\
+	Q_{Ar} = Q_{Ar}^{tr} = \lb \frac{2 \pi m_{Ar} k T}{h^2} \rb^{\frac{3}{2}} \notag \\
+	Q_{bound}^{pair} = 2 \pi Q_{Ar} Q_{CO_2} \iint\limits_{U < 0} \exp \lb - \frac{U}{kT} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 \sin \theta d R \, d \theta \notag
+\end{gather}
+

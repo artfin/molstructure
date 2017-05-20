@@ -3,6 +3,9 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: biblio.bib
+Warning--I didn't find a database entry for "goldstein"
+Warning--I didn't find a database entry for "vigasin2015"
+Warning--I didn't find a database entry for "ozaki"
 Warning--empty title in parker1976
 Warning--empty title in hutson1996
 Warning--empty title in rowlin1964
@@ -12,7 +15,7 @@ Warning--empty journal in vegas
 Warning--empty year in vegas
 You've used 7 entries,
             1791 wiz_defined-function locations,
-            479 strings with 4020 characters,
+            482 strings with 4045 characters,
 and the built_in function-call counts, 1207 in all, are:
 = -- 87
 > -- 52
@@ -51,4 +54,4 @@ warning$ -- 7
 while$ -- 11
 width$ -- 8
 write$ -- 63
-(There were 7 warnings)
+(There were 10 warnings)
