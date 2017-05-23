@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  21 MAY 2017 02:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  23 MAY 2017 18:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -748,31 +748,32 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
-) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip74
-\subfigcapskip=\skip75
-\subfigcaptopadj=\dimen150
-\subfigbottomskip=\skip76
-\subfigcapmargin=\dimen151
-\subfiglabelskip=\skip77
-\c@subfigure=\count110
-\c@lofdepth=\count111
-\c@subtable=\count112
-\c@lotdepth=\count113
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip78
-\subfig@bottom=\skip79
+) (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count110
+\c@@ppsavesec=\count111
+\c@@ppsaveapp=\count112
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip74
+\aftertitleunit=\skip75
+\ttl@plus=\dimen150
+\ttl@minus=\dimen151
+\ttl@toksa=\toks31
+\titlewidth=\dimen152
+\titlewidthlast=\dimen153
+\titlewidthfirst=\dimen154
+) (/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count113
 ) (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen152
-\pgfutil@tempdimb=\dimen153
- (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box28
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen155
+\pgfutil@tempdimb=\dimen156
+
+(/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box29
  (/usr/share/texmf/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfrcs.code.tex
@@ -782,28 +783,28 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
  (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen154
-\pgf@y=\dimen155
-\pgf@xa=\dimen156
-\pgf@ya=\dimen157
-\pgf@xb=\dimen158
-\pgf@yb=\dimen159
-\pgf@xc=\dimen160
-\pgf@yc=\dimen161
+\pgf@x=\dimen157
+\pgf@y=\dimen158
+\pgf@xa=\dimen159
+\pgf@ya=\dimen160
+\pgf@xb=\dimen161
+\pgf@yb=\dimen162
+\pgf@xc=\dimen163
+\pgf@yc=\dimen164
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count114
 \c@pgf@countb=\count115
 \c@pgf@countc=\count116
 \c@pgf@countd=\count117
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -836,53 +837,53 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen162
+\pgfmath@dimen=\dimen165
 \pgfmath@count=\count120
-\pgfmath@box=\box29
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
-) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\pgfmath@box=\box30
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count121
 )) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen163
-\pgf@picmaxx=\dimen164
-\pgf@picminy=\dimen165
-\pgf@picmaxy=\dimen166
-\pgf@pathminx=\dimen167
-\pgf@pathmaxx=\dimen168
-\pgf@pathminy=\dimen169
-\pgf@pathmaxy=\dimen170
-\pgf@xx=\dimen171
-\pgf@xy=\dimen172
-\pgf@yx=\dimen173
-\pgf@yy=\dimen174
-\pgf@zx=\dimen175
-\pgf@zy=\dimen176
+\pgf@picminx=\dimen166
+\pgf@picmaxx=\dimen167
+\pgf@picminy=\dimen168
+\pgf@picmaxy=\dimen169
+\pgf@pathminx=\dimen170
+\pgf@pathmaxx=\dimen171
+\pgf@pathminy=\dimen172
+\pgf@pathmaxy=\dimen173
+\pgf@xx=\dimen174
+\pgf@xy=\dimen175
+\pgf@yx=\dimen176
+\pgf@yy=\dimen177
+\pgf@zx=\dimen178
+\pgf@zy=\dimen179
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen177
-\pgf@path@lasty=\dimen178
+\pgf@path@lastx=\dimen180
+\pgf@path@lasty=\dimen181
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen179
-\pgf@shorten@start@additional=\dimen180
+\pgf@shorten@end@additional=\dimen182
+\pgf@shorten@start@additional=\dimen183
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box30
-\pgf@hbox=\box31
-\pgf@layerbox@main=\box32
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
 \pgf@picture@serial@count=\count122
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen181
+\pgflinewidth=\dimen184
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen182
-\pgf@pt@y=\dimen183
-\pgf@pt@temp=\dimen184
+\pgf@pt@x=\dimen185
+\pgf@pt@y=\dimen186
+\pgf@pt@temp=\dimen187
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -891,58 +892,58 @@ File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen185
+\pgfarrowsep=\dimen188
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen186
+\pgf@max=\dimen189
 \pgf@sys@shading@range@num=\count123
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box33
+\pgfexternal@startupbox=\box34
 )) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-)
-(/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ))) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box34
+\pgfnodeparttextbox=\box35
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-) (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+)
+(/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen187
-\pgf@nodesepend=\dimen188
+\pgf@nodesepstart=\dimen190
+\pgf@nodesepend=\dimen191
 ) (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 )) (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf/tex/latex/pgf/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen189
-\pgffor@skip=\dimen190
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+\pgffor@iter=\dimen192
+\pgffor@skip=\dimen193
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 )) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count124
-\pgfplotmarksize=\dimen191
+\pgfplotmarksize=\dimen194
 )
-\tikz@lastx=\dimen192
-\tikz@lasty=\dimen193
-\tikz@lastxsaved=\dimen194
-\tikz@lastysaved=\dimen195
-\tikzleveldistance=\dimen196
-\tikzsiblingdistance=\dimen197
-\tikz@figbox=\box35
-\tikz@figbox@bg=\box36
-\tikz@tempbox=\box37
-\tikz@tempbox@bg=\box38
+\tikz@lastx=\dimen195
+\tikz@lasty=\dimen196
+\tikz@lastxsaved=\dimen197
+\tikz@lastysaved=\dimen198
+\tikzleveldistance=\dimen199
+\tikzsiblingdistance=\dimen256
+\tikz@figbox=\box36
+\tikz@figbox@bg=\box37
+\tikz@tempbox=\box38
+\tikz@tempbox@bg=\box39
 \tikztreelevel=\count125
 \tikznumberofchildren=\count126
 \tikznumberofcurrentchild=\count127
@@ -964,53 +965,53 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
  (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen198
+\arrowsize=\dimen257
 )) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
-(/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen199
-\pgfdecoratedremainingdistance=\dimen256
-\pgfdecoratedinputsegmentcompleteddistance=\dimen257
-\pgfdecoratedinputsegmentremainingdistance=\dimen258
-\pgf@decorate@distancetomove=\dimen259
+) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen258
+\pgfdecoratedremainingdistance=\dimen259
+\pgfdecoratedinputsegmentcompleteddistance=\dimen260
+\pgfdecoratedinputsegmentremainingdistance=\dimen261
+\pgf@decorate@distancetomove=\dimen262
 \pgf@decorate@repeatstate=\count133
-\pgfdecorationsegmentamplitude=\dimen260
-\pgfdecorationsegmentlength=\dimen261
+\pgfdecorationsegmentamplitude=\dimen263
+\pgfdecorationsegmentlength=\dimen264
 )
-\tikz@lib@dec@box=\box39
-) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+\tikz@lib@dec@box=\box40
+) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex))
+(/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks43
+\MT@toks=\toks44
 \MT@count=\count134
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen262
+\MT@outer@kern=\dimen265
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count135
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip80
+\MT@outer@space=\skip76
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 )) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip81
-\fb@frw=\dimen263
-\fb@frh=\dimen264
-\FrameRule=\dimen265
-\FrameSep=\dimen266
+\OuterFrameSep=\skip77
+\fb@frw=\dimen266
+\fb@frh=\dimen267
+\FrameRule=\dimen268
+\FrameSep=\dimen269
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 ) (/usr/share/texmf/tex/latex/pgf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box40
-\pgf@layerboxsaved@background=\box41
+\pgf@layerbox@background=\box41
+\pgf@layerboxsaved@background=\box42
 ) (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
@@ -1077,21 +1078,20 @@ LaTeX Font Info:    ... okay on input line 5.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 5.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count136
-\scratchdimen=\dimen267
-\scratchbox=\box42
+\scratchdimen=\dimen270
+\scratchbox=\box43
 \nofMPsegments=\count137
 \nofMParguments=\count138
-\everyMPshowfont=\toks44
+\everyMPshowfont=\toks45
 \MPscratchCnt=\count139
-\MPscratchDim=\dimen268
+\MPscratchDim=\dimen271
 \MPnumerator=\count140
 \makeMPintoPDFobject=\count141
-\everyMPtoPDFconversion=\toks45
+\everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -1166,7 +1166,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1] (./part1.tex [2]) [3] (./part2.tex
+[1] (./part2.tex
+Overfull \hbox (49.75883pt too wide) in paragraph at lines 1--1
+|[]\T2A/cmr/bx/n/17.28 —хема по-лу-че-ни€ клас-си-че-ско-го колебательно-вращательного
+ []
+
+
 Overfull \hbox (3.20967pt too wide) in paragraph at lines 37--39
 []\T2A/cmr/m/n/12 (-20) ѕусть ис-сле-ду-е-ма€ си-сте-ма со-дер-жит $\OML/cmm/m/it/12 s$ \T2A/cmr/m/n/12 (-20) внут-рен-них сте-пе-ней сво-бо-ды, то-гда $\OT1/cmr/bx/n/12 R[] \OT1/cmr/m/n/12 (-20) = \OT1/cmr/bx/n/12 R[] [] \OML/cmm/m/it/12 ;  \OT1/cmr/bx/n/12 q \OT1/cmr/m/n/12 (-20) =
  []
@@ -1174,17 +1179,17 @@ Overfull \hbox (3.20967pt too wide) in paragraph at lines 37--39
 LaTeX Font Info:    Try loading font information for U+bbm on input line 41.
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [4]) (./part3.tex
+) [2]) (./part3.tex
 Overfull \hbox (10.47086pt too wide) in paragraph at lines 1--1
-[]\T2A/cmr/bx/n/17.28  олебательно-вращательный га-миль-то-ни-ан си-сте-мы $\OML/cmm/m/it/17.28 Ar \OMS/cmsy/m/n/17.28 ^^@
+|[]\T2A/cmr/bx/n/17.28  олебательно-вращательный га-миль-то-ни-ан си-сте-мы $\OML/cmm/m/it/17.28 Ar \OMS/cmsy/m/n/17.28 ^^@
  []
 
-[5]
+[3]
 Overfull \hbox (29.23169pt too wide) in paragraph at lines 88--88
 [] 
  []
 
-) (./part4.tex <pictures/potential_well.png, id=51, 925.056pt x 553.5882pt>
+) (./part4.tex <pictures/potential_well.png, id=41, 925.056pt x 553.5882pt>
 File: pictures/potential_well.png Graphic file (type png)
  <use pictures/potential_well.png>
 Package pdftex.def Info: pictures/potential_well.png used on input line 5.
@@ -1194,27 +1199,17 @@ Overfull \hbox (18.51872pt too wide) in paragraph at lines 4--6
 []|  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pictures/potential_wall.png, id=53, 925.056pt x 553.5882pt>
+<pictures/potential_wall.png, id=43, 925.056pt x 553.5882pt>
 File: pictures/potential_wall.png Graphic file (type png)
  <use pictures/potential_wall.png>
-Package pdftex.def Info: pictures/potential_wall.png used on input line 11.
+Package pdftex.def Info: pictures/potential_wall.png used on input line 12.
 (pdftex.def)             Requested size: 550.53545pt x 329.47775pt.
 
-Overfull \hbox (18.51872pt too wide) in paragraph at lines 10--12
+Overfull \hbox (18.51872pt too wide) in paragraph at lines 11--13
 []|  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6]) (./part5.tex [7 <./pictures/potential_well.png>] [8 <./pictures/potential_wall.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9]
+[4]) (./part5.tex [5 <./pictures/potential_well.png>] [6 <./pictures/potential_wall.png>] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 73--121
 
  []
@@ -1269,7 +1264,7 @@ Overfull \hbox (17.8372pt too wide) in paragraph at lines 147--147
 [] 
  []
 
-[10]
+[8]
 ./part5.tex:173: Extra }, or forgotten \right.
 <template> }
             $}\ifdim \wdz@ >\totwidth@ \global \totwidth@ \wdz@ \fi \endtemp...
@@ -1336,11 +1331,11 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[11] [12] [13]
-./part5.tex:284: Missing \right. inserted.
+[9] [10] [11]
+./part5.tex:283: Missing \right. inserted.
 <inserted text> 
                 \right .
-l.284 \end{gather}
+l.283 \end{gather}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1348,10 +1343,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./part5.tex:284: Missing \right. inserted.
+./part5.tex:283: Missing \right. inserted.
 <inserted text> 
                 \right .
-l.284 \end{gather}
+l.283 \end{gather}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1359,11 +1354,15 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<pictures/virexp.png, id=84, 925.056pt x 553.5882pt>
+<pictures/virexp.png, id=74, 925.056pt x 553.5882pt>
 File: pictures/virexp.png Graphic file (type png)
  <use pictures/virexp.png>
-Package pdftex.def Info: pictures/virexp.png used on input line 294.
+Package pdftex.def Info: pictures/virexp.png used on input line 289.
 (pdftex.def)             Requested size: 500.484pt x 299.50757pt.
+
+Overfull \hbox (32.96405pt too wide) in paragraph at lines 307--307
+[] 
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
@@ -1371,22 +1370,34 @@ Package Fancyhdr Warning: \headheight is too small (14.49998pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
-Overfull \hbox (32.96405pt too wide) in paragraph at lines 311--311
-[] 
- []
-
-[15 <./pictures/virexp.png>] [16]
-./part5.tex:343: Missing $ inserted.
+[12] [13 <./pictures/virexp.png>] [14]
+./part5.tex:339: Missing $ inserted.
 <inserted text> 
                 $
-l.343 ....79$ & $0.72$ & $0.14$ & $-82.93$ & \left
+l.339 ....79$ & $0.72$ & $0.14$ & $-82.93$ & \left
                                                   \{ \hspace*{-3mm} \begin{t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 343.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 339.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 339.
+
+./part5.tex:340: Missing $ inserted.
+<inserted text> 
+                $
+l.340 \noalign
+              {\smallskip}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 342.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 343.
@@ -1394,38 +1405,21 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 343.
 ./part5.tex:344: Missing $ inserted.
 <inserted text> 
                 $
-l.344 \noalign
-              {\smallskip}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 346.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 347.
-
-./part5.tex:348: Missing $ inserted.
-<inserted text> 
-                $
-l.348 ....68$ & $0.54$ & $0.11$ & $-63.03$ & \left
+l.344 ....68$ & $0.54$ & $0.11$ & $-63.03$ & \left
                                                   \{ \hspace*{-3mm} \begin{t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 348.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 344.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 348.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 344.
 
-./part5.tex:349: Missing $ inserted.
+./part5.tex:345: Missing $ inserted.
 <inserted text> 
                 $
-l.349 \noalign
+l.345 \noalign
               {\smallskip}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1434,10 +1428,49 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 351.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 347.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 352.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 348.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 349.
+
+./part5.tex:350: Missing $ inserted.
+<inserted text> 
+                $
+l.350 ...75$ & $0.40$ & $0.08$ & $-46.27$ &  \left
+                                                  \{ \hspace*{-3mm} \begin{t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 350.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 350.
+
+./part5.tex:351: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.351 \noalign
+              {\smallskip}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./part5.tex:351: Missing $ inserted.
+<inserted text> 
+                $
+l.351 \noalign
+              {\smallskip}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 353.
@@ -1445,7 +1478,7 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 353.
 ./part5.tex:354: Missing $ inserted.
 <inserted text> 
                 $
-l.354 ...75$ & $0.40$ & $0.08$ & $-46.27$ &  \left
+l.354 ....21$ & $0.36$ & $0.07$ & $-40.78$ & \left
                                                   \{ \hspace*{-3mm} \begin{t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1455,17 +1488,6 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 354.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 354.
-
-./part5.tex:355: Missing \right. inserted.
-<inserted text> 
-                \right .
-l.355 \noalign
-              {\smallskip}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 ./part5.tex:355: Missing $ inserted.
 <inserted text> 
@@ -1478,27 +1500,24 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+./part5.tex:357: Missing $ inserted.
+<inserted text> 
+                $
+l.357 ....37$ & $0.35$ & $0.07$ & $-38.95$ & \left
+                                                  \{ \hspace*{-3mm} \begin{t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 357.
+
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 357.
 
 ./part5.tex:358: Missing $ inserted.
 <inserted text> 
                 $
-l.358 ....21$ & $0.36$ & $0.07$ & $-40.78$ & \left
-                                                  \{ \hspace*{-3mm} \begin{t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 358.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 358.
-
-./part5.tex:359: Missing $ inserted.
-<inserted text> 
-                $
-l.359 \noalign
+l.358 \noalign
               {\smallskip}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1506,16 +1525,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./part5.tex:361: Missing $ inserted.
-<inserted text> 
-                $
-l.361 ....37$ & $0.35$ & $0.07$ & $-38.95$ & \left
-                                                  \{ \hspace*{-3mm} \begin{t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 361.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 360.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 361.
@@ -1523,44 +1534,39 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 361.
 ./part5.tex:362: Missing $ inserted.
 <inserted text> 
                 $
-l.362 \noalign
-              {\smallskip}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 364.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 365.
-
-./part5.tex:366: Missing $ inserted.
-<inserted text> 
-                $
-l.366 ....63$ & $0.34$ & $0.07$ & $-37.22$ & \left
+l.362 ....63$ & $0.34$ & $0.07$ & $-37.22$ & \left
                                                   \{ \hspace*{-3mm} \begin{t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 366.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 362.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 366.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 362.
 
-./part5.tex:367: Missing $ inserted.
+./part5.tex:363: Missing $ inserted.
 <inserted text> 
                 $
-l.367 \noalign
+l.363 \noalign
               {\smallskip}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 365.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 366.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 367.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 368.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 369.
@@ -1571,36 +1577,24 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 370.
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 371.
 
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 372.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 373.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 374.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 375.
-
-./part5.tex:376: Missing $ inserted.
+./part5.tex:372: Missing $ inserted.
 <inserted text> 
                 $
-l.376 ....48$ & $0.28$ & $0.05$ & $-28.15$ & \left
+l.372 ....48$ & $0.28$ & $0.05$ & $-28.15$ & \left
                                                   \{ \hspace*{-3mm} \begin{t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 376.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 372.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 376.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 372.
 
-./part5.tex:377: Missing $ inserted.
+./part5.tex:373: Missing $ inserted.
 <inserted text> 
                 $
-l.377 \noalign
+l.373 \noalign
               {\smallskip}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1609,10 +1603,38 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 379.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 375.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 380.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 376.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 377.
+
+./part5.tex:378: Missing $ inserted.
+<inserted text> 
+                $
+l.378 ....39$ & $0.19$ & $0.04$ & $-13.16$ & \left
+                                                  \{ \hspace*{-3mm} \begin{t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 378.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 378.
+
+./part5.tex:379: Missing $ inserted.
+<inserted text> 
+                $
+l.379 \noalign
+              {\smallskip}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 381.
@@ -1620,8 +1642,8 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 381.
 ./part5.tex:382: Missing $ inserted.
 <inserted text> 
                 $
-l.382 ....39$ & $0.19$ & $0.04$ & $-13.16$ & \left
-                                                  \{ \hspace*{-3mm} \begin{t...
+l.382 ...5.97$ & $0.16$ & $0.03$ & $-5.78$ & \left
+                                                  \{ \hspace*{-2mm} \begin{t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -1645,33 +1667,17 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 385.
 
-./part5.tex:386: Missing $ inserted.
-<inserted text> 
-                $
-l.386 ...5.97$ & $0.16$ & $0.03$ & $-5.78$ & \left
-                                                  \{ \hspace*{-2mm} \begin{t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 390.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 386.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 391.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 386.
-
-./part5.tex:387: Missing $ inserted.
-<inserted text> 
-                $
-l.387 \noalign
-              {\smallskip}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 392.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 389.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 393.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 394.
@@ -1686,87 +1692,69 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 396.
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 397.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 398.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 399.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 400.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 401.
-
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 334--405
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 330--401
 []$[]$ 
  []
 
-) [17] (./part6.tex
-
-LaTeX Warning: Citation `goldstein' on page 18 undefined on input line 35.
-
-[18]
-Overfull \hbox (29.23169pt too wide) in paragraph at lines 104--104
+) [15] (./part6.tex [16] [17] [18]
+Overfull \hbox (29.23169pt too wide) in paragraph at lines 170--170
 [] 
  []
+
+
+LaTeX Warning: Citation `vigasin2015' on page 19 undefined on input line 177.
+
+
+LaTeX Warning: Citation `ozaki' on page 19 undefined on input line 177.
 
 [19]
 
-LaTeX Warning: Citation `vigasin2015' on page 20 undefined on input line 111.
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 211.
 
 
-LaTeX Warning: Citation `ozaki' on page 20 undefined on input line 111.
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 211.
 
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 145.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 145.
-
-
-Overfull \hbox (22.59348pt too wide) in paragraph at lines 145--145
+Overfull \hbox (22.59348pt too wide) in paragraph at lines 211--211
 [] 
  []
 
 
-Overfull \hbox (11.1715pt too wide) in paragraph at lines 152--152
+Overfull \hbox (11.1715pt too wide) in paragraph at lines 218--218
 [] 
  []
 
 
-Overfull \hbox (24.21608pt too wide) in paragraph at lines 166--166
+Overfull \hbox (24.21608pt too wide) in paragraph at lines 232--232
 [] 
  []
 
-[20]
-./part6.tex:181: Undefined control sequence.
-l.181 \vvarh
-            
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) [21] (./main.bbl) [22] (./main.aux)
+[20]) [21] (./main.bbl) [22] (./appendix1.tex [23]) (./appendix2.tex [24]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+) [25] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19646 strings out of 494440
- 377683 string characters out of 6173199
- 454480 words of memory out of 5000000
- 22349 multiletter control sequences out of 15000+600000
- 33015 words of font info for 145 fonts, out of 8000000 for 9000
+ 20222 strings out of 494440
+ 384633 string characters out of 6173199
+ 464810 words of memory out of 5000000
+ 22900 multiletter control sequences out of 15000+600000
+ 33582 words of font info for 152 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  57i,21n,69p,1945b,885s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (23 pages, 676677 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (26 pages, 727455 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
+ 224 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  28211 words of extra memory for PDF output out of 29859 (max. 10000000)
 

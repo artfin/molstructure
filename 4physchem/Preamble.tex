@@ -30,7 +30,16 @@
 % includegraphics package
 \usepackage{graphicx}
 
-\usepackage{subfigure}
+%appendices
+\usepackage[toc, page]{appendix}
+\usepackage{titlesec}
+
+% cures a bug inside titlesec package that overrides section numbering
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
 
 % commands
 \newcommand{\lb}{\left(}
@@ -51,6 +60,7 @@
 \newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
 
 % positioning commands
+\newcommand{\vlevo}{\hspace*{-0.63cm}}
 \newcommand{\vpravo}{\hspace{0.63cm}}
 \newcommand{\vverh}{\vspace*{-0.1cm}}
 

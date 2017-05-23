@@ -1,4 +1,46 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{eremin}
+Н.Е.~Кузьменко В.В.~Еремин, С.И.~Каргов.
+\newblock {\em Реальные газы}.
+\newblock Москва, 1998.
+
+\bibitem{hirsch}
+Р.~Берд. Дж.~Гиршфельдер, Ч.~Кертисс.
+\newblock {\em Молекулярная теория газов и
+  жидкостей}.
+\newblock ИЛ, 1961.
+
+\bibitem{mayer}
+Дж. Майер.
+\newblock {\em Статистическая механика}.
+\newblock Мир, 1980.
+
+\bibitem{meyson}
+Т.~Сперлинг Э.~Мейсон.
+\newblock {\em Вириальное уравнение состояния}.
+\newblock Мир, 1972.
+
+\bibitem{landau1}
+Лифшиц~Е. Ландау~Л.
+\newblock {\em Теоретическая физика. Том I.
+  Механика}.
+\newblock Физматлит, 2007.
+
+\bibitem{goldstein}
+Голдстейн Г.
+\newblock {\em Классическая механика}.
+\newblock Наука, 1975.
+
+\bibitem{petrov2015}
+S.V.Petrov and S.E.Lokshtanov.
+\newblock Trajectory analysis of the rotational dynamics of molecules.
+\newblock {\em Journal of Experimental and Theoretical Physics}, 121:186, 2015.
+
+\bibitem{gantmaher}
+Ф.Р. Гантмахер.
+\newblock {\em Теория матриц}.
+\newblock Москва, 1966.
 
 \bibitem{parker1976}
 G.~A. Parker, R.~L. Snow, and R.T.Pack.
@@ -7,17 +49,6 @@ G.~A. Parker, R.~L. Snow, and R.T.Pack.
 \bibitem{hutson1996}
 J.~M. Hutson, A.~Ernesti, M.M. Law, C.~F. Roche, and R.~Wheatley.
 \newblock {\em J. Chem. Phys.}, 105:9130, 1996.
-
-\bibitem{hirsch}
-Берд. Гиршфельдер, Кертисс.
-\newblock {\em Молекулярная теория газов и
-  жидкостей}.
-\newblock ИЛ, 1961.
-
-\bibitem{meyson}
-Э. Мейсон and Т. Сперлинг.
-\newblock {\em Вириальное уравнение состояния}.
-\newblock МИР, 1972.
 
 \bibitem{rowlin1964}
 Rowlinson J.S.
@@ -29,5 +60,20 @@ G.~P. Lepage.
 
 \bibitem{vegas}
 G.~P. Lepage.
+\newblock Vegas.
+\newblock https://github.com/gplepage/vegas, 2013.
+
+\bibitem{dymond}
+J.D. Dymond, K.N. Marsh, and R.C. Willhoit.
+\newblock {\em Virial coefficients of pure gases and mixtures}.
+\newblock Springer, 2002.
+
+\bibitem{tsuda1973}
+T.~Tsuda.
+\newblock {\em Numer. Math}, 20:377, 1973.
+
+\bibitem{haselgrove1961}
+C.~B. Haselgrove.
+\newblock {\em Math. Comp.}, 15:323, 1961.
 
 \end{thebibliography}

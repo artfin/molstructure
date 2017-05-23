@@ -1,11 +1,77 @@
 \section{Расчет константы равновесия системы $Ar-CO_2$.}
 
-\subsection{Статистическая сумма связанного димера} 
-Выражение для газовой константы равновесия системы $Ar-CO_2$ было получено в разделе 1:
+\subsection{Константа равновесия в каноническом ансамбле}
+
+Канонический ансамбль представляет собой модель термодинамической системы, погруженной в тепловой резервуар постоянной температуры. В представленной системе резервуар играет роль термостата, поддерживая температуру исследуемой системы постоянной независимо от направления теплового потока. Канонический ансамбль (также называемый $NVT$-ансамблем) представляет собой систему из $N$ частиц, находящихся в фиксированном объеме $V$ при фиксированной температуре $T$. Отметим, что энергия $NVT$-ансамбля может принимать любые значения, согласующиеся с заданными условиями. Рассматривая совокупность резервуара и погруженной в него исследуемой системы как микроканонический ансамбль, получают каноническое распределение (распределение Гиббса) -- вероятность нахождения системы в состоянии с энергией $E_n$:
 \vverh
 \begin{gather}
-	K_p = \frac{N_A}{p^{\barcirc}} \frac{q_{Ar-CO_2}^{\barcirc}}{q_{Ar}^{\barcirc} q_{CO_2}^{\barcirc}} \label{const}
+	\omega_n = A \times \exp \lb - \frac{E_n}{kT} \rb \quad \Leftrightarrow \quad \rho \lb p, q \rb = A \times \exp \lb - \frac{E \lb p, q \rb}{kT} \rb \notag
 \end{gather}
+Энтропия может быть выражена как среднее значение функции распределения:
+\vverh
+\begin{gather}
+	S = - \langle \ln \omega_n \rangle \notag \\
+	S = - \ln A + \frac{1}{T} \langle E_n \rangle = - \ln A + \frac{\overline{E}}{kT} \notag \\
+	\ln A = \frac{\overline{E} - TS}{kT} = \frac{F}{kT} \notag 
+\end{gather}
+Средняя энергия $\overline{E}$ есть как раз то, что понимается в термодинамике под энергией $U$, таким образом получаем следующие выражение для функции распределения Гиббса через свободную энергию Гельмгольца (в квантовой и классической статистиках, соответственно):
+\vverh
+\begin{gather}
+	\omega_n = \exp \lb - \frac{F - E_n}{kT} \rb \quad \Leftrightarrow \quad \rho(p, q) = \frac{1}{\lb 2 \pi \hbar \rb^{s}} \exp \lb \frac{F - E(p, q)}{kT} \rb \notag
+\end{gather}
+
+Условие нормировки для распределения $\omega_n$:
+\vverh
+\begin{gather}
+	\sum_n \omega_n = \exp \lb \frac{F}{kT} \rb \sum_n \exp \lb - \frac{E_n}{kT} \rb = 1 \notag \\
+	F = - kT \ln \sum_n \exp \lb - \frac{E_n}{kT} \rb = - kT \ln Z \notag
+\end{gather}
+
+При записи аналогичной формулы в классической термодинамике следует учесть, что если, например, переменить местами два одинаковых атома, то после такой перестановки микросостояние тела будет изображаться другой фазовой точкой, получающейся из первоначальной заменой и импульсов одного атома координатами и импульсами другого. С другой стороны, ввиду одинаковости переставляемых атомов, оба состояния тела физически тождественны. Таким образом, одному и тому же физическому микросостоянию тела в фазовом пространстве соответствует целый ряд точек. При интегрировании распределения каждое состояние должно учитываться лишь однократно (статистический интеграл можно рассмотреть как предел квантовой статистической суммы, суммирование в которой производится по всем различным квантовым состояниям), то есть, интегрирование производится лишь по тем областям фазового пространства, которые соответсвуют физически различным состояниям тела (штрих над интегралом будет подчеркивать эту особенность классической статистической суммы).
+\vverh
+\begin{gather}
+	F = -k T \ln \int^{\prime} \exp \lb - \frac{E(p, q)}{kT} \rb d \Gamma, \quad d \Gamma = \frac{dp \, dq}{\lb 2 \pi \hbar \rb^s} \notag
+\end{gather}
+
+Запишем свободную энергию Гельмгольца, используя молекулярную статистическую сумму $q$. (Слагаемое $F(0)$ призвано подправить значение в правой части равенства, принимая во внимание свободу выбора начала отсчета для молекулярной суммы по состояниям.)  
+\vverh
+\begin{gather}
+	F = - k T \ln Q = F(0) - kT \ln \frac{q^N}{N!} = F(0) - NkT \ln q + NkT \lb \ln N - 1 \rb \notag 
+\end{gather}
+
+Полагая $N = N_A$, приходим к мольному значению свободной энергии Гельмгольца:
+\vverh
+\begin{gather}
+	F_m = F_m(0) - RT \ln \frac{q}{N_A} - RT \notag
+\end{gather}
+
+В приближении идеального газа имеем $G_m = F_m + p V_m = F_m + RT$. Заметим, что $F_m(0) = U_m(0)$. Под $q^{\barcirc} = q_{NVT}^{\barcirc}$ понимается значение суммы по состояниям, вычисленное при $N = N_A$, фиксированной температуре $T$ и при фиксированном объеме $V = \frac{RT}{p^{\barcirc}}$.
+\vverh
+\begin{gather} 
+	G_m = F_m(0) - RT \ln \frac{q}{N_A} \notag \\
+	G^{\barcirc} = U_m(0) - RT \ln \frac{q^{\barcirc}}{N_A} \notag \\
+	\Delta_r G^{\barcirc} = \Delta_r U_m(0) - RT \ln \prod_{i} \lb \frac{q_i^{\barcirc}}{N_A} \rb ^{\nu_i} \notag
+\end{gather}
+
+Используя равенство $\Delta_r G^{\barcirc} = - RT \ln K$, получаем выражение для термодинамической константы равновесия:
+\vverh
+\begin{gather}
+	K = \prod_{i = 1}^{r} \lb \frac{q_i^{\barcirc}}{N_A} \rb^{\nu_i} \exp \lb - \frac{\Delta_r U_m (0)}{RT} \rb \notag
+\end{gather}
+
+Термодинамическая и газовая константы равновесия связаны между собой следующим соотношением: 
+\vverh
+\begin{gather}
+	K_p =  K \times \lb p^{\barcirc} \rb^{\sum_i \nu_i} \notag 
+\end{gather}
+
+Получим выражение для газовой константы равновесия $K_p$ слабосвязанного комплекса $Ar-CO_2$. В условиях совпадающего начала отсчета молекулярных сумм по состояниям для всех участников реакции, получаем следующее выражение:
+\vverh
+\begin{gather}
+	K_p = \frac{N_A}{p^{\barcirc}} \frac{q_{Ar-CO_2}^{\barcirc}}{q_{Ar}^{\barcirc} q_{CO_2}^{\barcirc}} \label{eqconst}
+\end{gather}
+
+\subsection{Статистическая сумма связанного димера} 
 
 Связанным димером называют пару мономеров, энергия которых меньше чем у пары мономеров на бесконечно большом расстоянии друг от друга. Следовательно, классическая сумма по состояниям связанного димера представляет собой следующий фазовый интеграл
 \vverh
@@ -148,10 +214,10 @@
 \vverh
 \begin{gather}
 	\frac{1}{h^5} \int_{H < 0} \exp \lb -\frac{\mH}{kT} \rb dR \, dp_R \, d \theta \, dp_\theta \, d J_x \, d J_y \, d J_z = \frac{1}{h^5} \iint dR \, d \theta \int \exp \lb -\frac{\mH}{kT} \rb d p_R \, d p_\theta \, d J_x \, d J_y \, d J_z = \notag \\
-	= \frac{1}{h^5} \iint  \left[ Jac \, \right] \exp \lb -\frac{U}{kT} \rb d R \, d \theta \times \int_{x_1^2 + \dots + x_5^2 + \frac{\strut U}{\strut kT} < 0} \exp \lb - x_1^2 - \dots - x_5^2 \rb dx_1 \dots dx_5, \notag 
+	= \frac{1}{h^5} \iint  \left[ Jac \, \right] \exp \lb -\frac{U}{kT} \rb d R \, d \theta \times \idotsint\limits_{x_1^2 + \dots + x_5^2 + \frac{U}{kT} < 0} \exp \lb - x_1^2 - \dots - x_5^2 \rb dx_1 \dots dx_5, \notag 
 \end{gather}
 
-где $\left[ Jac \, \right]$ равен следующему произведению радикалов: 
+\vlevo где якобиан замены переменных $\left[ Jac \, \right]$ равен следующему произведению радикалов: 
 \begin{gather}
 	\hspace*{-1.0cm}
 	\left[ Jac \, \right] = \Bigg{|} \frac{\partial [p_R, p_\theta, J_x, J_y, J_z]}{\partial [x_1, x_2, x_3, x_4, x_5]} \Bigg{|} = \det  
@@ -165,22 +231,27 @@
 	= \sqrt{2 \mu_2 k T} \sqrt{2 \mu_1 l^2 k T} \sqrt{2 \mu_2 R^2 kT} \sqrt{2 \mu_2 R^2 kT} \sqrt{2 \mu_1 l^2 \sin^2 \theta kT} = (2 \mu_2 kT)^\frac{3}{2} 2\mu_1 l^2 k T R^2 \sin \theta \notag
 \end{gather}
 
-Интеграл экспоненциальной функции $\exp \lb - x^2 \rb$ (где $x^2 = \lb \mf{x}, \mf{x} \rb$ -- скалярный квадрат радиус-вектора) по объему $n$-мерного шара с радиусом $R$ есть (доказательство этого соотношения приведено в приложении А)
+Интеграл функции $\exp \lb - x_1^2  - x_2^2 - \dots - x_n^2 \rb$ по объему $n$-мерного шара с радиусом $R$ есть (доказательство этого соотношения приведено в приложении \eqref{appendix:multint})
 \vverh
 \begin{gather}
-	\int_{x^2 \leqslant R} \exp \lb -x^2  \rb d x_1 \dots d x_n = \pi^\frac{n}{2} \frac{\gamma \lb \frac{n}{2}, R^2 \rb}{\Gamma \lb \frac{n}{2} \rb}. \notag
+	\idotsint\limits_{x_1^2 + \dots + x_n^2 \leqslant R} \exp \lb -x_1^2 - x_2^2 - \dots - x_n^2 \rb d x_1 \dots d x_n = \pi^\frac{n}{2} \frac{\gamma \lb \frac{n}{2}, R^2 \rb}{\Gamma \lb \frac{n}{2} \rb}, \notag
+\end{gather}
+где $\gamma(a, b)$ -- неполная гамма-функция:
+\vverh
+\begin{gather}
+	\gamma \lb a, b \rb = \int\limits_0^b \omega^{a - 1} \exp \lb - \omega \rb d \omega \notag
 \end{gather}
 
 Применяя общее соотношение для 5-мерного случая, получаем:
 \vverh
 \begin{gather}
-	\int_{x_1^2 + \dots  + x_5^2 + \frac{U}{k T} < 0} \exp \lb - x_1^2 - \dots - x_5^2 \rb d x_1 \dots d x_5 = \pi^\frac{5}{2} \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} \notag
+	\idotsint\limits_{x_1^2 + \dots  + x_5^2 \leqslant -\frac{U}{k T}} \exp \lb - x_1^2 - \dots - x_5^2 \rb d x_1 \dots d x_5 = \pi^\frac{5}{2} \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} \notag
 \end{gather}
 
 Итак, фазовый интеграл представлен в виде интеграла по переменным $R, \theta$ и интеграла по объему 5-мерного шара, радиус которого определяется значением потенциальной функции $U(R, \theta)$. Заметим, что радиус шара является ненулевым только при отрицательных значениях потенциальной функции $U(R, \theta)$, следовательно фазовый интеграл принимает ненулевые значения только в том случае, если переменные $R, \theta$ лежат в области $U < 0$.
-\vvarh
+\vverh
 \begin{gather}
-	\hspace*{-9cm} \frac{1}{h^5} \iint d R \, d \theta \int \exp \lb -\frac{\mH}{k T} \rb d p_R  \, dp_\theta dJ_x dJ_y dJ_z = \notag \\
+	\hspace*{-9cm} \frac{1}{h^5} \iint d R \, d \theta \int \exp \lb -\frac{\mH}{k T} \rb d p_R  \, dp_\theta \, dJ_x \, dJ_y \, dJ_z = \notag \\
 	\hspace{5cm} =\lb \frac{2 \pi \mu_2 k T}{h^2} \rb^{\frac{3}{2}} \frac{2 \mu_1 l^2 \pi k T}{h^2} \iint\limits_{U < 0} \exp \lb -\frac{U}{k T} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 \sin \theta dR \, d\theta \notag 
 \end{gather}
 
@@ -196,4 +267,11 @@
 	Q_{Ar} = Q_{Ar}^{tr} = \lb \frac{2 \pi m_{Ar} k T}{h^2} \rb^{\frac{3}{2}} \notag \\
 	Q_{bound}^{pair} = 2 \pi Q_{Ar} Q_{CO_2} \iint\limits_{U < 0} \exp \lb - \frac{U}{kT} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{k T} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 \sin \theta d R \, d \theta \notag
 \end{gather}
+
+Подставляя полученное выражение для статистической суммы димера в \eqref{eqconst}, получаем
+\vverh
+\begin{gather}
+	K_p = \frac{2 \pi N_A}{R T} \iint\limits_{U < 0} \exp \lb - \frac{U}{k T} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{kT} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 \sin \theta d R \, d \theta \label{eqconstsimple}
+\end{gather}
+
 

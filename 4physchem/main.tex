@@ -9,8 +9,6 @@
 \tableofcontents
 \newpage
 
-\input{part1.tex}
-\newpage
 \input{part2.tex}
 
 \input{part3.tex}
@@ -24,8 +22,23 @@
 \input{part6.tex}
 
 \newpage
-
 \bibliographystyle{unsrt}
 \bibliography{biblio}
+\newpage
+
+% modifying font of the appendix title
+\appendix
+\titleformat{\chapter}[display]
+  {\normalfont\large\bfseries}% <- font for label "Appendix A", default \huge
+  {\chaptertitlename\ \thechapter}{20pt}
+  {\large}
+
+\section{Интегрирование экспоненциальной функции по объему многомерного шара}
+\label{appendix:multint}
+\input{appendix1.tex}
+
+\section{Адаптивное интегрирование методом Монте-Карло}
+\label{appendix:montecarlo}
+\input{appendix2.tex}
 
 \end{document}
