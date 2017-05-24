@@ -21,6 +21,26 @@
 \newblock {\em Вириальное уравнение состояния}.
 \newblock Мир, 1972.
 
+\bibitem{keszei}
+E.~Keszei.
+\newblock {\em Chemical thermodynamics: an Introduction}.
+\newblock Springer Science & Business Media, 2013.
+
+\bibitem{landau2}
+Лифшиц~Е. Ландау~Л.
+\newblock {\em Теоретическая физика. Том V.
+  Статистическая физика}.
+\newblock Физматлит, 2007.
+
+\bibitem{huber1982}
+G.~Huber.
+\newblock Gamma function derivation of n-sphere volumes.
+\newblock 89, 1982.
+
+\bibitem{lepage1978}
+G.~P. Lepage.
+\newblock {\em J. Comput. Phys}, 27:192, 1978.
+
 \bibitem{landau1}
 Лифшиц~Е. Ландау~Л.
 \newblock {\em Теоретическая физика. Том I.
@@ -50,14 +70,6 @@ G.~A. Parker, R.~L. Snow, and R.T.Pack.
 J.~M. Hutson, A.~Ernesti, M.M. Law, C.~F. Roche, and R.~Wheatley.
 \newblock {\em J. Chem. Phys.}, 105:9130, 1996.
 
-\bibitem{rowlin1964}
-Rowlinson J.S.
-\newblock {\em Mol. Phys.}, 7:593, 1964.
-
-\bibitem{lepage1978}
-G.~P. Lepage.
-\newblock {\em J. Comput. Phys}, 27:192, 1978.
-
 \bibitem{vegas}
 G.~P. Lepage.
 \newblock Vegas.
@@ -67,6 +79,28 @@ G.~P. Lepage.
 J.D. Dymond, K.N. Marsh, and R.C. Willhoit.
 \newblock {\em Virial coefficients of pure gases and mixtures}.
 \newblock Springer, 2002.
+
+\bibitem{kirkwood1933}
+J.~G. Kirkwood.
+\newblock Quantum statistics of almost classical assemblies.
+\newblock {\em Phys. Rev.}, 44, 1933.
+
+\bibitem{wigner1932}
+E.~Wigner.
+\newblock On the quantum correction for thermodynamic equilibrium.
+\newblock {\em Phys. Rev.}, 40:749, 1932.
+
+\bibitem{vigasin2015}
+A.~Vigasin and I.~Buryak.
+\newblock Classical calculation of the equilibrium constants for true bound
+  dimers using complete potential energy surface.
+\newblock {\em J. Chem. Phys}, 143, 2015.
+
+\bibitem{ozaki1985}
+Y.~Ozaki, K.~Murano, K.~Izumi, and T.~Fukuyama.
+\newblock Dimer concetrations in supersonic molecular beams of argon and carbon
+  dioxide.
+\newblock {\em J. Chem. Phys.}, 89, 1985.
 
 \bibitem{tsuda1973}
 T.~Tsuda.

@@ -140,7 +140,9 @@
 \caption{Четыре варианта $3$-групп при $N = 4$ и фиксированном распределении $ \left\{ \left\{ 1 \right\}, \left\{ 2, 3, 4 \right\} \right\}$ с соответствующими интегралами.}
 \end{figure}
 
-Если число $l$-групп равно $m_l$, то они дают сомножитель, дающий вклад в $S_N \lb \left\{ m_l \right\} \rb$, который будем обозначать $\bigg[ \text{сумма всех $l$-групп} \bigg]^m_l$. Так 3-группы дают сомножитель
+Члены разложения, в которых одни и те же молекулы связаны друг с другом в групп, обладают тем общим свойством, что они отличны от нуля лишь в той области конфигурационного пространства, в которой молекулы одной группы находятся близко друг к другу.
+
+Если число $l$-групп равно $m_l$, то они дают сомножитель, дающий вклад в $S_N \lb \left\{ m_l \right\} \rb$, который будем обозначать $\bigg[ \text{сумма всех $l$-групп} \bigg]^m_l$, называемый групповой функцией (\textit{cluster function} \cite{mayer}). Так 3-группы дают сомножитель
 \vverh
 \begin{gather}
 \int d \mathbf{r}_1 \int \int \int f_{23} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + $ $+ \displaystyle \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \int d \mathbf{r}_1 \int \int \int f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4 + \notag \\ + \int d \mathbf{r}_1 \int \int \int f_{23} f_{24} f_{34} \, d \mathbf{r}_2 d \mathbf{r}_3 d \mathbf{r}_4. \notag
@@ -188,6 +190,94 @@
 
 \subsection{Связь вириальных коэффициентов и групповых интегралов \cite{mayer, meyson}}
 
+В теории плотного газа естественно представить уравнения в такой форме, чтобы первый челн соответствовал идеальному газу, а следующие члены описывали эффекты взаимодействия молекул в порядке возрастания сложности. Рассмотрим соотношение для большого канонического ансамбля открытых равновесных систем с заданными значениями $V$, $T$ и $\mu$:
+\vverh
+\begin{gather}
+	\exp \lb \beta p V \rb = \sum_{N \geqslant 0}^\infty \exp \lb N \beta \mu \rb \idotsint\limits_V \frac{d \mf{r}^N \, d \mf{p}^N}{h^{3N} N!} \exp \lb - \beta H_N \rb, \label{gcasum}
+\end{gather}
+где $H_N$ -- гамильтониан $N$ молекул:
+\vverh
+\begin{gather}
+	H_N = \sum_{i = 1}^N \sum_{\alpha = x, y, z} \frac{p_{\alpha i}^2}{2 m} + U_N. \label{ham}
+\end{gather}
+
+Потенциальная энергия $U_N$ в \eqref{ham} также полагается суммой парных взаимодействий. Таким образом, все интегралы под знаком суммы в \eqref{gcasum} содержат $3N$ одинаковых множителей, знаменатель каждого из которых мы умножим на $h$:
+\vverh
+\begin{gather}
+	\frac{1}{h} \int\limits_{-\infty}^{\infty} \exp \lb - \frac{p_{\alpha i}^2}{2m kT} \rb d p_{\alpha i} = \lb \frac{2 \pi m k T}{h^2} \rb^{\frac{1}{2}} = \lambda^{-1}. \notag
+\end{gather}
+
+Определив величины
+\vverh
+\begin{gather}
+	z = \lambda^{-3} \exp \lb \beta \mu \rb, \quad Q_{\tau} \lb N, V, T \rb = V^{-N} \idotsint\limits_V \exp \lb - \beta U_N \rb d \mf{r}^N, \notag
+\end{gather}
+приводим выражение \eqref{gcasum} к виду
+\vverh
+\begin{gather}
+	\exp \lb \beta p V \rb = \sum_{N \geqslant 0}^\infty \frac{ \lb z V \rb^N}{N!} Q_\tau \lb N, V, T \rb. \label{gcasum2} 
+\end{gather}
+
+Заметим, что $Q_\tau \lb N, V, T \rb$ связан с $Z_N$, исследуемым ранее, соотношением
+\vverh
+\begin{gather}
+	Q_\tau \lb N, V, T \rb = V^{-N} Z_N. \notag
+\end{gather}
+
+Используя выражение \eqref{confsum2}, находим
+\vverh
+\begin{gather}
+	\frac{ \lb z V \rb^N}{N!} Q_\tau \lb N, V, T \rb = \sum_{m_1} \cdots \sum_{m_n} \prod_n \frac{\lb V z^n b_n \rb^{m_n}}{m_n!}, \label{gcasum3}
+\end{gather}
+где индексы $m_1, \dots m_n$ удовлетворяют соотношению $\sum_n m_n = N$. Подставим результат \eqref{gcasum3} в выражение \eqref{gcasum2}. Суммирование по всем $N$ от нуля до бесконечности снимает ограничение $\sum_n m_n = N$, поэтому индексы суммирования $m_n$ становятся независимыми.
+\vverh
+\begin{gather}
+	\exp \lb \beta p V \rb = \prod_n \left[ \sum_{m_n \geqslant 0} \frac{ \lb V z^n b_n \rb^{m_n}}{m_n!} \right] = \prod_n \exp \lb V b_n z^n \rb = \exp \lb V \sum_{n \geqslant 1} b_n z^n \rb \label{gcasum4}
+\end{gather}
+
+Т.к. $\lb dG \rb_{N, T} = V dp$ и $\lb d \mu \rb_T = \frac{1}{N} \lb d G \rb_N = \rho^{-1} d p$, то
+\vverh
+\begin{gather}
+	\lb \frac{\partial p}{\partial \mu} \rb_T = \rho = \lb \frac{\partial p}{\partial \ln z} \rb_T \lb \frac{\partial \ln z}{\partial \mu} \rb_T = \beta \lb \frac{\partial p}{\partial \ln z} \rb_T = \beta z \lb \frac{\partial p}{\partial z} \rb_T. \label{therm}
+\end{gather}
+
+Подставляя в \eqref{therm} давление, выраженное из \eqref{gcasum4}, получим:
+\vverh
+\begin{gather}
+	\rho = \sum_{n \geqslant 1} n b_n z^n \label{rhoseries}
+\end{gather}
+
+Пока ряд \eqref{rhoseries} сходится быстро, можно записать разложение $z = \sum \alpha_n \rho^n$, подставить его в в ряд \eqref{rhoseries} и, приравняв коэффициенты при плотности, выразить таким образом коэффициенты $\alpha_n$ через $b_n$. Опуская выкладки, приведем выражения первых коэффициентов $\alpha_n$:
+\vverh
+\begin{gather}
+	\begin{aligned}
+		\alpha_1 &= - 2 b_2 , \\
+		\alpha_2 &= - 3 b_3 + 8 b_2^2, \\
+		\alpha_3 &= - 4 b_4 + 30 b_2 b_3 - 40 b_2^3.
+	\end{aligned} \notag
+\end{gather}
+
+Используя полученный результат, переразложим давление $p$ по степеням плотности:
+\vverh
+\begin{gather}
+	\beta p = \sum_n b_n z^n = \rho \lb 1 - \sum_k c_k \rho^k \rb \notag \\
+	\begin{aligned}
+		c_1 &= b_2, \\
+		c_2 &= 2 b_3 - 4 b_2^2.
+	\end{aligned} \notag
+\end{gather}
+
+
+Вспоминая, что $\beta^{-1} = kT$, получаем выражения для первых вириальных коэффициентов:
+\vverh
+\begin{gather}
+	B_2(T) = - N_A b_2 = - 2 \pi N_A \int\limits_0^\infty \lb 1 - \exp \lb -\frac{u(r)}{kT} \rb \rb r^2 d r \notag  \\
+	B_3(T) = N_A^2 \lb 4 b_2^2 - 2 b_3 \rb = - \frac{N_A^2}{3} \iint\limits_V f(r_{12}) f(r_{13}) f(r_{23}) \, d \mathbf{r}_2 d \mathbf{r}_3 \notag
+\end{gather}
+
+
+\iffalse
+\newpage
 Системы, в которых протекают хиимически реакции или изменения физического состояния, считаются открытыми системами. Химические и физические превращения могут протекать и в закрытых системах, однако при подобных превращениях число частиц определенного вида (т.е. число частиц данной химической компоненты или число частиц вещества в данном агрегатном состоянии) является переменным. Поэтому такие системы независимо от того, являются ли они открытыми или закрытыми, описывают с помощью большого канонического ансамбля Гиббса \cite{hirsch}. \par 
 Рассмотрим выражение для большой статистической суммы \cite{meyson}:
 \vverh
@@ -248,6 +338,7 @@
 	B_2(T) = - N_A b_2 = - 2 \pi N_A \int_0^\infty \lb 1 - \exp \lb -\frac{u(r)}{kT} \rb \rb r^2 d r \notag  \\
 	B_3(T) = N_A^2 \lb 4 b_2^2 - 2 b_3 \rb = - \frac{N_A^2}{3} \int_V \int_V f(r_{12}) f(r_{13}) f(r_{23}) \, d \mathbf{r}_2 d \mathbf{r}_3 \notag
 \end{gather}
+\fi
 
 \subsection{Второй вириальный коэффициент \cite{hirsch, meyson}}
 
@@ -283,7 +374,8 @@
 \end{gather}
 
 Интегрирование в \eqref{virint} производилось при помощи адаптивного метода Монте-Карло \cite{lepage1978}, реализованного в рамках пакета $Vegas$ 
-на языках $Python/Cython$ \cite{vegas} (приложение \ref{appendix:montecarlo}). Температурные зависимости рассчитанных вириальных коэффициентов приведены на Рис. \ref{fig:vir} (экспериментальные точки из \cite{dymond}).
+на языках $Python/Cython$ \cite{vegas} (приложение \ref{appendix:montecarlo}). Температурные зависимости рассчитанных вириальных коэффициентов приведены на Рис. \ref{fig:vir} (экспериментальные точки из \cite{dymond}). Вириальный коэффициент, рассчитанный на потенциале \textit{ab-initio}, существенно лучше описывает экспериментальные данные.
+
 
 \begin{figure}[!ht]
 \includegraphics[width=\linewidth]{pictures/virexp.png}
@@ -293,37 +385,67 @@
 
 \subsection{Квантовые поправки ко второму вириальному коэффициенту}
 
-Оценка вириальных коэффициентов чисто квантовомеханическими методами существенно сложнее классических методов, поэтому был развит метод расчета квантовомеханических эффектов на основе классического приближения \cite{meyson}. Существует довольно большое количество математических методов, реализующих полуклассический подход, идея которого состоит в получении разложения вириального коэффициента по степеням постоянной Планка $\hbar$. Метод, предложеный Вигнером, позднее модифицированный Кирквудом, известен как разложение Вигнера-Кирквуда. Особенностью этого разложения является то, что в нем имеются только четные степени $\hbar$, и, таким образом, врыражения для вириальных коэффициентов представляют собой ряды по $\hbar^2$. Разложение Вигнера-Кирквуда, включая квантовые поправки на поступательное и вращательное движение (обозначаемые соответственно индексами $t$ и $r$), имеет вид
+Термодинамические свойства ансамбля частиц могут быть рассчитаны с использованием суммы по состояниям
 \vverh
 \begin{gather}
-	B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \lb \frac{\hbar^2}{m} \rb^2 B_{t2} + \dots + \frac{\hbar^2}{I} B_{r1} + \lb \frac{\hbar^2}{I} \rb^2 B_{r2} + \dots \notag
+	\sigma = \sum_n \exp \lb - \beta E_n \rb. \label{sigma}  
+\end{gather}
+Если устремить постоянную Планка $h$ к нулю, то сумма по состояниям \eqref{sigma} может быть преобразована в интеграл по фазовому пространству ансамбля:
+\vverh
+\begin{gather}
+	\lim_{h \rightarrow 0} h^N \sigma = Z = \iint \exp \lb - \beta H(\mf{q}, \mf{p}) \rb d \mf{q} \, d \mf{p}, \label{sigma2}
+\end{gather}
+где $H(\mf{q}, \mf{p})$ -- классическая функция Гамильтона, а $N$ -- число степеней свободы системы. \par
+Для квантовомеханических систем вычисление суммы по состояния \eqref{sigma} значительно более трудоемко. Для облегчения этой задачи была предложена процедура, позволяющая свести сумму по состояниям к интегралу по фазовому пространству, аналогичному Гиббсову интегралу \eqref{sigma2} \cite{kirkwood1933}. \par 
+Рассмотрим ансамбль, состоящий из $N$ одинаковых частиц с массами $m$. Пусть потенциальная энергия системы $V \lb q_1, \dots q_{3N} \rb$  определяется только $3 N$ координатами частиц (положением фигуративной точки в конфигурационном пространстве ансамбля). Уравнение Шредингера такой системы 
+\vverh
+\begin{gather}
+	\lb \hat{H} - E_n \rb \psi_n = 0, \quad \hat{H} = - \sum_{k = 1}^{N} \frac{\hbar^2}{2m} \Delta_k + V \lb q_1, \dots q_{3N} \rb, \notag 
+\end{gather}
+где $\psi_n$ -- нормированные волновые функции, соответствующие уровню $E_n$. Рассмотрим следующее выражение с оператором $\exp \lb - \beta \hat{H }\rb$:
+\vverh
+\begin{gather}
+	\psi_n^{*} \exp \lb - \beta \hat{H} \rb \psi_n = \psi_n^{*} \sum_l \frac{ \lb - \beta \rb^l}{l!} \hat{H}^l \psi_n = \psi_n^{*} \sum_l \frac{ \lb - \beta \rb^l}{l!} E_n^l \psi_n = \psi_n^{*} \exp \lb - \beta E_n \rb \psi_n 
+\end{gather}
+Таким образом, сумма по состояниям \eqref{sigma} сводится к следующему интегралу по конфигурационному пространству:
+\vverh
+\begin{gather}
+	\sigma = \sum_n \exp \lb - \beta E_n \rb = \sum_n \idotsint \psi_n^{*} \exp \lb - \beta H \rb \psi_n d q_1, \dots, d q_{3N}. \label{sigma3}  
 \end{gather}
 
-Строго разложение применимо только к существенно линейным молекулам, т.к. содержит только один момент инерции. Поправки в разложении Вигнера-Кирквуда имеют вид (для потенциала $U = U(r, \theta_1, \theta_2, \phi_2 - \phi_1)$) 
+Конфигурационный интеграл \eqref{sigma3} может быть преобразован к фазовому интегралу, который оказывается существенно сложнее классического. Однако, для систем, проявляющих классические свойства, было показано, что такой интеграл может быть разложен в виде ряда по степеням постоянной Планка $h$, причем первым членом этого разложения является Гиббсов интеграл \eqref{sigma2} \cite{wigner1932, kirkwood1933}.
+
+Аналогичное разложение второго вириального коэффициента по степеням постоянной Планка $h$ получило название разложения Вигнера-Кирквуда \cite{kirkwood1933} (т.к. первым членом в разложении суммы по состояниям $\sigma$ является классический фазовый интеграл, то первым членом в разложении вириального коэффициента является классический вириальный коэффициент). Оказалось, что в ряд входят только те слагаемые, которые содержат $h^2$. Разложение Вигнера-Кирквуда имеет вид (трансляционная и вращательная поправки обозначаются индексами $t$ и $r$ соотвественно)
 \vverh
 \begin{gather}
-	B_{t1} = \frac{N_0}{48 \lb kT \rb^3} \int_{0}^{\infty} \int_{\lb \Omega \rb} \exp \lb -\frac{U}{k T} \rb \lb \frac{\partial U}{\partial r} \rb^2 r^2 d r d \Omega, \notag \\
-	B_{r1} = \frac{N_0}{96 \lb kT \rb^3} \int_{0}^{\infty} \int_{\lb \Omega \rb} \exp \lb -\frac{U}{k T} \rb \left[ \lb \frac{\partial U}{\partial \theta_1} \rb^2 + \lb \frac{\partial U}{\partial \theta_2} \rb^2 + \frac{1}{\sin^2 \theta_1} \lb \frac{\partial U}{\partial \phi_1} \rb^2 + \frac{1}{\sin^2 \theta_2} \lb \frac{\partial U}{\partial \phi_2} \rb^2 \right] r^2 d r d \Omega, \notag 
+	B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \lb \frac{\hbar^2}{m} \rb^2 B_{t2} + \dots + \frac{\hbar^2}{I} B_{r1} + \lb \frac{\hbar^2}{I} \rb^2 B_{r2} + \dots .\notag
+\end{gather}
+
+Строго разложение применимо только к линейным молекулам, т.к. содержит только один момент инерции. Поправки в разложении Вигнера-Кирквуда имеют вид (для потенциала $U = U(r, \theta_1, \theta_2, \phi_2 - \phi_1)$) \cite{meyson, hirsch} 
+\vverh
+\begin{gather}
+	B_{t1} = \frac{N_0}{48 \lb kT \rb^3} \int\limits_{0}^{\infty} \int\limits_{\lb \Omega \rb} \exp \lb -\frac{U}{k T} \rb \lb \frac{\partial U}{\partial r} \rb^2 r^2 d r d \Omega, \notag \\
+	B_{r1} = \frac{N_0}{96 \lb kT \rb^3} \int\limits_{0}^{\infty} \int\limits_{\lb \Omega \rb} \exp \lb -\frac{U}{k T} \rb \left[ \lb \frac{\partial U}{\partial \theta_1} \rb^2 + \lb \frac{\partial U}{\partial \theta_2} \rb^2 + \frac{1}{\sin^2 \theta_1} \lb \frac{\partial U}{\partial \phi_1} \rb^2 + \frac{1}{\sin^2 \theta_2} \lb \frac{\partial U}{\partial \phi_2} \rb^2 \right] r^2 d r d \Omega, \notag 
 \end{gather}
 где
 \begin{gather}
-	\int_{\lb \Omega \rb} d \Omega = \int_0^\pi \sin \theta_1 d \theta_1 \int_0^\pi \sin \theta_2 d \theta_2 \int_0^{2 \pi} d \lb \phi_2 - \phi_1 \rb. \notag
+	\int\limits_{\lb \Omega \rb} d \Omega = \int\limits_0^\pi \sin \theta_1 d \theta_1 \int\limits_0^\pi \sin \theta_2 d \theta_2 \int\limits_0^{2 \pi} d \lb \phi_2 - \phi_1 \rb. \notag
 \end{gather}
 
- (В первом столбце представлены значения вириальных коэффициентов, рассчитанные по классической формулеПрименительно к системе $Ar-CO_2$ получаем следующие выражения для квантовых поправок:
+Применительно к системе $Ar-CO_2$ получаем следующие выражения для квантовых поправок:
 \vverh
 \begin{gather}
-	B_{1t} = \frac{\pi N_0}{12 \lb k T \rb^3} \int_0^\infty \int_0^\pi \exp \lb - \frac{U}{k T} \rb \lb \frac{\partial U}{\partial r} \rb^2 r^2 \sin \theta d r d \theta, \label{transcorr} \\
-	B_{1r} = \frac{\pi N_0}{24 \lb k T \rb^3} \int_0^\infty \int_0^\pi \exp \lb - \frac{U}{k T} \rb \lb \frac{\partial U}{\partial \theta} \rb^2 r^2 \sin \theta d r d \theta. \label{rotcorr}
+	B_{t1} = \frac{\pi N_0}{12 \lb k T \rb^3} \int\limits_0^\infty \int\limits_0^\pi \exp \lb - \frac{U}{k T} \rb \lb \frac{\partial U}{\partial r} \rb^2 r^2 \sin \theta d r d \theta, \label{transcorr} \\
+	B_{r1} = \frac{\pi N_0}{24 \lb k T \rb^3} \int\limits_0^\infty \int\limits_0^\pi \exp \lb - \frac{U}{k T} \rb \lb \frac{\partial U}{\partial \theta} \rb^2 r^2 \sin \theta d r d \theta. \label{rotcorr}
 \end{gather}
 
-Поправки более высокого уровня учитывать не будем, таким образом значение вириального коэффициента с учетом поправок первого порядка будем вычисляется следующим образом
+Учитывая только квантовые поправки первого порядка вириальный коэффициент вычисляется следующим образом 
 \vverh
 \begin{gather}
-	B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \frac{\hbar^2}{I} B_{r1} = B^{(0)} + B_{tr}^{(1)} + B_{rot}^{(1)} \notag
+	B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \frac{\hbar^2}{I} B_{r1} = B^{(0)} + B_{tr}^{(1)} + B_{rot}^{(1)}. \notag
 \end{gather}
 
-Поскольку значения квантовых поправок для системы $Ar-CO_2$ имеют достаточно малые значения, представим их только для \textit{ab-initio} потенциала.  Производные $\ddfrac{\strut\partial U}{\strut\partial r}$, $\ddfrac{\strut\partial U}{\strut\partial \theta}$, входящие в подынтгеральные выражения \eqref{transcorr} и \eqref{rotcorr} соответственно, были вычислены аналитически. Интегрирование также производилось при помощи адаптивного метода Монте-Карло. Результаты расчета для \textit{ab-initio} потенциала суммированы в таблице на следующей странице. (В первом столбце представлены значения вириальных коэффициентов, рассчитанные по классической формуле \eqref{virint}, во втором и третьем стобцах -- квантовые поправки, полученные по формулам \eqref{transcorr}, \eqref{rotcorr} соответственно, затем посчитано значение вириального коэффициента с учетом поправок, в последнем стобце представлено экспериментальное значение вириального коэффициента с ссылкой на публикацию). 
+В таблице $\lb \ref{tab:tablevir} \rb$ представлены значения квантовых поправок для системы $Ar-CO_2$, рассчитанные с \textit{ab-initio} потенциалом. Производные $\ddfrac{\strut\partial U}{\strut\partial r}$, $\ddfrac{\strut\partial U}{\strut\partial \theta}$, входящие в подынтгеральные выражения \eqref{transcorr} и \eqref{rotcorr} соответственно, были вычислены аналитически. Интегрирование производилось при помощи адаптивного метода Монте-Карло. (В первом столбце представлены значения вириальных коэффициентов, рассчитанные по классической формуле \eqref{virint}, во втором и третьем стобцах -- квантовые поправки, полученные по формулам \eqref{transcorr}, \eqref{rotcorr} соответственно, затем посчитано значение вириального коэффициента с учетом поправок, в последнем стобце представлено экспериментальное значение вириального коэффициента с ссылкой на публикацию). 
 
 \newpage
 \setlength{\tabcolsep}{12pt}
@@ -331,6 +453,9 @@
 \centering
 \vspace*{-0.5cm}
 
+\captionof{table}{\centering Квантовые поправки для вириального коэффициента системы $Ar-CO_2$.} \label{tab:tablevir}
+\vspace*{-0.3cm}
+\fontsize{10pt}{12pt}\selectfont
 \begin{tabular}{ccccccc}
 \hline
 \hline\noalign{\smallskip}

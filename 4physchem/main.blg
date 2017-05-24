@@ -3,53 +3,56 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: biblio.bib
-Warning--I didn't find a database entry for "vigasin2015"
-Warning--I didn't find a database entry for "ozaki"
+I was expecting a `,' or a `}'---line 175 of file biblio.bib
+ :   
+ :   journal = "The American Mathematical Monthly"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in huber1982
+Warning--empty title in lepage1978
 Warning--empty title in parker1976
 Warning--empty title in hutson1996
-Warning--empty title in rowlin1964
-Warning--empty title in lepage1978
 Warning--empty title in tsuda1973
 Warning--empty title in haselgrove1961
-You've used 16 entries,
+You've used 22 entries,
             1791 wiz_defined-function locations,
-            532 strings with 4921 characters,
-and the built_in function-call counts, 2620 in all, are:
-= -- 206
-> -- 95
+            556 strings with 5596 characters,
+and the built_in function-call counts, 3510 in all, are:
+= -- 281
+> -- 133
 < -- 0
-+ -- 41
-- -- 25
-* -- 131
-:= -- 435
-add.period$ -- 42
-call.type$ -- 16
-change.case$ -- 2
++ -- 57
+- -- 35
+* -- 159
+:= -- 594
+add.period$ -- 61
+call.type$ -- 22
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 148
-empty$ -- 306
-format.name$ -- 25
-if$ -- 589
+cite$ -- 28
+duplicate$ -- 200
+empty$ -- 400
+format.name$ -- 35
+if$ -- 788
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 23
-newline$ -- 77
-num.names$ -- 16
-pop$ -- 75
+int.to.str$ -- 22
+missing$ -- 31
+newline$ -- 108
+num.names$ -- 22
+pop$ -- 94
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 40
+skip$ -- 61
 stack$ -- 0
 substring$ -- 69
-swap$ -- 16
+swap$ -- 21
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 23
-width$ -- 18
-write$ -- 157
-(There were 8 warnings)
+while$ -- 29
+width$ -- 24
+write$ -- 222
+(There was 1 error message)
