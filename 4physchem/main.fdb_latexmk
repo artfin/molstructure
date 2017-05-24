@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1495662753 "main.aux" "main.bbl" "main" 1495663097
+["bibtex main"] 1495662753 "main.aux" "main.bbl" "main" 1495663644
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
   "biblio.bib" 1495645285 4182 c0a1826984dd2bdb9b3412ab7e6284fd ""
-  "main.aux" 1495662751 22388 4615574b9bd79b9d6e5c31f79907fcab ""
+  "main.aux" 1495663622 22388 4615574b9bd79b9d6e5c31f79907fcab ""
   "main.bcf" 0 -1 0 ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1495663097 "main.tex" "main.pdf" "main" 1495663097
+["pdflatex"] 1495663621 "main.tex" "main.pdf" "main" 1495663644
   "/etc/texmf/web2c/texmf.cnf" 1491468032 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk" 1494248969 8424 33080ae6bfc48843115d53d13af61e54 ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1495229609 3320 a430f046d61f34970b99e53711dc6a65 ""
@@ -244,10 +244,10 @@
   "Preamble.tex" 1495380008 2361 9af6023fd1b98dc060d1fa986b728ac5 ""
   "appendix1.tex" 1495645169 5115 fbc75080b1c7d895258ea055b02e68de ""
   "appendix2.tex" 1495385706 4483 443434c61de00b8b469f79e616c938f3 ""
-  "main.aux" 1495662751 22388 4615574b9bd79b9d6e5c31f79907fcab ""
+  "main.aux" 1495663622 22388 4615574b9bd79b9d6e5c31f79907fcab ""
   "main.bbl" 1495662753 3202 b7ef19f4b11480dd07d69f93ee189a31 "bibtex main"
-  "main.tex" 1495645396 889 c931c7e3245bf0fe78d763cbc313d082 ""
-  "main.toc" 1495662751 11741 5e1289ab44cf6fc640062391c0cec3e9 ""
+  "main.tex" 1495663611 889 c931c7e3245bf0fe78d763cbc313d082 ""
+  "main.toc" 1495663622 11741 5e1289ab44cf6fc640062391c0cec3e9 ""
   "part2.tex" 1495551020 6380 c007a35b574ca8b504d7ccad1db20d73 ""
   "part3.tex" 1495386381 4198 d41b364d73c80264b9fea34800ac41b3 ""
   "part4.tex" 1495548957 4751 d6fe9264b411c6f6493f83fc6aa18d3c ""
@@ -258,9 +258,9 @@
   "pictures/potential_wall.png" 1495381419 115267 13610aa377301b8d3735b13196be0fd9 ""
   "pictures/potential_well.png" 1495381367 130037 04ab5fefa216d32727e3efc1a6ba2dbf ""
   "pictures/virexp.png" 1495618415 68512 34d428a35b344cf2138da15f34d986aa ""
-  "title.tex" 1494194633 1025 c64271aa74fba6966315722e08feeb06 ""
+  "title.tex" 1495663598 1115 f15f44e25fb9ffe9ada99f34f4eeabf9 ""
   (generated)
-  "main.log"
-  "main.aux"
-  "main.pdf"
   "main.toc"
+  "main.log"
+  "main.pdf"
+  "main.aux"
