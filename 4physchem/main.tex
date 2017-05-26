@@ -19,13 +19,11 @@
 
 \input{part5.tex}
 
-\newpage
-
 \input{part6.tex}
 
-\newpage
 \bibliographystyle{unsrt}
 \bibliography{biblio}
+
 \newpage
 
 % modifying font of the appendix title
@@ -35,11 +33,13 @@
   {\chaptertitlename\ \thechapter}{20pt}
   {\large}
 
-  \section{Интегрирование экспоненциальной функции по объему многомерного шара \cite{huber1982}}
- \label{appendix:multint}
+  \section*{\textbf{A} Интегрирование экспоненциальной функции по объему многомерного шара \cite{huber1982}}
+  \addcontentsline{toc}{section}{\protect{\numberline{A}} Интегрирование экспоненциальной функции по объему многомерного шара}
+  \label{appendix:multint}
 \input{appendix1.tex}
 
-\section{Адаптивное интегрирование методом Монте-Карло \cite{lepage1978}}
+\section*{\textbf{B} Адаптивное интегрирование методом Монте-Карло \cite{lepage1978}}
+\addcontentsline{toc}{section}{\protect{\numberline{B}} Адаптивное интегрирование методом Монте-Карло}
 \label{appendix:montecarlo}
 \input{appendix2.tex}
 

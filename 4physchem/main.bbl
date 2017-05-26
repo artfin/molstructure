@@ -1,51 +1,10 @@
 \begin{thebibliography}{10}
 
-\bibitem{eremin}
-Н.Е.~Кузьменко В.В.~Еремин, С.И.~Каргов.
-\newblock {\em Реальные газы}.
-\newblock Москва, 1998.
-
-\bibitem{hirsch}
-Р.~Берд. Дж.~Гиршфельдер, Ч.~Кертисс.
-\newblock {\em Молекулярная теория газов и
-  жидкостей}.
-\newblock ИЛ, 1961.
-
-\bibitem{mayer}
-Дж. Майер.
-\newblock {\em Статистическая механика}.
-\newblock Мир, 1980.
-
-\bibitem{meyson}
-Т.~Сперлинг Э.~Мейсон.
-\newblock {\em Вириальное уравнение состояния}.
-\newblock Мир, 1972.
-
-\bibitem{keszei}
-E.~Keszei.
-\newblock {\em Chemical thermodynamics: an Introduction}.
-\newblock Springer Science & Business Media, 2013.
-
-\bibitem{landau2}
-Лифшиц~Е. Ландау~Л.
-\newblock {\em Теоретическая физика. Том V.
-  Статистическая физика}.
-\newblock Физматлит, 2007.
-
-\bibitem{huber1982}
-G.~Huber.
-\newblock Gamma function derivation of n-sphere volumes.
-\newblock 89, 1982.
-
-\bibitem{lepage1978}
-G.~P. Lepage.
-\newblock {\em J. Comput. Phys}, 27:192, 1978.
-
 \bibitem{camyvigasin}
-C.~Camy-Peyret and A.~Vigasin.
-\newblock {\em Weakly interacting molecular pairs: unconventional absorbers of
-  radiation in the atmosphere}.
-\newblock Springer Science & Business Media, 2012.
+C.~Camy-Peyret and A.~A. Vigasin.
+\newblock {\em Weakly interacting Molecular Pairs: Unconventional Absorbers of
+  Radiation in the Atmosphere}.
+\newblock NATO ARW Series, Kluwer, Dordrecht, 2003.
 
 \bibitem{vigasin2015}
 A.~Vigasin and I.~Buryak.
@@ -53,39 +12,69 @@ A.~Vigasin and I.~Buryak.
   dimers using complete potential energy surface.
 \newblock {\em J. Chem. Phys}, 143, 2015.
 
+\bibitem{kalugina2017}
+Ю.~Н. Калугина.
+\newblock Готовится к печати.
+\newblock 2017.
+
+\bibitem{lepage1978}
+G.~P. Lepage.
+\newblock {\em J. Comput. Phys}, 27:192, 1978.
+
 \bibitem{vegas}
 G.~P. Lepage.
 \newblock Vegas.
 \newblock https://github.com/gplepage/vegas, 2013.
 
 \bibitem{landau1}
-Лифшиц~Е. Ландау~Л.
+Е. М.~Лифшиц Л. Д.~Ландау.
 \newblock {\em Теоретическая физика. Том I.
   Механика}.
 \newblock Физматлит, 2007.
 
 \bibitem{goldstein}
-Голдстейн Г.
+Г. Голдстейн.
 \newblock {\em Классическая механика}.
 \newblock Наука, 1975.
 
 \bibitem{petrov2015}
-S.V.Petrov and S.E.Lokshtanov.
+S.~V. Petrov and S.~E. Lokshtanov.
 \newblock Trajectory analysis of the rotational dynamics of molecules.
-\newblock {\em Journal of Experimental and Theoretical Physics}, 121:186, 2015.
+\newblock {\em J. Exp. Theor. Phys.}, 121:186, 2015.
 
 \bibitem{gantmaher}
 Ф.Р. Гантмахер.
 \newblock {\em Теория матриц}.
-\newblock Москва, 1966.
+\newblock Физматлит, 2004.
 
 \bibitem{parker1976}
-G.~A. Parker, R.~L. Snow, and R.T.Pack.
+G.~A. Parker, R.~T. Pack, and R.~L. Snow.
 \newblock {\em J. Chem. Phys.}, 64:1668, 1976.
 
 \bibitem{hutson1996}
 J.~M. Hutson, A.~Ernesti, M.M. Law, C.~F. Roche, and R.~Wheatley.
 \newblock {\em J. Chem. Phys.}, 105:9130, 1996.
+
+\bibitem{eremin}
+Н.Е.~Кузьменко В.В.~Еремин, С.И.~Каргов.
+\newblock {\em Реальные газы}.
+\newblock Москва, 1998.
+
+\bibitem{hirsch}
+Р.~Берд Дж.~Гиршфельдер, Ч.~Кертисс.
+\newblock {\em Молекулярная теория газов и
+  жидкостей}.
+\newblock ИЛ, 1961.
+
+\bibitem{mayer}
+М. Гепперт-Майер Дж.~Майер.
+\newblock {\em Статистическая механика}.
+\newblock Мир, 1980.
+
+\bibitem{meyson}
+Т.~Сперлинг Э.~Мейсон.
+\newblock {\em Вириальное уравнение состояния}.
+\newblock Мир, 1972.
 
 \bibitem{dymond}
 J.D. Dymond, K.N. Marsh, and R.C. Willhoit.
@@ -97,16 +86,37 @@ J.~G. Kirkwood.
 \newblock Quantum statistics of almost classical assemblies.
 \newblock {\em Phys. Rev.}, 44, 1933.
 
+\bibitem{messia}
+А. Мессиа.
+\newblock {\em Квантовая механика. Том 1.}
+\newblock Наука, 1978.
+
 \bibitem{wigner1932}
 E.~Wigner.
 \newblock On the quantum correction for thermodynamic equilibrium.
 \newblock {\em Phys. Rev.}, 40:749, 1932.
+
+\bibitem{keszei}
+E.~Keszei.
+\newblock {\em Chemical thermodynamics: an Introduction}.
+\newblock Springer-Verlag Berlin Heidelberg, 2012.
+
+\bibitem{landau2}
+Е. М.~Лифшиц Л. Д.~Ландау.
+\newblock {\em Теоретическая физика. Том V.
+  Статистическая физика}.
+\newblock Физматлит, 2007.
 
 \bibitem{ozaki1985}
 Y.~Ozaki, K.~Murano, K.~Izumi, and T.~Fukuyama.
 \newblock Dimer concetrations in supersonic molecular beams of argon and carbon
   dioxide.
 \newblock {\em J. Chem. Phys.}, 89, 1985.
+
+\bibitem{huber1982}
+G.~Huber.
+\newblock Gamma function derivation of n-sphere volumes.
+\newblock 89, 1982.
 
 \bibitem{tsuda1973}
 T.~Tsuda.

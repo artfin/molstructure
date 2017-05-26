@@ -6,7 +6,7 @@
 	T_\mL = \frac{1}{2} \sum_{i=1}^{n} m_i \dot{\mf{r}}^2 \notag
 \end{gather}
 
-Переход от лабораторной системы отсчета к подвижной системе может быть осуществлен при помощи углов Эйлера $\varphi$, $\theta$ и $\psi$ \cite{landau1, goldstein}. Ортогональная матрица $\bbS$, связывающая координаты векторов в лабораторной и молекулярной системах отсчета является произведением матриц поворота:
+Переход от лабораторной системы отсчета к подвижной системе может быть осуществлен при помощи углов Эйлера $\varphi$, $\theta$ и $\psi$ \cite{landau1, goldstein}. Ортогональная матрица $\bbS$, связывающая координаты векторов в лабораторной и молекулярной системах отсчета является произведением матриц поворотов:
 \vverh
 \begin{gather}
 	\bbS = \bbS_\psi \, \bbS_\theta \, \bbS_\varphi =  
@@ -63,7 +63,7 @@ $\bbA_{jk} = \displaystyle \sum_{i=1}^{n} m_i \left[ \mf{R}_i \times \displaysty
 	\notag
 \end{gather}
 
-Запишем гамильтоновы переменные $\mf{p}$ и $\mf{J}$ как производные кинетической энергии в лагранжевом представлении. Заметим, что блочный вектор гамилтоновых переменных связан с блочным вектором лагранжевых переменных матрицей $\bbB$.
+Запишем гамильтоновы переменные $\mf{p}$ и $\mf{J}$ как производные кинетической энергии в лагранжевом представлении. Заметим, что блочный вектор гамильтоновых переменных связан с блочным вектором лагранжевых переменных матрицей $\bbB$.
 \vverh
 \begin{gather}
 	\begin{aligned}
@@ -82,7 +82,7 @@ $\bbA_{jk} = \displaystyle \sum_{i=1}^{n} m_i \left[ \mf{R}_i \times \displaysty
 	\end{bmatrix} \notag
 \end{gather}
 
-Обращение блочной матрицы $\bbB$ легче всего осуществить воспользовавшись формулами Фробениуса \cite{gantmaher}. Обозначим $\bbG = \bbB^{-1} = \begin{bmatrix} \bbG_{11} & \bbG_{12} \\ \bbG_{21} & \bbG_{22} \end{bmatrix}$:
+Обращение блочной матрицы $\bbB$ традиционно осуществляется \cite{petrov2015} при помощи формул Фробениуса \cite{gantmaher}. Обозначим $\bbG = \bbB^{-1} = \begin{bmatrix} \bbG_{11} & \bbG_{12} \\ \bbG_{21} & \bbG_{22} \end{bmatrix}$:
 \vverh
 \begin{gather}
 	\begin{aligned}
@@ -98,7 +98,7 @@ $\bbA_{jk} = \displaystyle \sum_{i=1}^{n} m_i \left[ \mf{R}_i \times \displaysty
 \begin{gather}
 	T_\mH = 
 	\begin{bmatrix}
-		\mf{\Omega}^\top & \hspace*{-2mm} \dot{\mf{q}}
+		\mf{\Omega}^\top & \hspace*{-2mm} \dot{\mf{q}}^\top
 	\end{bmatrix}
 	\begin{bmatrix}
 		\mf{J} \\
@@ -106,14 +106,14 @@ $\bbA_{jk} = \displaystyle \sum_{i=1}^{n} m_i \left[ \mf{R}_i \times \displaysty
 	\end{bmatrix}
 	- T_\mL = \frac{1}{2} 
 	\begin{bmatrix}
-		\mf{J} & \mf{p}
+		\mf{J}^\top & \hspace*{-2mm} \mf{p}^\top
 	\end{bmatrix}
 	\bbG
 	\begin{bmatrix}
 		\mf{J} \\
 		\mf{p}
 	\end{bmatrix} = 
-	\frac{1}{2} \mf{J}^\top \bbG_{11} \mf{J} + \frac{1}{2} \mf{p}^\top \bbG_{22} \mf{p} + \mf{J} \, \bbG_{12} \mf{p} \label{genham} 
+	\frac{1}{2} \mf{J}^\top \bbG_{11} \mf{J} + \frac{1}{2} \mf{p}^\top \bbG_{22} \mf{p} + \mf{J}^\top \, \bbG_{12} \mf{p} \label{genham} 
 \end{gather}
 
 

@@ -3,56 +3,57 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: biblio.bib
-I was expecting a `,' or a `}'---line 182 of file biblio.bib
+I was expecting a `,' or a `}'---line 187 of file biblio.bib
  :   
  :   journal = "The American Mathematical Monthly"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty journal in huber1982
+Warning--empty journal in kalugina2017
 Warning--empty title in lepage1978
 Warning--empty title in parker1976
 Warning--empty title in hutson1996
+Warning--empty journal in huber1982
 Warning--empty title in tsuda1973
 Warning--empty title in haselgrove1961
-You've used 23 entries,
+You've used 25 entries,
             1791 wiz_defined-function locations,
-            560 strings with 5731 characters,
-and the built_in function-call counts, 3674 in all, are:
-= -- 294
-> -- 141
+            569 strings with 5932 characters,
+and the built_in function-call counts, 3948 in all, are:
+= -- 316
+> -- 149
 < -- 0
-+ -- 60
-- -- 37
-* -- 164
-:= -- 620
-add.period$ -- 64
-call.type$ -- 23
-change.case$ -- 7
++ -- 64
+- -- 39
+* -- 170
+:= -- 666
+add.period$ -- 70
+call.type$ -- 25
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 210
-empty$ -- 419
-format.name$ -- 37
-if$ -- 827
+cite$ -- 32
+duplicate$ -- 228
+empty$ -- 452
+format.name$ -- 39
+if$ -- 889
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 33
-newline$ -- 113
-num.names$ -- 23
-pop$ -- 101
+int.to.str$ -- 25
+missing$ -- 36
+newline$ -- 123
+num.names$ -- 25
+pop$ -- 113
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 64
+skip$ -- 69
 stack$ -- 0
 substring$ -- 69
-swap$ -- 22
+swap$ -- 23
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 30
-width$ -- 25
-write$ -- 232
+warning$ -- 7
+while$ -- 32
+width$ -- 27
+write$ -- 251
 (There was 1 error message)
