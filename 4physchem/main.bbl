@@ -41,6 +41,23 @@ G.~Huber.
 G.~P. Lepage.
 \newblock {\em J. Comput. Phys}, 27:192, 1978.
 
+\bibitem{camyvigasin}
+C.~Camy-Peyret and A.~Vigasin.
+\newblock {\em Weakly interacting molecular pairs: unconventional absorbers of
+  radiation in the atmosphere}.
+\newblock Springer Science & Business Media, 2012.
+
+\bibitem{vigasin2015}
+A.~Vigasin and I.~Buryak.
+\newblock Classical calculation of the equilibrium constants for true bound
+  dimers using complete potential energy surface.
+\newblock {\em J. Chem. Phys}, 143, 2015.
+
+\bibitem{vegas}
+G.~P. Lepage.
+\newblock Vegas.
+\newblock https://github.com/gplepage/vegas, 2013.
+
 \bibitem{landau1}
 Лифшиц~Е. Ландау~Л.
 \newblock {\em Теоретическая физика. Том I.
@@ -70,11 +87,6 @@ G.~A. Parker, R.~L. Snow, and R.T.Pack.
 J.~M. Hutson, A.~Ernesti, M.M. Law, C.~F. Roche, and R.~Wheatley.
 \newblock {\em J. Chem. Phys.}, 105:9130, 1996.
 
-\bibitem{vegas}
-G.~P. Lepage.
-\newblock Vegas.
-\newblock https://github.com/gplepage/vegas, 2013.
-
 \bibitem{dymond}
 J.D. Dymond, K.N. Marsh, and R.C. Willhoit.
 \newblock {\em Virial coefficients of pure gases and mixtures}.
@@ -89,12 +101,6 @@ J.~G. Kirkwood.
 E.~Wigner.
 \newblock On the quantum correction for thermodynamic equilibrium.
 \newblock {\em Phys. Rev.}, 40:749, 1932.
-
-\bibitem{vigasin2015}
-A.~Vigasin and I.~Buryak.
-\newblock Classical calculation of the equilibrium constants for true bound
-  dimers using complete potential energy surface.
-\newblock {\em J. Chem. Phys}, 143, 2015.
 
 \bibitem{ozaki1985}
 Y.~Ozaki, K.~Murano, K.~Izumi, and T.~Fukuyama.

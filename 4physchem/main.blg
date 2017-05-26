@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: biblio.bib
-I was expecting a `,' or a `}'---line 175 of file biblio.bib
+I was expecting a `,' or a `}'---line 182 of file biblio.bib
  :   
  :   journal = "The American Mathematical Monthly"
 (Error may have been on previous line)
@@ -14,45 +14,45 @@ Warning--empty title in parker1976
 Warning--empty title in hutson1996
 Warning--empty title in tsuda1973
 Warning--empty title in haselgrove1961
-You've used 22 entries,
+You've used 23 entries,
             1791 wiz_defined-function locations,
-            556 strings with 5596 characters,
-and the built_in function-call counts, 3510 in all, are:
-= -- 281
-> -- 133
+            560 strings with 5731 characters,
+and the built_in function-call counts, 3674 in all, are:
+= -- 294
+> -- 141
 < -- 0
-+ -- 57
-- -- 35
-* -- 159
-:= -- 594
-add.period$ -- 61
-call.type$ -- 22
++ -- 60
+- -- 37
+* -- 164
+:= -- 620
+add.period$ -- 64
+call.type$ -- 23
 change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 200
-empty$ -- 400
-format.name$ -- 35
-if$ -- 788
+cite$ -- 29
+duplicate$ -- 210
+empty$ -- 419
+format.name$ -- 37
+if$ -- 827
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 31
-newline$ -- 108
-num.names$ -- 22
-pop$ -- 94
+int.to.str$ -- 23
+missing$ -- 33
+newline$ -- 113
+num.names$ -- 23
+pop$ -- 101
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 61
+skip$ -- 64
 stack$ -- 0
 substring$ -- 69
-swap$ -- 21
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 29
-width$ -- 24
-write$ -- 222
+while$ -- 30
+width$ -- 25
+write$ -- 232
 (There was 1 error message)
