@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1495831975 "main.aux" "main.bbl" "main" 1495831977
+["bibtex main"] 1495831975 "main.aux" "main.bbl" "main" 1495833557
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
   "biblio.bib" 1495831973 4602 349f8a4336ff85cf337b591b6234560e ""
-  "main.aux" 1495831952 22189 462e52038545776e3f7de26d8ac3b385 ""
+  "main.aux" 1495831979 22189 462e52038545776e3f7de26d8ac3b385 ""
   "main.bcf" 0 -1 0 ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1495831977 "main.tex" "main.pdf" "main" 1495831977
+["pdflatex"] 1495833557 "main.tex" "main.pdf" "main" 1495833557
   "/etc/texmf/web2c/texmf.cnf" 1491468032 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk" 1494248969 8424 33080ae6bfc48843115d53d13af61e54 ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1495229609 3320 a430f046d61f34970b99e53711dc6a65 ""
@@ -244,11 +244,11 @@
   "Preamble.tex" 1495380008 2361 9af6023fd1b98dc060d1fa986b728ac5 ""
   "appendix1.tex" 1495645169 5115 fbc75080b1c7d895258ea055b02e68de ""
   "appendix2.tex" 1495385706 4483 443434c61de00b8b469f79e616c938f3 ""
-  "main.aux" 1495831952 22189 462e52038545776e3f7de26d8ac3b385 ""
+  "main.aux" 1495831979 22189 462e52038545776e3f7de26d8ac3b385 ""
   "main.bbl" 1495831975 3694 4f987580f13ae95f7fb4506ee18ffd31 "bibtex main"
   "main.tex" 1495831197 1247 b67640321904b04c73fab5ce19a6be94 ""
-  "main.toc" 1495831952 11848 7f4b576d1165d4948cc757f5bc65a24b ""
-  "part1.tex" 1495804723 4046 8586b1f2af490b371c45ea107cfa351d ""
+  "main.toc" 1495831979 11848 7f4b576d1165d4948cc757f5bc65a24b ""
+  "part1.tex" 1495833553 4046 c2911e502b9711001e618ee9dacf5370 ""
   "part2.tex" 1495805010 6441 b0b2160fe1595367953084f39747e95e ""
   "part3.tex" 1495386381 4198 d41b364d73c80264b9fea34800ac41b3 ""
   "part4.tex" 1495806861 4922 f763473b56a8e080276aadf406461e65 ""
@@ -262,7 +262,7 @@
   "pictures/virexp.png" 1495809551 68855 92d14de1c1ef35581a41ddd843a7ab67 ""
   "title.tex" 1495757369 1114 4a36072242a589c5014bd52c4e246425 ""
   (generated)
-  "main.pdf"
   "main.log"
   "main.toc"
+  "main.pdf"
   "main.aux"
