@@ -1,0 +1,93 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{amssymb, amsmath}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
+\usetikzlibrary{fit}
+\usepackage{microtype}
+\usepackage{framed}
+\usetikzlibrary{decorations.pathmorphing,calc,backgrounds}
+
+\usetheme{CambridgeUS}
+\useinnertheme{rectangles}
+\useoutertheme{infolines}
+
+\setbeamercolor{frametitle}{fg=Brown, bg = Brown!20}
+
+\title{\textbf{Расчет константы равновесия слабосвязанного комплекса $Ar-CO_2$}}
+
+\author{\small
+\vspace*{-0.75cm}
+\begin{flushright}
+Выполнил: Финенко А. А. \\[1ex]
+\underline{Научные руководители:} \\ [1ex]
+к.ф.-м.н., с.н.с. Петров С. В. \\ 
+м.н.с. Локштанов С. Е. \\
+д.ф.-м.н., в.н.с. Вигасин А. А.
+\end{flushright}
+}
+
+\pdfmapfile{+sansmathaccent.map}
+
+\institute[MSU] % (optional, but mostly needed)
+{\small МГУ им. М.В.Ломоносова, Химический факультет, 2017}
+\date{}
+
+\newcommand\Fontvi{\fontsize{6}{7.2}\selectfont}
+
+\beamertemplatenavigationsymbolsempty
+
+\setbeamerfont{page number in head/foot}{size=\large}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{frametitle}[default][center]
+
+% change font
+\usefonttheme[onlymath]{serif}
+
+\makeatother
+\setbeamertemplate{headline}
+{}
+\makeatletter
+
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.7\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot} Расчет константы равновесия слабосвязанного комплекса $Ar-CO_2$
+  \end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}Финенко А. \hspace*{3em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatletter
+\setbeamertemplate{navigation symbols}{}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\tikzstyle{lagrange} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 9cm, draw = black, fill=DarkOrchid!40]
+
+\tikzstyle{equations} = [rectangle, rounded corners, text centered, draw = black, fill=green!30]
+
+\tikzstyle{hamilton} = [rectangle, rounded corners, minimum width = 3cm, minimum height = 1cm, text centered, text width = 5 cm, draw = black, fill = Goldenrod!50]
+
+\tikzstyle{result} = [rectangle, rounded corners, text centered, draw = black, fill = blue!30]
+
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+
+\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
+   1 with {\arrow[semithick]{open triangle 60}}},
+   double distance=1.4pt, shorten >= 5.5pt,
+   preaction = {decorate},
+   postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+
+
+
