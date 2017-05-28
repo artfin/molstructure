@@ -365,9 +365,9 @@ INPUT /home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx0700.tfm
 INPUT /home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/larm0500.tfm
 INPUT /home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm
 INPUT /home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx0600.tfm
-INPUT pictures/vircorr.png
-INPUT ./pictures/vircorr.png
-INPUT ./pictures/vircorr.png
+INPUT pictures/vircorr2.png
+INPUT ./pictures/vircorr2.png
+INPUT ./pictures/vircorr2.png
 INPUT part6.tex
 INPUT part6.tex
 INPUT pictures/all_eq_const.png

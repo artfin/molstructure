@@ -177,7 +177,7 @@
 \vverh
 \begin{gather}
 	b_1 = \frac{1}{V} \int\limits_V d \mathbf{r}_1 = 1, \notag \\
-	b_2 = \frac{1}{2 V} \iint\limits_V f \lb r_{12} \rb \, d \mathbf{r}_1 d \mathbf{r}_2 = \frac{1}{2} \int\limits_V f \lb r \rb d \mathbf{r} = - 2 \pi \int\limits_{0}^{\infty} \lb 1 - \exp \lb - \frac{u \lb r \rb}{kT} \rb r^2 d r \label{b2int}  
+	b_2 = \frac{1}{2 V} \iint\limits_V f \lb r_{12} \rb \, d \mathbf{r}_1 d \mathbf{r}_2 = \frac{1}{2} \int\limits_V f \lb r \rb d \mathbf{r} = - 2 \pi \int\limits_{0}^{\infty} \lb 1 - \exp \lb - \frac{u \lb r \rb}{kT} \rb \rb r^2 d r \label{b2int}  
 \end{gather}
 
 Т.к. $f_{ij}$ зависит только от расстояния между частицами $r_{ij}$, но не от положения группы, то интегрирование можно выполнить в два шага: сначала по координатам одной из частиц, что дает множитель $V$, и перейти к относительным координатам для всех остальных частиц групп, что и сделано в преобразованиях $b_2$ \eqref{b2int}. При дальнейшим преобразовании $b_2$ в \eqref{b2int} введены сферические координаты для второй частицы, $r, \varphi, \theta$; интегрирование по сферическим перменным дает множитель $4 \pi$.  
@@ -379,7 +379,7 @@
 \begin{gather}
 	d \Omega_1 = \sin \theta d \theta, \quad \int d \Omega_1 = 2 \notag \\
 	d \tau_1 = d \mathbf{r}_1 \sin \theta d \theta, \quad d \tau_2 = d \mathbf{r}_2 \notag \\
-	\hspace*{-5cm} B = \frac{N_0}{2 V} \ddfrac{\int_{\lb \tau_1 \rb} \int_{\lb \tau_2 \rb} \lb 1 - \exp \lb -\frac{U \lb \mathbf{r}_1, \mathbf{r}_2, \Omega_1 \rb}{k T} \rb d \mathbf{r}_1 d \mathbf{r}_2 d \sin \theta d \theta}{\int d \Omega_1} = \notag \\ \hspace{7cm} = \pi N_0 \int\limits_{0}^{\infty} \int\limits_{0}^{\pi} \lb 1 - \exp \lb - \frac{U(r, \theta)}{k T} \rb \rb r^2 d r \sin \theta d \theta \label{virint}
+	\hspace*{-5cm} B = \frac{N_0}{2 V} \ddfrac{\int_{\lb \tau_1 \rb} \int_{\lb \tau_2 \rb} \lb 1 - \exp \lb -\frac{U \lb \mathbf{r}_1, \mathbf{r}_2, \Omega_1 \rb}{k T} \rb \rb d \mathbf{r}_1 d \mathbf{r}_2 d \sin \theta d \theta}{\int d \Omega_1} = \notag \\ \hspace{7cm} = \pi N_0 \int\limits_{0}^{\infty} \int\limits_{0}^{\pi} \lb 1 - \exp \lb - \frac{U(r, \theta)}{k T} \rb \rb r^2 d r \sin \theta d \theta \label{virint}
 \end{gather}
 
 Интегрирование в \eqref{virint} производилось при помощи адаптивного метода Монте-Карло \cite{lepage1978}, реализованного в рамках пакета $Vegas$ 
@@ -454,7 +454,7 @@
 	B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \frac{\hbar^2}{I} B_{r1} = B^{(0)} + B_{tr}^{(1)} + B_{rot}^{(1)}. \notag
 \end{gather}
 
-В таблице $\lb \ref{tab:tablevir} \rb$ представлены значения квантовых поправок для системы $Ar-CO_2$, рассчитанные с использованием \textit{ab initio} потенциала. Производные $\ddfrac{\strut\partial U}{\strut\partial r}$, $\ddfrac{\strut\partial U}{\strut\partial \theta}$, входящие в подынтгеральные выражения \eqref{transcorr} и \eqref{rotcorr} соответственно, были вычислены аналитически. Интегрирование производилось при помощи адаптивного метода Монте-Карло. (В первом столбце представлены значения вириальных коэффициентов, рассчитанные по классической формуле \eqref{virint}, во втором и третьем стобцах -- квантовые поправки, полученные по формулам \eqref{transcorr}, \eqref{rotcorr} соответственно, затем посчитано значение вириального коэффициента с учетом поправок, в последнем стобце представлено экспериментальное значение вириального коэффициента с ссылкой на публикацию). Температурные зависимости второго вириального коэффициента для \textit{ab initio} потенциала с первыми квантовыми поправками и без представлены на Рис. \ref{fig:vircorr}. 
+В таблице $\lb \ref{tab:tablevir} \rb$ представлены значения квантовых поправок для системы $Ar-CO_2$, рассчитанные с использованием \textit{ab initio} потенциала. Производные $\ddfrac{\strut\partial U}{\strut\partial r}$, $\ddfrac{\strut\partial U}{\strut\partial \theta}$, входящие в подынтгеральные выражения \eqref{transcorr} и \eqref{rotcorr} соответственно, были вычислены аналитически. Интегрирование производилось при помощи адаптивного метода Монте-Карло. (В первом столбце представлены значения вириальных коэффициентов, рассчитанные по классической формуле \eqref{virint}, во втором и третьем стобцах -- квантовые поправки, полученные по формулам \eqref{transcorr}, \eqref{rotcorr} соответственно, затем посчитано значение вириального коэффициента с учетом поправок, в последнем стобце представлено экспериментальное значение вириального коэффициента с ссылкой на публикацию). Вклад первых квантовых поправок в температурную зависимость второго вириального коэффициента для \textit{ab initio} потенциала представлен на Рис. \ref{fig:vircorr}.
 
 \newpage
 \setlength{\tabcolsep}{12pt}
@@ -533,7 +533,7 @@ ${}^{\scriptsize \textbf{h}}$Bose, T.K.; Cole, R.H.; J. Chem. Phys. \textbf{52} 
 \end{minipage}
 
 \begin{figure}[!ht]
-\includegraphics[width=\linewidth]{pictures/vircorr.png}
+\includegraphics[width=\linewidth]{pictures/vircorr2.png}
 \caption{\centering Вклад первых квантовых поправок в температурную зависимость второго вириального коэффициента для \textit{ab initio} потенциала.}
 \label{fig:vircorr}
 \end{figure}
