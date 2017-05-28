@@ -157,8 +157,8 @@ $}};
 \end{tikzpicture}
 \end{frame}
 
-\begin{frame}{\normalsize Точный классический колебательно-вращательный гамильтониан системы $Ar-CO_2$}
-\begin{varblock}[10cm]{Hamiltonian}
+\begin{frame}{\normalsize Точный классический колебательно-вращательный гамильтониан системы $Ar-CO_2$ \rom{1}}
+\begin{figure}
 \begin{tikzpicture}
 	[oxygen/.style={ball color = red, circle, text = white}, 
 	carbon/.style={ball color = black!30, circle, text = white},
@@ -180,9 +180,52 @@ $}};
 \begin{scope}[on background layer]
 	\node [fill=BurntOrange!20,fit=(z1) (z2) (x1) (x2) (carbon) (oxygen1) (oxygen2)] {};
 \end{scope}
-\end{varblock}
 \end{tikzpicture}
-
+\caption{\centering Молекулярная система координат для системы $Ar-CO2$}
+\end{figure}
 \end{frame} 
+
+\begin{frame}{\normalsize Точный классический колебательно-вращательный гамильтониан системы $Ar-CO_2$ \rom{2}}
+
+	Обозначим массы атомов: кислорода -- $m_1$, аргона -- $m_2$, углерода -- $m_3$, обозначим через $l$ расстояние $O-O$ в молекуле $CO_2$, расстояние от атома $C$ до атома $Ar$ -- через $R$, угол между вектором $C-Ar$ и $CO_2$ -- через $\theta$. Пара переменных $R, \theta$ образуют систему внутренних координат.  
+	
+\begin{block}{}
+\begin{gather}
+	\scalebox{.8}{$\hspace*{-2cm} \mH = \displaystyle\frac{1}{2 \mu_2} p_R^2 + \lb \frac{1}{2 \mu_2 R^2} + \frac{1}{2 \mu_1 l^2} \rb p_\theta^2 - \frac{1}{\mu_2 R^2} p_\theta J_y + \frac{1}{2 \mu_2 R^2} J_y^2 + \frac{1}{2 \mu_2 R^2} J_x^2 + $} \notag \\
+	\scalebox{.8}{$\hspace*{5cm} \displaystyle + \frac{1}{2 \sin^2 \theta} \lb \frac{\cos^2 \theta}{\mu_2 R^2} + \frac{1}{\mu_1 l^2} \rb J_z^2 + \frac{\ctg \theta}{\mu_2 R^2} J_x J_z + U(R, \theta) $} \notag \\
+	\scalebox{.8}{$ \displaystyle \mu_1 = \frac{m_1}{2}, \quad \mu_2 = \frac{m_2 \lb 2 m_1 + m_3 \rb}{2 m_1 + m_2 + m_3}$} \notag
+\end{gather}
+\end{block}
+\end{frame}
+
+\begin{frame}{\normalsize Поверхность потенциальной энергии межмолекулярного взаимодействия}
+\vspace*{-0.30cm}
+\begin{figure}
+	\hspace*{-1cm}
+\includegraphics[width = \linewidth]{../pictures/potential_well.png}
+\vspace*{-0.1cm}
+\caption{\centering \scriptsize Сечения поверхностей потенциальной энергии при разных углах $\theta$ в области потенциальной ямы}
+\end{figure}
+\end{frame}
+
+%\begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{1}}
+	%\scalebox{0.8}{
+%$\displaystyle B_2 = - \frac{N_A}{2 V} \displaystyle\dfrac{\int_{\lb \tau_1 \rb}}{\int d \Omega_1}$} 
+%\end{frame}
+
+\begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{2}}
+%\vspace*{-0.3cm}
+%\begin{block}{}
+%\begin{gather}
+%\scalebox{0.7}{$B_2 = \displaystyle \pi N_0 \int_{0}^{\infty} \int_{0}^{\pi} \lb 1 - \exp \lb - \frac{U \lb R, \theta \rb}{k T} \rb \rb R^2 \sin \theta d R \, d \theta$} \notag
+%\end{gather}
+%\end{block}
+\vspace*{-0.35cm}
+\begin{figure}
+\includegraphics[width=\linewidth]{../pictures/virexp.png}
+\vspace*{-0.35cm}
+\caption{\centering \scriptsize Температурные зависимости вириальных коэффициентов для разных ППЭ}
+\end{figure}
+\end{frame}
 
  \end{document}
