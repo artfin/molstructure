@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1496045851 "main.aux" "main.bbl" "main" 1496046080
+["bibtex main"] 1496045851 "main.aux" "main.bbl" "main" 1496046634
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
   "biblio.bib" 1495969052 4602 96ce8d976b8dcb409cb22d69b2c9bd0c ""
-  "main.aux" 1496046055 22189 4f6ae393052a1bcd2affc97739f35735 ""
+  "main.aux" 1496046082 22189 4f6ae393052a1bcd2affc97739f35735 ""
   "main.bcf" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1496046080 "main.tex" "main.pdf" "main" 1496046080
+["pdflatex"] 1496046634 "main.tex" "main.pdf" "main" 1496046634
   "/etc/texmf/web2c/texmf.cnf" 1491468032 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk" 1494248969 8424 33080ae6bfc48843115d53d13af61e54 ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1495229609 3320 a430f046d61f34970b99e53711dc6a65 ""
@@ -244,10 +244,10 @@
   "Preamble.tex" 1496046078 2361 9af6023fd1b98dc060d1fa986b728ac5 ""
   "appendix1.tex" 1496045754 5124 dc0de64fbad8bbf3c23f133a73962a16 ""
   "appendix2.tex" 1496045754 4499 cb9a9f90c46be29e5f32e4cf7b2c022a ""
-  "main.aux" 1496046055 22189 4f6ae393052a1bcd2affc97739f35735 ""
+  "main.aux" 1496046082 22189 4f6ae393052a1bcd2affc97739f35735 ""
   "main.bbl" 1496045851 3694 40d7385ef16a37c05b280ebecd785659 "bibtex main"
   "main.tex" 1496045948 1245 ae9818210c926c29c3df0618545d6b16 ""
-  "main.toc" 1496046055 11848 7f4b576d1165d4948cc757f5bc65a24b ""
+  "main.toc" 1496046082 11848 7f4b576d1165d4948cc757f5bc65a24b ""
   "part1.tex" 1496045754 4065 3589ec929258c86b8d42b6fca8d2fc02 ""
   "part2.tex" 1496045754 6444 5d82e48206c82d955244089b2f4c7bc9 ""
   "part3.tex" 1496045842 4682 295e0bf9b5bcfe3d4bd22655de7b1726 ""
@@ -260,9 +260,9 @@
   "pictures/potential_well.png" 1495805612 130112 c7141444df46f173df61d406025a368d ""
   "pictures/vircorr2.png" 1495969910 47671 1f18f581b08c89b730572c0287bd2fcc ""
   "pictures/virexp.png" 1495809551 68855 92d14de1c1ef35581a41ddd843a7ab67 ""
-  "title.tex" 1495757369 1114 4a36072242a589c5014bd52c4e246425 ""
+  "title.tex" 1496046632 1113 be567fddbcb0fd90b948d2f71166ad6a ""
   (generated)
+  "main.pdf"
   "main.log"
   "main.aux"
-  "main.pdf"
   "main.toc"
