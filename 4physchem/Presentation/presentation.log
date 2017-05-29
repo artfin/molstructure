@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  29 MAY 2017 01:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  30 MAY 2017 00:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1360,18 +1360,81 @@ Overfull \vbox (11.07649pt too high) detected at line 209
 
 [6
 
- <../pictures/potential_well.png>] <../pictures/virexp.png, id=82, 925.056pt x 553.5882pt>
-File: ../pictures/virexp.png Graphic file (type png)
- <use ../pictures/virexp.png>
-Package pdftex.def Info: ../pictures/virexp.png used on input line 229.
+ <../pictures/potential_well.png>] [7
+
+] <../pictures/virexpmod.png, id=92, 925.056pt x 553.5882pt>
+File: ../pictures/virexpmod.png Graphic file (type png)
+ <use ../pictures/virexpmod.png>
+Package pdftex.def Info: ../pictures/virexpmod.png used on input line 234.
 (pdftex.def)             Requested size: 342.43532pt x 204.92578pt.
 
-Overfull \vbox (15.39977pt too high) detected at line 229
+Overfull \vbox (15.39977pt too high) detected at line 234
  []
 
-[7
+[8
 
- <../pictures/virexp.png>]
+ <../pictures/virexpmod.png>] <../pictures/virdeltaab.png, id=99, 925.056pt x 553.5882pt>
+File: ../pictures/virdeltaab.png Graphic file (type png)
+ <use ../pictures/virdeltaab.png>
+Package pdftex.def Info: ../pictures/virdeltaab.png used on input line 243.
+(pdftex.def)             Requested size: 342.43532pt x 204.92578pt.
+
+Overfull \vbox (12.20482pt too high) detected at line 243
+ []
+
+[9
+
+ <../pictures/virdeltaab.png>] [10
+
+] <../pictures/vircorr2.png, id=112, 925.056pt x 553.5882pt>
+File: ../pictures/vircorr2.png Graphic file (type png)
+ <use ../pictures/vircorr2.png>
+Package pdftex.def Info: ../pictures/vircorr2.png used on input line 266.
+(pdftex.def)             Requested size: 342.43532pt x 204.92578pt.
+
+Overfull \vbox (13.4083pt too high) detected at line 266
+ []
+
+[11
+
+ <../pictures/vircorr2.png>] <../pictures/virdeltaabcorr.png, id=119, 925.056pt x 553.5882pt>
+File: ../pictures/virdeltaabcorr.png Graphic file (type png)
+ <use ../pictures/virdeltaabcorr.png>
+Package pdftex.def Info: ../pictures/virdeltaabcorr.png used on input line 275.
+(pdftex.def)             Requested size: 342.43532pt x 204.92578pt.
+
+Overfull \vbox (13.647pt too high) detected at line 275
+ []
+
+[12
+
+ <../pictures/virdeltaabcorr.png>] [13
+
+]
+Overfull \hbox (2.06941pt too wide) in paragraph at lines 321--321
+ [][][][][] 
+ []
+
+
+Overfull \vbox (0.16206pt too high) detected at line 321
+ []
+
+[14
+
+] [15
+
+] <../pictures/all_eq_const.png, id=144, 925.056pt x 553.5882pt>
+File: ../pictures/all_eq_const.png Graphic file (type png)
+ <use ../pictures/all_eq_const.png>
+Package pdftex.def Info: ../pictures/all_eq_const.png used on input line 343.
+(pdftex.def)             Requested size: 342.43532pt x 204.92578pt.
+ [16
+
+ <../pictures/all_eq_const.png>] [17
+
+] [18
+
+]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1381,16 +1444,16 @@ Overfull \vbox (15.39977pt too high) detected at line 229
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 368.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 368.
  (./presentation.aux
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 368.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 368.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1400,18 +1463,19 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 24971 strings out of 494440
- 493516 string characters out of 6173199
- 613702 words of memory out of 5000000
- 27607 multiletter control sequences out of 15000+600000
- 23756 words of font info for 89 fonts, out of 8000000 for 9000
+ 25132 strings out of 494440
+ 496559 string characters out of 6173199
+ 621966 words of memory out of 5000000
+ 27731 multiletter control sequences out of 15000+600000
+ 30101 words of font info for 98 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  56i,22n,72p,778b,887s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on presentation.pdf (7 pages, 333886 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1
+000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on presentation.pdf (18 pages, 621770 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
- 20569 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 25715 words of extra memory for PDF output out of 29859 (max. 10000000)
 

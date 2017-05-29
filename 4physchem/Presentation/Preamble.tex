@@ -69,6 +69,14 @@
 \makeatletter
 \setbeamertemplate{navigation symbols}{}
 
+% barcirc command
+\makeatletter
+\providecommand\barcirc{\mathpalette\@barred\circ}%
+\def\@barred#1#2{\ooalign{\hfil$#1-$\hfil\cr\hfil$#1#2$\hfil\cr}}%
+\newcommand\stst{^{\protect\barcirc}}%
+\makeatother
+
+% adding roman numerals
 \makeatletter
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 \makeatother

@@ -181,7 +181,7 @@ $}};
 	\node [fill=BurntOrange!20,fit=(z1) (z2) (x1) (x2) (carbon) (oxygen1) (oxygen2)] {};
 \end{scope}
 \end{tikzpicture}
-\caption{\centering Молекулярная система координат для системы $Ar-CO2$}
+\caption{\centering Молекулярная система координат для системы $Ar-CO_2$}
 \end{figure}
 \end{frame} 
 
@@ -208,24 +208,161 @@ $}};
 \end{figure}
 \end{frame}
 
-%\begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{1}}
-	%\scalebox{0.8}{
-%$\displaystyle B_2 = - \frac{N_A}{2 V} \displaystyle\dfrac{\int_{\lb \tau_1 \rb}}{\int d \Omega_1}$} 
-%\end{frame}
+\begin{frame}{\normalsize Второй вириальный коэффициент и первые квантовые поправки для системы $Ar-CO_2$ \rom{1}}
+\begin{block}{\scriptsize ВВК для молекулярных систем с внутренними степенями свободы}
+\begin{gather}
+	\scalebox{0.8}{$B_2 = \displaystyle \frac{N_A}{2 V} \frac{\iint_{\lb \tau \rb} f_{12} \, d \tau_1 \, d \tau_2}{\int d \Omega_1 \int d \Omega_2}, \quad d \tau_i = d \mf{r}_i \, d \Omega_i  $} \notag
+\end{gather}
+\end{block}
+
+\begin{block}{\scriptsize ВВК для системы $Ar-CO_2$} 
+\begin{gather}
+	\scalebox{0.8}{$\displaystyle B_2 = \frac{N_A}{2 V} \frac{\iint_{\lb \tau \rb} \lb 1 - \exp \lb - \beta U \lb \mf{r}_1, \mf{r}_2, \theta \rb \rb \rb \,  d \mf{r}_1 \, d \mf{r}_2 \, \sin \theta d \theta}{ \int d \Omega_1} = \hspace*{5cm} $} \notag\\ 
+	\scalebox{0.8}{$ \hspace{5cm} = \displaystyle \pi N_A \int\limits_{0}^{\infty} \int\limits_{0}^{\pi} \lb 1 - \exp \lb - \beta U \lb R, \theta \rb \rb \rb R^2 d R \, \sin \theta \, d \theta$} \notag
+\end{gather}
+\end{block}
+\end{frame}
+
 
 \begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{2}}
-%\vspace*{-0.3cm}
-%\begin{block}{}
-%\begin{gather}
-%\scalebox{0.7}{$B_2 = \displaystyle \pi N_0 \int_{0}^{\infty} \int_{0}^{\pi} \lb 1 - \exp \lb - \frac{U \lb R, \theta \rb}{k T} \rb \rb R^2 \sin \theta d R \, d \theta$} \notag
-%\end{gather}
-%\end{block}
 \vspace*{-0.35cm}
 \begin{figure}
-\includegraphics[width=\linewidth]{../pictures/virexp.png}
+\includegraphics[width=\linewidth]{../pictures/virexpmod.png}
 \vspace*{-0.35cm}
 \caption{\centering \scriptsize Температурные зависимости вириальных коэффициентов для разных ППЭ}
 \end{figure}
 \end{frame}
 
- \end{document}
+\begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{3}}
+\vspace*{-0.35cm}
+\begin{figure}
+\includegraphics[width=\linewidth]{../pictures/virdeltaab.png}
+\vspace*{-0.45cm}
+\caption{\centering \scalebox{0.62}{Разница между экспериментальными значениями ВВК и значениями, рассчитанными для \textit{ab initio} потенциала}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{4}}
+\begin{block}{\scriptsize Разложение Вигнера-Кирквуда}
+\begin{gather}
+\scalebox{0.8}{$ \displaystyle B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \lb \frac{\hbar^2}{m} \rb^2 B_{t2} + \dots + \frac{\hbar^2}{I} B_{r1} + \lb \frac{\hbar^2}{I} \rb^2 B_{r2} + \dots $} \notag
+\end{gather}
+\end{block}
+\begin{block}{\scriptsize Поправки в разложении Вигнера-Кирквуда для cистемы $Ar-CO_2$}
+\begin{gather}
+\scalebox{0.8}{$ \displaystyle B_{t1} = \frac{\pi N_A}{12 \lb k T \rb^3} \int\limits_{0}^{\infty} \int\limits_{0}^{\pi} \exp \lb - \frac{U}{k T} \rb \lb \frac{\partial U}{\partial R} \rb^2 R^2 \, d R \sin \theta \, d \theta $} \notag \\
+\scalebox{0.8}{$ \displaystyle B_{r1} = \frac{\pi N_A}{24 \lb k T \rb^3} \int\limits_{0}^{\infty} \int\limits_{0}^{\pi} \exp \lb - \frac{U}{k T} \rb \lb \frac{\partial U}{\partial \theta} \rb^2 R^2 d R \sin \theta \, d \theta $} \notag
+\end{gather}
+\end{block}
+\end{frame}
+
+\begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{5}}
+\vspace*{-0.35cm}
+\begin{figure}
+\includegraphics[width=\linewidth]{../pictures/vircorr2.png}
+\vspace*{-0.42cm}
+\caption{\centering \scalebox{0.8}{Вклад квантовых поправок в температурную зависимость ВВК для \textit{ab initio} потенциала}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{6}}
+\vspace*{-0.35cm}
+\begin{figure}
+\includegraphics[width=\linewidth]{../pictures/virdeltaabcorr.png}
+\vspace*{-0.40cm}
+\caption{\centering \scalebox{0.63}{Разница между экспериментальными значениями ВВК и значениями, рассчитанными для \textit{ab initio} потенциала}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\normalsize Константа равновесия слабосвязанного комплекса $Ar-CO_2$ \rom{1}}
+	\begin{block}{\scriptsize Газовая константа равновесия $K_p$}
+		\begin{gather}
+			\scalebox{0.8}{$\displaystyle K_p = \frac{N_A}{p^{\barcirc}} \frac{Q_{bound}^{pair}}{Q_{Ar} Q_{CO_2}} $} \notag
+		\end{gather}
+	\end{block}
+	\begin{block}{\scriptsize Сумма по состояниям связанного димера}
+		\begin{gather}
+			\scalebox{0.8}{$\displaystyle Q_{bound}^{pair} = \frac{1}{h^8} \int_{H - P_{cm}^2 / 2 M} \exp \lb -\frac{H}{kT} \rb d x_{cm} \, dy_{cm} \, d z_{cm} \, d P_x \, d P_y \, d P_z d q_i d p_i =$} \notag \\
+			\scalebox{0.8}{$\displaystyle = \lb Q_{bound}^{pair} \rb_{tr} \frac{4 \pi^2}{h^5} \int_{\mH < 0} \exp \lb - \frac{\mH}{kT} \rb d R \, d \theta \, d p_R \, d p_\theta \, d J_x \, d J_y \, d J_z$} \notag
+		\end{gather}
+	\end{block}
+	\begin{block}{\scriptsize Гамильтониан как положительно определенная квадратичная форма}
+		\begin{gather}
+			\scalebox{0.8}{$\displaystyle \mH = \frac{p_R^2}{2 \mu_2} + \frac{p_\theta^2}{2 \mu_1 l^2} + \frac{1}{2 \mu_2 R^2} \lb p_\theta - J_y \rb^2 + \frac{1}{2 \mu_2 R^2} \lb J_x + J_z \ctg \theta \rb^2 + \frac{J_z^2}{2 \mu_1 l^2 \sin^2 \theta} + U \lb R, \theta \rb$} \notag
+		\end{gather}
+	\end{block}
+\end{frame}
+
+\begin{frame}{\normalsize Константа равновесия слабосвязанного комплекса $Ar-CO_2$ \rom{2}}
+	\hspace*{-0.25cm}
+\begin{tikzpicture}[framed, font=\sffamily\small]
+	\node (int1) [hamilton, text width = 7cm] {\scalebox{0.8}{$\displaystyle \frac{1}{h^5} \int_{\mH < 0} \exp \lb - \frac{\mH}{kT} \rb d R \, d p_R \, d \theta \, d p_\theta \, d J_x \, d J_y \, d J_z$}};
+
+	\node (int2) [hamilton, text width = 7cm, below = 0.2cm of int1] {\scalebox{0.8}{$\displaystyle \frac{1}{h^5} \iint d R d \theta \int \exp \lb - \frac{\mH}{k T} \rb d p_R \, d p_\theta \, d J_x \, d J_y \, d J_z$}};
+
+	\node (eq1) [equations, text width = 11.1cm, below right = 0.2cm and -9.25cm of int2] {\scalebox{0.8}{$\displaystyle x_1^2 = \frac{p_R^2}{2 \mu_2 k T}, \ x_2^2 = \frac{p_\theta^2}{2 \mu_1 l^2 k T}, \ x_3^2 = \frac{\lb p_\theta - J_y \rb^2}{2 \mu_2 R^2 k T}, \ x_4^2 = \frac{\lb J_x + J_z \ctg \theta \rb^2}{2 \mu_2 R^2 k T}, \ x_5^2 = \frac{J_z^2}{2 \mu_1 l^2 \sin^2 \theta k T} $}};
+
+	\node (int3) [hamilton, text width = 11cm, below = 0.2cm of eq1] {\scalebox{0.8}{$\displaystyle \iint \left[ \textit{Jac} \, \right] \cdot \exp \lb - \frac{U}{k T} \rb d R d \theta \times \idotsint_{x_1^2 + \cdots x_5^2 \leqslant - U / kT} \exp \lb - x_1^2 - \dots - x_5^2 \rb d x_1 \, \dots d x_5$}}; 	
+
+	\node (eq2) [equations, below = 0.2cm of int3] {\scalebox{0.8}{$\displaystyle \idotsint_{x_1^2 + \cdots + x_n^2 \leqslant R} \exp \lb -x_1^2 - \dots -x_n^2 \rb  = \pi^{n / 2} \frac{\gamma \lb \frac{n}{2}, R^2 \rb}{\Gamma \lb \frac{n}{2} \rb}, \quad \gamma (a, b) = \int\limits_{0}^{b} \omega^{a-1} \exp \lb - \omega \rb d \omega $}};
+
+	\node (int4) [hamilton, text width = 9cm, below = 0.2cm of eq2] {\scalebox{0.8}{$\displaystyle \lb \frac{2 \pi \mu_2 k T}{h^2} \rb^{\frac{3}{2}} \frac{2 \mu_1 l^2 \pi k T}{h^2} \iint_{U < 0} \exp \lb -\frac{U}{k T} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{kT} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 \sin \theta \, d R \, d \theta$}};	
+
+	\draw [arrow] (int1.west) to [out=180, in=180, anchor=east] node (text1) {\scalebox{0.7}{Т. Фубини}} ([yshift=5pt]int2.west);
+	\draw [arrow] (int2.west) -| ([xshift=-300pt]eq1);
+	\draw [arrow] ([xshift=-125pt]eq1.south) -- ([xshift=-125pt]int3.north);
+	\draw [arrow] ([xshift=-125pt]int3.south) -- ([xshift=-125pt]eq2.north);
+	\draw [arrow] ([xshift=-125pt]eq2.south) -- ([xshift=-125pt]int4.north);
+
+\begin{scope}[on background layer]
+	\node [fill=BurntOrange!20,fit=(int1) (int2) (int3) (int4) (eq1) (eq2)] {};
+\end{scope}
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{\normalsize Константа равновесия слабосвязанного комплекса $Ar-CO_2$ \rom{3}}
+	\begin{block}{Модифицированное выражение для константы равновесия}
+		\begin{gather}
+			\scalebox{0.8}{$\displaystyle K_p = \frac{2 \pi N_A}{RT} \iint_{U < 0} \exp \lb - \frac{U}{kT} \rb \frac{\gamma \lb \frac{5}{2}, - \frac{U}{kT} \rb}{\Gamma \lb \frac{5}{2} \rb} R^2 d R \, \sin \theta \, d \theta$} \notag
+		\end{gather}
+	\end{block}
+	\begin{block}{Общее выражение для константы равновесия}
+		\begin{gather}
+			\scalebox{0.8}{$\displaystyle K_p = \frac{4 \pi^2 N_A}{R T} \frac{\lb Q_{bound}^{pair} \rb_{tr}}{Q_{Ar} Q_{CO_2}} \int_{\mH < 0} \exp \lb - \frac{\mH}{kT} \rb d R \, d \theta \, d p_R \, d p_\theta \, d J_x \, d J_y \, d J_z$} \notag
+		\end{gather}
+	\end{block}
+\end{frame}
+
+\begin{frame}{\normalsize Константа равновесия слабосвязанного комплекса $Ar-CO_2$ \rom{4}}
+\vspace*{-0.35cm}
+\begin{figure}
+\includegraphics[width=\linewidth]{../pictures/all_eq_const.png}
+\vspace*{-0.40cm}
+\caption{\centering \scalebox{0.8}{Температурная зависимость логарифма константы равновесия}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{\normalsize Выводы}
+\fontsize{8pt}{10}\selectfont
+\begin{itemize}
+ \item Описан метод получения точного классического колебательно-вращательного гамильтониана. Получен точный классический колебательно-вращательный гамильтониан системы $Ar-CO_2$.
+ \item Выполнен расчет температурной зависимости второго вириального коэффициента с учетом первых квантовых поправок. Расчет проведен с использованием наиболее точной поверхности потенциальной энергии, полученной в [1]  методом \textit{ab initio}.  
+ \item Основываясь на методе, развитом в [2], выражение для константы равновесия системы $Ar-CO_2$ было сведено к двумерному интегралу по области $U < 0$. 
+ \item Была построена вычислительная схема, основанная на алгоритме адаптивного интегрирования по Монте-Карло [3, 4], позволяющая вычислять константу равновесия интегрированием по преобразованному фазовому пространству $\left\{ \mf{q}, \mf{p}, \mf{J} \right\}$, не используя упрощающих аналитических техник. 
+  \item Расчет температурной зависимости константы равновесия выполнен двумя способами, и показано, что результаты этих расчетов идентичны.
+\end{itemize}
+
+\begin{flushleft}
+	\textit{[1]}: Ю. Н. Калугина. Готовится к печати. 2017. \\
+	\textit{[2]}: I. Buryak and A. Vigasin. Classical calculation of the equilibrium constants for true bound dimers using complete potential energy surface. \textit{J. Chem. Phys.}, \textbf{143}, 2015. \\
+	\textit{[3]}: G. P. Lepage. \textit{J. Comput. Phys.}, \textbf{27}, 1978. \\
+	\textit{[4]}: G. P. Lepage. Vegas. https://github.com/gplepage/vegas, 2013.
+\end{flushleft}
+\end{frame}
+
+\begin{frame}{}
+  \centering \Large
+  \emph{Спасибо за внимание!}
+\end{frame}
+
+\end{document}
