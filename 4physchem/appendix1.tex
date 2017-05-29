@@ -26,30 +26,31 @@ x_n &= r \sin \phi_1 \cdots \sin \phi_{n-2} \sin \phi_{n-1}
 Элемент $n$-мерного объема в гиперсферических координатах может быть выражен через якобиан замены переменных:
 \vverh
 \begin{gather}
-	d^n V = \Bigg{|} \frac{\partial \left[ x_1, x_2, \dots, x_n \right]}{\partial \left[ r, \phi_1, \dots, \phi_n \right]} \Bigg{|} d r \, d \phi_1 \, \dots d \phi_{n-1} = r^{n-1} \sin^{n-2} \phi_1 \sin^{n-3} \phi_2 \dots \sin \phi_{n-2} \, d r \, d \phi_1, \dots d \phi_{n-1} = \notag \\
+	d^n V = \Bigg{|} \frac{\partial \left[ x_1, x_2, \dots, x_n \right]}{\partial \left[ r, \phi_1, \dots, \phi_n \right]} \Bigg{|} d r \, d \phi_1 \, \dots d \phi_{n-1} = r^{n-1} \sin^{n-2} \phi_1 \sin^{n-3} \phi_2 \dots \sin \phi_{n-2} \, d r \, d \phi_1\, \dots d \phi_{n-1} = \notag \\
 = r^{n-1} dr \, d \Omega_{n-1}, \notag
 \end{gather} 
-где за $d \Omega_{n-1}$ обозначено произведение дифференциалов угловых переменных. \par
+где через $d \Omega_{n-1}$ обозначено произведение дифференциалов угловых переменных. \par
 
 Осуществим гиперсферическую замену переменных в \eqref{int1}:
 \vverh
 \begin{gather}
 	\idotsint\limits_{x_1^2 + \dots x_n^2 \leqslant R^2} dx_1 \dots dx_n = \idotsint d \Omega_{n-1} \int_{0}^{R} r^{n-1} dr \notag
 \end{gather}
-Учитывая \eqref{surf1}, очевидно:
+\par
+С учётом \eqref{surf1} очевидно:
 \vverh
 \begin{gather}
 	\idotsint d \Omega_{n-1} = n C_n \notag
 \end{gather}
 
-Для того, чтобы получить численное выражение для $C_n$ рассмотрим интеграл функции $f(x_1, \dots x_n) = \exp \lb -x_1^2 - \dots x_n^2 \rb$ по объему $n$-мерного пространства. Осуществим гиперсферическую замену переменных: 
+Для того чтобы получить численное выражение для $C_n$, рассмотрим интеграл функции $f(x_1, \dots x_n) = \exp \lb -x_1^2 - \dots x_n^2 \rb$ по объему $n$-мерного пространства. Осуществим гиперсферическую замену переменных: 
 \vverh
 \begin{gather}
 	\int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} \exp \lb -x_1^2 - \dots -x_n^2 \rb dx_1 \dots dx_n = \int_{0}^{\infty} \exp \lb -r^2 \rb r^{n-1} dr \int d \Omega_{n-1}  = \notag \\
 	= n C_n \int_{0}^{R} r^{n-1} \exp \lb -r^2 \rb dr = \frac{1}{2} \Gamma \lb \frac{n}{2} \rb n C_n \notag
 \end{gather}
 
-Одновременно с этим, многомерный интеграл представим в виде произведения одномерных интегралов Пуассона:
+Одновременно с этим многомерный интеграл представим в виде произведения одномерных интегралов Пуассона:
 \vverh
 \begin{gather}
 	\int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} \exp \lb -x_1^2 - \dots - x_n^2 \rb d x_1 \dots dx_n = \left[ \int_{-\infty}^{\infty} \exp \lb -x_1^2 \rb dx_1 \right]^n  = \pi^\frac{n}{2} \notag 

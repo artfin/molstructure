@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.23)  29 MAY 2017 01:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.23)  29 MAY 2017 03:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1870,17 +1870,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-) (./part6.tex [16] [17 <./pictures/vircorr2.png>] [18]
-! Undefined control sequence.
-l.92 \vver
-          по состояниям h
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[19] [20]
+) (./part6.tex [16] [17 <./pictures/vircorr2.png>] [18] [19] [20]
 Overfull \hbox (29.23169pt too wide) in paragraph at lines 175--175
 [] 
  []
@@ -1931,11 +1921,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 ) (./main.bbl [24]
 [25]) [26] (./appendix1.tex [27]) (./appendix2.tex [28]) [29] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 20269 strings out of 493029
- 385272 string characters out of 6136233
+ 20268 strings out of 493029
+ 385266 string characters out of 6136233
  470481 words of memory out of 5000000
- 23166 multiletter control sequences out of 15000+600000
- 36122 words of font info for 161 fonts, out of 8000000 for 9000
+ 23167 multiletter control sequences out of 15000+600000
+ 36052 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,21n,69p,1963b,885s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/u
@@ -1967,7 +1957,7 @@ c/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texm
 f/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfti1200.pfb>
-Output written on main.pdf (30 pages, 841431 bytes).
+Output written on main.pdf (30 pages, 841418 bytes).
 PDF statistics:
  248 PDF objects out of 1000 (max. 8388607)
  169 compressed objects within 2 object streams
