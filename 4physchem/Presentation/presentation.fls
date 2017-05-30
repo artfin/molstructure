@@ -479,6 +479,7 @@ OUTPUT presentation.snm
 INPUT presentation.aux
 INPUT ./presentation.out
 INPUT ./presentation.out
+INPUT /home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT /home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb

@@ -245,7 +245,7 @@ $}};
 \begin{frame}{\normalsize Расчет температурной зависимости второго вириального коэффициента для системы $Ar-CO_2$ \rom{4}}
 \begin{block}{\scriptsize Разложение Вигнера-Кирквуда}
 \begin{gather}
-\scalebox{0.8}{$ \displaystyle B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \lb \frac{\hbar^2}{m} \rb^2 B_{t2} + \dots + \frac{\hbar^2}{I} B_{r1} + \lb \frac{\hbar^2}{I} \rb^2 B_{r2} + \dots $} \notag
+\scalebox{0.8}{$ \displaystyle B = B_{\text{класс.}} + \frac{\hbar^2}{m} B_{t1} + \lb \frac{\hbar^2}{m} \rb^2 B_{t2} + \dots + \frac{\hbar^2}{I} B_{r1} + \lb \frac{\hbar^2}{I} \rb^2 B_{r2} + \cdots $} \notag
 \end{gather}
 \end{block}
 \begin{block}{\scriptsize Поправки в разложении Вигнера-Кирквуда для cистемы $Ar-CO_2$}
@@ -282,7 +282,7 @@ $}};
 	\end{block}
 	\begin{block}{\scriptsize Сумма по состояниям связанного димера}
 		\begin{gather}
-			\scalebox{0.8}{$\displaystyle Q_{bound}^{pair} = \frac{1}{h^8} \int_{H - P_{cm}^2 / 2 M} \exp \lb -\frac{H}{kT} \rb d x_{cm} \, dy_{cm} \, d z_{cm} \, d P_x \, d P_y \, d P_z d q_i d p_i =$} \notag \\
+			\scalebox{0.8}{$\displaystyle Q_{bound}^{pair} = \frac{1}{h^8} \int_{H - P_{cm}^2 / 2 M < 0} \exp \lb -\frac{H}{kT} \rb d x_{cm} \, dy_{cm} \, d z_{cm} \, d P_x \, d P_y \, d P_z d q_i d p_i =$} \notag \\
 			\scalebox{0.8}{$\displaystyle = \lb Q_{bound}^{pair} \rb_{tr} \frac{4 \pi^2}{h^5} \int_{\mH < 0} \exp \lb - \frac{\mH}{kT} \rb d R \, d \theta \, d p_R \, d p_\theta \, d J_x \, d J_y \, d J_z$} \notag
 		\end{gather}
 	\end{block}
@@ -363,6 +363,29 @@ $}};
 \begin{frame}{}
   \centering \Large
   \emph{Спасибо за внимание!}
+\end{frame}
+
+\begin{frame}{}
+	\begin{block}{}
+		\begin{gather}
+			\scalebox{0.8}{$\displaystyle
+			\bba = \begin{bmatrix}
+			\mu_2 & 0 \\
+			0 & \mu_1 l^2
+		\end{bmatrix} \quad
+	\bbA = \begin{bmatrix}
+		0 & 0 \\
+		0 & \mu_1 l^2 \\
+		0 & 0
+\end{bmatrix}$} \notag \\
+\scalebox{0.8}{$\displaystyle
+\bbI = \begin{bmatrix}
+	\mu_1 l^2 \cos^2 \theta + \mu_2 R^2 & 0 & - \mu_1 l^2 \sin \theta \cos \theta \\
+	0 & \mu_1 l^2 + \mu_2 R^2 & 0 \\
+	- \mu_1 l^2 \sin \theta \cos \theta & 0 & \mu_1 l^2 \sin^2 \theta
+\end{bmatrix}$} \notag
+		\end{gather}
+	\end{block}
 \end{frame}
 
 \end{document}

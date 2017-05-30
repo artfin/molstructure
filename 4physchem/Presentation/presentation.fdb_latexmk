@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1496094026 "presentation.tex" "presentation.pdf" "presentation" 1496094026
+["pdflatex"] 1496182556 "presentation.tex" "presentation.pdf" "presentation" 1496182556
   "../pictures/all_eq_const.png" 1495661251 70628 621daf0e91d5d057f7d6d99dff9cb9fe ""
   "../pictures/potential_well.png" 1495805612 130112 c7141444df46f173df61d406025a368d ""
   "../pictures/vircorr2.png" 1495969910 47671 1f18f581b08c89b730572c0287bd2fcc ""
@@ -8,6 +8,7 @@
   "../pictures/virexpmod.png" 1496077346 71523 9a648e498b0e9555bafa8e44fb16625d ""
   "/etc/texmf/web2c/texmf.cnf" 1491468032 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1495981987 6964 fb5b6002196408ad72492b54f6993c59 ""
+  "/home/artfin/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk" 1496182402 7808 021990e4b05cbb019f38dc44a257a560 ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/lasi0500.tfm" 1496085801 3572 0a8d2c49ce1671cd300e190b42262f55 ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/lasi0700.tfm" 1496085800 3564 7bd3e5deab8b9a902774881331e9c760 ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/lasi0800.tfm" 1496078349 3492 0da1969648fc3cc6931dd9afbb0a4674 ""
@@ -295,15 +296,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1494161846 1630811 1531377ddf3380885f90969e471a70e4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1491515014 989979 bda82939c26bbb848813c241fdc0c6ec ""
   "Preamble.tex" 1496083963 3243 d598488d94fd43947b4123b59ce405a2 ""
-  "presentation.aux" 1496093932 3430 55d401f5bfb099a82059d311326fb256 ""
-  "presentation.nav" 1496093932 1852 fb48255dbf4d8349cb75c6b2792f9d2d ""
-  "presentation.out" 1496093929 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "presentation.tex" 1496094026 20830 55e4f045389a7e910941c8a78e7aa98c ""
+  "presentation.aux" 1496182548 3559 f4fe16f0356c354261c5308feefc07c8 ""
+  "presentation.nav" 1496182548 1945 91d57e954e44988a6bcfcb630cb02753 ""
+  "presentation.out" 1496182546 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "presentation.tex" 1496182555 21387 fff9a8016b2d519d2e3d8bc24261c1f6 ""
   (generated)
+  "presentation.snm"
   "presentation.aux"
-  "presentation.toc"
+  "presentation.log"
   "presentation.out"
   "presentation.pdf"
-  "presentation.log"
+  "presentation.toc"
   "presentation.nav"
-  "presentation.snm"
