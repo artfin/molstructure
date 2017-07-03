@@ -1,0 +1,57 @@
+\documentclass[hyperref={pdfpagelabel=false},usepdftitle=false,xcolor=dvipsnames]{beamer}
+
+\input{Preamble.tex}
+
+\usepackage{graphicx}
+
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+
+\begin{document}
+
+\begin{frame}{\normalsize Резонаторный спектрометр (Cavity Ring-down Experiment)}
+\begin{block}{}
+\begin{figure}
+\includegraphics[width = 0.5\linewidth]{pictures/fabry-perot.png}
+\caption{\tiny Схема открытого резонатора Фабри-Перо с диэлектрической пленкой связи}
+\end{figure}
+\end{block}
+\begin{block}{}
+	\begin{center}
+	\scalebox{0.7}{$ \displaystyle Q = \frac{\omega_0 W}{P_d} = \frac{\omega_0}{\Delta \omega} $} \\
+	\scalebox{0.7}{$ \displaystyle P = P_{res.} + P_{gas}, \quad P_{gas} = \frac{1}{2} \left( 1 - \exp \left( - 2 \alpha L \right) \right) \approx \alpha L$} \\
+	\scalebox{0.7}{\textit{leakage ringdown}: $\displaystyle I = I_0 \exp \lb - \frac{t}{\tau_0} \rb, \quad \tau_0 = \frac{L}{c(1 - R)}$} \\
+	\scalebox{0.7}{\textit{absorber presence}: $\displaystyle I = I_0 \exp \lb - \frac{t}{\tau} \rb, \quad A = \frac{L}{c} \lb \frac{1}{\tau} - \frac{1}{\tau_0} \rb$}
+	\end{center}
+\end{block}
+\end{frame}
+
+\begin{frame}{\normalsize CRDS Experimental set-up}
+	\begin{figure}
+		\includegraphics[width = 0.8\linewidth]{pictures/ringdown.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Столкновительно-индуцированное поглощение}
+	\begin{itemize}
+		\item Молекулярный и "супермолекулярный" спектр
+		\item Столкновение как источник линии поглощения
+		\item Аналог вириального разложения для поглощения: \\
+			\centering \scalebox{0.8}{$ \alpha = A n + B n^2 + C n^3 + \dots$} \\
+\begin{center} A -- dipole allowed contribution, \\ 
+	       B -- induced binary contribution, \\
+	       C -- induced ternary contribution
+\end{center}
+			
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Бинарный трансляционный спектр}
+	\begin{block}{}
+		\begin{figure}
+			\includegraphics[width = \linewidth]{pictures/trans.png}
+		\end{figure}
+	\end{block}
+\end{frame}
+
+\end{document}
