@@ -50,20 +50,22 @@ lw = 1.75
 plt.title(r'\Large \textbf{Z-components of dipole moment}')
 
 plt.xlabel(r'\textbf{R, (Bohrs)}')
-plt.ylabel(r'$\boldsymbol{\mu}_{\textbf{z}}$ \textbf{(Debye)}')
+plt.ylabel(r'$\boldsymbol{\mu}_{\textbf{z}}$ \textbf{(a.u.)}')
 
 color1 = '0.2'
-color2 = '0.5'
-color3 = '0.7'
+color2 = '0.6'
 
 lab1, = plt.plot(r_ab_initio_pi2, dipz_ab_initio_pi2, color = color1, linestyle = 'solid', linewidth = lw)
-lab2, = plt.plot(r_ab_initio_pi4, dipz_ab_initio_pi4, color = color2, linestyle = 'solid', linewidth = lw)
-lab3, = plt.plot(r_ab_initio_pi6, dipz_ab_initio_pi6, color = color3, linestyle = 'solid', linewidth = lw)
-
+#lab2, = plt.plot(r_ab_initio_pi4, dipz_ab_initio_pi4, color = color2, linestyle = 'solid', linewidth = lw)
+lab3, = plt.plot(r_ab_initio_pi6, dipz_ab_initio_pi6, color = color2, linestyle = 'solid', linewidth = lw)
 
 llr1, = plt.plot(r_lr_pi2, dipz_lr_pi2, color = color1, linestyle = 'dashed', linewidth = lw)
-llr2, = plt.plot(r_lr_pi4, dipz_lr_pi4, color = color2, linestyle = 'dashed', linewidth = lw)
-llr3 = plt.plot(r_lr_pi6, dipz_lr_pi6, color = color3, linestyle = 'dashed', linewidth = lw)
+#llr2, = plt.plot(r_lr_pi4, dipz_lr_pi4, color = color2, linestyle = 'dashed', linewidth = lw)
+llr3, = plt.plot(r_lr_pi6, dipz_lr_pi6, color = color2, linestyle = 'dashed', linewidth = lw)
+
+fig.legend((lab1, lab3, llr1, llr3), (r'\textit{Ab Initio}, $\Theta = \pi / 2$', r'\textit{Ab Initio}, $\Theta = \pi / 6$', r'Long-Range, $\Theta = \pi / 2$', r'Long-Range, $\Theta = \pi / 6$'), 'lower center', ncol = 4, fancybox = True, shadow = True) 
+
+plt.tight_layout(pad = 0.5)
 
 plt.grid(linestyle = ':', alpha = 0.7)
 plt.show()
