@@ -57,7 +57,7 @@ marker_size = 50
 lw = 1.75
 plt.title(r'\Large \textbf{Temperature dependence of second spectral moment}')
 
-plt.ylim((0.0, 1.05)) 
+plt.ylim((0.0, 1.0)) 
 
 plt.xlabel(r'\textbf{T}, (K)')
 plt.ylabel(r'\textbf{M}$_2$, (cm$^{-3}$ $\cdot$ amagat$^{-1}$)')

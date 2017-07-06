@@ -1,0 +1,62 @@
+%%we don't want ae.sty
+\expandafter\def\csname ver@ae.sty\endcsname{}
+
+\documentclass[
+  14pt,
+  a0paper,
+  portrait,
+  margin=0mm,
+  innermargin=15mm,
+  blockverticalspace=0mm,
+  colspace=0mm,
+  subcolspace=0mm
+]{tikzposter}
+
+\input{Preamble.tex}
+
+% for modern fonts. also provides arbitrary fontsize
+\usepackage{lmodern}
+
+\usepackage{slantsc}
+
+\makeatletter
+\def\TP@titlegraphictotitledistance{-9cm}
+\settitle{ \centering \vbox{
+    \@titlegraphic \\ [\TP@titlegraphictotitledistance] 
+    \centering
+	\color{titlefgcolor}{\bfseries \fontsize{1.5cm}{1cm}\selectfont \@title \par}
+    \vspace*{1em}
+    {\bfseries \fontsize{1.2cm}{1cm}\selectfont \@author \par} 
+    \vspace*{1em} 
+    {\bfseries \fontsize{1.2cm}{1cm}\selectfont \@institute}
+}}
+\makeatother
+
+
+\title{\parbox{0.9\linewidth}{\centering First spectral moments of collision-induced rototranslational absorption band of $\fontsize{30}{0}{\boldsymbol{CO_2-Ar}}$ pair: \\ Classical theory with the use of \textit{ab initio} calculated anisotropic interactions}} 
+
+
+\author{\LARGE \underline{Daniil N. Chistikov$^{1, 3}$}, \underline{Artem A. Finenko$^{1}$}, Yulia N. Kalugina$^{2}$, Sergei E. Lokshtanov$^{1, 3}$, Sergey V. Petrov$^{1}$, Andrey A. Vigasin$^{3}$}
+
+\institute{\Large
+$\begin{aligned}$
+& ${}^{1}$\textit{Department of Chemistry, Lomonosov Moscow State University, 1-3 Leninskie Gory, Moscow, 119991, Russia} \\
+& ${}^{2}$\textit{Department of Optics and Spectroscopy, Tomsk State University, 36 Lenin av., Tomsk, 634050, Russia} \\
+& ${}^{3}$\textit{Obukhov Institute of Atmospheric Physics RAS, 3 Pyzhevsky per., Moscow, 119017, Russia}
+$\end{aligned}$
+}
+
+\titlegraphic{
+    \includegraphics[width=6.5cm,height=5cm]{../pictures/logo.jpg}
+    \hfill 
+    \includegraphics[width=6.5cm,height=5cm]{../pictures/logo.jpg}
+    \vspace{5cm}
+}
+
+\usetheme{Simple}
+%\usecolorstyle[colorPalette=BrownOrangeBlue, colorOne = blue, colorTwo = black, colorThree = green]{Simple}
+
+\begin{document}
+\maketitle[width=\linewidth, titletotopverticalspace=0.1cm, titletoblockverticalspace=0.3cm]
+
+\end{document}

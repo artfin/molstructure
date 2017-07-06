@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  4 JUL 2017 01:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.7)  4 JUL 2017 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -718,17 +718,17 @@ Non-PDF special ignored!
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./coordsys.aux) ) 
 Here is how much of TeX's memory you used:
- 17154 strings out of 494440
- 344437 string characters out of 6173199
- 432906 words of memory out of 5000000
- 20105 multiletter control sequences out of 15000+600000
+ 17163 strings out of 494440
+ 344600 string characters out of 6173199
+ 432907 words of memory out of 5000000
+ 20114 multiletter control sequences out of 15000+600000
  14242 words of font info for 55 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 54i,9n,69p,465b,679s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,9n,69p,465b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
 .pfb>
-Output written on coordsys.pdf (1 page, 19562 bytes).
+Output written on coordsys.pdf (1 page, 19644 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

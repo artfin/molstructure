@@ -55,7 +55,8 @@ fig = plt.figure()
 lw = 1.75
 plt.title(r'\Large \textbf{Temperature dependence of zeroth spectral moment}')
 
-plt.ylim((0, 0.0011))
+#plt.xlim((0, 500))
+plt.ylim((0, 0.0008))
 
 plt.xlabel(r'\textbf{T}, (K)')
 plt.ylabel(r'\textbf{M}$_0$, (cm$^{-1}$ $\cdot$ amagat$^{-1}$)')

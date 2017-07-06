@@ -28,7 +28,7 @@
 	[oxygen/.style={ball color = red, circle, text = white}, 
 	carbon/.style={ball color = black!30, circle, text = white},
 	argon/.style={ball color = blue, circle, text = white}]
-	\node (z1) at (4.5, 3) {OZ};
+	\node (z1) at (4.5, 3) {Z};
 	\node (z2) at (-1.5, -1) {}
 		edge [->, thick] (z1);
 	
@@ -36,16 +36,16 @@
 	\node (th2) at (0, 0) {}
 		edge [->, line width = 2pt] (th1);
 
-	\node (r) at (0.75, 1) {$\large \textbf{R}$};
-	\node (t) at (1.2, 0) {$\large \boldsymbol{\Theta}$};
+	\node (r) at (1.6, 1.5) {$\large \textbf{R}$};
+	\node (t) at (0.15, 0.9) {$\large \boldsymbol{\Theta}$};
 
 	\node (theta1) at (0.4, -0.6) {};
 	\node (theta2) at (0.58, 0.6) {};
 
-	\draw[very thick] pic[black]{carc=-38:28:0.7cm};
+	\draw[very thick, ->] pic[black]{carc=31:133:0.6cm};
 	%\draw[very thick] pic[black]{carc=-45:30:0.7cm};
 
-	\node (x1) at (-1, 3.5) {OX};
+	\node (x1) at (-1, 3.5) {X};
 	\node (x2) at (3.5, -1) {}
 		edge [->, thick] (x1); 
 
