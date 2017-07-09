@@ -18,10 +18,6 @@
 % for includegraphics command
 \usepackage{graphicx}
 
-% references package
-\usepackage[backend=bibtex]{biblatex}
-\addbibresource{references.bib}
-
 \usepackage{amsmath, amssymb}
 
 % multiple affiliations
@@ -43,6 +39,7 @@
 \newcommand{\bbG}{\mathbb{G}}
 \newcommand{\bbI}{\mathbb{I}}
 
+\newcommand{\vpravo}{\hspace{1.5cm}}
 \newcommand{\vverh}{\vspace*{-0.05cm}}
 \newcommand{\vniz}{\vspace{0.05cm}}
 
@@ -90,19 +87,19 @@ Present paper aims at theoretical examination of the first spectral moments in r
 \block[titleoffsety=1cm, bodyoffsety=1cm]{Calculation of spectral moments}{
 \SIZEOFTEXT
 \SIZEOFFORMULAE{
-Spectral moment is a integral quantity widely used for describing CIA spectra profiles. They are used to verify IDS and predicted CIA spectral profiles  and also for semi-empirical estimation of CIA spectra. \par
-For our further discussion we consider two systems of coordinates for describing the relative motion of the colliding pair. First one, called laboratory frame of reference is fixed to the center of mass of our pair and second one, called rotating frame, is connected to the pair itself and rotates along with it. Salient feature of our approach consists of development and subsequent use of a rigorous classical Hamiltonian in the body-fixed frame. All kinetic energy terms that are responsible for Coriolis interaction are kept in our developed Hamiltonian. The general form of the Hamiltonian is as follows: 
+Spectral moment is an integral quantity widely used for describing CIA spectral profiles. It is used to verify IDS and predicted CIA spectral profiles and also for semi-empirical estimation of CIA spectra. \par
+\vpravo For our further discussion we consider two systems of coordinates for describing the relative motion of the colliding pair. First one, called laboratory frame of reference, is fixed with the center of mass of pair and second one, called body-fixed frame, is connected to the pair itself and rotates along with it. Salient feature of our approach consists of development and subsequent use of a rigorous classical Hamiltonian in the body-fixed frame. All kinetic energy terms that are responsible for Coriolis interaction are kept in developed Hamiltonian. The general form of the Hamiltonian is as follows: 
 \vverh
 \begin{gather}
 		H = \frac{1}{2} \mf{p}^\top \bbG_{11} \mf{p} + \mf{p}^\top \bbG_{12} \, \mf{J} + \frac{1}{2} \mf{J}^\top \bbG_{22} \, \mf{J} \label{eq:hamiltonian}
 \end{gather}
-In general, the expression for the n-th spectral moment can be written in the following form: \par 
+In general, the expression for the $n$-th spectral moment is the following: 
 \vverh
 \begin{gather}
 		M_n = V \lb 2 \pi c \rb^{-n} i^{-n} \frac{1}{4 \pi \varepsilon_0} \Big\langle \boldsymbol{\mu}(0) \cdot \frac{d^n}{dt^n} \boldsymbol{\mu}(t) \Big\rangle \Bigg{|}_{t = 0}, \label{eq:general_moment}
 \end{gather}
-where $\boldsymbol{\mu}$ denotes dipole moment operator in the laboratory frame and angular brackets denote state averaging. In the classical limit the above equation can be transformed into the following: 
-\vverh
+where $\boldsymbol{\mu}$ denotes the dipole moment operator in the laboratory frame and angular brackets denote state averaging. In the classical limit the above equation transforms into: 
+\vspace*{-0.6cm}
 \begin{gather}
 \begin{aligned}
 		M_{2n} = V \lb 2 \pi c \rb^{-n} & \frac{1}{4 \pi \varepsilon_0} \Big\langle \Big{|} \frac{d^n}{dt^n} \boldsymbol{\mu}(t) \Big{|}^2 \Big\rangle \Bigg{|}_{t = 0} \\
@@ -111,7 +108,7 @@ M_{2n + 1} &= 0
 \label{eq:classical_moment}
 \end{gather}
 
-Thus the expressions for zeroth and second spectral moments take the following form: 
+Thus the expressions for zeroth and second spectral moments take the following form:
 \begin{gather}
 		M_0 = \displaystyle \frac{\int \boldsymbol{\mu}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}, \quad M_2 = \displaystyle \frac{\int \boldsymbol{\dot{\mu}}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}} \label{eq:m0_and_m2} 
 \end{gather}
@@ -143,8 +140,7 @@ In the rotating frame of reference the position of particles is decribed by two 
 The temperature dependencies of the zeroth and second spectral moments are given on the Fig. 2 and Fig. 3 correspondingly. Markers represent the spectral moments obtained by integration of experimental spectra by means of the following formulae:
 \vverh
 \begin{gather}
-		M_0 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) \coth \lb - \frac{h c \nu}{2 k T} \rb \frac{d \nu}{\nu} \label{eq:m0_spectra} \\
-		M_2 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) d \nu \label{eq:m2_spectra}
+		M_0 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) \coth \lb - \frac{h c \nu}{2 k T} \rb \frac{d \nu}{\nu}, \quad M_2 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) d \nu \label{eq:m2_spectra}
 \end{gather}
 
 \begin{tikzfigure}[Temperature dependence of zeroth spectral moment]
