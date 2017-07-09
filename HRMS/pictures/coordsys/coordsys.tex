@@ -3,6 +3,8 @@
 % should be defined before TIKZ! (for xcolor colors)
 \usepackage[dvipsnames,prologue]{pstricks}
 
+\usepackage{standalone}
+
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
 \usetikzlibrary{fit}
@@ -23,6 +25,8 @@
 }
 
 \begin{document}
+\clearpage
+\thispagestyle{empty}
 
 \begin{tikzpicture}
 	[oxygen/.style={ball color = red, circle, text = white}, 

@@ -55,8 +55,9 @@ fig = plt.figure()
 
 marker_size = 50
 lw = 1.75
-plt.title(r'\Large \textbf{Temperature dependence of second spectral moment}')
+#plt.title(r'\Large \textbf{Temperature dependence of second spectral moment}')
 
+plt.xlim((100.0, 500.0))
 plt.ylim((0.0, 1.0)) 
 
 plt.xlabel(r'\textbf{T}, (K)')
@@ -67,10 +68,11 @@ l2, = plt.plot(temperatures_ab, momemnts_ab, color = '0.3', linewidth = lw, line
 e1 = plt.scatter(temperatures_e1, moments_e1, color = 'k', marker = '^', s = marker_size)
 e2 = plt.scatter(temperatures_e2, moments_e2, color = 'k', marker = 's', s = marker_size)
 
-fig.legend((l1, l2, e1, e2), ('Long-range dipole', r'\textit{Ab Initio} \ dipole', r'I. R. Dagg \textit{et al.} [?]', 'M. V. Tonkov [?]'), 'lower center', ncol = 4, fancybox = True, shadow = True, prop = {'size': 'large'})
+fig.legend((l1, l2, e1, e2), ('Long-range dipole', r'\textit{Ab Initio} \ dipole', r'I. R. Dagg \textit{et al.} [8]', 'M. V. Tonkov [9]'), 'lower center', ncol = 4, fancybox = True, shadow = True, prop = {'size': 'large'})
 
 #fig.legend((l, e1, e2), ('Calc.', r'I. R. Dagg \textit{et al.}, \textit{Can. J. Phys.} \textbf{64}, 1485, (1986)', r'M. V. Tonkov In: \textit{Collision- and Interaction-Induced Spectroscopy}. Kluwer, AP, 1995'), 'lower center',  ncol = 3, fancybox = True, shadow = True, prop = {'size': 'large'}) 
 
+plt.tight_layout()
 
 plt.grid(linestyle = ':', alpha = 0.7)
 plt.show()

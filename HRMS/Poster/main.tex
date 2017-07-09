@@ -1,5 +1,6 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
 \documentclass[
-  10pt,
+  20pt,
   a0paper,
   portrait,
   margin=0mm,
@@ -9,12 +10,31 @@
   subcolspace=0mm
 ]{tikzposter}
 
+\usepackage{lmodern}
+
+% setting page parameters of the poster
+\geometry{paperwidth=33in,paperheight=47in}
+
+% for includegraphics command
+\usepackage{graphicx}
+
+% references package
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{references.bib}
+
 \usepackage{amsmath, amssymb}
 
 % multiple affiliations
 \usepackage{authblk}
 % modern font package
 %\usepackage{lmodern}
+\renewcommand*{\familydefault}{\sfdefault}% Let's have a sans serif font
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings}
+\usetikzlibrary{fit}
+\usepackage{microtype}
+\usepackage{framed}
+\usetikzlibrary{decorations.pathmorphing,calc,backgrounds}
 
 \newcommand{\mf}{\mathbf}
 \newcommand{\lb}{\left(}
@@ -31,7 +51,7 @@
 \settitle{\centering \color{titlefgcolor} \vbox{\@titlegraphic \\ [\TP@titlegraphictotitledistance] \bfseries \fontsize{1.75cm}{1.3cm} \selectfont \@title \par} \vspace*{1em} {\fontsize{1.4cm}{1cm}\selectfont \@author \par}} 
 \makeatother
 
-\title{\parbox{\linewidth}{ \centering First spectral moments of collision-induced rototranslational absorption band of CO$_2-$Ar pair:} \\
+\title{\parbox{\linewidth}{ \centering First spectral moments of collision-induced rototranslational absorption band of CO$\hspace*{-0.2cm}_2 \hspace{0.2cm}$-Ar pair:} \\
 Classical theory with the use of \textit{ab initio} calculated anisotropic interactions}
 
 \author[1, 3]{\underline{Daniil N. Chistikov}}
@@ -50,21 +70,28 @@ Classical theory with the use of \textit{ab initio} calculated anisotropic inter
 \usetitlestyle[width = \linewidth, roundedcorners=5, linewidth=2pt,titletoblockverticalspace=0mm]{Default}
 \usebackgroundstyle{Empty}
 
+% this regulates the size of text
+\newcommand{\SIZEOFTEXT}{\normalsize}
+% this regulates the size of formulae
+\newcommand{\SIZEOFFORMULAE}{\fontsize{20}{16}}
+
 \begin{document}
 
 \maketitle
 
 \begin{columns}
 \column{0.5}
-\block[titleoffsety=40cm, bodyoffsety=6.5cm]{Introduction}{
-\vspace*{-38cm}
+\block[titleoffsety=44cm, bodyoffsety=44cm]{Introduction}{
+\SIZEOFTEXT
+\SIZEOFFORMULAE{
 Much attention is presently devoted to the study of dipole-forbidden molecular absorption caused by weak intermolecular interaction. This interest is significantly motivated by the need to refine the accuracy of climate models which are being developed for the planetary or exoplanetary atmospheres. Actual knowledge of binary absorption coefficients is still fragmentary (see e.g. [1]) and is thus fairly unsatisfactory in regard of great number of pairs potentially interesting for climate modeling. Experimental observation of the weak pressure-induced absorption is especially difficult in the far-infrared where the most important so-called rototranslational collision-induced absorption (RT CIA) bands are conventionally situated. Direct quantum calculations are still barely feasible for interacting polyatomics, although significant progress is worth mentioning that has been achieved recently in both quantum calculations of the spectral profiles [2,3] and quantum theory of spectral moments [4,5]. Molecular dynamics simulation and classical trajectory approaches are presently the most promising (see e.g. [6,7]) in terms of purely classical methods. The use of the formerly popular semi-empirical methods is getting more and more senseless nowadays as far as unprecedented computational facility and advancement in quantum chemical methods become available. \par 
 Present paper aims at theoretical examination of the first spectral moments in rototranslational CIA band of the prototype $CO_2-Ar$ system. Our approach relies on the use of anisotropic potential energy and induced dipole surfaces obtained by virtue of sophisticated \textit{ab initio} calculations. The knowledge of these surfaces permits direct classical calculation of the first spectral moments without address to any adjustable parameters. Our ultimate goal consists of development of such a rigorous classical formalism that could permit consideration of CIA in any arbitrary pair formed by typical atmospheric molecules. 
-}
-\block[titleoffsety=6cm, bodyoffsety=5.5cm]{Calculation of spectral moments}{
+}}
+\block[titleoffsety=1cm, bodyoffsety=1cm]{Calculation of spectral moments}{
+\SIZEOFTEXT
+\SIZEOFFORMULAE{
 Spectral moment is a integral quantity widely used for describing CIA spectra profiles. They are used to verify IDS and predicted CIA spectral profiles  and also for semi-empirical estimation of CIA spectra. \par
-For our further discussion we consider two systems of coordinates for describing the relative motion of the colliding pair. First one, called laboratory frame of reference is fixed to the center of mass of our pair and second one, called rotating frame, is connected to the pair itself and rotates along with it. \par
-Salient feature of our approach consists of development and subsequent use of a rigorous classical Hamiltonian in the body-fixed frame. All kinetic energy terms that are responsible for Coriolis interaction are kept in our developed Hamiltonian. The general form of the Hamiltonian is as follows: 
+For our further discussion we consider two systems of coordinates for describing the relative motion of the colliding pair. First one, called laboratory frame of reference is fixed to the center of mass of our pair and second one, called rotating frame, is connected to the pair itself and rotates along with it. Salient feature of our approach consists of development and subsequent use of a rigorous classical Hamiltonian in the body-fixed frame. All kinetic energy terms that are responsible for Coriolis interaction are kept in our developed Hamiltonian. The general form of the Hamiltonian is as follows: 
 \vverh
 \begin{gather}
 		H = \frac{1}{2} \mf{p}^\top \bbG_{11} \mf{p} + \mf{p}^\top \bbG_{12} \, \mf{J} + \frac{1}{2} \mf{J}^\top \bbG_{22} \, \mf{J} \label{eq:hamiltonian}
@@ -86,42 +113,67 @@ M_{2n + 1} &= 0
 
 Thus the expressions for zeroth and second spectral moments take the following form: 
 \begin{gather}
-		M_0 = \displaystyle \frac{\int \boldsymbol{\mu}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb }{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb}, \quad M_2 = \displaystyle \frac{\int \boldsymbol{\dot{\mu}}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb }{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb} \label{eq:m0_and_m2} 
+		M_0 = \displaystyle \frac{\int \boldsymbol{\mu}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}, \quad M_2 = \displaystyle \frac{\int \boldsymbol{\dot{\mu}}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}} \label{eq:m0_and_m2} 
 \end{gather}
 
 The expression for the second moment includes dipole moment time derivative which can be calculated from the Poisson bracket with the classical Hamiltonian.
 \begin{gather}
 		\frac{d \boldsymbol{\mu}}{dt} = \left[ \boldsymbol{\mu}, H \right] = \sum_i \left\{ \frac{\partial \boldsymbol{\mu}}{\partial q_j} \frac{\partial H}{\partial p_j} 
-- \frac{\partial \boldsymbol{\mu}}{\partial p_j} \frac{\partial H}{\partial q_j} \right\}, \notag
+		- \frac{\partial \boldsymbol{\mu}}{\partial p_j} \frac{\partial H}{\partial q_j} \right\}, \label{eq:poisson} 
 \end{gather}
 where derivatives of the Hamiltonian can be numerically calculated in any point phase space using the techniques of matrix calculus.
 
-
 Assuming that the Hamiltonian is given for the rotating frame of reference it can be shown that the square of the time derivative of the dipole moment can be written in the following form:
 \begin{gather}
-		\lb \boldsymbol{\dot{\mu}}^{LF} \rb^2 =  \lb \boldsymbol{\dot{\mu}}^{MF} \rb^2 + 2 \boldsymbol{\mu}^{MF} \left[ \frac{\partial H}{\partial \mf{J}} \times \boldsymbol{\mu}^{MF} \right] + \lb \boldsymbol{\mu}^{MF} \rb^\top \bbI^J \boldsymbol{\mu}^{MF}, \notag \\
-		\bbI^J_{ij} = \sum_{k} \lb \frac{\partial H}{\partial J_k} \rb^2 \delta_{ij} - \lb \frac{\partial H}{\partial J_i} \rb \lb  \frac{\partial H}{\partial J_j} \rb \notag
+		\lb \boldsymbol{\dot{\mu}}^{LF} \rb^2 =  \lb \boldsymbol{\dot{\mu}}^{MF} \rb^2 + 2 \boldsymbol{\mu}^{MF} \left[ \frac{\partial H}{\partial \mf{J}} \times \boldsymbol{\mu}^{MF} \right] + \lb \boldsymbol{\mu}^{MF} \rb^\top \bbI^J \boldsymbol{\mu}^{MF}, \label{eq:dipole2}\\
+		\bbI^J_{ij} = \sum_{k} \lb \frac{\partial H}{\partial J_k} \rb^2 \delta_{ij} - \lb \frac{\partial H}{\partial J_i} \rb \lb  \frac{\partial H}{\partial J_j} \rb \label{eq:I_matrix}
 \end{gather}
-}
+}}
 \column{0.5}
-\block[titleoffsety=40cm, bodyoffsety=40cm]{Spectral moments of CO$_2-$Ar CIA spectral profile}{
-		In the present paper we take into consideration system CO$_2-$Ar as the simplest system displaying anisotropic interactions (Fig. 1). In the rotating frame of reference the position of particles is decribed by two internal coordinates. In order to calculate spectral moments we need PES and IDS of the system of interest. Potential surface was calculated on CCSD(T) level of theory in aug-cc-pVQZ basis set including midbond functions. \textbf{Long-range (based on the assumption of multipole induction mechanism taking into account multipole moments of CO$_2$ up to hexadecapole) and \textit{ab initio} (calculated on CCSD(T) level of theory in aug-cc-pvTZ basis set) IDS were used. (Two IDS were used: long-range (...) and ab initio (...))}\par
-The temperature dependences of the zeroth and second spectral moments are given on the Fig. .... Markers represent the spectral moments obtained by integration of experimental spectra by means of the following formulae:
+\block[titleoffsety=44cm, bodyoffsety=44cm]{Spectral moments of CO$_2-$Ar CIA spectral profile}{
+\SIZEOFTEXT
+\SIZEOFFORMULAE{
+		In the present paper we take into consideration system CO$_2-$Ar as the simplest system displaying anisotropic interactions (Fig. 1). 
+\begin{tikzfigure}[Coordinate system for CO$\hspace*{-0.05cm}_2 \hspace{0.1cm}$-Ar]
+		\includegraphics[width=0.3\linewidth]{../pictures/coordsys/pp/coordsys-crop.pdf}
+		\label{fig:coordsys}
+\end{tikzfigure}
+
+In the rotating frame of reference the position of particles is decribed by two internal coordinates. In order to calculate spectral moments we need PES and IDS of the system of interest. Potential surface was calculated on CCSD(T) level of theory in aug-cc-pVQZ basis set including midbond functions. \textbf{Long-range (based on the assumption of multipole induction mechanism taking into account multipole moments of CO$_2$ up to hexadecapole) and \textit{ab initio} (calculated on CCSD(T) level of theory in aug-cc-pvTZ basis set) IDS were used. (Two IDS were used: long-range (...) and ab initio (...))}\par
+The temperature dependencies of the zeroth and second spectral moments are given on the Fig. 2 and Fig. 3 correspondingly. Markers represent the spectral moments obtained by integration of experimental spectra by means of the following formulae:
 \vverh
 \begin{gather}
-		M_0 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) \coth \lb - \frac{h c \nu}{2 k T} \rb \frac{d \nu}{\nu} \notag \\
-		M_2 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) d \nu \notag
+		M_0 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) \coth \lb - \frac{h c \nu}{2 k T} \rb \frac{d \nu}{\nu} \label{eq:m0_spectra} \\
+		M_2 = \frac{1}{\rho_1 \rho_2} \int\limits_{0}^{\infty} \alpha(\nu) d \nu \label{eq:m2_spectra}
 \end{gather}
 
+\begin{tikzfigure}[Temperature dependence of zeroth spectral moment]
+	\includegraphics[width=0.7\linewidth]{../pictures/moments_pictures/moment0/trimmed.png}
+\end{tikzfigure}
+\begin{tikzfigure}[Temperature dependence of second spectral moment]
+	\includegraphics[width=0.7\linewidth]{../pictures/moments_pictures/moment2/trimmed.png}
+\end{tikzfigure}
+}}
+\block[titleoffsety=2.5cm, bodyoffsety=2.5cm]{Conclusion}{
+\SIZEOFTEXT
+\SIZEOFFORMULAE{
+		The results reported in the present paper demonstrate capability of classical methods to characterize collision-induced absorption in the far-infrared spectral range with an accuracy comparable with THAT EXPERIMENTAL. No use of adjustable parameters is required provided potential energy and induced dipole surfaces are obtained as a result of the high-level \textit{ab initio} calculations and no omission is made in kinetic energy terms of the classical Hamiltonian. The results obtained so far encourage us to extend our approach to other molecular pairs the knowledge of the dipole-forbidden absorption in which is in high demand by the planetary atmospheres investigators. 
+}}
 
-		%\begin{tikzfigure}[h]
-				%\includegraphics[width=0.5\textwidth]{../pictures/coordsys/coordsys.png}
-		%\end{tikzfigure}
+\block[titleoffsety=1cm, bodyoffsety=1cm]{References}{
+\SIZEOFTEXT
+% absolutely no idea WTF is going on..
+[1]: Richard, C., Gordon, I. E., Rothman, L. S., Abel, M., Frommhold, L., Gustafsson, Smith, K. M. (2012). New section of the HITRAN database: Collision-induced absorption (CIA). \textit{Journal of Quantitative Spectroscopy and Radiative Transfer}, 113(11), 1276-1285. \\ 
+[2] [2]: Karman, T., van der Avoird, A., & Groenenboom, G. C. (2015). Collision-induced absorption with exchange effects and anisotropic interactions: Theory and application to H$_2$-H$_2$. \textit{The Journal of chemical physics}, 142(8), 084305. \\
+[3] [3]: Karman, T., Miliordos, E., Hunt, K. L., Groenenboom, G. C., van der Avoird, A. (2015). Quantum mechanical calculation of the collision-induced absorption spectra of N$_2$-N$_2$ with anisotropic interactions. \textit{The Journal of chemical physics}, 142(8), 084306. \\
+[4] [4]: Chrysos, M., Kouzov, A. P., Egorova, N. I., Rachet, F. (2008). Exact Low-Order Classical Moments in Collision-Induced Bands by Linear Rotors: CO$_2$-CO$_2$. \textit{Physical review letters}, 100(13), 133007. \\
+[5] [5]: Kouzov, A. P., Chrysos, M. (2009). Collision-induced absorption by CO$_2$ in the far infrared: Analysis of leading-order moments and interpretation of the experiment. \textit{Physical Review A}, 80(4), 042703. \\
+[6] [6]: Hartmann, J. M., Boulet, C., Jacquemart, D. (2011). Molecular dynamics simulations for CO$_2$ spectra. II. The far infrared collision-induced absorption band. \textit{The Journal of chemical physics}, 134(9), 094316. \\
+[7] [7]: Oparin, D. V., Filippov, N. N., Grigoriev, I. M., Kouzov, A. P. (2017). Effect of stable and metastable dimers on collision-induced rototranslational spectra: Carbon dioxide-rare gas mixtures. \textit{Journal of Quantitative Spectroscopy and Radiative Transfer}, 196, 87-93. \\
+[8] [8] Dagg, I. R. \textit{et al.} (1986), \textit{Canadian Journal of Physics}  64, 1485. \\
+[9] [9] Tonkov, M. V. (1995) In: \textit{Collision- and Interaction-Induced Spectroscopy}. Kluwer AP.
 }
 
-\block[titleoffsety=1.5cm, bodyoffsety=1.5cm]{Conclusion}{
-		The results reported in the present paper demonstrate capability of classical methods to characterize collision-induced absorption in the far-infrared spectral range with an accuracy comparable with THAT EXPERIMENTAL. No use of adjustable parameters is required provided potential energy and induced dipole surfaces are obtained as a result of the high-level \textit{ab initio} calculations and no omission is made in kinetic energy terms of the classical Hamiltonian. The results obtained so far encourage us to extend our approach to other molecular pairs the knowledge of the dipole-forbidden absorption in which is in high demand by the planetary atmospheres investigators.
-}
 
 \end{columns}
 
