@@ -59,12 +59,13 @@ lw = 1.75
 
 plt.xlim((100.0, 500.0))
 plt.ylim((0.0, 1.0)) 
+plt.grid(linestyle = ':', alpha = 0.7)
 
 plt.xlabel(r'\textbf{T}, (K)')
 plt.ylabel(r'\textbf{M}$_2$, (cm$^{-3}$ $\cdot$ amagat$^{-1}$)')
 
-l1, = plt.plot(temperatures_lr, moments_lr, color = '0.3', linewidth = lw, linestyle = 'solid')
-l2, = plt.plot(temperatures_ab, momemnts_ab, color = '0.3', linewidth = lw, linestyle = 'dashed')
+l1, = plt.plot(temperatures_lr, moments_lr, color = '0.3', linewidth = lw, linestyle = 'dashed')
+l2, = plt.plot(temperatures_ab, momemnts_ab, color = '0.3', linewidth = lw, linestyle = 'solid')
 e1 = plt.scatter(temperatures_e1, moments_e1, color = 'k', marker = '^', s = marker_size)
 e2 = plt.scatter(temperatures_e2, moments_e2, color = 'k', marker = 's', s = marker_size)
 
@@ -74,7 +75,6 @@ fig.legend((l1, l2, e1, e2), ('Long-range dipole', r'\textit{Ab Initio} \ dipole
 
 plt.tight_layout()
 
-plt.grid(linestyle = ':', alpha = 0.7)
 plt.show()
 
 

@@ -62,8 +62,8 @@ plt.xlabel(r'\textbf{T}, (K)')
 plt.ylabel(r'\textbf{M}$_0$, (cm$^{-1}$ $\cdot$ amagat$^{-1}$)')
 
 marker_size = 50
-l1, = plt.plot(temperatures_t_lr, moments_t_lr, color = '0.3', linestyle = 'solid', linewidth = lw)
-l2, = plt.plot(temperatures_t_ab, moments_t_ab, color = '0.3', linestyle = 'dashed', linewidth = lw)
+l1, = plt.plot(temperatures_t_lr, moments_t_lr, color = '0.3', linestyle = 'dashed', linewidth = lw)
+l2, = plt.plot(temperatures_t_ab, moments_t_ab, color = '0.3', linestyle = 'solid', linewidth = lw)
 e1 = plt.scatter(temperatures_e1, moments_e1, color = 'k', marker = '^', s = marker_size)
 e2 = plt.scatter(temperatures_e2, moments_e2, color = 'k', marker = 's', s = marker_size)
 
