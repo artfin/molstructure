@@ -1,5 +1,5 @@
 * To make .eps standalone file using Tex: <br /> 
-```latex example.tex` --  generates ```example.dvi``` <br /> 
+```latex example.tex``` --  generates ```example.dvi``` <br /> 
 ```dvips -E example.dvi -o example.pdf``` <br />
 (but it should be viewed and properly cropped)
 
