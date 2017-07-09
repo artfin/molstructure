@@ -8,3 +8,8 @@
 
 * Command line option ```trim`` used together with ```convert``` lets you trim borders of the identical color as the corners of an image:
 ```convert input.png -trim output.png```
+
+* Creating scalable python graphic for Tex:
+-- saving plot to .eps format
+-- using ```epstopdf``` utility convert .eps image to .pdf file
+-- automatically crop using ```pdfcrop```
