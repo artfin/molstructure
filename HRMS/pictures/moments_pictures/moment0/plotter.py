@@ -67,7 +67,7 @@ l2, = plt.plot(temperatures_t_ab, moments_t_ab, color = '0.3', linestyle = 'soli
 e1 = plt.scatter(temperatures_e1, moments_e1, color = 'k', marker = '^', s = marker_size)
 e2 = plt.scatter(temperatures_e2, moments_e2, color = 'k', marker = 's', s = marker_size)
 
-fig.legend((l1, l2, e1, e2), ('Long-Range dipole', r'\textit{Ab Initio} \ dipole', r'I. R. Dagg \textit{et al.} [8]', r'M. V. Tonkov [9]'), 'lower center', ncol = 4, fancybox = True, shadow = True)
+fig.legend((l2, l1, e1, e2), ( r'\textit{ab initio} \ dipole', r'long-range dipole', r'I. R. Dagg \textit{et al.} [9]', r'M. V. Tonkov [10]'), 'lower center', ncol = 4, fancybox = True, shadow = True)
 
 #fig.legend((l1, l2, e1, e2), ('Long-Range dipole', 'Ab Initio Dipole', r'I. R. Dagg \textit{et al.}, \textit{Can. J. Phys.} \textbf{64}, 1485, (1986)', r'M. V. Tonkov In: \textit{Collision- and Interaction-Induced Spectroscopy}. Kluwer, AP, 1995'), 'lower center',  ncol = 3, fancybox = True, shadow = True, prop = {'size': 'large'}) 
 

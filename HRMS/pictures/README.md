@@ -11,5 +11,9 @@
 
 * Creating scalable python graphic for Tex: <br />
 -- saving plot to .eps format <br />
--- using ```epstopdf``` utility convert .eps image to .pdf file <br />
+-- using ```epstopdf``` utility convert .eps image to .pdf file <br />:
+```epstopdf example.png -o example.pdf``` <br />
 -- automatically crop using ```pdfcrop```
+
+* Converting ```.jpg```, ```.tiff``` to ```.eps``` format using ImageMagicks ```convert``` (it is a good practice to use the eps2 format; resulting eps file much smaller because it uses the JPEG compression algorithm): <br />
+```convert example.tiff eps2:example.eps```
