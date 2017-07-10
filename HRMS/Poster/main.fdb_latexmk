@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1499724535 "main.tex" "main.pdf" "main" 1499724536
+["pdflatex"] 1499725153 "main.tex" "main.pdf" "main" 1499725154
   "../pictures/coordsys/pp/coordsys-crop.pdf" 1499614619 19942 744da00897f79534838886029ed7522c ""
   "../pictures/dipole_pictures/last-crop.pdf" 1499635117 13150 5a93ad800f3dd27bf2ffd779da8ee539 ""
   "../pictures/moments_pictures/moment0/last0-crop.pdf" 1499723702 12205 1f3f1ee8cce0bde20044946ef914a0a0 ""
@@ -221,12 +221,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1499338691 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1499338756 3859297 bb1e70cac6101c8240393ab02e68dece ""
-  "main.aux" 1499724536 1043 7f1835ced859e7650845df898f445221 ""
-  "main.tex" 1499724533 16583 e23cec555065b2fb55734237c6401467 ""
+  "main.aux" 1499725154 1043 7f1835ced859e7650845df898f445221 ""
+  "main.tex" 1499725152 16583 66b4fcb7d56e166aa6b0ea30296c2ce0 ""
   (generated)
-  "graphicx.aux"
   "main.pdf"
+  "main.run.xml"
+  "graphicx.aux"
   "main.log"
   "main.aux"
   "main-blx.bib"
-  "main.run.xml"
