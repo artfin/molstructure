@@ -61,8 +61,8 @@ plt.xlim((100.0, 500.0))
 plt.ylim((0.0, 1.0)) 
 plt.grid(linestyle = ':', alpha = 0.7)
 
-plt.xlabel(r'\textbf{T}, (K)')
-plt.ylabel(r'\textbf{M}$_2$, (cm$^{-3}$ $\cdot$ amagat$^{-1}$)')
+plt.xlabel(r'\textbf{\textit{T}}, K')
+plt.ylabel(r'\textbf{\textit{M}}$_2$, cm$^{-3}$ $\cdot$ amagat$^{-1}$')
 
 l1, = plt.plot(temperatures_lr, moments_lr, color = '0.3', linewidth = lw, linestyle = 'dashed')
 l2, = plt.plot(temperatures_ab, momemnts_ab, color = '0.3', linewidth = lw, linestyle = 'solid')
