@@ -108,13 +108,13 @@ Classical theory with the use of \textit{ab initio} calculated anisotropic inter
 		H = \frac{1}{2} \mf{p}^\top \bbG_{11} \mf{p} + \mf{p}^\top \bbG_{12} \, \mf{J} + \frac{1}{2} \mf{J}^\top \bbG_{22} \, \mf{J} + U(\mf{q}), \label{eq:hamiltonian}
 \end{gather}
 where $\mf{q}$, $\mf{p}$ denote the generalized coordinates and conjugated momenta, $\mf{J}$ denotes the vector of total angular momentum (matrices $\bbG$?)   
-... [8]: 
+For the analysis of collision-induced spectra and the comparison with theory, certain integrals of the spectra, the spectal moments, are used. The $n$-th spectral moment of the spectral function, $J(\nu)$, is defined by [8]: 
 \vverh
 \begin{gather}
 		M_n = \int\limits_{-\infty}^{\infty} \nu^n V J(\nu) d \nu \label{eq:gen_moment} 
 \end{gather}
 
-where $\boldsymbol{\mu}$ denotes the dipole moment operator in the laboratory frame and angular brackets denote averaging over complete set of quantum states. In the classical limit the above equation reduces to 
+In the classical limit the following expressions are used to theoretically calculate spectral moments [8]:
 \vspace*{-0.6cm}
 \begin{gather}
 \begin{aligned}
@@ -123,8 +123,7 @@ M_{2n + 1} &= 0
 \end{aligned}
 \label{eq:classical_moment}
 \end{gather}
-
-Classical expressions for lowest-order zeroth and second spectral moments can be written as
+where $\boldsymbol{\mu}$ denotes the vector of dipole moment and angular brackets denote averaging over the complete phase space. Specifically, classical expressions for lowest-order zeroth and second spectral moments can be written as
 \begin{gather}
 		M_0 = \displaystyle \frac{\int \boldsymbol{\mu}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}, \quad M_2 = \displaystyle \frac{\int \boldsymbol{\dot{\mu}}^2 \exp \lb -H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}{\int \exp \lb - H \lb \mf{q}, \mf{p}, \mf{J} \rb / k T \rb d \mf{q} \, d \mf{p}}. \label{eq:m0_and_m2} 
 \end{gather}
@@ -237,7 +236,7 @@ Figure 2: Z-components of the dipole moment \label{fig:dipole}
 10. \!M.\! V. Tonkov (1995) In: \textit{Collision- and Interaction-Induced Spectroscopy}. Kluwer AP. \\
 \hspace*{-5cm}
 \begin{flushright}
-		\textbf{Partial support from RFBR Grant is gratefully accepted.}
+		\textbf{Partial support from RFBR Grant ... is gratefully accepted.}
 \end{flushright}
 \end{spacing}
 }
