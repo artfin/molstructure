@@ -15,5 +15,5 @@
 ```epstopdf example.png -o example.pdf``` <br />
 -- automatically crop using ```pdfcrop```
 
-* Converting ```.jpg```, ```.tiff``` to ```.eps``` format using ImageMagicks ```convert``` (it is a good practice to use the eps2 format; resulting eps file much smaller because it uses the JPEG compression algorithm): <br />
+* Converting ```.jpg```, ```.tiff``` to ```.eps``` format using ImageMagick's ```convert``` (it is a good practice to use the eps2 format; resulting eps file much smaller because it uses the JPEG compression algorithm): <br />
 ```convert example.tiff eps2:example.eps```

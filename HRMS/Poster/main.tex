@@ -96,8 +96,14 @@ Classical theory with the use of \textit{ab initio} calculated anisotropic inter
 \SIZEOFFORMULAE{
 \vpravo Much attention is presently devoted to the study of dipole-forbidden molecular absorption caused by weak intermolecular interaction. This interest is significantly motivated by the need to refine the accuracy of climate models which are being developed for the planetary or exoplanetary atmospheres. Actual knowledge of binary absorption coefficients is still fragmentary (see e.g. [1]) and is thus fairly unsatisfactory in regard of great number of pairs potentially interesting for climate modeling. Experimental observation of the weak pressure-induced absorption is especially difficult in the far-infrared where the most important so-called rototranslational collision-induced absorption (RT CIA) bands are conventionally situated. Direct quantum calculations are still barely feasible for interacting polyatomics, although significant progress is worth mentioning that has been achieved recently in both quantum calculations of the spectral profiles [2,3] and quantum theory of spectral moments [4,5]. Molecular dynamics simulation and classical trajectory approaches are presently the most promising (see e.g. [6,7]) in terms of purely classical methods. The use of the formerly popular semi-empirical methods is getting more and more senseless nowadays as far as unprecedented computational facility and advancement in quantum chemical methods become available. \par 
 \vpravo Present paper aims at theoretical examination of the first spectral moments in rototranslational CIA band of the prototype CO$_2-$Ar system. Our approach relies on the use of anisotropic potential energy and induced dipole surfaces obtained by virtue of sophisticated \textit{ab initio} calculations. The knowledge of these surfaces permits direct classical calculation of the first spectral moments without address to any adjustable parameters. Our ultimate goal consists of development of such a rigorous classical formalism that could permit consideration of CIA in any arbitrary pair formed by typical atmospheric molecules. 
+
+\vspace*{-2cm}
+
+\begin{tikzfigure}
+		\includegraphics[width=\linewidth]{../pictures/Scheme.pdf}
+\end{tikzfigure}
 }}
-\block[titleoffsety=1cm, bodyoffsety=2cm]{Calculation of spectral moments}{
+\block[titleoffsety=23cm, bodyoffsety=24cm]{Calculation of spectral moments}{
 \SIZEOFTEXT
 \SIZEOFFORMULAE{
 \vpravo Spectral moments are integral values, which are widely used to characterise CIA spectra. The usage of these values is attributed to the possiblity to represent them either in terms of integrals over experimentally measurable spectral profiles or in terms of Boltzmann weighted functions of induced dipole. Thus the knowledge of complete potential energy (PES) and induced dipole (IDS) surfaces can help both verification of \textit{ab initio} obtained data and characterization of interaction-induced absorption. \par
@@ -108,10 +114,10 @@ Classical theory with the use of \textit{ab initio} calculated anisotropic inter
 		H = \frac{1}{2} \mf{p}^\top \bbG_{11} \mf{p} + \mf{p}^\top \bbG_{12} \, \mf{J} + \frac{1}{2} \mf{J}^\top \bbG_{22} \, \mf{J} + U(\mf{q}), \label{eq:hamiltonian}
 \end{gather}
 where $\mf{q}$, $\mf{p}$ denote the generalized coordinates and conjugated momenta, $\mf{J}$ denotes the vector of total angular momentum (matrices $\bbG$?)   
-For the analysis of collision-induced spectra and the comparison with theory, certain integrals of the spectra, the spectal moments, are used. The $n$-th spectral moment of the spectral function, $J(\nu)$, is defined by [8]: 
+For the analysis of collision-induced spectra and the comparison with theory, certain integrals of the spectra, the spectal moments, are used. The $n$-th spectral moment of the spectral function, $G(\nu)$, is defined by [8]: 
 \vverh
 \begin{gather}
-		M_n = \int\limits_{-\infty}^{\infty} \nu^n V J(\nu) d \nu \label{eq:gen_moment} 
+		M_n = \int\limits_{-\infty}^{\infty} \nu^n V G(\nu) d \nu \label{eq:gen_moment} 
 \end{gather}
 
 In the classical limit the following expressions are used to theoretically calculate spectral moments [8]:
@@ -139,9 +145,13 @@ Assuming the Hamiltonian is written in the body-fixed frame (BF), the squared ti
 		\lb \boldsymbol{\dot{\mu}}^{LF} \rb^2 =  \lb \boldsymbol{\dot{\mu}}^{BF} \rb^2 + 2 \boldsymbol{\mu}^{BF} \left( \frac{\partial H}{\partial \mf{J}} \times \boldsymbol{\mu}^{BF} \right) + \lb \boldsymbol{\mu}^{BF} \rb^\top \bbI^J \boldsymbol{\mu}^{BF}, \label{eq:dipole2}\\
 		\bbI^J_{ij} = \sum_{k} \lb \frac{\partial H}{\partial J_k} \rb^2 \delta_{ij} - \lb \frac{\partial H}{\partial J_i} \rb \lb  \frac{\partial H}{\partial J_j} \rb \label{eq:I_matrix}
 \end{gather}
+
+\begin{tikzfigure}
+		\includegraphics[width=0.6\linewidth]{../pictures/spec_draft.pdf}
+\end{tikzfigure}
 }}
 \column{0.5}
-\block[titleoffsety=44cm, bodyoffsety=45.5cm]{Spectral moments of CO$_2-$Ar CIA spectral profile}{
+\block[titleoffsety=44cm, bodyoffsety=45.5cm]{Spectral moments of CO$_2-$Ar rototranslational band}{
 \SIZEOFTEXT
 \SIZEOFFORMULAE{
 In the present paper we have chosen CO$_2-$Ar as an example of relatively simple atom-linear molecule system possessing an appreciable anisotropy of interaction (Fig. 1). \\
@@ -218,7 +228,7 @@ Figure 2: Z-components of the dipole moment \label{fig:dipole}
 \vpravo The results reported in the present paper demonstrate capability of classical methods to characterize collision-induced absorption in the far-infrared spectral range with an accuracy comparable with that experimental. No use of adjustable parameters is required provided potential energy and induced dipole surfaces are obtained as a result of the high-level \textit{ab initio} calculations and no omission is made in kinetic energy terms of the classical Hamiltonian. The results obtained so far encourage us to extend our approach to other molecular pairs the knowledge of the dipole-forbidden absorption in which is in high demand by the planetary atmospheres investigators. 
 }}
 
-\block[titleoffsety=1.4cm, bodyoffsety=2.8cm]{References}{
+\block[titleoffsety=1.0cm, bodyoffsety=2.5cm]{References}{
 \SIZEOFTEXTREFERENCES
 \begin{spacing}{0.1}
 % I know the code is horrible.. 
@@ -236,7 +246,7 @@ Figure 2: Z-components of the dipole moment \label{fig:dipole}
 10. \!M.\! V. Tonkov (1995) In: \textit{Collision- and Interaction-Induced Spectroscopy}. Kluwer AP. \\
 \hspace*{-5cm}
 \begin{flushright}
-		\textbf{Partial support from RFBR Grant ... is gratefully accepted.}
+		\textbf{Partial support from RFBR Grant ... is gratefully acknowledged.}
 \end{flushright}
 \end{spacing}
 }
