@@ -75,7 +75,7 @@ freqs_dagg_cropped, dagg_cropped, freqs_dagg_dashed, dagg_dashed = crop_dagg(fre
 fig = plt.figure()
 
 plt.xlabel(r'$\nu$, \textbf{cm}$^{-1}$')
-#plt.ylabel(r'\textbf{\textit{M}}$_0$, cm$^{-1}$ $\cdot$ amagat$^{-1}$')
+plt.ylabel(r'$\alpha(\nu)$, 10$^{-6}$ \textbf{cm}$^{-1} \cdot$ \textbf{amagat}$^{-2}$') 
 
 l1, = plt.plot(freqs_dagg_cropped, dagg_cropped, color = 'blue')
 l2, = plt.plot(freqs_dagg_dashed, dagg_dashed, color = 'blue', linestyle = 'dashed')
