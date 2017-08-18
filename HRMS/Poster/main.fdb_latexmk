@@ -1,12 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1503039726 "main.tex" "main.pdf" "main" 1503039727
-  "../pictures/Scheme.pdf" 1502971087 454559 4c8a3e7510d2a1430964ac9793745fc8 ""
+["pdflatex"] 1455213792 "main.tex" "main.pdf" "main" 1455213792
+  "../pictures/Scheme_1-crop.pdf" 1455212149 390920 acf9e318931e4f4d0e90e95545930ebe ""
   "../pictures/coordsys/pp/coordsys-crop.pdf" 1499614619 19942 744da00897f79534838886029ed7522c ""
   "../pictures/dipole_pictures/last-crop.pdf" 1499635117 13150 5a93ad800f3dd27bf2ffd779da8ee539 ""
   "../pictures/moments_pictures/moment0/last0-crop.pdf" 1499805787 12106 37c3fcb84d688a4ca4d6329d5d3f4eee ""
   "../pictures/moments_pictures/moment2/last2-crop.pdf" 1499779536 12278 a25f01ed3515a364ee6f844f74d68bf6 ""
   "../pictures/potential/potential_dpi.pdf" 1499760262 163441 2352f67e9ddb8e217db63ac18d653de8 ""
-  "../pictures/spec_picture/spec_picture-crop.pdf" 1503037681 12917 20166585d30de3e88ec594b0dc6ec8e8 ""
+  "../pictures/spec_picture/spec_picture-crop.pdf" 1455209714 12918 800cfc5260741f5d533a9cd0671051e2 ""
   "/etc/texmf/web2c/texmf.cnf" 1499338588 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/ae/aebx10.tfm" 1136768653 6120 a142592c2114b48b2aa4610db47a327d ""
@@ -228,12 +228,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1499338691 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1499338756 3859297 bb1e70cac6101c8240393ab02e68dece ""
-  "main.aux" 1503039727 362 ec4321b74ee19088a9d65f837c1a7d45 ""
-  "main.tex" 1503039725 18006 93ca30d0e07dc00b67143390d3b4e9f4 ""
+  "main.aux" 1455213784 362 deae073d0a49e56e32280c8f7ae669ad ""
+  "main.tex" 1455213791 20729 254a8691baa2dd036ef281c54d8a077b ""
   (generated)
-  "main-blx.bib"
   "main.run.xml"
   "main.pdf"
   "main.aux"
   "main.log"
   "graphicx.aux"
+  "main-blx.bib"

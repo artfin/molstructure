@@ -62,8 +62,8 @@ def read_data(filename):
 	    data = line.split()
 
 	    freqs.append(float(data[0]))
-	    dagg.append(float(data[1]))
-	    tonkov.append(float(data[2]))
+	    tonkov.append(float(data[1]))
+	    dagg.append(float(data[2]))
 
     return freqs, dagg, tonkov
 
@@ -81,9 +81,10 @@ l1, = plt.plot(freqs_dagg_cropped, dagg_cropped, color = 'blue')
 l2, = plt.plot(freqs_dagg_dashed, dagg_dashed, color = 'blue', linestyle = 'dashed')
 l3, = plt.plot(freqs_tonkov, tonkov, color = 'green')
 
+fig.tight_layout()
+
 fig.legend((l1, l3), (r'I.R. Dagg \textit{et al.} [9]', r'M. V. Tonkov [10]'), 'lower center', ncol = 2, fancybox = True, shadow = True)
 
 plt.grid(linestyle=':', alpha=0.7)
-plt.tight_layout()
 
 plt.show()

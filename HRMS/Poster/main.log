@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.6)  18 AUG 2017 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.6)  11 FEB 2016 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -658,11 +658,11 @@ Package caption Info: End \AtBeginDocument code.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(0.0pt, 2384.90999pt, 0.0pt)
-* v-part:(T,H,B)=(0.0pt, 3396.68999pt, 0.0pt)
+* v-part:(T,H,B)=(0.0pt, 3375.00877pt, 0.0pt)
 * \paperwidth=2384.90999pt
-* \paperheight=3396.68999pt
+* \paperheight=3375.00877pt
 * \textwidth=2384.90999pt
-* \textheight=3396.68999pt
+* \textheight=3375.00877pt
 * \oddsidemargin=-72.26999pt
 * \evensidemargin=-72.26999pt
 * \topmargin=-122.26999pt
@@ -802,108 +802,122 @@ Overfull \hbox (18.22351pt too wide) in paragraph at lines 90--90
  [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <20> on input line 109.
+LaTeX Font Info:    Calculating math sizes for size <20> on input line 106.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 109.
+(Font)              size <20.74> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.99994> not available
-(Font)              size <14.4> substituted on input line 109.
+(Font)              size <14.4> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <20> not available
-(Font)              size <20.74> substituted on input line 109.
+(Font)              size <20.74> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.99994> not available
-(Font)              size <14.4> substituted on input line 109.
+(Font)              size <14.4> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 109.
+(Font)              size <20.74> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.99994> not available
-(Font)              size <14.4> substituted on input line 109.
+(Font)              size <14.4> substituted on input line 106.
 
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <20> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 109.
-<../pictures/Scheme.pdf, id=29, 597.50829pt x 845.0471pt>
-File: ../pictures/Scheme.pdf Graphic file (type pdf)
- <use ../pictures/Scheme.pdf>
-Package pdftex.def Info: ../pictures/Scheme.pdf used on input line 109.
-(pdftex.def)             Requested size: 1096.85378pt x 1551.26936pt.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 106.
+<../pictures/Scheme_1-crop.pdf, id=29, 517.935pt x 457.71pt>
+File: ../pictures/Scheme_1-crop.pdf Graphic file (type pdf)
+ <use ../pictures/Scheme_1-crop.pdf>
+Package pdftex.def Info: ../pictures/Scheme_1-crop.pdf used on input line 106.
+(pdftex.def)             Requested size: 866.08783pt x 765.46252pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 160.
+(Font)              size <20.74> substituted on input line 158.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.99994> not available
-(Font)              size <14.4> substituted on input line 160.
+(Font)              size <14.4> substituted on input line 158.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <20> not available
-(Font)              size <20.74> substituted on input line 160.
+(Font)              size <20.74> substituted on input line 158.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <13.99994> not available
-(Font)              size <14.4> substituted on input line 160.
+(Font)              size <14.4> substituted on input line 158.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 160.
+(Font)              size <20.74> substituted on input line 158.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <13.99994> not available
-(Font)              size <14.4> substituted on input line 160.
-
-<../pictures/spec_picture/spec_picture-crop.pdf, id=30, 833.1125pt x 530.98375pt>
-File: ../pictures/spec_picture/spec_picture-crop.pdf Graphic file (type pdf)
- <use ../pictures/spec_picture/spec_picture-crop.pdf>
-Package pdftex.def Info: ../pictures/spec_picture/spec_picture-crop.pdf used on input line 160.
-(pdftex.def)             Requested size: 548.45761pt x 274.21722pt.
+(Font)              size <14.4> substituted on input line 158.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <17.915> not available
-(Font)              size <17.28> substituted on input line 232.
+(Font)              size <17.28> substituted on input line 226.
 
-<../pictures/coordsys/pp/coordsys-crop.pdf, id=31, 191.71625pt x 153.57375pt>
+<../pictures/coordsys/pp/coordsys-crop.pdf, id=30, 191.71625pt x 153.57375pt>
 File: ../pictures/coordsys/pp/coordsys-crop.pdf Graphic file (type pdf)
  <use ../pictures/coordsys/pp/coordsys-crop.pdf>
-Package pdftex.def Info: ../pictures/coordsys/pp/coordsys-crop.pdf used on input line 232.
-(pdftex.def)             Requested size: 370.99252pt x 297.225pt.
- <../pictures/potential/potential_dpi.pdf, id=32, 202.7575pt x 198.7425pt>
+Package pdftex.def Info: ../pictures/coordsys/pp/coordsys-crop.pdf used on input line 226.
+(pdftex.def)             Requested size: 528.7737pt x 423.63432pt.
+ <../pictures/potential/potential_dpi.pdf, id=31, 202.7575pt x 198.7425pt>
 File: ../pictures/potential/potential_dpi.pdf Graphic file (type pdf)
  <use ../pictures/potential/potential_dpi.pdf>
-Package pdftex.def Info: ../pictures/potential/potential_dpi.pdf used on input line 232.
-(pdftex.def)             Requested size: 327.344pt x 320.87238pt.
- <../pictures/dipole_pictures/last-crop.pdf, id=33, 827.09pt x 530.98375pt>
+Package pdftex.def Info: ../pictures/potential/potential_dpi.pdf used on input line 226.
+(pdftex.def)             Requested size: 495.72345pt x 485.92262pt.
+
+Overfull \hbox (4.3347pt too wide) in paragraph at lines 226--226
+[]$[]$ $[]$
+ []
+
+<../pictures/dipole_pictures/last-crop.pdf, id=32, 827.09pt x 530.98375pt>
 File: ../pictures/dipole_pictures/last-crop.pdf Graphic file (type pdf)
  <use ../pictures/dipole_pictures/last-crop.pdf>
-Package pdftex.def Info: ../pictures/dipole_pictures/last-crop.pdf used on input line 232.
-(pdftex.def)             Requested size: 654.70464pt x 420.32327pt.
+Package pdftex.def Info: ../pictures/dipole_pictures/last-crop.pdf used on input line 226.
+(pdftex.def)             Requested size: 627.92604pt x 483.70639pt.
+ <../pictures/spec_picture/spec_picture-crop.pdf, id=33, 833.1125pt x 530.98375pt>
+File: ../pictures/spec_picture/spec_picture-crop.pdf Graphic file (type pdf)
+ <use ../pictures/spec_picture/spec_picture-crop.pdf>
+Package pdftex.def Info: ../pictures/spec_picture/spec_picture-crop.pdf used on input line 226.
+(pdftex.def)             Requested size: 660.99922pt x 483.70639pt.
 
-Overfull \hbox (4.3886pt too wide) in paragraph at lines 232--232
-[]$[]$   $[]$ 
+Overfull \hbox (4.3347pt too wide) in paragraph at lines 226--226
+[]$[]$ $[]$ 
  []
 
 <../pictures/moments_pictures/moment0/last0-crop.pdf, id=34, 817.0525pt x 531.9875pt>
 File: ../pictures/moments_pictures/moment0/last0-crop.pdf Graphic file (type pdf)
  <use ../pictures/moments_pictures/moment0/last0-crop.pdf>
-Package pdftex.def Info: ../pictures/moments_pictures/moment0/last0-crop.pdf used on input line 232.
-(pdftex.def)             Requested size: 763.81099pt x 497.34897pt.
+Package pdftex.def Info: ../pictures/moments_pictures/moment0/last0-crop.pdf used on input line 226.
+(pdftex.def)             Requested size: 647.78333pt x 483.71164pt.
  <../pictures/moments_pictures/moment2/last2-crop.pdf, id=35, 835.12pt x 531.9875pt>
 File: ../pictures/moments_pictures/moment2/last2-crop.pdf Graphic file (type pdf)
  <use ../pictures/moments_pictures/moment2/last2-crop.pdf>
-Package pdftex.def Info: ../pictures/moments_pictures/moment2/last2-crop.pdf used on input line 232.
-(pdftex.def)             Requested size: 752.90535pt x 479.64478pt.
+Package pdftex.def Info: ../pictures/moments_pictures/moment2/last2-crop.pdf used on input line 226.
+(pdftex.def)             Requested size: 647.78474pt x 483.71164pt.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <17.28> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 260.
- [1
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 258.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pictures/Scheme.pdf> <../pictures/spec_picture/spec_picture-crop.pdf> <../pictures/coordsys/pp/coordsys-crop.pdf> <../pictures/potential/potential_dpi.pdf> <../pictures/dipole_pictures/last-crop.pdf> <../pictures/moments_pictures/moment0/last0-crop.pdf> <../pictures/moments_pictures/moment2/last2-crop.pdf>] (./main.aux)
+./main.tex:258: Extra }, or forgotten \endgroup.
+l.258 }}
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pictures/Scheme_1-crop.pdf> <../pictures/coordsys/pp/coordsys-crop.pdf> <../pictures/potential/potential_dpi.pdf> <../pictures/dipole_pictures/last-crop.pdf> <../pictures/spec_picture/spec_picture-crop.pdf> <../pictures/moments_pictures/moment0/last0-crop.pdf> <../pictures/moments_pictures/moment2/last2-crop.pdf>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 24.91231pt have occurred.
@@ -913,18 +927,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21132 strings out of 493029
- 437778 string characters out of 6136235
- 581579 words of memory out of 5000000
+ 21197 strings out of 493029
+ 438412 string characters out of 6136235
+ 581961 words of memory out of 5000000
  23871 multiletter control sequences out of 15000+600000
- 97725 words of font info for 381 fonts, out of 8000000 for 9000
+ 103396 words of font info for 436 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,24n,94p,1394b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,24n,94p,1394b,816s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (1 page, 738455 bytes).
+Output written on main.pdf (1 page, 778684 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
+ 274 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  69776 words of extra memory for PDF output out of 74296 (max. 10000000)
 
