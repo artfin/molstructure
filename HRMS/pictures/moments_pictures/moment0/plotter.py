@@ -59,7 +59,7 @@ plt.xlim((100, 500))
 plt.ylim((0, 0.0008))
 
 plt.xlabel(r'\textbf{\textit{T}}, K')
-plt.ylabel(r'\textbf{\textit{M}}$_0$, cm$^{-1}$ $\cdot$ amagat$^{-1}$')
+pl.ylabel(r'\textbf{\textit{M}}$_0$, cm$^{-1}$ $\cdot$ amagat$^{-1}$')
 
 marker_size = 50
 l1, = plt.plot(temperatures_t_lr, moments_t_lr, color = '0.3', linestyle = 'dashed', linewidth = lw)
