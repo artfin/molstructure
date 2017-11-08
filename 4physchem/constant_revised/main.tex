@@ -126,7 +126,6 @@
 \end{gather}
 
 Интеграл функции $\exp \lb - x_1^2  - x_2^2 - \dots - x_n^2 \rb$ по объему $n$-мерного шара с радиусом $R$ равен 
-\vverh
 \begin{gather}
 	\idotsint\limits_{x_1^2 + \dots + x_n^2 \leqslant R} \exp \lb -x_1^2 - x_2^2 - \dots - x_n^2 \rb d x_1 \dots d x_n = \pi^{n/2} \frac{\gamma \lb \displaystyle \frac{n}{2}, R^2 \rb}{\Gamma \lb \displaystyle \frac{n}{2} \rb}, \notag
 \end{gather}
@@ -167,5 +166,50 @@
 		K_p = \frac{N_0}{p} \frac{Q_{bound}^{pair}}{Q^{Ar} Q^{CO_2}} = \frac{4 \pi N_0}{p V} \iint\limits_{U < 0} \exp \lb - \frac{U}{k T} \rb \frac{\gamma \lb \displaystyle \frac{5}{2}, -U/kT \rb}{\Gamma \lb \displaystyle \frac{5}{2} \rb} R^2 \sin \Theta \, d R \, d \Theta = \notag \\
 		= \frac{4 \pi N_0}{R T} \iint\limits_{U < 0} \exp \lb - \frac{U}{k T} \rb \frac{\gamma \lb \displaystyle \frac{5}{2}, -U/kT \rb}{\Gamma \lb \displaystyle \frac{5}{2} \rb} R^2 \sin \Theta \, d R \, d \Theta \notag  
 \end{gather}
+
+\newpage
+
+\section*{Константа равновесия N$_2-$N$_2$}
+
+Классическая сумма по состояниям связанного димера двух палочек имеет следующий вид
+\begin{gather}
+		Q_{bound}^{pair} = \frac{8 \pi^2}{s h^7} \lb \frac{2 \pi M k T}{h^2} \rb^{3/2} V \int_{\mH < 0} \exp \lb - \frac{\mH}{kT} \rb dR \, d \Theta_1 d \Theta_2 \, d \varphi \, d p_R \, d p_{\Theta_1} d p_{\Theta_2} d p_\varphi \, d J_x \, d J_y \, d J_z, \notag 
+\end{gather}
+где $s$ -- число симметрии димера, $M$ -- совокупная масса димера. \\
+Применяя теорему Фубини, разделяем кратный интеграл на два, где первый -- по координатам, а второй -- по импульсам: 
+\begin{gather}
+	Q_{bound}^{pair} = \frac{8 \pi^2}{s h^7} \lb \frac{2 \pi M k T}{h^2} \rb^{3/2} V \idotsint dR \, d \Theta_1 d \Theta_2 \, d \varphi \idotsint \exp \lb - \frac{\mH}{kT} \rb d p_R \, d p_{\Theta_1} d p_{\Theta_2} d p_\varphi \, d J_x \, d J_y \, d J_z \notag  
+\end{gather}
+
+Переходим в импульсном интеграле к переменным $x_1, x_2 \ldots x_7$. Якобиан этого перехода, как было показано в другом документе, равен:
+\begin{gather}
+		\left[ \, Jac \, \right]_{ham} = 2^{7/2} \lb k T \rb^{7/2} \mu_1 l_1^2 \, \mu_2 l_2^2 \, \mu_3^{3/2} R^2 \sin \Theta_1 \sin \Theta_2 \notag \\
+	Q_{bound}^{pair} = \frac{8 \pi^2}{s h^7} \lb \frac{2 \pi M k T}{h^2} \rb^{3/2} V \idotsint\limits_{U < 0} \left[ \, Jac \, \right]_{ham} \exp \lb -\frac{U}{kT} \rb d R \, d \Theta_1 d \Theta_2 \, d \varphi \notag \\
+	\hspace{8cm} \times \idotsint\limits_{x_1^2 + \ldots + x_7^2 + U/kT < 0} \exp \lb - x_1^2 - \ldots -x_7^2 \rb d x_1 \, d x_2 \ldots d x_7  = \notag \\
+	= \frac{8 \pi^2}{s h^7} \lb \frac{2 \pi M k T}{h^2} \rb^{3/2} V \idotsint\limits_{U < 0} \left[ \, Jac \, \right]_{ham} \frac{\gamma \lb 7/2, - U/kT \rb}{\Gamma \lb 7/2 \rb} \exp \lb - \frac{U}{kT} \rb dR \, d \Theta_1 d \Theta_2 \, d \varphi \notag 
+\end{gather}
+
+Рассмотрим отдельно коэффициент $C$ перед интегралом:
+\begin{gather}
+		C = \frac{8 \pi^2}{s} \lb \frac{2 \pi M k T}{h^2} \rb^{3/2} \lb \frac{2 \pi \mu_3 k T}{h^2} \rb^{3/2} \frac{2 \pi \mu_1 l_1^2 k T}{h^2} \frac{2 \pi \mu_2 l_2^2 k T}{h^2} V \notag
+\end{gather}
+
+Приведенная масса $\mu_3$ равна произведению масс палочек, деленная на их сумму, поэтому $\mu_3 \cdot M = m_{mon_1} \cdot m_{mon_2}$, где $m_{mon_1}, m_{mon_2}$ -- массы отдельных палочек. Следовательно, произведение первых двух скобок даст скобки, фигурирующие в трансляционных статсуммах мономеров. Затем распределим $4 \pi^2$ (из первой дроби) по $2 \pi$ между третьей и четвертой дробями.
+\begin{gather}
+		C = \frac{2}{s} \lb \frac{2 \pi m_{mon_1} k T}{h^2} \rb^{3/2} \lb \frac{2 \pi m_{mon_2} k T}{h^2} \rb^{3/2} \frac{4 \pi \mu_1 l_1^2 k T}{h^2} \frac{4 \pi \mu_2 l_2^2 k T}{h^2} V = \frac{2}{s} \frac{Q_{mon_1} Q_{mon_2}}{V} \notag
+\end{gather}
+
+Итак, получаем следующие выражения для статсуммы связанных димеров и константы равновесия 
+\begin{gather}
+		Q_{bound}^{pair} = \frac{2}{s} \frac{Q_{mon_1} Q_{mon_2}}{V} \idotsint\limits_{U < 0} \frac{\gamma \lb 7/2, - U/kT \rb}{\Gamma \lb 7/2 \rb} \exp \lb - \frac{U}{kT} \rb d R \, d \Theta_1 d \Theta_2 \, d \varphi, \notag \\     
+		K_p = \frac{2}{s} \frac{N_A}{R T} \idotsint\limits_{U < 0} \frac{\gamma \lb 7/2, - U/kT \rb}{\Gamma \lb 7/2 \rb} \exp \lb - \frac{U}{kT} \rb d R \, d \Theta_1 d \Theta_2 \, d \varphi. \notag 
+\end{gather}
+
+В случае N$_2-$N$_2$ число симметрии димера $s$ равно 8, т.к. в фазовом пространстве существует по 2 эквивалентных области, отвечающих вращениям каждого из мономеров, а также 2 эквивалентных области, отвечающих повороту, меняющему местами мономеры местами (итого: $s = 2 \times 2 \times 2 = 8$).  
+
+\begin{gather}
+		K_p (N_2-N_2) = \frac{N_A}{4 R T} \idotsint\limits_{U < 0} \frac{\gamma \lb 7/2, - U/kT \rb}{\Gamma \lb 7/2 \rb} \exp \lb - \frac{U}{kT} \rb d R \, d \Theta_1 d \Theta_2 \, d \varphi. \notag 
+\end{gather}
+
 
 \end{document}
