@@ -1,0 +1,43 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+% page margin
+\usepackage[top=2cm, bottom=2cm, left=0.5cm, right=0.5cm]{geometry}
+
+% AMS packages
+\usepackage{amsmath, array}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\usepackage{rotating}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% modifying page layout using fancyhdr
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\ #1}}
+
+\rhead{\fancyplain{}{\rightmark }}
+\cfoot{\fancyplain{}{\thepage }}
+
+\usepackage{titlesec}
+\titleformat{\section}{\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\itshape\bfseries}{\thesubsection.}{0.5em}{}
+
+\begin{document}
+
+\title{Расчет классических статсумм истинных димеров слабосвязанных пар с использованием многомерной поверхности потенциальной энергии}
+\date{}
+\maketitle
+
+В нашей работе мы представляем формулы расчета точных классических статсумм истинных димеров слабосвязанных пар в парном приближении. В работе [1] представлен систематический подход к рассмотрению равновесию мономер-димер в рамках классической механики. Однако в в этой работе были использованы некоторые допущения, которые парадоксальным образом привели к абсолютно точным выражениям, что мы и демонстрируем в этой работе.   
+
+Квантово-механический подход к расчету статсумм требует знания колебательно-вращательной структуры уровней в парном потенциале, сложность и точность определения которой растет с увеличением количества степеней свободы. 
+
+\end{document}
