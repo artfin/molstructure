@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1523185028 "main.tex" "main.pdf" "main" 1523185029
+["pdflatex"] 1523190002 "main.tex" "main.pdf" "main" 1523190003
   "/etc/texmf/web2c/texmf.cnf" 1499338588 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx0700.tfm" 1491679926 3328 d6a760976be2c5546586233212eda387 ""
   "/home/artfin/.texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1491517755 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
@@ -219,13 +219,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1499338691 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1499338756 3859297 bb1e70cac6101c8240393ab02e68dece ""
   "Preamble.tex" 1522697656 871 4c5f2bb2b05f5e5a0bbd254f06f96222 ""
-  "main.aux" 1523185029 441 6268ea178c2c6ba3fc18d904ba17e838 ""
-  "main.tex" 1523185026 21813 3e5bdba7abc0cce43acfa75e2f762ef1 ""
+  "main.aux" 1523190003 441 6268ea178c2c6ba3fc18d904ba17e838 ""
+  "main.tex" 1523190002 21809 841a315c9dd6e786e774b0b13b2f2040 ""
   "pictures/1.png" 1523096578 41733 97e176ad3c23f29d24b77d78616829e3 ""
   "pictures/logo.jpg" 1522697985 8760 820d6a682ca8013b484646cd8c1c6a39 ""
-  "pictures/m0_bound_contribution.png" 1523180814 43246 05b06e7f49626beefd1ddc7a8dc6e0d5 ""
-  "pictures/tdependencies.png" 1523180814 44098 c337026b51b51cc9f64dd56d7f208187 ""
+  "pictures/m0_bound_contribution.png" 1523189868 44177 bc3350c3ba3fbb13ef2dadfc80d4d972 ""
+  "pictures/tdependencies.png" 1523189718 37765 5c28f7755b3afb3322b63747bb4a30be ""
   (generated)
+  "main.pdf"
   "main.log"
   "main.aux"
-  "main.pdf"
