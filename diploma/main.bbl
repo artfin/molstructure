@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{janssen1885}
 J.~Janssen.
@@ -48,5 +48,15 @@ Abraham Nitzan.
   reactions in condensed molecular systems}.
 \newblock Oxford graduate texts. Oxford University Press, illustrated edition
   edition, 2006.
+
+\bibitem{frommhold}
+Lothar Frommhold.
+\newblock {\em Collision-induced absorption in gases}.
+\newblock Cambridge University Press, 2006.
+
+\bibitem{kranendonk1973}
+J~Van Kranendonk and DM~Gass.
+\newblock Theory of the line shape in quadrupole-induced infrared spectra.
+\newblock {\em Canadian Journal of Physics}, 51(23):2428--2440, 1973.
 
 \end{thebibliography}
