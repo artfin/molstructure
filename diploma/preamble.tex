@@ -124,4 +124,18 @@
 \newcommand{\bs}{\boldsymbol}
 \newcommand{\mL}{\mathcal{L}}
 \newcommand{\mH}{\mathcal{H}}
+\newcommand{\mHplane}{\mathcal{H}_\text{plane}}
 \newcommand{\bbS}{\mathbb{S}}
+
+\usepackage{titlesec}
+\usepackage{fourier, erewhon}
+\usepackage{microtype}
+ \SetTracking[no ligatures={f}]{encoding=*}{100}
+
+ \titleformat{\chapter}[display]
+ {\bfseries\Large\lsstyle\SetTracking[no ligatures = {f}]{encoding = *}{50}\filleft}
+ {\MakeUppercase{\chaptername}\enspace\thechapter}
+ {2ex}
+ {\titlerule[1pt]\vspace{2ex}\MakeUppercase}%
+\titlespacing*{\chapter}{0pt}{-60pt}{10ex}
+
