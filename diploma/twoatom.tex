@@ -84,12 +84,12 @@
 
 \section{Cистемы координат для описания движения двух атомов}
 
-Рассмотрим движение двух атомов с массами $m_1$, $m_2$ с радиус - векторами $\mf{r}_1$, $\mf{r}_2$ в поле межатомного потенциала $U(\vert \mf{r}_1 - \mf{r}_2 \vert)$. Поскольку нас будет интересовать их относительное движение, то отделим центр масс системы и будем рассматривать движение виртуальной частицы с приведенной массой $\mu$, равной
+Рассмотрим движение двух атомов с массами $m_1$, $m_2$ с радиус - векторами $\mf{r}_1$, $\mf{r}_2$ в поле межатомного потенциала $U(\vert \mf{r}_1 - \mf{r}_2 \vert)$. Задача о движении двух взаимодействующих атомов сводится к задаче о движении виртуальной частицы с приведенной массой $\mu$,  равной 
 \begin{gather}
     \mu = \frac{m_1 m_2}{m_1 + m_2}, 
 \end{gather}
 %
-в потенциальном поле $U$. Для описания движения виртуальной частицы введем несколько систем координат. Системой I будем называть декартову систему координат, в которой координатами частицы является вектор $\mf{r} = \mf{r}_1 - \mf{r}_2$. В этой системе координат лагранжиан и гамильтониан системы записываются как 
+в заданном потенциальном поле $U$ \cite{landau-volume1}. Для описания движения виртуальной частицы введем несколько систем координат. Системой I будем называть декартову систему координат -- положение частицы задается вектором $\mf{r} = \mf{r}_1 - \mf{r}_2$. В этой системе координат лагранжиан и гамильтониан системы записываются как 
 \begin{gather}
     \mL_\text{cartesian} = \frac{\mu \dot{\mf{r}}^2}{2} - U( \vert \mf{r} \vert ), \label{two-atom-cartesian-lagrangian} \\
     \mH_\text{cartesian} = \frac{\mf{p}^2}{2\mu} + U( \vert \mf{r} \vert ), \label{two-atom-cartesian-hamiltonian}
@@ -100,7 +100,7 @@
     \mf{p} = \frac{\partial \mL_\text{cartesian}}{\partial \dot{\mf{r}}} = \mu \, \dot{\mf{r}}. \label{two-atom-cartesian-momenta}
 \end{gather}
 
-Вектор $\mf{r}$ можно представить в сферической системе координат -- длину вектора обозначим через $r$, зенитный и азимутальный углы через $\theta$ и $\varphi$, соответственно. Будем называть эту координатную систему системой II. Лагранжиан и гамильтониан в ней записываются как
+Вектор $\mf{r}$ можно представить в сферической системе координат -- длину вектора обозначим через $r$, зенитный и азимутальный углы через $\theta$ и $\varphi$, соответственно ($\theta \in [0, \pi], \phi \in [0, 2 \pi]$. Будем называть эту координатную систему системой II. Лагранжиан и гамильтониан в ней записываются как
 \begin{gather}
     \mL_\text{spherical} = \frac{1}{2} \mu \dot{r}^2 + \frac{1}{2} \mu r^2 \dot{\theta}^2 + \frac{1}{2} \mu r^2 \dot{\varphi}^2 \sin^2 \theta - U(r),  \label{two-atom-spherical-lagrangian} \\
     \mH_\text{spherical} = \frac{p_r^2}{2 \mu} + \frac{p_\theta^2}{2 \mu r^2} + \frac{p_\varphi^2}{2 \mu r^2 \sin^2 \theta} + U(r), \label{two-atom-spherical-hamiltonian}
@@ -108,9 +108,52 @@
 %
 где обобщенные импульсы $p_r$, $p_\theta$, $p_\varphi$ связаны с обобщенными скоростями соотношениями
 \begin{gather}
-    p_r = \frac{\partial \mL_\text{spherical}}{\partial \dot{r}} = \mu \dot{r}, \\
-    p_\theta = \frac{\partial \mL_\text{spherical}}{\partial \dot{\theta}} = \mu r^2 \dot{\theta}, \\
-    p_\varphi = \frac{\partial \mL_\text{spherical}}{\partial \dot{\varphi}} = \mu r^2 \dot{\varphi} \sin^2 \theta.
+    p_r = \frac{\partial \mL_\text{spherical}}{\partial \dot{r}} = \mu \dot{r}, \quad \dot{r} = \frac{p_r}{mu} \label{two-atom-spherical-momenta1} \\
+    p_\theta = \frac{\partial \mL_\text{spherical}}{\partial \dot{\theta}} = \mu r^2 \dot{\theta}, \quad \dot{\theta} = \frac{p_\theta}{\mu r^2} \label{two-atom-spherical-momenta2} \\
+    p_\varphi = \frac{\partial \mL_\text{spherical}}{\partial \dot{\varphi}} = \mu r^2 \dot{\varphi} \sin^2 \theta \quad \dot{\phi} = \frac{p_\varphi}{\mu r^2 \sin^2 \theta} \label{two-atom-spherical-momenta3}.
+\end{gather}
+
+Декартовы координаты виртуальной частицы связаны со сферическими координатами следующими соотношениями
+\begin{gather}
+    \lc
+    \begin{aligned}
+        x &= r \cos \varphi \sin \theta \\
+        y &= r \sin \varphi \sin \theta \\
+        z &= r \cos \theta
+    \end{aligned}
+    \right. \label{two-atom-spherical-coordinates}
+\end{gather}
+
+Рассмотрим, как связаны декартовы импульсы $\mf{p}$ с импульсами $p_r$, $p_\theta$, $p_\phi$, сопряженными сферическим координатам. Для этого продифференцируем соотношения \eqref{two-atom-spherical-coordinates} по времени и умножим обе части на приведенную массу $\mu$, получив в левой части компоненты вектора $\mf{p}$ согласно \eqref{two-atom-cartesian-momenta}, а в правой части подставим выражения обобщенных скоростей $\dot{r}$, $\dot{\theta}$, $\dot{\varphi}$ через соответствующие импульсы \eqref{two-atom-spherical-momenta1}, \eqref{two-atom-spherical-momenta2}, \eqref{two-atom-spherical-momenta3}
+\begin{gather}
+    \lc 
+    \begin{aligned}
+        p_x &= p_r \cos \varphi \sin \theta + \frac{p_\theta}{r} \cos \varphi \cos \theta - \frac{p_\varphi}{r} \sin \varphi \\ 
+        p_y &= p_r \sin \varphi \sin \theta + \frac{p_\theta}{r} \sin \varphi \cos \theta + \frac{p_\varphi}{r} \cos \varphi \\ 
+        p_z &= p_r \cos \theta - \frac{p_\theta}{r} \sin \theta 
+    \end{aligned}
+    \right. \label{two-atom-cartesian-spherical-momenta}
+\end{gather}
+
+Разрешая линейные соотношения \eqref{two-atom-cartesian-spherical-momenta} относительно импульсов $p_r$, $p_\theta$, $p_\varphi$, находим соотношения, выражающие обратную связь импульсов.
+\begin{gather}
+    \lc
+    \begin{aligned}
+        p_r &= r \lb p_x \cos \varphi \sin \theta + p_y \sin \varphi \sin \theta + p_z \cos \theta \rb\\
+        p_\varphi &= r \sin \theta \lb p_y \cos \varphi - p_x \sin \varphi \rb \\
+        p_\theta &= r \lb p_x \cos \varphi \cos \theta + p_y \sin \varphi \cos \theta - p_z \sin \theta \rb  
+    \end{aligned}
+    \right.
+\end{gather}
+
+Выразим компоненты углового момента через координаты и импульсы системы II, пользуясь соотношениями \eqref{two-atom-cartesian-spherical-momenta}
+\begin{gather}
+    \mf{J} = \lsq \mf{r} \times \mf{p} \rsq = 
+    \begin{bmatrix}
+        -p_\theta \sin \varphi - p_\varphi \cos \varphi \cot \theta \\
+        -p_\varphi \sin \varphi \cot \theta + p_\theta \cos \varphi \\
+        p_\varphi
+    \end{bmatrix}. 
 \end{gather}
 
 Известно, что в отсутствии внешнего момента сил движение двухатомной системы происходит в плоскости, перпендикулярной вектору углового момента $\mf{J}$ \cite{goldstein}. Следовательно, движение системы можно описать при помощи полярных координат $r, \psi$, определенных в плоскости, и соответствующих обобщенных скоростей $\dot{r}$, $\dot{\psi}$. Ориентацию плоскости будем задавать при помощи пары сферических углов $\Phi$, $\Theta$, описывающих ориентацию вектора углового момента. Определим систему координат таким образом, чтобы координатные оси $OXY$ совпадали с плоскостью движения, а ось $OZ$ была сонаправлена с вектором углового момента $\mf{J}$. Будет называть эту координатную систему системой III; лагранжиан и гамильтониан в ней равны 
@@ -210,25 +253,25 @@
     \end{bmatrix}. \label{two-atom-plane-angular-momenta}
 \end{gather}
 
-Выражение \eqref{two-atom-plane-angular-momenta} подтверждает, что углы $\Phi$, $\Theta$ действительно являются сферическими углами для вектора углового момента. Кроме того, замечаем, что импульс $p_\psi$ имеет физический смысл модуля вектора углового момента. \par
+Выражение \eqref{two-atom-plane-angular-momenta} подтверждает, что углы $\Phi$, $\Theta$ действительно являются сферическими углами для вектора углового момента. Кроме того, замечаем, что импульс $p_\psi$ имеет физический смысл модуля вектора углового момента. Этот факт, впрочем, может быть понят из вида гамильтониана \eqref{two-atom-plane-hamiltonian}. При составлении гамильтониана для движения в плоскости мы использовали два интеграла движения -- например, постоянство двух сферических углов, задающих ориентацию вектора углового момента. Координата $\psi$ является циклической для гамильтониана \eqref{two-atom-plane-hamiltonian} из чего следует, что $p_\psi$ является интегралом движения. Поэтому можно предположить, что импульс $p_\psi$ соответствует третьему интегралу движения -- модулю вектора углового момента, что и подтверждает приведенное рассмотрение. \par
     Соотношения \eqref{two-atoms-coordinates-transformation2}, \eqref{two-atoms-coordinates-transformation3} позволяют перейти от координат системы III к координатам системы I.    
     \color{red}{Понадобятся ли все остальные переходы?}
 \color{black}{}
 
-\section{Усреднение функций по фазовому пространству в разных системах координат}
+\section{Усреднение функций по фазовому пространству в разных системах координат} \label{section:averaging}
 
 Рассмотрим усреднение некоторой функции $f(\mf{r}, \mf{p})$ по фазовому пространству двухатомной системы, где $\mf{r}$, $\mf{p}$ -- векторы декартовых координат и сопряженных импульсов (система I). 
 \begin{gather}
     \mean{f} = \idotsint f(\mf{r}, \mf{p}) \exp \lb -\frac{\mH(\mf{r},\mf{p})}{kT} \rb d \mf{r} \, d\mf{p} \label{two-atom-mean}
 \end{gather}
 
-Целью нашего рассмотрения будет нахождение выражений, позволяющих производить усреднение функции $f$ по фазовому пространству, пользуясь координатами системы III. \par
-Для этого рассмотрим систему совокупную систему уравнений \eqref{two-atoms-coordinates-transformation2}, \eqref{two-atom-momenta-transformation} и найдем якобиан замены переменных $\lc x, y, z, p_x, p_y, p_z \rc$ $\rightarrow$ $\lc r, p_r, \psi, p_\psi, \Phi, \Theta \rc$. Ввиду громоздкости выкладки приводить не будем, выражение для якобиана получается следующее
+Целью нашего рассмотрения будет нахождение выражений, позволяющих производить усреднение функции $f$ по фазовому пространству, пользуясь координатами систем II и III. \par
+Рассмотрим систему совокупную систему уравнений \eqref{two-atoms-coordinates-transformation2}, \eqref{two-atom-momenta-transformation} и найдем якобиан замены переменных $\lc x, y, z, p_x, p_y, p_z \rc$ $\rightarrow$ $\lc r, p_r, \psi, p_\psi, \Phi, \Theta \rc$. Ввиду громоздкости выкладки приводить не будем, выражение для якобиана получается следующее
 \begin{gather}
-    \text{Jac} = \Bigg\vert \frac{\partial \lsq x, y, z, p_x, p_y, p_z \rsq}{\partial \lsq r, p_r, \psi, p_\psi, \Phi, \Theta \rsq} \Bigg\vert = p_\psi \sin \Theta.
+    \text{Jac} = \Bigg\vert \frac{\partial \lsq x, y, z, p_x, p_y, p_z \rsq}{\partial \lsq r, p_r, \psi, p_\psi, \Phi, \Theta \rsq} \Bigg\vert = p_\psi \sin \Theta. \label{two-atom-planar-jacobian}
 \end{gather}
 
-Итак, среднее значение \eqref{two-atom-mean} в системе координат III, записывается как
+Итак, среднее значение \eqref{two-atom-mean} в системе координат III записывается как
 \begin{gather}
     \mean{ f } = \int\limits_{0}^{\infty} dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi f(r, \psi, p_r, p_\psi, \Theta, \Phi) \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-mean-plane1} 
 \end{gather}
@@ -240,4 +283,105 @@
     \mean{ f } = 4 \pi \int\limits_{0}^{\infty} dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi f(r, \psi, p_r, p_\psi, \Theta, \Phi) \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-mean-plane2} 
 \end{gather}
 
-Как уже отмечалось ранее, импульс $p_\psi$ имеет физический смысл модуля углового момента, поэтому область интегрирования этого импульса составляет полуось $(0, +\infty)$, в то время как для радиального импульса -- вся прямая $(-\infty, +\infty)$. 
+Как уже отмечалось ранее, импульс $p_\psi$ имеет физический смысл модуля углового момента, поэтому область интегрирования этого импульса составляет полуось $(0, +\infty)$, в то время как для радиального импульса -- вся прямая $(-\infty, +\infty)$. \par
+Аналогично, рассмотрим совокупную систему уравнений \eqref{two-atom-spherical-coordinates}, \eqref{two-atom-cartesian-spherical-momenta} и найдем якобиан замены переменных $\lc x, y, z, p_x, p_y, p_z \rc$ $\rightarrow$ $\lc r, p_r, \varphi, p_\varphi, \theta, p_\theta \rc$. Выражение для якобиана получается следующее
+\begin{gather}
+    \text{Jac} = \Bigg\vert \frac{\partial \lsq x, y, z, p_x, p_y, p_z \rsq}{\partial \lsq r, p_r, \varphi, p_\varphi, \theta, p_\theta \rsq} \Bigg\vert = \sin \theta.
+\end{gather}
+
+Таким образом, среднее значение \eqref{two-atom-mean} в системе координат II записывается как
+\begin{gather}
+    \mean{f} = \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\varphi \intty dp_\varphi \int\limits_0^\pi \sin \theta d\theta \intty dp_\theta f(r, p_r, \varphi, p_\varphi, \theta, p_\theta) \exp \lb -\frac{\mH_\text{spherical}}{k T} \rb. \label{two-atom-mean-spherical}
+\end{gather}
+
+\section{Распределения координат и импульсов в фазовом пространстве в разных системах координат в условиях канонического ансамбля}
+
+
+\section{Спектральная функция при рассмотрении динамики столкновения в плоскости}
+
+Рассмотрим спектральную функцию,связанную с функцией автокорреляции суммарного дипольного момента преобразованием Фурье
+\begin{gather}
+    J(\omega) = \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt.
+\end{gather}
+
+Мы будем пользоваться приближением бинарных столкновений, то есть, будем предполагать, что суммарная автокорреляционная функция распадается на сумму автокорреляционных функций индуцированных диполей пар. Для индуцированного дипольного момента пары, для простоты, мы сохраним обозначение $\bs{\mu}$. Итак, мы будем работать со следующим выражением для спектральной функции с трактовкой интеграла как интеграла по начальным условиям классических динамических траекторий, как обсуждалось в пункте \ref{section:correlation_functions} 
+\begin{gather}
+    J(\omega) = \intty \frac{\displaystyle \idotsint \bs{\mu}(0) \bs{\mu}(t) \, \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}}{\displaystyle \idotsint \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}} e^{-i \omega t} dt. \label{two-atom-spectral-function1}
+\end{gather}
+
+Вектор координат при рассмотрении в плоскости столкновений равен $\mf{q} = \lc r, \psi, \Phi, \Theta \rc$, а вектор импульсов -- $\mf{p} = \lc p_r, p_\psi \rc$. Кроме того, согласно пункту \ref{section:averaging} в интеграле появляется дополнительный весовой множитель, равный $\text{Jac} = p_\psi \sin \Theta$. Следовательно, полное интегральное выражение в этой системе координат выглядит следующим образом
+\begin{gather}
+    J(\omega) = \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function2}
+\end{gather}
+
+Заметим, что ни дипольный момент $\bs{\mu}(t)$, ни гамильтониан $\mH$ не зависят от углов $\Phi$, $\Theta$. Проинтегрировав по ним, мы получаем фактор $4 \pi$ как в числителе, так и знаменателе, поэтому суммарно никаких дополнительных множителей не возникает.
+\begin{gather}
+    J(\omega) = \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function3}
+\end{gather}
+
+Как известно, решение задачи о движении частицы с приведенной массой $\mu$ в центральном поле можно получить, основываясь на законах сохранения энергии и углового момента в интегральном виде \cite{landau-volume1}. Гамильтониан, записанный в полярных координатах, определенных в плоскости движения (система III), 
+\begin{gather}
+    \mH_\text{plane} = \frac{p_r^2}{2\mu} + \frac{p_\psi^2}{2\mu r^2} + U(r) = E,
+\end{gather}
+%
+является интегралом движения. Как уже отмечалось, импульс $p_\psi$ имеет смысл модуля вектора углового момента, следовательно, также является интегралом движения. Решение уравнений движений в интегральном виде выглядит следующим образом \cite{landau-volume1} 
+\begin{gather}
+    t = \int\limits_{r_\text{нач}}^{r} \frac{dr}{\displaystyle \sqrt{\frac{2}{\mu} \lb E - U(r) \rb - \frac{p_\psi^2}{\mu^2 r^2}}}, \label{two-atom-change1} \\
+    \psi = \int\limits_{r_\text{нач}}^{r} \frac{\displaystyle \frac{p_\psi}{r^2} dr}{\displaystyle \sqrt{2\mu \lb E - U(r) \rb - \frac{p_\psi^2}{r^2}}}, \label{two-atom-change2}
+\end{gather}
+где $r_\text{нач}$ -- начальное значение межатомного расстояния, а $r$ -- межатомное расстояние в момент времени $t$.  
+
+Рассмотрим замену координат в интеграле в числителе \eqref{two-atom-spectral-function3} следующего вида
+\begin{gather}
+    \lc r, p_r, \psi, p_\psi \rc \rightarrow \lc (r_\text{max}), \tau, p_r^\prime, \psi^\prime, p_\psi \rc \label{two-atom-change-variables-time}.
+\end{gather}
+
+Физический смысл этой замены координат состоит в том, что вместо того, чтобы начинать классическую траекторию с произвольного межатомного расстояния $r$, мы хотим использовать фиксированное начальное расстояние $r_\text{max}$ ($r_\text{max}$ взят в скобках, потому что не является динамической переменной, фиксирован для всех траекторий). Переменная $\tau$ задает время, за которое межатомное расстояние становится равным $r$. Если взять исходное $r_\text{max}$ бесконечно большим, то набор переменных $\lc \tau, p_r^\prime, \psi^\prime, p_\psi \rc$ опишет тот же массив свободно-разлетных траекторий, что и набор переменных $\lc r, p_r, \psi, p_\psi \rc$. Понятно, что в интеграле \eqref{two-atom-spectral-function3} нам нужно перечислить лишь те классические траектории, на которых межатомное расстояние уменьшилось до такой степени, чтобы появился значительный индуцированный дипольный момент. Поэтому, если мы положим $r_\text{max}$ больше некоторого расстояния, за которым мы считаем индуцированный дипольный момент равным нулю, то мы перечислим весь значимый массив траекторий (классические траектории, минимальное сближение между атомами в ходе которых больше $r_\text{max}$, не будут тогда учтены в интеграле, но и вклад от них равен нулю). Подходящее расстояние $r_\text{max}$ следует подбирать на основании радиальной зависимости индуцированного дипольного момента для каждой конкретной системы по-своему. Отметим, что импульс $p_\psi$ является интегралом движения, поэтому он сохраняется при описанной замене. \par
+Для оговоренного набора траекторий замена переменных \eqref{two-atom-change-variables-time} является взаимоднозначной в силу единственности решения системы дифференциальных уравнений с начальными условиями Коши. \par
+Заметим, что интегральные выражения \eqref{two-atom-change1}, \eqref{two-atom-change2} описывают ровно половину классической траектории -- от $r_\text{max}$ до поворотной точки $r_0$, определяемой уравнением
+\begin{gather}
+    \frac{2}{\mu} \lb E - V(r_0) - \frac{p_\psi^2}{2 \mu r_0^2} \rb = 0.
+\end{gather}
+Классические траектории столкновения двух тел являются симметричными относительно поворотной точки \cite{goldstein}, поэтому мы без ограничения общности можем рассматривать только ту половину траектории, в ходе которой происходит сближение двух тел с некоторого начального расстояния до поворотной точки. Другими словами, будем рассматривать такие наборы начальных условий $\lc r, p_r, \psi, p_\psi \rc$,  в которых импульсы $p_r$ являются положительными и будем сопоставлять им наборы начальных условий $\lc \tau, p_r^\prime, \psi^\prime, p_\psi \rc$, в которых импульсы $p_r^\prime$ также являются положительными величинами. \par
+Итак, координаты $\tau$, $p_r^\prime$, $\psi^\prime$ связаны с исходными $r$, $p_r$, $\psi$ следующими соотношениями
+\begin{gather}
+    \lc
+    \begin{aligned}
+        \tau &= \int\limits_r^{r_\text{max}} \frac{dr^\prime}{\displaystyle \sqrt{\frac{2}{\mu} \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb}}, \\
+        \psi^\prime &= \psi + \int\limits_r^{r_\text{max}} \frac{\displaystyle \frac{p_\psi}{r^{\prime 2}} dr^\prime}{\displaystyle \sqrt{2\mu \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb}}, \\
+        p_r^\prime &= \sqrt{2 \mu \lb E - \frac{p_\psi^2}{2 \mu r_\text{max}^2} - U(r_\text{max}) \rb},
+    \end{aligned}
+    \right. \label{two-atom-change3}
+\end{gather}
+%
+где последнее соотношение получено исходя из закона сохранении энергии в форме
+\begin{gather}
+    E = \frac{p_r^2}{2\mu} + \frac{p_\psi^2}{2 \mu r^2} + U(r) = \frac{p_r^{\prime 2}}{2 \mu} + \frac{p_\psi^2}{2 \mu r_\text{max}^2} + U(r_\text{max}). 
+\end{gather}
+
+Учитывая в какой форме записаны соотношения \eqref{two-atom-change3}, найдем якобиан $\text{Jac}\displaystyle \Bigg\vert \frac{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq}{\partial \lsq r, p_r, \psi, p_\psi \rsq} \Bigg \vert$, а затем, пользуясь тем, что якобианы обратны друг к другу
+\begin{gather}
+    \Bigg\vert \frac{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq}{\partial \lsq r, p_r, \psi, p_\psi \rsq} \Bigg \vert \cdot \Bigg\vert \frac{\partial \lsq r, p_r, \psi, p_\psi \rsq}{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq} \Bigg \vert = 1,
+\end{gather}
+%
+найдем интересующий нас
+\begin{gather}
+    \text{Jac} = \Bigg\vert \frac{\partial \lsq r, p_r, \psi, p_\psi \rsq}{ \partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq} \Bigg\vert.
+\end{gather}
+
+Итак, матрица якобиана $\text{Jac}^{-1}$ имеет следующую структуру
+\begin{gather}
+    \text{Jac}^{-1} = 
+    \begin{bmatrix}
+        a & b & 0 & c \\
+        d & e & 0 & f \\
+        g & h & 1 & k \\
+        0 & 0 & 0 & 1
+    \end{bmatrix},
+\end{gather}
+%
+где элементы матрицы имеют следующие выражения
+\begin{gather}
+    a = \frac{\partial \tau}{\partial r} = -\frac{\mu}{p_r} - \frac{1}{\mu} \int\limits_r^{r_\text{max}} \frac{\displaystyle \lb \frac{dU}{dr}(r^\prime) - \frac{p_\psi^2}{\mu r^{\prime 3}} \rb dr^\prime}{\displaystyle \frac{2}{\mu} \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb^{3/2}}, \\
+    b = \frac{\partial p_r^\prime}{\partial r} = \frac{\mu}{p_r^\prime} \lb \frac{dU}{dr} - \frac{p_\psi^2}{\mu r^3} \rb
+\end{gather}
