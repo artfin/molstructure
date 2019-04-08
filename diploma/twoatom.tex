@@ -74,7 +74,7 @@
 % 
 что для краткости обозначают 
 \begin{gather}
-    \hat{F} \Big[ C(\tau) \Big] = \Bigg\vert \intty \bs{\mu}_1(t) e^{-i\omega t} dt \Bigg\vert^2.
+    \hat{F} \Big[ C(\tau) \Big] = \Bigg\vert \intty \bs{\mu}_1(t) e^{-i\omega t} dt \Bigg\vert^2. \label{correlation-theorem}
 \end{gather}
 
 Итак, преобразование Фурье от автокорреляционной функции \eqref{correlation-function-kranendonk} дает спектральную функцию  
@@ -277,8 +277,6 @@
 \end{gather}
 
 Если усредняемая функция $f(r, \psi, p_r, p_\psi, \Theta, \Phi)$ не зависит от углов $\Theta$, $\Phi$, то среднее значение  \eqref{two-atom-mean-plane1} приходит к виду
-\color{red}{(Привести бы пример со спектральным моментом, как мы это используем)}
-\color{black}
 \begin{gather}
     \mean{ f } = 4 \pi \int\limits_{0}^{\infty} dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi f(r, \psi, p_r, p_\psi, \Theta, \Phi) \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-mean-plane2} 
 \end{gather}
@@ -342,7 +340,7 @@
 \begin{gather}
     \frac{2}{\mu} \lb E - V(r_0) - \frac{p_\psi^2}{2 \mu r_0^2} \rb = 0.
 \end{gather}
-Классические траектории столкновения двух тел являются симметричными относительно поворотной точки \cite{goldstein}, поэтому мы без ограничения общности можем рассматривать только ту половину траектории, в ходе которой происходит сближение двух тел с некоторого начального расстояния до поворотной точки. Другими словами, будем рассматривать такие наборы начальных условий $\lc r, p_r, \psi, p_\psi \rc$,  в которых импульсы $p_r$ являются положительными и будем сопоставлять им наборы начальных условий $\lc \tau, p_r^\prime, \psi^\prime, p_\psi \rc$, в которых импульсы $p_r^\prime$ также являются положительными величинами. \par
+Классические траектории столкновения двух тел являются симметричными относительно поворотной точки \cite{goldstein}, поэтому мы без ограничения общности можем рассматривать только ту половину траектории, в ходе которой происходит разлет двух тел от поворотной точки $r_0$ до некоторого выбранного значения $r_\text{max}$. Другими словами, будем рассматривать такие наборы начальных условий $\lc r, p_r, \psi, p_\psi \rc$,  в которых импульсы $p_r$ являются положительными и будем сопоставлять им наборы начальных условий $\lc \tau, p_r^\prime, \psi^\prime, p_\psi \rc$, в которых импульсы $p_r^\prime$ также являются положительными величинами. \par
 Итак, координаты $\tau$, $p_r^\prime$, $\psi^\prime$ связаны с исходными $r$, $p_r$, $\psi$ следующими соотношениями
 \begin{gather}
     \lc
@@ -359,12 +357,12 @@
     E = \frac{p_r^2}{2\mu} + \frac{p_\psi^2}{2 \mu r^2} + U(r) = \frac{p_r^{\prime 2}}{2 \mu} + \frac{p_\psi^2}{2 \mu r_\text{max}^2} + U(r_\text{max}). 
 \end{gather}
 
-Учитывая в какой форме записаны соотношения \eqref{two-atom-change3}, найдем якобиан $\text{Jac}\displaystyle \Bigg\vert \frac{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq}{\partial \lsq r, p_r, \psi, p_\psi \rsq} \Bigg \vert$, а затем, пользуясь тем, что якобианы обратны друг к другу
+Учитывая в какой форме записаны соотношения \eqref{two-atom-change3}, найдем якобиан $\displaystyle \Bigg\vert \frac{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq}{\partial \lsq r, p_r, \psi, p_\psi \rsq} \Bigg \vert$, а затем, пользуясь тем, что якобианы обратны друг к другу
 \begin{gather}
     \Bigg\vert \frac{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq}{\partial \lsq r, p_r, \psi, p_\psi \rsq} \Bigg \vert \cdot \Bigg\vert \frac{\partial \lsq r, p_r, \psi, p_\psi \rsq}{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq} \Bigg \vert = 1,
 \end{gather}
 %
-найдем интересующий нас
+найдем интересующий нас якобиан
 \begin{gather}
     \text{Jac} = \Bigg\vert \frac{\partial \lsq r, p_r, \psi, p_\psi \rsq}{ \partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq} \Bigg\vert.
 \end{gather}
@@ -372,16 +370,82 @@
 Итак, матрица якобиана $\text{Jac}^{-1}$ имеет следующую структуру
 \begin{gather}
     \text{Jac}^{-1} = 
-    \begin{bmatrix}
+    \begin{bdmatrix}
+        \frac{\partial \tau}{\partial r} & \frac{\partial \tau}{\partial p_r} & \frac{\partial \tau}{\partial \psi} & \frac{\partial p_\psi}{\partial r} \\
+        \frac{\partial p_r^\prime}{\partial r} & \frac{\partial p_r^\prime}{\partial p_r} & \frac{\partial p_r^\prime}{\partial \psi} & \frac{\partial p_r^\prime}{\partial p_\psi} \\
+        \frac{\partial \psi^\prime}{\partial r} & \frac{\partial \psi^\prime}{\partial p_r} & \frac{\partial \psi^\prime}{\partial \psi} & \frac{\partial \psi^\prime}{\partial p_\psi} \\
+        \frac{\partial p_\psi}{\partial r} & \frac{\partial p_\psi}{\partial p_r} & \frac{\partial p_\psi}{\partial \psi} & \frac{\partial p_\psi}{\partial p_\psi} 
+    \end{bdmatrix} = 
+    \begin{bdmatrix}
         a & b & 0 & c \\
         d & e & 0 & f \\
         g & h & 1 & k \\
         0 & 0 & 0 & 1
-    \end{bmatrix},
+    \end{bdmatrix}.
+\end{gather}
+
+Все производные по $\psi$, за исключением $\partial \psi^\prime / \partial \psi$, равны 0, т.к. $\psi$ не входит в выражениях для соответствующих переменных. Производная же $\partial \psi^\prime / \partial \psi$ равна 1, потому что $\psi$ только аддитивно входит в выражение для $\psi^\prime$.
+Переменная $p_\psi$ остается неизменной в результате замены, поэтому последняя строчка матрицы оказывается такой простой. \par
+Вследствие особенностей структуры матрицы, получается, что детерминант матрицы якобиана $\text{Jac}^{-1}$ зависит только от 4 элементов
+\begin{gather}
+    \det \lc \text{Jac}^{-1} \rc = a \cdot e - b \cdot d.  
+\end{gather}
+
+Явные выражения для этих элементов матрицы выглядят следующим образом 
+\begin{gather}
+    a = \frac{\partial \tau}{\partial r} = -\frac{\mu}{p_r} - \frac{1}{\mu} \lb \frac{dU}{dr} - \frac{p_\psi^2}{\mu r^3} \rb \cdot I_1, \\ 
+    b = \frac{\partial \tau}{\partial p_r} = - \frac{p_r}{\mu^2} I_1, \\ 
+    d = \frac{\partial p_r^\prime}{\partial r} = \frac{\displaystyle \mu \lb \frac{dU}{dr} - \frac{p_\psi^2}{\mu r^3} \rb}{\displaystyle \sqrt{2\mu \lb E - \frac{p_\psi^2}{2 \mu r_\text{max}^2} - U(r_\text{max}) \rb}} = \frac{\mu}{p_r^\prime} \lb \frac{dU}{dr} - \frac{p_\psi^2}{\mu r^3} \rb, \\
+    e = \frac{\partial p_r^\prime}{\partial p_r} = \frac{p_r}{\displaystyle \sqrt{2\mu \lb E - \frac{p_\psi^2}{2 \mu r_\text{max}^2} - U(r_\text{max}) \rb}} = \frac{p_r}{p_r^\prime},
 \end{gather}
 %
-где элементы матрицы имеют следующие выражения
+где введено обозначение 
 \begin{gather}
-    a = \frac{\partial \tau}{\partial r} = -\frac{\mu}{p_r} - \frac{1}{\mu} \int\limits_r^{r_\text{max}} \frac{\displaystyle \lb \frac{dU}{dr}(r^\prime) - \frac{p_\psi^2}{\mu r^{\prime 3}} \rb dr^\prime}{\displaystyle \frac{2}{\mu} \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb^{3/2}}, \\
-    b = \frac{\partial p_r^\prime}{\partial r} = \frac{\mu}{p_r^\prime} \lb \frac{dU}{dr} - \frac{p_\psi^2}{\mu r^3} \rb
+    I_1 = \int\limits_r^{r_\text{max}} \lsq \frac{2}{\mu} \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb \rsq^{-3/2} dr^\prime. 
 \end{gather}
+
+Для полноты, представим остальные элементы матрицы якобиана
+\begin{gather}
+    c = \frac{\partial \tau}{\partial p_\psi} = -\frac{p_\psi}{\mu} \int\limits_r^{r_\text{max}} \lb \frac{1}{r^2} - \frac{1}{r^{\prime 2}} \rb \lsq \frac{2}{\mu} \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb \rsq^{-3/2} dr^\prime \\
+    f = \frac{\partial p_r^\prime}{\partial p_\psi} = \frac{\displaystyle p_\psi \lb \frac{1}{r^2} - \frac{1}{r_\text{max}^2} \rb}{\displaystyle \sqrt{2 \mu \lb E - \frac{p_\psi^2}{2 \mu r_\text{max}^2} - U(r_\text{max}) \rb}} = \frac{p_\psi}{p_r^\prime} \lb \frac{1}{r^2} - \frac{1}{r_\text{max}^2} \rb \\
+    g = \frac{\partial \psi^\prime}{\partial r} = -\frac{p_\psi}{p_r r^2} - \mu p_\psi \lb \frac{dU}{dr} - \frac{p_\psi^2}{\mu r^3} \rb I_2, \\ 
+    h = \frac{\partial \psi^\prime}{\partial p_r} = -p_\psi p_r \cdot I_2, \\ 
+    k = \frac{\partial \psi^\prime}{\partial p_\psi} = \int\limits_r^{r_\text{max}} \frac{1}{r^{\prime 2}} \lsq 2 \mu \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^2} \rb \rsq \lsq 2 \mu \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb\rsq^{-3/2} dr^\prime,
+\end{gather}
+%
+где было введено обозначение
+\begin{gather}
+    I_2 = \int\limits_r^{r_\text{max}} \frac{dr^\prime}{r^{\prime 2}} \lsq 2 \mu \lb E - U(r^\prime) - \frac{p_\psi^2}{2 \mu r^{\prime 2}} \rb \rsq^{-3/2}.
+\end{gather}
+
+Итак, якобианы оказываются равными
+\begin{gather}
+    \Bigg\vert \frac{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq}{\partial \lsq r, p_r, \psi, p_\psi \rsq} \Bigg\vert = \frac{\mu}{p_r^\prime}, \quad \Bigg\vert \frac{\partial \lsq r, p_r, \psi, p_\psi \rsq}{\partial \lsq \tau, p_r^\prime, \psi^\prime, p_\psi \rsq} \Bigg\vert = \frac{p_r^\prime}{\mu}.
+\end{gather}
+
+Следовательно, выражение для спектральной функции \eqref{two-atom-spectral-function3} может быть переписано в виде
+\begin{gather}
+    J(\omega) = \frac{1}{\Gamma_0} \intty e^{-i \omega t} dt \int\limits_0^\infty d\tau \intty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(\tau) \exp \lb -\frac{\mH_\text{plane}}{kT} \rb,
+\end{gather}
+%
+где через $\Gamma_0$ обозначен интеграл, находящийся в знаменателе \eqref{two-atom-spectral-function3}
+\begin{gather}
+    \Gamma_0 = \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \exp \lb -\frac{\mH_\text{plane}}{kT} \rb.
+\end{gather}
+
+Переставив интеграл по времени $t$ c интегралами по переменным $\tau$, $p_r^\prime$, $\psi^\prime$ и $p_\psi$, воспользуемся корреляционной теоремой \eqref{correlation-theorem}
+\begin{gather}
+    J(\omega) = \frac{1}{\Gamma_0} \intty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \Bigg\vert \intty \bs{\mu}(t) e^{i \omega t} dt \Bigg\vert^2 \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-spectral-function4}
+\end{gather}
+
+Integral ratio:
+\begin{gather}
+    \int \exp \lb -\frac{T_H}{kT} \rb d \psi d p_r dp_\psi = 2 \pi^2 \mu k T r \\
+    \int \exp \lb -\frac{T_H}{kT} \rb dr d\psi dp_r dp_\psi = \pi^2 \mu k T r^2 \\
+    \frac{\int \exp \lb -\frac{T_H}{kT} \rb d\psi dp_r dp_\psi}{\int \exp \lb -\frac{T_H}{k T} \rb dr d\psi dp_r dp_\psi} = \frac{2}{r}
+\end{gather}
+
+\section{Вычислительные аспекты расчета столкновительно - индуцированного спектра по классическим траекториям}
+
+Формула \eqref{two-atom-spectral-function4} будет основной при расчете столкновительно-индуцированных спектров для двухатомных систем в этой работе. 
+
