@@ -70,4 +70,15 @@ Herbert Goldstein, Charles Poole, and John Safko.
 \newblock {\em Classical mechanics}.
 \newblock AAPT, 2002.
 
+\bibitem{hill}
+Terrell~L. Hill.
+\newblock {\em Statistical mechanics}.
+\newblock Dover Publications, 1987.
+
+\bibitem{castaneda}
+Selvamuthu~Dharmaraja(auth.) Liliana Blanco~Castaneda, Viswanathan~Arunachalam.
+\newblock {\em Introduction to Probability and Stochastic Processes with
+  Applications}.
+\newblock 2012.
+
 \end{thebibliography}

@@ -128,8 +128,8 @@
 \begin{gather}
     \lc 
     \begin{aligned}
-        p_x &= p_r \cos \varphi \sin \theta + \frac{p_\theta}{r} \cos \varphi \cos \theta - \frac{p_\varphi}{r} \sin \varphi \\ 
-        p_y &= p_r \sin \varphi \sin \theta + \frac{p_\theta}{r} \sin \varphi \cos \theta + \frac{p_\varphi}{r} \cos \varphi \\ 
+        p_x &= p_r \cos \varphi \sin \theta + \frac{p_\theta}{r} \cos \varphi \cos \theta - \frac{p_\varphi}{r} \frac{\sin \varphi}{\sin \theta} \\ 
+        p_y &= p_r \sin \varphi \sin \theta + \frac{p_\theta}{r} \sin \varphi \cos \theta + \frac{p_\varphi}{r} \frac{\cos \varphi}{\sin \theta} \\ 
         p_z &= p_r \cos \theta - \frac{p_\theta}{r} \sin \theta 
     \end{aligned}
     \right. \label{two-atom-cartesian-spherical-momenta}
@@ -153,7 +153,7 @@
         -p_\theta \sin \varphi - p_\varphi \cos \varphi \cot \theta \\
         -p_\varphi \sin \varphi \cot \theta + p_\theta \cos \varphi \\
         p_\varphi
-    \end{bmatrix}. 
+    \end{bmatrix}. \label{two-atom-angular-momenta-spherical} 
 \end{gather}
 
 Известно, что в отсутствии внешнего момента сил движение двухатомной системы происходит в плоскости, перпендикулярной вектору углового момента $\mf{J}$ \cite{goldstein}. Следовательно, движение системы можно описать при помощи полярных координат $r, \psi$, определенных в плоскости, и соответствующих обобщенных скоростей $\dot{r}$, $\dot{\psi}$. Ориентацию плоскости будем задавать при помощи пары сферических углов $\Phi$, $\Theta$, описывающих ориентацию вектора углового момента. Определим систему координат таким образом, чтобы координатные оси $OXY$ совпадали с плоскостью движения, а ось $OZ$ была сонаправлена с вектором углового момента $\mf{J}$. Будет называть эту координатную систему системой III; лагранжиан и гамильтониан в ней равны 
@@ -282,18 +282,105 @@
 \end{gather}
 
 Как уже отмечалось ранее, импульс $p_\psi$ имеет физический смысл модуля углового момента, поэтому область интегрирования этого импульса составляет полуось $(0, +\infty)$, в то время как для радиального импульса -- вся прямая $(-\infty, +\infty)$. \par
-Аналогично, рассмотрим совокупную систему уравнений \eqref{two-atom-spherical-coordinates}, \eqref{two-atom-cartesian-spherical-momenta} и найдем якобиан замены переменных $\lc x, y, z, p_x, p_y, p_z \rc$ $\rightarrow$ $\lc r, p_r, \varphi, p_\varphi, \theta, p_\theta \rc$. Выражение для якобиана получается следующее
+Аналогично, рассмотрим совокупную систему уравнений \eqref{two-atom-spherical-coordinates}, \eqref{two-atom-cartesian-spherical-momenta} и найдем якобиан замены переменных $\lc x, y, z, p_x, p_y, p_z \rc$ $\rightarrow$ $\lc r, p_r, \varphi, p_\varphi, \theta, p_\theta \rc$. Якобиан оказывается единичным 
 \begin{gather}
-    \text{Jac} = \Bigg\vert \frac{\partial \lsq x, y, z, p_x, p_y, p_z \rsq}{\partial \lsq r, p_r, \varphi, p_\varphi, \theta, p_\theta \rsq} \Bigg\vert = \sin \theta.
+    \text{Jac} = \Bigg\vert \frac{\partial \lsq x, y, z, p_x, p_y, p_z \rsq}{\partial \lsq r, p_r, \varphi, p_\varphi, \theta, p_\theta \rsq} \Bigg\vert = 1. 
 \end{gather}
 
 Таким образом, среднее значение \eqref{two-atom-mean} в системе координат II записывается как
 \begin{gather}
-    \mean{f} = \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\varphi \intty dp_\varphi \int\limits_0^\pi \sin \theta d\theta \intty dp_\theta f(r, p_r, \varphi, p_\varphi, \theta, p_\theta) \exp \lb -\frac{\mH_\text{spherical}}{k T} \rb. \label{two-atom-mean-spherical}
+    \mean{f} = \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\varphi \intty dp_\varphi \int\limits_0^\pi d\theta \intty dp_\theta f(r, p_r, \varphi, p_\varphi, \theta, p_\theta) \exp \lb -\frac{\mH_\text{spherical}}{k T} \rb. \label{two-atom-mean-spherical}
 \end{gather}
 
 \section{Распределения координат и импульсов в фазовом пространстве в разных системах координат в условиях канонического ансамбля}
 
+Рассмотрим вопрос распределения координат и импульсов в фазовом пространстве в системах координат II и III в условиях канонического ансамбля. Функция распределения в фазовом пространстве в условиях канонического ансамбля задана гамильтонианом системы $\mH$ \cite{hill} 
+\begin{gather}
+    \rho \lb \mf{q}, \mf{p} \rb = \Gamma_0 \exp \lb -\frac{\mH \lb \mf{q}, \mf{p} \rb}{\kb T} \rb,
+\end{gather}
+% 
+где постоянная $\Gamma_0$ определяется из условия нормировки функции распределения
+\begin{gather}
+    \int \rho \lb \mf{q}, \mf{p} \rb d \mf{q} \, d\mf{p} = 1.
+\end{gather}
+
+Рассмотрим распределения угловых координат $\theta, \varphi$ и импульсов $p_r$, $p_\theta$, $p_\varphi$ системы II при фиксированном большом значении межатомного расстояния $r_\text{fixed} \gg 1$. Пренебрежем значением потенциала $U(r_\text{fixed}) \approx 0$ на расстоянии $r_\text{fixed}$. Удобно представить отношение $\mH / \kb T$ в виде трех независимых квадратичных членов $\lc x_j^2 \rc_{j = 1 \dots 3}$
+\begin{gather}
+    \frac{\mH_\text{spherical}}{\kb T} = \frac{p_r^2}{2 \mu \kb T} + \frac{p_\theta^2}{2 \mu r_\text{fixed}^2 \kb T} + \frac{p_\varphi^2}{2 \mu r_\text{fixed}^2 \kb T \sin^2 \theta} = x_1^2 + x_2^2 + x_3^2, \label{two-atom-spherical-hamiltonian-xs} 
+\end{gather}
+%
+где переменные $x_j$ выражены как
+\begin{gather}
+    \lc
+    \begin{aligned}
+        x_1 &= \frac{p_r}{\sqrt{2 \mu \kb T}} \\
+        x_2 &= \frac{p_\theta}{\sqrt{2 \mu r_\text{fixed}^2 \kb T}} \\
+        x_3 &= \frac{p_\varphi}{\sqrt{2 \mu r_\text{fixed}^2 \kb T \sin^2 \theta}}
+    \end{aligned}
+\right. \label{two-atom-xs}
+\end{gather}
+
+Переписав гамильтониан в виде \eqref{two-atom-spherical-hamiltonian-xs}, мы видим, что вероятность нахождения системы в элементе фазового объема $d\theta d\varphi dx_1 dx_2 dx_3$ пропорциональна произведению 
+\begin{gather}
+    \rho \lb \theta, \varphi, x_1, x_2, x_3 \rb \propto \rho_1(x_1) \rho_1(x_2) \rho_1(x_3) \sin \theta, \label{two-atom-xs-phase-element}
+\end{gather}
+%
+где случайные величины $x_j$ распределены по нормальному закону
+\begin{gather}
+    \rho_1 (x_j) = \frac{1}{\sqrt{2 \pi}} e^{-x_j^2}. 
+\end{gather}
+
+Соотношения \eqref{two-atom-xs} позволяют установить следующие функции распределения для двух импульсов
+\begin{gather}
+    \lc
+    \begin{aligned}
+        p_r &\sim \mN \lb 0, 2 \mu \kb T \rb \\
+        p_\theta &\sim \mN \lb 0, 2 \mu r_\text{fixed}^2 \kb T \rb 
+    \end{aligned},
+    \right.
+\end{gather}
+%
+где через $\mN \lb \mu, \sigma^2 \rb$ обозначено нормальное распределение со математическим ожиданием $\mu$ и дисперсией $\sigma^2$. Импульс $p_\varphi$ представляет собой произведение двух случайных величин
+\begin{gather}
+    p_\varphi = \tilde{x}_3 \cdot \sin \Theta, \label{two-atom-pvarphi-generation}
+\end{gather}
+% 
+где величина $\tilde{x}_3$ распределена по нормальному распределению $\mN \lb 0, 2 \mu \kb T \rb$, а случайная величина $\Theta$ в силу \eqref{two-atom-xs-phase-element} распределена равномерно с косинусом, т.е. плотность распределения по углу $\Theta$ равна 
+\begin{gather}
+    \rho(\Theta) = \frac{1}{2} \sin \Theta.
+\end{gather}
+
+Аналитического выражения в элементарных функциях для плотности распределения $p_\varphi$ получить не удается, однако численная генерация случайной величины с нужным распределением легко осуществляется по выражению \eqref{two-atom-pvarphi-generation}. \par 
+Т.к. угол $\varphi$ не входит в гамильтониан $\mH_\text{spherical}$, то он распределен с равномерной плотностью на отрезке $\lsq 0, 2 \pi \rsq$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{./pictures/two_atom_distributions/pR-crop.pdf} \\
+    \includegraphics[width=0.75\linewidth]{./pictures/two_atom_distributions/pPhi-crop.pdf}
+    \caption{Плотности распределений импульсов $p_r$ и $p_\varphi$ при температурах от 150K до 300K для системы He$-$Ar. Межатомное расстояние $r_\text{fixed}$ взято равным $40 a_0$. Количество сгенерированых точек при каждой температуре -- $N = 5 \cdot 10^7$.}
+\end{figure}
+
+Если переходить теперь к переменным системы координат III, то легко заметить, что плотность распределения импульса $p_r$ совпадает с той, что была получена в системе координат II. Угол $\psi$ не входит в гамильтониан, следовательно распределен с равномерной плотностью. Т.к. якобиан замены декартовых координат и импульсов на координаты и импульсы системы III равен $p_\psi \sin \Theta$ (соотношение, следовательно распределен с равномерной плотностью. Т.к. якобиан замены декартовых координат и импульсов на координаты и импульсы системы III равен $p_\psi \sin \Theta$ (соотношение \eqref{two-atom-planar-jacobian}), то получаем, что плотность распределения импульса $p_\psi$ пропорциональна
+\begin{gather}
+    \rho(p_\psi) \propto p_\psi \exp \lb -\frac{p_\psi^2}{2 \mu r_\text{fixed}^2 \kb T} \rb, \label{two-atom-ppsi-distribution}
+\end{gather}
+где константа пропорциональна устанавливается из условия нормировки, оказывается равной $1/(\mu r_\text{fixed}^2 \kb T)$. Из того же якобиана замечаем, что угол $\Theta$ распределен равномерно с косинусом. \par
+Распределение для импульса $p_\psi$ может быть установлено и из других соображений. Как уже отмечалось, $p_\psi$ имеет физический смысл модуля углового момента $\mf{J}$. Исходя из выражения \eqref{two-atom-angular-momenta-spherical} получаем, что квадрат модуля углового момента $J^2$ связан с импульсами $p_\varphi$, $p_\theta$ соотношением
+\begin{gather}
+    J^2 = p_\psi^2 = p_\theta^2 + \frac{p_\varphi^2}{\sin^2 \theta}. \label{two-atom-angular-momenta-connection} 
+\end{gather}
+Мы уже установили, что слагаемых в правой части \eqref{two-atom-angular-momenta-connection} распределены согласно нормальному распределению. Квадраты нормально распределенных случайных величин распределены согласно хи-квадрат распределению с одной степенью свободы $\chi_1^2$ \cite{castaneda}. А сумма двух одномерных хи-квадрат распределений $\chi_1^2$ дает двумерное хи-квадрат распределение $\chi_2^2$. Наконец, для того, чтобы получить распределение величины $p_\psi$, извлекаем корень из двумерного хи-квадрат распределения $\chi_2^2$ и получаем двумерное хи-распределение $\chi_2$, известное как распределение Рэлея, плотность которого задается  
+\begin{gather}
+    \rho(x; \sigma) = \frac{x}{\sigma^2} \exp \lb -\frac{x^2}{2 \sigma^2} \rb. \label{rayleigh-density}
+\end{gather}
+
+Выражение \eqref{two-atom-ppsi-distribution} является частным случаем \eqref{rayleigh-density} с $\sigma^2 = \mu r_\text{fixed}^2 \kb T$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{./pictures/two_atom_distributions/pPsi-crop.pdf}
+    \caption{Плотности распределений импульса $p_\psi$ при температурах от 150К до 300К для системы He$-$Ar. Межатомное расстояние $r_\text{fixed}$ было взято равным $40a_0$. Количество сгенерированных точек при каждой температуре -- $N = 5 \cdot 10^7$.}
+\end{figure}
 
 \section{Спектральная функция при рассмотрении динамики столкновения в плоскости}
 
