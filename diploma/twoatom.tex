@@ -304,18 +304,18 @@
     \int \rho \lb \mf{q}, \mf{p} \rb d \mf{q} \, d\mf{p} = 1.
 \end{gather}
 
-Рассмотрим распределения угловых координат $\theta, \varphi$ и импульсов $p_r$, $p_\theta$, $p_\varphi$ системы II при фиксированном большом значении межатомного расстояния $r_\text{fixed} \gg 1$. Пренебрежем значением потенциала $U(r_\text{fixed}) \approx 0$ на расстоянии $r_\text{fixed}$. Удобно представить отношение $\mH / \kb T$ в виде трех независимых квадратичных членов $\lc x_j^2 \rc_{j = 1 \dots 3}$
+Рассмотрим распределения угловых координат $\theta, \varphi$ и импульсов $p_r$, $p_\theta$, $p_\varphi$ системы II при фиксированном большом значении межатомного расстояния $r_\text{fixed} \gg 1$. Пренебрежем значением потенциала $U(r_\text{fixed}) \approx 0$ на расстоянии $r_\text{fixed}$. Удобно представить отношение $\mH / \kb T$ в виде трех квадратичных членов $\lc \frac{1}{2} x_j^2 \rc_{j = 1 \dots 3}$
 \begin{gather}
-    \frac{\mH_\text{spherical}}{\kb T} = \frac{p_r^2}{2 \mu \kb T} + \frac{p_\theta^2}{2 \mu r_\text{fixed}^2 \kb T} + \frac{p_\varphi^2}{2 \mu r_\text{fixed}^2 \kb T \sin^2 \theta} = x_1^2 + x_2^2 + x_3^2, \label{two-atom-spherical-hamiltonian-xs} 
+    \frac{\mH_\text{spherical}}{\kb T} = \frac{p_r^2}{2 \mu \kb T} + \frac{p_\theta^2}{2 \mu r_\text{fixed}^2 \kb T} + \frac{p_\varphi^2}{2 \mu r_\text{fixed}^2 \kb T \sin^2 \theta} = \frac{1}{2} x_1^2 + \frac{1}{2} x_2^2 + \frac{1}{2} x_3^2, \label{two-atom-spherical-hamiltonian-xs} 
 \end{gather}
 %
 где переменные $x_j$ выражены как
 \begin{gather}
     \lc
     \begin{aligned}
-        x_1 &= \frac{p_r}{\sqrt{2 \mu \kb T}} \\
-        x_2 &= \frac{p_\theta}{\sqrt{2 \mu r_\text{fixed}^2 \kb T}} \\
-        x_3 &= \frac{p_\varphi}{\sqrt{2 \mu r_\text{fixed}^2 \kb T \sin^2 \theta}}
+        x_1 &= \frac{p_r}{\sqrt{\mu \kb T}} \\
+        x_2 &= \frac{p_\theta}{\sqrt{\mu r_\text{fixed}^2 \kb T}} \\
+        x_3 &= \frac{p_\varphi}{\sqrt{\mu r_\text{fixed}^2 \kb T \sin^2 \theta}}
     \end{aligned}
 \right. \label{two-atom-xs}
 \end{gather}
@@ -327,15 +327,15 @@
 %
 где случайные величины $x_j$ распределены по нормальному закону
 \begin{gather}
-    \rho_1 (x_j) = \frac{1}{\sqrt{2 \pi}} e^{-x_j^2}. 
+    \rho_1 (x_j) = \frac{1}{\sqrt{2 \pi}} \exp \lb -\frac{x_j^2}{2} \rb. 
 \end{gather}
 
 Соотношения \eqref{two-atom-xs} позволяют установить следующие функции распределения для двух импульсов
 \begin{gather}
     \lc
     \begin{aligned}
-        p_r &\sim \mN \lb 0, 2 \mu \kb T \rb \\
-        p_\theta &\sim \mN \lb 0, 2 \mu r_\text{fixed}^2 \kb T \rb 
+        p_r &\sim \mN \lb 0, \mu \kb T \rb \\
+        p_\theta &\sim \mN \lb 0, \mu r_\text{fixed}^2 \kb T \rb 
     \end{aligned},
     \right.
 \end{gather}
@@ -345,12 +345,39 @@
     p_\varphi = \tilde{x}_3 \cdot \sin \Theta, \label{two-atom-pvarphi-generation}
 \end{gather}
 % 
-где величина $\tilde{x}_3$ распределена по нормальному распределению $\mN \lb 0, 2 \mu \kb T \rb$, а случайная величина $\Theta$ в силу \eqref{two-atom-xs-phase-element} распределена равномерно с косинусом, т.е. плотность распределения по углу $\Theta$ равна 
+где величина $\tilde{x}_3$ распределена по нормальному распределению $\mN \lb 0, \mu \kb T \rb$, а случайная величина $\Theta$ в силу \eqref{two-atom-xs-phase-element} распределена равномерно с косинусом, т.е. плотность распределения по углу $\Theta$ равна 
 \begin{gather}
     \rho(\Theta) = \frac{1}{2} \sin \Theta.
 \end{gather}
 
-Аналитического выражения в элементарных функциях для плотности распределения $p_\varphi$ получить не удается, однако численная генерация случайной величины с нужным распределением легко осуществляется по выражению \eqref{two-atom-pvarphi-generation}. \par 
+Численная генерация $p_\varphi$ легко осуществляется по выражению \eqref{two-atom-pvarphi-generation}, однако интересно получить аналитическое выражение для плотности распределения, так как похожие распределения возникают при рассмотрении импульсов в многоатомных ван-дер-Ваальсовых комплексах. Получим плотность распределение случайной величины $\sin \Theta$, используя факт, что имеет $\cos \Theta$  равномерное распределение. Очевидно, что на интервале $\lsq 0, \pi \rsq$ знак $\sin \Theta$ определен однозначно, поэтому воспользуемся формулой
+\begin{gather}
+    \sin \Theta = \sqrt{ 1 - \cos^2 \Theta}.
+\end{gather}
+Воспользуемся формулой преобразования случайной величины $Y = g(X)$
+\begin{gather}
+    \rho_Y(y) = \Big\vert \frac{d}{dy} g^{-1}(y) \Big\vert \cdot \rho_X(g^{-1}(y)), \label{distribution-change}
+\end{gather}
+%
+где через $\rho_X(x)$, $\rho_Y(y)$ обозначены плотности случайных величин $X$, $Y$, соответственно. Подставив $g(x) = \sqrt{1 - x^2}$ в \eqref{distribution-change}, получаем следующую плотность распределения величины $\sin \Theta$
+\begin{gather}
+    \rho_{\sin \Theta}(x) = \frac{x}{\sqrt{1 - x^2}} \cdot \bbI\lsq 0, 1\rsq,
+\end{gather}
+% 
+где через $\bbI\lsq 0, 1 \rsq$ обозначена индикаторная функция, ограничивающая носитель функции отрезком $\lsq 0, 1 \rsq$. Отметим, что полученное распределение является частным случаем распределения Кумарасвами с параметрами $a = 2$, $b = 1/2$. \par
+Плотность распределения $\rho_{p_\varphi}$ может быть получена по стандартной формуле плотности случайной величины, являющейся произведением двух других случайных величин
+\begin{gather}
+    \rho_{p_\varphi}(z) = \intty \rho_{x_3}(z/x) \rho_{\sin \Theta}(x) \frac{dx}{\vert x \vert}.
+\end{gather}
+Подставив явные выражения для плотностей распределения, получаем следующий интеграл
+\begin{gather}
+    \rho_{p_\varphi}(z) = \frac{1}{\sqrt{2 \pi}} \int\limits_0^1 \frac{\displaystyle \exp \lb -\frac{z^2}{2x^2} \rb}{\sqrt{1 - x^2}} dx,
+\end{gather}
+%
+разрешив который приходим к
+\begin{gather}
+    \rho_{p_\varphi}(z) = \frac{\pi}{8} \lb 1 - \text{sgn}(z) \erf \lb \frac{z}{\sqrt{2}} \rb \rb.
+\end{gather}
 Т.к. угол $\varphi$ не входит в гамильтониан $\mH_\text{spherical}$, то он распределен с равномерной плотностью на отрезке $\lsq 0, 2 \pi \rsq$.
 
 \begin{figure}[H]
