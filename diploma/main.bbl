@@ -81,4 +81,57 @@ Selvamuthu~Dharmaraja(auth.) Liliana Blanco~Castaneda, Viswanathan~Arunachalam.
   Applications}.
 \newblock 2012.
 
+\bibitem{bosomworth1965_part1}
+DR~Bosomworth and HP~Gush.
+\newblock Collision-induced absorption of compressed gases in the far infrared,
+  part i.
+\newblock {\em Canadian Journal of Physics}, 43(5):729--750, 1965.
+
+\bibitem{bosomworth1965_part2}
+DR~Bosomworth and HP~Gush.
+\newblock Collision-induced absorption of compressed gases in the far infrared,
+  part ii.
+\newblock {\em Canadian Journal of Physics}, 43(5):751--769, 1965.
+
+\bibitem{kiss1959}
+ZJ~Kiss and HL~Welsh.
+\newblock Pressure-induced infrared absorption of mixtures of rare gases.
+\newblock {\em Physical Review Letters}, 2(4):166, 1959.
+
+\bibitem{levine1967}
+Howard~B Levine and George Birnbaum.
+\newblock Classical theory of collision-induced absorption in rare-gas
+  mixtures.
+\newblock {\em Physical Review}, 154(1):86, 1967.
+
+\bibitem{mcquarrie1968}
+DA~McQuarrie and RB~Bernstein.
+\newblock Calculated collision-induced absorption spectrum for he--ar.
+\newblock {\em The Journal of Chemical Physics}, 49(4):1958--1963, 1968.
+
+\bibitem{sharma1975}
+Ramesh~D Sharma and Robert~R Hart.
+\newblock Collision-induced absorption in he-ar mixture.
+\newblock {\em Physical Review A}, 12(1):85, 1975.
+
+\bibitem{meyer1986}
+Wilfried Meyer and Lothar Frommhold.
+\newblock Ab initio calculation of the dipole moment of he-ar and the
+  collision-induced absorption spectra.
+\newblock {\em Physical Review A}, 33(6):3807, 1986.
+
+\bibitem{giece2003}
+Timothy~J. Giese, Vanessa~M. Audette, and Darrin~M. York.
+\newblock Examination of the correlation energy and second virial coefficients
+  from accurate ab initio calculations of rare-gas dimers.
+\newblock {\em The Journal of Chemical Physics}, 119(5):2618--2622, 2003.
+
+\bibitem{lopez2004}
+Javier L{\'o}pez~Cacheiro, Berta Fern{\'a}ndez, Domenico Marchesan, Sonia
+  Coriani, Christof H{\"a}ttig, and Antonio Rizzo.
+\newblock Coupled cluster calculations of the ground state potential and
+  interaction induced electric properties of the mixed dimers of helium, neon
+  and argon.
+\newblock {\em Molecular Physics}, 102(1):101--110, 2004.
+
 \end{thebibliography}
