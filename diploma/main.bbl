@@ -120,18 +120,43 @@ Wilfried Meyer and Lothar Frommhold.
   collision-induced absorption spectra.
 \newblock {\em Physical Review A}, 33(6):3807, 1986.
 
+\bibitem{cybulski1999}
+S{\l}awomir~M Cybulski and Rafa{\l}~R Toczy{\l}owski.
+\newblock Ground state potential energy curves for he 2, ne 2, ar 2, he--ne,
+  he--ar, and ne--ar: a coupled-cluster study.
+\newblock {\em The Journal of Chemical Physics}, 111(23):10520--10528, 1999.
+
 \bibitem{giece2003}
 Timothy~J. Giese, Vanessa~M. Audette, and Darrin~M. York.
 \newblock Examination of the correlation energy and second virial coefficients
   from accurate ab initio calculations of rare-gas dimers.
 \newblock {\em The Journal of Chemical Physics}, 119(5):2618--2622, 2003.
 
-\bibitem{lopez2004}
+\bibitem{fernandez2004}
 Javier L{\'o}pez~Cacheiro, Berta Fern{\'a}ndez, Domenico Marchesan, Sonia
   Coriani, Christof H{\"a}ttig, and Antonio Rizzo.
 \newblock Coupled cluster calculations of the ground state potential and
   interaction induced electric properties of the mixed dimers of helium, neon
   and argon.
 \newblock {\em Molecular Physics}, 102(1):101--110, 2004.
+
+\bibitem{buryak2014}
+Ilya Buryak, Lothar Frommhold, and Andrey~A Vigasin.
+\newblock Far-infrared collision-induced absorption in rare gas mixtures:
+  Quantum and semi-classical calculations.
+\newblock {\em The Journal of Chemical Physics}, 140(15):154302, 2014.
+
+\bibitem{sobol}
+Соболь И.М.
+\newblock {\em Численные методы Монте-Карло}.
+\newblock Наука, 1973.
+
+\bibitem{sundials}
+Alan~C Hindmarsh, Peter~N Brown, Keith~E Grant, Steven~L Lee, Radu Serban,
+  Dan~E Shumaker, and Carol~S Woodward.
+\newblock {SUNDIALS}: Suite of nonlinear and differential/algebraic equation
+  solvers.
+\newblock {\em ACM Transactions on Mathematical Software (TOMS)},
+  31(3):363--396, 2005.
 
 \end{thebibliography}
