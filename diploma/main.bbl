@@ -98,6 +98,23 @@ ZJ~Kiss and HL~Welsh.
 \newblock Pressure-induced infrared absorption of mixtures of rare gases.
 \newblock {\em Physical Review Letters}, 2(4):166, 1959.
 
+\bibitem{bukhtoyarova1977}
+VI~Bukhtoyarova and MV~Tonkov.
+\newblock Intermolecular interactions in compressed gases from translation
+  absorption spectra. 1: Spectral moments of translation bands.
+\newblock {\em Optics and Spectroscopy}, 43:27--30, 1977.
+
+\bibitem{bukhtoyarova1977_2}
+VJ~Bukhtoyarova and MV~Tonkov.
+\newblock Intermolecular interactions in compressed gases using translation
+  absorption spectra. 2: Temperature dependence of intensity.
+\newblock {\em Optics and Spectroscopy}, 43:133--135, 1977.
+
+\bibitem{ryzhov1974}
+VA~Ryzhov and MV~Tonkov.
+\newblock Translation absorption in spectra of noble-gases.
+\newblock {\em OPTIKA I SPEKTROSKOPIYA}, 37(6):1058--1064, 1974.
+
 \bibitem{levine1967}
 Howard~B Levine and George Birnbaum.
 \newblock Classical theory of collision-induced absorption in rare-gas
@@ -158,5 +175,26 @@ Alan~C Hindmarsh, Peter~N Brown, Keith~E Grant, Steven~L Lee, Radu Serban,
   solvers.
 \newblock {\em ACM Transactions on Mathematical Software (TOMS)},
   31(3):363--396, 2005.
+
+\bibitem{mpi}
+William Gropp.
+\newblock Mpich2: A new start for mpi implementations.
+\newblock pages 7--7, 2002.
+
+\bibitem{borysow1985phenomena}
+J~Borysow, L~Frommhold, and G~Birnbaum.
+\newblock {\em Phenomena Induced by Intermolecular Interactions}.
+\newblock Plenum, New York, 1985.
+
+\bibitem{borysow1985}
+Jacek Borysow, Massimo Moraldi, and Lothar Frommhold.
+\newblock The collision induced spectroscopies: Concerning the desymmetrization
+  of classical line shape.
+\newblock {\em Molecular Physics}, 56(4):913--922, 1985.
+
+\bibitem{egelstaff1962}
+PA~Egelstaff and P~Schofield.
+\newblock On the evaluation of the thermal neutron scattering law.
+\newblock {\em Nuclear Science and Engineering}, 12(2):260--270, 1962.
 
 \end{thebibliography}
