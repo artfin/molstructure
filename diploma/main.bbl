@@ -197,4 +197,26 @@ PA~Egelstaff and P~Schofield.
 \newblock On the evaluation of the thermal neutron scattering law.
 \newblock {\em Nuclear Science and Engineering}, 12(2):260--270, 1962.
 
+\bibitem{littlejohn1995}
+Robert~G Littlejohn and Matthias Reinsch.
+\newblock Internal or shape coordinates in the n-body problem.
+\newblock {\em Physical Review A}, 52(3):2035, 1995.
+
+\bibitem{petrov2015}
+SV~Petrov and SE~Lokshtanov.
+\newblock Trajectory analysis of the rotational dynamics of molecules.
+\newblock {\em Journal of Experimental and Theoretical Physics},
+  121(2):186--193, 2015.
+
+\bibitem{gantmaher}
+Ф.Р. Гантмахер.
+\newblock {\em Теория матриц}.
+\newblock Физматлит, 2004.
+
+\bibitem{tennyson1986}
+Jonathan Tennyson.
+\newblock The calculation of the vibration-rotation energies of triatomic
+  molecules using scattering coordinates.
+\newblock {\em Computer Physics Reports}, 4(1):1--36, 1986.
+
 \end{thebibliography}
