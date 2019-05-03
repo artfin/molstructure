@@ -219,4 +219,9 @@ Jonathan Tennyson.
   molecules using scattering coordinates.
 \newblock {\em Computer Physics Reports}, 4(1):1--36, 1986.
 
+\bibitem{matrixcookbook}
+Petersen K.B. and Pedersen M.S.
+\newblock {\em The matrix cookbook}.
+\newblock Tenchical University of Denmark, 2008.
+
 \end{thebibliography}

@@ -281,7 +281,7 @@
 
 Как уже было сказано, выражения для блоков матрицы $\bbG$ в этом случае получаются слишком громоздкими для работы, поэтому не приводятся. Для реализации траекторного расчета нет необходимости получать аналитические выражения для этих матриц. 
 
-\section{Уравнения вращательной динамики}
+\section{Уравнения вращательной динамики} \label{section:rotational-dynamics}
 
 В отсутствии внешних сил угловой момент $\mf{j}$ в лабораторной системе координат является векторным интегралом движения. Компоненты вектора углового момента в подвижной системе отсчета связаны с компонентами в лабораторной системе матрицей $\bbS^{-1}$
 \begin{gather}
@@ -428,11 +428,61 @@
 \end{gather}
 
 Для того, чтобы построить вычислительную процедуру для численного интегрирования уравнений \eqref{hamilton-equations1} мы должны получить выражения, по которым можно осуществлять расчет правых частей в произвольной точке фазового пространства $\lb \mf{q}_0, \mf{p}_0, \mf{J}_0 \rb$. Заметим, что формулы Фробениуса \eqref{polyatom-frobenius}, представляющие сложность при получении аналитических выражений для блоков матрицы $\bbG$, оказываются очень удобными, если матрицы $\bba$, $\bbA$, $\bbI$ оказываются числовыми матрицами. Для систем линейная молекула$-$атом и пара линейных молекул выражения для матриц лагранжевой кинетической энергии оказываются в достаточной степени простыми, и их вывод может быть в существенной степени автоматизирован при помощи системы компьютерной алгебры. Числовые значения компонент этих матриц определяются лишь значениями обобщенных координат $\mf{q}_0$. Вычислив по полученным выражениям численные значения компонент матрицы $\bba(\mf{q}_0)$, $\bbA(\mf{q}_0)$, $\bbI(\mf{q}_0)$, получаем значения матриц $\bbG_{11}(\mf{q}_0)$, $\bbG_{12}(\mf{q}_0)$, $\bbG_{22}(\mf{q}_0)$ по формулам Фробениуса. Таким образом, вычисление вектора производных $\partial H / \partial \mf{p}$ в произвольной точке не представляет сложности. \par
-Рассмотрим вопрос дифференцирования блоков матрицы $\bbG$ по обобщенным координатам. Пусть $\bbM(\mf{q})$ -- дифференцируемая, обратимая матричная функция векторного аргумента $\mf{q}$. Производная обратной матрицы $\bbM^{-1}(\mf{q})$ по векторной переменной $\mf{q}$ связана с производной $\bbM^\prime(\mf{q})$ следующим соотношением
+Рассмотрим вопрос дифференцирования блоков матрицы $\bbG$ по обобщенным координатам. Пусть $\bbM(\mf{q})$ -- дифференцируемая, обратимая матричная функция векторного аргумента $\mf{q}$. Производная обратной матрицы $\bbM^{-1}(\mf{q})$ по векторной переменной $\mf{q}$ связана с производной $\bbM^\prime(\mf{q})$ следующим соотношением \cite{matrixcookbook}
 \begin{gather}
-\frac{\partial}{\partial \mf{q}} \bbM^{-1}(\mf{q}) = - \bbM^{-1}(\mf{q}) \bbM^\prime(\mf{q}) \bbM^{-1}(\mf{q}).
+    \frac{\partial}{\partial \mf{q}} \bbM^{-1}(\mf{q}) = - \bbM^{-1}(\mf{q}) \bbM^\prime(\mf{q}) \bbM^{-1}(\mf{q}).
 \end{gather}
 
+Применим это соотношения для дифференцирования матрицы $\bbG_{11}(\mf{q})$ по вектору обобщенных координат $\mf{q}$
+\begin{gather}
+    \frac{\partial}{\partial \mf{q}} \bbG_{11} = \frac{\partial}{\partial \mf{q}} \lsq \lb \bbI - \bbA \bba^{-1} \bbA^+ \rb^{-1} \rsq = -\bbG_{11} \lsq \frac{\partial}{\partial \mf{q}} \lb \bbI - \bbA \bba^{-1} \bbA^+ \rb \rsq \bbG_{11} = \notag \\
+    = -\bbG_{11} \lsq \frac{\partial \bbI}{\partial \mf{q}} - \frac{\partial \bbA}{\partial \mf{q}} \bba^{-1} \bbA^+ + \bbA \bba^{-1} \frac{\partial \bba}{\partial \mf{q}} \bba^{-1} \bbA^+ - \bbA \bba^{-1} \frac{\partial \bbA^+}{\partial \mf{q}} \rsq \bbG_{11}. \label{polyatom-g11-derivative}
+\end{gather}
+Аналогично, несложно получить выражения производных матриц $\bbG_{22}(\mf{q})$ и $\bbG_{12}(\mf{q})$:
+\begin{gather}
+    \frac{\partial}{\partial \mf{q}} \bbG_{22} = -\bbG_{22} \left[ \frac{\partial \bba}{\partial \mf{q}} - \frac{\partial \bbA^\top}{\partial \mf{q}} \bbI^{-1} \bbA + \bbA^\top \bbI^{-1} \frac{\partial \, \bbI}{\partial \mf{q}} \bbI^{-1} \bbA - \bbA^\top \bbI^{-1} \frac{\partial \bbA}{\partial \mf{q}} \right] \bbG_{22}, \label{polyatom-g22-derivative} \\
+	\frac{\partial}{\partial \mf{q}} \bbG_{12} = - \left [ \frac{\partial}{\partial \mf{q}} \bbG_{11} \right] \bbA \bba^{-1} - \bbG_{11} \frac{\partial \bbA}{\partial \mf{q}} \bba^{-1} + \bbG_{11} \bbA \bba^{-1} \frac{\partial \bba}{\partial \mf{q}} \bba^{-1} = \notag \\
+    = \bbG_{22} \left[ \frac{\partial \bba}{\partial \mf{q}} - \frac{\partial \bbA^\top}{\partial \mf{q}} \bbI^{-1} \bbA + \bbA^\top \bbI^{-1} \frac{\partial \, \bbI}{\partial \mf{q}} \bbI^{-1} \bbA - \bbA^\top \bbI^{-1} \frac{\partial \bbA}{\partial \mf{q}} \right] \bbG_{22} \bbA \bba^{-1} - \bbG_{11} \frac{\partial \bbA}{\partial \mf{q}} \bba^{-1} + \bbG_{11} \bbA \bba^{-1} \frac{\partial \bba}{\partial \mf{q}} \bba^{-1}. \label{polyatom-g12-derivative} 
+\end{gather}
+
+Таким образом, получив аналитические выражения для матриц $\bba$, $\bbA$, $\bbI$ и их производных по координатам $\mf{q}$, соотношения \eqref{polyatom-g11-derivative}, \eqref{polyatom-g22-derivative}, \eqref{polyatom-g12-derivative} позволяют вычислять производные блоков матрицы $\bbG$. Эти вычисления, разумеется, следует проводить уже с численными матрицами, т.к. аналитические выражения получаются слишком громоздкими для манипулирования. \par
+Итак, мы описали схему вычисления правых частей уравнений \eqref{hamilton-equations1} на основе матриц, определяющих кинетическую энергию в Лагранжевой форме и их производных. Дополним уравнения \eqref{hamilton-equations1} уравнениями вращательной динамики, рассмотренными в параграфе \ref{section:rotational-dynamics}, и рассмотрим выглядят правые части этих уравнений с колебательно-вращательным гамильтонианом вида \eqref{general-rovibrational-hamiltonian}.
+
+\begin{subsection}{Уравнения в углах Эйлера и сопряженных импульсах}
+Полная система уравнений в углах Эйлера и сопряженных импульсах состоит из 4 векторных уравнений
+\begin{gather}
+    \begin{aligned}
+        &\dot{\mf{q}} = \frac{\partial H}{\partial \mf{p}}, \\
+        &\dot{\mf{p}} = -\frac{\partial H}{\partial \mf{q}}, \\
+        &\dot{\boldsymbol{\Upsilon}}_e = \frac{\partial H}{\partial \pe}, \\
+        &\dot{\mf{p}}_e = - \frac{\partial H}{\partial \bUpsilon},
+    \end{aligned} \label{full-system-euler}
+\end{gather}
+%
+в которых гамильтониан используется в следующей форме
+\begin{gather}
+    H = \frac{1}{2} \mf{p}^+ \bbG_{22} \mf{p} + \mf{p}^+_e \bbW^+ \bbG_{12} \mf{p} + \frac{1}{2} \mf{p}^+_e \bbW^+ \bbG_{11} \bbW \pe + U(\mf{q}). \label{general-rovibrational-hamiltonian-euler}
+\end{gather}
+
+Отдельно рассмотрим только последнее уравнение системы \eqref{full-system-euler}, т.к. остальные легко получаются применяя правила векторного анализа. 
+\begin{gather}
+    \frac{\partial H}{\partial \bUpsilon} = \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \bbG_{12} \mf{p} + \frac{1}{2} \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \bbG_{11} \bbW \pe + \frac{1}{2} \mf{p}_e^+ \bbW^+ \bbG_{11} \frac{\partial \bbW}{\partial \bUpsilon} \pe \label{polyatom-temp5} 
+\end{gather}
+
+Заметим, что если рассмотреть выражение \eqref{polyatom-temp5} покомпонентно, то второе и третье слагамое переходят друг в друга при транспонировании, следовательно, они равны. Осуществив алгебраические преобразования, приходим к следующему выражению: 
+\begin{gather}
+    \frac{\partial H}{\partial \bUpsilon} = \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \lb \bbG_{12} \mf{p} + \bbG_{11} \bbW \pe \rb = \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \bbV \frac{\partial H}{\partial \pe}.
+\end{gather}
+
+Конечная форма полного набора динамических уравнений в углах Эйлера выглядит следующим образом
+\begin{gather}
+    \begin{aligned}
+        &\dot{\mf{q}} = \bbG_{22} \mf{p} + \bbG_{12}^+ \bbW \pe, \\
+        &\dot{\mf{p}} = -\frac{1}{2} \mf{p}^+ \frac{\partial \bbG_{22}}{\partial \mf{q}} \mf{p} - \mf{p}_e^+ \bbW^+ \frac{\partial \bbG_{12}}{\partial \mf{q}} \mf{p} - \frac{1}{2} \mf{p}_e^+ \bbW^+ \frac{\partial \bbG_{11}}{\partial \mf{q}} \bbW \pe - \frac{\partial U}{\partial \mf{q}}, \\
+        &\dot{\boldsymbol{\Upsilon}}_e = \bbW^+ \bbG_{11} \bbW \pe + \bbW^+ \bbG_{12} \mf{p}, \\
+        &\dot{\mf{p}}_e = - \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \bbV \frac{\partial H}{\partial \pe}.
+    \end{aligned}
+\end{gather}
 
 \begin{subappendices}
     \section{Вектор углового момента в подвижной системе отсчета} \label{appendix:angular-momentum-body-fixed}
