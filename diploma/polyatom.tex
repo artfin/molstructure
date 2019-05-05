@@ -1,4 +1,4 @@
-\section{Колебательно-вращательные гамильтонианы в молекулярной системе координат}
+\section{Колебательно-вращательный гамильтониан в молекулярной системе координат}
 
 При выводе молекулярного гамильтониана полиатомной системы часто предполагается, что амплитуда колебаний мала. Гамильтониан, полученный Вильсоном и Говардом, для системы с колебаниями малой амплитуды широко используется и часто служит базисом для дальнейших уточнений. \par
 Однако колебания большой амплитуды, проявляющиеся в в слабосвязанных комплексах не могут быть описаны при помощи того же подхода. Для описания колебаний большой амплитуды часто используются координаты Якоби, координаты Радау, гиперсферические координаты и др. \par 
@@ -281,7 +281,7 @@
 
 Как уже было сказано, выражения для блоков матрицы $\bbG$ в этом случае получаются слишком громоздкими для работы, поэтому не приводятся. Для реализации траекторного расчета нет необходимости получать аналитические выражения для этих матриц. 
 
-\section{Уравнения вращательной динамики} \label{section:rotational-dynamics}
+\section{Уравнения относительного вращения молекулярной системы отсчета} \label{section:rotational-dynamics}
 
 В отсутствии внешних сил угловой момент $\mf{j}$ в лабораторной системе координат является векторным интегралом движения. Компоненты вектора углового момента в подвижной системе отсчета связаны с компонентами в лабораторной системе матрицей $\bbS^{-1}$
 \begin{gather}
@@ -404,14 +404,14 @@
 
 Следовательно, вектор углового момента связан с вектором эйлеровых импульсов $\pe$ соотношением
 \begin{gather}
-    \mf{J} = \bbW \pe,
+    \mf{J} = \bbW \pe, \label{polyatom-angular-momentum-euler-momenta}
 \end{gather}
 %
 где через $\bbW$ обозначена матрица $\lb \bbV^{+} \rb^{-1}$. Выражения для компонент матрицы $\bbV$ приведены в формуле \eqref{polyatom-matrixV}. Заметим, что эйлеров угол $\Phi$ не содержится в выражениях для компонент матрицы $\bbV$, следовательно, матрица $\bbW$ также не зависит от угла $\Phi$. Таким образом, угол $\Phi$ не содержится в общем колебательно-вращательном гамильтониане \eqref{general-rovibrational-hamiltonian}, откуда следует, что сопряженный импульс $p_\Phi$ является интегралом движения. \par
 
 \section{Полные системы динамических уравнений и обращение классических траекторий}
 
-В предыдущем параграфе мы рассматривали вопрос общего вида уравнений, описывающих вращательное поведение системы. Для получения полной системы динамических уравнений эти уравнения должны быть дополнены гамильтоновыми уравнениями по переменным $\mf{q}$ и $\mf{p}$
+В предыдущем параграфе мы рассматривали вопрос общего вида уравнений, описывающих вращение молекулярной системы отсчета. Для получения полной системы динамических уравнений эти уравнения должны быть дополнены гамильтоновыми уравнениями по переменным $\mf{q}$ и $\mf{p}$
 \begin{gather}
     \begin{aligned}
         \dot{\mf{q}} &= \frac{\partial H}{\partial \mf{p}}, \\
@@ -419,7 +419,7 @@
     \end{aligned} \label{hamilton-equations}
 \end{gather}
 
-Рассмотрим структуру гамильтоновых уравнений \eqref{hamilton-equations} с Гамильтонианом в форме \eqref{general-rovibrational-hamiltonian}. Отметим, что блоки матрицы $\bbG$ являются функциями обобщенных координат $\mf{q}$:
+Рассмотрим структуру гамильтоновых уравнений \eqref{hamilton-equations} с гамильтонианом в форме \eqref{general-rovibrational-hamiltonian}. Отметим, что блоки матрицы $\bbG$ являются функциями обобщенных координат $\mf{q}$:
 \begin{gather}
     \begin{aligned}
         \frac{\partial H}{\partial \mf{p}} &= \bbG_{22} \mf{p} + \bbG_{12}^{+} \mf{J}, \\
@@ -446,10 +446,11 @@
 \end{gather}
 
 Таким образом, получив аналитические выражения для матриц $\bba$, $\bbA$, $\bbI$ и их производных по координатам $\mf{q}$, соотношения \eqref{polyatom-g11-derivative}, \eqref{polyatom-g22-derivative}, \eqref{polyatom-g12-derivative} позволяют вычислять производные блоков матрицы $\bbG$. Эти вычисления, разумеется, следует проводить уже с численными матрицами, т.к. аналитические выражения получаются слишком громоздкими для манипулирования. \par
-Итак, мы описали схему вычисления правых частей уравнений \eqref{hamilton-equations1} на основе матриц, определяющих кинетическую энергию в Лагранжевой форме и их производных. Дополним уравнения \eqref{hamilton-equations1} уравнениями вращательной динамики, рассмотренными в параграфе \ref{section:rotational-dynamics}, и рассмотрим выглядят правые части этих уравнений с колебательно-вращательным гамильтонианом вида \eqref{general-rovibrational-hamiltonian}.
+Итак, мы описали схему вычисления правых частей уравнений \eqref{hamilton-equations1} на основе матриц, определяющих кинетическую энергию в Лагранжевой форме и их производных. Дополним уравнения \eqref{hamilton-equations1} уравнениями вращательной динамики, рассмотренными в параграфе \ref{section:rotational-dynamics}, и рассмотрим вид правых частей этих уравнений с колебательно-вращательным гамильтонианом вида \eqref{general-rovibrational-hamiltonian}. \par
+Обращение классической траектории является одним из способов проверки ее качества, поэтому рассмотрим для каждой из систем уравнений преобразование координат, эффективно приводящее к инверсии времени.
 
-\begin{subsection}{Уравнения в углах Эйлера и сопряженных импульсах}
-Полная система уравнений в углах Эйлера и сопряженных импульсах состоит из 4 векторных уравнений
+\begin{subsection}{Полная система динамических уравнений с углами Эйлера и сопряженными импульсами}
+    Полная система уравнений с углами Эйлера и сопряженными импульсах состоит из $2s + 5$ уравнений (с учетом интеграла движения $p_\Phi$), где $s$ -- количество обобщенных координат $\mf{q}$:
 \begin{gather}
     \begin{aligned}
         &\dot{\mf{q}} = \frac{\partial H}{\partial \mf{p}}, \\
@@ -464,7 +465,7 @@
     H = \frac{1}{2} \mf{p}^+ \bbG_{22} \mf{p} + \mf{p}^+_e \bbW^+ \bbG_{12} \mf{p} + \frac{1}{2} \mf{p}^+_e \bbW^+ \bbG_{11} \bbW \pe + U(\mf{q}). \label{general-rovibrational-hamiltonian-euler}
 \end{gather}
 
-Отдельно рассмотрим только последнее уравнение системы \eqref{full-system-euler}, т.к. остальные легко получаются применяя правила векторного анализа. 
+Отдельно рассмотрим только последнее уравнение системы \eqref{full-system-euler}, т.к. остальные легко получаются c применением векторного анализа. 
 \begin{gather}
     \frac{\partial H}{\partial \bUpsilon} = \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \bbG_{12} \mf{p} + \frac{1}{2} \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \bbG_{11} \bbW \pe + \frac{1}{2} \mf{p}_e^+ \bbW^+ \bbG_{11} \frac{\partial \bbW}{\partial \bUpsilon} \pe \label{polyatom-temp5} 
 \end{gather}
@@ -480,9 +481,107 @@
         &\dot{\mf{q}} = \bbG_{22} \mf{p} + \bbG_{12}^+ \bbW \pe, \\
         &\dot{\mf{p}} = -\frac{1}{2} \mf{p}^+ \frac{\partial \bbG_{22}}{\partial \mf{q}} \mf{p} - \mf{p}_e^+ \bbW^+ \frac{\partial \bbG_{12}}{\partial \mf{q}} \mf{p} - \frac{1}{2} \mf{p}_e^+ \bbW^+ \frac{\partial \bbG_{11}}{\partial \mf{q}} \bbW \pe - \frac{\partial U}{\partial \mf{q}}, \\
         &\dot{\boldsymbol{\Upsilon}}_e = \bbW^+ \bbG_{11} \bbW \pe + \bbW^+ \bbG_{12} \mf{p}, \\
-        &\dot{\mf{p}}_e = - \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \bbV \frac{\partial H}{\partial \pe}.
+        &\dot{\mf{p}}_e = - \mf{p}_e^+ \frac{\partial \bbW^+}{\partial \bUpsilon} \lb \bbG_{12} \mf{p} + \bbG_{11} \bbW \pe \rb,
+    \end{aligned} \label{polyatom-euler-system}
+\end{gather}
+%
+где тензор третьего ранга $\partial \bbW^+ / \partial \bUpsilon$ может быть рассмотрен как вектор матриц c компонентами
+\begin{gather}
+	\frac{\partial \bbW}{\partial \varphi} = 0, \quad 
+	\frac{\partial \bbW}{\partial \theta} = 
+	\begin{bdmatrix}
+		-\frac{\cos \theta \sin \psi}{\sin^2 \theta} & 0 & \frac{\sin \psi}{\sin^2 \theta} \\
+		- \frac{\cos \theta \cos \psi}{\sin^2 \theta} & 0 & \frac{\cos \psi}{\sin^2 \theta} \\
+		0 & 0 & 0
+	\end{bdmatrix}, \quad 
+	\frac{\partial \bbW}{\partial \psi} = 
+	\begin{bdmatrix}
+		\frac{\cos \psi}{\sin \theta} & - \sin \psi & -\frac{\cos \theta \cos \psi}{\sin \theta} \\
+		- \frac{\sin \psi}{\sin \theta} & - \cos \psi & \frac{\cos \theta \sin \psi}{\sin \theta} \\
+		0 & 0 & 0
+	\end{bdmatrix}.
+\end{gather}
+
+Для обращения классической траектории в канонических переменных следует обратить знаки всех импульсов:
+\begin{gather}
+    \lb \mf{q}, \mf{p}, \bUpsilon, \pe \rb \rightarrow \lb \mf{q}, -\mf{p}, \bUpsilon, -\pe \rb.
+\end{gather}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{./pictures/trajectories/euler_trajectory-crop.pdf}
+\caption{Зависимости $R(t)$ для прямой (сплошная линия) и обратной (точечная линия) образования метастабильного комплекса N$_2-$N$_2$, полученные при решении полной системы динамических уравнений с углами и импульсами Эйлера \eqref{polyatom-euler-system}. Сверху отражено изменение энергии вдоль прямой траектории со шкалой справа.}
+    \label{fig:euler-trajectory}
+\end{figure}
+
+\begin{subsection}{Полная система динамических уравнений с компонентами углового момента}
+    Полная система динамических уравнений с компонентами углового момента содержит два уравнения Гамильтона относительно $\mf{q}$ и $\mf{p}$, дополненных обобщенным уравнением Эйлера, что в итоге приводит к системе из $2s + 3$ уравнений
+\begin{gather}
+    \begin{aligned}
+        &\dot{\mf{q}} = \frac{\partial H}{\partial \mf{p}}, \\
+        &\dot{\mf{p}} = -\frac{\partial H}{\partial \mf{q}}, \\
+        &\dot{\mf{J}} + \Big[ \frac{\partial H}{\partial \mf{J}} \times \mf{J} \Big] = 0.
     \end{aligned}
 \end{gather}
+
+При подстановке колебательно-вращательного гамильтониана в форме \eqref{general-rovibrational-hamiltonian} приходим к следующему виду динамических уравнений
+\begin{gather}
+    \begin{aligned}
+        &\dot{\mf{q}} = \bbG_{22} \mf{p} + \bbG_{12}^+ \mf{J}, \\
+        &\dot{\mf{p}} = -\frac{1}{2} \mf{p}^+ \frac{\partial \bbG_{22}}{\partial \mf{q}} \mf{p} - \mf{J}^+ \frac{\partial \bbG_{12}}{\partial \mf{q}} \mf{p} - \frac{1}{2} \mf{J}^+ \frac{\partial \bbG_{11}}{\partial \mf{q}} \mf{J} - \frac{\partial U}{\partial \mf{q}}, \\
+        &\dJx = \Jy \lb \bbG_{12} \mf{p} + \bbG_{11} \mf{J} \rb_z - \Jz \lb \bbG_{12} \mf{p} + \bbG_{11} \mf{J} \rb_y \\
+        &\dJy = \Jz \lb \bbG_{12} \mf{p} + \bbG_{11} \mf{J} \rb_x - \Jx \lb \bbG_{12} \mf{p} + \bbG_{11} \mf{J} \rb_z \\
+        &\dJz = \Jx \lb \bbG_{12} \mf{p} + \bbG_{11} \mf{J} \rb_y - \Jy \lb \bbG_{12} \mf{p} + \bbG_{11} \mf{J} \rb_x \\
+    \end{aligned} \label{polyatom-jcomponents-system}
+\end{gather}
+
+Так как угловой момент $\mf{J}$ линейно связан с эйлеровыми импульсами согласно соотношению \eqref{polyatom-angular-momentum-euler-momenta}, то для обращения классической траектории в этих переменных следует обратить знаки как у обобщенных моментов, так и у углового момента
+\begin{gather}
+    \lb \mf{q}, \mf{p}, \mf{J} \rb \rightarrow \lb \mf{q}, -\mf{p}, -\mf{J} \rb.
+\end{gather}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{./pictures/trajectories/jcomponents-trajectory-crop.pdf}
+    \caption{Зависимости $R(t)$ для прямой (сплошная линия) и обратной (точечная линия) образования метастабильного комплекса N$_2-$N$_2$, полученные при решении полной системы динамических уравнений с декартовыми компонентами углового момента \eqref{polyatom-jcomponents-system}. Сверху отражено изменение энергии вдоль прямой траектории со шкалой справа.}
+    \label{fig:jcomponents-trajectory}
+\end{figure}
+
+
+\subsection{Полная система динамических уравнений со сферическими углами углового момента}
+В этом случае система уравнений состоит из двух векторных уравнений Гамильтона относительно $\mf{q}$, $\mf{p}$, дополненная двумя уравнениями относительно сферических углов углового момента $\alpha$ и $\beta$, что в сумме приводит к системе из $2s + 2$ уравнений
+\begin{gather}
+    \begin{aligned}
+        &\dot{\mf{q}} = \frac{\partial H}{\partial \mf{p}}, \\
+        &\dot{\mf{p}} = -\frac{\partial H}{\partial \mf{q}}, \\
+        &\dot{\alpha} = \frac{1}{J \sin \beta} \frac{\partial H}{\partial \beta}, \\
+        &\dot{\beta} = -\frac{1}{J \sin \beta} \frac{\partial H}{\partial \alpha}.
+    \end{aligned}
+\end{gather}
+
+Подставив колебательно-вращательный гамильтониан в форме \eqref{general-rovibrational-hamiltonian}, приходим к следующей системе уравнений
+\begin{gather}
+    \begin{aligned}
+        &\dot{\mf{q}} = \bbG_{22} \mf{p} + \bbG_{12}^+ \mf{J}, \\
+        &\dot{\mf{p}} = -\frac{1}{2} \mf{p}^+ \frac{\partial \bbG_{22}}{\partial \mf{q}} \mf{p} - \mf{J}^+ \frac{\partial \bbG_{12}}{\partial \mf{q}} \mf{p} - \frac{1}{2} \mf{J}^+ \frac{\partial \bbG_{11}}{\partial \mf{q}} \mf{J} - \frac{\partial U}{\partial \mf{q}}, \\
+        &\dot{\alpha} = \frac{1}{J \sin \beta} \lsq \bbF \lb \bbG_{11} \mf{J} + \bbG_{12} \mf{p} \rb \rsq_y, \\
+        &\dot{\beta} = -\frac{1}{J \sin \beta} \lsq \bbF \lb \bbG_{11} \mf{J} + \bbG_{12} \mf{p} \rb \rsq_z, 
+    \end{aligned} \label{polyatom-jspherical-system}
+\end{gather}
+%
+где компоненты вектора углового момента равны $\mf{J} = \lb J \cos \alpha \sin \beta, J \sin \alpha \sin \beta, J \cos \beta \rb$. \par
+Исходя из того, что при обращении классической траектории, происходит инверсия вектора углового момента, несложно получить следующие преобразования сферических углов вектора углового момента
+\begin{gather}
+    \lb \mf{q}, \mf{p}, \alpha, \beta \rb \rightarrow \lb \mf{q}, -\mf{p}, \alpha - \pi, \pi - \beta \rb.
+\end{gather}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{./pictures/trajectories/spherical_trajectory-crop.pdf}
+    \caption{Зависимости $R(t)$ для прямой (сплошная линия) и обратной (точечная линия) образования метастабильного комплекса N$_2-$N$_2$, полученные при решении полной системы динамических уравнений со сферическими углами углового момента \eqref{polyatom-jspherical-system}. Сверху отражено изменение энергии вдоль прямой траектории со шкалой справа.}
+    \label{fig:jspherical-trajectory}
+\end{figure}
+
 
 \begin{subappendices}
     \section{Вектор углового момента в подвижной системе отсчета} \label{appendix:angular-momentum-body-fixed}
