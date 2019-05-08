@@ -70,13 +70,17 @@
 
 \def\hh{_{\rm H}}
 
-\usepackage[toc]{appendix}
+\usepackage[toc, page]{appendix}
 
 \usepackage{chngcntr}
 \usepackage{etoolbox}
+
 \AtBeginEnvironment{subappendices}{%
-\chapter*{Appendix}
-\addcontentsline{toc}{chapter}{Appendices}
+\chapter*{Приложение}
+\renewcommand\appendixname{STUFF}
+%\renewcommand\appendixpagename{APPENDIXPAGENAME}
+%\renewcommand{\appendixtocname}{\appendixname}
+\addcontentsline{toc}{chapter}{Приложение}
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
 }
@@ -161,3 +165,8 @@
 % changing fontsize of section titles
 \titleformat{\section}
  {\normalfont\fontsize{16}{15}\bfseries}{\thesection}{1em}{}
+
+ \usepackage{tabularx}
+ \usepackage{multirow}
+ \usepackage{booktabs}
+ \usepackage{array}

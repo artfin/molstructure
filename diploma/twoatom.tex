@@ -10,7 +10,7 @@
 В работе \cite{kranendonk1973} авторы разрабатывают формализм расчета столкновительно-индуцированного спектра в приближении бинарных столкновений. Авторы рассматривают систему, состояющую из молекулы $H_2$, возмущенной атомами $Ar$. Вращательное движение молекулы $H_2$ исключено из рассмотрения -- обе сталкивающихся молекулы рассматриваются как безструктурные сферически-симметричные частицы. \par
     Спектральная функция, определяющая профиль спектра поглощения, связана с функцией автокорреляции суммарного дипольного момента системы преобразованием Фурье
 \begin{gather}
-    J(\omega) = \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{i \omega t} dt. \label{twoatom-spectral-function}
+    J(\omega) = \frac{1}{2\pi} \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt. \label{twoatom-spectral-function}
 \end{gather} 
 В приближении бинарных столкновений корреляционная функция суммарного дипольного момента становится 
 \begin{gather}
@@ -54,7 +54,7 @@
 Осуществляя перестановку внутри интегрального выражения, приходим к следующему выражению 
 \begin{gather}
     C(\tau) = \frac{1}{2\pi} \intty \intty F^*(\omega) G(\omega^\prime) e^{i \omega^\prime \tau} \lsq \, \intty e^{i (\omega^\prime - \omega) t} \frac{dt}{2 \pi} \rsq d\omega d\omega^\prime = \notag \\
-    = \frac{1}{2\pi} \intty \inty F^*(\omega) G(\omega^\prime) e^{i \omega^\prime \tau} \delta \lb \omega^\prime - \omega \rb d\omega d\omega^\prime = \hat{F}^{-1} \Big[ F^*(\omega) G(\omega) \Big],
+    = \frac{1}{2\pi} \intty \intty F^*(\omega) G(\omega^\prime) e^{i \omega^\prime \tau} \delta \lb \omega^\prime - \omega \rb d\omega d\omega^\prime = \hat{F}^{-1} \Big[ F^*(\omega) G(\omega) \Big],
 \end{gather}
 %
 где через $\hat{F}$ обозначен оператор преобразования Фурье. Если рассмотреть эту цепочку преобразований для автокорреляционной функции действительной функции $f(t)$, то приходим к теореме Винера-Хинчина \cite{frommhold}
@@ -413,22 +413,22 @@
 
 Рассмотрим спектральную функцию,связанную с функцией автокорреляции суммарного дипольного момента преобразованием Фурье
 \begin{gather}
-    J(\omega) = \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt.
+    J(\omega) = \frac{1}{2 \pi} \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt.
 \end{gather}
 
 Мы будем пользоваться приближением бинарных столкновений, то есть, будем предполагать, что суммарная автокорреляционная функция распадается на сумму автокорреляционных функций индуцированных диполей пар. Для индуцированного дипольного момента пары, для простоты, мы сохраним обозначение $\bs{\mu}$. Итак, мы будем работать со следующим выражением для спектральной функции с трактовкой интеграла как интеграла по начальным условиям классических динамических траекторий, как обсуждалось в пункте \ref{section:correlation_functions} 
 \begin{gather}
-    J(\omega) = \intty \frac{\displaystyle \idotsint \bs{\mu}(0) \bs{\mu}(t) \, \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}}{\displaystyle \idotsint \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}} e^{-i \omega t} dt. \label{two-atom-spectral-function1}
+    J(\omega) = \frac{1}{2\pi} \intty \frac{\displaystyle \idotsint \bs{\mu}(0) \bs{\mu}(t) \, \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}}{\displaystyle \idotsint \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}} e^{-i \omega t} dt. \label{two-atom-spectral-function1}
 \end{gather}
 
 Вектор координат при рассмотрении в плоскости столкновений равен $\mf{q} = \lc r, \psi, \Phi, \Theta \rc$, а вектор импульсов -- $\mf{p} = \lc p_r, p_\psi \rc$. Кроме того, согласно пункту \ref{section:averaging} в интеграле появляется дополнительный весовой множитель, равный $\text{Jac} = p_\psi \sin \Theta$. Следовательно, полное интегральное выражение в этой системе координат выглядит следующим образом
 \begin{gather}
-    J(\omega) = \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function2}
+    J(\omega) = \frac{1}{2\pi} \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function2}
 \end{gather}
 
 Заметим, что ни дипольный момент $\bs{\mu}(t)$, ни гамильтониан $\mH$ не зависят от углов $\Phi$, $\Theta$. Проинтегрировав по ним, мы получаем фактор $4 \pi$ как в числителе, так и знаменателе, поэтому суммарно никаких дополнительных множителей не возникает.
 \begin{gather}
-    J(\omega) = \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function3}
+    J(\omega) = \frac{1}{2 \pi} \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function3}
 \end{gather}
 
 Как известно, решение задачи о движении частицы с приведенной массой $\mu$ в центральном поле можно получить, основываясь на законах сохранения энергии и углового момента в интегральном виде \cite{landau-volume1}. Гамильтониан, записанный в полярных координатах, определенных в плоскости движения (система III), 
@@ -539,7 +539,7 @@ f = \frac{\partial p_r^\prime}{\partial p_\psi} = \frac{\displaystyle p_\psi \lb
 
 Следовательно, выражение для спектральной функции \eqref{two-atom-spectral-function3} может быть переписано в виде
 \begin{gather}
-    J(\omega) = \frac{1}{\Gamma_0} \intty e^{-i \omega t} dt \int\limits_0^\infty d\tau \intty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(\tau) \exp \lb -\frac{\mH_\text{plane}}{kT} \rb,
+    J(\omega) = \frac{1}{2 \pi \Gamma_0} \intty e^{-i \omega t} dt \int\limits_0^\infty d\tau \intty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(\tau) \exp \lb -\frac{\mH_\text{plane}}{kT} \rb,
 \end{gather}
 %
 где через $\Gamma_0$ обозначен интеграл, находящийся в знаменателе \eqref{two-atom-spectral-function3}
@@ -549,7 +549,7 @@ f = \frac{\partial p_r^\prime}{\partial p_\psi} = \frac{\displaystyle p_\psi \lb
 
 Переставив интеграл по времени $t$ c интегралами по переменным $\tau$, $p_r^\prime$, $\psi^\prime$ и $p_\psi$, воспользуемся корреляционной теоремой \eqref{correlation-theorem}
 \begin{gather}
-    J(\omega) = \frac{1}{\Gamma_0} \int\limits_0^\infty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \Bigg\vert \intty \bs{\mu}(t) e^{i \omega t} dt \Bigg\vert^2 \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-spectral-function4}
+    J(\omega) = \frac{1}{2 \pi \Gamma_0} \int\limits_0^\infty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \Bigg\vert \intty \bs{\mu}(t) e^{-i \omega t} dt \Bigg\vert^2 \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-spectral-function4}
 \end{gather}
 
 \iffalse
@@ -578,9 +578,9 @@ Integral ratio:
 \begin{gather}
     \Gamma_1 = \int\limits_0^\infty dp_r^\prime \intty d\psi^\prime \intty p_\psi \exp \lb -\frac{\mHplane}{\kb T} \rb dp_\psi.
 \end{gather}
-Выражение \eqref{two-atom-spectral-function4} может быть рассмотрено как математическое ожидание квадрата преобразования Фурье на распределении $\boldsymbol{\xi}$, заданном весовой функции
+Выражение \eqref{two-atom-spectral-function4} может быть рассмотрено как математическое ожидание квадрата преобразования Фурье на распределении $\boldsymbol{\xi}$
 \begin{gather}
-    J(\omega) = \frac{\Gamma_1}{\Gamma_0} \sum_{k = 1}^{\infty} \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2, \label{two-atom-spectral-function-mc}
+    J(\omega) = \frac{\Gamma_1}{2 \pi \Gamma_0} \sum_{k = 1}^{\infty} \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2, \label{two-atom-spectral-function-mc}
 \end{gather}
 %
 где обозначение $p_r^\prime(\bxi_k)$ подразумевает, что импульс, сопряженный радиальной координате, взят из вектора $\bxi$, реализующего распределение с плотностью $p_\xi$. \par
@@ -591,7 +591,7 @@ Integral ratio:
 \end{gather}
 Таким образом, конечное выражение для спектральной функции, как среднее значение на распределении с плотностью $p_\xi(\bxi)$, приходит к виду
 \begin{gather}
-    J(\omega) = 2 \pi \rfixed^2 \sum_{k = 1}^\infty \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2. \label{two-atom-spectral-function-mc-final}
+    J(\omega) = \rfixed^2 \sum_{k = 1}^\infty \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2. \label{two-atom-spectral-function-mc-final}
 \end{gather}
 
 Вопрос генерации реализаций случайной величины $\bxi$ с плотностью распределения $p_\xi$ был обсужден в параграфе \ref{section:averaging}. Рассмотрим вопрос расчет классических траекторий рассеяния. Несмотря на то, что для динамических переменных могут быть выписаны квадратурные выражения, которыми мы пользовались в параграфе \ref{section:spectral_function_in_plane}, вычисления по ним производить не очень удобно. В первую очередь неудобство связано с тем, что для вычисления усредняемого выражения в \eqref{two-atom-spectral-function-mc-final} нам потребуется вычислять преобразование Фурье от дипольного момента вдоль траектории, которое эффективно реализуется в виде дискретного преобразования Фурье. Для этого нам потребуются значения дипольного момента $\bs{\mu}(t)$ с равноверным шагом по времени, что вызовет некоторые затруднения при вычисления по квадратурной формуле. Кроме того, квадратуры для всех динамических переменных являются несобственными интегралами, имеющими особенность в поворотной точке. Поэтому траектории рассеяния рассчитывались интегрированием трех уравнений Гамильтона
@@ -630,7 +630,7 @@ Integral ratio:
 \end{gather}
 %
 которое может быть получено из выражения \eqref{part1-spectral-function-definition} перестановкой индексов $j, k$. Условие детального баланса \eqref{detailed-balance} отражает разницу в заселенностях исходного и конечного состояний. Ввиду этого, соотношение \eqref{classical-detailed-balance} называют классическим условием детального баланса. \par
-Считается, что симметрийная разница между классической и квантовой спектральной функциями может быть устранена при помощи так называемой процедуры десимметризации. Предполагается, что классическую спектральную функцию можно определенным образом \enquotes{десимметризовать} так, что функция, получившаяся в результате, будет удовлетворять квантовому условию детального баланса \cite{borysow1985phenomena}. Однако процедура десимметризации не может быть однозначна задан условием детального баланса -- можно построить бесконечное количество процедур, которые будут приводить к спектральной функции, которая будет удовлетворять квантовому условию детального баланса \cite{frommhold}. Поэтому от процедуры десимметризации дополнительно требуют совпадения десимметрованного классического профиля с квантовым профилем в особенности в области дальних крыльев. \par
+Считается, что симметрийная разница между классической и квантовой спектральной функциями может быть устранена при помощи так называемой процедуры десимметризации. Предполагается, что классическую спектральную функцию можно определенным образом \enquote{десимметризовать} так, что функция, получившаяся в результате, будет удовлетворять квантовому условию детального баланса \cite{borysow1985phenomena}. Однако процедура десимметризации не может быть однозначна задан условием детального баланса -- можно построить бесконечное количество процедур, которые будут приводить к спектральной функции, которая будет удовлетворять квантовому условию детального баланса \cite{frommhold}. Поэтому от процедуры десимметризации дополнительно требуют совпадения десимметрованного классического профиля с квантовым профилем в особенности в области дальних крыльев. \par
 В литературе представлен набор различных процедур десимметризации \cite{borysow1985}. Некоторые из них устроены следующим образом:
 \begin{gather}
     J_{D1}(\omega) = \frac{2}{1 + \exp \lb -\hbar \omega / \kb T \rb} J_\text{class}(\omega)  \\
@@ -648,9 +648,9 @@ Integral ratio:
 
 Несложно убедиться, что приведенные процедуры десимметризации D1-D3 приводят к спектральным функциям, удовлетворяющим квантовому условию детального баланса. Продемонстрируем это на примере десимметризации D3, используя классическое правило детального баланса для $J_\text{class}(\omega)$:
 \begin{gather}
-    J_{D3}(\omega) = \exp \lb \frac{\hbar \omega}{2 \kb T} \rb J_\text{class}(\omega) \quad \implies \quad J_\text{class}(\omega) = \exp \lb -\frac{\hbar \omega}{2 \kb T} \rb J_{D3}(\omega), \\
-    J_{D3}(-\omega) = \exp \lb -\frac{\hbar \omega}{2 \kb T} \rb J_\text{class}(-\omega) = \exp \lb -\frac{\hbar \omega}{2 \kb T} \rb J_\text{class}(\omega), \\
-    J_{D3}(-\omega) = \exp \lb -\frac{\hbar \omega}{\kb T} \rb J_\text{D3}(\omega).
+    J_{D3}(\omega) = \exp \lb \frac{\hbar \omega}{2 \kb T} \rb J_\text{class}(\omega) \quad \implies \quad J_\text{class}(\omega) = \exp \lb -\frac{\hbar \omega}{2 \kb T} \rb J_{D3}(\omega), \label{d1} \\
+    J_{D3}(-\omega) = \exp \lb -\frac{\hbar \omega}{2 \kb T} \rb J_\text{class}(-\omega) = \exp \lb -\frac{\hbar \omega}{2 \kb T} \rb J_\text{class}(\omega), \label{d2} \\
+    J_{D3}(-\omega) = \exp \lb -\frac{\hbar \omega}{\kb T} \rb J_\text{D3}(\omega). \label{d3}
 \end{gather}
 
 Основываясь на рисунке \ref{fig:desymmetrisation-spectral-functions} замечаем, что при малых частотах все спектральные функции ведут себя примерно примерно одинаковым образом, однако с увеличением частоты различие между ними становится все больше. Одной из наиболее популярной в литературе является процедура D3. Спектральная функция, полученная в результате процедуры D3, переоценивает квантовую спектральную функции в области крыла, однако считается, что около максимума спектра она дает наилучшую оценку. Сравнение при других температурах мы будем производить именно со спектром, полученным в результате процедуры D3. \par

@@ -1,9 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{janssen1885}
-J.~Janssen.
-\newblock {\em Comptes Rendus Acad. Sci.}, 101(649), 1885.
-
 \bibitem{cohentanuji}
 Лалоэ~Ф. Коэн-Таннуджи~К., Диу~Б.
 \newblock {\em Квантовая механика}.
@@ -228,5 +224,41 @@ Petersen K.B. and Pedersen M.S.
 Jun~S Liu.
 \newblock {\em Monte Carlo strategies in scientific computing}.
 \newblock Springer Science \& Business Media, 2008.
+
+\bibitem{karman2015}
+Tijs Karman, Evangelos Miliordos, Katharine~LC Hunt, Gerrit~C Groenenboom, and
+  Ad~van~der Avoird.
+\newblock Quantum mechanical calculation of the collision-induced absorption
+  spectra of n2--n2 with anisotropic interactions.
+\newblock {\em The Journal of chemical physics}, 142(8):084306, 2015.
+
+\bibitem{bussery2014}
+B{\'e}atrice Bussery-Honvault and Jean-Michel Hartmann.
+\newblock Ab initio calculations for the far infrared collision induced
+  absorption by n2 gas.
+\newblock {\em The Journal of chemical physics}, 140(5):054309, 2014.
+
+\bibitem{karman2019}
+Tijs Karman, Iouli~E Gordon, Ad~van~der Avoird, Yury~I Baranov, Christian
+  Boulet, Brian~J Drouin, Gerrit~C Groenenboom, Magnus Gustafsson, Jean-Michel
+  Hartmann, Robert~L Kurucz, et~al.
+\newblock Update of the hitran collision-induced absorption section.
+\newblock {\em Icarus}, 2019.
+
+\bibitem{stone1984}
+NWB Stone, LAA Read, A~Anderson, IR~Dagg, and W~Smith.
+\newblock Temperature dependent collision-induced absorption in nitrogen.
+\newblock {\em Canadian journal of physics}, 62(4):338--347, 1984.
+
+\bibitem{buontempo1975}
+U~Buontempo, S~Cunsolo, G~Jacucci, and JJ~Weis.
+\newblock The far infrared absorption spectrum of n2 in the gas and liquid
+  phases.
+\newblock {\em The Journal of Chemical Physics}, 63(6):2570--2576, 1975.
+
+\bibitem{dagg1985}
+IR~Dagg, A~Anderson, S~Yan, W~Smith, and LAA Read.
+\newblock Collision-induced absorption in nitrogen at low temperatures.
+\newblock {\em Canadian journal of physics}, 63(5):625--631, 1985.
 
 \end{thebibliography}
