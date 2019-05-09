@@ -193,6 +193,74 @@ PA~Egelstaff and P~Schofield.
 \newblock On the evaluation of the thermal neutron scattering law.
 \newblock {\em Nuclear Science and Engineering}, 12(2):260--270, 1962.
 
+\bibitem{abel2009}
+Martin Abel, Lothar Frommhold, and Magnus Gustafsson.
+\newblock Collision-induced absorption at wavelengths near 5 $\mu$ m by dense
+  hydrogen gas, 2009.
+
+\bibitem{abel2012}
+Martin Abel, Lothar Frommhold, Xiaoping Li, and Katharine~LC Hunt.
+\newblock Infrared absorption by collisional h2--he complexes at temperatures
+  up to 9000 k and frequencies from 0 to 20 000 cm- 1.
+\newblock {\em The Journal of chemical physics}, 136(4):044319, 2012.
+
+\bibitem{elkader2012}
+MSA El-Kader and G~Maroulis.
+\newblock New insights into collision-induced rototranslational absorption and
+  scattering spectra of gaseous methane at different temperatures.
+\newblock {\em Journal of Molecular Spectroscopy}, 281:28--39, 2012.
+
+\bibitem{elkader2017}
+MSA El-Kader, J-L Godet, AA~El-Sadek, and George Maroulis.
+\newblock Spectral line shapes of collision-induced light scattering (cils) and
+  collision-induced absorption (cia) using isotropic intermolecular potential
+  for h2--ar.
+\newblock {\em Molecular Physics}, 115(20):2614--2625, 2017.
+
+\bibitem{borysow1986}
+Aleksandra Borysow and Lothar Frommhold.
+\newblock Collision-induced rototranslational absorption spectra of n2-n2 pairs
+  for temperatures from 50 to 300 k.
+\newblock {\em The Astrophysical Journal}, 311:1043--1057, 1986.
+
+\bibitem{gruszka1996}
+Marcin Gruszka and Aleksandra Borysow.
+\newblock New analysis of the spectral moments of collision induced absorption
+  in gaseous n2 and co2.
+\newblock {\em Molecular Physics}, 88(5):1173--1185, 1996.
+
+\bibitem{bussery2014}
+B{\'e}atrice Bussery-Honvault and Jean-Michel Hartmann.
+\newblock Ab initio calculations for the far infrared collision induced
+  absorption by n2 gas.
+\newblock {\em The Journal of chemical physics}, 140(5):054309, 2014.
+
+\bibitem{oparin2017}
+Daniil~V Oparin, Nikolai~N Filippov, Ivan~M Grigoriev, and Alexander~P Kouzov.
+\newblock Effect of stable and metastable dimers on collision-induced
+  rototranslational spectra: Carbon dioxide--rare gas mixtures.
+\newblock {\em Journal of Quantitative Spectroscopy and Radiative Transfer},
+  196:87--93, 2017.
+
+\bibitem{karman2015}
+Tijs Karman, Evangelos Miliordos, Katharine~LC Hunt, Gerrit~C Groenenboom, and
+  Ad~van~der Avoird.
+\newblock Quantum mechanical calculation of the collision-induced absorption
+  spectra of n2--n2 with anisotropic interactions.
+\newblock {\em The Journal of chemical physics}, 142(8):084306, 2015.
+
+\bibitem{karman2015_h2h2}
+Tijs Karman, Ad~van~der Avoird, and Gerrit~C Groenenboom.
+\newblock Collision-induced absorption with exchange effects and anisotropic
+  interactions: Theory and application to h2- h2.
+\newblock {\em The Journal of chemical physics}, 142(8):084305, 2015.
+
+\bibitem{lokshtanov2008}
+SE~Lokshtanov, B~Bussery-Honvault, and AA~Vigasin.
+\newblock Extensive ab initio study of the integrated ir intensity in the n2
+  fundamental collision-induced band.
+\newblock {\em Molecular Physics}, 106(9-10):1227--1231, 2008.
+
 \bibitem{littlejohn1995}
 Robert~G Littlejohn and Matthias Reinsch.
 \newblock Internal or shape coordinates in the n-body problem.
@@ -225,19 +293,6 @@ Jun~S Liu.
 \newblock {\em Monte Carlo strategies in scientific computing}.
 \newblock Springer Science \& Business Media, 2008.
 
-\bibitem{karman2015}
-Tijs Karman, Evangelos Miliordos, Katharine~LC Hunt, Gerrit~C Groenenboom, and
-  Ad~van~der Avoird.
-\newblock Quantum mechanical calculation of the collision-induced absorption
-  spectra of n2--n2 with anisotropic interactions.
-\newblock {\em The Journal of chemical physics}, 142(8):084306, 2015.
-
-\bibitem{bussery2014}
-B{\'e}atrice Bussery-Honvault and Jean-Michel Hartmann.
-\newblock Ab initio calculations for the far infrared collision induced
-  absorption by n2 gas.
-\newblock {\em The Journal of chemical physics}, 140(5):054309, 2014.
-
 \bibitem{karman2019}
 Tijs Karman, Iouli~E Gordon, Ad~van~der Avoird, Yury~I Baranov, Christian
   Boulet, Brian~J Drouin, Gerrit~C Groenenboom, Magnus Gustafsson, Jean-Michel
@@ -260,5 +315,11 @@ U~Buontempo, S~Cunsolo, G~Jacucci, and JJ~Weis.
 IR~Dagg, A~Anderson, S~Yan, W~Smith, and LAA Read.
 \newblock Collision-induced absorption in nitrogen at low temperatures.
 \newblock {\em Canadian journal of physics}, 63(5):625--631, 1985.
+
+\bibitem{tonkov1995}
+MV~Tonkov.
+\newblock {\em Far Infrared Absorption Spectrum of CO$_2$ with He, Ar and Xe:
+  Experiment and Calculations}.
+\newblock Springer, 1995.
 
 \end{thebibliography}

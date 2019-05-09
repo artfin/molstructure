@@ -94,7 +94,7 @@
 
 На основании выражения \eqref{part1-absorption-coefficient-definition} определяют \textit{спектральную функцию} $J(\omega)$ \cite{gordon1968}
 \begin{gather}
-    J(\omega) = \frac{3 \hbar c n \alpha(\omega)}{4 \pi^2 \omega \lb 1 - e^{-\beta \hbar \omega} \rb} = 3 \sum_{j, k} \rho_j \abs{ \bra{j} \boldsymbol{\mu} \cdot \boldsymbol{\varepsilon} \ket{k} }^2 \delta \lb \omega_{jk} - \omega \rb. \label{part1-spectral-function-definition}
+    J(\omega) = \frac{3 \hbar c n \alpha(\omega)}{4 \pi^2 V \omega \lb 1 - e^{-\beta \hbar \omega} \rb} = 3 \sum_{j, k} \rho_j \abs{ \bra{j} \boldsymbol{\mu} \cdot \boldsymbol{\varepsilon} \ket{k} }^2 \delta \lb \omega_{jk} - \omega \rb. \label{part1-spectral-function-definition}
 \end{gather}
 
 Отметим, что обычно спектральную функцию определяют таким образом, чтобы ее интеграл по частотному диапазону был равен единице. Здесь принято несколько иное определение, эта функция не нормирована. \par
@@ -182,7 +182,31 @@
 \begin{gather}
     \lim_{t \rightarrow \infty} C_{AB}(t) = \mean{A} \mean{B}.
 \end{gather}
-    Как уже отмечалось, корреляционные функции в равновесных системах зависят только от разности времени $t_1 - t_2$. Следовательно,
+
+Часто, обьем системы, появляющийся в формуле \eqref{part1-absorption-coefficient-definition}, рассматривают как часть спектральной функции $J(\omega)$ или рассматривают их произведение совместно. Поэтому в соответствии с обозначениями, используемыми в \cite{frommhold}, определим автокорреляционную функцию дипольного момента $C(t)$ как
+\begin{gather}
+    C(t) = \frac{V}{2\pi} \mean{\bs{\mu}(0) \cdot \bs{\mu}(t)}.
+\end{gather}
+
+Спектральная функция \eqref{litreview-spectral-function} принимает действительные значения, следовательно
+\begin{gather}
+    J(\omega) = J^+(\omega) = \intty C(t)^+ e^{i \omega t} dt = \intty C(-t)^+ e^{-i\omega t} dt, \label{litreview-time-inversion}
+\end{gather}
+%
+где была сделана замена переменной $t \rightarrow -t$, а индекс $+$ обозначает комплексное сопряжение. Сранивая \eqref{litreview-time-inversion} с \eqref{litreview-spectral-function}, получаем
+\begin{gather}
+    C(t) = C(-t)^+.
+\end{gather}
+
+Если мы разложим корреляционную функцию на действительную и мнимую часть, то получим следующие соотношения 
+\begin{gather}
+    \text{Re} \, C(t) = \text{Re} \, C(-t), \quad \text{Im} \, C(t) = -\text{Im} \, C(t).
+\end{gather}
+
+То есть, действительная часть корреляционной функции является четной функции времени, а мнимая часть -- нечетной. Так как классические корреляционные функции являются действительными функциями, то они должны быть четными функциями времени. Квантово-механические же корреляционные функции, как правило, являются комплексными функциями, мнимая часть является исключительно квантово-механическим вкладом, отсутствующим при классическом рассмотрении.
+
+
+Как уже отмечалось, корреляционные функции в равновесных системах зависят только от разности времени $t_1 - t_2$. Следовательно,
 \begin{gather}
     0 = \frac{d}{ds} \mean{ A(t+s) B(s) } = \mean{ \dot{A}(t+s) B(s) } + \mean{ A(t+s) \dot{B}(s) } = \mean{ \dot{A}(t) B(0) } + \mean{ A(t) \dot{B}(0) }.
 \end{gather}
@@ -193,42 +217,44 @@
 \end{gather}
 которое для автокорреляционных функций переходит в 
 \begin{gather}
-    \mean{A \dot{A}} = 0.
+    \mean{A \dot{A}} = 0. \label{litreview-temp1}
 \end{gather}
 
-Аналогичное рассуждение для следующего среднего с производной четного порядка приводит к 
+Разложим автокорреляционную функцию в ряд по степеням времени $t$
 \begin{gather}
-    \mean{ A(0) \frac{d^{2n}}{dt^{2n}} A(t) } = (-1)^n \mean{ \frac{d^n}{dt^n} A(t)\Big\vert_{t=0} \frac{d^n}{dt^n} A(t) }. 
+    \mean{A(0) A(t)} = \Bigg\langle A(0) \lsq A(0) + t \dot{A}(0) + \frac{t^2}{2!} \ddot{A}(0) + \dots \rsq \Bigg\rangle = \mean{A(0) A(0)} + t \mean{A(0) \dot{A}(0)} + \frac{t^2}{2!} \mean{A(0) \ddot{A}(0)} + \dots \label{litreview-correlation-function-series}
 \end{gather}
 
-Разрешим соотношение \eqref{litreview-spectral-function} относительно автокорреляционной функции дипольного момента
+Отметим, что коэффициенты перед степенями $t^n$ не требуют знания динамики $A(t)$, а являются средними по ансамблю, т.к. временные производные могут быть записаны через скобку Пуассона
 \begin{gather}
-    C(t) = \frac{1}{2\pi} \intty J(\omega) e^{i \omega t} d \omega, 
+    \frac{dA}{dt} = \lsq A, H \rsq = \sum_k \lsq \frac{\partial A}{\partial x_k} \frac{\partial H}{\partial p_k} - \frac{\partial A}{\partial p_k} \frac{\partial H}{\partial x_k} \rsq. \label{litreview-poisson-bracket}.
+\end{gather}
+
+Соотношение \eqref{litreview-temp1} соотносится с тем, что корреляционная функция является четной функцией. Из четности функции следует, что все коэффициенты перед нечетными степенями $t$ в \eqref{litreview-correlation-function-series} обращаются в ноль. В квантово-механической корреляционной функции нечетные степени не исчезают и, более того, именно за счет них корреляционная функция обладает мнимой частью. \par
+Коэффициенты в ряду по степеням времени \eqref{litreview-correlation-function-series} имеют физический смысл моментов соответствующего частотного спектра. Разрешим соотношение \eqref{litreview-spectral-function} относительно автокорреляционной функции дипольного момента и разложим комплексную экспоненту в подынтегральной функции в ряд
+\begin{gather}
+    C(t) = \frac{1}{2\pi} \intty J(\omega) e^{i \omega t} d \omega = \sum_{n = 0}^\infty \frac{\lb i t\rb^n}{n!} \intty \omega^n J(\omega) d\omega. 
 \end{gather}
 %
-где $C(t)$ обозначено
+Величины
 \begin{gather}
-    C(t) = \frac{1}{2\pi} \mean{\bs{\mu}(0) \cdot \bs{\mu}(t)}.
-\end{gather}
-
-Разложим комплексную экспоненту в ряд по степеням $\omega$
-\begin{gather}
-    C(t) = \sum_{n = 0}^\infty \frac{\lb i t\rb^n}{n!} \intty \omega^n J(\omega) d\omega. 
+    M_n = \intty \omega^n J(\omega) d\omega \label{litreview-spectral-function-moments}
 \end{gather}
 %
-Величину
+называют $n$-ыми спектральными моментами. Теоретически, знание всех спектральных моментов эквивалентно знанию спектральной функции (так называемая проблема моментов), однако на практике моменты выше второго находят редко. \par
+Итак, спектральные моменты являются моментами спектральной функции и производными автокорреляционной функции дипольного момента в точке $t = 0$
 \begin{gather}
-    M_n = \intty \omega^n J(\omega) d\omega 
+    \frac{d^n C}{dt^n} \Bigg\vert_{t = 0} = i^n M_n,
 \end{gather}
 %
-называют $n$-ым спектральным моментом. Теоретически, знание всех спектральных моментов эквивалентно знанию спектральной функции (так называемая проблема моментов), однако на практике моменты выше второго находят редко. \par
-Итак, спектральные моменты являются моментами спектральной функции (как случайной величины) и производными автокорреляционной функции дипольного момента в точке $t = 0$
+что позволяет вычислить их как средние значения по фазовому пространству. Подробно рассматривать вопрос вычисления спектральных моментов рассматривать не будем, приведем лишь выражения, по которым они могут быть рассчитаны:
 \begin{gather}
-    \frac{d^n C}{dt^n} \Bigg\vert_{t = 0} = i^n M_n.
+    M_0 = \frac{\displaystyle \int \bs{\mu}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \\ 
+    M_2 = \frac{\displaystyle \int \dot{\bs{\mu}}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}},
 \end{gather}
-
-Классическая спектральная функция обладает симметрией.
-
+%
+где производную по времени дипольного момента $\dot{\bs{\mu}}$ в выражении для второго спектрального момента следует преобразовать в скобку Пуассона \eqref{litreview-poisson-bracket}. \par
+В данной работе мы вычисляем спектральные моменты по фазовому пространству для контроля сходимости траекторного расчета. В траекторном расчете мы получаем спектральную функцию $J(\omega)$, моменты которой \eqref{litreview-spectral-function-moments}, должны совпасть с моментами по фазовому пространству (конечно, если бы использованы одинаковые поверхности потенциальной энергии и индуцированного дипольного момента). 
 \begin{subappendices}
 \section{Временная теория возмущений.}
 
