@@ -55,6 +55,30 @@ J~Van Kranendonk and DM~Gass.
 \newblock Theory of the line shape in quadrupole-induced infrared spectra.
 \newblock {\em Canadian Journal of Physics}, 51(23):2428--2440, 1973.
 
+\bibitem{levine1967}
+Howard~B Levine and George Birnbaum.
+\newblock Classical theory of collision-induced absorption in rare-gas
+  mixtures.
+\newblock {\em Physical Review}, 154(1):86, 1967.
+
+\bibitem{mcquarrie1968}
+DA~McQuarrie and RB~Bernstein.
+\newblock Calculated collision-induced absorption spectrum for he--ar.
+\newblock {\em The Journal of Chemical Physics}, 49(4):1958--1963, 1968.
+
+\bibitem{buryak2014}
+Ilya Buryak, Lothar Frommhold, and Andrey~A Vigasin.
+\newblock Far-infrared collision-induced absorption in rare gas mixtures:
+  Quantum and semi-classical calculations.
+\newblock {\em The Journal of Chemical Physics}, 140(15):154302, 2014.
+
+\bibitem{oparin2017}
+Daniil~V Oparin, Nikolai~N Filippov, Ivan~M Grigoriev, and Alexander~P Kouzov.
+\newblock Effect of stable and metastable dimers on collision-induced
+  rototranslational spectra: Carbon dioxide--rare gas mixtures.
+\newblock {\em Journal of Quantitative Spectroscopy and Radiative Transfer},
+  196:87--93, 2017.
+
 \bibitem{landau-volume1}
 Лифшиц~Е.М. Ландау~Л.Д.
 \newblock {\em Теоретическая физика. Том 1.
@@ -111,17 +135,6 @@ VA~Ryzhov and MV~Tonkov.
 \newblock Translation absorption in spectra of noble-gases.
 \newblock {\em OPTIKA I SPEKTROSKOPIYA}, 37(6):1058--1064, 1974.
 
-\bibitem{levine1967}
-Howard~B Levine and George Birnbaum.
-\newblock Classical theory of collision-induced absorption in rare-gas
-  mixtures.
-\newblock {\em Physical Review}, 154(1):86, 1967.
-
-\bibitem{mcquarrie1968}
-DA~McQuarrie and RB~Bernstein.
-\newblock Calculated collision-induced absorption spectrum for he--ar.
-\newblock {\em The Journal of Chemical Physics}, 49(4):1958--1963, 1968.
-
 \bibitem{sharma1975}
 Ramesh~D Sharma and Robert~R Hart.
 \newblock Collision-induced absorption in he-ar mixture.
@@ -152,12 +165,6 @@ Javier L{\'o}pez~Cacheiro, Berta Fern{\'a}ndez, Domenico Marchesan, Sonia
   interaction induced electric properties of the mixed dimers of helium, neon
   and argon.
 \newblock {\em Molecular Physics}, 102(1):101--110, 2004.
-
-\bibitem{buryak2014}
-Ilya Buryak, Lothar Frommhold, and Andrey~A Vigasin.
-\newblock Far-infrared collision-induced absorption in rare gas mixtures:
-  Quantum and semi-classical calculations.
-\newblock {\em The Journal of Chemical Physics}, 140(15):154302, 2014.
 
 \bibitem{sobol}
 Соболь И.М.
@@ -192,6 +199,12 @@ Jacek Borysow, Massimo Moraldi, and Lothar Frommhold.
 PA~Egelstaff and P~Schofield.
 \newblock On the evaluation of the thermal neutron scattering law.
 \newblock {\em Nuclear Science and Engineering}, 12(2):260--270, 1962.
+
+\bibitem{hep}
+Christopher Schwan.
+\newblock A {C++11} template library for {Monte Carlo} integration.
+\newblock \url{https://github.com/cschwan/hep-mc}, дата доступа:
+  май 2019.
 
 \bibitem{abel2009}
 Martin Abel, Lothar Frommhold, and Magnus Gustafsson.
@@ -234,13 +247,6 @@ B{\'e}atrice Bussery-Honvault and Jean-Michel Hartmann.
 \newblock Ab initio calculations for the far infrared collision induced
   absorption by n2 gas.
 \newblock {\em The Journal of chemical physics}, 140(5):054309, 2014.
-
-\bibitem{oparin2017}
-Daniil~V Oparin, Nikolai~N Filippov, Ivan~M Grigoriev, and Alexander~P Kouzov.
-\newblock Effect of stable and metastable dimers on collision-induced
-  rototranslational spectra: Carbon dioxide--rare gas mixtures.
-\newblock {\em Journal of Quantitative Spectroscopy and Radiative Transfer},
-  196:87--93, 2017.
 
 \bibitem{karman2015}
 Tijs Karman, Evangelos Miliordos, Katharine~LC Hunt, Gerrit~C Groenenboom, and
@@ -316,10 +322,33 @@ IR~Dagg, A~Anderson, S~Yan, W~Smith, and LAA Read.
 \newblock Collision-induced absorption in nitrogen at low temperatures.
 \newblock {\em Canadian journal of physics}, 63(5):625--631, 1985.
 
+\bibitem{mckellar1988}
+ARW McKellar.
+\newblock Infrared spectra of the (n2) 2 and n2--ar van der waals molecules.
+\newblock {\em The Journal of chemical physics}, 88(7):4190--4196, 1988.
+
+\bibitem{wishnow1996}
+EH~Wishnow, HP~Gush, and I~Ozier.
+\newblock Far-infrared spectrum of n2 and n2-noble gas mixtures near 80 k.
+\newblock {\em The Journal of chemical physics}, 104(10):3511--3516, 1996.
+
+\bibitem{brocks1988}
+G~Brocks.
+\newblock Bound and rotational resonance states and the infrared spectrum of
+  n2ar.
+\newblock {\em The Journal of chemical physics}, 88(2):578--587, 1988.
+
 \bibitem{tonkov1995}
 MV~Tonkov.
 \newblock {\em Far Infrared Absorption Spectrum of CO$_2$ with He, Ar and Xe:
   Experiment and Calculations}.
 \newblock Springer, 1995.
+
+\bibitem{gruszka1997}
+Marcin Gruszka and Aleksandra Borysow.
+\newblock Roto-translational collision-induced absorption of co2for the
+  atmosphere of venus at frequencies from 0 to 250 cm- 1, at temperatures from
+  200 to 800 k.
+\newblock {\em Icarus}, 129(1):172--177, 1997.
 
 \end{thebibliography}

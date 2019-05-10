@@ -94,10 +94,10 @@
 
 На основании выражения \eqref{part1-absorption-coefficient-definition} определяют \textit{спектральную функцию} $J(\omega)$ \cite{gordon1968}
 \begin{gather}
-    J(\omega) = \frac{3 \hbar c n \alpha(\omega)}{4 \pi^2 V \omega \lb 1 - e^{-\beta \hbar \omega} \rb} = 3 \sum_{j, k} \rho_j \abs{ \bra{j} \boldsymbol{\mu} \cdot \boldsymbol{\varepsilon} \ket{k} }^2 \delta \lb \omega_{jk} - \omega \rb. \label{part1-spectral-function-definition}
+    J(\omega) = \frac{3 \hbar c n \alpha(\omega)}{4 \pi^2 \omega \lb 1 - e^{-\beta \hbar \omega} \rb} = 3 \sum_{j, k} \rho_j \abs{ \bra{j} \boldsymbol{\mu} \cdot \boldsymbol{\varepsilon} \ket{k} }^2 \delta \lb \omega_{jk} - \omega \rb. \label{part1-spectral-function-definition}
 \end{gather}
 
-Отметим, что обычно спектральную функцию определяют таким образом, чтобы ее интеграл по частотному диапазону был равен единице. Здесь принято несколько иное определение, эта функция не нормирована. \par
+Отметим, что обычно спектральную функцию определяют таким образом, чтобы ее интеграл по частотному диапазону был равен единице. Здесь принято несколько иное определение, эта функция не нормирована. Кроме того, спектральная функция может быть определена и для отрицательных частот, в этом случае она относится к испусканию излучения. \par
 Альтернативную форму выражения \eqref{part1-spectral-function-definition} получают осуществляя смену Шредингеровского представления квантовой механики на представление Гейзенберга. Состояния в представлении Гейзенберга не зависят от времени -- временная эволюция заложена в операторах. Эволюция оператора $\hat{A}(t)$ описывается оперетором эволюции $U(t)$
 \begin{gather}
     \hat{A}(t) = U^{+}(t) A(0) U(t) = e^{\frac{i}{\hbar} H t} \hat{A}(0) e^{-\frac{i}{\hbar} H t}. 
@@ -134,11 +134,20 @@
 
 Сумма в подынтегральном выражении является квантово-механическим средним по ансамблю значением оператора, которое в дальнейшем будем обозначать через $\langle \cdots \rangle$. Считая среду изотропной, проинтегрируем по всем возможным ориентациям $\boldsymbol{\varepsilon}$:
 \begin{gather}
-    J(\omega) = \frac{1}{2\pi} \intty \mean{ \bs{\mu}(0) \cdot \bs{\mu}(t) } e^{-i \omega t} dt. \label{litreview-spectral-function}
+    J(\omega) = \frac{1}{2\pi} \intty \mean{ \bs{\mu}(0) \cdot \bs{\mu}(t) } e^{-i \omega t} dt. \label{litreview-spectral-function1}
 \end{gather}
 
-Итак, спектральная функция является Фурье-образом автокорреляционной функции оператора дипольного момента поглощающих молекул \cite{gordon1968}. \par
-Следует подчеркнуть, что никаких приближений, касающихся характера движения диполей в этом рассмотрении сделано не было. Движение системы полностью обусловлено уравнениями движения, определяемыми гамильтонианом системы $\hat{H}_0$. 
+Итак, спектральная функция является Фурье-образом автокорреляционной функции оператора дипольного момента поглощающих молекул \cite{gordon1968}. При работе в единицах СИ в выражении \eqref{litreview-spectral-function} следует добавить переводной множитель
+\begin{gather}
+    J(\omega) = \frac{1}{4\pi \varepsilon_0} \frac{1}{2\pi} \intty \mean{ \bs{\mu}(0) \cdot \bs{\mu}(t) } e^{-i \omega t} dt. \label{litreview-spectral-function} 
+\end{gather}
+Следует подчеркнуть, что никаких приближений, касающихся характера движения диполей в этом рассмотрении сделано не было. Движение системы полностью обусловлено уравнениями движения, определяемыми гамильтонианом системы $\hat{H}_0$. \par
+Будем использовать следующее выражение для нормированного коэффициента поглощения через спектральную функцию 
+\begin{gather}
+    \alpha(\nu) = \frac{(2 \pi)^3 N_L^2}{3 \hbar c} \nu \lsq 1 - \exp \lb -\frac{h c \nu}{k T} \rb \rsq V J(\nu), \label{part1-absorption-coefficient-definition1}  
+\end{gather}
+%
+где через $N_L$ обозначена постоянная Лошмидта, для частоты в обратных сантиметрах применяем обозначение $\nu$. 
 
 \section{Теория временных функций корреляции и спектральных моментов} \label{section:correlation_functions}
 
@@ -183,14 +192,14 @@
     \lim_{t \rightarrow \infty} C_{AB}(t) = \mean{A} \mean{B}.
 \end{gather}
 
-Часто, обьем системы, появляющийся в формуле \eqref{part1-absorption-coefficient-definition}, рассматривают как часть спектральной функции $J(\omega)$ или рассматривают их произведение совместно. Поэтому в соответствии с обозначениями, используемыми в \cite{frommhold}, определим автокорреляционную функцию дипольного момента $C(t)$ как
+Часто, обьем системы, появляющийся в формуле \eqref{part1-absorption-coefficient-definition1}, рассматривают как часть спектральной функции $J(\omega)$ или рассматривают их произведение совместно. Поэтому в соответствии с обозначениями, используемыми в \cite{frommhold}, определим автокорреляционную функцию дипольного момента $C(t)$ как
 \begin{gather}
-    C(t) = \frac{V}{2\pi} \mean{\bs{\mu}(0) \cdot \bs{\mu}(t)}.
+    C(t) = \frac{1}{4 \pi \varepsilon_0} \frac{V}{2\pi} \mean{\bs{\mu}(0) \cdot \bs{\mu}(t)}. \label{litreview-autocorrelation-function-definition}
 \end{gather}
 
 Спектральная функция \eqref{litreview-spectral-function} принимает действительные значения, следовательно
 \begin{gather}
-    J(\omega) = J^+(\omega) = \intty C(t)^+ e^{i \omega t} dt = \intty C(-t)^+ e^{-i\omega t} dt, \label{litreview-time-inversion}
+    V J^+(\omega) = \intty C(t)^+ e^{i \omega t} dt = \intty C(-t)^+ e^{-i\omega t} dt = VJ(\omega), \label{litreview-time-inversion}
 \end{gather}
 %
 где была сделана замена переменной $t \rightarrow -t$, а индекс $+$ обозначает комплексное сопряжение. Сранивая \eqref{litreview-time-inversion} с \eqref{litreview-spectral-function}, получаем
@@ -233,28 +242,29 @@
 Соотношение \eqref{litreview-temp1} соотносится с тем, что корреляционная функция является четной функцией. Из четности функции следует, что все коэффициенты перед нечетными степенями $t$ в \eqref{litreview-correlation-function-series} обращаются в ноль. В квантово-механической корреляционной функции нечетные степени не исчезают и, более того, именно за счет них корреляционная функция обладает мнимой частью. \par
 Коэффициенты в ряду по степеням времени \eqref{litreview-correlation-function-series} имеют физический смысл моментов соответствующего частотного спектра. Разрешим соотношение \eqref{litreview-spectral-function} относительно автокорреляционной функции дипольного момента и разложим комплексную экспоненту в подынтегральной функции в ряд
 \begin{gather}
-    C(t) = \frac{1}{2\pi} \intty J(\omega) e^{i \omega t} d \omega = \sum_{n = 0}^\infty \frac{\lb i t\rb^n}{n!} \intty \omega^n J(\omega) d\omega. 
+    C(t) = 2\pi V \intty J(\omega) e^{i \omega t} d \omega = 2 \pi V \intty J(\nu) e^{i 2\pi \nu c t} d\nu = 2 \pi \sum_{n = 0}^\infty \frac{\lb 2\pi i c t\rb^n}{n!} \intty \nu^n V J(\nu) d\nu. 
 \end{gather}
 %
 Величины
 \begin{gather}
-    M_n = \intty \omega^n J(\omega) d\omega \label{litreview-spectral-function-moments}
+    M_n = \intty \nu^n V J(\nu) d\nu \label{litreview-spectral-function-moments}
 \end{gather}
 %
 называют $n$-ыми спектральными моментами. Теоретически, знание всех спектральных моментов эквивалентно знанию спектральной функции (так называемая проблема моментов), однако на практике моменты выше второго находят редко. \par
-Итак, спектральные моменты являются моментами спектральной функции и производными автокорреляционной функции дипольного момента в точке $t = 0$
+Итак, спектральные моменты являются моментами спектральной функции и пропорциональны производным автокорреляционной функции дипольного момента в точке $t = 0$:
 \begin{gather}
-    \frac{d^n C}{dt^n} \Bigg\vert_{t = 0} = i^n M_n,
+    \frac{1}{2 \pi} \frac{d^n C}{dt^n} \Bigg\vert_{t = 0} = \lb 2 \pi ic \rb^n M_n,
 \end{gather}
 %
-что позволяет вычислить их как средние значения по фазовому пространству. Подробно рассматривать вопрос вычисления спектральных моментов рассматривать не будем, приведем лишь выражения, по которым они могут быть рассчитаны:
+что позволяет вычислить их как средние значения по фазовому пространству. Подробно рассматривать вопрос вычисления спектральных моментов рассматривать не будем, приведем лишь выражения, по которым могут быть рассчитаны первые два спектральных момента:
 \begin{gather}
-    M_0 = \frac{\displaystyle \int \bs{\mu}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \\ 
-    M_2 = \frac{\displaystyle \int \dot{\bs{\mu}}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}},
+    M_0 = \frac{\displaystyle \int \bs{\mu}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \label{litreview-m0-phase-space} \\
+    M_2 = \frac{\displaystyle \int \dot{\bs{\mu}}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \label{litreview-m2-phase-space}
 \end{gather}
 %
 где производную по времени дипольного момента $\dot{\bs{\mu}}$ в выражении для второго спектрального момента следует преобразовать в скобку Пуассона \eqref{litreview-poisson-bracket}. \par
-В данной работе мы вычисляем спектральные моменты по фазовому пространству для контроля сходимости траекторного расчета. В траекторном расчете мы получаем спектральную функцию $J(\omega)$, моменты которой \eqref{litreview-spectral-function-moments}, должны совпасть с моментами по фазовому пространству (конечно, если бы использованы одинаковые поверхности потенциальной энергии и индуцированного дипольного момента). 
+В данной работе мы применяем спектральные моменты полученные по формулам \eqref{litreview-m0-phase-space}, \eqref{litreview-m2-phase-space} для контроля сходимости траекторного расчета. В траекторном расчете мы получаем спектральную функцию $J(\omega)$, моменты которой \eqref{litreview-spectral-function-moments}, в пределе должны совпасть с моментами по фазовому пространству.
+
 \begin{subappendices}
 \section{Временная теория возмущений.}
 

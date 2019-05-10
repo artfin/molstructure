@@ -10,77 +10,79 @@
 В работе \cite{kranendonk1973} авторы разрабатывают формализм расчета столкновительно-индуцированного спектра в приближении бинарных столкновений. Авторы рассматривают систему, состояющую из молекулы $H_2$, возмущенной атомами $Ar$. Вращательное движение молекулы $H_2$ исключено из рассмотрения -- обе сталкивающихся молекулы рассматриваются как безструктурные сферически-симметричные частицы. \par
     Спектральная функция, определяющая профиль спектра поглощения, связана с функцией автокорреляции суммарного дипольного момента системы преобразованием Фурье
 \begin{gather}
-    J(\omega) = \frac{1}{2\pi} \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt. \label{twoatom-spectral-function}
+    J(\omega) = \frac{1}{2\pi} \frac{1}{4 \pi \varepsilon_0} \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt. \label{twoatom-spectral-function}
 \end{gather} 
 В приближении бинарных столкновений корреляционная функция суммарного дипольного момента становится 
 \begin{gather}
     \mean{ \bs{\mu}(0) \bs{\mu}(t) } = N \mean{ \bs{\mu}_1(0) \bs{\mu}_1(t) },
 \end{gather} 
 %
-где через $\bs{\mu_1}(t)$ обозначен дипольный момент индуцированный квадрупольным полем молекулы $H_2$ на атоме $Ar$, а $N$ -- количество рассматриваемых пар. Приведенную массу системы обозначают через $\mu$; вектор, соединяющий центр масс молекулы $H_2$ атомом $Ar$ -- через $\mathbf{R}$; потенциал взаимодействия -- через $V(R)$ $[$как уже говорилось, вращательное движение молекулы водорода не рассматривается, поэтому потенциал зависит только от расстояния между центрами масс $R$$]$. Автокорреляционную функцию дипольного момента приводят к виду 
+где через $\bs{\mu_1}(t)$ обозначен дипольный момент индуцированный квадрупольным полем молекулы $H_2$ на атоме $Ar$, а $N$ -- количество рассматриваемых пар. Приведенную массу системы обозначают через $\mu$; вектор, соединяющий центр масс молекулы $H_2$ атомом $Ar$ -- через $\mathbf{R}$; потенциал взаимодействия -- через $V(R)$ (вращательное движение молекулы водорода не рассматривается, поэтому потенциал зависит только от расстояния между центрами масс $R$). Автокорреляционную функцию дипольного момента приводят к виду 
 \begin{gather}
-    C(\tau) = \frac{N}{V} \lb \frac{\mu}{2 \pi k T} \rb^{3/2} \iint \bs{\mu}_1(\mathbf{R}) \cdot \bs{\mu}_1(\mathbf{R}(\tau)) \exp \lb -\frac{\mu \dot{\mf{R}}^2}{2 k T} \rb g_0(R) \, d \mathbf{R} \, d \dot{\mathbf{R}}, \label{kranendonk-correlation-function}
+    C(\tau) = \frac{1}{2 \pi} \frac{N}{4 \pi \varepsilon_0} \lb \frac{\mu}{2 \pi k T} \rb^{3/2} \iint \bs{\mu}_1(\mathbf{R}(0)) \cdot \bs{\mu}_1(\mathbf{R}(\tau)) \exp \lb -\frac{\mu \dot{\mf{R}}^2}{2 k T} \rb g_0(R) \, d \mathbf{R} \, d \dot{\mathbf{R}}, \label{kranendonk-correlation-function}
 \end{gather}
 %
-где $\mathbf{R}(\tau)$ -- значение $\mathbf{R}$, вычисленное в момент времени $\tau$ путем расчета классической траектории, начальными условиями для которой взяты $\mf{R}$ и $\dot{\mf{R}}$, и $g_0(R)$ -- парная функция распределения (вероятность того, что между атомами расстояние $R$)
+где $\mathbf{R}(\tau)$ -- значение $\mathbf{R}$, вычисленное в момент времени $\tau$ путем расчета классической траектории, начальными условиями для которой взяты $\mf{R}$ и $\dot{\mf{R}}$, и $g_0(R)$ -- парная функция распределения 
 \begin{gather}
     g_0(R) = \exp \lb -\frac{V(R)}{kT} \rb.
 \end{gather}
 
-Выражение \eqref{kranendonk-correlation-function} неудобно для численного расчета, т.к. в нем имеется $R(\tau)$ для произвольного момента времени $\tau$. Для более эффективной вычислительной схемы предлагается переписать интегральное выражение \eqref{kranendonk-correlation-function} как интеграл по полным столкновительным траекториям. При этом будут рассматриваться только траектории рассеяния. В лабораторной системе отсчета энергия система может быть записана в виде
+Выражение \eqref{kranendonk-correlation-function} неудобно для численного расчета, т.к. в нем имеется $R(\tau)$ для произвольного момента времени $\tau$. Для более эффективной вычислительной схемы авторы представляют интегральное выражение \eqref{kranendonk-correlation-function} в виде интеграла по полным столкновительным траекториям. При этом будут рассматриваться только траектории рассеяния, связанные состояния исключаются из рассмотрения. В лабораторной системе отсчета энергия система может быть записана в виде
 \begin{gather}
     E = \frac{1}{2} \mu \dot{\mf{R}}^2 + V(R).
 \end{gather}
-Траекторию рассеяния, которая имеет в момент времени $t$ радиус-вектор $\mf{R}$ и скорость $\dot{\mf{R}}$, может быть однозначно определена относительной скоростью $\mf{g}$ в момент времени $t = -\infty$, прицельным параметром $b$, углом, определяющим ориентацию плоскости столковения $\varepsilon$, и моментом времени $t_0$, в которое произошло столкновение. Применяя теорему Лиувилля
+Траектория рассеяния, имеющая в момент времени $t$ радиус-вектор $\mf{R}$ и скорость $\dot{\mf{R}}$, однозначно определена относительной скоростью $\mf{g}$ в момент времени $t = -\infty$, прицельным параметром $b$, углом, определяющим ориентацию плоскости столковения $\varepsilon$, и моментом времени $t_0$, в которое произошло столкновение. Применяя теорему Лиувилля
 \begin{gather}
     d \mf{R} \, d\dot{\mf{R}} = g d(t - t_0) b db \, d\varepsilon \, d\mf{g},
 \end{gather}
 %
 выражение \eqref{kranendonk-correlation-function} преобразуют к виду
 \begin{gather}
-    C(\tau) = \frac{N}{V} \lb \frac{\mu}{2 \pi k T} \rb^{3/2} \idotsint \bs{\mu}_1(t) \cdot \bs{\mu}_1(t + \tau) \, g \exp \lb - \frac{\mu \mf{g}^2}{2 k T} \rb b \, db \, d\varepsilon \, d \mf{g}. \label{correlation-function-kranendonk}
+    C(\tau) = \frac{1}{2 \pi} \frac{N}{4 \pi \varepsilon_0} \lb \frac{\mu}{2 \pi k T} \rb^{3/2} \idotsint \bs{\mu}_1(t) \cdot \bs{\mu}_1(t + \tau) \, g \exp \lb - \frac{\mu \mf{g}^2}{2 k T} \rb b \, db \, d\varepsilon \, d \mf{g} \, dt. \label{correlation-function-kranendonk}
 \end{gather}
 
-Корреляцией двух функций $f$ и $g$, определенных на комплексной плоскости $\mathbb{C}$, называют функцию, определенную следующим интегралом
+Корреляцией двух функций $f(z)$ и $g(z)$, определенных на комплексной плоскости $\mathbb{C}$, называют функцию, определенную следующим интегралом
 \begin{gather}
-    C(\tau) = \intty f^{*}(t) g(\tau + t) dt,
+    K(z) = \intty f^+(s) g(z + s) ds,
 \end{gather}
 % 
-где $*$ обозначает комплексное сопряжение. Обозначим через $F(\omega)$, $G(\omega)$ Фурье-образы функций $f(t)$, $g(t)$. Перепишем выражение для корреляции, представив функции через обратное преобразование Фурье от $F(\omega)$, $G(\omega)$, соответственно.
+где $+$ обозначает комплексное сопряжение. Здесь происходит неудачное совпадение названий, т.к. два разных, но близких объекта носят название корреляции. \enquote{Математическую} корреляционную функцию будем обозначать через $K$, а за физическим объектом сохраним обозначение $C$. Обозначим через $F(\omega)$, $G(\omega)$ Фурье-образы функций $f(z)$, $g(z)$. Перепишем выражение для корреляции, представив функции через обратное преобразование Фурье от $F(\omega)$, $G(\omega)$, соответственно.
 \begin{gather}
-    C(\tau) = \intty \lsq \, \intty F^{*}(\omega) e^{-i \omega t} \frac{d \omega}{2 \pi} \rsq \lsq \, \intty G(\omega^\prime) e^{i \omega^\prime (\tau + t)} \frac{d\omega^\prime}{2 \pi} \rsq
+    K(z) = \intty \lsq \, \intty F^+(\omega) e^{-i \omega s} \frac{d \omega}{2 \pi} \rsq \lsq \, \intty G(\omega^\prime) e^{i \omega^\prime (z + s)} \frac{d\omega^\prime}{2 \pi} \rsq ds
 \end{gather}
 
 Осуществляя перестановку внутри интегрального выражения, приходим к следующему выражению 
 \begin{gather}
-    C(\tau) = \frac{1}{2\pi} \intty \intty F^*(\omega) G(\omega^\prime) e^{i \omega^\prime \tau} \lsq \, \intty e^{i (\omega^\prime - \omega) t} \frac{dt}{2 \pi} \rsq d\omega d\omega^\prime = \notag \\
-    = \frac{1}{2\pi} \intty \intty F^*(\omega) G(\omega^\prime) e^{i \omega^\prime \tau} \delta \lb \omega^\prime - \omega \rb d\omega d\omega^\prime = \hat{F}^{-1} \Big[ F^*(\omega) G(\omega) \Big],
+    K(z) = \frac{1}{2\pi} \intty \intty F^+(\omega) G(\omega^\prime) e^{i \omega^\prime z} \lsq \, \intty e^{i (\omega^\prime - \omega) s} \frac{ds}{2 \pi} \rsq d\omega d\omega^\prime = \notag \\
+    = \frac{1}{2\pi} \intty \intty F^+(\omega) G(\omega^\prime) e^{i \omega^\prime z} \delta \lb \omega^\prime - \omega \rb d\omega d\omega^\prime = \hat{F}^{-1} \Big[ F^+(\omega) G(\omega) \Big],
 \end{gather}
 %
-где через $\hat{F}$ обозначен оператор преобразования Фурье. Если рассмотреть эту цепочку преобразований для автокорреляционной функции действительной функции $f(t)$, то приходим к теореме Винера-Хинчина \cite{frommhold}
+где через $\hat{F}$ обозначен оператор преобразования Фурье. Если рассмотреть эту цепочку преобразований для автокорреляционной функции действительной функции $f$, то приходим к теореме Винера-Хинчина \cite{frommhold}
 \begin{gather}
-    \hat{F} \Big[ C(\tau) \Big] = \Big\vert \hat{F}\Big[ f(t) \Big] \Big\vert^2. 
+    \hat{F} \Big[ K(z) \Big] = \Bigg\vert \hat{F}\Big[ f \Big](\omega) \Bigg\vert^2. 
 \end{gather}
 
-Автокорреляционная функция дипольного момента распадается на сумму автокорреляционных функций его компонент
+Автокорреляционная функция дипольного момента $K(t)$ в подынтегральном выражении \eqref{correlation-function-kranendonk} распадается на сумму автокорреляционных функций $K_\alpha(t)$ компонент дипольного момента 
 \begin{gather}
-    C(\tau) = \intty \bs{\mu}_1(t) \bs{\mu}_1(t + \tau) dt = \sum_{\alpha = x, y, z} \intty \mu_1^\alpha(t) \mu_1^\alpha(t + \tau) dt = C_x(\tau) + C_y(\tau) + C_z(\tau).
+    K(\tau) = \intty \bs{\mu}_1(t) \bs{\mu}_1(t + \tau) dt = \sum_{\alpha = x, y, z} \intty \mu_1^\alpha(t) \mu_1^\alpha(t + \tau) dt = K_x(\tau) + K_y(\tau) + K_z(\tau).
 \end{gather}
 
-Следовательно, преобразование Фурье от автококорреляционной функции дипольного момента представляет собой сумму квадратов преобразований Фурье от компонент дипольного момента
+Следовательно, согласно теореме Винера-Хинчина преобразование Фурье от автокорреляционной функции $K(\tau)$ представляет собой сумму квадратов преобразований Фурье от компонент дипольного момента 
 \begin{gather}
-    \hat{F}\Big[ C(\tau) \Big] = \sum_{\alpha = x,y,z} \hat{F} \Big[ C_\alpha(\tau) \Big] = \sum_{\alpha=x,y,z} \Bigg\vert \intty \mu_1^\alpha(t) e^{-i\omega t} dt \Bigg\vert^2,
+    \hat{F}\Big[ K(\tau) \Big] = \sum_{\alpha = x,y,z} \hat{F} \Big[ K_\alpha(\tau) \Big] = \sum_{\alpha=x,y,z} \Bigg\vert \intty \mu_1^\alpha(t) e^{-i\omega t} dt \Bigg\vert^2,
 \end{gather}
 % 
-что для краткости обозначают 
+что для краткости сокращают в виде 
 \begin{gather}
-    \hat{F} \Big[ C(\tau) \Big] = \Bigg\vert \intty \bs{\mu}_1(t) e^{-i\omega t} dt \Bigg\vert^2. \label{correlation-theorem}
+    \hat{F} \Big[ K(\tau) \Big] = \Bigg\vert \intty \bs{\mu}_1(t) e^{-i\omega t} dt \Bigg\vert^2. \label{correlation-theorem}
 \end{gather}
 
-Итак, преобразование Фурье от автокорреляционной функции \eqref{correlation-function-kranendonk} дает спектральную функцию  
+Итак, получаем следующее выражение для спектральной функции от автокорреляционной функции $C(t)$ \eqref{correlation-function-kranendonk}  
 \begin{gather}
-    J(\omega) = \frac{N}{V} \lb \frac{\mu}{2 \pi k T} \rb^{3/2} \idotsint \Bigg\vert \intty \bs{\mu}_1(t) e^{-i \omega t} dt \Bigg\vert^2 \, \exp \lb -\frac{\mu g^2}{2 k T} \rb b \, db \, d \varepsilon \, 4 \pi g^3 dg.
+    VJ(\omega) = \frac{1}{2 \pi} \frac{N}{4\pi \varepsilon_0} \lb \frac{\mu}{2 \pi k T} \rb^{3/2} \idotsint \Bigg\vert \intty \bs{\mu}_1(t) e^{-i \omega t} dt \Bigg\vert^2 \, \exp \lb -\frac{\mu g^2}{2 k T} \rb b \, db \, d \varepsilon \, 4 \pi g^3 dg. \label{spectral-function-kranendonk}
 \end{gather}
+
+Выражение \eqref{spectral-function-kranendonk} используют при моделировании спектров столкновительно-индуци\allowbreakрованного поглощения систем двух атомов методом классических траекторий \cite{levine1967, mcquarrie1968, buryak2014}. Также это выражение можно обобщить на системы, содержащие вращательные степени свободы \cite{oparin2017}. Однако использовать это выражение затруднительно при рассмотрении динамики столкновения в молекулярной системе отсчета, поэтому мы используя похожие соображения мы выведем несколькое иное выражение для спектральной функции для системы двух атомов и будем использовать его обобщение для моделирования столкновительно-индуцированных спетров систем с вращательными степенями свободы.  
 
 \section{Cистемы координат для описания движения двух атомов}
 
@@ -254,9 +256,6 @@
 \end{gather}
 
 Выражение \eqref{two-atom-plane-angular-momenta} подтверждает, что углы $\Phi$, $\Theta$ действительно являются сферическими углами для вектора углового момента. Кроме того, замечаем, что импульс $p_\psi$ имеет физический смысл модуля вектора углового момента. Этот факт, впрочем, может быть понят из вида гамильтониана \eqref{two-atom-plane-hamiltonian}. При составлении гамильтониана для движения в плоскости мы использовали два интеграла движения -- например, постоянство двух сферических углов, задающих ориентацию вектора углового момента. Координата $\psi$ является циклической для гамильтониана \eqref{two-atom-plane-hamiltonian} из чего следует, что $p_\psi$ является интегралом движения. Поэтому можно предположить, что импульс $p_\psi$ соответствует третьему интегралу движения -- модулю вектора углового момента, что и подтверждает приведенное рассмотрение. \par
-    Соотношения \eqref{two-atoms-coordinates-transformation2}, \eqref{two-atoms-coordinates-transformation3} позволяют перейти от координат системы III к координатам системы I.    
-    \color{red}{Понадобятся ли все остальные переходы?}
-\color{black}{}
 
 \section{Усреднение функций по фазовому пространству в разных системах координат} \label{section:averaging}
 
@@ -304,7 +303,7 @@
     \int \rho \lb \mf{q}, \mf{p} \rb d \mf{q} \, d\mf{p} = 1.
 \end{gather}
 
-Рассмотрим распределения угловых координат $\theta, \varphi$ и импульсов $p_r$, $p_\theta$, $p_\varphi$ системы II при фиксированном большом значении межатомного расстояния $r_\text{fixed} \gg 1$. Пренебрежем значением потенциала $U(r_\text{fixed}) \approx 0$ на расстоянии $r_\text{fixed}$. Удобно представить отношение $\mH / \kb T$ в виде трех квадратичных членов $\lc \frac{1}{2} x_j^2 \rc_{j = 1 \dots 3}$
+Рассмотрим распределения угловых координат $\theta, \varphi$ и импульсов $p_r$, $p_\theta$, $p_\varphi$ системы II при фиксированном большом значении межатомного расстояния $r_\text{fixed} \gg 1$. Пренебрежем значением потенциала $U(r_\text{fixed}) \approx 0$ на расстоянии $r_\text{fixed}$ (для системы He$-$Ar было использовано фиксированное межатомное расстояние, равное $\rfixed = 40 a_0$). Удобно представить отношение $\mH / \kb T$ в виде трех квадратичных членов $\lc \frac{1}{2} x_j^2 \rc_{j = 1 \dots 3}$
 \begin{gather}
     \frac{\mH_\text{spherical}}{\kb T} = \frac{p_r^2}{2 \mu \kb T} + \frac{p_\theta^2}{2 \mu r_\text{fixed}^2 \kb T} + \frac{p_\varphi^2}{2 \mu r_\text{fixed}^2 \kb T \sin^2 \theta} = \frac{1}{2} x_1^2 + \frac{1}{2} x_2^2 + \frac{1}{2} x_3^2, \label{two-atom-spherical-hamiltonian-xs} 
 \end{gather}
@@ -411,24 +410,24 @@
 
 \section{Спектральная функция при рассмотрении динамики столкновения в плоскости} \label{section:spectral_function_in_plane}
 
-Рассмотрим спектральную функцию,связанную с функцией автокорреляции суммарного дипольного момента преобразованием Фурье
+Рассмотрим произведение спектральной функции на объем, являющееся преобразованием Фурье от автокорреляционной функции дипольного момента согласно \eqref{litreview-autocorrelation-function-definition}   
 \begin{gather}
-    J(\omega) = \frac{1}{2 \pi} \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt.
+    VJ(\omega) = \frac{1}{2 \pi} \frac{V}{4 \pi \varepsilon_0} \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt.
 \end{gather}
 
 Мы будем пользоваться приближением бинарных столкновений, то есть, будем предполагать, что суммарная автокорреляционная функция распадается на сумму автокорреляционных функций индуцированных диполей пар. Для индуцированного дипольного момента пары, для простоты, мы сохраним обозначение $\bs{\mu}$. Итак, мы будем работать со следующим выражением для спектральной функции с трактовкой интеграла как интеграла по начальным условиям классических динамических траекторий, как обсуждалось в пункте \ref{section:correlation_functions} 
 \begin{gather}
-    J(\omega) = \frac{1}{2\pi} \intty \frac{\displaystyle \idotsint \bs{\mu}(0) \bs{\mu}(t) \, \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}}{\displaystyle \idotsint \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}} e^{-i \omega t} dt. \label{two-atom-spectral-function1}
+    VJ(\omega) = \frac{1}{2\pi} \frac{V}{4 \pi \varepsilon_0} \intty \frac{\displaystyle \idotsint \bs{\mu}(0) \bs{\mu}(t) \, \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}}{\displaystyle \idotsint \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}} e^{-i \omega t} dt. \label{two-atom-spectral-function1}
 \end{gather}
 
 Вектор координат при рассмотрении в плоскости столкновений равен $\mf{q} = \lc r, \psi, \Phi, \Theta \rc$, а вектор импульсов -- $\mf{p} = \lc p_r, p_\psi \rc$. Кроме того, согласно пункту \ref{section:averaging} в интеграле появляется дополнительный весовой множитель, равный $\text{Jac} = p_\psi \sin \Theta$. Следовательно, полное интегральное выражение в этой системе координат выглядит следующим образом
 \begin{gather}
-    J(\omega) = \frac{1}{2\pi} \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function2}
+    VJ(\omega) = \frac{1}{2\pi} \frac{V}{4 \pi \varepsilon_0} \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function2}
 \end{gather}
 
-Заметим, что ни дипольный момент $\bs{\mu}(t)$, ни гамильтониан $\mH$ не зависят от углов $\Phi$, $\Theta$. Проинтегрировав по ним, мы получаем фактор $4 \pi$ как в числителе, так и знаменателе, поэтому суммарно никаких дополнительных множителей не возникает.
+Заметим, что скалярное произведение дипольных моментов $\bs{\mu}(0) \bs{\mu}(t)$ и гамильтониан $\mH$ не зависят от углов $\Phi$, $\Theta$. Проинтегрировав по ним, мы получаем фактор $4 \pi$ как в числителе, так и знаменателе, поэтому суммарно никаких дополнительных множителей не возникает.
 \begin{gather}
-    J(\omega) = \frac{1}{2 \pi} \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function3}
+    VJ(\omega) = \frac{1}{2 \pi} \frac{V}{4 \pi \varepsilon_0} \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \exp \lb -\frac{\mH}{kT} \rb}. \label{two-atom-spectral-function3}
 \end{gather}
 
 Как известно, решение задачи о движении частицы с приведенной массой $\mu$ в центральном поле можно получить, основываясь на законах сохранения энергии и углового момента в интегральном виде \cite{landau-volume1}. Гамильтониан, записанный в полярных координатах, определенных в плоскости движения (система III), 
@@ -539,7 +538,7 @@ f = \frac{\partial p_r^\prime}{\partial p_\psi} = \frac{\displaystyle p_\psi \lb
 
 Следовательно, выражение для спектральной функции \eqref{two-atom-spectral-function3} может быть переписано в виде
 \begin{gather}
-    J(\omega) = \frac{1}{2 \pi \Gamma_0} \intty e^{-i \omega t} dt \int\limits_0^\infty d\tau \intty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(\tau) \exp \lb -\frac{\mH_\text{plane}}{kT} \rb,
+    VJ(\omega) = \frac{1}{2 \pi \Gamma_0} \frac{V}{4 \pi \varepsilon_0} \intty e^{-i \omega t} dt \int\limits_0^\infty d\tau \intty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \bs{\mu}(0) \bs{\mu}(\tau) \exp \lb -\frac{\mH_\text{plane}}{kT} \rb,
 \end{gather}
 %
 где через $\Gamma_0$ обозначен интеграл, находящийся в знаменателе \eqref{two-atom-spectral-function3}
@@ -549,8 +548,10 @@ f = \frac{\partial p_r^\prime}{\partial p_\psi} = \frac{\displaystyle p_\psi \lb
 
 Переставив интеграл по времени $t$ c интегралами по переменным $\tau$, $p_r^\prime$, $\psi^\prime$ и $p_\psi$, воспользуемся корреляционной теоремой \eqref{correlation-theorem}
 \begin{gather}
-    J(\omega) = \frac{1}{2 \pi \Gamma_0} \int\limits_0^\infty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \Bigg\vert \intty \bs{\mu}(t) e^{-i \omega t} dt \Bigg\vert^2 \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-spectral-function4}
+    VJ(\omega) = \frac{1}{2 \pi \Gamma_0} \frac{V}{4 \pi \varepsilon_0} \int\limits_0^\infty \frac{p_r^\prime}{\mu} dp_r^\prime \int\limits_0^{2\pi} d\psi^\prime \int\limits_0^\infty p_\psi dp_\psi \Bigg\vert \intty \bs{\mu}(t) e^{-i \omega t} dt \Bigg\vert^2 \exp \lb -\frac{\mH_\text{plane}}{k T} \rb. \label{two-atom-spectral-function4}
 \end{gather}
+
+Итак, выражение для спектральной функции \eqref{two-atom-spectral-function4} является аналогом выражения \eqref{spectral-function-kranendonk} при рассмотрении динамики в гамильтоновых переменных в плоскости столкновения. В следующем параграфе будут приведены результаты расчетов спектральных функций и профилей по выражению \eqref{two-atom-spectral-function4}. Рассмотрение систем типа атом$-$линейная молекула и пара линейных молекул, описанное в следующей главе, опирается на обобщение выведенного выражения для спектральной функции. 
 
 \iffalse
 Integral ratio:
@@ -580,7 +581,7 @@ Integral ratio:
 \end{gather}
 Выражение \eqref{two-atom-spectral-function4} может быть рассмотрено как математическое ожидание квадрата преобразования Фурье на распределении $\boldsymbol{\xi}$
 \begin{gather}
-    J(\omega) = \frac{\Gamma_1}{2 \pi \Gamma_0} \sum_{k = 1}^{\infty} \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2, \label{two-atom-spectral-function-mc}
+    V J(\omega) = \frac{V}{4 \pi \varepsilon_0} \frac{\Gamma_1}{2 \pi \Gamma_0} \sum_{k = 1}^{\infty} \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2, \label{two-atom-spectral-function-mc}
 \end{gather}
 %
 где обозначение $p_r^\prime(\bxi_k)$ подразумевает, что импульс, сопряженный радиальной координате, взят из вектора $\bxi$, реализующего распределение с плотностью $p_\xi$. \par
@@ -591,7 +592,7 @@ Integral ratio:
 \end{gather}
 Таким образом, конечное выражение для спектральной функции, как среднее значение на распределении с плотностью $p_\xi(\bxi)$, приходит к виду
 \begin{gather}
-    J(\omega) = \rfixed^2 \sum_{k = 1}^\infty \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2. \label{two-atom-spectral-function-mc-final}
+    VJ(\omega) = \rfixed^2 \sum_{k = 1}^\infty \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2. \label{two-atom-spectral-function-mc-final}
 \end{gather}
 
 Вопрос генерации реализаций случайной величины $\bxi$ с плотностью распределения $p_\xi$ был обсужден в параграфе \ref{section:averaging}. Рассмотрим вопрос расчет классических траекторий рассеяния. Несмотря на то, что для динамических переменных могут быть выписаны квадратурные выражения, которыми мы пользовались в параграфе \ref{section:spectral_function_in_plane}, вычисления по ним производить не очень удобно. В первую очередь неудобство связано с тем, что для вычисления усредняемого выражения в \eqref{two-atom-spectral-function-mc-final} нам потребуется вычислять преобразование Фурье от дипольного момента вдоль траектории, которое эффективно реализуется в виде дискретного преобразования Фурье. Для этого нам потребуются значения дипольного момента $\bs{\mu}(t)$ с равноверным шагом по времени, что вызовет некоторые затруднения при вычисления по квадратурной формуле. Кроме того, квадратуры для всех динамических переменных являются несобственными интегралами, имеющими особенность в поворотной точке. Поэтому траектории рассеяния рассчитывались интегрированием трех уравнений Гамильтона
@@ -637,7 +638,7 @@ Integral ratio:
     J_{D2}(\omega) = \frac{\hbar \omega}{\kb T} \frac{1}{1 - \exp \lb -\hbar \omega / \kb T \rb} J_\text{class}(\omega) \\
     J_{D3}(\omega) = \exp \lb \frac{\hbar \omega}{2 \kb T} \rb J_\text{class}(\omega)
 \end{gather}
-В литературе также используется преобразование Эгельстаффа \cite{egelstaff1962}; нами она практически не использовалась, поэтому результаты применения этой процедуры не приводятся. 
+В литературе также используется преобразование Эгельстаффа \cite{egelstaff1962}; мы его практически не использовали, поэтому результаты применения этой процедуры не приводятся. 
 
 \begin{figure}
     \centering
@@ -654,7 +655,6 @@ Integral ratio:
 \end{gather}
 
 Основываясь на рисунке \ref{fig:desymmetrisation-spectral-functions} замечаем, что при малых частотах все спектральные функции ведут себя примерно примерно одинаковым образом, однако с увеличением частоты различие между ними становится все больше. Одной из наиболее популярной в литературе является процедура D3. Спектральная функция, полученная в результате процедуры D3, переоценивает квантовую спектральную функции в области крыла, однако считается, что около максимума спектра она дает наилучшую оценку. Сравнение при других температурах мы будем производить именно со спектром, полученным в результате процедуры D3. \par
-Сравнение с экспериментальными данными на \ref{fig:two-atom-spectra} показывает, что несмотря на проблему выбора подходящей процедуры десимметризации, общее совпадение с экспериментальными данными оказывается неплохим. Отклонения между спектрами, полученными в результате применения различных процедур десимметризации, не превышает отклонения между квантовым профилем и экспериментальными данными.  
 
 \begin{figure}[H]
     \centering
@@ -663,6 +663,8 @@ Integral ratio:
     \caption{Влияние десимметризации на спектральную функцию и спектральный профиль с учетом отрицательных частот. Пунктиром обозначены классические спектральная функция и профиль; сплошной линией -- полученные из классических в результате процедуры D3.}
 \end{figure}
 
+Сравнение с экспериментальными данными на \ref{fig:two-atom-spectra} показывает, что несмотря на проблему выбора подходящей процедуры десимметризации, общее совпадение с экспериментальными данными оказывается неплохим. Отклонения между спектрами, полученными в результате применения различных процедур десимметризации, не превышает отклонения между квантовым профилем и экспериментальными данными. При всех температурах мы видим, что профиль, полученный в результате процедуры десимметризации D3, несколько превышает экспериментальные данные. \par 
+Представленные на рис. \ref{fig:two-atom-spectra} получены в результате усреднения 2.000.000 траекторий. При всех температурах кроме 240К наблюдается неплохое согласие с экспериментальными данными.  
 
 \begin{figure}[H]
     \centering
@@ -673,5 +675,29 @@ Integral ratio:
     \caption{Трансляционные спектры системы He$-$Ar при температурах 165K, 200K, 240K и 295K. Черными кружками обозначены экспериментальные данные из \cite{bukhtoyarova1977, bukhtoyarova1977_2, ryzhov1974}, квадратами -- из \cite{bosomworth1965_part2}.}
     \label{fig:two-atom-spectra}
 \end{figure}
+
+Сходимость расчета спектральной функции по Монте-Карло контролировалась при помощи спектральных моментов. Как отмечалось в теоретическом введении, спектральные моменты могут быть посчитаны как средние по фазовому пространству и, в то же время, являются моментами спектральной функции как случайной величины. Если на всех этапах траекторного расчета не допускается систематических ошибок, то с увеличением количества траекторий моменты получаемой спектральной функции должны стремиться к моментам, полученным при усреднении по соотвествующей области фазового пространства. Так как начальные условия отбираются по области $H > 0$, то спектральные моменты для сравнения должны быть рассчитаны по этой области фазового пространства. Расчет спектральных моментов производился по формулам \eqref{litreview-m0-phase-space}, \eqref{litreview-m2-phase-space}  при помощи адаптивного метода Монте-Карло \cite{hep}. В таблице \ref{table:hear-moments} представлены данные о сходимости спектральных профилей на рис. \ref{fig:two-atom-spectra}. 
+
+\begin{table}[H]
+    \begin{tabular}{c >{\centering}p{6cm} >{\centering}p{6cm} >{\centering}p{3cm}}
+        \toprule
+        $T$, K & Спектральные моменты $M_0$ (см$^{-1} \cdot$Амага$^{-2}$) и $M_2$ (см$^{-3} \cdot$Амага$^{-2}$) по фазовому пространству & Спектральные моменты $M_0$ (см$^{-1} \cdot$Амага$^{-2}$) и $M_2$ (см$^{-3} \cdot$Амага$^{-2}$) по траекторному спектру & Отклонение \tabularnewline
+        \midrule
+        \multirow{2}{*}{$165$}  & $3.113\cdot 10^{-6}$ & $3.110 \cdot 10^{-6}$ & $-0.1$ \%  \tabularnewline
+                                & $3.061\cdot 10^{-2}$ & $3.077 \cdot 10^{-2}$ & $+0.5$ \%  \tabularnewline
+        \midrule
+        \multirow{2}{*}{$200$}  & $3.684\cdot 10^{-6}$ & $3.663 \cdot 10^{-6}$ & $-0.5$ \%  \tabularnewline
+                                & $4.278\cdot 10^{-2}$ & $4.290 \cdot 10^{-2}$ & $+0.3$ \%  \tabularnewline
+        \midrule
+        \multirow{2}{*}{$240$}  & $4.347\cdot 10^{-6}$ & $4.337 \cdot 10^{-6}$ & $-0.2$ \%  \tabularnewline
+                                & $5.912\cdot 10^{-2}$ & $5.983 \cdot 10^{-2}$ & $+1.2$ \%  \tabularnewline
+        \midrule
+        \multirow{2}{*}{$295$}  & $5.274\cdot 10^{-6}$ & $5.241 \cdot 10^{-6}$ & $-0.6$ \%  \tabularnewline
+                                & $8.574\cdot 10^{-2}$ & $8.591 \cdot 10^{-2}$ & $+0.2$ \%  \tabularnewline
+        \bottomrule
+    \end{tabular}
+    \caption{Сравнение спектральных моментов, рассчитанных по фазовому пространству, с моментами по траекторным спектрам системы He$-$Ar}
+    \label{table:hear-moments}
+\end{table}
 
 
