@@ -258,11 +258,11 @@
 %
 что позволяет вычислить их как средние значения по фазовому пространству. Подробно рассматривать вопрос вычисления спектральных моментов рассматривать не будем, приведем лишь выражения, по которым могут быть рассчитаны первые два спектральных момента:
 \begin{gather}
-    M_0 = \frac{\displaystyle \int \bs{\mu}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \label{litreview-m0-phase-space} \\
-    M_2 = \frac{\displaystyle \int \dot{\bs{\mu}}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \label{litreview-m2-phase-space}
+    M_0 = 2 \pi \frac{\displaystyle \int \bs{\mu}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \label{litreview-m0-phase-space} \\
+    M_2 = 2 \pi (2 \pi c)^2 \frac{\displaystyle \int \dot{\bs{\mu}}^2 \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}{\displaystyle \int \exp \lsq -H(\mf{q}, \mf{p}) / \kb T \rsq d\mf{q} \, d\mf{p}}, \label{litreview-m2-phase-space}
 \end{gather}
 %
-где производную по времени дипольного момента $\dot{\bs{\mu}}$ в выражении для второго спектрального момента следует преобразовать в скобку Пуассона \eqref{litreview-poisson-bracket}. \par
+где производную по времени дипольного момента $\dot{\bs{\mu}}$ в выражении для второго спектрального момента следует преобразовать в скобку Пуассона \eqref{litreview-poisson-bracket}. Затем полученные значения интегралов следует привести к размерности см$^{-1} \cdot$Амага$^{-2}$ и  см$^{-3} \cdot$Амага$^{-2}$, соответственно. \par
 В данной работе мы применяем спектральные моменты полученные по формулам \eqref{litreview-m0-phase-space}, \eqref{litreview-m2-phase-space} для контроля сходимости траекторного расчета. В траекторном расчете мы получаем спектральную функцию $J(\omega)$, моменты которой \eqref{litreview-spectral-function-moments}, в пределе должны совпасть с моментами по фазовому пространству.
 
 \begin{subappendices}

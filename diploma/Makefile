@@ -8,3 +8,7 @@ clean:
 	rm -f *.fls
 	rm -f *.log
 	rm -f *.synctex.gz
+	rm -f *.out
+	rm -f *.bcf
+	rm -f *.run.xml
+	rm -f *.toc

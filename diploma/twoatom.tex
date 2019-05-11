@@ -581,7 +581,7 @@ Integral ratio:
 \end{gather}
 Выражение \eqref{two-atom-spectral-function4} может быть рассмотрено как математическое ожидание квадрата преобразования Фурье на распределении $\boldsymbol{\xi}$
 \begin{gather}
-    V J(\omega) = \frac{V}{4 \pi \varepsilon_0} \frac{\Gamma_1}{2 \pi \Gamma_0} \sum_{k = 1}^{\infty} \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2, \label{two-atom-spectral-function-mc}
+    V J(\omega) = \frac{V}{4 \pi \varepsilon_0} \frac{\Gamma_1}{2 \pi \Gamma_0} \sum_{k = 1}^{\infty} \frac{p_r^\prime(\bxi_k)}{\mu} \Bigg\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Bigg\vert^2, \label{two-atom-spectral-function-mc}
 \end{gather}
 %
 где обозначение $p_r^\prime(\bxi_k)$ подразумевает, что импульс, сопряженный радиальной координате, взят из вектора $\bxi$, реализующего распределение с плотностью $p_\xi$. \par
@@ -592,7 +592,7 @@ Integral ratio:
 \end{gather}
 Таким образом, конечное выражение для спектральной функции, как среднее значение на распределении с плотностью $p_\xi(\bxi)$, приходит к виду
 \begin{gather}
-    VJ(\omega) = \rfixed^2 \sum_{k = 1}^\infty \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2. \label{two-atom-spectral-function-mc-final}
+    VJ(\omega) = \frac{\rfixed^2}{4 \pi \varepsilon_0} \sum_{k = 1}^\infty \frac{p_r^\prime(\bxi_k)}{\mu} \Big\vert \intty \bs{\mu}(t; \bxi_k) e^{i \omega t} dt \Big\vert^2. \label{two-atom-spectral-function-mc-final}
 \end{gather}
 
 Вопрос генерации реализаций случайной величины $\bxi$ с плотностью распределения $p_\xi$ был обсужден в параграфе \ref{section:averaging}. Рассмотрим вопрос расчет классических траекторий рассеяния. Несмотря на то, что для динамических переменных могут быть выписаны квадратурные выражения, которыми мы пользовались в параграфе \ref{section:spectral_function_in_plane}, вычисления по ним производить не очень удобно. В первую очередь неудобство связано с тем, что для вычисления усредняемого выражения в \eqref{two-atom-spectral-function-mc-final} нам потребуется вычислять преобразование Фурье от дипольного момента вдоль траектории, которое эффективно реализуется в виде дискретного преобразования Фурье. Для этого нам потребуются значения дипольного момента $\bs{\mu}(t)$ с равноверным шагом по времени, что вызовет некоторые затруднения при вычисления по квадратурной формуле. Кроме того, квадратуры для всех динамических переменных являются несобственными интегралами, имеющими особенность в поворотной точке. Поэтому траектории рассеяния рассчитывались интегрированием трех уравнений Гамильтона

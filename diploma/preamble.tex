@@ -1,5 +1,7 @@
 \usepackage[T1]{fontenc}
+%\usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
+%\usepackage[main=russian, english]{babel}
 \usepackage[russian]{babel}
 
 % margins
@@ -53,7 +55,7 @@
   {\endmatrix\right]}
 \makeatother
 
-\usepackage{csquotes}
+\usepackage[autostyle]{csquotes}
 
 \newcommand{\mf}{\mathbf}
 
@@ -170,3 +172,11 @@
  \usepackage{multirow}
  \usepackage{booktabs}
  \usepackage{array}
+
+ \usepackage[backend=biber, 
+             bibencoding=auto, 
+             style=gost-numeric,
+             language=auto,
+             sorting=none]{biblatex}
+ \addbibresource{biblio.bib}
+
