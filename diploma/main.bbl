@@ -1,2349 +1,512 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
 
+\bibitem{crawford1949}
+\selectlanguageifdefined{english}
+Crawford~M., Welsh~H., Locke~J. Infra-red absorption of oxygen and nitrogen
+  induced by intermolecular forces~// Physical Review.
+\newblock 1949.
+\newblock Vol.~75, no.~10.
+\newblock p.~1607.
 
-\refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{crawford1949}{article}{}
-      \name{author}{3}{}{%
-        {{hash=40a62abe63f6109ffb936fdcc44e5940}{%
-           family={Crawford},
-           familyi={C\bibinitperiod},
-           given={MF},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c2c0bf0fca2d9911600f71caed615c70}{%
-           family={Welsh},
-           familyi={W\bibinitperiod},
-           given={HL},
-           giveni={H\bibinitperiod}}}%
-        {{hash=0c35ee5189596caf892d3cdf29e2eca9}{%
-           family={Locke},
-           familyi={L\bibinitperiod},
-           given={JL},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{973487c7e70df00498f826d3c3ba7477}
-      \strng{fullhash}{973487c7e70df00498f826d3c3ba7477}
-      \strng{bibnamehash}{973487c7e70df00498f826d3c3ba7477}
-      \strng{authorbibnamehash}{973487c7e70df00498f826d3c3ba7477}
-      \strng{authornamehash}{973487c7e70df00498f826d3c3ba7477}
-      \strng{authorfullhash}{973487c7e70df00498f826d3c3ba7477}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review}
-      \field{title}{Infra-red absorption of oxygen and nitrogen induced by intermolecular forces}
-      \field{year}{1949}
-      \field{number}{10}
-      \range{number}{1}
-      \field{pages}{1607}
-      \range{pages}{1}
-      \field{volume}{75}
-      \range{volume}{1}
-    \endentry
-    \entry{sioris2014}{article}{useauthor=false}
-      \name{author}{7}{}{%
-        {{hash=0aab2218fe067d6433aba602c8be56a8}{%
-           family={Sioris},
-           familyi={S\bibinitperiod},
-           given={CE},
-           giveni={C\bibinitperiod}}}%
-        {{hash=4f2e898dbf4117ae57fa8dda1e6e1e49}{%
-           family={Boone},
-           familyi={B\bibinitperiod},
-           given={CD},
-           giveni={C\bibinitperiod}}}%
-        {{hash=acfc5101aaa002e106161d8f1420f8b7}{%
-           family={Nassar},
-           familyi={N\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=206c4e0136f20a9b2ac01c9189fb95b8}{%
-           family={Sutton},
-           familyi={S\bibinitperiod},
-           given={KJ},
-           giveni={K\bibinitperiod}}}%
-        {{hash=afe8acbd1d408b1ad8f9d7f8ab631bfe}{%
-           family={Gordon},
-           familyi={G\bibinitperiod},
-           given={IE},
-           giveni={I\bibinitperiod}}}%
-        {{hash=517d3876eac2f355ddf8b1e27a7901e0}{%
-           family={Walker},
-           familyi={W\bibinitperiod},
-           given={KA},
-           giveni={K\bibinitperiod}}}%
-        {{hash=beb4becd36f38ea6bf78f48bcf0805d5}{%
-           family={Bernath},
-           familyi={B\bibinitperiod},
-           given={PF},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{authorbibnamehash}{746a975ed4774504d0702ee53fd39a02}
-      \strng{authornamehash}{746a975ed4774504d0702ee53fd39a02}
-      \strng{authorfullhash}{0e2ddc0add9f867f95fe8a90113b9423}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Atmospheric Measurement Techniques}
-      \field{title}{Retrieval of carbon dioxide vertical profiles from solar occultation observations and associated error budgets for ACE-FTS and CASS-FTS}
-      \field{year}{2014}
-      \field{number}{7}
-      \range{number}{1}
-      \field{volume}{7}
-      \range{volume}{1}
-    \endentry
-    \entry{sharma1975}{article}{}
-      \name{author}{2}{}{%
-        {{hash=885bfc0294c17898c9088179be461345}{%
-           family={Sharma},
-           familyi={S\bibinitperiod},
-           given={Ramesh\bibnamedelima D},
-           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=40504dde2b4866242692b49b5a3abfde}{%
-           family={Hart},
-           familyi={H\bibinitperiod},
-           given={Robert\bibnamedelima R},
-           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{e57e3a0f897947ac42e91d69ddec8fba}
-      \strng{fullhash}{e57e3a0f897947ac42e91d69ddec8fba}
-      \strng{bibnamehash}{e57e3a0f897947ac42e91d69ddec8fba}
-      \strng{authorbibnamehash}{e57e3a0f897947ac42e91d69ddec8fba}
-      \strng{authornamehash}{e57e3a0f897947ac42e91d69ddec8fba}
-      \strng{authorfullhash}{e57e3a0f897947ac42e91d69ddec8fba}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review A}
-      \field{title}{Collision-induced absorption in He-Ar mixture}
-      \field{year}{1975}
-      \field{number}{1}
-      \range{number}{1}
-      \field{pages}{85}
-      \range{pages}{1}
-      \field{volume}{12}
-      \range{volume}{1}
-    \endentry
-    \entry{meyer1986}{article}{}
-      \name{author}{2}{}{%
-        {{hash=b1705df243970865a35c2c75bc26b2c2}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Wilfried},
-           giveni={W\bibinitperiod}}}%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{fullhash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{bibnamehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{authorbibnamehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{authornamehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{authorfullhash}{4af3e69ed205d88133fc1357b50c74b0}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review A}
-      \field{title}{Ab initio calculation of the dipole moment of He-Ar and the collision-induced absorption spectra}
-      \field{year}{1986}
-      \field{number}{6}
-      \range{number}{1}
-      \field{pages}{3807}
-      \range{pages}{1}
-      \field{volume}{33}
-      \range{volume}{1}
-    \endentry
-    \entry{karman2015}{article}{useauthor=false}
-      \name{author}{5}{}{%
-        {{hash=f6b24d3ec207ae20d4db1920ab8a2673}{%
-           family={Karman},
-           familyi={K\bibinitperiod},
-           given={Tijs},
-           giveni={T\bibinitperiod}}}%
-        {{hash=6d596c00c280c3f505fa23772aa1af3f}{%
-           family={Miliordos},
-           familyi={M\bibinitperiod},
-           given={Evangelos},
-           giveni={E\bibinitperiod}}}%
-        {{hash=58b6d5a493e75c6babae640312c02e71}{%
-           family={Hunt},
-           familyi={H\bibinitperiod},
-           given={Katharine\bibnamedelima LC},
-           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=3771a3b305856c5e96cdbecabd86bd6a}{%
-           family={Groenenboom},
-           familyi={G\bibinitperiod},
-           given={Gerrit\bibnamedelima C},
-           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=46e089bf04e319505fe664ddba9eb0e4}{%
-           family={Avoird},
-           familyi={A\bibinitperiod},
-           given={Ad},
-           giveni={A\bibinitperiod},
-           prefix={van\bibnamedelima der},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP Publishing}%
-      }
-      \strng{authorbibnamehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{authornamehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{authorfullhash}{19bcc63a4a396da106028fccdba72b5e}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Quantum mechanical calculation of the collision-induced absorption spectra of N2--N2 with anisotropic interactions}
-      \field{year}{2015}
-      \field{number}{8}
-      \range{number}{1}
-      \field{pages}{084306}
-      \range{pages}{1}
-      \field{volume}{142}
-      \range{volume}{1}
-    \endentry
-    \entry{oparin2017}{article}{useauthor=false}
-      \name{author}{4}{}{%
-        {{hash=c0e4b36e18eded21ffdfe329d962c43c}{%
-           family={Oparin},
-           familyi={O\bibinitperiod},
-           given={Daniil\bibnamedelima V},
-           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=6aa042c43c43c8e221bfe0e18322a6eb}{%
-           family={Filippov},
-           familyi={F\bibinitperiod},
-           given={Nikolai\bibnamedelima N},
-           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=fc4b5a6ea4fa78ddd56ff5d355784272}{%
-           family={Grigoriev},
-           familyi={G\bibinitperiod},
-           given={Ivan\bibnamedelima M},
-           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=3c72b4cdccaca7802d6c4b9572d7ea49}{%
-           family={Kouzov},
-           familyi={K\bibinitperiod},
-           given={Alexander\bibnamedelima P},
-           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{authorbibnamehash}{77cf1b24ae0abaa5a9019b175c0ee6c5}
-      \strng{authornamehash}{77cf1b24ae0abaa5a9019b175c0ee6c5}
-      \strng{authorfullhash}{d8f45d47fa1ca8eb45690e2f64c087bc}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Quantitative Spectroscopy and Radiative Transfer}
-      \field{title}{Effect of stable and metastable dimers on collision-induced rototranslational spectra: Carbon dioxide--rare gas mixtures}
-      \field{year}{2017}
-      \field{pages}{87\bibrangedash 93}
-      \range{pages}{7}
-      \field{volume}{196}
-      \range{volume}{1}
-    \endentry
-    \entry{cohentanuji}{book}{}
-      \name{author}{1}{}{%
-        {{hash=e3a5c51c030a275c8411b2d9d0b5f70f}{%
-           family={Коэн-Таннуджи\bibnamedelima К.},
-           familyi={К\bibinithyphendelim Т\bibinitperiod\bibinitdelim К\bibinitperiod},
-           given={Лалоэ\bibnamedelima Ф.},
-           giveni={Л\bibinitperiod\bibinitdelim Ф\bibinitperiod},
-           suffix={Диу\bibnamedelima Б.},
-           suffixi={Д\bibinitperiod\bibinitdelim Б\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Издательство Уральского университета}%
-      }
-      \strng{namehash}{e3a5c51c030a275c8411b2d9d0b5f70f}
-      \strng{fullhash}{e3a5c51c030a275c8411b2d9d0b5f70f}
-      \strng{bibnamehash}{e3a5c51c030a275c8411b2d9d0b5f70f}
-      \strng{authorbibnamehash}{e3a5c51c030a275c8411b2d9d0b5f70f}
-      \strng{authornamehash}{e3a5c51c030a275c8411b2d9d0b5f70f}
-      \strng{authorfullhash}{e3a5c51c030a275c8411b2d9d0b5f70f}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Квантовая механика}
-      \field{year}{2000}
-    \endentry
-    \entry{greiner}{book}{}
-      \name{author}{1}{}{%
-        {{hash=db9ee2935cc80a906152fec70945573c}{%
-           family={W.\bibnamedelimi Greiner},
-           familyi={W\bibinitperiod\bibinitdelim G\bibinitperiod},
-           given={D.A.\bibnamedelimi Bromley},
-           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{db9ee2935cc80a906152fec70945573c}
-      \strng{fullhash}{db9ee2935cc80a906152fec70945573c}
-      \strng{bibnamehash}{db9ee2935cc80a906152fec70945573c}
-      \strng{authorbibnamehash}{db9ee2935cc80a906152fec70945573c}
-      \strng{authornamehash}{db9ee2935cc80a906152fec70945573c}
-      \strng{authorfullhash}{db9ee2935cc80a906152fec70945573c}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{4th}
-      \field{isbn}{3540674586,9783540674580}
-      \field{series}{Research Reports Esprit}
-      \field{title}{Quantum mechanics. An introduction}
-      \field{year}{2000}
-    \endentry
-    \entry{baym-quantum-mechanics}{book}{}
-      \name{author}{1}{}{%
-        {{hash=db94fa99a7f093aa3736d4d086a6a3f3}{%
-           family={Baym},
-           familyi={B\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Westview Press}%
-      }
-      \strng{namehash}{db94fa99a7f093aa3736d4d086a6a3f3}
-      \strng{fullhash}{db94fa99a7f093aa3736d4d086a6a3f3}
-      \strng{bibnamehash}{db94fa99a7f093aa3736d4d086a6a3f3}
-      \strng{authorbibnamehash}{db94fa99a7f093aa3736d4d086a6a3f3}
-      \strng{authornamehash}{db94fa99a7f093aa3736d4d086a6a3f3}
-      \strng{authorfullhash}{db94fa99a7f093aa3736d4d086a6a3f3}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Lectures on quantum mechanics}
-      \field{year}{1974}
-    \endentry
-    \entry{mcquarrie-statistical-mechanics}{book}{}
-      \name{author}{1}{}{%
-        {{hash=da5b475ab88af38381d7f4b940b339f7}{%
-           family={McQuarrie},
-           familyi={M\bibinitperiod},
-           given={D.\bibnamedelimi A.},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Harper \& Row}%
-      }
-      \strng{namehash}{da5b475ab88af38381d7f4b940b339f7}
-      \strng{fullhash}{da5b475ab88af38381d7f4b940b339f7}
-      \strng{bibnamehash}{da5b475ab88af38381d7f4b940b339f7}
-      \strng{authorbibnamehash}{da5b475ab88af38381d7f4b940b339f7}
-      \strng{authornamehash}{da5b475ab88af38381d7f4b940b339f7}
-      \strng{authorfullhash}{da5b475ab88af38381d7f4b940b339f7}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Statistical Mechanics}
-      \field{year}{1976}
-    \endentry
-    \entry{landau-volume2}{book}{}
-      \name{author}{1}{}{%
-        {{hash=4a51a6a84756f4785ea6f12cc00dd275}{%
-           family={Ландау\bibnamedelima Л.Д.},
-           familyi={Л\bibinitperiod\bibinitdelim Л\bibinitperiod},
-           given={Лифшиц\bibnamedelima Е.М.},
-           giveni={Л\bibinitperiod\bibinitdelim Е\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ФМЛ}%
-      }
-      \strng{namehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{fullhash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{bibnamehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{authorbibnamehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{authornamehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{authorfullhash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Теоретическая физика. Том 2. Теория поля}
-      \field{year}{2003}
-    \endentry
-    \entry{gordon1968}{article}{}
-      \name{author}{1}{}{%
-        {{hash=f8a57779533afb3073c0b3f05ae173e9}{%
-           family={Gordon},
-           familyi={G\bibinitperiod},
-           given={R.\bibnamedelimi G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{f8a57779533afb3073c0b3f05ae173e9}
-      \strng{fullhash}{f8a57779533afb3073c0b3f05ae173e9}
-      \strng{bibnamehash}{f8a57779533afb3073c0b3f05ae173e9}
-      \strng{authorbibnamehash}{f8a57779533afb3073c0b3f05ae173e9}
-      \strng{authornamehash}{f8a57779533afb3073c0b3f05ae173e9}
-      \strng{authorfullhash}{f8a57779533afb3073c0b3f05ae173e9}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Magnetic and Optical Resonance}
-      \field{title}{Correlation functions for molecular motion}
-      \field{year}{1968}
-      \field{pages}{1\bibrangedash 42}
-      \range{pages}{42}
-      \field{volume}{3}
-      \range{volume}{1}
-    \endentry
-    \entry{zwanzig1965}{article}{}
-      \name{author}{1}{}{%
-        {{hash=83813f1324b1bf407ee15ea9ecdc737d}{%
-           family={Zwanzig},
-           familyi={Z\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
-      }
-      \strng{namehash}{83813f1324b1bf407ee15ea9ecdc737d}
-      \strng{fullhash}{83813f1324b1bf407ee15ea9ecdc737d}
-      \strng{bibnamehash}{83813f1324b1bf407ee15ea9ecdc737d}
-      \strng{authorbibnamehash}{83813f1324b1bf407ee15ea9ecdc737d}
-      \strng{authornamehash}{83813f1324b1bf407ee15ea9ecdc737d}
-      \strng{authorfullhash}{83813f1324b1bf407ee15ea9ecdc737d}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annual Review of Physical Chemistry}
-      \field{langid}{english}
-      \field{title}{Time-correlation functions and transport coefficients in statistical mechanics}
-      \field{year}{1965}
-      \field{number}{1}
-      \range{number}{1}
-      \field{pages}{67\bibrangedash 102}
-      \range{pages}{36}
-      \field{volume}{16}
-      \range{volume}{1}
-    \endentry
-    \entry{nitzan2006}{book}{}
-      \name{author}{1}{}{%
-        {{hash=e7493dc71c1123481ecc2bf05f026c85}{%
-           family={Nitzan},
-           familyi={N\bibinitperiod},
-           given={Abraham},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{e7493dc71c1123481ecc2bf05f026c85}
-      \strng{fullhash}{e7493dc71c1123481ecc2bf05f026c85}
-      \strng{bibnamehash}{e7493dc71c1123481ecc2bf05f026c85}
-      \strng{authorbibnamehash}{e7493dc71c1123481ecc2bf05f026c85}
-      \strng{authornamehash}{e7493dc71c1123481ecc2bf05f026c85}
-      \strng{authorfullhash}{e7493dc71c1123481ecc2bf05f026c85}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{illustrated edition}
-      \field{series}{Oxford graduate texts}
-      \field{title}{Chemical dynamics in condensed phases: relaxation, transfer and reactions in condensed molecular systems}
-      \field{year}{2006}
-    \endentry
-    \entry{frommhold}{book}{}
-      \name{author}{1}{}{%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{fca27c305bd8ab6c6c162457b7beac86}
-      \strng{fullhash}{fca27c305bd8ab6c6c162457b7beac86}
-      \strng{bibnamehash}{fca27c305bd8ab6c6c162457b7beac86}
-      \strng{authorbibnamehash}{fca27c305bd8ab6c6c162457b7beac86}
-      \strng{authornamehash}{fca27c305bd8ab6c6c162457b7beac86}
-      \strng{authorfullhash}{fca27c305bd8ab6c6c162457b7beac86}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Collision-induced absorption in gases}
-      \field{year}{2006}
-    \endentry
-    \entry{kranendonk1973}{article}{}
-      \name{author}{2}{}{%
-        {{hash=b64e8fbbf131254ca9a32621ef4dcfa3}{%
-           family={Kranendonk},
-           familyi={K\bibinitperiod},
-           given={J\bibnamedelima Van},
-           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=a8e736640e8b72bb1d6ef087660e512a}{%
-           family={Gass},
-           familyi={G\bibinitperiod},
-           given={DM},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {NRC Research Press}%
-      }
-      \strng{namehash}{5a05ae2fe50c178d2936103efd29464e}
-      \strng{fullhash}{5a05ae2fe50c178d2936103efd29464e}
-      \strng{bibnamehash}{5a05ae2fe50c178d2936103efd29464e}
-      \strng{authorbibnamehash}{5a05ae2fe50c178d2936103efd29464e}
-      \strng{authornamehash}{5a05ae2fe50c178d2936103efd29464e}
-      \strng{authorfullhash}{5a05ae2fe50c178d2936103efd29464e}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Canadian Journal of Physics}
-      \field{title}{Theory of the line shape in quadrupole-induced infrared spectra}
-      \field{year}{1973}
-      \field{number}{23}
-      \range{number}{1}
-      \field{pages}{2428\bibrangedash 2440}
-      \range{pages}{13}
-      \field{volume}{51}
-      \range{volume}{1}
-    \endentry
-    \entry{levine1967}{article}{}
-      \name{author}{2}{}{%
-        {{hash=45f63653209af5aa5ff4e4a73f4f6bab}{%
-           family={Levine},
-           familyi={L\bibinitperiod},
-           given={Howard\bibnamedelima B},
-           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=adc5504f34a65df536f818bc522a4ada}{%
-           family={Birnbaum},
-           familyi={B\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{06cc5f1deb2d1c88dc7aa3f65b3119c4}
-      \strng{fullhash}{06cc5f1deb2d1c88dc7aa3f65b3119c4}
-      \strng{bibnamehash}{06cc5f1deb2d1c88dc7aa3f65b3119c4}
-      \strng{authorbibnamehash}{06cc5f1deb2d1c88dc7aa3f65b3119c4}
-      \strng{authornamehash}{06cc5f1deb2d1c88dc7aa3f65b3119c4}
-      \strng{authorfullhash}{06cc5f1deb2d1c88dc7aa3f65b3119c4}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review}
-      \field{title}{Classical theory of collision-induced absorption in rare-gas mixtures}
-      \field{year}{1967}
-      \field{number}{1}
-      \range{number}{1}
-      \field{pages}{86}
-      \range{pages}{1}
-      \field{volume}{154}
-      \range{volume}{1}
-    \endentry
-    \entry{mcquarrie1968}{article}{}
-      \name{author}{2}{}{%
-        {{hash=2b274f950c70b38987bb64517c715ada}{%
-           family={McQuarrie},
-           familyi={M\bibinitperiod},
-           given={DA},
-           giveni={D\bibinitperiod}}}%
-        {{hash=70366ad42959919ec0a2c18511f2008f}{%
-           family={Bernstein},
-           familyi={B\bibinitperiod},
-           given={RB},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{a741dd729737021237d098c88aa84643}
-      \strng{fullhash}{a741dd729737021237d098c88aa84643}
-      \strng{bibnamehash}{a741dd729737021237d098c88aa84643}
-      \strng{authorbibnamehash}{a741dd729737021237d098c88aa84643}
-      \strng{authornamehash}{a741dd729737021237d098c88aa84643}
-      \strng{authorfullhash}{a741dd729737021237d098c88aa84643}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{title}{Calculated Collision-Induced Absorption Spectrum for He--Ar}
-      \field{year}{1968}
-      \field{number}{4}
-      \range{number}{1}
-      \field{pages}{1958\bibrangedash 1963}
-      \range{pages}{6}
-      \field{volume}{49}
-      \range{volume}{1}
-    \endentry
-    \entry{buryak2014}{article}{}
-      \name{author}{3}{}{%
-        {{hash=676c295cc8610bcb8d2b0fc7aed00b8e}{%
-           family={Buryak},
-           familyi={B\bibinitperiod},
-           given={Ilya},
-           giveni={I\bibinitperiod}}}%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-        {{hash=7501b1423230fa7be7a4cf5ac154d301}{%
-           family={Vigasin},
-           familyi={V\bibinitperiod},
-           given={Andrey\bibnamedelima A},
-           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{473476a38731ae9a3243b3ce9e40cff8}
-      \strng{fullhash}{473476a38731ae9a3243b3ce9e40cff8}
-      \strng{bibnamehash}{473476a38731ae9a3243b3ce9e40cff8}
-      \strng{authorbibnamehash}{473476a38731ae9a3243b3ce9e40cff8}
-      \strng{authornamehash}{473476a38731ae9a3243b3ce9e40cff8}
-      \strng{authorfullhash}{473476a38731ae9a3243b3ce9e40cff8}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{title}{Far-infrared collision-induced absorption in rare gas mixtures: Quantum and semi-classical calculations}
-      \field{year}{2014}
-      \field{number}{15}
-      \range{number}{1}
-      \field{pages}{154302}
-      \range{pages}{1}
-      \field{volume}{140}
-      \range{volume}{1}
-    \endentry
-    \entry{landau-volume1}{book}{}
-      \name{author}{1}{}{%
-        {{hash=4a51a6a84756f4785ea6f12cc00dd275}{%
-           family={Ландау\bibnamedelima Л.Д.},
-           familyi={Л\bibinitperiod\bibinitdelim Л\bibinitperiod},
-           given={Лифшиц\bibnamedelima Е.М.},
-           giveni={Л\bibinitperiod\bibinitdelim Е\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ФМЛ}%
-      }
-      \strng{namehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{fullhash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{bibnamehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{authorbibnamehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{authornamehash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \strng{authorfullhash}{4a51a6a84756f4785ea6f12cc00dd275}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Теоретическая физика. Том 1. Механика}
-      \field{year}{2003}
-    \endentry
-    \entry{goldstein}{book}{}
-      \name{author}{3}{}{%
-        {{hash=c0e35b6777e73243aa18df96822aa96b}{%
-           family={Goldstein},
-           familyi={G\bibinitperiod},
-           given={Herbert},
-           giveni={H\bibinitperiod}}}%
-        {{hash=a111879064f2132ac8db27fb3e3bc75d}{%
-           family={Poole},
-           familyi={P\bibinitperiod},
-           given={Charles},
-           giveni={C\bibinitperiod}}}%
-        {{hash=82d63e6d5248e5c1ae2584363f4a7007}{%
-           family={Safko},
-           familyi={S\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AAPT}%
-      }
-      \strng{namehash}{ff5ab1c23cfcc064c960730b070d8b00}
-      \strng{fullhash}{ff5ab1c23cfcc064c960730b070d8b00}
-      \strng{bibnamehash}{ff5ab1c23cfcc064c960730b070d8b00}
-      \strng{authorbibnamehash}{ff5ab1c23cfcc064c960730b070d8b00}
-      \strng{authornamehash}{ff5ab1c23cfcc064c960730b070d8b00}
-      \strng{authorfullhash}{ff5ab1c23cfcc064c960730b070d8b00}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Classical mechanics}
-      \field{year}{2002}
-    \endentry
-    \entry{hill}{book}{}
-      \name{author}{1}{}{%
-        {{hash=1e50342f7cd2a0e5912ca6d902cb37ae}{%
-           family={Hill},
-           familyi={H\bibinitperiod},
-           given={Terrell\bibnamedelima L.},
-           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Dover Publications}%
-      }
-      \strng{namehash}{1e50342f7cd2a0e5912ca6d902cb37ae}
-      \strng{fullhash}{1e50342f7cd2a0e5912ca6d902cb37ae}
-      \strng{bibnamehash}{1e50342f7cd2a0e5912ca6d902cb37ae}
-      \strng{authorbibnamehash}{1e50342f7cd2a0e5912ca6d902cb37ae}
-      \strng{authornamehash}{1e50342f7cd2a0e5912ca6d902cb37ae}
-      \strng{authorfullhash}{1e50342f7cd2a0e5912ca6d902cb37ae}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Statistical mechanics}
-      \field{year}{1987}
-    \endentry
-    \entry{castaneda}{book}{}
-      \name{author}{1}{}{%
-        {{hash=7fb1d75b40a1b5ecd76dde97acb9be2c}{%
-           family={Liliana\bibnamedelimb Blanco\bibnamedelima Castaneda},
-           familyi={L\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={Selvamuthu\bibnamedelima Dharmaraja(auth.)},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
-           suffix={Viswanathan\bibnamedelima Arunachalam},
-           suffixi={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{7fb1d75b40a1b5ecd76dde97acb9be2c}
-      \strng{fullhash}{7fb1d75b40a1b5ecd76dde97acb9be2c}
-      \strng{bibnamehash}{7fb1d75b40a1b5ecd76dde97acb9be2c}
-      \strng{authorbibnamehash}{7fb1d75b40a1b5ecd76dde97acb9be2c}
-      \strng{authornamehash}{7fb1d75b40a1b5ecd76dde97acb9be2c}
-      \strng{authorfullhash}{7fb1d75b40a1b5ecd76dde97acb9be2c}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Introduction to Probability and Stochastic Processes with Applications}
-      \field{year}{2012}
-    \endentry
-    \entry{bosomworth1965_part1}{article}{}
-      \name{author}{2}{}{%
-        {{hash=6c3b2d17183053220bde3eae105b5282}{%
-           family={Bosomworth},
-           familyi={B\bibinitperiod},
-           given={DR},
-           giveni={D\bibinitperiod}}}%
-        {{hash=965e603aba5e00db2c7d83c5dab8c041}{%
-           family={Gush},
-           familyi={G\bibinitperiod},
-           given={HP},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {NRC Research Press}%
-      }
-      \strng{namehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{fullhash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{bibnamehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{authorbibnamehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{authornamehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{authorfullhash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Canadian Journal of Physics}
-      \field{title}{Collision-induced absorption of compressed gases in the far infrared, Part I}
-      \field{year}{1965}
-      \field{number}{5}
-      \range{number}{1}
-      \field{pages}{729\bibrangedash 750}
-      \range{pages}{22}
-      \field{volume}{43}
-      \range{volume}{1}
-    \endentry
-    \entry{bosomworth1965_part2}{article}{}
-      \name{author}{2}{}{%
-        {{hash=6c3b2d17183053220bde3eae105b5282}{%
-           family={Bosomworth},
-           familyi={B\bibinitperiod},
-           given={DR},
-           giveni={D\bibinitperiod}}}%
-        {{hash=965e603aba5e00db2c7d83c5dab8c041}{%
-           family={Gush},
-           familyi={G\bibinitperiod},
-           given={HP},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {NRC Research Press}%
-      }
-      \strng{namehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{fullhash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{bibnamehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{authorbibnamehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{authornamehash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \strng{authorfullhash}{53554d1de2ed0712e0633c6b2f724e2c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Canadian Journal of Physics}
-      \field{title}{Collision-induced absorption of compressed gases in the far infrared, Part II}
-      \field{year}{1965}
-      \field{number}{5}
-      \range{number}{1}
-      \field{pages}{751\bibrangedash 769}
-      \range{pages}{19}
-      \field{volume}{43}
-      \range{volume}{1}
-    \endentry
-    \entry{kiss1959}{article}{}
-      \name{author}{2}{}{%
-        {{hash=2dc5bd3b3b8768fe6efe41916a085b4c}{%
-           family={Kiss},
-           familyi={K\bibinitperiod},
-           given={ZJ},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=c2c0bf0fca2d9911600f71caed615c70}{%
-           family={Welsh},
-           familyi={W\bibinitperiod},
-           given={HL},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{7befe6558a1f7320ba3af70e3887bef6}
-      \strng{fullhash}{7befe6558a1f7320ba3af70e3887bef6}
-      \strng{bibnamehash}{7befe6558a1f7320ba3af70e3887bef6}
-      \strng{authorbibnamehash}{7befe6558a1f7320ba3af70e3887bef6}
-      \strng{authornamehash}{7befe6558a1f7320ba3af70e3887bef6}
-      \strng{authorfullhash}{7befe6558a1f7320ba3af70e3887bef6}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{title}{Pressure-induced infrared absorption of mixtures of rare gases}
-      \field{year}{1959}
-      \field{number}{4}
-      \range{number}{1}
-      \field{pages}{166}
-      \range{pages}{1}
-      \field{volume}{2}
-      \range{volume}{1}
-    \endentry
-    \entry{bukhtoyarova1977}{article}{}
-      \name{author}{2}{}{%
-        {{hash=aa352240a8aa79e0e341f4015f0ce93b}{%
-           family={Bukhtoyarova},
-           familyi={B\bibinitperiod},
-           given={VI},
-           giveni={V\bibinitperiod}}}%
-        {{hash=526b1a9fda86b7cbbc520f916196bf70}{%
-           family={Tonkov},
-           familyi={T\bibinitperiod},
-           given={MV},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{438e52a2b3777c1afefa238bb4665599}
-      \strng{fullhash}{438e52a2b3777c1afefa238bb4665599}
-      \strng{bibnamehash}{438e52a2b3777c1afefa238bb4665599}
-      \strng{authorbibnamehash}{438e52a2b3777c1afefa238bb4665599}
-      \strng{authornamehash}{438e52a2b3777c1afefa238bb4665599}
-      \strng{authorfullhash}{438e52a2b3777c1afefa238bb4665599}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Optics and Spectroscopy}
-      \field{title}{Intermolecular interactions in compressed gases from translation absorption spectra. 1: Spectral moments of translation bands}
-      \field{year}{1977}
-      \field{pages}{27\bibrangedash 30}
-      \range{pages}{4}
-      \field{volume}{43}
-      \range{volume}{1}
-    \endentry
-    \entry{bukhtoyarova1977_2}{article}{}
-      \name{author}{2}{}{%
-        {{hash=c7c8e8e9f963c8d9abeb6946a773e66f}{%
-           family={Bukhtoyarova},
-           familyi={B\bibinitperiod},
-           given={VJ},
-           giveni={V\bibinitperiod}}}%
-        {{hash=526b1a9fda86b7cbbc520f916196bf70}{%
-           family={Tonkov},
-           familyi={T\bibinitperiod},
-           given={MV},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{5d3a6b8a2c8b7d92f873998f6397311c}
-      \strng{fullhash}{5d3a6b8a2c8b7d92f873998f6397311c}
-      \strng{bibnamehash}{5d3a6b8a2c8b7d92f873998f6397311c}
-      \strng{authorbibnamehash}{5d3a6b8a2c8b7d92f873998f6397311c}
-      \strng{authornamehash}{5d3a6b8a2c8b7d92f873998f6397311c}
-      \strng{authorfullhash}{5d3a6b8a2c8b7d92f873998f6397311c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Optics and Spectroscopy}
-      \field{title}{Intermolecular interactions in compressed gases using translation absorption spectra. 2: Temperature dependence of intensity}
-      \field{year}{1977}
-      \field{pages}{133\bibrangedash 135}
-      \range{pages}{3}
-      \field{volume}{43}
-      \range{volume}{1}
-    \endentry
-    \entry{ryzhov1974}{article}{}
-      \name{author}{2}{}{%
-        {{hash=3a99fa0b6c9494d138673695237adef9}{%
-           family={Ryzhov},
-           familyi={R\bibinitperiod},
-           given={VA},
-           giveni={V\bibinitperiod}}}%
-        {{hash=526b1a9fda86b7cbbc520f916196bf70}{%
-           family={Tonkov},
-           familyi={T\bibinitperiod},
-           given={MV},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {MEZHDUNARODNAYA KNIGA 39 DIMITROVA UL., 113095 MOSCOW, RUSSIA}%
-      }
-      \strng{namehash}{2e856d377f4a0bba0b2f551a558386b2}
-      \strng{fullhash}{2e856d377f4a0bba0b2f551a558386b2}
-      \strng{bibnamehash}{2e856d377f4a0bba0b2f551a558386b2}
-      \strng{authorbibnamehash}{2e856d377f4a0bba0b2f551a558386b2}
-      \strng{authornamehash}{2e856d377f4a0bba0b2f551a558386b2}
-      \strng{authorfullhash}{2e856d377f4a0bba0b2f551a558386b2}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{OPTIKA I SPEKTROSKOPIYA}
-      \field{title}{Translation absorption in spectra of noble-gases}
-      \field{year}{1974}
-      \field{number}{6}
-      \range{number}{1}
-      \field{pages}{1058\bibrangedash 1064}
-      \range{pages}{7}
-      \field{volume}{37}
-      \range{volume}{1}
-    \endentry
-    \entry{cybulski1999}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1626b16a1dacb1443cc179d157429f34}{%
-           family={Cybulski},
-           familyi={C\bibinitperiod},
-           given={Sławomir\bibnamedelima M},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=c4d386e8ceb5d58b43b5d20f8e37e30e}{%
-           family={Toczyłowski},
-           familyi={T\bibinitperiod},
-           given={Rafał\bibnamedelima R},
-           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{6cd7cc90276528dc89a7ccc52e739f48}
-      \strng{fullhash}{6cd7cc90276528dc89a7ccc52e739f48}
-      \strng{bibnamehash}{6cd7cc90276528dc89a7ccc52e739f48}
-      \strng{authorbibnamehash}{6cd7cc90276528dc89a7ccc52e739f48}
-      \strng{authornamehash}{6cd7cc90276528dc89a7ccc52e739f48}
-      \strng{authorfullhash}{6cd7cc90276528dc89a7ccc52e739f48}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{title}{Ground state potential energy curves for He 2, Ne 2, Ar 2, He--Ne, He--Ar, and Ne--Ar: a coupled-cluster study}
-      \field{year}{1999}
-      \field{number}{23}
-      \range{number}{1}
-      \field{pages}{10520\bibrangedash 10528}
-      \range{pages}{9}
-      \field{volume}{111}
-      \range{volume}{1}
-    \endentry
-    \entry{giece2003}{article}{}
-      \name{author}{3}{}{%
-        {{hash=a67daa61b68aab6bb9bb3e663cca7c9b}{%
-           family={Giese},
-           familyi={G\bibinitperiod},
-           given={Timothy\bibnamedelima J.},
-           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=bdbff5f4602750807f9a1367644614d4}{%
-           family={Audette},
-           familyi={A\bibinitperiod},
-           given={Vanessa\bibnamedelima M.},
-           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=1abea9a5a2a870669eb3fe826cb7bcff}{%
-           family={York},
-           familyi={Y\bibinitperiod},
-           given={Darrin\bibnamedelima M.},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{a9bf05687d656be925bd4713cb72f62e}
-      \strng{fullhash}{a9bf05687d656be925bd4713cb72f62e}
-      \strng{bibnamehash}{a9bf05687d656be925bd4713cb72f62e}
-      \strng{authorbibnamehash}{a9bf05687d656be925bd4713cb72f62e}
-      \strng{authornamehash}{a9bf05687d656be925bd4713cb72f62e}
-      \strng{authorfullhash}{a9bf05687d656be925bd4713cb72f62e}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{title}{Examination of the correlation energy and second virial coefficients from accurate ab initio calculations of rare-gas dimers}
-      \field{year}{2003}
-      \field{number}{5}
-      \range{number}{1}
-      \field{pages}{2618\bibrangedash 2622}
-      \range{pages}{5}
-      \field{volume}{119}
-      \range{volume}{1}
-    \endentry
-    \entry{fernandez2004}{article}{useauthor=false}
-      \name{author}{6}{}{%
-        {{hash=a3293bb9b690357f3f2f0575f7fe2746}{%
-           family={L{ó}pez\bibnamedelima Cacheiro},
-           familyi={L\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={Javier},
-           giveni={J\bibinitperiod}}}%
-        {{hash=e34ef8480cfe088afeb3b59e29bbe445}{%
-           family={Fern{á}ndez},
-           familyi={F\bibinitperiod},
-           given={Berta},
-           giveni={B\bibinitperiod}}}%
-        {{hash=72f97222146844ffe7e7b45959c599ee}{%
-           family={Marchesan},
-           familyi={M\bibinitperiod},
-           given={Domenico},
-           giveni={D\bibinitperiod}}}%
-        {{hash=98f8c6c8d8590b93c1f0fab29c5258cd}{%
-           family={Coriani},
-           familyi={C\bibinitperiod},
-           given={Sonia},
-           giveni={S\bibinitperiod}}}%
-        {{hash=bb6105d10b7e6837bd88cf7721ace9cc}{%
-           family={H{ä}ttig},
-           familyi={H\bibinitperiod},
-           given={Christof},
-           giveni={C\bibinitperiod}}}%
-        {{hash=162188b81d4d27d3a139645b225ac928}{%
-           family={Rizzo},
-           familyi={R\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{authorbibnamehash}{4907bccb7c763dc7ee40c2f6e297013c}
-      \strng{authornamehash}{4907bccb7c763dc7ee40c2f6e297013c}
-      \strng{authorfullhash}{fe1c6d45c2dfea723921b89637140b62}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Molecular Physics}
-      \field{title}{Coupled cluster calculations of the ground state potential and interaction induced electric properties of the mixed dimers of helium, neon and argon}
-      \field{year}{2004}
-      \field{number}{1}
-      \range{number}{1}
-      \field{pages}{101\bibrangedash 110}
-      \range{pages}{10}
-      \field{volume}{102}
-      \range{volume}{1}
-    \endentry
-    \entry{sobol}{book}{}
-      \name{author}{1}{}{%
-        {{hash=c752a5dae18e4b5cdec26dd014081614}{%
-           family={И.М.},
-           familyi={И\bibinitperiod},
-           given={Соболь},
-           giveni={С\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Наука}%
-      }
-      \strng{namehash}{c752a5dae18e4b5cdec26dd014081614}
-      \strng{fullhash}{c752a5dae18e4b5cdec26dd014081614}
-      \strng{bibnamehash}{c752a5dae18e4b5cdec26dd014081614}
-      \strng{authorbibnamehash}{c752a5dae18e4b5cdec26dd014081614}
-      \strng{authornamehash}{c752a5dae18e4b5cdec26dd014081614}
-      \strng{authorfullhash}{c752a5dae18e4b5cdec26dd014081614}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Численные методы Монте-Карло}
-      \field{year}{1973}
-    \endentry
-    \entry{sundials}{article}{useauthor=false}
-      \name{author}{7}{}{%
-        {{hash=2a98f78a648b47f48a5f1fad8c933e1a}{%
-           family={Hindmarsh},
-           familyi={H\bibinitperiod},
-           given={Alan\bibnamedelima C},
-           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=266411872693fa81ce1cde4d77e340ca}{%
-           family={Brown},
-           familyi={B\bibinitperiod},
-           given={Peter\bibnamedelima N},
-           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=75e35f5d687d48b28dcbcb37f61a6303}{%
-           family={Grant},
-           familyi={G\bibinitperiod},
-           given={Keith\bibnamedelima E},
-           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=6d885361dcd69877e4f52e83bfc9f492}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Steven\bibnamedelima L},
-           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=a3b6b515ef41d06f36fa360c64c7ac19}{%
-           family={Serban},
-           familyi={S\bibinitperiod},
-           given={Radu},
-           giveni={R\bibinitperiod}}}%
-        {{hash=16bbdf75cce99b43536bdbd4cd1cd3ac}{%
-           family={Shumaker},
-           familyi={S\bibinitperiod},
-           given={Dan\bibnamedelima E},
-           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=366b847f241df16c3278311405b8337c}{%
-           family={Woodward},
-           familyi={W\bibinitperiod},
-           given={Carol\bibnamedelima S},
-           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ACM}%
-      }
-      \strng{authorbibnamehash}{1e6529c7ed58393c7bca9c7767bff398}
-      \strng{authornamehash}{1e6529c7ed58393c7bca9c7767bff398}
-      \strng{authorfullhash}{0d3eaaa1266497838e9561f5bd651945}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{ACM Transactions on Mathematical Software (TOMS)}
-      \field{title}{{SUNDIALS}: Suite of nonlinear and differential/algebraic equation solvers}
-      \field{year}{2005}
-      \field{number}{3}
-      \range{number}{1}
-      \field{pages}{363\bibrangedash 396}
-      \range{pages}{34}
-      \field{volume}{31}
-      \range{volume}{1}
-    \endentry
-    \entry{mpi}{article}{}
-      \name{author}{1}{}{%
-        {{hash=232270861ce704a354417bfda0acdb1b}{%
-           family={Gropp},
-           familyi={G\bibinitperiod},
-           given={William},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{232270861ce704a354417bfda0acdb1b}
-      \strng{fullhash}{232270861ce704a354417bfda0acdb1b}
-      \strng{bibnamehash}{232270861ce704a354417bfda0acdb1b}
-      \strng{authorbibnamehash}{232270861ce704a354417bfda0acdb1b}
-      \strng{authornamehash}{232270861ce704a354417bfda0acdb1b}
-      \strng{authorfullhash}{232270861ce704a354417bfda0acdb1b}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting}
-      \field{title}{MPICH2: A new start for MPI implementations}
-      \field{year}{2002}
-      \field{pages}{7\bibrangedash 7}
-      \range{pages}{1}
-    \endentry
-    \entry{borysow1985phenomena}{book}{}
-      \name{author}{3}{}{%
-        {{hash=9b5460cd37badd8a3ad6c7ad342bbee3}{%
-           family={Borysow},
-           familyi={B\bibinitperiod},
-           given={J},
-           giveni={J\bibinitperiod}}}%
-        {{hash=40980b135d4a43906b12124ef7f4cd90}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod}}}%
-        {{hash=15b8bfbf4435b99bf0e14eeee85543d8}{%
-           family={Birnbaum},
-           familyi={B\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Plenum, New York}%
-      }
-      \strng{namehash}{5c519bd6a8334ab5e27a1837b45d8d69}
-      \strng{fullhash}{5c519bd6a8334ab5e27a1837b45d8d69}
-      \strng{bibnamehash}{5c519bd6a8334ab5e27a1837b45d8d69}
-      \strng{authorbibnamehash}{5c519bd6a8334ab5e27a1837b45d8d69}
-      \strng{authornamehash}{5c519bd6a8334ab5e27a1837b45d8d69}
-      \strng{authorfullhash}{5c519bd6a8334ab5e27a1837b45d8d69}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Phenomena Induced by Intermolecular Interactions}
-      \field{year}{1985}
-    \endentry
-    \entry{borysow1985}{article}{}
-      \name{author}{3}{}{%
-        {{hash=37cec7c84fc4ec1ce5abccd2846722e8}{%
-           family={Borysow},
-           familyi={B\bibinitperiod},
-           given={Jacek},
-           giveni={J\bibinitperiod}}}%
-        {{hash=6d270b089be7de9a185783f9cc6ba377}{%
-           family={Moraldi},
-           familyi={M\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{7a479d2a0058849bfd5d445dc327dbaa}
-      \strng{fullhash}{7a479d2a0058849bfd5d445dc327dbaa}
-      \strng{bibnamehash}{7a479d2a0058849bfd5d445dc327dbaa}
-      \strng{authorbibnamehash}{7a479d2a0058849bfd5d445dc327dbaa}
-      \strng{authornamehash}{7a479d2a0058849bfd5d445dc327dbaa}
-      \strng{authorfullhash}{7a479d2a0058849bfd5d445dc327dbaa}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Molecular Physics}
-      \field{title}{The collision induced spectroscopies: Concerning the desymmetrization of classical line shape}
-      \field{year}{1985}
-      \field{number}{4}
-      \range{number}{1}
-      \field{pages}{913\bibrangedash 922}
-      \range{pages}{10}
-      \field{volume}{56}
-      \range{volume}{1}
-    \endentry
-    \entry{egelstaff1962}{article}{}
-      \name{author}{2}{}{%
-        {{hash=75f8f027050c9ef05dd4eda265dc4592}{%
-           family={Egelstaff},
-           familyi={E\bibinitperiod},
-           given={PA},
-           giveni={P\bibinitperiod}}}%
-        {{hash=6cf9ce0febcab63cceb74c3688703cc0}{%
-           family={Schofield},
-           familyi={S\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{c492535a851df9a570bd2dcc5b0f885c}
-      \strng{fullhash}{c492535a851df9a570bd2dcc5b0f885c}
-      \strng{bibnamehash}{c492535a851df9a570bd2dcc5b0f885c}
-      \strng{authorbibnamehash}{c492535a851df9a570bd2dcc5b0f885c}
-      \strng{authornamehash}{c492535a851df9a570bd2dcc5b0f885c}
-      \strng{authorfullhash}{c492535a851df9a570bd2dcc5b0f885c}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nuclear Science and Engineering}
-      \field{title}{On the evaluation of the thermal neutron scattering law}
-      \field{year}{1962}
-      \field{number}{2}
-      \range{number}{1}
-      \field{pages}{260\bibrangedash 270}
-      \range{pages}{11}
-      \field{volume}{12}
-      \range{volume}{1}
-    \endentry
-    \entry{hep}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=a56fe98685fd5deebec12a964242d59e}{%
-           family={Schwan},
-           familyi={S\bibinitperiod},
-           given={Christopher},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {GitHub}%
-      }
-      \strng{namehash}{a56fe98685fd5deebec12a964242d59e}
-      \strng{fullhash}{a56fe98685fd5deebec12a964242d59e}
-      \strng{bibnamehash}{a56fe98685fd5deebec12a964242d59e}
-      \strng{authorbibnamehash}{a56fe98685fd5deebec12a964242d59e}
-      \strng{authornamehash}{a56fe98685fd5deebec12a964242d59e}
-      \strng{authorfullhash}{a56fe98685fd5deebec12a964242d59e}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/cschwan/hep-mc}}
-      \field{journaltitle}{GitHub repository}
-      \field{title}{A {C++11} Template Library for {Monte Carlo} integration}
-      \field{year}{дата доступа: май 2019}
-    \endentry
-    \entry{abel2009}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=9e1b87c962eb1bb185d127e8e3711d93}{%
-           family={Abel},
-           familyi={A\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-        {{hash=f6eeb10a22c7971b7f5d828d8a14b554}{%
-           family={Gustafsson},
-           familyi={G\bibinitperiod},
-           given={Magnus},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{91895d3a53e96b69ded3285161660656}
-      \strng{fullhash}{91895d3a53e96b69ded3285161660656}
-      \strng{bibnamehash}{91895d3a53e96b69ded3285161660656}
-      \strng{authorbibnamehash}{91895d3a53e96b69ded3285161660656}
-      \strng{authornamehash}{91895d3a53e96b69ded3285161660656}
-      \strng{authorfullhash}{91895d3a53e96b69ded3285161660656}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Collision-induced absorption at wavelengths near 5 $\mu$ m by dense hydrogen gas}
-      \field{year}{2009}
-    \endentry
-    \entry{abel2012}{article}{useauthor=false}
-      \name{author}{4}{}{%
-        {{hash=9e1b87c962eb1bb185d127e8e3711d93}{%
-           family={Abel},
-           familyi={A\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-        {{hash=401ca2bd26efef0780e002acac0d290c}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Xiaoping},
-           giveni={X\bibinitperiod}}}%
-        {{hash=58b6d5a493e75c6babae640312c02e71}{%
-           family={Hunt},
-           familyi={H\bibinitperiod},
-           given={Katharine\bibnamedelima LC},
-           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{authorbibnamehash}{8968a61e10e3fb1d6af879bdcba99f5a}
-      \strng{authornamehash}{8968a61e10e3fb1d6af879bdcba99f5a}
-      \strng{authorfullhash}{4efd43614dff8a8cc0671c72a37a799e}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Infrared absorption by collisional H2--He complexes at temperatures up to 9000 K and frequencies from 0 to 20 000 cm- 1}
-      \field{year}{2012}
-      \field{number}{4}
-      \range{number}{1}
-      \field{pages}{044319}
-      \range{pages}{1}
-      \field{volume}{136}
-      \range{volume}{1}
-    \endentry
-    \entry{elkader2012}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4f673f451a13d2dd19b6871646865213}{%
-           family={El-Kader},
-           familyi={E\bibinithyphendelim K\bibinitperiod},
-           given={MSA},
-           giveni={M\bibinitperiod}}}%
-        {{hash=661ab90b09dae5e78755f5a956a66120}{%
-           family={Maroulis},
-           familyi={M\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{8f6b139a7f5cd9b73a8046efee0af255}
-      \strng{fullhash}{8f6b139a7f5cd9b73a8046efee0af255}
-      \strng{bibnamehash}{8f6b139a7f5cd9b73a8046efee0af255}
-      \strng{authorbibnamehash}{8f6b139a7f5cd9b73a8046efee0af255}
-      \strng{authornamehash}{8f6b139a7f5cd9b73a8046efee0af255}
-      \strng{authorfullhash}{8f6b139a7f5cd9b73a8046efee0af255}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Molecular Spectroscopy}
-      \field{title}{New insights into collision-induced rototranslational absorption and scattering spectra of gaseous methane at different temperatures}
-      \field{year}{2012}
-      \field{pages}{28\bibrangedash 39}
-      \range{pages}{12}
-      \field{volume}{281}
-      \range{volume}{1}
-    \endentry
-    \entry{elkader2017}{article}{useauthor=false}
-      \name{author}{4}{}{%
-        {{hash=4f673f451a13d2dd19b6871646865213}{%
-           family={El-Kader},
-           familyi={E\bibinithyphendelim K\bibinitperiod},
-           given={MSA},
-           giveni={M\bibinitperiod}}}%
-        {{hash=2fd44355f36e20380bd8ee858e5536f5}{%
-           family={Godet},
-           familyi={G\bibinitperiod},
-           given={J-L},
-           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
-        {{hash=5da407a508ad6fbdb998d142de95a1a3}{%
-           family={El-Sadek},
-           familyi={E\bibinithyphendelim S\bibinitperiod},
-           given={AA},
-           giveni={A\bibinitperiod}}}%
-        {{hash=a447edb0e61a866beae2aa928849a552}{%
-           family={Maroulis},
-           familyi={M\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{authorbibnamehash}{8a2eea8d3660e35321af05182b8e183d}
-      \strng{authornamehash}{8a2eea8d3660e35321af05182b8e183d}
-      \strng{authorfullhash}{fe1775905bd6786c34a4d3bcaadc3a34}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Molecular Physics}
-      \field{title}{Spectral line shapes of collision-induced light scattering (CILS) and collision-induced absorption (CIA) using isotropic intermolecular potential for H2--Ar}
-      \field{year}{2017}
-      \field{number}{20}
-      \range{number}{1}
-      \field{pages}{2614\bibrangedash 2625}
-      \range{pages}{12}
-      \field{volume}{115}
-      \range{volume}{1}
-    \endentry
-    \entry{borysow1986}{article}{}
-      \name{author}{2}{}{%
-        {{hash=43aceee9d589ebb42f87c7dedf2731ea}{%
-           family={Borysow},
-           familyi={B\bibinitperiod},
-           given={Aleksandra},
-           giveni={A\bibinitperiod}}}%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{b2dfeaf548b9ed4834b0981fd270dd0d}
-      \strng{fullhash}{b2dfeaf548b9ed4834b0981fd270dd0d}
-      \strng{bibnamehash}{b2dfeaf548b9ed4834b0981fd270dd0d}
-      \strng{authorbibnamehash}{b2dfeaf548b9ed4834b0981fd270dd0d}
-      \strng{authornamehash}{b2dfeaf548b9ed4834b0981fd270dd0d}
-      \strng{authorfullhash}{b2dfeaf548b9ed4834b0981fd270dd0d}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Astrophysical Journal}
-      \field{title}{Collision-induced rototranslational absorption spectra of N2-N2 pairs for temperatures from 50 to 300 K}
-      \field{year}{1986}
-      \field{pages}{1043\bibrangedash 1057}
-      \range{pages}{15}
-      \field{volume}{311}
-      \range{volume}{1}
-    \endentry
-    \entry{gruszka1996}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d5349dce4082e12de3191aa8203c090f}{%
-           family={Gruszka},
-           familyi={G\bibinitperiod},
-           given={Marcin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=43aceee9d589ebb42f87c7dedf2731ea}{%
-           family={Borysow},
-           familyi={B\bibinitperiod},
-           given={Aleksandra},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{fullhash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{bibnamehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{authorbibnamehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{authornamehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{authorfullhash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Molecular Physics}
-      \field{title}{New analysis of the spectral moments of collision induced absorption in gaseous N2 and CO2}
-      \field{year}{1996}
-      \field{number}{5}
-      \range{number}{1}
-      \field{pages}{1173\bibrangedash 1185}
-      \range{pages}{13}
-      \field{volume}{88}
-      \range{volume}{1}
-    \endentry
-    \entry{bussery2014}{article}{}
-      \name{author}{2}{}{%
-        {{hash=930f2904df40f3eb34c2f4929b4ca629}{%
-           family={Bussery-Honvault},
-           familyi={B\bibinithyphendelim H\bibinitperiod},
-           given={B{é}atrice},
-           giveni={B\bibinitperiod}}}%
-        {{hash=d7b11ede72ce26594884d8a1157bd455}{%
-           family={Hartmann},
-           familyi={H\bibinitperiod},
-           given={Jean-Michel},
-           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{bea95e0c47f8b27a21452bf41ad1a1b5}
-      \strng{fullhash}{bea95e0c47f8b27a21452bf41ad1a1b5}
-      \strng{bibnamehash}{bea95e0c47f8b27a21452bf41ad1a1b5}
-      \strng{authorbibnamehash}{bea95e0c47f8b27a21452bf41ad1a1b5}
-      \strng{authornamehash}{bea95e0c47f8b27a21452bf41ad1a1b5}
-      \strng{authorfullhash}{bea95e0c47f8b27a21452bf41ad1a1b5}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Ab initio calculations for the far infrared collision induced absorption by N2 gas}
-      \field{year}{2014}
-      \field{number}{5}
-      \range{number}{1}
-      \field{pages}{054309}
-      \range{pages}{1}
-      \field{volume}{140}
-      \range{volume}{1}
-    \endentry
-    \entry{karman2015_h2h2}{article}{}
-      \name{author}{3}{}{%
-        {{hash=f6b24d3ec207ae20d4db1920ab8a2673}{%
-           family={Karman},
-           familyi={K\bibinitperiod},
-           given={Tijs},
-           giveni={T\bibinitperiod}}}%
-        {{hash=46e089bf04e319505fe664ddba9eb0e4}{%
-           family={Avoird},
-           familyi={A\bibinitperiod},
-           given={Ad},
-           giveni={A\bibinitperiod},
-           prefix={van\bibnamedelima der},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-        {{hash=3771a3b305856c5e96cdbecabd86bd6a}{%
-           family={Groenenboom},
-           familyi={G\bibinitperiod},
-           given={Gerrit\bibnamedelima C},
-           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP Publishing}%
-      }
-      \strng{namehash}{fab5bc2db897c16610e10359598ffd61}
-      \strng{fullhash}{fab5bc2db897c16610e10359598ffd61}
-      \strng{bibnamehash}{fab5bc2db897c16610e10359598ffd61}
-      \strng{authorbibnamehash}{fab5bc2db897c16610e10359598ffd61}
-      \strng{authornamehash}{fab5bc2db897c16610e10359598ffd61}
-      \strng{authorfullhash}{fab5bc2db897c16610e10359598ffd61}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Collision-induced absorption with exchange effects and anisotropic interactions: Theory and application to H2- H2}
-      \field{year}{2015}
-      \field{number}{8}
-      \range{number}{1}
-      \field{pages}{084305}
-      \range{pages}{1}
-      \field{volume}{142}
-      \range{volume}{1}
-    \endentry
-    \entry{lokshtanov2008}{article}{}
-      \name{author}{3}{}{%
-        {{hash=41a93098ca89957cf682252a558e35e1}{%
-           family={Lokshtanov},
-           familyi={L\bibinitperiod},
-           given={SE},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6b1d5113d768b202f9abd2dc69d6aa80}{%
-           family={Bussery-Honvault},
-           familyi={B\bibinithyphendelim H\bibinitperiod},
-           given={B},
-           giveni={B\bibinitperiod}}}%
-        {{hash=eceea7266c879457461327f965205555}{%
-           family={Vigasin},
-           familyi={V\bibinitperiod},
-           given={AA},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{1ea67b556a9f65b2f16df6971ebd3714}
-      \strng{fullhash}{1ea67b556a9f65b2f16df6971ebd3714}
-      \strng{bibnamehash}{1ea67b556a9f65b2f16df6971ebd3714}
-      \strng{authorbibnamehash}{1ea67b556a9f65b2f16df6971ebd3714}
-      \strng{authornamehash}{1ea67b556a9f65b2f16df6971ebd3714}
-      \strng{authorfullhash}{1ea67b556a9f65b2f16df6971ebd3714}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Molecular Physics}
-      \field{title}{Extensive ab initio study of the integrated IR intensity in the N2 fundamental collision-induced band}
-      \field{year}{2008}
-      \field{number}{9\bibrangedash 10}
-      \range{number}{2}
-      \field{pages}{1227\bibrangedash 1231}
-      \range{pages}{5}
-      \field{volume}{106}
-      \range{volume}{1}
-    \endentry
-    \entry{littlejohn1995}{article}{}
-      \name{author}{2}{}{%
-        {{hash=7fe6419a63c4708695218ce19382f99e}{%
-           family={Littlejohn},
-           familyi={L\bibinitperiod},
-           given={Robert\bibnamedelima G},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=8f4fa14e43e8abc13637d4a93cd1e89e}{%
-           family={Reinsch},
-           familyi={R\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{251d3ec70613a1ab53aaf2bb28864167}
-      \strng{fullhash}{251d3ec70613a1ab53aaf2bb28864167}
-      \strng{bibnamehash}{251d3ec70613a1ab53aaf2bb28864167}
-      \strng{authorbibnamehash}{251d3ec70613a1ab53aaf2bb28864167}
-      \strng{authornamehash}{251d3ec70613a1ab53aaf2bb28864167}
-      \strng{authorfullhash}{251d3ec70613a1ab53aaf2bb28864167}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review A}
-      \field{title}{Internal or shape coordinates in the n-body problem}
-      \field{year}{1995}
-      \field{number}{3}
-      \range{number}{1}
-      \field{pages}{2035}
-      \range{pages}{1}
-      \field{volume}{52}
-      \range{volume}{1}
-    \endentry
-    \entry{petrov2015}{article}{}
-      \name{author}{2}{}{%
-        {{hash=913be011b253ad0c33ff5d7883ef9ff9}{%
-           family={Petrov},
-           familyi={P\bibinitperiod},
-           given={SV},
-           giveni={S\bibinitperiod}}}%
-        {{hash=41a93098ca89957cf682252a558e35e1}{%
-           family={Lokshtanov},
-           familyi={L\bibinitperiod},
-           given={SE},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{3f629a73d9c42b319a4726256d4fb23e}
-      \strng{fullhash}{3f629a73d9c42b319a4726256d4fb23e}
-      \strng{bibnamehash}{3f629a73d9c42b319a4726256d4fb23e}
-      \strng{authorbibnamehash}{3f629a73d9c42b319a4726256d4fb23e}
-      \strng{authornamehash}{3f629a73d9c42b319a4726256d4fb23e}
-      \strng{authorfullhash}{3f629a73d9c42b319a4726256d4fb23e}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Experimental and Theoretical Physics}
-      \field{title}{Trajectory analysis of the rotational dynamics of molecules}
-      \field{year}{2015}
-      \field{number}{2}
-      \range{number}{1}
-      \field{pages}{186\bibrangedash 193}
-      \range{pages}{8}
-      \field{volume}{121}
-      \range{volume}{1}
-    \endentry
-    \entry{gantmaher}{book}{}
-      \name{author}{1}{}{%
-        {{hash=1c2babe309afac16e82f2fd82e4a32ab}{%
-           family={Гантмахер},
-           familyi={Г\bibinitperiod},
-           given={Ф.Р.},
-           giveni={Ф\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Физматлит}%
-      }
-      \strng{namehash}{1c2babe309afac16e82f2fd82e4a32ab}
-      \strng{fullhash}{1c2babe309afac16e82f2fd82e4a32ab}
-      \strng{bibnamehash}{1c2babe309afac16e82f2fd82e4a32ab}
-      \strng{authorbibnamehash}{1c2babe309afac16e82f2fd82e4a32ab}
-      \strng{authornamehash}{1c2babe309afac16e82f2fd82e4a32ab}
-      \strng{authorfullhash}{1c2babe309afac16e82f2fd82e4a32ab}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Теория матриц}
-      \field{year}{2004}
-    \endentry
-    \entry{tennyson1986}{article}{}
-      \name{author}{1}{}{%
-        {{hash=abde27073a2ab1a81311c3289a4e28c5}{%
-           family={Tennyson},
-           familyi={T\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{abde27073a2ab1a81311c3289a4e28c5}
-      \strng{fullhash}{abde27073a2ab1a81311c3289a4e28c5}
-      \strng{bibnamehash}{abde27073a2ab1a81311c3289a4e28c5}
-      \strng{authorbibnamehash}{abde27073a2ab1a81311c3289a4e28c5}
-      \strng{authornamehash}{abde27073a2ab1a81311c3289a4e28c5}
-      \strng{authorfullhash}{abde27073a2ab1a81311c3289a4e28c5}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computer Physics Reports}
-      \field{title}{The calculation of the vibration-rotation energies of triatomic molecules using scattering coordinates}
-      \field{year}{1986}
-      \field{number}{1}
-      \range{number}{1}
-      \field{pages}{1\bibrangedash 36}
-      \range{pages}{36}
-      \field{volume}{4}
-      \range{volume}{1}
-    \endentry
-    \entry{matrixcookbook}{book}{}
-      \name{author}{2}{}{%
-        {{hash=895efab9c840e3de0f2a4735d97e01b4}{%
-           family={K.B.},
-           familyi={K\bibinitperiod},
-           given={Petersen},
-           giveni={P\bibinitperiod}}}%
-        {{hash=af0b6a95737808a376f2290019cced00}{%
-           family={M.S.},
-           familyi={M\bibinitperiod},
-           given={Pedersen},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Tenchical University of Denmark}%
-      }
-      \strng{namehash}{74dc28d334d95987938959b16f41118e}
-      \strng{fullhash}{74dc28d334d95987938959b16f41118e}
-      \strng{bibnamehash}{74dc28d334d95987938959b16f41118e}
-      \strng{authorbibnamehash}{74dc28d334d95987938959b16f41118e}
-      \strng{authornamehash}{74dc28d334d95987938959b16f41118e}
-      \strng{authorfullhash}{74dc28d334d95987938959b16f41118e}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The matrix cookbook}
-      \field{year}{2008}
-      \field{pages}{510}
-      \range{pages}{1}
-    \endentry
-    \entry{liu2008}{book}{}
-      \name{author}{1}{}{%
-        {{hash=d76c4260f4597bf2145a6615f9aac357}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Jun\bibnamedelima S},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer Science \& Business Media}%
-      }
-      \strng{namehash}{d76c4260f4597bf2145a6615f9aac357}
-      \strng{fullhash}{d76c4260f4597bf2145a6615f9aac357}
-      \strng{bibnamehash}{d76c4260f4597bf2145a6615f9aac357}
-      \strng{authorbibnamehash}{d76c4260f4597bf2145a6615f9aac357}
-      \strng{authornamehash}{d76c4260f4597bf2145a6615f9aac357}
-      \strng{authorfullhash}{d76c4260f4597bf2145a6615f9aac357}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Monte Carlo strategies in scientific computing}
-      \field{year}{2008}
-    \endentry
-    \entry{green1975}{article}{}
-      \name{author}{1}{}{%
-        {{hash=ef849ea1a2b2946b5be901f4052936bb}{%
-           family={Green},
-           familyi={G\bibinitperiod},
-           given={Sheldon},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{ef849ea1a2b2946b5be901f4052936bb}
-      \strng{fullhash}{ef849ea1a2b2946b5be901f4052936bb}
-      \strng{bibnamehash}{ef849ea1a2b2946b5be901f4052936bb}
-      \strng{authorbibnamehash}{ef849ea1a2b2946b5be901f4052936bb}
-      \strng{authornamehash}{ef849ea1a2b2946b5be901f4052936bb}
-      \strng{authorfullhash}{ef849ea1a2b2946b5be901f4052936bb}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{title}{Rotational excitation in H2--H2 collisions: Close-coupling calculations}
-      \field{year}{1975}
-      \field{number}{6}
-      \range{number}{1}
-      \field{pages}{2271\bibrangedash 2277}
-      \range{pages}{7}
-      \field{volume}{62}
-      \range{volume}{1}
-    \endentry
-    \entry{hartmann2011}{article}{}
-      \name{author}{3}{}{%
-        {{hash=647a52982c13c8c8c750b1557bb07c2c}{%
-           family={Hartmann},
-           familyi={H\bibinitperiod},
-           given={J-M},
-           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
-        {{hash=783c0c50d9da8920a270a7db7c31b959}{%
-           family={Boulet},
-           familyi={B\bibinitperiod},
-           given={C},
-           giveni={C\bibinitperiod}}}%
-        {{hash=85f8d462b7d0a81d7f6dbd22dadef93f}{%
-           family={Jacquemart},
-           familyi={J\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{5e153638ad883cdd370471eeaf364755}
-      \strng{fullhash}{5e153638ad883cdd370471eeaf364755}
-      \strng{bibnamehash}{5e153638ad883cdd370471eeaf364755}
-      \strng{authorbibnamehash}{5e153638ad883cdd370471eeaf364755}
-      \strng{authornamehash}{5e153638ad883cdd370471eeaf364755}
-      \strng{authorfullhash}{5e153638ad883cdd370471eeaf364755}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Molecular dynamics simulations for CO2 spectra. II. The far infrared collision-induced absorption band}
-      \field{year}{2011}
-      \field{number}{9}
-      \range{number}{1}
-      \field{pages}{094316}
-      \range{pages}{1}
-      \field{volume}{134}
-      \range{volume}{1}
-    \endentry
-    \entry{meyer1986_h2he}{article}{}
-      \name{author}{2}{}{%
-        {{hash=b1705df243970865a35c2c75bc26b2c2}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Wilfried},
-           giveni={W\bibinitperiod}}}%
-        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
-           family={Frommhold},
-           familyi={F\bibinitperiod},
-           given={Lothar},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{fullhash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{bibnamehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{authorbibnamehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{authornamehash}{4af3e69ed205d88133fc1357b50c74b0}
-      \strng{authorfullhash}{4af3e69ed205d88133fc1357b50c74b0}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review A}
-      \field{title}{Collision-induced rototranslational spectra of H 2-He from an accurate ab initio dipole moment surface}
-      \field{year}{1986}
-      \field{number}{4}
-      \range{number}{1}
-      \field{pages}{2771}
-      \range{pages}{1}
-      \field{volume}{34}
-      \range{volume}{1}
-    \endentry
-    \entry{karman2019}{article}{useauthor=false}
-      \true{moreauthor}
-      \name{author}{10}{}{%
-        {{hash=f6b24d3ec207ae20d4db1920ab8a2673}{%
-           family={Karman},
-           familyi={K\bibinitperiod},
-           given={Tijs},
-           giveni={T\bibinitperiod}}}%
-        {{hash=f6765b742193bd1f9ee735e2eed59e3b}{%
-           family={Gordon},
-           familyi={G\bibinitperiod},
-           given={Iouli\bibnamedelima E},
-           giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=46e089bf04e319505fe664ddba9eb0e4}{%
-           family={Avoird},
-           familyi={A\bibinitperiod},
-           given={Ad},
-           giveni={A\bibinitperiod},
-           prefix={van\bibnamedelima der},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-        {{hash=ae78a7650898890d13577f3d45a50839}{%
-           family={Baranov},
-           familyi={B\bibinitperiod},
-           given={Yury\bibnamedelima I},
-           giveni={Y\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
-        {{hash=0f0f11e18f04d5f05fe8417d09a6e5ea}{%
-           family={Boulet},
-           familyi={B\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-        {{hash=d59dd01df15ab96c08d67067bcbad45a}{%
-           family={Drouin},
-           familyi={D\bibinitperiod},
-           given={Brian\bibnamedelima J},
-           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=3771a3b305856c5e96cdbecabd86bd6a}{%
-           family={Groenenboom},
-           familyi={G\bibinitperiod},
-           given={Gerrit\bibnamedelima C},
-           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=f6eeb10a22c7971b7f5d828d8a14b554}{%
-           family={Gustafsson},
-           familyi={G\bibinitperiod},
-           given={Magnus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=d7b11ede72ce26594884d8a1157bd455}{%
-           family={Hartmann},
-           familyi={H\bibinitperiod},
-           given={Jean-Michel},
-           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
-        {{hash=f700517cda042272c38aa89923daa466}{%
-           family={Kurucz},
-           familyi={K\bibinitperiod},
-           given={Robert\bibnamedelima L},
-           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{authorbibnamehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{authornamehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{authorfullhash}{097d7a4ff454d402884218edc8474b7e}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Icarus}
-      \field{title}{Update of the HITRAN collision-induced absorption section}
-      \field{year}{2019}
-    \endentry
-    \entry{stone1984}{article}{useauthor=false}
-      \name{author}{5}{}{%
-        {{hash=584f89994153219f160bf6871dc331d8}{%
-           family={Stone},
-           familyi={S\bibinitperiod},
-           given={NWB},
-           giveni={N\bibinitperiod}}}%
-        {{hash=86c68d5e60489dd9ea67e3be49c84864}{%
-           family={Read},
-           familyi={R\bibinitperiod},
-           given={LAA},
-           giveni={L\bibinitperiod}}}%
-        {{hash=076c274796c1620dbfad5894924750da}{%
-           family={Anderson},
-           familyi={A\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=220abcadf7c1b2f3bfbe9cef72a219c2}{%
-           family={Dagg},
-           familyi={D\bibinitperiod},
-           given={IR},
-           giveni={I\bibinitperiod}}}%
-        {{hash=bcbe05c3e25be47c7ccb07ed0c8423ee}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={W},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {NRC Research Press}%
-      }
-      \strng{authorbibnamehash}{e4e77dd72710503c36faf5944e8abbfe}
-      \strng{authornamehash}{e4e77dd72710503c36faf5944e8abbfe}
-      \strng{authorfullhash}{ecb30818296cc8557d63f686a59bc135}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Canadian journal of physics}
-      \field{title}{Temperature dependent collision-induced absorption in nitrogen}
-      \field{year}{1984}
-      \field{number}{4}
-      \range{number}{1}
-      \field{pages}{338\bibrangedash 347}
-      \range{pages}{10}
-      \field{volume}{62}
-      \range{volume}{1}
-    \endentry
-    \entry{buontempo1975}{article}{useauthor=false}
-      \name{author}{4}{}{%
-        {{hash=289c95c357f384520c0ea50c1b33f783}{%
-           family={Buontempo},
-           familyi={B\bibinitperiod},
-           given={U},
-           giveni={U\bibinitperiod}}}%
-        {{hash=18300d17aabfd500af082643eec601b5}{%
-           family={Cunsolo},
-           familyi={C\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=2846df7a3385a2bce5997621c585729b}{%
-           family={Jacucci},
-           familyi={J\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-        {{hash=133fd329782f4fae8f7b6a23e612427d}{%
-           family={Weis},
-           familyi={W\bibinitperiod},
-           given={JJ},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{authorbibnamehash}{833c5e5cb435bc6c1748211691245fff}
-      \strng{authornamehash}{833c5e5cb435bc6c1748211691245fff}
-      \strng{authorfullhash}{b5648f53f0d52f790cc0320c90ce0f3a}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Chemical Physics}
-      \field{title}{The far infrared absorption spectrum of N2 in the gas and liquid phases}
-      \field{year}{1975}
-      \field{number}{6}
-      \range{number}{1}
-      \field{pages}{2570\bibrangedash 2576}
-      \range{pages}{7}
-      \field{volume}{63}
-      \range{volume}{1}
-    \endentry
-    \entry{dagg1985}{article}{useauthor=false}
-      \name{author}{5}{}{%
-        {{hash=220abcadf7c1b2f3bfbe9cef72a219c2}{%
-           family={Dagg},
-           familyi={D\bibinitperiod},
-           given={IR},
-           giveni={I\bibinitperiod}}}%
-        {{hash=076c274796c1620dbfad5894924750da}{%
-           family={Anderson},
-           familyi={A\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=1aa98d7f38330735e741f8047c33882f}{%
-           family={Yan},
-           familyi={Y\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=bcbe05c3e25be47c7ccb07ed0c8423ee}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={W},
-           giveni={W\bibinitperiod}}}%
-        {{hash=86c68d5e60489dd9ea67e3be49c84864}{%
-           family={Read},
-           familyi={R\bibinitperiod},
-           given={LAA},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {NRC Research Press}%
-      }
-      \strng{authorbibnamehash}{4393af3cdbcc60aaef54942ebf5f0ac8}
-      \strng{authornamehash}{4393af3cdbcc60aaef54942ebf5f0ac8}
-      \strng{authorfullhash}{a23ab513425bb054aeb3ada56ba3ce14}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Canadian journal of physics}
-      \field{title}{Collision-induced absorption in nitrogen at low temperatures}
-      \field{year}{1985}
-      \field{number}{5}
-      \range{number}{1}
-      \field{pages}{625\bibrangedash 631}
-      \range{pages}{7}
-      \field{volume}{63}
-      \range{volume}{1}
-    \endentry
-    \entry{mckellar1988}{article}{}
-      \name{author}{1}{}{%
-        {{hash=ea389faf775b03638d3c2385c046749b}{%
-           family={McKellar},
-           familyi={M\bibinitperiod},
-           given={ARW},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{ea389faf775b03638d3c2385c046749b}
-      \strng{fullhash}{ea389faf775b03638d3c2385c046749b}
-      \strng{bibnamehash}{ea389faf775b03638d3c2385c046749b}
-      \strng{authorbibnamehash}{ea389faf775b03638d3c2385c046749b}
-      \strng{authornamehash}{ea389faf775b03638d3c2385c046749b}
-      \strng{authorfullhash}{ea389faf775b03638d3c2385c046749b}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Infrared spectra of the (N2) 2 and N2--Ar van der Waals molecules}
-      \field{year}{1988}
-      \field{number}{7}
-      \range{number}{1}
-      \field{pages}{4190\bibrangedash 4196}
-      \range{pages}{7}
-      \field{volume}{88}
-      \range{volume}{1}
-    \endentry
-    \entry{wishnow1996}{article}{}
-      \name{author}{3}{}{%
-        {{hash=763991444702ec4d451a5c0888a71991}{%
-           family={Wishnow},
-           familyi={W\bibinitperiod},
-           given={EH},
-           giveni={E\bibinitperiod}}}%
-        {{hash=965e603aba5e00db2c7d83c5dab8c041}{%
-           family={Gush},
-           familyi={G\bibinitperiod},
-           given={HP},
-           giveni={H\bibinitperiod}}}%
-        {{hash=800dfbf08fd9b87841241cc3efd5776c}{%
-           family={Ozier},
-           familyi={O\bibinitperiod},
-           given={I},
-           giveni={I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{2216650d64ced8529f35e91875f38b10}
-      \strng{fullhash}{2216650d64ced8529f35e91875f38b10}
-      \strng{bibnamehash}{2216650d64ced8529f35e91875f38b10}
-      \strng{authorbibnamehash}{2216650d64ced8529f35e91875f38b10}
-      \strng{authornamehash}{2216650d64ced8529f35e91875f38b10}
-      \strng{authorfullhash}{2216650d64ced8529f35e91875f38b10}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Far-infrared spectrum of N2 and N2-noble gas mixtures near 80 K}
-      \field{year}{1996}
-      \field{number}{10}
-      \range{number}{1}
-      \field{pages}{3511\bibrangedash 3516}
-      \range{pages}{6}
-      \field{volume}{104}
-      \range{volume}{1}
-    \endentry
-    \entry{brocks1988}{article}{}
-      \name{author}{1}{}{%
-        {{hash=0cede3a4592ed0ffc73e66be2578817b}{%
-           family={Brocks},
-           familyi={B\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{0cede3a4592ed0ffc73e66be2578817b}
-      \strng{fullhash}{0cede3a4592ed0ffc73e66be2578817b}
-      \strng{bibnamehash}{0cede3a4592ed0ffc73e66be2578817b}
-      \strng{authorbibnamehash}{0cede3a4592ed0ffc73e66be2578817b}
-      \strng{authornamehash}{0cede3a4592ed0ffc73e66be2578817b}
-      \strng{authorfullhash}{0cede3a4592ed0ffc73e66be2578817b}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
-      \field{title}{Bound and rotational resonance states and the infrared spectrum of N2Ar}
-      \field{year}{1988}
-      \field{number}{2}
-      \range{number}{1}
-      \field{pages}{578\bibrangedash 587}
-      \range{pages}{10}
-      \field{volume}{88}
-      \range{volume}{1}
-    \endentry
-    \entry{tonkov1995}{book}{}
-      \name{author}{1}{}{%
-        {{hash=526b1a9fda86b7cbbc520f916196bf70}{%
-           family={Tonkov},
-           familyi={T\bibinitperiod},
-           given={MV},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{526b1a9fda86b7cbbc520f916196bf70}
-      \strng{fullhash}{526b1a9fda86b7cbbc520f916196bf70}
-      \strng{bibnamehash}{526b1a9fda86b7cbbc520f916196bf70}
-      \strng{authorbibnamehash}{526b1a9fda86b7cbbc520f916196bf70}
-      \strng{authornamehash}{526b1a9fda86b7cbbc520f916196bf70}
-      \strng{authorfullhash}{526b1a9fda86b7cbbc520f916196bf70}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Collision-and Interaction-Induced Spectroscopy}
-      \field{title}{Far Infrared Absorption Spectrum of CO$_2$ with He, Ar and Xe: Experiment and Calculations}
-      \field{year}{1995}
-      \field{pages}{457\bibrangedash 466}
-      \range{pages}{10}
-    \endentry
-    \entry{gruszka1997}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d5349dce4082e12de3191aa8203c090f}{%
-           family={Gruszka},
-           familyi={G\bibinitperiod},
-           given={Marcin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=43aceee9d589ebb42f87c7dedf2731ea}{%
-           family={Borysow},
-           familyi={B\bibinitperiod},
-           given={Aleksandra},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{fullhash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{bibnamehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{authorbibnamehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{authornamehash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \strng{authorfullhash}{748a77d80d0f4f3e2959a397a1b6f281}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Icarus}
-      \field{title}{Roto-Translational Collision-Induced Absorption of CO2for the Atmosphere of Venus at Frequencies from 0 to 250 cm- 1, at Temperatures from 200 to 800 K}
-      \field{year}{1997}
-      \field{number}{1}
-      \range{number}{1}
-      \field{pages}{172\bibrangedash 177}
-      \range{pages}{6}
-      \field{volume}{129}
-      \range{volume}{1}
-    \endentry
-  \enddatalist
-\endrefsection
-\endinput
+\bibitem{sioris2014}
+\selectlanguageifdefined{english}
+Sioris~C., Boone~C., Nassar~R. et~al. Retrieval of carbon dioxide vertical
+  profiles from solar occultation observations and associated error budgets for
+  ACE-FTS and CASS-FTS~// Atmospheric Measurement Techniques.
+\newblock 2014.
+\newblock Vol.~7, no.~7.
 
+\bibitem{sharma1975}
+\selectlanguageifdefined{english}
+Sharma~R.~D., Hart~R.~R. Collision-induced absorption in He-Ar mixture~//
+  Physical Review A.
+\newblock 1975.
+\newblock Vol.~12, no.~1.
+\newblock p.~85.
+
+\bibitem{meyer1986}
+\selectlanguageifdefined{english}
+Meyer~W., Frommhold~L. Ab initio calculation of the dipole moment of He-Ar and
+  the collision-induced absorption spectra~// Physical Review A.
+\newblock 1986.
+\newblock Vol.~33, no.~6.
+\newblock p.~3807.
+
+\bibitem{karman2015}
+\selectlanguageifdefined{english}
+Karman~T., Miliordos~E., Hunt~K.~L. et~al. Quantum mechanical calculation of
+  the collision-induced absorption spectra of N2--N2 with anisotropic
+  interactions~// The Journal of chemical physics.
+\newblock 2015.
+\newblock Vol. 142, no.~8.
+\newblock p.~084306.
+
+\bibitem{oparin2017}
+\selectlanguageifdefined{english}
+Oparin~D.~V., Filippov~N.~N., Grigoriev~I.~M. et~al. Effect of stable and
+  metastable dimers on collision-induced rototranslational spectra: Carbon
+  dioxide--rare gas mixtures~// Journal of Quantitative Spectroscopy and
+  Radiative Transfer.
+\newblock 2017.
+\newblock Vol. 196.
+\newblock P.~87--93.
+
+\bibitem{cohentanuji}
+\selectlanguageifdefined{english}
+Коэн-Таннуджи~К.~Диу~Б.~�.~�. Квантовая
+  механика.
+\newblock Издательство Уральского
+  университета, 2000.
+
+\bibitem{greiner}
+\selectlanguageifdefined{english}
+W.~Greiner~D.~B. Quantum mechanics. An introduction. Research Reports Esprit.
+\newblock 4th edition.
+\newblock Springer, 2000.
+
+\bibitem{baym-quantum-mechanics}
+\selectlanguageifdefined{english}
+Baym~G. Lectures on quantum mechanics.
+\newblock Westview Press, 1974.
+
+\bibitem{mcquarrie-statistical-mechanics}
+\selectlanguageifdefined{english}
+McQuarrie~D.~A. Statistical Mechanics.
+\newblock Harper \& Row, 1976.
+
+\bibitem{landau-volume2}
+\selectlanguageifdefined{english}
+Ландау~Л.Д.~�.~�. Теоретическая физика. Том 2.
+  Теория поля.
+\newblock ФМЛ, 2003.
+
+\bibitem{gordon1968}
+\selectlanguageifdefined{english}
+Gordon~R.~G. Correlation functions for molecular motion.
+\newblock 1968.
+\newblock Vol.~3.
+\newblock P.~1--42.
+
+\bibitem{zwanzig1965}
+\selectlanguageifdefined{english}
+Zwanzig~R. Time-correlation functions and transport coefficients in statistical
+  mechanics~// Annual Review of Physical Chemistry.
+\newblock 1965.
+\newblock Vol.~16, no.~1.
+\newblock P.~67--102.
+
+\bibitem{nitzan2006}
+\selectlanguageifdefined{english}
+Nitzan~A. Chemical dynamics in condensed phases: relaxation, transfer and
+  reactions in condensed molecular systems. Oxford graduate texts.
+\newblock illustrated edition edition.
+\newblock Oxford University Press, 2006.
+
+\bibitem{frommhold}
+\selectlanguageifdefined{english}
+Frommhold~L. Collision-induced absorption in gases.
+\newblock Cambridge University Press, 2006.
+
+\bibitem{kranendonk1973}
+\selectlanguageifdefined{english}
+Kranendonk~J.~V., Gass~D. Theory of the line shape in quadrupole-induced
+  infrared spectra~// Canadian Journal of Physics.
+\newblock 1973.
+\newblock Vol.~51, no.~23.
+\newblock P.~2428--2440.
+
+\bibitem{levine1967}
+\selectlanguageifdefined{english}
+Levine~H.~B., Birnbaum~G. Classical theory of collision-induced absorption in
+  rare-gas mixtures~// Physical Review.
+\newblock 1967.
+\newblock Vol. 154, no.~1.
+\newblock p.~86.
+
+\bibitem{mcquarrie1968}
+\selectlanguageifdefined{english}
+McQuarrie~D., Bernstein~R. Calculated Collision-Induced Absorption Spectrum for
+  He--Ar~// The Journal of Chemical Physics.
+\newblock 1968.
+\newblock Vol.~49, no.~4.
+\newblock P.~1958--1963.
+
+\bibitem{buryak2014}
+\selectlanguageifdefined{english}
+Buryak~I., Frommhold~L., Vigasin~A.~A. Far-infrared collision-induced
+  absorption in rare gas mixtures: Quantum and semi-classical calculations~//
+  The Journal of Chemical Physics.
+\newblock 2014.
+\newblock Vol. 140, no.~15.
+\newblock p.~154302.
+
+\bibitem{landau-volume1}
+\selectlanguageifdefined{english}
+Ландау~Л.Д.~�.~�. Теоретическая физика. Том 1.
+  Механика.
+\newblock ФМЛ, 2003.
+
+\bibitem{goldstein}
+\selectlanguageifdefined{english}
+Goldstein~H., Poole~C., Safko~J. Classical mechanics.
+\newblock AAPT, 2002.
+
+\bibitem{hill}
+\selectlanguageifdefined{english}
+Hill~T.~L. Statistical mechanics.
+\newblock Dover Publications, 1987.
+
+\bibitem{castaneda}
+\selectlanguageifdefined{english}
+Liliana Blanco~Castaneda~Viswanathan~Arunachalam~S.~D. Introduction to
+  Probability and Stochastic Processes with Applications.
+\newblock 2012.
+
+\bibitem{bosomworth1965_part1}
+\selectlanguageifdefined{english}
+Bosomworth~D., Gush~H. Collision-induced absorption of compressed gases in the
+  far infrared, Part I~// Canadian Journal of Physics.
+\newblock 1965.
+\newblock Vol.~43, no.~5.
+\newblock P.~729--750.
+
+\bibitem{bosomworth1965_part2}
+\selectlanguageifdefined{english}
+Bosomworth~D., Gush~H. Collision-induced absorption of compressed gases in the
+  far infrared, Part II~// Canadian Journal of Physics.
+\newblock 1965.
+\newblock Vol.~43, no.~5.
+\newblock P.~751--769.
+
+\bibitem{kiss1959}
+\selectlanguageifdefined{english}
+Kiss~Z., Welsh~H. Pressure-induced infrared absorption of mixtures of rare
+  gases~// Physical Review Letters.
+\newblock 1959.
+\newblock Vol.~2, no.~4.
+\newblock p.~166.
+
+\bibitem{bukhtoyarova1977}
+\selectlanguageifdefined{english}
+Bukhtoyarova~V., Tonkov~M. Intermolecular interactions in compressed gases from
+  translation absorption spectra. 1: Spectral moments of translation bands~//
+  Optics and Spectroscopy.
+\newblock 1977.
+\newblock Vol.~43.
+\newblock P.~27--30.
+
+\bibitem{bukhtoyarova1977_2}
+\selectlanguageifdefined{english}
+Bukhtoyarova~V., Tonkov~M. Intermolecular interactions in compressed gases
+  using translation absorption spectra. 2: Temperature dependence of
+  intensity~// Optics and Spectroscopy.
+\newblock 1977.
+\newblock Vol.~43.
+\newblock P.~133--135.
+
+\bibitem{ryzhov1974}
+\selectlanguageifdefined{english}
+Ryzhov~V., Tonkov~M. Translation absorption in spectra of noble-gases~// OPTIKA
+  I SPEKTROSKOPIYA.
+\newblock 1974.
+\newblock Vol.~37, no.~6.
+\newblock P.~1058--1064.
+
+\bibitem{cybulski1999}
+\selectlanguageifdefined{english}
+Cybulski~S.~M., Toczy{\l}owski~R.~R. Ground state potential energy curves for
+  He 2, Ne 2, Ar 2, He--Ne, He--Ar, and Ne--Ar: a coupled-cluster study~// The
+  Journal of Chemical Physics.
+\newblock 1999.
+\newblock Vol. 111, no.~23.
+\newblock P.~10520--10528.
+
+\bibitem{giece2003}
+\selectlanguageifdefined{english}
+Giese~T.~J., Audette~V.~M., York~D.~M. Examination of the correlation energy
+  and second virial coefficients from accurate ab initio calculations of
+  rare-gas dimers~// The Journal of Chemical Physics.
+\newblock 2003.
+\newblock Vol. 119, no.~5.
+\newblock P.~2618--2622.
+
+\bibitem{fernandez2004}
+\selectlanguageifdefined{english}
+L{\'o}pez~Cacheiro~J., Fern{\'a}ndez~B., Marchesan~D. et~al. Coupled cluster
+  calculations of the ground state potential and interaction induced electric
+  properties of the mixed dimers of helium, neon and argon~// Molecular
+  Physics.
+\newblock 2004.
+\newblock Vol. 102, no.~1.
+\newblock P.~101--110.
+
+\bibitem{sobol}
+\selectlanguageifdefined{english}
+И.М.~�. Численные методы Монте-Карло.
+\newblock Наука, 1973.
+
+\bibitem{sundials}
+\selectlanguageifdefined{english}
+Hindmarsh~A.~C., Brown~P.~N., Grant~K.~E. et~al. {SUNDIALS}: Suite of nonlinear
+  and differential/algebraic equation solvers~// ACM Transactions on
+  Mathematical Software (TOMS).
+\newblock 2005.
+\newblock Vol.~31, no.~3.
+\newblock P.~363--396.
+
+\bibitem{mpi}
+\selectlanguageifdefined{english}
+Gropp~W. MPICH2: A new start for MPI implementations.
+\newblock 2002.
+\newblock P.~7--7.
+
+\bibitem{borysow1985phenomena}
+\selectlanguageifdefined{english}
+Borysow~J., Frommhold~L., Birnbaum~G. Phenomena Induced by Intermolecular
+  Interactions.
+\newblock Plenum, New York, 1985.
+
+\bibitem{borysow1985}
+\selectlanguageifdefined{english}
+Borysow~J., Moraldi~M., Frommhold~L. The collision induced spectroscopies:
+  Concerning the desymmetrization of classical line shape~// Molecular Physics.
+\newblock 1985.
+\newblock Vol.~56, no.~4.
+\newblock P.~913--922.
+
+\bibitem{egelstaff1962}
+\selectlanguageifdefined{english}
+Egelstaff~P., Schofield~P. On the evaluation of the thermal neutron scattering
+  law~// Nuclear Science and Engineering.
+\newblock 1962.
+\newblock Vol.~12, no.~2.
+\newblock P.~260--270.
+
+\bibitem{hep}
+\selectlanguageifdefined{english}
+Schwan~C. A {C++11} Template Library for {Monte Carlo} integration.
+\newblock \url{https://github.com/cschwan/hep-mc}.
+\newblock дата доступа: май 2019.
+
+\bibitem{abel2009}
+\selectlanguageifdefined{english}
+Abel~M., Frommhold~L., Gustafsson~M. Collision-induced absorption at
+  wavelengths near 5 $\mu$ m by dense hydrogen gas.
+\newblock 2009.
+
+\bibitem{abel2012}
+\selectlanguageifdefined{english}
+Abel~M., Frommhold~L., Li~X. et~al. Infrared absorption by collisional H2--He
+  complexes at temperatures up to 9000 K and frequencies from 0 to 20 000 cm-
+  1~// The Journal of chemical physics.
+\newblock 2012.
+\newblock Vol. 136, no.~4.
+\newblock p.~044319.
+
+\bibitem{elkader2012}
+\selectlanguageifdefined{english}
+El-Kader~M., Maroulis~G. New insights into collision-induced rototranslational
+  absorption and scattering spectra of gaseous methane at different
+  temperatures~// Journal of Molecular Spectroscopy.
+\newblock 2012.
+\newblock Vol. 281.
+\newblock P.~28--39.
+
+\bibitem{elkader2017}
+\selectlanguageifdefined{english}
+El-Kader~M., Godet~J.-L., El-Sadek~A. et~al. Spectral line shapes of
+  collision-induced light scattering (CILS) and collision-induced absorption
+  (CIA) using isotropic intermolecular potential for H2--Ar~// Molecular
+  Physics.
+\newblock 2017.
+\newblock Vol. 115, no.~20.
+\newblock P.~2614--2625.
+
+\bibitem{borysow1986}
+\selectlanguageifdefined{english}
+Borysow~A., Frommhold~L. Collision-induced rototranslational absorption spectra
+  of N2-N2 pairs for temperatures from 50 to 300 K~// The Astrophysical
+  Journal.
+\newblock 1986.
+\newblock Vol. 311.
+\newblock P.~1043--1057.
+
+\bibitem{gruszka1996}
+\selectlanguageifdefined{english}
+Gruszka~M., Borysow~A. New analysis of the spectral moments of collision
+  induced absorption in gaseous N2 and CO2~// Molecular Physics.
+\newblock 1996.
+\newblock Vol.~88, no.~5.
+\newblock P.~1173--1185.
+
+\bibitem{bussery2014}
+\selectlanguageifdefined{english}
+Bussery-Honvault~B., Hartmann~J.-M. Ab initio calculations for the far infrared
+  collision induced absorption by N2 gas~// The Journal of chemical physics.
+\newblock 2014.
+\newblock Vol. 140, no.~5.
+\newblock p.~054309.
+
+\bibitem{karman2015_h2h2}
+\selectlanguageifdefined{english}
+Karman~T., van~der Avoird~A., Groenenboom~G.~C. Collision-induced absorption
+  with exchange effects and anisotropic interactions: Theory and application to
+  H2- H2~// The Journal of chemical physics.
+\newblock 2015.
+\newblock Vol. 142, no.~8.
+\newblock p.~084305.
+
+\bibitem{lokshtanov2008}
+\selectlanguageifdefined{english}
+Lokshtanov~S., Bussery-Honvault~B., Vigasin~A. Extensive ab initio study of the
+  integrated IR intensity in the N2 fundamental collision-induced band~//
+  Molecular Physics.
+\newblock 2008.
+\newblock Vol. 106, no.~9-10.
+\newblock P.~1227--1231.
+
+\bibitem{littlejohn1995}
+\selectlanguageifdefined{english}
+Littlejohn~R.~G., Reinsch~M. Internal or shape coordinates in the n-body
+  problem~// Physical Review A.
+\newblock 1995.
+\newblock Vol.~52, no.~3.
+\newblock p.~2035.
+
+\bibitem{petrov2015}
+\selectlanguageifdefined{english}
+Petrov~S., Lokshtanov~S. Trajectory analysis of the rotational dynamics of
+  molecules~// Journal of Experimental and Theoretical Physics.
+\newblock 2015.
+\newblock Vol. 121, no.~2.
+\newblock P.~186--193.
+
+\bibitem{gantmaher}
+\selectlanguageifdefined{english}
+Гантмахер~�. Теория матриц.
+\newblock Физматлит, 2004.
+
+\bibitem{tennyson1986}
+\selectlanguageifdefined{english}
+Tennyson~J. The calculation of the vibration-rotation energies of triatomic
+  molecules using scattering coordinates~// Computer Physics Reports.
+\newblock 1986.
+\newblock Vol.~4, no.~1.
+\newblock P.~1--36.
+
+\bibitem{matrixcookbook}
+\selectlanguageifdefined{english}
+K.B.~P., M.S.~P. The matrix cookbook.
+\newblock Tenchical University of Denmark, 2008.
+\newblock p.~510.
+
+\bibitem{liu2008}
+\selectlanguageifdefined{english}
+Liu~J.~S. Monte Carlo strategies in scientific computing.
+\newblock Springer Science \& Business Media, 2008.
+
+\bibitem{green1975}
+\selectlanguageifdefined{english}
+Green~S. Rotational excitation in H2--H2 collisions: Close-coupling
+  calculations~// The Journal of Chemical Physics.
+\newblock 1975.
+\newblock Vol.~62, no.~6.
+\newblock P.~2271--2277.
+
+\bibitem{hartmann2011}
+\selectlanguageifdefined{english}
+Hartmann~J.-M., Boulet~C., Jacquemart~D. Molecular dynamics simulations for CO2
+  spectra. II. The far infrared collision-induced absorption band~// The
+  Journal of chemical physics.
+\newblock 2011.
+\newblock Vol. 134, no.~9.
+\newblock p.~094316.
+
+\bibitem{meyer1986_h2he}
+\selectlanguageifdefined{english}
+Meyer~W., Frommhold~L. Collision-induced rototranslational spectra of H 2-He
+  from an accurate ab initio dipole moment surface~// Physical Review A.
+\newblock 1986.
+\newblock Vol.~34, no.~4.
+\newblock p.~2771.
+
+\bibitem{karman2019}
+\selectlanguageifdefined{english}
+Update of the HITRAN collision-induced absorption section~/ T.~Karman,
+  I.~E.~Gordon, A.~van~der~Avoird, Y.~I.~Baranov, C.~Boulet, B.~J.~Drouin,
+  G.~C.~Groenenboom, M.~Gustafsson, J.-M.~Hartmann et~al.~// Icarus.
+\newblock 2019.
+
+\bibitem{stone1984}
+\selectlanguageifdefined{english}
+Stone~N., Read~L., Anderson~A. et~al. Temperature dependent collision-induced
+  absorption in nitrogen~// Canadian journal of physics.
+\newblock 1984.
+\newblock Vol.~62, no.~4.
+\newblock P.~338--347.
+
+\bibitem{buontempo1975}
+\selectlanguageifdefined{english}
+Buontempo~U., Cunsolo~S., Jacucci~G. et~al. The far infrared absorption
+  spectrum of N2 in the gas and liquid phases~// The Journal of Chemical
+  Physics.
+\newblock 1975.
+\newblock Vol.~63, no.~6.
+\newblock P.~2570--2576.
+
+\bibitem{dagg1985}
+\selectlanguageifdefined{english}
+Dagg~I., Anderson~A., Yan~S. et~al. Collision-induced absorption in nitrogen at
+  low temperatures~// Canadian journal of physics.
+\newblock 1985.
+\newblock Vol.~63, no.~5.
+\newblock P.~625--631.
+
+\bibitem{mckellar1988}
+\selectlanguageifdefined{english}
+McKellar~A. Infrared spectra of the (N2) 2 and N2--Ar van der Waals
+  molecules~// The Journal of chemical physics.
+\newblock 1988.
+\newblock Vol.~88, no.~7.
+\newblock P.~4190--4196.
+
+\bibitem{wishnow1996}
+\selectlanguageifdefined{english}
+Wishnow~E., Gush~H., Ozier~I. Far-infrared spectrum of N2 and N2-noble gas
+  mixtures near 80 K~// The Journal of chemical physics.
+\newblock 1996.
+\newblock Vol. 104, no.~10.
+\newblock P.~3511--3516.
+
+\bibitem{brocks1988}
+\selectlanguageifdefined{english}
+Brocks~G. Bound and rotational resonance states and the infrared spectrum of
+  N2Ar~// The Journal of chemical physics.
+\newblock 1988.
+\newblock Vol.~88, no.~2.
+\newblock P.~578--587.
+
+\bibitem{tonkov1995}
+\selectlanguageifdefined{english}
+Tonkov~M. Far Infrared Absorption Spectrum of CO$_2$ with He, Ar and Xe:
+  Experiment and Calculations.
+\newblock Springer, 1995.
+\newblock P.~457--466.
+
+\bibitem{gruszka1997}
+\selectlanguageifdefined{english}
+Gruszka~M., Borysow~A. Roto-Translational Collision-Induced Absorption of
+  CO2for the Atmosphere of Venus at Frequencies from 0 to 250 cm- 1, at
+  Temperatures from 200 to 800 K~// Icarus.
+\newblock 1997.
+\newblock Vol. 129, no.~1.
+\newblock P.~172--177.
+
+\end{thebibliography}
