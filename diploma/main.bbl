@@ -249,7 +249,8 @@ L{\'o}pez~Cacheiro~J., Fern{\'a}ndez~B., Marchesan~D. et~al. Coupled cluster
 
 \bibitem{sobol}
 \selectlanguageifdefined{english}
-И.М.~�. Численные методы Монте-Карло.
+\text{Соболь И. М.} Численные методы
+  Монте-Карло.
 \newblock Наука, 1973.
 
 \bibitem{sundials}
@@ -403,7 +404,7 @@ Tennyson~J. The calculation of the vibration-rotation energies of triatomic
 
 \bibitem{matrixcookbook}
 \selectlanguageifdefined{english}
-K.B.~P., M.S.~P. The matrix cookbook.
+\text{Petersen K.B., and Pedersen M.S.} The matrix cookbook.
 \newblock Tenchical University of Denmark, 2008.
 \newblock p.~510.
 
