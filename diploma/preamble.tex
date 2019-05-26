@@ -78,10 +78,7 @@
 \usepackage{etoolbox}
 
 \AtBeginEnvironment{subappendices}{%
-\chapter*{Приложение}
-\renewcommand\appendixname{STUFF}
-%\renewcommand\appendixpagename{APPENDIXPAGENAME}
-%\renewcommand{\appendixtocname}{\appendixname}
+\chapter*{Приложение 2.A}
 \addcontentsline{toc}{chapter}{Приложение}
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
@@ -112,8 +109,8 @@
 \usepackage{indentfirst}
 
 \usepackage{dsfont}
-\newcommand{\boltz}{k_\text{b}}
-\newcommand{\kb}{k_\text{b}}
+\newcommand{\boltz}{k_\text{B}}
+\newcommand{\kb}{k_\text{B}}
 \newcommand{\intty}{\int\limits_{-\infty}^\infty}
 \newcommand{\mean}[1]{\langle #1 \rangle}
 \newcommand{\bs}{\boldsymbol}
@@ -185,3 +182,5 @@
 % \usepackage{chngcntr}
 % \counterwithout{figure}{chapter}
 % \usepackage[figurewithin=none]{caption}
+
+\usepackage{mattens}

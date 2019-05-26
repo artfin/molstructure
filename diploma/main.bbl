@@ -81,12 +81,6 @@ Baym~G. Lectures on quantum mechanics.
 McQuarrie~D.~A. Statistical Mechanics.
 \newblock Harper \& Row, 1976.
 
-\bibitem{landau-volume2}
-\selectlanguageifdefined{english}
-Ландау~Л.Д.~�.~�. Теоретическая физика. Том 2.
-  Теория поля.
-\newblock ФМЛ, 2003.
-
 \bibitem{gordon1968}
 \selectlanguageifdefined{english}
 Gordon~R.~G. Correlation functions for molecular motion.
@@ -162,6 +156,14 @@ Goldstein~H., Poole~C., Safko~J. Classical mechanics.
 \selectlanguageifdefined{english}
 Hill~T.~L. Statistical mechanics.
 \newblock Dover Publications, 1987.
+
+\bibitem{kumaraswamy1980}
+\selectlanguageifdefined{english}
+Kumaraswamy~P. A generalized probability density function for double-bounded
+  random processes~// Journal of Hydrology.
+\newblock 1980.
+\newblock Vol.~46, no.~1-2.
+\newblock P.~79--88.
 
 \bibitem{castaneda}
 \selectlanguageifdefined{english}
@@ -373,6 +375,15 @@ Lokshtanov~S., Bussery-Honvault~B., Vigasin~A. Extensive ab initio study of the
 \newblock Vol. 106, no.~9-10.
 \newblock P.~1227--1231.
 
+\bibitem{wilson1936}
+\selectlanguageifdefined{english}
+Wilson~Jr~E.~B., Howard~J. The Vibration-Rotation Energy Levels of Polyatomic
+  Molecules I. Mathematical Theory of Semirigid Asymmetrical Top Molecules~//
+  The Journal of Chemical Physics.
+\newblock 1936.
+\newblock Vol.~4, no.~4.
+\newblock P.~260--268.
+
 \bibitem{littlejohn1995}
 \selectlanguageifdefined{english}
 Littlejohn~R.~G., Reinsch~M. Internal or shape coordinates in the n-body
@@ -380,6 +391,14 @@ Littlejohn~R.~G., Reinsch~M. Internal or shape coordinates in the n-body
 \newblock 1995.
 \newblock Vol.~52, no.~3.
 \newblock p.~2035.
+
+\bibitem{sutcliffe}
+\selectlanguageifdefined{english}
+B.~T. Sutcliffe~(auth.)~R. G. W.~e. Quantum Dynamics of Molecules: The New
+  Experimental Challenge to Theorists. NATO Advanced Study Institutes Series
+  57.
+\newblock 1 edition.
+\newblock Springer US, 1980.
 
 \bibitem{petrov2015}
 \selectlanguageifdefined{english}
