@@ -264,6 +264,14 @@ Hindmarsh~A.~C., Brown~P.~N., Grant~K.~E. et~al. {SUNDIALS}: Suite of nonlinear
 \newblock Vol.~31, no.~3.
 \newblock P.~363--396.
 
+\bibitem{curtiss1952}
+\selectlanguageifdefined{english}
+Curtiss~C., Hirschfelder~J.~O. Integration of stiff equations~// Proceedings of
+  the National Academy of Sciences of the United States of America.
+\newblock 1952.
+\newblock Vol.~38, no.~3.
+\newblock p.~235.
+
 \bibitem{mpi}
 \selectlanguageifdefined{english}
 Gropp~W. MPICH2: A new start for MPI implementations.
