@@ -43,7 +43,7 @@
     VJ(\omega) = \frac{1}{2 \pi} \frac{N}{4\pi \varepsilon_0} \lb \frac{\mu}{2 \pi k T} \rb^{3/2} \idotsint \Bigg\vert \intty \bs{\mu}_1(t) e^{-i \omega t} dt \Bigg\vert^2 \, \exp \lb -\frac{\mu g^2}{2 k T} \rb b \, db \, d \varepsilon \, 4 \pi g^3 dg. \label{spectral-function-kranendonk}
 \end{gather}
 
-Рассмотрим переход от \eqref{correlation-function-kranendonk} к \eqref{spectral-function-kranendonk} подробно, т.к. мы произведем аналогичное преобразование при выводе альтернативного выражения для спектральной функции в пункте (\ref{section:spectral_function_in_plane}). \par
+Рассмотрим переход от \eqref{correlation-function-kranendonk} к \eqref{spectral-function-kranendonk} подробно, т.к. мы произведем аналогичное преобразование при выводе альтернативного выражения для спектральной функции в разделе (\ref{section:spectral_function_in_plane}). \par
 Корреляцией двух функций $f(z)$ и $g(z)$, определенных на комплексной плоскости $\mathbb{C}$, называют функцию, определенную следующим интегралом
 \begin{gather}
     K(z) = \intty f^*(s) g(z + s) ds,
@@ -418,12 +418,12 @@
     VJ(\omega) = \frac{1}{2 \pi} \frac{V}{4 \pi \varepsilon_0} \intty \mean{ \bs{\mu}(0) \bs{\mu}(t) } e^{-i \omega t} dt.
 \end{gather}
 
-Мы будем пользоваться приближением бинарных столкновений, то есть будем предполагать, что суммарная автокорреляционная функция распадается на сумму автокорреляционных функций индуцированных диполей пар. Для индуцированного дипольного момента пары мы сохраним для простоты  обозначение $\bs{\mu}$. Итак, мы будем работать со следующим выражением для спектральной функции с трактовкой интеграла как интеграла по начальным условиям классических динамических траекторий, как обсуждалось в пункте \ref{section:correlation_functions} 
+Мы будем пользоваться приближением бинарных столкновений, то есть будем предполагать, что суммарная автокорреляционная функция распадается на сумму автокорреляционных функций индуцированных диполей пар. Для индуцированного дипольного момента пары мы сохраним для простоты  обозначение $\bs{\mu}$. Итак, мы будем работать со следующим выражением для спектральной функции с трактовкой интеграла как интеграла по начальным условиям классических динамических траекторий, как обсуждалось в разделе \ref{section:correlation_functions} 
 \begin{gather}
     VJ(\omega) = \frac{1}{2\pi} \frac{V}{4 \pi \varepsilon_0} \intty \frac{\displaystyle \idotsint \bs{\mu}(0) \bs{\mu}(t) \, \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}}{\displaystyle \idotsint \exp \lb -\frac{\mH}{kT} \rb d\mf{q} \, d\mf{p}} e^{-i \omega t} dt. \label{two-atom-spectral-function1}
 \end{gather}
 
-Вектор координат при рассмотрении в плоскости столкновений равен $\mf{q} = \lc r, \psi, \Phi, \Theta \rc$, а вектор импульсов -- $\mf{p} = \lc p_r, p_\psi \rc$. Кроме того, согласно пункту \ref{section:averaging} в интеграле появляется дополнительный весовой множитель, равный $\text{Jac} = p_\psi \sin \Theta$. Следовательно, полное интегральное выражение в этой системе координат выглядит следующим образом
+Вектор координат при рассмотрении в плоскости столкновений равен $\mf{q} = \lc r, \psi, \Phi, \Theta \rc$, а вектор импульсов -- $\mf{p} = \lc p_r, p_\psi \rc$. Кроме того, согласно разделу \ref{section:averaging} в интеграле появляется дополнительный весовой множитель, равный $\text{Jac} = p_\psi \sin \Theta$. Следовательно, полное интегральное выражение в этой системе координат выглядит следующим образом
 \begin{gather}
     VJ(\omega) = \frac{1}{2\pi} \frac{V}{4 \pi \varepsilon_0} \intty e^{-i\omega t} dt \frac{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \bs{\mu}(0) \bs{\mu}(t) \exp \lb -\frac{\mH_\text{plane}}{kT} \rb}{\displaystyle \int\limits_0^\infty dr \intty dp_r \int\limits_0^{2\pi} d\psi \int\limits_0^\infty p_\psi dp_\psi \int\limits_0^\pi \sin \Theta d\Theta \int\limits_0^{2\pi} d\Phi \exp \lb -\frac{\mH_\text{plane}}{kT} \rb}. \label{two-atom-spectral-function2}
 \end{gather}

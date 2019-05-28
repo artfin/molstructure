@@ -440,6 +440,17 @@ Tennyson~J. The calculation of the vibration-rotation energies of triatomic
 Liu~J.~S. Monte Carlo strategies in scientific computing.
 \newblock Springer Science \& Business Media, 2008.
 
+\bibitem{chistikov-diplom}
+\selectlanguageifdefined{english}
+\text{Чистиков Д.} Развитие квантовых и
+  классических методов расчета димерного и
+  столкновительно-индуцированного
+  поглощения для описания континуальных
+  спектров атмосферных молекул~// Дипломная
+  работа. Московский государственный
+  университет им. М.В. Ломоносова.
+\newblock 2019.
+
 \bibitem{green1975}
 \selectlanguageifdefined{english}
 Green~S. Rotational excitation in H2--H2 collisions: Close-coupling
@@ -456,6 +467,11 @@ Hartmann~J.-M., Boulet~C., Jacquemart~D. Molecular dynamics simulations for CO2
 \newblock 2011.
 \newblock Vol. 134, no.~9.
 \newblock p.~094316.
+
+\bibitem{julia}
+\selectlanguageifdefined{english}
+\text{Калугина Ю.Н.} Неопубликованные
+  материалы.
 
 \bibitem{meyer1986_h2he}
 \selectlanguageifdefined{english}
