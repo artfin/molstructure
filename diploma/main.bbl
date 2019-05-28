@@ -23,6 +23,15 @@ Sioris~C., Boone~C., Nassar~R. et~al. Retrieval of carbon dioxide vertical
 \newblock 2014.
 \newblock Vol.~7, no.~7.
 
+\bibitem{borysow1986}
+\selectlanguageifdefined{english}
+Borysow~A., Frommhold~L. Collision-induced rototranslational absorption spectra
+  of N2-N2 pairs for temperatures from 50 to 300 K~// The Astrophysical
+  Journal.
+\newblock 1986.
+\newblock Vol. 311.
+\newblock P.~1043--1057.
+
 \bibitem{sharma1975}
 \selectlanguageifdefined{english}
 Sharma~R.~D., Hart~R.~R. Collision-induced absorption in He-Ar mixture~//
@@ -57,6 +66,15 @@ Oparin~D.~V., Filippov~N.~N., Grigoriev~I.~M. et~al. Effect of stable and
 \newblock 2017.
 \newblock Vol. 196.
 \newblock P.~87--93.
+
+\bibitem{chistikov2018}
+\selectlanguageifdefined{english}
+Chistikov~D.~N., Finenko~A.~A., Lokshtanov~S.~E. et~al. Comprehensive classical
+  analysis of partition function and some observables for weakly interacting
+  polyatomic dimers~// The Journal of chemical physics.
+\newblock 2018.
+\newblock Vol. 149, no.~19.
+\newblock p.~194304.
 
 \bibitem{cohentanuji}
 \selectlanguageifdefined{english}
@@ -340,15 +358,6 @@ El-Kader~M., Godet~J.-L., El-Sadek~A. et~al. Spectral line shapes of
 \newblock Vol. 115, no.~20.
 \newblock P.~2614--2625.
 
-\bibitem{borysow1986}
-\selectlanguageifdefined{english}
-Borysow~A., Frommhold~L. Collision-induced rototranslational absorption spectra
-  of N2-N2 pairs for temperatures from 50 to 300 K~// The Astrophysical
-  Journal.
-\newblock 1986.
-\newblock Vol. 311.
-\newblock P.~1043--1057.
-
 \bibitem{gruszka1996}
 \selectlanguageifdefined{english}
 Gruszka~M., Borysow~A. New analysis of the spectral moments of collision
@@ -442,7 +451,7 @@ Liu~J.~S. Monte Carlo strategies in scientific computing.
 
 \bibitem{chistikov-diplom}
 \selectlanguageifdefined{english}
-\text{Чистиков Д.} Развитие квантовых и
+\text{Чистиков Д.Н.} Развитие квантовых и
   классических методов расчета димерного и
   столкновительно-индуцированного
   поглощения для описания континуальных
