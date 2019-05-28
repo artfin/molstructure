@@ -26,15 +26,24 @@ Sioris~C., Boone~C., Nassar~R. et~al. Retrieval of carbon dioxide vertical
 \bibitem{borysow1986}
 \selectlanguageifdefined{english}
 Borysow~A., Frommhold~L. Collision-induced rototranslational absorption spectra
-  of N2-N2 pairs for temperatures from 50 to 300 K~// The Astrophysical
+  of N$_2-$N$_2$ pairs for temperatures from 50 to 300 K~// The Astrophysical
   Journal.
 \newblock 1986.
 \newblock Vol. 311.
 \newblock P.~1043--1057.
 
+\bibitem{gruszka1997}
+\selectlanguageifdefined{english}
+Gruszka~M., Borysow~A. Roto-Translational Collision-Induced Absorption of
+  CO$_2$ for the Atmosphere of Venus at Frequencies from 0 to 250 cm$^{-1}$, at
+  Temperatures from 200K to 800K~// Icarus.
+\newblock 1997.
+\newblock Vol. 129, no.~1.
+\newblock P.~172--177.
+
 \bibitem{sharma1975}
 \selectlanguageifdefined{english}
-Sharma~R.~D., Hart~R.~R. Collision-induced absorption in He-Ar mixture~//
+Sharma~R.~D., Hart~R.~R. Collision-induced absorption in He$-$Ar mixture~//
   Physical Review A.
 \newblock 1975.
 \newblock Vol.~12, no.~1.
@@ -42,8 +51,8 @@ Sharma~R.~D., Hart~R.~R. Collision-induced absorption in He-Ar mixture~//
 
 \bibitem{meyer1986}
 \selectlanguageifdefined{english}
-Meyer~W., Frommhold~L. Ab initio calculation of the dipole moment of He-Ar and
-  the collision-induced absorption spectra~// Physical Review A.
+Meyer~W., Frommhold~L. Ab initio calculation of the dipole moment of He$-$Ar
+  and the collision-induced absorption spectra~// Physical Review A.
 \newblock 1986.
 \newblock Vol.~33, no.~6.
 \newblock p.~3807.
@@ -51,7 +60,7 @@ Meyer~W., Frommhold~L. Ab initio calculation of the dipole moment of He-Ar and
 \bibitem{karman2015}
 \selectlanguageifdefined{english}
 Karman~T., Miliordos~E., Hunt~K.~L. et~al. Quantum mechanical calculation of
-  the collision-induced absorption spectra of N2--N2 with anisotropic
+  the collision-induced absorption spectra of N$_2-$N$_2$ with anisotropic
   interactions~// The Journal of chemical physics.
 \newblock 2015.
 \newblock Vol. 142, no.~8.
@@ -78,15 +87,14 @@ Chistikov~D.~N., Finenko~A.~A., Lokshtanov~S.~E. et~al. Comprehensive classical
 
 \bibitem{cohentanuji}
 \selectlanguageifdefined{english}
-Коэн-Таннуджи~К.~Диу~Б.~�.~�. Квантовая
-  механика.
+\text{Коэн-Таннуджи К., Диу Б., Лалоэ Ф.}
+  Квантовая механика.
 \newblock Издательство Уральского
   университета, 2000.
 
 \bibitem{greiner}
 \selectlanguageifdefined{english}
-W.~Greiner~D.~B. Quantum mechanics. An introduction. Research Reports Esprit.
-\newblock 4th edition.
+\text{Greiner W., Bromley D.A.} Quantum mechanics. An introduction.
 \newblock Springer, 2000.
 
 \bibitem{baym-quantum-mechanics}
@@ -101,8 +109,9 @@ McQuarrie~D.~A. Statistical Mechanics.
 
 \bibitem{gordon1968}
 \selectlanguageifdefined{english}
-Gordon~R.~G. Correlation functions for molecular motion.
-\newblock 1968.
+Gordon~R. Correlation functions for molecular motion~// Advances in Magnetic
+  and Optical Resonance.
+\newblock Elsevier, 1968.
 \newblock Vol.~3.
 \newblock P.~1--42.
 
@@ -117,8 +126,7 @@ Zwanzig~R. Time-correlation functions and transport coefficients in statistical
 \bibitem{nitzan2006}
 \selectlanguageifdefined{english}
 Nitzan~A. Chemical dynamics in condensed phases: relaxation, transfer and
-  reactions in condensed molecular systems. Oxford graduate texts.
-\newblock illustrated edition edition.
+  reactions in condensed molecular systems.
 \newblock Oxford University Press, 2006.
 
 \bibitem{frommhold}
@@ -168,7 +176,7 @@ Buryak~I., Frommhold~L., Vigasin~A.~A. Far-infrared collision-induced
 \bibitem{goldstein}
 \selectlanguageifdefined{english}
 Goldstein~H., Poole~C., Safko~J. Classical mechanics.
-\newblock AAPT, 2002.
+\newblock Addison-Wesley, 2001.
 
 \bibitem{hill}
 \selectlanguageifdefined{english}
@@ -185,9 +193,9 @@ Kumaraswamy~P. A generalized probability density function for double-bounded
 
 \bibitem{castaneda}
 \selectlanguageifdefined{english}
-Liliana Blanco~Castaneda~Viswanathan~Arunachalam~S.~D. Introduction to
+\text{Castaneda L.B., Arunachalam V., Dharmaraja S.} Introduction to
   Probability and Stochastic Processes with Applications.
-\newblock 2012.
+\newblock Wiley, 2012.
 
 \bibitem{bosomworth1965_part1}
 \selectlanguageifdefined{english}
@@ -215,26 +223,35 @@ Kiss~Z., Welsh~H. Pressure-induced infrared absorption of mixtures of rare
 
 \bibitem{bukhtoyarova1977}
 \selectlanguageifdefined{english}
-Bukhtoyarova~V., Tonkov~M. Intermolecular interactions in compressed gases from
-  translation absorption spectra. 1: Spectral moments of translation bands~//
-  Optics and Spectroscopy.
+\text{Бухтоярова В.И., Тонков М.В.}
+  Исследование межмолекулярных
+  взаимодействий в сжатых газах по
+  трансляционным спектрам поглощения.
+  Часть 1: спектральные моменты
+  трансляционных полос~// Оптика и
+  спектроскопия.
 \newblock 1977.
-\newblock Vol.~43.
-\newblock P.~27--30.
+\newblock Vol.~43, no.~1.
+\newblock P.~53--56.
 
 \bibitem{bukhtoyarova1977_2}
 \selectlanguageifdefined{english}
-Bukhtoyarova~V., Tonkov~M. Intermolecular interactions in compressed gases
-  using translation absorption spectra. 2: Temperature dependence of
-  intensity~// Optics and Spectroscopy.
+\text{Бухтоярова В.И., Тонков М.В.}
+  Исследование межмолекулярных
+  взаимодействий в сжатых газах по
+  трансляционным спектрам поглощения.
+  Часть 2: температурная зависимость
+  интенсивности поглощения~// Оптика и
+  спектроскопия.
 \newblock 1977.
 \newblock Vol.~43.
 \newblock P.~133--135.
 
 \bibitem{ryzhov1974}
 \selectlanguageifdefined{english}
-Ryzhov~V., Tonkov~M. Translation absorption in spectra of noble-gases~// OPTIKA
-  I SPEKTROSKOPIYA.
+\text{Рыжов В.А., Тонков М.В.} Трансляционное
+  поглощение в спектрах благородных газов~//
+  Оптика и спектроскопия.
 \newblock 1974.
 \newblock Vol.~37, no.~6.
 \newblock P.~1058--1064.
@@ -242,8 +259,8 @@ Ryzhov~V., Tonkov~M. Translation absorption in spectra of noble-gases~// OPTIKA
 \bibitem{cybulski1999}
 \selectlanguageifdefined{english}
 Cybulski~S.~M., Toczy{\l}owski~R.~R. Ground state potential energy curves for
-  He 2, Ne 2, Ar 2, He--Ne, He--Ar, and Ne--Ar: a coupled-cluster study~// The
-  Journal of Chemical Physics.
+  He$_2$, Ne$_2$, Ar$_2$, He$-$Ne, He$-$Ar, and Ne$-$Ar: a coupled-cluster
+  study~// The Journal of Chemical Physics.
 \newblock 1999.
 \newblock Vol. 111, no.~23.
 \newblock P.~10520--10528.
@@ -292,9 +309,9 @@ Curtiss~C., Hirschfelder~J.~O. Integration of stiff equations~// Proceedings of
 
 \bibitem{mpi}
 \selectlanguageifdefined{english}
-Gropp~W. MPICH2: A new start for MPI implementations.
+Gropp~W. MPICH2: A new start for MPI implementations~// European Parallel
+  Virtual Machine/Message Passing Interface Users’ Group Meeting~/ Springer.
 \newblock 2002.
-\newblock P.~7--7.
 
 \bibitem{borysow1985phenomena}
 \selectlanguageifdefined{english}
@@ -327,14 +344,14 @@ Schwan~C. A {C++11} Template Library for {Monte Carlo} integration.
 \bibitem{abel2009}
 \selectlanguageifdefined{english}
 Abel~M., Frommhold~L., Gustafsson~M. Collision-induced absorption at
-  wavelengths near 5 $\mu$ m by dense hydrogen gas.
+  wavelengths near 5 $\mu$m by dense hydrogen gas.
 \newblock 2009.
 
 \bibitem{abel2012}
 \selectlanguageifdefined{english}
-Abel~M., Frommhold~L., Li~X. et~al. Infrared absorption by collisional H2--He
-  complexes at temperatures up to 9000 K and frequencies from 0 to 20 000 cm-
-  1~// The Journal of chemical physics.
+Abel~M., Frommhold~L., Li~X. et~al. Infrared absorption by collisional H$_2-$He
+  complexes at temperatures up to 9000 K and frequencies from 0 to 20 000
+  cm$^{-1}$~// The Journal of chemical physics.
 \newblock 2012.
 \newblock Vol. 136, no.~4.
 \newblock p.~044319.
@@ -352,7 +369,7 @@ El-Kader~M., Maroulis~G. New insights into collision-induced rototranslational
 \selectlanguageifdefined{english}
 El-Kader~M., Godet~J.-L., El-Sadek~A. et~al. Spectral line shapes of
   collision-induced light scattering (CILS) and collision-induced absorption
-  (CIA) using isotropic intermolecular potential for H2--Ar~// Molecular
+  (CIA) using isotropic intermolecular potential for H$_2-$Ar~// Molecular
   Physics.
 \newblock 2017.
 \newblock Vol. 115, no.~20.
@@ -361,7 +378,7 @@ El-Kader~M., Godet~J.-L., El-Sadek~A. et~al. Spectral line shapes of
 \bibitem{gruszka1996}
 \selectlanguageifdefined{english}
 Gruszka~M., Borysow~A. New analysis of the spectral moments of collision
-  induced absorption in gaseous N2 and CO2~// Molecular Physics.
+  induced absorption in gaseous N$_2$ and CO$_2$~// Molecular Physics.
 \newblock 1996.
 \newblock Vol.~88, no.~5.
 \newblock P.~1173--1185.
@@ -369,7 +386,7 @@ Gruszka~M., Borysow~A. New analysis of the spectral moments of collision
 \bibitem{bussery2014}
 \selectlanguageifdefined{english}
 Bussery-Honvault~B., Hartmann~J.-M. Ab initio calculations for the far infrared
-  collision induced absorption by N2 gas~// The Journal of chemical physics.
+  collision induced absorption by N$_2$ gas~// The Journal of chemical physics.
 \newblock 2014.
 \newblock Vol. 140, no.~5.
 \newblock p.~054309.
@@ -378,7 +395,7 @@ Bussery-Honvault~B., Hartmann~J.-M. Ab initio calculations for the far infrared
 \selectlanguageifdefined{english}
 Karman~T., van~der Avoird~A., Groenenboom~G.~C. Collision-induced absorption
   with exchange effects and anisotropic interactions: Theory and application to
-  H2- H2~// The Journal of chemical physics.
+  H$_2-$H$_2$~// The Journal of chemical physics.
 \newblock 2015.
 \newblock Vol. 142, no.~8.
 \newblock p.~084305.
@@ -386,7 +403,7 @@ Karman~T., van~der Avoird~A., Groenenboom~G.~C. Collision-induced absorption
 \bibitem{lokshtanov2008}
 \selectlanguageifdefined{english}
 Lokshtanov~S., Bussery-Honvault~B., Vigasin~A. Extensive ab initio study of the
-  integrated IR intensity in the N2 fundamental collision-induced band~//
+  integrated IR intensity in the N$_2$ fundamental collision-induced band~//
   Molecular Physics.
 \newblock 2008.
 \newblock Vol. 106, no.~9-10.
@@ -403,7 +420,7 @@ Wilson~Jr~E.~B., Howard~J. The Vibration-Rotation Energy Levels of Polyatomic
 
 \bibitem{littlejohn1995}
 \selectlanguageifdefined{english}
-Littlejohn~R.~G., Reinsch~M. Internal or shape coordinates in the n-body
+Littlejohn~R.~G., Reinsch~M. Internal or shape coordinates in the $n-$body
   problem~// Physical Review A.
 \newblock 1995.
 \newblock Vol.~52, no.~3.
@@ -411,23 +428,23 @@ Littlejohn~R.~G., Reinsch~M. Internal or shape coordinates in the n-body
 
 \bibitem{sutcliffe}
 \selectlanguageifdefined{english}
-B.~T. Sutcliffe~(auth.)~R. G. W.~e. Quantum Dynamics of Molecules: The New
-  Experimental Challenge to Theorists. NATO Advanced Study Institutes Series
-  57.
-\newblock 1 edition.
-\newblock Springer US, 1980.
+\text{Sutcliffe B.T., Woolley R.G.} Quantum Dynamics of Molecules: The New
+  Experimental Challenge to Theorists. NATO Advanced Study.
+\newblock Springer, 1980.
 
 \bibitem{petrov2015}
 \selectlanguageifdefined{english}
-Petrov~S., Lokshtanov~S. Trajectory analysis of the rotational dynamics of
-  molecules~// Journal of Experimental and Theoretical Physics.
+\text{Петров С.В., Локштанов С.Е.} Траекторный
+  анализ вращательной динамики молекул~//
+  Журнал экспериментальной и теоретической
+  физики.
 \newblock 2015.
-\newblock Vol. 121, no.~2.
-\newblock P.~186--193.
+\newblock Vol. 148, no.~2.
+\newblock P.~219--227.
 
 \bibitem{gantmaher}
 \selectlanguageifdefined{english}
-Гантмахер~�. Теория матриц.
+\text{Гантмахер Ф.Р.} Теория матриц.
 \newblock Физматлит, 2004.
 
 \bibitem{tennyson1986}
@@ -440,9 +457,8 @@ Tennyson~J. The calculation of the vibration-rotation energies of triatomic
 
 \bibitem{matrixcookbook}
 \selectlanguageifdefined{english}
-\text{Petersen K.B., and Pedersen M.S.} The matrix cookbook.
+\text{Petersen K.B., Pedersen M.S.} The matrix cookbook.
 \newblock Tenchical University of Denmark, 2008.
-\newblock p.~510.
 
 \bibitem{liu2008}
 \selectlanguageifdefined{english}
@@ -462,7 +478,7 @@ Liu~J.~S. Monte Carlo strategies in scientific computing.
 
 \bibitem{green1975}
 \selectlanguageifdefined{english}
-Green~S. Rotational excitation in H2--H2 collisions: Close-coupling
+Green~S. Rotational excitation in H$_2-$H$_2$ collisions: Close-coupling
   calculations~// The Journal of Chemical Physics.
 \newblock 1975.
 \newblock Vol.~62, no.~6.
@@ -470,8 +486,8 @@ Green~S. Rotational excitation in H2--H2 collisions: Close-coupling
 
 \bibitem{hartmann2011}
 \selectlanguageifdefined{english}
-Hartmann~J.-M., Boulet~C., Jacquemart~D. Molecular dynamics simulations for CO2
-  spectra. II. The far infrared collision-induced absorption band~// The
+Hartmann~J.-M., Boulet~C., Jacquemart~D. Molecular dynamics simulations for
+  CO$_2$ spectra. II. The far infrared collision-induced absorption band~// The
   Journal of chemical physics.
 \newblock 2011.
 \newblock Vol. 134, no.~9.
@@ -484,7 +500,7 @@ Hartmann~J.-M., Boulet~C., Jacquemart~D. Molecular dynamics simulations for CO2
 
 \bibitem{meyer1986_h2he}
 \selectlanguageifdefined{english}
-Meyer~W., Frommhold~L. Collision-induced rototranslational spectra of H 2-He
+Meyer~W., Frommhold~L. Collision-induced rototranslational spectra of H$_2-$He
   from an accurate ab initio dipole moment surface~// Physical Review A.
 \newblock 1986.
 \newblock Vol.~34, no.~4.
@@ -492,9 +508,8 @@ Meyer~W., Frommhold~L. Collision-induced rototranslational spectra of H 2-He
 
 \bibitem{karman2019}
 \selectlanguageifdefined{english}
-Update of the HITRAN collision-induced absorption section~/ T.~Karman,
-  I.~E.~Gordon, A.~van~der~Avoird, Y.~I.~Baranov, C.~Boulet, B.~J.~Drouin,
-  G.~C.~Groenenboom, M.~Gustafsson, J.-M.~Hartmann et~al.~// Icarus.
+\text{Karman T., Gordon I., van der Avoird A. et al.} Update of the HITRAN
+  collision-induced absorption section~// Icarus.
 \newblock 2019.
 
 \bibitem{stone1984}
@@ -508,7 +523,7 @@ Stone~N., Read~L., Anderson~A. et~al. Temperature dependent collision-induced
 \bibitem{buontempo1975}
 \selectlanguageifdefined{english}
 Buontempo~U., Cunsolo~S., Jacucci~G. et~al. The far infrared absorption
-  spectrum of N2 in the gas and liquid phases~// The Journal of Chemical
+  spectrum of N$_2$ in the gas and liquid phases~// The Journal of Chemical
   Physics.
 \newblock 1975.
 \newblock Vol.~63, no.~6.
@@ -524,7 +539,7 @@ Dagg~I., Anderson~A., Yan~S. et~al. Collision-induced absorption in nitrogen at
 
 \bibitem{mckellar1988}
 \selectlanguageifdefined{english}
-McKellar~A. Infrared spectra of the (N2) 2 and N2--Ar van der Waals
+McKellar~A. Infrared spectra of the (N$_2$)$_2$ and N$_2-$Ar van der Waals
   molecules~// The Journal of chemical physics.
 \newblock 1988.
 \newblock Vol.~88, no.~7.
@@ -532,8 +547,8 @@ McKellar~A. Infrared spectra of the (N2) 2 and N2--Ar van der Waals
 
 \bibitem{wishnow1996}
 \selectlanguageifdefined{english}
-Wishnow~E., Gush~H., Ozier~I. Far-infrared spectrum of N2 and N2-noble gas
-  mixtures near 80 K~// The Journal of chemical physics.
+Wishnow~E., Gush~H., Ozier~I. Far-infrared spectrum of N$_2$ and N$_2-$noble
+  gas mixtures near 80 K~// The Journal of chemical physics.
 \newblock 1996.
 \newblock Vol. 104, no.~10.
 \newblock P.~3511--3516.
@@ -541,7 +556,7 @@ Wishnow~E., Gush~H., Ozier~I. Far-infrared spectrum of N2 and N2-noble gas
 \bibitem{brocks1988}
 \selectlanguageifdefined{english}
 Brocks~G. Bound and rotational resonance states and the infrared spectrum of
-  N2Ar~// The Journal of chemical physics.
+  N$_2-$Ar~// The Journal of chemical physics.
 \newblock 1988.
 \newblock Vol.~88, no.~2.
 \newblock P.~578--587.
@@ -552,14 +567,5 @@ Tonkov~M. Far Infrared Absorption Spectrum of CO$_2$ with He, Ar and Xe:
   Experiment and Calculations.
 \newblock Springer, 1995.
 \newblock P.~457--466.
-
-\bibitem{gruszka1997}
-\selectlanguageifdefined{english}
-Gruszka~M., Borysow~A. Roto-Translational Collision-Induced Absorption of
-  CO2for the Atmosphere of Venus at Frequencies from 0 to 250 cm- 1, at
-  Temperatures from 200 to 800 K~// Icarus.
-\newblock 1997.
-\newblock Vol. 129, no.~1.
-\newblock P.~172--177.
 
 \end{thebibliography}
