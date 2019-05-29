@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+% page margin
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\usepackage{graphicx}
+
+% AMS packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{csquotes}
+
+% blackboar lettering
+\usepackage{dsfont}
+\usepackage{bbm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% modifying page layout using fancyhdr
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\ #1}}
+
+\rhead{\fancyplain{}{\rightmark }}
+\cfoot{\fancyplain{}{\thepage }}
+
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+
+\title{Список сведений}
+\date{}
+\author{}
+\usepackage{titling}
+
+\setlength{\droptitle}{-8em}   % This is your set screw
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item Финенко Артем Андреевич
+    \item Тема дипломной работы: \enquote{Моделирование спектров столкновительно-индуцированного поглощения в дальней инфракрасной области методом классических траекторий}
+    \item Работа выполнялась в лаборатории строения и квантовой механики молекул кафедры физической химии химического факультета МГУ.
+    \item Научные руководители -- кандидат физико-математических наук Петров Сергей Владимирович, старший научный сотрудник лаборатории строения и квантовой механики молекул кафедры физической химии химического факультета МГУ и Локштанов Сергей Евгеньевич, младший научный сотрудник лаборатории лазерной спектроскопии кафедры лазерной химии химического факультета МГУ.
+    \item Рецензент -- доктор физико-математических наук Сурин Леонид Аркадьевич, заместитель директора по научной работе и заведующий отделом института спектроскопии РАН (ИСАН).
+\end{enumerate}
+
+\end{document}
+
