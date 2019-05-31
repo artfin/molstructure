@@ -1,0 +1,167 @@
+\documentclass[10pt,pdf,hyperref={unicode},xcolor=dvipsnames]{beamer}
+
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bbm}
+
+% русский текст в формулах?
+\usepackage{mathtext}
+
+% русский
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+% рисунки
+\usepackage{graphicx, caption, subcaption}
+
+\usetheme{CambridgeUS}
+
+\usepackage{csquotes}
+\usepackage[backend=bibtex]{biblatex}
+\bibliography{biblio}
+
+\usepackage{physics}
+\usepackage{braket}
+ 
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+
+% ?
+\setbeamertemplate{frametitle}[default][center]
+
+\addtobeamertemplate{navigation symbols}{}{%
+\usebeamerfont{footline}%
+\usebeamercolor[fg]{footline}%
+\hspace{1em}%
+\large\insertframenumber/\inserttotalframenumber
+}
+
+\newcommand{\mytitle}[1]{\color{blue}{\textbf{#1}}}
+
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\lsq}{\left[}
+\newcommand{\rsq}{\right]}
+\newcommand{\mean}[1]{\langle #1 \rangle}
+\newcommand{\bOmega}{\boldsymbol{\Omega}}
+\newcommand{\bbS}{\mathds{S}}
+\newcommand{\bbM}{\mathds{M}}
+\newcommand{\Jx}{J_\text{X}}
+\newcommand{\Jy}{J_\text{Y}}
+\newcommand{\Jz}{J_\text{Z}}
+\newcommand{\pe}{\mathbf{p}_e}
+\newcommand{\bUpsilon}{\boldsymbol{\Upsilon}_e}
+
+\newcommand{\mf}{\mathbf}
+\newcommand{\EOmega}{\boldsymbol{\Upsilon}_\mathbf{e}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, decorations.markings, arrows.meta, snakes}
+\usetikzlibrary{fit}
+\usepackage{microtype}
+\usepackage{framed}
+\usetikzlibrary{decorations.pathmorphing,calc,backgrounds}
+\usepackage{pgfplots}
+\usepackage{animate}
+\usepackage{xcolor}
+
+\usepackage{varwidth}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}}
+
+\tikzset{
+	pics/carc/.style args={#1:#2:#3}{
+		code = {
+			\draw[pic actions] (#1:#3) arc(#1:#2:#3);
+		}
+	}
+}
+
+\tikzstyle{blackBoxStyle} = [rectangle, draw=black!90, fill=black!50, thick, inner sep=5pt, minimum size=1.5cm]
+\tikzstyle{derivativeBoxStyle} = [rectangle, draw=BurntOrange!90, fill=BurntOrange!30, thick, inner sep = 5pt, minimum size = 1cm]
+
+\usepackage{array}
+\makeatletter
+\renewcommand*\env@matrix[1][\arraystretch]{%
+  \edef\arraystretch{#1}%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{*\c@MaxMatrixCols c}}
+\makeatother
+
+\pgfplotsset{compat=1.14}
+
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
+\newcommand*{\rttensor}[1]{\underline{\underline{#1}}}
+\newcommand*{\rttensortwo}[1]{\bar{\bar{#1}}}
+
+\tikzset{math/.style={draw, execute at begin node={$\displaystyle}, execute at end node={$}}}
+
+\newcommand{\boxandcomment}[4][]{%
+    \tikz[baseline=(#2.base), remember picture]{%
+        \node[math, label=below:{#3}, #1] (#2) {#4};}}
+
+
+\usepackage{dsfont}
+\usepackage{bbm}
+
+\newcommand{\bba}{\mathbbm{a}}
+\newcommand{\bbA}{\mathds{A}}
+\newcommand{\bbI}{\mathds{I}}
+\newcommand{\bbG}{\mathds{G}}
+\newcommand{\bbW}{\mathds{W}}
+
+%\usepackage{algorithm, algorithmic}
+%\usepackage[noend]{algpseudocode}
+%\usepackage{float}
+\usepackage{algorithm,algpseudocode}
+
+\usepackage{csquotes}
+\usepackage[backend=bibtex]{biblatex}
+\bibliography{biblio}
+
+\newcommand{\hcancel}[1]{%
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red] (tocancel.south west) -- (tocancel.north east);
+        \draw[red] (tocancel.south east) -- (tocancel.north west);
+    }%
+}%
+
+\newcommand{\hcancelonce}[1]{%
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red] (tocancel.south west) -- (tocancel.north east);
+    }%
+}%
+
+\definecolor{darkolivegreen}{rgb}{0.33, 0.42, 0.18}
+\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
+
+\begin{document}
+
+\begin{frame}{\center\mytitle{\Large Моделирование спектров столкновительно-индуцированного поглощения в дальней ИК области методом классических траекторий}}
+\begin{table}[]
+\flushright
+\begin{tabular}{r}
+\large \underline{Докладчик:}
+\large Финенко Артем \\[1ex]
+\large \underline{Научные руководители:} \\[1ex]
+\large Петров С. В. \\
+\large Локштанов С. Е. \\
+\end{tabular}
+\end{table}
+\vfill
+\center
+\today
+\end{frame}
+
+\end{document}
