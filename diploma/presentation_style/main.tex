@@ -1,0 +1,296 @@
+% Welcome! This is the unofficial University of Udine beamer template.
+
+% See README.md for more informations about this template.
+
+% This style has been developed following the "Manuale di Stile"
+% (Style Manual) of the University of Udine. You can find the
+% manual here: https://www.uniud.it/it/ateneo-uniud/ateneo-uniud/identita-visiva/manuali-immagine-stile/manuale-stile
+
+% Note: for some reason, the RGB values specified in the manual
+% do NOT render correctly in Beamer, so they have been redefined
+% for this document using the high level chromo-optic deep neural 
+% quantistic technology offered by Microsoft Paint's color picker.
+
+% We defined four theme colors: UniBrown, UniBlue, UniGold
+% and UniOrange. For example, to write some uniud-brownish
+% text, just use: \textcolor{UniBrown}{Hello!}
+
+% Note that [usenames,dvipsnames] is MANDATORY due to compatibility
+% issues between tikz and xcolor packages.
+
+\documentclass[10pt,usenames,pdf,hyperref={unicode},dvipsnames]{beamer}
+
+% русский
+%\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{bbm}
+
+\usepackage{verbatim}
+\usetheme{uniud}
+
+% рисунки
+\usepackage{graphicx, caption, subcaption}
+
+%%% Bibliography
+\usepackage[style=authoryear,backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+
+% Author names in publication list are consistent 
+% i.e. name1 surname1, name2 surname2
+% See https://tex.stackexchange.com/questions/106914/biblatex-does-not-reverse-the-first-and-last-names-of-the-second-author
+\DeclareNameAlias{author}{first-last}
+
+%%% Suppress biblatex annoying warning
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
+
+%%% Some useful commands
+% pdf-friendly newline in links
+\newcommand{\pdfnewline}{\texorpdfstring{\newline}{ }} 
+% Fill the vertical space in a slide (to put text at the bottom)
+\newcommand{\framefill}{\vskip0pt plus 1filll}
+
+
+\title[]{{\large Моделирование спектров \\ столкновительно-индуцированного поглощения \\ в дальней ИК области \\ методом классических траекторий}}
+\date[Июнь 2019]{4 июня, 2019}
+\author[]{
+  Финенко Артем 
+}
+\institute{Химический факультет, МГУ им. М.В. Ломоносова}
+
+%\usepackage{xcolors}
+\definecolor{darkolivegreen}{rgb}{0.33, 0.42, 0.18}
+\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
+
+\newcommand{\hcancel}[1]{%
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red] (tocancel.south west) -- (tocancel.north east);
+        \draw[red] (tocancel.south east) -- (tocancel.north west);
+    }%
+}%
+
+\usepackage{physics}
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\lsq}{\left[}
+\newcommand{\rsq}{\right]}
+\newcommand{\mean}[1]{\langle #1 \rangle}
+\newcommand{\mf}{\mathbf}
+\newcommand{\EOmega}{\boldsymbol{\Upsilon}_\mathbf{e}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+
+\newcommand{\intty}{\int\limits_{-\infty}^{+\infty}}
+
+\newcommand{\mycaption}[2]{
+    \textbf{#1:} #2
+}
+
+\newcommand{\bOmega}{\boldsymbol{\Omega}}
+\newcommand{\Tl}{T_\text{L}}
+\newcommand{\Th}{T_\text{H}}
+
+\usepackage{csquotes}
+\usepackage{dsfont}
+\usepackage{bbm}
+
+\newcommand{\bba}{\mathbbm{a}}
+\newcommand{\bbA}{\mathds{A}}
+\newcommand{\bbI}{\mathds{I}}
+\newcommand{\bbG}{\mathds{G}}
+\newcommand{\bbW}{\mathds{W}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{{\large Столкновительно-индуцированное поглощение}}
+    \begin{block}{Вращательный переход запрещен в мономере}
+        \vspace*{-0.5cm}
+        \begin{gather}
+            \hcancel{$N_2(j_A) + h \nu \rightarrow N_2(j_B)$} \notag
+        \end{gather}
+    \end{block}
+    \begin{block}{Переход разрешен в столкновительном комплексе}
+        \vspace*{-0.5cm}
+        \begin{gather}
+            \left\{ N_2 + N_2\right\}(J) + h \nu \rightarrow \left\{ N_2 + N_2 \right\}(J^\prime) \notag
+        \end{gather}
+    \end{block}
+    \begin{block}{Состояния молекулярных пар}
+        \begin{enumerate}
+            \item \color{red}{Связанные состояния}
+            \item \color{darkpastelgreen}{Континуальные свободные состояния} 
+            \item \color{darkpastelgreen}{Метастабильные состояния} 
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Приложения CIA}
+    \vspace*{-0.1cm}
+\begin{enumerate}
+    \item N$_2-$N$_2$: атмосферы Земли, древнего Марса \footfullcite{wordsworth2017} и Титана \\
+    \item CO$_2-$Ar: атмосферы Марса и Венеры \footfullcite{fox1988} \\
+\end{enumerate}
+
+\begin{minipage}{0.49\linewidth}
+\begin{figure}[H]
+    \vspace{0.4cm}
+    \includegraphics[width=5.0cm, height=3.8cm]{./pictures/early_mars.jpeg}
+    \mycaption{Рис. 1}{?}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\begin{figure}[H]
+    \includegraphics[width=5.0cm, height=3.8cm]{./pictures/titan.jpg}
+    \mycaption{Рис. 2}{NASA/Cassini}
+\end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{{\large Взаимодействие молекул с электромагнитным полем}}
+    \vspace*{-0.3cm}
+    \begin{block}{Временная теория возмущений}
+    \vspace*{-0.5cm}
+	\begin{gather}
+		i \hbar \frac{\partial \psi}{\partial t} = \hat{H} \psi, \quad \hat{H} = \hat{H}_0 + \lambda \hat{V}(t) \notag \\
+        \lambda \hat{V}(t) = - \frac{E_0 (\bmu \cdot \boldsymbol{\varepsilon})}{2} \lb \exp \lb i \omega t \rb + \exp \lb - i \omega t \rb \rb \notag
+	\end{gather}
+\end{block}
+
+\begin{block}{Коэффициент поглощения}
+    \vspace*{-0.5cm}
+	\begin{gather}
+		\frac{\alpha(\nu)}{\rho_1 \rho_2} = \frac{(2 \pi)^3 N_L^2}{3 \hbar c} \nu \lsq 1 - \exp \lb - \frac{h c \nu}{k T} \rb \rsq V J(\nu) \notag \\ 
+		J(\omega) = \frac{1}{4 \pi \varepsilon_0} \sum_{\ket{i}, \ket{f}} \rho_i \Big{|} \bra{f} \hat{\boldsymbol{\mu}} \ket{i} \Big{|}^2 \delta \lb \omega_{fi} - \omega \rb \notag 
+	\end{gather}
+\end{block}
+\end{frame}
+
+\begin{frame}{{\large Спектральная функция и ее симметрия}}
+    \vspace*{-0.8cm}
+	\begin{gather}
+		\begin{aligned}
+            J_\text{квант.}(\omega) &= \frac{1}{2\pi} \frac{1}{4 \pi \varepsilon_0} \int\limits_{-\infty}^{+\infty} dt \, e^{-i \omega t} \sum_i \rho_i \bra{i} \hat{\boldsymbol{\mu}}(0) \cdot \hat{\boldsymbol{\mu}}(t) \ket{i} \\ 
+            J_\text{класс.}(\omega) &= \frac{1}{2\pi} \frac{1}{4 \pi \varepsilon_0} \int\limits_{-\infty}^{+\infty} dt \, e^{-i \omega t} \mean{\bmu(0) \cdot \bmu(t)} \\ 
+		\end{aligned} \notag
+	\end{gather}
+
+    \begin{figure}[H]
+        \vspace*{-0.8cm}
+        \includegraphics[width=\linewidth]{./pictures/spectral_function_symmetry-crop.pdf}
+        %\caption{Картинка}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Замена переменных с внедрением времени}
+    \vspace*{-1.2cm}
+    \begin{gather}
+        \hspace*{-0.3cm}
+        J(\omega) = \frac{1}{2 \pi} \hat{F} \Big[ \langle \bmu(0) \bmu(t) \rangle \Big] \rightarrow \frac{1}{2 \pi \Gamma_0} \int\limits_0^\infty \frac{p_r}{\mu} dp_r \int \exp \lb -\frac{H}{k_B T} \rb \Bigg\vert \hat{F} \Big[ \bmu(t) \Big] \Bigg\vert^2 d\boldsymbol{\Gamma}^\prime \notag
+    \end{gather}
+    \vspace*{-0.8cm}
+    \begin{figure}[H]
+        \includegraphics[width=0.75\linewidth]{./pictures/time-change-crop.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Схема расчетной методики}
+    \vspace*{-0.5cm}
+    \begin{block}{Предварительная работа}
+        \begin{enumerate}
+            \item Аналитические аппроксимации \textit{ab initio} ППЭ и ПДМ
+            \item Введение обобщенных координат и вывод точного классического лагранжиана
+            \item Распределение начальных условий
+        \end{enumerate}
+    \end{block}
+    \vspace*{-0.3cm}
+    \begin{block}{Компоненты расчета методом классических траекторий}
+        \begin{enumerate}
+        \item Интегрирование уравнений движения -- получение столкновительных траекторий
+        \item Преобразование Фурье функции дипольного момента вдоль каждой стокновительной траектории
+        \item Расчет классической спектральной функции усреднением по ансамблю траекторий рассеяния 
+        \item Десимметризация спектральной функции и расчет бинарного коэффициента поглощения
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Поверхности PES и IDS}
+    \begin{figure}[H]
+        \vspace*{-0.5cm}
+        \includegraphics[width=0.49\linewidth]{./pictures/co2-ar-potential-legend-crop.pdf}
+        \includegraphics[width=0.49\linewidth]{./pictures/n2n2_potential-trim.png}
+        \mycaption{Рис. 3}{Сечения ППЭ систем CO$_2-$Ar (слева) и N$_2-$N$_2$ (справа)}
+    \end{figure}
+   
+    \vspace*{-0.3cm}
+    \begin{itemize}
+        \item ППЭ: CCSD(T)/\textit{aug}-cc-pVQZ, BSSE-коррекция
+        \item ПДМ: Метод конечного поля, CCSD(T)/\textit{aug}-cc-pVTZ (CO$_2-$Ar), CCSD(T)/\textit{aug}-cc-pVQZ (N$_2-$N$_2$) \footfullcite{karman2015}, BSSE-коррекция
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Классический формализм?}
+    \vspace*{-0.5cm}
+    \begin{figure}[H]
+        \includegraphics[width=0.49\linewidth]{./pictures/triatom_coordinates.pdf}
+        \includegraphics[width=0.49\linewidth]{./pictures/n2n2_coordinate_frame.png}
+        \mycaption{Рис. 4}{Обобщенные координаты для систем атом$-$линейная молекула (слева) и линейная молекула$-$линейная молекула (справа)}
+    \end{figure}
+    \vspace*{-0.3cm}
+    \begin{block}{Кинетическая энергия в форме Лагранжа и Гамильтона}
+        \vspace*{-0.3cm}
+        \begin{minipage}{0.6\linewidth}
+            \begin{gather}
+                \begin{aligned}
+                    \Tl &= \frac{1}{2} \dot{\mf{q}}^+ \bba \dot{\mf{q}} + \bOmega^+ \bbA \dot{\mf{q}} + \frac{1}{2} \bOmega^+ \bbI \, \bOmega \\
+                    \Th &= \frac{1}{2} \mf{J}^+ \bbG_{11} \mf{J} + \mf{J}^+ \bbG_{12} \mf{p} + \frac{1}{2} \mf{p}^+ \bbG_{22} \mf{p}
+                \end{aligned} \notag
+            \end{gather}
+        \end{minipage}
+        \begin{minipage}{0.39\linewidth}
+            \begin{gather}
+                \begin{aligned}
+                    \bbG_{11} &= \lb \bbI - \bbA \bba^{-1} \bbA^{+} \rb^{-1} \\
+                    \bbG_{12} &= -\bbG_{11} \bbA \bba^{-1} \\
+                    \bbG_{22} &= \lb \bba - \bbA^{+} \bbI^{-1} \bbA \rb^{-1}
+                \end{aligned} \notag
+            \end{gather}
+        \end{minipage}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Метастабильные состояния}
+    \vspace*{-0.5cm}
+    \begin{figure}[H]
+        \includegraphics[width=0.8\linewidth]{./pictures/euler_trajectory-crop.pdf} \\
+        \mycaption{Рис. 5}{Зависимости R(t) для прямой и обратной траекторий образования метастабильного комплекса N$_2-$N$_2$}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Распределение начальных условий}
+    \vspace*{-0.1cm}
+	Метод Метрополиса-Хастингса для сэмплирования случайной величины с плотностью  
+    \vspace*{-0.1cm}
+    \begin{gather}
+        \pi(\mf{q}, \mf{p}) = \frac{1}{\Gamma_0} \exp \lb -\frac{H(\mf{q}, \mf{p})}{kT} \rb \Bigg{|}_{r = r_\text{fixed}} \notag
+    \end{gather}
+
+    \begin{figure}[H]
+        \includegraphics[width=0.49\linewidth]{./pictures/pTheta1-crop.pdf}
+        \includegraphics[width=0.49\linewidth]{./pictures/pPhi-crop.pdf}
+        \mycaption{Рис. 6}{Распределения импульсов, сопряженных угловым координатам системы N$_2-$N$_2$}
+    \end{figure}
+\end{frame}
+
+\end{document}
+
+
+
