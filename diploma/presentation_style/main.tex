@@ -34,6 +34,10 @@
 
 % рисунки
 \usepackage{graphicx, caption, subcaption}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
 
 %%% Bibliography
 \usepackage[style=authoryear,backend=biber]{biblatex}
@@ -58,9 +62,15 @@
 \title[]{{\large Моделирование спектров \\ столкновительно-индуцированного поглощения \\ в дальней ИК области \\ методом классических траекторий}}
 \date[Июнь 2019]{4 июня, 2019}
 \author[]{
-  Финенко Артем 
+  \vspace*{-1.0cm}
+  \hfill \underline{Докладчик:} \\
+  \hfill Финенко Артем Андреевич \\
+  \vspace{0.5cm}
+  \hfill \underline{Научные руководители:} \\
+  \hfill с.н.с. к.ф.-м.н. Петров С.В. \\
+  \hfill м.н.с. Локштанов С.Е. 
 }
-\institute{Химический факультет, МГУ им. М.В. Ломоносова}
+\institute{\vspace*{-1.9cm} \centering Химический факультет, МГУ им. М.В. Ломоносова \\ Кафедра физической химии \\ Лаборатория строения и квантовой механики молекул}
 
 %\usepackage{xcolors}
 \definecolor{darkolivegreen}{rgb}{0.33, 0.42, 0.18}
@@ -214,7 +224,7 @@
     \vspace*{-0.3cm}
     \begin{block}{Компоненты расчета методом классических траекторий}
         \begin{enumerate}
-        \item Интегрирование уравнений движения -- получение столкновительных траекторий
+        \item Интегрирование уравнений движения для получения столкновительных траекторий
         \item Преобразование Фурье функции дипольного момента вдоль каждой стокновительной траектории
         \item Расчет классической спектральной функции усреднением по ансамблю траекторий рассеяния 
         \item Десимметризация спектральной функции и расчет бинарного коэффициента поглощения
@@ -288,6 +298,78 @@
         \includegraphics[width=0.49\linewidth]{./pictures/pPhi-crop.pdf}
         \mycaption{Рис. 6}{Распределения импульсов, сопряженных угловым координатам системы N$_2-$N$_2$}
     \end{figure}
+\end{frame}
+
+\begin{frame}{Приближения и неучитываемые эффекты}
+    \begin{enumerate}
+        \item Приближение Борна-Оппенгеймера 
+        \item Описание взаимодействия молекулярных систем с излучением в первом порядке ТВ
+        \item Приближение \enquote{жестких мономеров}: неучет низших колебательных состояний
+        \item Вольюнтаризм процедуры десимметризации
+        \item Неучет связанных состояний
+        \item Рассмотрение взаимодействия мономеров в рамках классической механики $\implies$ квантовые эффекты
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Спектр СИП N$_2-$N$_2$ в рототрансляционной полосе}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{./pictures/228K_russian_legend-crop.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Спектр СИП N$_2-$N$_2$ в рототрансляционной полосе}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{./pictures/129K_russian_legend-crop.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Спектр СИП CO$_2-$Ar в рототрансляционной полосе}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{./pictures/co2ar_298K-crop.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Спектр СИП CO$_2-$Ar в рототрансляционной полосе}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{./pictures/351K_russian_legend-crop.pdf}
+	\end{center}
+\end{frame}
+
+\begin{frame}{\hspace*{-0.3cm}Спектральные моменты: контроль сходимости расчета}
+    \vspace*{-0.3cm}
+    \begin{block}{{\normalsize Интегралы по спектральной функции и по фазовому пространству}}
+        \vspace*{-0.6cm}
+        \begin{gather}
+            M_n = \int\limits_{-\infty}^{+\infty} \nu^n VJ(\nu) d\nu \quad \Longleftrightarrow \quad 
+            \begin{aligned}
+                M_0 = \frac{\int \boldsymbol{\mu}^2 \exp \lsq -H \lb \mf{q}, \mf{p} \rb / k_B T \rsq d \mf{q} d\mf{p} }{\int \exp \lsq -H \lb \mf{q}, \mf{p}\rb / k_B T \rsq d \mf{q} d\mf{p} } \\
+                M_2 = \frac{\int \boldsymbol{\dot{\mu}}^2 \exp \lsq -H \lb \mf{q}, \mf{p}\rb / k_B T \rsq d \mf{q} d\mf{p}}{\int \exp \lsq -H \lb \mf{q}, \mf{p} \rb / k_B T \rsq d \mf{q} d\mf{p} } 
+            \end{aligned} \notag
+        \end{gather}
+    \end{block}
+
+    \vspace*{-0.7cm}
+    \begin{table}[H]
+            \begin{tabular}{c >{\centering}p{5cm} >{\centering}p{2cm} >{\centering}p{2cm}}
+            \toprule
+            $T$, K & $M_0^\text{ФП}(H > 0) / M_2^\text{ФП} (H > 0)$  & $M_0^\text{traj} / M_2^\text{traj}$ & $\Delta$ \tabularnewline
+            \midrule
+            \multirow{2}{*}{$129.0$} & $4.444\cdot 10^{-5}$ & $4.414 \cdot 10^{-5}$ & $+0.7$ \%  \tabularnewline
+                                     & $1.227\cdot 10^{-1}$ & $1.232 \cdot 10^{-1}$ & $-0.4$ \%  \tabularnewline
+                                     \midrule
+            \multirow{2}{*}{$228.3$} & $3.756\cdot 10^{-5}$ & $3.768 \cdot 10^{-5}$ & $+0.3$ \%  \tabularnewline
+                                     & $1.848\cdot 10^{-1}$ & $1.859 \cdot 10^{-1}$ & $+0.6$ \%  \tabularnewline
+                                     \midrule
+        \end{tabular}
+        \mycaption{Таблица 1}{Сравнение спектральных моментов, рассчитанных по фазовому пространству, с моментами по траекторным спектрам системы N$_2-$N$_2$}
+        \label{table:n2n2-moments}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}{}
+    \centering
+    {\Huge Спасибо за внимание!}
 \end{frame}
 
 \end{document}
