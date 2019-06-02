@@ -65,7 +65,7 @@
 \author[]{
   \vspace*{-1.0cm}
   \hfill \underline{Докладчик:} \\
-  \hfill Финенко Артем Андреевич \\
+  \hfill Финенко А. А. \\
   \vspace{0.5cm}
   \hfill \underline{Научные руководители:} \\
   \hfill с.н.с. к.ф.-м.н. Петров С.В. \\
@@ -195,26 +195,13 @@
 
 \end{frame}
 
-\iffalse
-\begin{frame}{Замена переменных с внедрением времени}
-    \vspace*{-1.2cm}
-    \begin{gather}
-        \hspace*{-0.3cm}
-        J(\omega) = \frac{1}{2 \pi} \hat{F} \Big[ \langle \bmu(0) \bmu(t) \rangle \Big] \rightarrow \frac{1}{2 \pi \Gamma_0} \int\limits_0^\infty \frac{p_r}{\mu} dp_r \int \exp \lb -\frac{H}{k_B T} \rb \Bigg\vert \hat{F} \Big[ \bmu(t) \Big] \Bigg\vert^2 d\boldsymbol{\Gamma}^\prime \notag
-    \end{gather}
-    \vspace*{-0.8cm}
-    \begin{figure}[H]
-        \includegraphics[width=0.75\linewidth]{./pictures/time-change-crop.pdf}
-    \end{figure}
-\end{frame}
-\fi
 
 \begin{frame}{Схема расчетной методики}
     \vspace*{-0.5cm}
     \begin{block}{Предварительная работа}
         \begin{enumerate}
-            \item Аналитические аппроксимации \textit{ab initio} ППЭ и ПДМ
             \item Введение обобщенных координат и вывод точного классического лагранжиана
+            \item Аналитические аппроксимации \textit{ab initio} ППЭ и ПДМ
             \item Распределение начальных условий
         \end{enumerate}
     \end{block}
@@ -227,21 +214,6 @@
         \item Десимметризация спектральной функции и расчет бинарного коэффициента поглощения
         \end{enumerate}
     \end{block}
-\end{frame}
-
-\begin{frame}{Поверхности ППЭ и ПДМ}
-    \begin{figure}[H]
-        \vspace*{-0.5cm}
-        \includegraphics[width=0.49\linewidth]{./pictures/co2-ar-potential-legend-crop.pdf}
-        \includegraphics[width=0.49\linewidth]{./pictures/n2n2_potential-trim.png}
-        \mycaption{Рис. 3}{Сечения ППЭ систем CO$_2-$Ar (слева) и N$_2-$N$_2$ (справа)}
-    \end{figure}
-   
-    \vspace*{-0.3cm}
-    \begin{itemize}
-        \item ППЭ: CCSD(T)/\textit{aug}-cc-pVQZ, BSSE-коррекция
-        \item ПДМ: Метод конечного поля, CCSD(T)/\textit{aug}-cc-pVTZ (CO$_2-$Ar), CCSD(T)/\textit{aug}-cc-pVQZ (N$_2-$N$_2$) \footfullcite{karman2015}, BSSE-коррекция
-    \end{itemize}
 \end{frame}
 
 \begin{frame}{Классический формализм}
@@ -272,6 +244,21 @@
             \end{gather}
         \end{minipage}
     \end{block}
+\end{frame}
+
+\begin{frame}{Поверхности ППЭ и ПДМ}
+    \begin{figure}[H]
+        \vspace*{-0.5cm}
+        \includegraphics[width=0.49\linewidth]{./pictures/co2-ar-potential-legend-crop.pdf}
+        \includegraphics[width=0.49\linewidth]{./pictures/n2n2_potential-trim.png}
+        \mycaption{Рис. 3}{Сечения ППЭ систем CO$_2-$Ar (слева) и N$_2-$N$_2$ (справа)}
+    \end{figure}
+   
+    \vspace*{-0.3cm}
+    \begin{itemize}
+        \item ППЭ: CCSD(T)/\textit{aug}-cc-pVQZ, BSSE-коррекция
+        \item ПДМ: Метод конечного поля, CCSD(T)/\textit{aug}-cc-pVTZ (CO$_2-$Ar), CCSD(T)/\textit{aug}-cc-pVQZ (N$_2-$N$_2$) \footfullcite{karman2015}, BSSE-коррекция
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Метастабильные состояния}
@@ -376,6 +363,18 @@
 \begin{frame}{}
     \centering
     {\Huge Спасибо за внимание!}
+\end{frame}
+
+\begin{frame}{Замена переменных с внедрением времени}
+    \vspace*{-1.2cm}
+    \begin{gather}
+        \hspace*{-0.3cm}
+        J(\omega) = \frac{1}{2 \pi} \hat{F} \Big[ \langle \bmu(0) \bmu(t) \rangle \Big] \rightarrow \frac{1}{2 \pi \Gamma_0} \int\limits_0^\infty \frac{p_r}{\mu} dp_r \int \exp \lb -\frac{H}{k_B T} \rb \Bigg\vert \hat{F} \Big[ \bmu(t) \Big] \Bigg\vert^2 d\boldsymbol{\Gamma}^\prime \notag
+    \end{gather}
+    \vspace*{-0.8cm}
+    \begin{figure}[H]
+        \includegraphics[width=0.75\linewidth]{./pictures/time-change-crop.pdf}
+    \end{figure}
 \end{frame}
 
 \end{document}
