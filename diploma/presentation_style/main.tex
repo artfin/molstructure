@@ -58,6 +58,7 @@
 % Fill the vertical space in a slide (to put text at the bottom)
 \newcommand{\framefill}{\vskip0pt plus 1filll}
 
+\renewcommand{\footnotesize}{\scriptsize}
 
 \title[]{{\large Моделирование спектров \\ столкновительно-индуцированного поглощения \\ в дальней ИК области \\ методом классических траекторий}}
 \date[Июнь 2019]{4 июня, 2019}
@@ -120,7 +121,7 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{{\large Столкновительно-индуцированное поглощение}}
+\begin{frame}{{\large Столкновительно-индуцированное поглощение (СИП)} \footfullcite{crawford1949}}
     \begin{block}{Вращательный переход запрещен в мономере}
         \vspace*{-0.5cm}
         \begin{gather}
@@ -142,26 +143,20 @@
     \end{block}
 \end{frame}
 
-\begin{frame}{Приложения CIA}
+\begin{frame}{Приложения спектров СИП}
     \vspace*{-0.1cm}
-\begin{enumerate}
-    \item N$_2-$N$_2$: атмосферы Земли, древнего Марса \footfullcite{wordsworth2017} и Титана \\
-    \item CO$_2-$Ar: атмосферы Марса и Венеры \footfullcite{fox1988} \\
-\end{enumerate}
+    \begin{enumerate}
+        \item N$_2-$N$_2$: атмосферы Земли и Титана \footfullcite{borysow1986} \\
+        \item CO$_2-$Ar: атмосферы Марса и Венеры \footfullcite{fox1988} \\
+    \end{enumerate}
 
-\begin{minipage}{0.49\linewidth}
-\begin{figure}[H]
-    \vspace{0.4cm}
-    \includegraphics[width=5.0cm, height=3.8cm]{./pictures/early_mars.jpeg}
-    \mycaption{Рис. 1}{?}
-\end{figure}
-\end{minipage}
-\begin{minipage}{0.5\linewidth}
-\begin{figure}[H]
-    \includegraphics[width=5.0cm, height=3.8cm]{./pictures/titan.jpg}
-    \mycaption{Рис. 2}{NASA/Cassini}
-\end{figure}
-\end{minipage}
+    \begin{figure}[H]
+        \includegraphics[width=0.49\linewidth, height = 3.9cm]{./pictures/early_mars.jpeg}
+        \includegraphics[width=0.49\linewidth, height = 3.9cm]{./pictures/titan.jpg}
+        %\includegraphics[width=5.0cm, height=3.8cm]{./pictures/early_mars.jpeg}
+        %\includegraphics[width=5.0cm, height=3.8cm]{./pictures/titan.jpg}
+        \mycaption{Рис. 1}{NASA/Cassini (справа)}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{{\large Взаимодействие молекул с электромагнитным полем}}
@@ -178,7 +173,7 @@
     \vspace*{-0.5cm}
 	\begin{gather}
 		\frac{\alpha(\nu)}{\rho_1 \rho_2} = \frac{(2 \pi)^3 N_L^2}{3 \hbar c} \nu \lsq 1 - \exp \lb - \frac{h c \nu}{k T} \rb \rsq V J(\nu) \notag \\ 
-		J(\omega) = \frac{1}{4 \pi \varepsilon_0} \sum_{\ket{i}, \ket{f}} \rho_i \Big{|} \bra{f} \hat{\boldsymbol{\mu}} \ket{i} \Big{|}^2 \delta \lb \omega_{fi} - \omega \rb \notag 
+		J(\omega) = \sum_{\ket{i}, \ket{f}} \rho_i \Big{|} \bra{f} \hat{\boldsymbol{\mu}} \ket{i} \Big{|}^2 \delta \lb \omega_{fi} - \omega \rb \notag 
 	\end{gather}
 \end{block}
 \end{frame}
@@ -187,8 +182,8 @@
     \vspace*{-0.8cm}
 	\begin{gather}
 		\begin{aligned}
-            J_\text{квант.}(\omega) &= \frac{1}{2\pi} \frac{1}{4 \pi \varepsilon_0} \int\limits_{-\infty}^{+\infty} dt \, e^{-i \omega t} \sum_i \rho_i \bra{i} \hat{\boldsymbol{\mu}}(0) \cdot \hat{\boldsymbol{\mu}}(t) \ket{i} \\ 
-            J_\text{класс.}(\omega) &= \frac{1}{2\pi} \frac{1}{4 \pi \varepsilon_0} \int\limits_{-\infty}^{+\infty} dt \, e^{-i \omega t} \mean{\bmu(0) \cdot \bmu(t)} \\ 
+            J_\text{квант.}(\omega) &= \frac{1}{2\pi} \int\limits_{-\infty}^{+\infty} dt \, e^{-i \omega t} \sum_i \rho_i \bra{i} \hat{\boldsymbol{\mu}}(0) \cdot \hat{\boldsymbol{\mu}}(t) \ket{i} \\ 
+            J_\text{класс.}(\omega) &= \frac{1}{2\pi} \int\limits_{-\infty}^{+\infty} dt \, e^{-i \omega t} \mean{\bmu(0) \cdot \bmu(t)} \\ 
 		\end{aligned} \notag
 	\end{gather}
 
@@ -200,6 +195,7 @@
 
 \end{frame}
 
+\iffalse
 \begin{frame}{Замена переменных с внедрением времени}
     \vspace*{-1.2cm}
     \begin{gather}
@@ -211,6 +207,7 @@
         \includegraphics[width=0.75\linewidth]{./pictures/time-change-crop.pdf}
     \end{figure}
 \end{frame}
+\fi
 
 \begin{frame}{Схема расчетной методики}
     \vspace*{-0.5cm}
@@ -232,7 +229,7 @@
     \end{block}
 \end{frame}
 
-\begin{frame}{Поверхности PES и IDS}
+\begin{frame}{Поверхности ППЭ и ПДМ}
     \begin{figure}[H]
         \vspace*{-0.5cm}
         \includegraphics[width=0.49\linewidth]{./pictures/co2-ar-potential-legend-crop.pdf}
@@ -247,7 +244,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Классический формализм?}
+\begin{frame}{Классический формализм}
     \vspace*{-0.5cm}
     \begin{figure}[H]
         \includegraphics[width=0.49\linewidth]{./pictures/triatom_coordinates.pdf}
@@ -290,9 +287,10 @@
 	Метод Метрополиса-Хастингса для сэмплирования случайной величины с плотностью  
     \vspace*{-0.1cm}
     \begin{gather}
-        \pi(\mf{q}, \mf{p}) = \frac{1}{\Gamma_0} \exp \lb -\frac{H(\mf{q}, \mf{p})}{kT} \rb \Bigg{|}_{r = r_\text{fixed}} \notag
+        \pi(\mf{q}, \mf{p}) = \frac{1}{\Gamma_0} \exp \lb -\frac{H(\mf{q}, \mf{p})}{k_B T} \rb \Bigg{|}_{r = r_\text{fixed}} \notag
     \end{gather}
 
+    \vspace*{-0.5cm}
     \begin{figure}[H]
         \includegraphics[width=0.49\linewidth]{./pictures/pTheta1-crop.pdf}
         \includegraphics[width=0.49\linewidth]{./pictures/pPhi-crop.pdf}
@@ -302,34 +300,34 @@
 
 \begin{frame}{Приближения и неучитываемые эффекты}
     \begin{enumerate}
-        \item Приближение Борна-Оппенгеймера 
+        \item \color{red}{Приближение Борна-Оппенгеймера} 
         \item Описание взаимодействия молекулярных систем с излучением в первом порядке ТВ
-        \item Приближение \enquote{жестких мономеров}: неучет низших колебательных состояний
-        \item Вольюнтаризм процедуры десимметризации
-        \item Неучет связанных состояний
-        \item Рассмотрение взаимодействия мономеров в рамках классической механики $\implies$ квантовые эффекты
+        \item Рассмотрение взаимодействия мономеров в рамках классической механики $\implies$ не учтены квантовые эффекты
+        \item \color{blue}{Приближение \enquote{жестких мономеров}: неучет низших колебательных состояний}
+        \item Волюнтаризм процедуры десимметризации
+        \item \color{green}{Неучет связанных состояний}
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{Спектр СИП N$_2-$N$_2$ в рототрансляционной полосе}
+\begin{frame}{СИП N$_2-$N$_2$ в рототрансляционной полосе}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{./pictures/228K_russian_legend-crop.pdf}
 	\end{center}
 \end{frame}
 
-\begin{frame}{Спектр СИП N$_2-$N$_2$ в рототрансляционной полосе}
+\begin{frame}{СИП N$_2-$N$_2$ в рототрансляционной полосе}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{./pictures/129K_russian_legend-crop.pdf}
 	\end{center}
 \end{frame}
 
-\begin{frame}{Спектр СИП CO$_2-$Ar в рототрансляционной полосе}
+\begin{frame}{СИП CO$_2-$Ar в рототрансляционной полосе}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{./pictures/co2ar_298K-crop.pdf}
 	\end{center}
 \end{frame}
 
-\begin{frame}{Спектр СИП CO$_2-$Ar в рототрансляционной полосе}
+\begin{frame}{СИП CO$_2-$Ar в рототрансляционной полосе}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{./pictures/351K_russian_legend-crop.pdf}
 	\end{center}
@@ -352,7 +350,7 @@
     \begin{table}[H]
             \begin{tabular}{c >{\centering}p{5cm} >{\centering}p{2cm} >{\centering}p{2cm}}
             \toprule
-            $T$, K & $M_0^\text{ФП}(H > 0) / M_2^\text{ФП} (H > 0)$  & $M_0^\text{traj} / M_2^\text{traj}$ & $\Delta$ \tabularnewline
+            $T$, K & $M_0^\text{ФП}(H > 0) / M_2^\text{ФП} (H > 0)$  & $M_0^\text{траект.} / M_2^\text{траект.}$ & $\Delta$ \tabularnewline
             \midrule
             \multirow{2}{*}{$129.0$} & $4.444\cdot 10^{-5}$ & $4.414 \cdot 10^{-5}$ & $+0.7$ \%  \tabularnewline
                                      & $1.227\cdot 10^{-1}$ & $1.232 \cdot 10^{-1}$ & $-0.4$ \%  \tabularnewline
@@ -366,6 +364,14 @@
     \end{table}
 \end{frame}
 
+\begin{frame}{Выводы}
+    \vspace*{-0.7cm}
+    \begin{enumerate}
+        \item {\scriptsize Развита методика расчета столкновительно-индуцированных спектров из первых принципов методом классических траекторий с применением обобщенных внутренних координат и подвижной системы осей. Ключевым элементом, обеспечивающим масштабируемость методики при рассмотрении многоатомных систем, является расчет производных гамильтониана \enquote{на лету} через матрицы лагранжиана и их производные}
+        \item {\scriptsize Выполнен расчет столкновительно-индуцированных спектров систем N$_2-$N$_2$ и CO$_2-$Ar. Сравнение с экспериментальными данными, доступными при отдельных температурах, подтверждает работоспособность развиваемой расчетной методики и ее применимость для моделирования континуальных столкновительно-индуцированных спектров.}
+        \item {\scriptsize Развиваемая методика позволяет рассчитывать спектры СИП для различных молекулярных пар в широком интервале температур. Рассчитанные спектры применимы в  ряде атмосферных и астрофизических приложений и могут быть включены в специализированный раздел спектроскопических баз данных, например, HITRAN-CIA. Определение границы применимости метода для получения надежных результатов требует дальнейшего анализа и накопления расчетных данных для б\'{о}льшего числа молекулярных пар.} 
+    \end{enumerate}
+\end{frame}
 
 \begin{frame}{}
     \centering

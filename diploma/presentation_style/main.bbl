@@ -19,50 +19,12 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{fox1988}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=709cac5598841a4f4691ccf9abe251f4}{%
-           family={Fox},
-           familyi={F\bibinitperiod},
-           given={Kenneth},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=3dffed4af704177e7353639113187a49}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Sang\bibnamedelima J},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{d9e498e6a622d334651b198a43424205}
-      \strng{fullhash}{d9e498e6a622d334651b198a43424205}
-      \strng{bibnamehash}{d9e498e6a622d334651b198a43424205}
-      \strng{authorbibnamehash}{d9e498e6a622d334651b198a43424205}
-      \strng{authornamehash}{d9e498e6a622d334651b198a43424205}
-      \strng{authorfullhash}{d9e498e6a622d334651b198a43424205}
-      \field{sortinit}{F}
-      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Quantitative Spectroscopy and Radiative Transfer}
-      \field{number}{3}
-      \field{title}{Spectra of van der Waals complexes (dimers) with applications to planetary atmospheres}
-      \field{volume}{40}
-      \field{year}{1988}
-      \field{pages}{177\bibrangedash 184}
-      \range{pages}{8}
-    \endentry
     \entry{karman2015}{article}{}
       \name{author}{5}{}{%
-        {{uniquename=0,uniquepart=base,hash=f6b24d3ec207ae20d4db1920ab8a2673}{%
-           family={Karman},
-           familyi={K\bibinitperiod},
-           given={Tijs},
+        {{uniquename=0,uniquepart=base,hash=42447cd768ce2580302d5f0f032b7298}{%
+           family={\vspace{0.4cm}Karman},
+           familyi={\\bibinitperiod},
+           given={T.},
            giveni={T\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=6d596c00c280c3f505fa23772aa1af3f}{%
@@ -93,102 +55,130 @@
            prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
            prefixun=0}}%
       }
-      \list{publisher}{1}{%
-        {AIP Publishing}%
-      }
-      \strng{namehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{fullhash}{19bcc63a4a396da106028fccdba72b5e}
-      \strng{bibnamehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{authorbibnamehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{authornamehash}{6afb6e7c788958db01310655fc30ec49}
-      \strng{authorfullhash}{19bcc63a4a396da106028fccdba72b5e}
-      \field{sortinit}{K}
-      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \strng{namehash}{bc1260c726aff972ead0aaacd8d22325}
+      \strng{fullhash}{100b97b0db8fb0f8c25e4c75e0a35785}
+      \strng{bibnamehash}{bc1260c726aff972ead0aaacd8d22325}
+      \strng{authorbibnamehash}{bc1260c726aff972ead0aaacd8d22325}
+      \strng{authornamehash}{bc1260c726aff972ead0aaacd8d22325}
+      \strng{authorfullhash}{100b97b0db8fb0f8c25e4c75e0a35785}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of chemical physics}
+      \field{journaltitle}{J. Chem. Phys.}
       \field{number}{8}
-      \field{title}{Quantum mechanical calculation of the collision-induced absorption spectra of N$_2-$N$_2$ with anisotropic interactions}
       \field{volume}{142}
       \field{year}{2015}
       \field{pages}{084306}
       \range{pages}{1}
     \endentry
-    \entry{wordsworth2017}{article}{}
-      \name{author}{8}{}{%
-        {{uniquename=0,uniquepart=base,hash=20e7dc8d523f44dd98aaf7e783af29eb}{%
-           family={Wordsworth},
+    \entry{crawford1949}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=2a235594ec8f1866ed5fe9b10d0d27e0}{%
+           family={\vspace{0.5cm}Crawford},
+           familyi={\\bibinitperiod},
+           given={M.F.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6dccaf6c1f38c6d5f36e37c3cf276af9}{%
+           family={Welsh},
            familyi={W\bibinitperiod},
-           given={Robin},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=6f5122953526bb5454200679b1692f9e}{%
-           family={Kalugina},
-           familyi={K\bibinitperiod},
-           given={Yulia},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=77c46f6bd16d2be74e1c9b894de82793}{%
-           family={Lokshtanov},
-           familyi={L\bibinitperiod},
-           given={Sergei},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=07c3d49f6a30fa2982b201ff2fcaa27a}{%
-           family={Vigasin},
-           familyi={V\bibinitperiod},
-           given={Andrei},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=fe11624d35cafe309352371f34e2b9ff}{%
-           family={Ehlmann},
-           familyi={E\bibinitperiod},
-           given={Bethany},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=0fb2d97b20b9a9667954f4b35b466865}{%
-           family={Head},
-           familyi={H\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=9c8e7526dae0c4a16f2a9d6e4156fa08}{%
-           family={Sanders},
-           familyi={S\bibinitperiod},
-           given={Cecilia},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=e55c430a968d9a584c2fc24898851a17}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Huize},
+           given={H.L.},
            giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=69fc75629e28a9fdcddf4c88ed72328a}{%
+           family={Locke},
+           familyi={L\bibinitperiod},
+           given={J.L.},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Wiley Online Library}%
+        {APS}%
       }
-      \strng{namehash}{9d50790f06fc185c452f6266b7dcf444}
-      \strng{fullhash}{e7954bd60ff6595f49afe7034bf8591a}
-      \strng{bibnamehash}{9d50790f06fc185c452f6266b7dcf444}
-      \strng{authorbibnamehash}{9d50790f06fc185c452f6266b7dcf444}
-      \strng{authornamehash}{9d50790f06fc185c452f6266b7dcf444}
-      \strng{authorfullhash}{e7954bd60ff6595f49afe7034bf8591a}
-      \field{sortinit}{W}
-      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \strng{namehash}{1b8d8c33251f09fd61fd74d522d916f8}
+      \strng{fullhash}{1b8d8c33251f09fd61fd74d522d916f8}
+      \strng{bibnamehash}{1b8d8c33251f09fd61fd74d522d916f8}
+      \strng{authorbibnamehash}{1b8d8c33251f09fd61fd74d522d916f8}
+      \strng{authornamehash}{1b8d8c33251f09fd61fd74d522d916f8}
+      \strng{authorfullhash}{1b8d8c33251f09fd61fd74d522d916f8}
+      \field{sortinit}{0}
+      \field{sortinithash}{168ad0c7c5ed09f1d28c6675717b5b03}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Geophysical Research Letters}
-      \field{number}{2}
-      \field{title}{Transient reducing greenhouse warming on early Mars}
-      \field{volume}{44}
-      \field{year}{2017}
-      \field{pages}{665\bibrangedash 671}
-      \range{pages}{7}
+      \field{journaltitle}{Phys. Rev.}
+      \field{number}{10}
+      \field{volume}{75}
+      \field{year}{1949}
+      \field{pages}{1607}
+      \range{pages}{1}
+    \endentry
+    \entry{borysow1986}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=1cdd3c9980084b8ff01894c61878a0d5}{%
+           family={Borysow},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6f12c983b1b9b30ef022dea6a83096e2}{%
+           family={Frommhold},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d0a2b3877a9241ba19c66de6c9f9e69e}
+      \strng{fullhash}{d0a2b3877a9241ba19c66de6c9f9e69e}
+      \strng{bibnamehash}{d0a2b3877a9241ba19c66de6c9f9e69e}
+      \strng{authorbibnamehash}{d0a2b3877a9241ba19c66de6c9f9e69e}
+      \strng{authornamehash}{d0a2b3877a9241ba19c66de6c9f9e69e}
+      \strng{authorfullhash}{d0a2b3877a9241ba19c66de6c9f9e69e}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{Astrophys J.}
+      \field{volume}{311}
+      \field{year}{1986}
+      \field{pages}{1043\bibrangedash 1057}
+      \range{pages}{15}
+    \endentry
+    \entry{fox1988}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=cff3e94d19aa51208ef5456c662df1da}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5987da0c22b8ca86064d26de97b6b509}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{19c914f57f6394c2de8e776492361c1d}
+      \strng{fullhash}{19c914f57f6394c2de8e776492361c1d}
+      \strng{bibnamehash}{19c914f57f6394c2de8e776492361c1d}
+      \strng{authorbibnamehash}{19c914f57f6394c2de8e776492361c1d}
+      \strng{authornamehash}{19c914f57f6394c2de8e776492361c1d}
+      \strng{authorfullhash}{19c914f57f6394c2de8e776492361c1d}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{J. Quant. Spectrosc. Radiat. Transfer}
+      \field{number}{3}
+      \field{volume}{40}
+      \field{year}{1988}
+      \field{pages}{\vspace{0.3cm} pp. 177\bibrangedash 184}
+      \range{pages}{-1}
     \endentry
   \enddatalist
 \endrefsection
