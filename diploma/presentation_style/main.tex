@@ -64,7 +64,7 @@
 \date[Июнь 2019]{4 июня, 2019}
 \author[]{
   \vspace*{-1.0cm}
-  \hfill \underline{Докладчик:} \\
+  \hfill \underline{Работу выполнил:} \\
   \hfill Финенко А. А. \\
   \vspace{0.5cm}
   \hfill \underline{Научные руководители:} \\
@@ -121,19 +121,37 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{{\large Столкновительно-индуцированное поглощение (СИП)} \footfullcite{crawford1949}}
-    \begin{block}{Вращательный переход запрещен в мономере}
+\begin{frame}{{\large Столкновительно-индуцированное поглощение (СИП)} \footfullcite{crawford1949} }
+    %\begin{block}{Вращательный переход запрещен в мономере}
+    %    \vspace*{-0.5cm}
+    %    \begin{gather}
+    %        \hcancel{$N_2(j_A) + h \nu \rightarrow N_2(j_B)$} \notag
+    %    \end{gather}
+    %\end{block}
+    %\begin{block}{Переход разрешен в столкновительном комплексе}
+    %    \vspace*{-0.5cm}
+    %    \begin{gather}
+    %        \left\{ N_2 + N_2\right\}(J) + h \nu \rightarrow \left\{ N_2 + N_2 \right\}(J^\prime) \notag
+    %    \end{gather}
+    %\end{block}
+    \begin{minipage}{0.49\linewidth}
+        \begin{figure}
+            \includegraphics[width=\linewidth]{./pictures/N2N2-fundamental-301K-crop.pdf}
+        \end{figure}
+    \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \begin{center}Вращательный переход запрещен в мономере\end{center}
         \vspace*{-0.5cm}
         \begin{gather}
             \hcancel{$N_2(j_A) + h \nu \rightarrow N_2(j_B)$} \notag
         \end{gather}
-    \end{block}
-    \begin{block}{Переход разрешен в столкновительном комплексе}
+        \begin{center}Переход разрешен в столкновительном комплексе\end{center}
         \vspace*{-0.5cm}
         \begin{gather}
             \left\{ N_2 + N_2\right\}(J) + h \nu \rightarrow \left\{ N_2 + N_2 \right\}(J^\prime) \notag
         \end{gather}
-    \end{block}
+    \end{minipage}
+
     \begin{block}{Состояния молекулярных пар}
         \begin{enumerate}
             \item \color{red}{Связанные состояния}
@@ -151,7 +169,7 @@
     \end{enumerate}
 
     \begin{figure}[H]
-        \includegraphics[width=0.49\linewidth, height = 3.9cm]{./pictures/early_mars.jpeg}
+        \includegraphics[width=0.49\linewidth, height = 3.9cm]{./pictures/early_mars.pdf}
         \includegraphics[width=0.49\linewidth, height = 3.9cm]{./pictures/titan.jpg}
         %\includegraphics[width=5.0cm, height=3.8cm]{./pictures/early_mars.jpeg}
         %\includegraphics[width=5.0cm, height=3.8cm]{./pictures/titan.jpg}
@@ -285,16 +303,6 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Приближения и неучитываемые эффекты}
-    \begin{enumerate}
-        \item \color{red}{Приближение Борна-Оппенгеймера} 
-        \item Описание взаимодействия молекулярных систем с излучением в первом порядке ТВ
-        \item Рассмотрение взаимодействия мономеров в рамках классической механики $\implies$ не учтены квантовые эффекты
-        \item \color{blue}{Приближение \enquote{жестких мономеров}: неучет низших колебательных состояний}
-        \item Волюнтаризм процедуры десимметризации
-        \item \color{green}{Неучет связанных состояний}
-    \end{enumerate}
-\end{frame}
 
 \begin{frame}{СИП N$_2-$N$_2$ в рототрансляционной полосе}
 	\begin{center}
@@ -375,6 +383,16 @@
     \begin{figure}[H]
         \includegraphics[width=0.75\linewidth]{./pictures/time-change-crop.pdf}
     \end{figure}
+\end{frame}
+
+\begin{frame}{Приближения и неучитываемые эффекты}
+    \begin{enumerate}
+        \item \color{red}{Приближение Борна-Оппенгеймера} 
+        \item Описание взаимодействия молекулярных систем с излучением в дипольном приближении 
+        \item \color{blue}{Приближение \enquote{жестких мономеров}: неучет низших колебательных состояний}
+        \item Волюнтаризм процедуры десимметризации
+        \item \color{green}{Неучет связанных состояний}
+    \end{enumerate}
 \end{frame}
 
 \end{document}
