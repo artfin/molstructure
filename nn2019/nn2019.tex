@@ -104,12 +104,18 @@
 \SIZEOFTEXT
 \SIZEOFFORMULAE{
     \vpravo There is a growing demand to improve existing methods of collision-induced absorption (CIA) spectra simulation [1]. From the one hand, the impetus to refine presently available theories is due to anticipation of future observations concerning a multitude of exoplanetary atmospheres. From the other hand, there is a remarkable progress in computer facilities that opens access to \ul{unprecedented timescale and accuracy of computations}. \par
-    \vpravo The use of computationally heavy pure quantum [2] and molecular dynamics [3, 4] methods of CIA simulation is still infrequent and can hardly satisfy near future practical requirements in terms of variety of molecular constituents and range of temperature. \ul{In contrast, the method based on consideration of classical scattering trajectories seems to have good perspective for extensive CIA simulation.} Recent analysis [5] of the \underline{classical scattering dynamics} in laboratory frame of reference permitted satisfactory simulation of the CO$_2-$Rg (Rg = Ar, Xe) rototranslational CIA band profiles. \par 
-    \vpravo An alternative trajectory based approach is being developed in our research group. Salient features and some preliminary results of it were recently reported elsewhere [6]. Excellent agreement was demonstrated among our calculated trajectory based rototranslational profiles in N$_2-$N$_2$ and those computed quantum mechanically in [2] or obtained experimentally (see [1] and references therein). We use body-fixed frame in which classical dynamics of a collision as well as quantum chemical electronic energy (PES) and induced dipole (IDS) surfaces are rigorously examined. Present paper shows results concerning CO$_2-$Ar and CO$_2-$CO$_2$ systems. \underline{We discuss both strengths and weaknesses of our trajectory based approach.}
+    \vpravo The use of computationally heavy pure quantum [2] and molecular dynamics [3, 4] methods of CIA simulation is still infrequent and can hardly satisfy near future practical requirements in terms of variety of molecular constituents and range of temperature. In contrast, the method based on consideration of classical trajectories seems to have good perspective for extensive CIA simulation. Recent analysis [5] of the classical dynamics in laboratory frame of reference permitted satisfactory simulation of the CO$_2-$Rg (Rg = Ar, Xe) rototranslational CIA band profiles. \par 
+    \vpravo An alternative trajectory based approach is being developed in our research group. Salient features and some preliminary results of it were recently reported elsewhere [6]. Excellent agreement was demonstrated among our calculated trajectory based rototranslational profiles in N$_2-$N$_2$ and those computed quantum mechanically in [2] or obtained experimentally (see [1] and references therein). We use body-fixed frame in which classical dynamics of a collision as well as quantum chemical electronic energy (PES) and induced dipole (IDS) surfaces are rigorously examined. Present paper shows results concerning CO$_2-$Ar and CO$_2-$CO$_2$ systems. 
 }}
 
 \block[titleoffsety=1cm, bodyoffsety=2cm]{Main features of calculation}{
     \SIZEOFTEXT
+    \vspace{21cm}
+    \hspace{5cm}
+    \begin{tikzpicture}
+        \includegraphics[width=0.7\linewidth]{./pictures/other/scheme-crop.pdf}
+    \end{tikzpicture}
+    
     \vpravo Absorption coefficient $\alpha$ normalized to the product of densities is known to be written as
     \begin{gather}
         \frac{\alpha(\nu, T)}{\rho_1 \rho_2} = \frac{ (2\pi)^2 N_L^2}{3 \hbar} \nu \lsq 1 - \exp \lb -\frac{h c \nu}{\kb T} \rb \rsq V J(\nu, T),
@@ -125,13 +131,20 @@
         J(\nu, T) = \frac{1}{4 \pi \varepsilon_0} \frac{1}{2 \pi \Gamma_0} \idotsint \frac{p_R}{\mu} dp_R \exp \lb -\frac{H}{\kb T} \rb d \mf{q}^\prime d\mf{p}^\prime \, \Bigg\vert \intty \mf{d}(t; \mf{q}^\prime, p_R, \mf{p}^\prime) e^{-2 \pi i c \nu t} dt \Bigg\vert^2.
     \end{gather}
 
-    Here $\mu$ is the reduced mass of a molecule pair, $\displaystyle \Gamma_0 = \idotsint \exp \lb -\frac{H}{\kb T} \rb d\mf{q} \, d\mf{p}$ is the normalization factor, differential $d\mf{q}^\prime$ only angular degrees of freedom of the each monomer and the complex as whole.  
+    Here $\mu$ is the reduced mass of a molecule pair, $\displaystyle \Gamma_0 = \idotsint \exp \lb -\frac{H}{\kb T} \rb d\mf{q} \, d\mf{p}$ is the normalization factor, differential $d\mf{q}^\prime$ only angular degrees of freedom of the each monomer and the complex as whole. 
 }
 
 \block[titleoffsety=1cm, bodyoffsety=2cm]{Spectral moments}{
     \SIZEOFTEXT
 
     \vpravo Spectral moments are integral values, which are widely used to characterise CIA spectra. The usage of spectral moments is justified by the possibility to represent them either in terms of integrals over experimentally measured spectral profiles or in terms of Boltzmann weighted functions of induced dipole. \par 
+    \begin{tikzfigure}
+        %\includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-zero-moment-legend-crop.pdf}
+        %\includegraphics[width=0.49\linewidth]{./pictures/CO2-CO2-zero-moment-legend-crop.pdf} 
+        \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-second-moment-legend-crop.pdf} 
+        \includegraphics[width=0.49\linewidth]{./pictures/CO2-CO2-second-moment-legend-crop.pdf}
+    \end{tikzfigure}
+    
     \hspace{6cm} \textbf{Calculation of spectral moments as phase space integrals}
     \begin{gather}
         M_0 = \frac{ \int \mf{d}^2 \exp \lsq -H(\mf{q}, \mf{p}, \mf{J}) / \kb T \rsq d\mf{q} \, d\mf{p} \, d\mf{J}}{\int \exp \lsq -H(\mf{q}, \mf{p}, \mf{J}) / \kb T \rsq d\mf{q} \, d\mf{p} \, d\mf{J}} \qquad 
@@ -144,13 +157,32 @@
         M_2 = 2 \int\limits_0^\infty \lsq 1 - \exp \lb -\frac{h c \nu}{\kb T} \rb \rsq^{-1} \nu \, \alpha(\nu) \, d\nu 
     \end{gather}
 
-    \begin{tikzfigure}
-        \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-zero-moment-legend-crop.pdf}
-        \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-second-moment-legend-crop.pdf} \\ [1em]
-        \includegraphics[width=0.49\linewidth]{./pictures/CO2-CO2-zero-moment-legend-crop.pdf} 
-        \includegraphics[width=0.49\linewidth]{./pictures/CO2-CO2-second-moment-legend-crop.pdf}
-    \end{tikzfigure}
 }
+
+\block[titleoffsety=1cm, bodyoffsety=1cm]{Electronic structure calculations}{
+    \SIZEOFTEXT
+   
+    \begin{minipage}{0.5\linewidth}
+        \vspace{11cm}
+        \begin{tikzpicture}
+            \hspace*{-1cm}
+            \includegraphics[width=1.1\linewidth]{./pictures/other/co2co2_potential-trim.png}
+        \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}{0.5\linewidth}
+        \vspace*{-3cm}
+        \begin{itemize}
+            \item PES and IDS CO$_2-$Ar: CCSD(T)/\textit{aug}-cc-pVQZ and CCSD(T)/\textit{aug}-cc-pVTZ, both supplemented with midbond functions 
+            \item PES and IDS CO$_2-$CO$_2$: CCSD(T)/? supplemented with midbond functions
+            \item BSSE correction
+            \item Representation of angular dependence in the basis of spherical functions and radial dependence using cubic splines
+         \end{itemize}
+    \end{minipage}
+
+}
+
+
+\iffalse
 \block[titleoffsety=1cm, bodyoffsety=1cm]{Discussion}{
     \SIZEOFTEXT
 
@@ -162,11 +194,28 @@
         \item true bound dimer absorption: amounts up to 10\% of total intensity at near room temperature and is more pronounced at lower temperatures,
         \item fraction of CO$_2$ molecules occupies (010) bending state: expected to increase at elevated temperature, however, the regular mismatch between calculated and measured spectra is not currently observed.
     \end{itemize}
-
 }
+\fi
 
 \column{0.6}
-\block[titleoffsety=44cm, bodyoffsety=45.3cm]{Collision-induced absorption of CO$_2-$Ar and CO$_2-$CO$_2$ in rototranslational band}{
+\block[titleoffsety=44cm, bodyoffsety=45.3cm]{Desymmetrization procedure}{
+    \SIZEOFTEXT
+   
+    \begin{minipage}{0.35\linewidth}
+        \begin{tikzfigure}
+            \includegraphics[width=\linewidth]{./pictures/co2co2_spectral_function-crop.pdf}
+        \end{tikzfigure}
+    \end{minipage}
+    \begin{minipage}{0.65\linewidth}
+        Simple procedure to account for quantum interaction with EM field:
+        \begin{gather}
+            J_\textup{D3}(\nu) = \exp \lb \frac{h c \nu}{\kb T} \rb J_\textup{class}(\nu) \notag
+        \end{gather}
+    \end{minipage}
+}
+
+
+\block[titleoffsety=1cm, bodyoffsety=3cm]{Collision-induced absorption of CO$_2-$Ar and CO$_2-$CO$_2$ in rototranslational band}{
     \SIZEOFTEXT
 
     \begin{tikzfigure}
@@ -175,9 +224,9 @@
         \includegraphics[width=0.49\linewidth]{./pictures/CO2-CO2-296K-legend-crop.pdf}
         \includegraphics[width=0.49\linewidth]{./pictures/CO2-CO2-353K-legend-crop.pdf} \\[1em]
         \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-233K-legend-crop.pdf}
-        \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-241K-legend-crop.pdf} \\[1em]
-        \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-298K-legend-crop.pdf}
-        \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-351K-legend-crop.pdf}
+        \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-241K-legend-crop.pdf}
+        %\includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-298K-legend-crop.pdf}
+        %\includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-351K-legend-crop.pdf}
     \end{tikzfigure}
 
 }
@@ -194,16 +243,18 @@
 
 \block[titleoffsety=1cm, bodyoffsety=1.5cm]{References}{
 \SIZEOFTEXTREFERENCES
-1. T. Karman, I.E. Gordon, A. van der Avoird, \textit{et al}. (2019). \textit{Icarus}. \\
-2. T. Karman, \enquote{Collision-induced absorption by oxygen and nitrogen molecules}, PhD thesis, Radboud University, 2018. \\
-3. J-M. Hartmann, \textit{et al}. (2011). \textit{J. Chem. Phys.} 134 (9), 094316. \\
-4. B. Bussery-Honvault, and J-M. Hartmann. (2014). \textit{J. Chem. Phys.} 140 (5), 054309. \\ 
-5. D. Oparin, \textit{et al}. (2017). \textit{J. Quant. Spectr. Radiat. Transf.} 196, 87-93. \\
-6. D. N. Chistikov, \textit{et al}. (2018). \textit{Classical trajectory simulation of collision-induced absorption spectra}. HRMS, Bilbao, Spain. \\
-7. M. Gruszka, and A. Borysow. (1997). \textit{Icarus} 129, 172-177. \\
-8. W. Ho, G. Birnbaum, and A. Rosenberg. (1971). \textit{J. Chem. Phys.} 55 (3), 1028-1038. \\
-9. I. R. Dagg et al. (1986), \textit{Can. J. Phys.} 64 (11), 1475-1481. \\
-10. M. V. Tonkov (1995) In: \textit{Collision- and Interaction-Induced Spectroscopy}. Kluwer AP.  
+1. T.\,Karman, I.\,E.\,Gordon, A.\,van der Avoird, \textit{et al}. (2019). \textit{Icarus} 328, 160-175. \\
+2. T.\,Karman, \enquote{Collision-induced absorption by oxygen and nitrogen molecules}, PhD thesis, Radboud University, 2018. \\
+3. J.-M.\,Hartmann, \textit{et al}. (2011). \textit{J. Chem. Phys.} 134 (9), 094316. \\
+4. B.\,Bussery-Honvault, and J.-M.\, Hartmann. (2014). \textit{J. Chem. Phys.} 140 (5), 054309. \\ 
+5. D.\,Oparin, \textit{et al}. (2017). \textit{J. Quant. Spectr. Radiat. Transf.} 196, 87-93. \\
+6. D.\,N.\,Chistikov, \textit{et al}. (2018). \textit{Classical trajectory simulation of collision-induced absorption spectra}. HRMS, Bilbao, Spain. \\
+7. M.\,Gruszka, and A.,Borysow. (1997). \textit{Icarus} 129, 172-177. \\
+8. W.\,Ho, G.\,Birnbaum, and A.\,Rosenberg. (1971). \textit{J. Chem. Phys.} 55 (3), 1028-1038. \\
+9. I.\,R.\,Dagg, \textit{et al}. (1986), \textit{Can. J. Phys.} 64 (11), 1475-1481. \\
+10. M.\,V.\,Tonkov (1995) In: \textit{Collision- and Interaction-Induced Spectroscopy}. Kluwer AP. \\ 
+11. B.\,Joalland, M.\,Goubet, R.\,Georges, \textit{et al}. (2016). \enquote{Far-infrared collision-induced absorption in CO$_2$ at T = $200$ K}. 13th ASA Conference, Reims. \\
+12. A.\,D.\,Afanasev, N.\,M.\,Grigorovich, and M. V.\,Tonkov. (1985). \textit{Opt. Spectrosc.} 58, 772-774. 
 }
 
 \end{columns}
