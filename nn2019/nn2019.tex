@@ -103,7 +103,7 @@
 \block[titleoffsety=46cm, bodyoffsety=47.0cm]{Introduction}{
 \SIZEOFTEXT
 \SIZEOFFORMULAE{
-    \vpravo There is a growing demand to improve existing methods of collision-induced absorption (CIA) spectra simulation [1]. From the one hand, the impetus to refine presently available theories is due to anticipation of future observations concerning a multitude of exoplanetary atmospheres. From the other hand, there is a remarkable progress in computer facilities that opens access to unprecedented computational power. \par
+    \vpravo There is a growing demand to improve existing methods of collision-induced absorption (CIA) spectra simulation [1]. From the one hand, the impetus to refine presently available theories is due to anticipation of future observations concerning a multitude of exoplanetary atmospheres. From the other hand, there is a remarkable progress in computer facilities that opens access to unprecedented computational performance. \par
     \vpravo The use of computationally heavy pure quantum [2] and molecular dynamics [3, 4] methods of CIA simulation is still infrequent and can hardly satisfy near future practical requirements in terms of variety of molecular constituents and range of temperature. In contrast, the method based on consideration of classical trajectories seems to have good perspective for extensive CIA simulation. Recent analysis [5] of the classical dynamics in laboratory frame of reference permitted satisfactory simulation of the CO$_2-$Rg (Rg = Ar, Xe) rototranslational CIA band profiles. \par 
     \vpravo An alternative trajectory based approach is being developed in our research group. Salient features and some preliminary results of it were recently reported elsewhere [6]. Excellent agreement was demonstrated among our calculated trajectory based rototranslational profiles in N$_2-$N$_2$ and those computed quantum mechanically in [2] or obtained experimentally (see [1] and references therein). We use body-fixed frame in which classical dynamics of a collision as well as quantum chemical electronic energy (PES) and induced dipole (IDS) surfaces are rigorously examined. Present paper shows results concerning CO$_2-$Ar and CO$_2-$CO$_2$ systems. 
 }}
@@ -115,7 +115,8 @@
     \begin{tikzpicture}
         \includegraphics[width=0.6\linewidth]{./pictures/other/scheme-crop.pdf}
     \end{tikzpicture}
-    
+
+    \vspace{0.5cm}
     \vpravo Absorption coefficient $\alpha$ normalized to the product of densities is known to be written as
     \begin{gather}
         \frac{\alpha(\nu, T)}{\rho_1 \rho_2} = \frac{ (2\pi)^2 N_L^2}{3 \hbar} \nu \lsq 1 - \exp \lb -\frac{h c \nu}{\kb T} \rb \rsq V J(\nu, T). \notag
@@ -143,7 +144,7 @@
         \begin{gather}
             J(\nu) = \exp \lb \frac{h c \nu}{\kb T} \rb J_\textup{class}(\nu) \notag
         \end{gather}
-        Desymmetrized spectral function satisfies \enquote{quantum detailed balance}:
+        Desymmetrized spectral function satisfies quantum \enquote{detailed balance} principle:
         \begin{gather}
             J(-\nu) = \exp \lb \frac{h c \nu}{\kb T} \rb J(\nu) \notag
         \end{gather}
@@ -169,7 +170,7 @@
 
 }
 
-\block[titleoffsety=2cm, bodyoffsety=2cm]{Ab initio PES and IDS computation}{
+\block[titleoffsety=1cm, bodyoffsety=1cm]{Ab initio PES and IDS computation}{
     \SIZEOFTEXT
    
     \begin{minipage}{0.5\linewidth}
@@ -207,7 +208,7 @@
 \fi
 
 \column{0.6}
-\block[titleoffsety=46cm, bodyoffsety=48.5cm]{CO$_2-$CO$_2$ rototranslational CIA band}{
+\block[titleoffsety=46cm, bodyoffsety=48.5cm]{CO$_2-$CO$_2$ rototranslational band}{
     \SIZEOFTEXT
     \begin{tikzfigure}
         \includegraphics[width=0.49\linewidth]{./pictures/CO2-CO2-233K-legend-crop.pdf}
@@ -217,7 +218,7 @@
     \end{tikzfigure}
 }
 
-\block[titleoffsety=2.0cm, bodyoffsety=4.0cm]{CO$_2-$Ar rototranslational CIA band}{
+\block[titleoffsety=2.0cm, bodyoffsety=4.0cm]{CO$_2-$Ar rototranslational band}{
     \SIZEOFTEXT
     \begin{tikzfigure}
         \includegraphics[width=0.49\linewidth]{./pictures/CO2-AR-233K-legend-crop.pdf}
@@ -227,7 +228,7 @@
     \end{tikzfigure}
 }
 
-\block[titleoffsety=1.5cm, bodyoffsety=4.0cm]{Experimental vs. calculated CIA intensities}{
+\block[titleoffsety=1.5cm, bodyoffsety=4.0cm]{Experimental vs.\! calculated CIA intensities}{
     \begin{tikzfigure}
         \includegraphics[width=0.40\linewidth]{./pictures/CO2-AR-second-moment-legend-crop.pdf}%
         \hspace{4cm}%
@@ -245,7 +246,7 @@
     The authors gratefully acknowledge invaluable help from R. Wordsworth in the use of computer facility at Harvard university. The work was supported in part by RFBR Grants 18-05-00119 and 18-55-16006 as well as Presidium of RAS Program 28.
 }
 
-\block[titleoffsety=1.5cm, bodyoffsety=3.0cm]{References}{
+\block[titleoffsety=1.0cm, bodyoffsety=2.5cm]{References}{
 \SIZEOFTEXTREFERENCES
 1. T.\,Karman, I.\,E.\,Gordon, A.\,van der Avoird, \textit{et al}. (2019) \textit{Icarus} 328, 160-175. \\
 2. T.\,Karman (2018) \enquote{Collision-induced absorption by oxygen and nitrogen molecules}, PhD thesis, Radboud University. \\
