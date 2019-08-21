@@ -1,0 +1,230 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{cohentanuji}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c695b752c3293b399713f79061dcdbf2}{%
+           family={\text{Коэн-Таннуджи\bibnamedelimb К.,\bibnamedelimb Диу\bibnamedelimb Б.,\bibnamedelimb Лалоэ\bibnamedelimb Ф.}},
+           familyi={\\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Издательство Уральского университета}%
+      }
+      \strng{namehash}{c695b752c3293b399713f79061dcdbf2}
+      \strng{fullhash}{c695b752c3293b399713f79061dcdbf2}
+      \strng{bibnamehash}{c695b752c3293b399713f79061dcdbf2}
+      \strng{authorbibnamehash}{c695b752c3293b399713f79061dcdbf2}
+      \strng{authornamehash}{c695b752c3293b399713f79061dcdbf2}
+      \strng{authorfullhash}{c695b752c3293b399713f79061dcdbf2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Квантовая механика}
+      \field{year}{2000}
+    \endentry
+    \entry{greiner}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9eace0848392f5e3c115096c49113ca1}{%
+           family={\text{Greiner\bibnamedelimb W.,\bibnamedelimb Bromley\bibnamedelimb D.A.}},
+           familyi={\\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9eace0848392f5e3c115096c49113ca1}
+      \strng{fullhash}{9eace0848392f5e3c115096c49113ca1}
+      \strng{bibnamehash}{9eace0848392f5e3c115096c49113ca1}
+      \strng{authorbibnamehash}{9eace0848392f5e3c115096c49113ca1}
+      \strng{authornamehash}{9eace0848392f5e3c115096c49113ca1}
+      \strng{authorfullhash}{9eace0848392f5e3c115096c49113ca1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3540674586,9783540674580}
+      \field{title}{Quantum mechanics. An introduction}
+      \field{year}{2000}
+    \endentry
+    \entry{baym-quantum-mechanics}{book}{}
+      \name{author}{1}{}{%
+        {{hash=db94fa99a7f093aa3736d4d086a6a3f3}{%
+           family={Baym},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Westview Press}%
+      }
+      \strng{namehash}{db94fa99a7f093aa3736d4d086a6a3f3}
+      \strng{fullhash}{db94fa99a7f093aa3736d4d086a6a3f3}
+      \strng{bibnamehash}{db94fa99a7f093aa3736d4d086a6a3f3}
+      \strng{authorbibnamehash}{db94fa99a7f093aa3736d4d086a6a3f3}
+      \strng{authornamehash}{db94fa99a7f093aa3736d4d086a6a3f3}
+      \strng{authorfullhash}{db94fa99a7f093aa3736d4d086a6a3f3}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lectures on quantum mechanics}
+      \field{year}{1974}
+    \endentry
+    \entry{mcquarrie-statistical-mechanics}{book}{}
+      \name{author}{1}{}{%
+        {{hash=da5b475ab88af38381d7f4b940b339f7}{%
+           family={McQuarrie},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Harper \& Row}%
+      }
+      \strng{namehash}{da5b475ab88af38381d7f4b940b339f7}
+      \strng{fullhash}{da5b475ab88af38381d7f4b940b339f7}
+      \strng{bibnamehash}{da5b475ab88af38381d7f4b940b339f7}
+      \strng{authorbibnamehash}{da5b475ab88af38381d7f4b940b339f7}
+      \strng{authornamehash}{da5b475ab88af38381d7f4b940b339f7}
+      \strng{authorfullhash}{da5b475ab88af38381d7f4b940b339f7}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical Mechanics}
+      \field{year}{1976}
+    \endentry
+    \entry{gordon1968}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=0345e907dbe277d60421fa6a28f71964}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={RG},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0345e907dbe277d60421fa6a28f71964}
+      \strng{fullhash}{0345e907dbe277d60421fa6a28f71964}
+      \strng{bibnamehash}{0345e907dbe277d60421fa6a28f71964}
+      \strng{authorbibnamehash}{0345e907dbe277d60421fa6a28f71964}
+      \strng{authornamehash}{0345e907dbe277d60421fa6a28f71964}
+      \strng{authorfullhash}{0345e907dbe277d60421fa6a28f71964}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Magnetic and Optical Resonance}
+      \field{title}{Correlation functions for molecular motion}
+      \field{year}{1968}
+      \field{pages}{1\bibrangedash 42}
+      \range{pages}{42}
+      \field{volume}{3}
+      \range{volume}{1}
+    \endentry
+    \entry{zwanzig1965}{article}{}
+      \name{author}{1}{}{%
+        {{hash=83813f1324b1bf407ee15ea9ecdc737d}{%
+           family={Zwanzig},
+           familyi={Z\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{83813f1324b1bf407ee15ea9ecdc737d}
+      \strng{fullhash}{83813f1324b1bf407ee15ea9ecdc737d}
+      \strng{bibnamehash}{83813f1324b1bf407ee15ea9ecdc737d}
+      \strng{authorbibnamehash}{83813f1324b1bf407ee15ea9ecdc737d}
+      \strng{authornamehash}{83813f1324b1bf407ee15ea9ecdc737d}
+      \strng{authorfullhash}{83813f1324b1bf407ee15ea9ecdc737d}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Review of Physical Chemistry}
+      \field{langid}{english}
+      \field{title}{Time-correlation functions and transport coefficients in statistical mechanics}
+      \field{year}{1965}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{67\bibrangedash 102}
+      \range{pages}{36}
+      \field{volume}{16}
+      \range{volume}{1}
+    \endentry
+    \entry{nitzan2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e7493dc71c1123481ecc2bf05f026c85}{%
+           family={Nitzan},
+           familyi={N\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{e7493dc71c1123481ecc2bf05f026c85}
+      \strng{fullhash}{e7493dc71c1123481ecc2bf05f026c85}
+      \strng{bibnamehash}{e7493dc71c1123481ecc2bf05f026c85}
+      \strng{authorbibnamehash}{e7493dc71c1123481ecc2bf05f026c85}
+      \strng{authornamehash}{e7493dc71c1123481ecc2bf05f026c85}
+      \strng{authorfullhash}{e7493dc71c1123481ecc2bf05f026c85}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chemical dynamics in condensed phases: relaxation, transfer and reactions in condensed molecular systems}
+      \field{year}{2006}
+    \endentry
+    \entry{frommhold}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fca27c305bd8ab6c6c162457b7beac86}{%
+           family={Frommhold},
+           familyi={F\bibinitperiod},
+           given={Lothar},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{fca27c305bd8ab6c6c162457b7beac86}
+      \strng{fullhash}{fca27c305bd8ab6c6c162457b7beac86}
+      \strng{bibnamehash}{fca27c305bd8ab6c6c162457b7beac86}
+      \strng{authorbibnamehash}{fca27c305bd8ab6c6c162457b7beac86}
+      \strng{authornamehash}{fca27c305bd8ab6c6c162457b7beac86}
+      \strng{authorfullhash}{fca27c305bd8ab6c6c162457b7beac86}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Collision-induced absorption in gases}
+      \field{year}{2006}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
